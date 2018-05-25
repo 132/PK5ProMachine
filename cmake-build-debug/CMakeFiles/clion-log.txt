@@ -1,0 +1,22 @@
+/home/lab298a/Downloads/program/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=~/Downloads/program/boost_1_65_1 -G "CodeBlocks - Unix Makefiles" /home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   chrono
+--   coroutine
+--   context
+--   date_time
+--   filesystem
+--   program_options
+--   regex
+--   serialization
+--   system
+--   thread
+--   atomic
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+CMake Warning at CMakeLists.txt:486 (message):
+  doxygen executable not found.  docs target will not be buildable
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug
