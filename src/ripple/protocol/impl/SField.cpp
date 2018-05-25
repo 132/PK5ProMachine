@@ -407,4 +407,8 @@ SField::getField (std::string const& fieldName)
     return sfInvalid;
 }
 
+
+
+SF_U256 const sfContent       = make::one<SF_U256::type>(&sfContent,       STI_HASH256, 25, "ContentTransaction");
+
 } // ripple

@@ -39,6 +39,9 @@ namespace ripple {
 
         TER
         doApply() override;
+
+        std::pair<TER, bool>
+        applyGuts (Sandbox& view, Sandbox& view_cancel);
     };
 
 }

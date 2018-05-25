@@ -58,6 +58,8 @@ enum TxType
 
     ttAMENDMENT         = 100,
     ttFEE               = 101,
+
+
     ttLOG_TRANSACTION   = 132,
 };
 

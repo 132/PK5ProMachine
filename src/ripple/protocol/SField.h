@@ -511,7 +511,7 @@ extern SField const sfMajorities;
 
 using StringContent = TypedField<STBitString<256>>;
 
-extern StringContent const sfContent;
+extern SF_U256 const sfContent;
 // STBitString.values_.getText(); -> return a text
 
 } // ripple

@@ -568,7 +568,7 @@ void removeUnfundedOffers (ApplyView& view, std::vector<uint256> const& offers, 
 }
 
 void
-Transactor::claimFee (XRPAmount& fee, TER terResult, std::vector<uint256> const& removedOffers)
+Transactor:: claimFee (XRPAmount& fee, TER terResult, std::vector<uint256> const& removedOffers)
 {
     ctx_.discard();
 
