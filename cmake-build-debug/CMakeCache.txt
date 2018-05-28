@@ -108,7 +108,7 @@ CMAKE_CODEBLOCKS_MAKE_ARGUMENTS:STRING=-j2
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-CMAKE_CONFIGURATION_TYPES:STRING=Debug;Release
+CMAKE_CONFIGURATION_TYPES:STRING=DebugClassic;ReleaseClassic
 
 //Path to a program
 CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++
@@ -127,12 +127,18 @@ CMAKE_CXX_FLAGS:STRING=
 //Flags used by the compiler during debug builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
 
+//Copied from CMAKE_CXX_FLAGS_DEBUG
+CMAKE_CXX_FLAGS_DEBUGCLASSIC:STRING=-g
+
 //Flags used by the compiler during release builds for minimum
 // size.
 CMAKE_CXX_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
 //Flags used by the compiler during release builds.
 CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Copied from CMAKE_CXX_FLAGS_RELEASE
+CMAKE_CXX_FLAGS_RELEASECLASSIC:STRING=-O3 -DNDEBUG
 
 //Flags used by the compiler during release builds with debug info.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
@@ -154,12 +160,18 @@ CMAKE_C_FLAGS:STRING=
 //Flags used by the compiler during debug builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g
 
+//Copied from CMAKE_C_FLAGS_DEBUG
+CMAKE_C_FLAGS_DEBUGCLASSIC:STRING=-g
+
 //Flags used by the compiler during release builds for minimum
 // size.
 CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
 //Flags used by the compiler during release builds.
 CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Copied from CMAKE_C_FLAGS_RELEASE
+CMAKE_C_FLAGS_RELEASECLASSIC:STRING=-O3 -DNDEBUG
 
 //Flags used by the compiler during release builds with debug info.
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
@@ -170,11 +182,17 @@ CMAKE_EXE_LINKER_FLAGS:STRING=
 //Flags used by the linker during debug builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
 
+//Copied from CMAKE_EXE_LINKER_FLAGS_DEBUG
+CMAKE_EXE_LINKER_FLAGS_DEBUGCLASSIC:STRING=
+
 //Flags used by the linker during release minsize builds.
 CMAKE_EXE_LINKER_FLAGS_MINSIZEREL:STRING=
 
 //Flags used by the linker during release builds.
 CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
+
+//Copied from CMAKE_EXE_LINKER_FLAGS_RELEASE
+CMAKE_EXE_LINKER_FLAGS_RELEASECLASSIC:STRING=
 
 //Flags used by the linker during Release with Debug Info builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
@@ -197,11 +215,17 @@ CMAKE_MODULE_LINKER_FLAGS:STRING=
 //Flags used by the linker during debug builds.
 CMAKE_MODULE_LINKER_FLAGS_DEBUG:STRING=
 
+//Copied from CMAKE_MODULE_LINKER_FLAGS_DEBUG
+CMAKE_MODULE_LINKER_FLAGS_DEBUGCLASSIC:STRING=
+
 //Flags used by the linker during release minsize builds.
 CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL:STRING=
 
 //Flags used by the linker during release builds.
 CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
+
+//Copied from CMAKE_MODULE_LINKER_FLAGS_RELEASE
+CMAKE_MODULE_LINKER_FLAGS_RELEASECLASSIC:STRING=
 
 //Flags used by the linker during Release with Debug Info builds.
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
@@ -227,11 +251,17 @@ CMAKE_SHARED_LINKER_FLAGS:STRING=
 //Flags used by the linker during debug builds.
 CMAKE_SHARED_LINKER_FLAGS_DEBUG:STRING=
 
+//Copied from CMAKE_SHARED_LINKER_FLAGS_DEBUG
+CMAKE_SHARED_LINKER_FLAGS_DEBUGCLASSIC:STRING=
+
 //Flags used by the linker during release minsize builds.
 CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL:STRING=
 
 //Flags used by the linker during release builds.
 CMAKE_SHARED_LINKER_FLAGS_RELEASE:STRING=
+
+//Copied from CMAKE_SHARED_LINKER_FLAGS_RELEASE
+CMAKE_SHARED_LINKER_FLAGS_RELEASECLASSIC:STRING=
 
 //Flags used by the linker during Release with Debug Info builds.
 CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO:STRING=
@@ -249,11 +279,17 @@ CMAKE_STATIC_LINKER_FLAGS:STRING=
 //Flags used by the linker during debug builds.
 CMAKE_STATIC_LINKER_FLAGS_DEBUG:STRING=
 
+//Copied from CMAKE_STATIC_LINKER_FLAGS_DEBUG
+CMAKE_STATIC_LINKER_FLAGS_DEBUGCLASSIC:STRING=
+
 //Flags used by the linker during release minsize builds.
 CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL:STRING=
 
 //Flags used by the linker during release builds.
 CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
+
+//Copied from CMAKE_STATIC_LINKER_FLAGS_RELEASE
+CMAKE_STATIC_LINKER_FLAGS_RELEASECLASSIC:STRING=
 
 //Flags used by the linker during Release with Debug Info builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
@@ -346,6 +382,9 @@ san:STRING=
 //On linux, link protobuf, openssl, libc++, and boost statically
 static:BOOL=false
 
+//No help, variable specified on the command line.
+target:UNINITIALIZED=gcc.debug.nounity
+
 
 ########################
 # INTERNAL cache entries
@@ -408,7 +447,7 @@ Boost_THREAD_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //Choose the type of build, options are in CMAKE_CONFIGURATION_TYPES
-CMAKE_BUILD_TYPE:INTERNAL=Debug
+CMAKE_BUILD_TYPE:INTERNAL=DebugClassic
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug
 //Major version of cmake used to create the current loaded cache

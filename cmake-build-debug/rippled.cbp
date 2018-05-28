@@ -27,8 +27,8 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rippled_classic">
-				<Option output="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/rippled_classic" prefix_auto="0" extension_auto="0"/>
+			<Target title="rippled_unity">
+				<Option output="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/rippled_unity" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -63,14 +63,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/Makefile&quot;  VERBOSE=1 rippled_classic"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/Makefile&quot;  VERBOSE=1 rippled_unity"/>
 					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j2 -f &quot;/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rippled_classic/fast">
-				<Option output="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/rippled_classic" prefix_auto="0" extension_auto="0"/>
+			<Target title="rippled_unity/fast">
+				<Option output="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/rippled_unity" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -105,7 +105,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/Makefile&quot;  VERBOSE=1 rippled_classic/fast"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/Makefile&quot;  VERBOSE=1 rippled_unity/fast"/>
 					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j2 -f &quot;/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -207,2069 +207,2069 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/ripple.pb.cc.rule">
-			<Option target="rippled_classic"/>
+			<Option target="rippled_unity"/>
 			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/cmake-build-debug/ripple.pb.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled_unity"/>
 			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/consensus/RCLConsensus.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/consensus/RCLConsensus.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/consensus/RCLCxPeerPos.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/consensus/RCLCxPeerPos.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/consensus/RCLValidations.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/consensus/RCLValidations.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/AcceptedLedger.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/AcceptedLedger.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/AcceptedLedgerTx.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/AcceptedLedgerTx.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/AccountStateSF.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/AccountStateSF.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/BookListeners.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/BookListeners.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/ConsensusTransSetSF.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/ConsensusTransSetSF.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/Ledger.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/Ledger.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/LedgerHistory.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/LedgerHistory.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/OrderBookDB.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/OrderBookDB.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/TransactionStateSF.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/TransactionStateSF.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/impl/InboundLedger.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/impl/InboundLedgers.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/impl/InboundTransactions.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/impl/LedgerCleaner.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/impl/LedgerMaster.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/impl/LedgerToJson.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/impl/LocalTxs.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/impl/OpenLedger.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/impl/TransactionAcquire.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/impl/TransactionAcquire.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/ledger/impl/TransactionMaster.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/Application.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/Application.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/BasicApp.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/BasicApp.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/CollectorManager.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/CollectorManager.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/DBInit.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/DBInit.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/LoadManager.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/LoadManager.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/Main.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/NodeIdentity.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/NodeIdentity.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/NodeStoreScheduler.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/main/NodeStoreScheduler.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/CanonicalTXSet.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/CanonicalTXSet.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/FeeVoteImpl.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/HashRouter.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/HashRouter.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/NetworkOPs.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/NetworkOPs.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/SHAMapStoreImp.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/SHAMapStoreImp.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/impl/AccountTxPaging.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/impl/AccountTxPaging.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/impl/AmendmentTable.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/impl/LoadFeeTrack.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/impl/Manifest.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/impl/Transaction.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/impl/TxQ.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/impl/ValidatorKeys.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/impl/ValidatorList.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/misc/impl/ValidatorSite.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/AccountCurrencies.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/AccountCurrencies.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/Credit.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/Credit.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/Flow.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/Flow.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/Node.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/Node.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/PathRequest.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/PathRequest.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/PathRequests.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/PathRequests.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/PathState.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/PathState.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/Pathfinder.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/Pathfinder.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/RippleCalc.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/RippleCalc.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/RippleLineCache.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/RippleLineCache.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/RippleState.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/RippleState.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/cursor/AdvanceNode.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/cursor/DeliverNodeForward.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/cursor/DeliverNodeReverse.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/cursor/EffectiveRate.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/cursor/EffectiveRate.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/cursor/ForwardLiquidity.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/cursor/Liquidity.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/cursor/NextIncrement.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/cursor/ReverseLiquidity.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/cursor/RippleLiquidity.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/cursor/RippleLiquidity.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/impl/BookStep.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/impl/DirectStep.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/impl/PaySteps.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/paths/impl/XRPEndpointStep.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/ApplyContext.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/ApplyContext.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/BookTip.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/BookTip.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CancelCheck.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CancelCheck.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CancelOffer.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CancelOffer.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CancelTicket.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CancelTicket.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CashCheck.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CashCheck.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/Change.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/Change.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CreateCheck.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CreateCheck.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CreateOffer.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CreateOffer.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CreateTicket.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/CreateTicket.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/Escrow.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/Escrow.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/InvariantCheck.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/InvariantCheck.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/LogTransaction.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/LogTransaction.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/OfferStream.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/OfferStream.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/PayChan.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/PayChan.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/Payment.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/Payment.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/SetAccount.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/SetAccount.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/SetRegularKey.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/SetRegularKey.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/SetSignerList.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/SetSignerList.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/SetTrust.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/SetTrust.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/SignerEntries.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/SignerEntries.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/Taker.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/Taker.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/Transactor.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/Transactor.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/apply.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/app/tx/impl/applySteps.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/BasicConfig.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/CheckLibraryVersions.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/CountedObject.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/Log.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/PerfLogImp.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/PerfLogImp.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/ResolverAsio.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/StringUtilities.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/Sustain.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/UptimeTimer.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/contract.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/make_SSLContext.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/mulDiv.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/basics/impl/strHex.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/hash/impl/xxhash.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/hash/impl/xxhash.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/insight/impl/Collector.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/insight/impl/Group.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/insight/impl/Groups.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/insight/impl/Hook.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/insight/impl/Metric.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/insight/impl/NullCollector.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/insight/impl/StatsDCollector.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/net/impl/IPAddressConversion.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/net/impl/IPAddressV4.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/net/impl/IPAddressV6.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/net/impl/IPEndpoint.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/unity/beast_hash_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/unity/beast_insight_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/unity/beast_net_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/unity/beast_utility_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/utility/src/beast_Debug.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/utility/src/beast_Journal.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/beast/utility/src/beast_PropertyStream.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/conditions/impl/Condition.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/conditions/impl/Fulfillment.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/conditions/impl/error.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/conditions/impl/error.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/consensus/Consensus.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/consensus/Consensus.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/Config.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/DatabaseCon.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/DummySociDynamicBackend.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/Job.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/JobQueue.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/LoadEvent.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/LoadMonitor.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/SNTPClock.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/SNTPClock.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/SociDB.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/Stoppable.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/TerminateHandler.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/TimeKeeper.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/Workers.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/core/impl/Workers.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/crypto/impl/GenerateDeterministicKey.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/crypto/impl/KeyType.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/crypto/impl/RFC1751.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/crypto/impl/csprng.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/crypto/impl/ec_key.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/crypto/impl/ec_key.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/crypto/impl/openssl.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/crypto/impl/openssl.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/json/impl/JsonPropertyStream.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/json/impl/Object.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/json/impl/Output.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/json/impl/Writer.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/json/impl/json_reader.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/json/impl/json_value.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/json/impl/json_valueiterator.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/json/impl/json_writer.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/json/impl/to_string.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/ApplyStateTable.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/ApplyView.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/ApplyViewBase.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/ApplyViewImpl.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/BookDirs.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/CachedSLEs.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/CachedView.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/CashDiff.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/Directory.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/OpenView.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/PaymentSandbox.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/RawStateTable.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/ReadView.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/TxMeta.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/ledger/impl/View.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/net/impl/HTTPClient.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/net/impl/InfoSub.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/net/impl/RPCCall.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/net/impl/RPCErr.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/net/impl/RPCSub.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/net/impl/RegisterSSLCerts.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/backend/MemoryFactory.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/backend/NuDBFactory.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/backend/NullFactory.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/backend/RocksDBFactory.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/backend/RocksDBQuickFactory.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/BatchWriter.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/BatchWriter.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/Database.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/DatabaseNodeImp.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/DatabaseNodeImp.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/DatabaseRotatingImp.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/DatabaseRotatingImp.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/DatabaseShardImp.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/DatabaseShardImp.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/DecodedBlob.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/DecodedBlob.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/DummyScheduler.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/EncodedBlob.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/EncodedBlob.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/ManagerImp.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/ManagerImp.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/NodeObject.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/Shard.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/nodestore/impl/Shard.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/overlay/impl/Cluster.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/overlay/impl/ConnectAttempt.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/overlay/impl/ConnectAttempt.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/overlay/impl/Message.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/overlay/impl/OverlayImpl.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/overlay/impl/OverlayImpl.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/overlay/impl/PeerImp.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/overlay/impl/PeerImp.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/overlay/impl/PeerSet.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/overlay/impl/TMHello.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/overlay/impl/TMHello.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/overlay/impl/TrafficCount.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/overlay/impl/TrafficCount.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/peerfinder/impl/Bootcache.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/peerfinder/impl/Bootcache.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/peerfinder/impl/Endpoint.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/peerfinder/impl/PeerfinderConfig.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/peerfinder/impl/PeerfinderManager.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/peerfinder/impl/SlotImp.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/peerfinder/impl/SlotImp.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/peerfinder/impl/SourceStrings.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/peerfinder/impl/SourceStrings.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/AccountID.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/Book.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/BuildInfo.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/ByteOrder.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/ErrorCodes.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/Feature.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/HashPrefix.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/IOUAmount.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/Indexes.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/InnerObjectFormats.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/Issue.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/Keylet.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/LedgerFormats.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/PublicKey.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/Quality.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/Rate2.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/SField.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/SOTemplate.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STAccount.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STAmount.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STArray.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STBase.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STBlob.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STInteger.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STLedgerEntry.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STObject.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STParsedJSON.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STPathSet.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STTx.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STValidation.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STVar.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STVar.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/STVector256.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/SecretKey.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/Seed.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/Serializer.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/Sign.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/TER.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/TxFormats.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/UintTypes.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/digest.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/protocol/impl/tokens.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/resource/impl/Charge.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/resource/impl/Consumer.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/resource/impl/Fees.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/resource/impl/ResourceManager.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/AccountChannels.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/AccountInfo.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/AccountLines.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/AccountObjects.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/AccountOffers.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/AccountTx.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/AccountTxOld.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/AccountTxSwitch.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/BlackList.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/BookOffers.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/CanDelete.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/Connect.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/ConsensusInfo.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/Feature1.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/Fee1.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/FetchInfo.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/GatewayBalances.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/GetCounts.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/LedgerAccept.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/LedgerCleanerHandler.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/LedgerClosed.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/LedgerCurrent.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/LedgerData.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/LedgerEntry.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/LedgerHandler.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/LedgerHandler.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/LedgerHeader.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/LedgerRequest.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/LogLevel.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/LogRotate.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/NoRippleCheck.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/OwnerInfo.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/PathFind.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/PayChanClaim.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/Peers.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/Ping.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/Print.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/Random.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/RipplePathFind.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/ServerInfo.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/ServerState.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/SignFor.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/SignHandler.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/Stop.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/Submit.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/SubmitMultiSigned.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/Subscribe.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/TransactionEntry.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/Tx.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/TxHistory.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/UnlList.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/Unsubscribe.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/ValidationCreate.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/ValidationSeed.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/ValidatorListSites.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/Validators.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/WalletPropose.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/handlers/WalletPropose.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/impl/Handler.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/impl/Handler.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/impl/LegacyPathFind.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/impl/LegacyPathFind.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/impl/RPCHandler.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/impl/RPCHelpers.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/impl/RPCHelpers.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/impl/Role.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/impl/ServerHandlerImp.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/impl/ServerHandlerImp.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/impl/Status.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/impl/TransactionSign.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/rpc/impl/TransactionSign.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/server/impl/JSONRPCUtil.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/server/impl/JSONRPCUtil.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/server/impl/Port.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/shamap/impl/SHAMap.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/shamap/impl/SHAMapDelta.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/shamap/impl/SHAMapItem.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/shamap/impl/SHAMapMissingNode.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/shamap/impl/SHAMapNodeID.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/shamap/impl/SHAMapSync.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/shamap/impl/SHAMapTreeNode.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/app_consensus.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/app_ledger.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/app_ledger_impl.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/app_main1.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/app_main2.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/app_misc.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/app_misc_impl.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/app_paths.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/app_tx.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/basics.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/beast.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled_unity"/>
 			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/conditions.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/consensus.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/core.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/crypto.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/ed25519_donna.c">
-			<Option target="rippled_classic"/>
+			<Option target="rippled_unity"/>
 			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/json.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/ledger.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/lz4.c">
-			<Option target="rippled_classic"/>
+			<Option target="rippled_unity"/>
 			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/net.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/nodestore.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/overlay1.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/overlay2.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/peerfinder.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/protobuf.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled_unity"/>
 			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/protocol.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/resource.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/ripple.proto.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled_unity"/>
 			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/rocksdb.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled_unity"/>
 			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/rocksdb.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled_unity"/>
 			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/rpcx1.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/rpcx2.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/secp256k1.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled_unity"/>
 			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/server.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/shamap.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/snappy.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled_unity"/>
 			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/soci.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled_unity"/>
 			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/ripple/unity/soci_ripple.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/sqlite/sqlite_unity.c">
-			<Option target="rippled_classic"/>
+			<Option target="rippled_unity"/>
 			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/AccountTxPaging_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/AmendmentTable_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/Check_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/CrossingLimits_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/DeliverMin_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/DepositAuth_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/Discrepancy_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/Escrow_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/Flow_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/Freeze_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/HashRouter_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/LedgerHistory_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/LedgerLoad_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/LoadFeeTrack_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/Manifest_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/MultiSign_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/OfferStream_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/Offer_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/OversizeMeta_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/Path_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/PayChan_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/PayStrand_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/PseudoTx_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/RCLValidations_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/Regression_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/SHAMapStore_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/SetAuth_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/SetRegularKey_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/SetTrust_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/Taker_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/Ticket_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/Transaction_ordering_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/TrustAndBalance_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/TxQ_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/ValidatorKeys_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/ValidatorList_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/app/ValidatorSite_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/Buffer_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/CheckLibraryVersions_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/DetectCrash_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/KeyCache_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/PerfLog_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/RangeSet_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/Slice_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/StringUtilities_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/TaggedCache_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/base_uint_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/contract_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/hardened_hash_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/mulDiv_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/basics/tagged_integer_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/IPEndpoint_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/LexicalCast_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/SemanticVersion_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/aged_associative_container_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/beast_CurrentThreadName_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/beast_Debug_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/beast_Journal_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/beast_PropertyStream_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/beast_Zero_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/beast_abstract_clock_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/beast_asio_error_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/beast_basic_seconds_clock_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/beast_weak_fn_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/beast/define_print.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/conditions/PreimageSha256_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/consensus/ByzantineFailureSim_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/consensus/Consensus_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/consensus/DistributedValidatorsSim_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/consensus/LedgerTiming_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/consensus/LedgerTrie_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/consensus/ScaleFreeSim_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/consensus/Validations_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/core/ClosureCounter_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/core/Config_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/core/Coroutine_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/core/CryptoPRNG_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/core/JobQueue_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/core/SociDB_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/core/Stoppable_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/core/TerminateHandler_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/core/Workers_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/csf/BasicNetwork_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/csf/Digraph_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/csf/Histogram_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/csf/Scheduler_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/csf/impl/Sim.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/csf/impl/ledgers.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/json/Object_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/json/Output_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/json/Writer_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/json/json_value_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/Env_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/WSClient_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/Account.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/Env.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/JSONRPCClient.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/ManualTimeKeeper.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/WSClient.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/amount.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/balance.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/delivermin.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/envconfig.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/fee.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/flags.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/jtx_json.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/memo.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/multisign.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/offer.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/owners.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/paths.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/pay.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/quality2.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/rate.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/regkey.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/sendmax.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/seq.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/sig.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/tag.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/ticket.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/trust.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/txflags.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/jtx/impl/utility.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/ledger/BookDirs_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/ledger/CashDiff_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/ledger/Directory_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/ledger/Invariants_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/ledger/PaymentSandbox_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/ledger/PendingSaves_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/ledger/SHAMapV2_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/ledger/SkipList_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/ledger/View_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/nodestore/Backend_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/nodestore/Basics_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/nodestore/Database_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/nodestore/Timing_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/nodestore/import_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/nodestore/varint_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/overlay/TMHello_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/overlay/cluster_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/overlay/short_read_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/peerfinder/Livecache_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/peerfinder/PeerFinder_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/BuildInfo_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/IOUAmount_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/InnerObjectFormats_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/Issue_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/PublicKey_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/Quality_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/STAccount_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/STAmount_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/STObject_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/STTx_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/STValidation_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/SecretKey_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/Seed_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/TER_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/XRPAmount_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/digest_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/protocol/types_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/resource/Logic_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/AccountCurrencies_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/AccountInfo_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/AccountLinesRPC_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/AccountObjects_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/AccountOffers_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/AccountSet_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/AccountTx_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/AmendmentBlocked_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/Book_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/Feature_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/GatewayBalances_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/GetCounts_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/JSONRPC_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/KeyGeneration_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/LedgerClosed_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/LedgerData_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/LedgerRPC_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/LedgerRequestRPC_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/NoRippleCheck_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/NoRipple_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/OwnerInfo_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/Peers_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/RPCOverload_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/RobustTransaction_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/ServerInfo_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/Status_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/Subscribe_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/TransactionEntry_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/TransactionHistory_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/rpc/ValidatorRPC_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/server/ServerStatus_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/server/Server_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/shamap/FetchPack_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/shamap/SHAMapSync_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/shamap/SHAMap_test.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unit_test/multi_runner.cpp">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unit_test/multi_runner.h">
-			<Option target="rippled_classic"/>
+			<Option target="rippled"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/app_test_unity1.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/app_test_unity2.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/basics_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/beast_test_unity1.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/beast_test_unity2.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/conditions_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/consensus_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/core_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/csf_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/json_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/jtx_unity1.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/jtx_unity2.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/ledger_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/nodestore_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/overlay_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/peerfinder_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/protocol_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/resource_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/rpc_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/server_status_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/server_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/src/test/unity/shamap_test_unity.cpp">
-			<Option target="rippled"/>
+			<Option target="rippled_unity"/>
 		</Unit>
 		<Unit filename="/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

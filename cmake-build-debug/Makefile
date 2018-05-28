@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rippled_classic
+# Target rules for targets named rippled_unity
 
 # Build rule for target.
-rippled_classic: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rippled_classic
-.PHONY : rippled_classic
+rippled_unity: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rippled_unity
+.PHONY : rippled_unity
 
 # fast build rule for target.
-rippled_classic/fast:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/build
-.PHONY : rippled_classic/fast
+rippled_unity/fast:
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/build
+.PHONY : rippled_unity/fast
 
 #=============================================================================
 # Target rules for targets named rippled
@@ -142,7 +142,7 @@ src/ripple/app/consensus/RCLConsensus.o: src/ripple/app/consensus/RCLConsensus.c
 
 # target to build an object file
 src/ripple/app/consensus/RCLConsensus.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/consensus/RCLConsensus.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/consensus/RCLConsensus.cpp.o
 .PHONY : src/ripple/app/consensus/RCLConsensus.cpp.o
 
 src/ripple/app/consensus/RCLConsensus.i: src/ripple/app/consensus/RCLConsensus.cpp.i
@@ -151,7 +151,7 @@ src/ripple/app/consensus/RCLConsensus.i: src/ripple/app/consensus/RCLConsensus.c
 
 # target to preprocess a source file
 src/ripple/app/consensus/RCLConsensus.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/consensus/RCLConsensus.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/consensus/RCLConsensus.cpp.i
 .PHONY : src/ripple/app/consensus/RCLConsensus.cpp.i
 
 src/ripple/app/consensus/RCLConsensus.s: src/ripple/app/consensus/RCLConsensus.cpp.s
@@ -160,7 +160,7 @@ src/ripple/app/consensus/RCLConsensus.s: src/ripple/app/consensus/RCLConsensus.c
 
 # target to generate assembly for a file
 src/ripple/app/consensus/RCLConsensus.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/consensus/RCLConsensus.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/consensus/RCLConsensus.cpp.s
 .PHONY : src/ripple/app/consensus/RCLConsensus.cpp.s
 
 src/ripple/app/consensus/RCLCxPeerPos.o: src/ripple/app/consensus/RCLCxPeerPos.cpp.o
@@ -169,7 +169,7 @@ src/ripple/app/consensus/RCLCxPeerPos.o: src/ripple/app/consensus/RCLCxPeerPos.c
 
 # target to build an object file
 src/ripple/app/consensus/RCLCxPeerPos.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/consensus/RCLCxPeerPos.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/consensus/RCLCxPeerPos.cpp.o
 .PHONY : src/ripple/app/consensus/RCLCxPeerPos.cpp.o
 
 src/ripple/app/consensus/RCLCxPeerPos.i: src/ripple/app/consensus/RCLCxPeerPos.cpp.i
@@ -178,7 +178,7 @@ src/ripple/app/consensus/RCLCxPeerPos.i: src/ripple/app/consensus/RCLCxPeerPos.c
 
 # target to preprocess a source file
 src/ripple/app/consensus/RCLCxPeerPos.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/consensus/RCLCxPeerPos.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/consensus/RCLCxPeerPos.cpp.i
 .PHONY : src/ripple/app/consensus/RCLCxPeerPos.cpp.i
 
 src/ripple/app/consensus/RCLCxPeerPos.s: src/ripple/app/consensus/RCLCxPeerPos.cpp.s
@@ -187,7 +187,7 @@ src/ripple/app/consensus/RCLCxPeerPos.s: src/ripple/app/consensus/RCLCxPeerPos.c
 
 # target to generate assembly for a file
 src/ripple/app/consensus/RCLCxPeerPos.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/consensus/RCLCxPeerPos.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/consensus/RCLCxPeerPos.cpp.s
 .PHONY : src/ripple/app/consensus/RCLCxPeerPos.cpp.s
 
 src/ripple/app/consensus/RCLValidations.o: src/ripple/app/consensus/RCLValidations.cpp.o
@@ -196,7 +196,7 @@ src/ripple/app/consensus/RCLValidations.o: src/ripple/app/consensus/RCLValidatio
 
 # target to build an object file
 src/ripple/app/consensus/RCLValidations.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/consensus/RCLValidations.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/consensus/RCLValidations.cpp.o
 .PHONY : src/ripple/app/consensus/RCLValidations.cpp.o
 
 src/ripple/app/consensus/RCLValidations.i: src/ripple/app/consensus/RCLValidations.cpp.i
@@ -205,7 +205,7 @@ src/ripple/app/consensus/RCLValidations.i: src/ripple/app/consensus/RCLValidatio
 
 # target to preprocess a source file
 src/ripple/app/consensus/RCLValidations.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/consensus/RCLValidations.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/consensus/RCLValidations.cpp.i
 .PHONY : src/ripple/app/consensus/RCLValidations.cpp.i
 
 src/ripple/app/consensus/RCLValidations.s: src/ripple/app/consensus/RCLValidations.cpp.s
@@ -214,7 +214,7 @@ src/ripple/app/consensus/RCLValidations.s: src/ripple/app/consensus/RCLValidatio
 
 # target to generate assembly for a file
 src/ripple/app/consensus/RCLValidations.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/consensus/RCLValidations.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/consensus/RCLValidations.cpp.s
 .PHONY : src/ripple/app/consensus/RCLValidations.cpp.s
 
 src/ripple/app/ledger/AcceptedLedger.o: src/ripple/app/ledger/AcceptedLedger.cpp.o
@@ -223,7 +223,7 @@ src/ripple/app/ledger/AcceptedLedger.o: src/ripple/app/ledger/AcceptedLedger.cpp
 
 # target to build an object file
 src/ripple/app/ledger/AcceptedLedger.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/AcceptedLedger.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/AcceptedLedger.cpp.o
 .PHONY : src/ripple/app/ledger/AcceptedLedger.cpp.o
 
 src/ripple/app/ledger/AcceptedLedger.i: src/ripple/app/ledger/AcceptedLedger.cpp.i
@@ -232,7 +232,7 @@ src/ripple/app/ledger/AcceptedLedger.i: src/ripple/app/ledger/AcceptedLedger.cpp
 
 # target to preprocess a source file
 src/ripple/app/ledger/AcceptedLedger.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/AcceptedLedger.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/AcceptedLedger.cpp.i
 .PHONY : src/ripple/app/ledger/AcceptedLedger.cpp.i
 
 src/ripple/app/ledger/AcceptedLedger.s: src/ripple/app/ledger/AcceptedLedger.cpp.s
@@ -241,7 +241,7 @@ src/ripple/app/ledger/AcceptedLedger.s: src/ripple/app/ledger/AcceptedLedger.cpp
 
 # target to generate assembly for a file
 src/ripple/app/ledger/AcceptedLedger.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/AcceptedLedger.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/AcceptedLedger.cpp.s
 .PHONY : src/ripple/app/ledger/AcceptedLedger.cpp.s
 
 src/ripple/app/ledger/AcceptedLedgerTx.o: src/ripple/app/ledger/AcceptedLedgerTx.cpp.o
@@ -250,7 +250,7 @@ src/ripple/app/ledger/AcceptedLedgerTx.o: src/ripple/app/ledger/AcceptedLedgerTx
 
 # target to build an object file
 src/ripple/app/ledger/AcceptedLedgerTx.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/AcceptedLedgerTx.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/AcceptedLedgerTx.cpp.o
 .PHONY : src/ripple/app/ledger/AcceptedLedgerTx.cpp.o
 
 src/ripple/app/ledger/AcceptedLedgerTx.i: src/ripple/app/ledger/AcceptedLedgerTx.cpp.i
@@ -259,7 +259,7 @@ src/ripple/app/ledger/AcceptedLedgerTx.i: src/ripple/app/ledger/AcceptedLedgerTx
 
 # target to preprocess a source file
 src/ripple/app/ledger/AcceptedLedgerTx.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/AcceptedLedgerTx.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/AcceptedLedgerTx.cpp.i
 .PHONY : src/ripple/app/ledger/AcceptedLedgerTx.cpp.i
 
 src/ripple/app/ledger/AcceptedLedgerTx.s: src/ripple/app/ledger/AcceptedLedgerTx.cpp.s
@@ -268,7 +268,7 @@ src/ripple/app/ledger/AcceptedLedgerTx.s: src/ripple/app/ledger/AcceptedLedgerTx
 
 # target to generate assembly for a file
 src/ripple/app/ledger/AcceptedLedgerTx.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/AcceptedLedgerTx.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/AcceptedLedgerTx.cpp.s
 .PHONY : src/ripple/app/ledger/AcceptedLedgerTx.cpp.s
 
 src/ripple/app/ledger/AccountStateSF.o: src/ripple/app/ledger/AccountStateSF.cpp.o
@@ -277,7 +277,7 @@ src/ripple/app/ledger/AccountStateSF.o: src/ripple/app/ledger/AccountStateSF.cpp
 
 # target to build an object file
 src/ripple/app/ledger/AccountStateSF.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/AccountStateSF.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/AccountStateSF.cpp.o
 .PHONY : src/ripple/app/ledger/AccountStateSF.cpp.o
 
 src/ripple/app/ledger/AccountStateSF.i: src/ripple/app/ledger/AccountStateSF.cpp.i
@@ -286,7 +286,7 @@ src/ripple/app/ledger/AccountStateSF.i: src/ripple/app/ledger/AccountStateSF.cpp
 
 # target to preprocess a source file
 src/ripple/app/ledger/AccountStateSF.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/AccountStateSF.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/AccountStateSF.cpp.i
 .PHONY : src/ripple/app/ledger/AccountStateSF.cpp.i
 
 src/ripple/app/ledger/AccountStateSF.s: src/ripple/app/ledger/AccountStateSF.cpp.s
@@ -295,7 +295,7 @@ src/ripple/app/ledger/AccountStateSF.s: src/ripple/app/ledger/AccountStateSF.cpp
 
 # target to generate assembly for a file
 src/ripple/app/ledger/AccountStateSF.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/AccountStateSF.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/AccountStateSF.cpp.s
 .PHONY : src/ripple/app/ledger/AccountStateSF.cpp.s
 
 src/ripple/app/ledger/BookListeners.o: src/ripple/app/ledger/BookListeners.cpp.o
@@ -304,7 +304,7 @@ src/ripple/app/ledger/BookListeners.o: src/ripple/app/ledger/BookListeners.cpp.o
 
 # target to build an object file
 src/ripple/app/ledger/BookListeners.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/BookListeners.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/BookListeners.cpp.o
 .PHONY : src/ripple/app/ledger/BookListeners.cpp.o
 
 src/ripple/app/ledger/BookListeners.i: src/ripple/app/ledger/BookListeners.cpp.i
@@ -313,7 +313,7 @@ src/ripple/app/ledger/BookListeners.i: src/ripple/app/ledger/BookListeners.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/ledger/BookListeners.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/BookListeners.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/BookListeners.cpp.i
 .PHONY : src/ripple/app/ledger/BookListeners.cpp.i
 
 src/ripple/app/ledger/BookListeners.s: src/ripple/app/ledger/BookListeners.cpp.s
@@ -322,7 +322,7 @@ src/ripple/app/ledger/BookListeners.s: src/ripple/app/ledger/BookListeners.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/ledger/BookListeners.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/BookListeners.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/BookListeners.cpp.s
 .PHONY : src/ripple/app/ledger/BookListeners.cpp.s
 
 src/ripple/app/ledger/ConsensusTransSetSF.o: src/ripple/app/ledger/ConsensusTransSetSF.cpp.o
@@ -331,7 +331,7 @@ src/ripple/app/ledger/ConsensusTransSetSF.o: src/ripple/app/ledger/ConsensusTran
 
 # target to build an object file
 src/ripple/app/ledger/ConsensusTransSetSF.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/ConsensusTransSetSF.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/ConsensusTransSetSF.cpp.o
 .PHONY : src/ripple/app/ledger/ConsensusTransSetSF.cpp.o
 
 src/ripple/app/ledger/ConsensusTransSetSF.i: src/ripple/app/ledger/ConsensusTransSetSF.cpp.i
@@ -340,7 +340,7 @@ src/ripple/app/ledger/ConsensusTransSetSF.i: src/ripple/app/ledger/ConsensusTran
 
 # target to preprocess a source file
 src/ripple/app/ledger/ConsensusTransSetSF.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/ConsensusTransSetSF.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/ConsensusTransSetSF.cpp.i
 .PHONY : src/ripple/app/ledger/ConsensusTransSetSF.cpp.i
 
 src/ripple/app/ledger/ConsensusTransSetSF.s: src/ripple/app/ledger/ConsensusTransSetSF.cpp.s
@@ -349,7 +349,7 @@ src/ripple/app/ledger/ConsensusTransSetSF.s: src/ripple/app/ledger/ConsensusTran
 
 # target to generate assembly for a file
 src/ripple/app/ledger/ConsensusTransSetSF.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/ConsensusTransSetSF.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/ConsensusTransSetSF.cpp.s
 .PHONY : src/ripple/app/ledger/ConsensusTransSetSF.cpp.s
 
 src/ripple/app/ledger/Ledger.o: src/ripple/app/ledger/Ledger.cpp.o
@@ -358,7 +358,7 @@ src/ripple/app/ledger/Ledger.o: src/ripple/app/ledger/Ledger.cpp.o
 
 # target to build an object file
 src/ripple/app/ledger/Ledger.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/Ledger.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/Ledger.cpp.o
 .PHONY : src/ripple/app/ledger/Ledger.cpp.o
 
 src/ripple/app/ledger/Ledger.i: src/ripple/app/ledger/Ledger.cpp.i
@@ -367,7 +367,7 @@ src/ripple/app/ledger/Ledger.i: src/ripple/app/ledger/Ledger.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/ledger/Ledger.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/Ledger.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/Ledger.cpp.i
 .PHONY : src/ripple/app/ledger/Ledger.cpp.i
 
 src/ripple/app/ledger/Ledger.s: src/ripple/app/ledger/Ledger.cpp.s
@@ -376,7 +376,7 @@ src/ripple/app/ledger/Ledger.s: src/ripple/app/ledger/Ledger.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/ledger/Ledger.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/Ledger.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/Ledger.cpp.s
 .PHONY : src/ripple/app/ledger/Ledger.cpp.s
 
 src/ripple/app/ledger/LedgerHistory.o: src/ripple/app/ledger/LedgerHistory.cpp.o
@@ -385,7 +385,7 @@ src/ripple/app/ledger/LedgerHistory.o: src/ripple/app/ledger/LedgerHistory.cpp.o
 
 # target to build an object file
 src/ripple/app/ledger/LedgerHistory.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/LedgerHistory.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/LedgerHistory.cpp.o
 .PHONY : src/ripple/app/ledger/LedgerHistory.cpp.o
 
 src/ripple/app/ledger/LedgerHistory.i: src/ripple/app/ledger/LedgerHistory.cpp.i
@@ -394,7 +394,7 @@ src/ripple/app/ledger/LedgerHistory.i: src/ripple/app/ledger/LedgerHistory.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/ledger/LedgerHistory.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/LedgerHistory.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/LedgerHistory.cpp.i
 .PHONY : src/ripple/app/ledger/LedgerHistory.cpp.i
 
 src/ripple/app/ledger/LedgerHistory.s: src/ripple/app/ledger/LedgerHistory.cpp.s
@@ -403,7 +403,7 @@ src/ripple/app/ledger/LedgerHistory.s: src/ripple/app/ledger/LedgerHistory.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/ledger/LedgerHistory.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/LedgerHistory.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/LedgerHistory.cpp.s
 .PHONY : src/ripple/app/ledger/LedgerHistory.cpp.s
 
 src/ripple/app/ledger/OrderBookDB.o: src/ripple/app/ledger/OrderBookDB.cpp.o
@@ -412,7 +412,7 @@ src/ripple/app/ledger/OrderBookDB.o: src/ripple/app/ledger/OrderBookDB.cpp.o
 
 # target to build an object file
 src/ripple/app/ledger/OrderBookDB.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/OrderBookDB.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/OrderBookDB.cpp.o
 .PHONY : src/ripple/app/ledger/OrderBookDB.cpp.o
 
 src/ripple/app/ledger/OrderBookDB.i: src/ripple/app/ledger/OrderBookDB.cpp.i
@@ -421,7 +421,7 @@ src/ripple/app/ledger/OrderBookDB.i: src/ripple/app/ledger/OrderBookDB.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/ledger/OrderBookDB.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/OrderBookDB.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/OrderBookDB.cpp.i
 .PHONY : src/ripple/app/ledger/OrderBookDB.cpp.i
 
 src/ripple/app/ledger/OrderBookDB.s: src/ripple/app/ledger/OrderBookDB.cpp.s
@@ -430,7 +430,7 @@ src/ripple/app/ledger/OrderBookDB.s: src/ripple/app/ledger/OrderBookDB.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/ledger/OrderBookDB.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/OrderBookDB.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/OrderBookDB.cpp.s
 .PHONY : src/ripple/app/ledger/OrderBookDB.cpp.s
 
 src/ripple/app/ledger/TransactionStateSF.o: src/ripple/app/ledger/TransactionStateSF.cpp.o
@@ -439,7 +439,7 @@ src/ripple/app/ledger/TransactionStateSF.o: src/ripple/app/ledger/TransactionSta
 
 # target to build an object file
 src/ripple/app/ledger/TransactionStateSF.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/TransactionStateSF.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/TransactionStateSF.cpp.o
 .PHONY : src/ripple/app/ledger/TransactionStateSF.cpp.o
 
 src/ripple/app/ledger/TransactionStateSF.i: src/ripple/app/ledger/TransactionStateSF.cpp.i
@@ -448,7 +448,7 @@ src/ripple/app/ledger/TransactionStateSF.i: src/ripple/app/ledger/TransactionSta
 
 # target to preprocess a source file
 src/ripple/app/ledger/TransactionStateSF.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/TransactionStateSF.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/TransactionStateSF.cpp.i
 .PHONY : src/ripple/app/ledger/TransactionStateSF.cpp.i
 
 src/ripple/app/ledger/TransactionStateSF.s: src/ripple/app/ledger/TransactionStateSF.cpp.s
@@ -457,7 +457,7 @@ src/ripple/app/ledger/TransactionStateSF.s: src/ripple/app/ledger/TransactionSta
 
 # target to generate assembly for a file
 src/ripple/app/ledger/TransactionStateSF.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/TransactionStateSF.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/TransactionStateSF.cpp.s
 .PHONY : src/ripple/app/ledger/TransactionStateSF.cpp.s
 
 src/ripple/app/ledger/impl/InboundLedger.o: src/ripple/app/ledger/impl/InboundLedger.cpp.o
@@ -466,7 +466,7 @@ src/ripple/app/ledger/impl/InboundLedger.o: src/ripple/app/ledger/impl/InboundLe
 
 # target to build an object file
 src/ripple/app/ledger/impl/InboundLedger.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/InboundLedger.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/InboundLedger.cpp.o
 .PHONY : src/ripple/app/ledger/impl/InboundLedger.cpp.o
 
 src/ripple/app/ledger/impl/InboundLedger.i: src/ripple/app/ledger/impl/InboundLedger.cpp.i
@@ -475,7 +475,7 @@ src/ripple/app/ledger/impl/InboundLedger.i: src/ripple/app/ledger/impl/InboundLe
 
 # target to preprocess a source file
 src/ripple/app/ledger/impl/InboundLedger.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/InboundLedger.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/InboundLedger.cpp.i
 .PHONY : src/ripple/app/ledger/impl/InboundLedger.cpp.i
 
 src/ripple/app/ledger/impl/InboundLedger.s: src/ripple/app/ledger/impl/InboundLedger.cpp.s
@@ -484,7 +484,7 @@ src/ripple/app/ledger/impl/InboundLedger.s: src/ripple/app/ledger/impl/InboundLe
 
 # target to generate assembly for a file
 src/ripple/app/ledger/impl/InboundLedger.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/InboundLedger.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/InboundLedger.cpp.s
 .PHONY : src/ripple/app/ledger/impl/InboundLedger.cpp.s
 
 src/ripple/app/ledger/impl/InboundLedgers.o: src/ripple/app/ledger/impl/InboundLedgers.cpp.o
@@ -493,7 +493,7 @@ src/ripple/app/ledger/impl/InboundLedgers.o: src/ripple/app/ledger/impl/InboundL
 
 # target to build an object file
 src/ripple/app/ledger/impl/InboundLedgers.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/InboundLedgers.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/InboundLedgers.cpp.o
 .PHONY : src/ripple/app/ledger/impl/InboundLedgers.cpp.o
 
 src/ripple/app/ledger/impl/InboundLedgers.i: src/ripple/app/ledger/impl/InboundLedgers.cpp.i
@@ -502,7 +502,7 @@ src/ripple/app/ledger/impl/InboundLedgers.i: src/ripple/app/ledger/impl/InboundL
 
 # target to preprocess a source file
 src/ripple/app/ledger/impl/InboundLedgers.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/InboundLedgers.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/InboundLedgers.cpp.i
 .PHONY : src/ripple/app/ledger/impl/InboundLedgers.cpp.i
 
 src/ripple/app/ledger/impl/InboundLedgers.s: src/ripple/app/ledger/impl/InboundLedgers.cpp.s
@@ -511,7 +511,7 @@ src/ripple/app/ledger/impl/InboundLedgers.s: src/ripple/app/ledger/impl/InboundL
 
 # target to generate assembly for a file
 src/ripple/app/ledger/impl/InboundLedgers.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/InboundLedgers.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/InboundLedgers.cpp.s
 .PHONY : src/ripple/app/ledger/impl/InboundLedgers.cpp.s
 
 src/ripple/app/ledger/impl/InboundTransactions.o: src/ripple/app/ledger/impl/InboundTransactions.cpp.o
@@ -520,7 +520,7 @@ src/ripple/app/ledger/impl/InboundTransactions.o: src/ripple/app/ledger/impl/Inb
 
 # target to build an object file
 src/ripple/app/ledger/impl/InboundTransactions.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/InboundTransactions.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/InboundTransactions.cpp.o
 .PHONY : src/ripple/app/ledger/impl/InboundTransactions.cpp.o
 
 src/ripple/app/ledger/impl/InboundTransactions.i: src/ripple/app/ledger/impl/InboundTransactions.cpp.i
@@ -529,7 +529,7 @@ src/ripple/app/ledger/impl/InboundTransactions.i: src/ripple/app/ledger/impl/Inb
 
 # target to preprocess a source file
 src/ripple/app/ledger/impl/InboundTransactions.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/InboundTransactions.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/InboundTransactions.cpp.i
 .PHONY : src/ripple/app/ledger/impl/InboundTransactions.cpp.i
 
 src/ripple/app/ledger/impl/InboundTransactions.s: src/ripple/app/ledger/impl/InboundTransactions.cpp.s
@@ -538,7 +538,7 @@ src/ripple/app/ledger/impl/InboundTransactions.s: src/ripple/app/ledger/impl/Inb
 
 # target to generate assembly for a file
 src/ripple/app/ledger/impl/InboundTransactions.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/InboundTransactions.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/InboundTransactions.cpp.s
 .PHONY : src/ripple/app/ledger/impl/InboundTransactions.cpp.s
 
 src/ripple/app/ledger/impl/LedgerCleaner.o: src/ripple/app/ledger/impl/LedgerCleaner.cpp.o
@@ -547,7 +547,7 @@ src/ripple/app/ledger/impl/LedgerCleaner.o: src/ripple/app/ledger/impl/LedgerCle
 
 # target to build an object file
 src/ripple/app/ledger/impl/LedgerCleaner.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/LedgerCleaner.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/LedgerCleaner.cpp.o
 .PHONY : src/ripple/app/ledger/impl/LedgerCleaner.cpp.o
 
 src/ripple/app/ledger/impl/LedgerCleaner.i: src/ripple/app/ledger/impl/LedgerCleaner.cpp.i
@@ -556,7 +556,7 @@ src/ripple/app/ledger/impl/LedgerCleaner.i: src/ripple/app/ledger/impl/LedgerCle
 
 # target to preprocess a source file
 src/ripple/app/ledger/impl/LedgerCleaner.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/LedgerCleaner.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/LedgerCleaner.cpp.i
 .PHONY : src/ripple/app/ledger/impl/LedgerCleaner.cpp.i
 
 src/ripple/app/ledger/impl/LedgerCleaner.s: src/ripple/app/ledger/impl/LedgerCleaner.cpp.s
@@ -565,7 +565,7 @@ src/ripple/app/ledger/impl/LedgerCleaner.s: src/ripple/app/ledger/impl/LedgerCle
 
 # target to generate assembly for a file
 src/ripple/app/ledger/impl/LedgerCleaner.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/LedgerCleaner.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/LedgerCleaner.cpp.s
 .PHONY : src/ripple/app/ledger/impl/LedgerCleaner.cpp.s
 
 src/ripple/app/ledger/impl/LedgerMaster.o: src/ripple/app/ledger/impl/LedgerMaster.cpp.o
@@ -574,7 +574,7 @@ src/ripple/app/ledger/impl/LedgerMaster.o: src/ripple/app/ledger/impl/LedgerMast
 
 # target to build an object file
 src/ripple/app/ledger/impl/LedgerMaster.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/LedgerMaster.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/LedgerMaster.cpp.o
 .PHONY : src/ripple/app/ledger/impl/LedgerMaster.cpp.o
 
 src/ripple/app/ledger/impl/LedgerMaster.i: src/ripple/app/ledger/impl/LedgerMaster.cpp.i
@@ -583,7 +583,7 @@ src/ripple/app/ledger/impl/LedgerMaster.i: src/ripple/app/ledger/impl/LedgerMast
 
 # target to preprocess a source file
 src/ripple/app/ledger/impl/LedgerMaster.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/LedgerMaster.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/LedgerMaster.cpp.i
 .PHONY : src/ripple/app/ledger/impl/LedgerMaster.cpp.i
 
 src/ripple/app/ledger/impl/LedgerMaster.s: src/ripple/app/ledger/impl/LedgerMaster.cpp.s
@@ -592,7 +592,7 @@ src/ripple/app/ledger/impl/LedgerMaster.s: src/ripple/app/ledger/impl/LedgerMast
 
 # target to generate assembly for a file
 src/ripple/app/ledger/impl/LedgerMaster.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/LedgerMaster.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/LedgerMaster.cpp.s
 .PHONY : src/ripple/app/ledger/impl/LedgerMaster.cpp.s
 
 src/ripple/app/ledger/impl/LedgerToJson.o: src/ripple/app/ledger/impl/LedgerToJson.cpp.o
@@ -601,7 +601,7 @@ src/ripple/app/ledger/impl/LedgerToJson.o: src/ripple/app/ledger/impl/LedgerToJs
 
 # target to build an object file
 src/ripple/app/ledger/impl/LedgerToJson.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/LedgerToJson.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/LedgerToJson.cpp.o
 .PHONY : src/ripple/app/ledger/impl/LedgerToJson.cpp.o
 
 src/ripple/app/ledger/impl/LedgerToJson.i: src/ripple/app/ledger/impl/LedgerToJson.cpp.i
@@ -610,7 +610,7 @@ src/ripple/app/ledger/impl/LedgerToJson.i: src/ripple/app/ledger/impl/LedgerToJs
 
 # target to preprocess a source file
 src/ripple/app/ledger/impl/LedgerToJson.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/LedgerToJson.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/LedgerToJson.cpp.i
 .PHONY : src/ripple/app/ledger/impl/LedgerToJson.cpp.i
 
 src/ripple/app/ledger/impl/LedgerToJson.s: src/ripple/app/ledger/impl/LedgerToJson.cpp.s
@@ -619,7 +619,7 @@ src/ripple/app/ledger/impl/LedgerToJson.s: src/ripple/app/ledger/impl/LedgerToJs
 
 # target to generate assembly for a file
 src/ripple/app/ledger/impl/LedgerToJson.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/LedgerToJson.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/LedgerToJson.cpp.s
 .PHONY : src/ripple/app/ledger/impl/LedgerToJson.cpp.s
 
 src/ripple/app/ledger/impl/LocalTxs.o: src/ripple/app/ledger/impl/LocalTxs.cpp.o
@@ -628,7 +628,7 @@ src/ripple/app/ledger/impl/LocalTxs.o: src/ripple/app/ledger/impl/LocalTxs.cpp.o
 
 # target to build an object file
 src/ripple/app/ledger/impl/LocalTxs.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/LocalTxs.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/LocalTxs.cpp.o
 .PHONY : src/ripple/app/ledger/impl/LocalTxs.cpp.o
 
 src/ripple/app/ledger/impl/LocalTxs.i: src/ripple/app/ledger/impl/LocalTxs.cpp.i
@@ -637,7 +637,7 @@ src/ripple/app/ledger/impl/LocalTxs.i: src/ripple/app/ledger/impl/LocalTxs.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/ledger/impl/LocalTxs.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/LocalTxs.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/LocalTxs.cpp.i
 .PHONY : src/ripple/app/ledger/impl/LocalTxs.cpp.i
 
 src/ripple/app/ledger/impl/LocalTxs.s: src/ripple/app/ledger/impl/LocalTxs.cpp.s
@@ -646,7 +646,7 @@ src/ripple/app/ledger/impl/LocalTxs.s: src/ripple/app/ledger/impl/LocalTxs.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/ledger/impl/LocalTxs.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/LocalTxs.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/LocalTxs.cpp.s
 .PHONY : src/ripple/app/ledger/impl/LocalTxs.cpp.s
 
 src/ripple/app/ledger/impl/OpenLedger.o: src/ripple/app/ledger/impl/OpenLedger.cpp.o
@@ -655,7 +655,7 @@ src/ripple/app/ledger/impl/OpenLedger.o: src/ripple/app/ledger/impl/OpenLedger.c
 
 # target to build an object file
 src/ripple/app/ledger/impl/OpenLedger.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/OpenLedger.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/OpenLedger.cpp.o
 .PHONY : src/ripple/app/ledger/impl/OpenLedger.cpp.o
 
 src/ripple/app/ledger/impl/OpenLedger.i: src/ripple/app/ledger/impl/OpenLedger.cpp.i
@@ -664,7 +664,7 @@ src/ripple/app/ledger/impl/OpenLedger.i: src/ripple/app/ledger/impl/OpenLedger.c
 
 # target to preprocess a source file
 src/ripple/app/ledger/impl/OpenLedger.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/OpenLedger.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/OpenLedger.cpp.i
 .PHONY : src/ripple/app/ledger/impl/OpenLedger.cpp.i
 
 src/ripple/app/ledger/impl/OpenLedger.s: src/ripple/app/ledger/impl/OpenLedger.cpp.s
@@ -673,7 +673,7 @@ src/ripple/app/ledger/impl/OpenLedger.s: src/ripple/app/ledger/impl/OpenLedger.c
 
 # target to generate assembly for a file
 src/ripple/app/ledger/impl/OpenLedger.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/OpenLedger.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/OpenLedger.cpp.s
 .PHONY : src/ripple/app/ledger/impl/OpenLedger.cpp.s
 
 src/ripple/app/ledger/impl/TransactionAcquire.o: src/ripple/app/ledger/impl/TransactionAcquire.cpp.o
@@ -682,7 +682,7 @@ src/ripple/app/ledger/impl/TransactionAcquire.o: src/ripple/app/ledger/impl/Tran
 
 # target to build an object file
 src/ripple/app/ledger/impl/TransactionAcquire.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/TransactionAcquire.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/TransactionAcquire.cpp.o
 .PHONY : src/ripple/app/ledger/impl/TransactionAcquire.cpp.o
 
 src/ripple/app/ledger/impl/TransactionAcquire.i: src/ripple/app/ledger/impl/TransactionAcquire.cpp.i
@@ -691,7 +691,7 @@ src/ripple/app/ledger/impl/TransactionAcquire.i: src/ripple/app/ledger/impl/Tran
 
 # target to preprocess a source file
 src/ripple/app/ledger/impl/TransactionAcquire.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/TransactionAcquire.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/TransactionAcquire.cpp.i
 .PHONY : src/ripple/app/ledger/impl/TransactionAcquire.cpp.i
 
 src/ripple/app/ledger/impl/TransactionAcquire.s: src/ripple/app/ledger/impl/TransactionAcquire.cpp.s
@@ -700,7 +700,7 @@ src/ripple/app/ledger/impl/TransactionAcquire.s: src/ripple/app/ledger/impl/Tran
 
 # target to generate assembly for a file
 src/ripple/app/ledger/impl/TransactionAcquire.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/TransactionAcquire.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/TransactionAcquire.cpp.s
 .PHONY : src/ripple/app/ledger/impl/TransactionAcquire.cpp.s
 
 src/ripple/app/ledger/impl/TransactionMaster.o: src/ripple/app/ledger/impl/TransactionMaster.cpp.o
@@ -709,7 +709,7 @@ src/ripple/app/ledger/impl/TransactionMaster.o: src/ripple/app/ledger/impl/Trans
 
 # target to build an object file
 src/ripple/app/ledger/impl/TransactionMaster.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/TransactionMaster.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/TransactionMaster.cpp.o
 .PHONY : src/ripple/app/ledger/impl/TransactionMaster.cpp.o
 
 src/ripple/app/ledger/impl/TransactionMaster.i: src/ripple/app/ledger/impl/TransactionMaster.cpp.i
@@ -718,7 +718,7 @@ src/ripple/app/ledger/impl/TransactionMaster.i: src/ripple/app/ledger/impl/Trans
 
 # target to preprocess a source file
 src/ripple/app/ledger/impl/TransactionMaster.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/TransactionMaster.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/TransactionMaster.cpp.i
 .PHONY : src/ripple/app/ledger/impl/TransactionMaster.cpp.i
 
 src/ripple/app/ledger/impl/TransactionMaster.s: src/ripple/app/ledger/impl/TransactionMaster.cpp.s
@@ -727,7 +727,7 @@ src/ripple/app/ledger/impl/TransactionMaster.s: src/ripple/app/ledger/impl/Trans
 
 # target to generate assembly for a file
 src/ripple/app/ledger/impl/TransactionMaster.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/ledger/impl/TransactionMaster.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/ledger/impl/TransactionMaster.cpp.s
 .PHONY : src/ripple/app/ledger/impl/TransactionMaster.cpp.s
 
 src/ripple/app/main/Application.o: src/ripple/app/main/Application.cpp.o
@@ -736,7 +736,7 @@ src/ripple/app/main/Application.o: src/ripple/app/main/Application.cpp.o
 
 # target to build an object file
 src/ripple/app/main/Application.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/Application.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/Application.cpp.o
 .PHONY : src/ripple/app/main/Application.cpp.o
 
 src/ripple/app/main/Application.i: src/ripple/app/main/Application.cpp.i
@@ -745,7 +745,7 @@ src/ripple/app/main/Application.i: src/ripple/app/main/Application.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/main/Application.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/Application.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/Application.cpp.i
 .PHONY : src/ripple/app/main/Application.cpp.i
 
 src/ripple/app/main/Application.s: src/ripple/app/main/Application.cpp.s
@@ -754,7 +754,7 @@ src/ripple/app/main/Application.s: src/ripple/app/main/Application.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/main/Application.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/Application.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/Application.cpp.s
 .PHONY : src/ripple/app/main/Application.cpp.s
 
 src/ripple/app/main/BasicApp.o: src/ripple/app/main/BasicApp.cpp.o
@@ -763,7 +763,7 @@ src/ripple/app/main/BasicApp.o: src/ripple/app/main/BasicApp.cpp.o
 
 # target to build an object file
 src/ripple/app/main/BasicApp.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/BasicApp.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/BasicApp.cpp.o
 .PHONY : src/ripple/app/main/BasicApp.cpp.o
 
 src/ripple/app/main/BasicApp.i: src/ripple/app/main/BasicApp.cpp.i
@@ -772,7 +772,7 @@ src/ripple/app/main/BasicApp.i: src/ripple/app/main/BasicApp.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/main/BasicApp.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/BasicApp.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/BasicApp.cpp.i
 .PHONY : src/ripple/app/main/BasicApp.cpp.i
 
 src/ripple/app/main/BasicApp.s: src/ripple/app/main/BasicApp.cpp.s
@@ -781,7 +781,7 @@ src/ripple/app/main/BasicApp.s: src/ripple/app/main/BasicApp.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/main/BasicApp.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/BasicApp.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/BasicApp.cpp.s
 .PHONY : src/ripple/app/main/BasicApp.cpp.s
 
 src/ripple/app/main/CollectorManager.o: src/ripple/app/main/CollectorManager.cpp.o
@@ -790,7 +790,7 @@ src/ripple/app/main/CollectorManager.o: src/ripple/app/main/CollectorManager.cpp
 
 # target to build an object file
 src/ripple/app/main/CollectorManager.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/CollectorManager.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/CollectorManager.cpp.o
 .PHONY : src/ripple/app/main/CollectorManager.cpp.o
 
 src/ripple/app/main/CollectorManager.i: src/ripple/app/main/CollectorManager.cpp.i
@@ -799,7 +799,7 @@ src/ripple/app/main/CollectorManager.i: src/ripple/app/main/CollectorManager.cpp
 
 # target to preprocess a source file
 src/ripple/app/main/CollectorManager.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/CollectorManager.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/CollectorManager.cpp.i
 .PHONY : src/ripple/app/main/CollectorManager.cpp.i
 
 src/ripple/app/main/CollectorManager.s: src/ripple/app/main/CollectorManager.cpp.s
@@ -808,7 +808,7 @@ src/ripple/app/main/CollectorManager.s: src/ripple/app/main/CollectorManager.cpp
 
 # target to generate assembly for a file
 src/ripple/app/main/CollectorManager.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/CollectorManager.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/CollectorManager.cpp.s
 .PHONY : src/ripple/app/main/CollectorManager.cpp.s
 
 src/ripple/app/main/DBInit.o: src/ripple/app/main/DBInit.cpp.o
@@ -817,7 +817,7 @@ src/ripple/app/main/DBInit.o: src/ripple/app/main/DBInit.cpp.o
 
 # target to build an object file
 src/ripple/app/main/DBInit.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/DBInit.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/DBInit.cpp.o
 .PHONY : src/ripple/app/main/DBInit.cpp.o
 
 src/ripple/app/main/DBInit.i: src/ripple/app/main/DBInit.cpp.i
@@ -826,7 +826,7 @@ src/ripple/app/main/DBInit.i: src/ripple/app/main/DBInit.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/main/DBInit.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/DBInit.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/DBInit.cpp.i
 .PHONY : src/ripple/app/main/DBInit.cpp.i
 
 src/ripple/app/main/DBInit.s: src/ripple/app/main/DBInit.cpp.s
@@ -835,7 +835,7 @@ src/ripple/app/main/DBInit.s: src/ripple/app/main/DBInit.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/main/DBInit.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/DBInit.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/DBInit.cpp.s
 .PHONY : src/ripple/app/main/DBInit.cpp.s
 
 src/ripple/app/main/LoadManager.o: src/ripple/app/main/LoadManager.cpp.o
@@ -844,7 +844,7 @@ src/ripple/app/main/LoadManager.o: src/ripple/app/main/LoadManager.cpp.o
 
 # target to build an object file
 src/ripple/app/main/LoadManager.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/LoadManager.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/LoadManager.cpp.o
 .PHONY : src/ripple/app/main/LoadManager.cpp.o
 
 src/ripple/app/main/LoadManager.i: src/ripple/app/main/LoadManager.cpp.i
@@ -853,7 +853,7 @@ src/ripple/app/main/LoadManager.i: src/ripple/app/main/LoadManager.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/main/LoadManager.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/LoadManager.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/LoadManager.cpp.i
 .PHONY : src/ripple/app/main/LoadManager.cpp.i
 
 src/ripple/app/main/LoadManager.s: src/ripple/app/main/LoadManager.cpp.s
@@ -862,7 +862,7 @@ src/ripple/app/main/LoadManager.s: src/ripple/app/main/LoadManager.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/main/LoadManager.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/LoadManager.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/LoadManager.cpp.s
 .PHONY : src/ripple/app/main/LoadManager.cpp.s
 
 src/ripple/app/main/Main.o: src/ripple/app/main/Main.cpp.o
@@ -871,7 +871,7 @@ src/ripple/app/main/Main.o: src/ripple/app/main/Main.cpp.o
 
 # target to build an object file
 src/ripple/app/main/Main.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/Main.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/Main.cpp.o
 .PHONY : src/ripple/app/main/Main.cpp.o
 
 src/ripple/app/main/Main.i: src/ripple/app/main/Main.cpp.i
@@ -880,7 +880,7 @@ src/ripple/app/main/Main.i: src/ripple/app/main/Main.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/main/Main.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/Main.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/Main.cpp.i
 .PHONY : src/ripple/app/main/Main.cpp.i
 
 src/ripple/app/main/Main.s: src/ripple/app/main/Main.cpp.s
@@ -889,7 +889,7 @@ src/ripple/app/main/Main.s: src/ripple/app/main/Main.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/main/Main.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/Main.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/Main.cpp.s
 .PHONY : src/ripple/app/main/Main.cpp.s
 
 src/ripple/app/main/NodeIdentity.o: src/ripple/app/main/NodeIdentity.cpp.o
@@ -898,7 +898,7 @@ src/ripple/app/main/NodeIdentity.o: src/ripple/app/main/NodeIdentity.cpp.o
 
 # target to build an object file
 src/ripple/app/main/NodeIdentity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/NodeIdentity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/NodeIdentity.cpp.o
 .PHONY : src/ripple/app/main/NodeIdentity.cpp.o
 
 src/ripple/app/main/NodeIdentity.i: src/ripple/app/main/NodeIdentity.cpp.i
@@ -907,7 +907,7 @@ src/ripple/app/main/NodeIdentity.i: src/ripple/app/main/NodeIdentity.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/main/NodeIdentity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/NodeIdentity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/NodeIdentity.cpp.i
 .PHONY : src/ripple/app/main/NodeIdentity.cpp.i
 
 src/ripple/app/main/NodeIdentity.s: src/ripple/app/main/NodeIdentity.cpp.s
@@ -916,7 +916,7 @@ src/ripple/app/main/NodeIdentity.s: src/ripple/app/main/NodeIdentity.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/main/NodeIdentity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/NodeIdentity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/NodeIdentity.cpp.s
 .PHONY : src/ripple/app/main/NodeIdentity.cpp.s
 
 src/ripple/app/main/NodeStoreScheduler.o: src/ripple/app/main/NodeStoreScheduler.cpp.o
@@ -925,7 +925,7 @@ src/ripple/app/main/NodeStoreScheduler.o: src/ripple/app/main/NodeStoreScheduler
 
 # target to build an object file
 src/ripple/app/main/NodeStoreScheduler.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/NodeStoreScheduler.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/NodeStoreScheduler.cpp.o
 .PHONY : src/ripple/app/main/NodeStoreScheduler.cpp.o
 
 src/ripple/app/main/NodeStoreScheduler.i: src/ripple/app/main/NodeStoreScheduler.cpp.i
@@ -934,7 +934,7 @@ src/ripple/app/main/NodeStoreScheduler.i: src/ripple/app/main/NodeStoreScheduler
 
 # target to preprocess a source file
 src/ripple/app/main/NodeStoreScheduler.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/NodeStoreScheduler.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/NodeStoreScheduler.cpp.i
 .PHONY : src/ripple/app/main/NodeStoreScheduler.cpp.i
 
 src/ripple/app/main/NodeStoreScheduler.s: src/ripple/app/main/NodeStoreScheduler.cpp.s
@@ -943,7 +943,7 @@ src/ripple/app/main/NodeStoreScheduler.s: src/ripple/app/main/NodeStoreScheduler
 
 # target to generate assembly for a file
 src/ripple/app/main/NodeStoreScheduler.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/main/NodeStoreScheduler.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/main/NodeStoreScheduler.cpp.s
 .PHONY : src/ripple/app/main/NodeStoreScheduler.cpp.s
 
 src/ripple/app/misc/CanonicalTXSet.o: src/ripple/app/misc/CanonicalTXSet.cpp.o
@@ -952,7 +952,7 @@ src/ripple/app/misc/CanonicalTXSet.o: src/ripple/app/misc/CanonicalTXSet.cpp.o
 
 # target to build an object file
 src/ripple/app/misc/CanonicalTXSet.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/CanonicalTXSet.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/CanonicalTXSet.cpp.o
 .PHONY : src/ripple/app/misc/CanonicalTXSet.cpp.o
 
 src/ripple/app/misc/CanonicalTXSet.i: src/ripple/app/misc/CanonicalTXSet.cpp.i
@@ -961,7 +961,7 @@ src/ripple/app/misc/CanonicalTXSet.i: src/ripple/app/misc/CanonicalTXSet.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/misc/CanonicalTXSet.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/CanonicalTXSet.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/CanonicalTXSet.cpp.i
 .PHONY : src/ripple/app/misc/CanonicalTXSet.cpp.i
 
 src/ripple/app/misc/CanonicalTXSet.s: src/ripple/app/misc/CanonicalTXSet.cpp.s
@@ -970,7 +970,7 @@ src/ripple/app/misc/CanonicalTXSet.s: src/ripple/app/misc/CanonicalTXSet.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/misc/CanonicalTXSet.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/CanonicalTXSet.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/CanonicalTXSet.cpp.s
 .PHONY : src/ripple/app/misc/CanonicalTXSet.cpp.s
 
 src/ripple/app/misc/FeeVoteImpl.o: src/ripple/app/misc/FeeVoteImpl.cpp.o
@@ -979,7 +979,7 @@ src/ripple/app/misc/FeeVoteImpl.o: src/ripple/app/misc/FeeVoteImpl.cpp.o
 
 # target to build an object file
 src/ripple/app/misc/FeeVoteImpl.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/FeeVoteImpl.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/FeeVoteImpl.cpp.o
 .PHONY : src/ripple/app/misc/FeeVoteImpl.cpp.o
 
 src/ripple/app/misc/FeeVoteImpl.i: src/ripple/app/misc/FeeVoteImpl.cpp.i
@@ -988,7 +988,7 @@ src/ripple/app/misc/FeeVoteImpl.i: src/ripple/app/misc/FeeVoteImpl.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/misc/FeeVoteImpl.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/FeeVoteImpl.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/FeeVoteImpl.cpp.i
 .PHONY : src/ripple/app/misc/FeeVoteImpl.cpp.i
 
 src/ripple/app/misc/FeeVoteImpl.s: src/ripple/app/misc/FeeVoteImpl.cpp.s
@@ -997,7 +997,7 @@ src/ripple/app/misc/FeeVoteImpl.s: src/ripple/app/misc/FeeVoteImpl.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/misc/FeeVoteImpl.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/FeeVoteImpl.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/FeeVoteImpl.cpp.s
 .PHONY : src/ripple/app/misc/FeeVoteImpl.cpp.s
 
 src/ripple/app/misc/HashRouter.o: src/ripple/app/misc/HashRouter.cpp.o
@@ -1006,7 +1006,7 @@ src/ripple/app/misc/HashRouter.o: src/ripple/app/misc/HashRouter.cpp.o
 
 # target to build an object file
 src/ripple/app/misc/HashRouter.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/HashRouter.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/HashRouter.cpp.o
 .PHONY : src/ripple/app/misc/HashRouter.cpp.o
 
 src/ripple/app/misc/HashRouter.i: src/ripple/app/misc/HashRouter.cpp.i
@@ -1015,7 +1015,7 @@ src/ripple/app/misc/HashRouter.i: src/ripple/app/misc/HashRouter.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/misc/HashRouter.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/HashRouter.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/HashRouter.cpp.i
 .PHONY : src/ripple/app/misc/HashRouter.cpp.i
 
 src/ripple/app/misc/HashRouter.s: src/ripple/app/misc/HashRouter.cpp.s
@@ -1024,7 +1024,7 @@ src/ripple/app/misc/HashRouter.s: src/ripple/app/misc/HashRouter.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/misc/HashRouter.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/HashRouter.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/HashRouter.cpp.s
 .PHONY : src/ripple/app/misc/HashRouter.cpp.s
 
 src/ripple/app/misc/NetworkOPs.o: src/ripple/app/misc/NetworkOPs.cpp.o
@@ -1033,7 +1033,7 @@ src/ripple/app/misc/NetworkOPs.o: src/ripple/app/misc/NetworkOPs.cpp.o
 
 # target to build an object file
 src/ripple/app/misc/NetworkOPs.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/NetworkOPs.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/NetworkOPs.cpp.o
 .PHONY : src/ripple/app/misc/NetworkOPs.cpp.o
 
 src/ripple/app/misc/NetworkOPs.i: src/ripple/app/misc/NetworkOPs.cpp.i
@@ -1042,7 +1042,7 @@ src/ripple/app/misc/NetworkOPs.i: src/ripple/app/misc/NetworkOPs.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/misc/NetworkOPs.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/NetworkOPs.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/NetworkOPs.cpp.i
 .PHONY : src/ripple/app/misc/NetworkOPs.cpp.i
 
 src/ripple/app/misc/NetworkOPs.s: src/ripple/app/misc/NetworkOPs.cpp.s
@@ -1051,7 +1051,7 @@ src/ripple/app/misc/NetworkOPs.s: src/ripple/app/misc/NetworkOPs.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/misc/NetworkOPs.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/NetworkOPs.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/NetworkOPs.cpp.s
 .PHONY : src/ripple/app/misc/NetworkOPs.cpp.s
 
 src/ripple/app/misc/SHAMapStoreImp.o: src/ripple/app/misc/SHAMapStoreImp.cpp.o
@@ -1060,7 +1060,7 @@ src/ripple/app/misc/SHAMapStoreImp.o: src/ripple/app/misc/SHAMapStoreImp.cpp.o
 
 # target to build an object file
 src/ripple/app/misc/SHAMapStoreImp.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/SHAMapStoreImp.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/SHAMapStoreImp.cpp.o
 .PHONY : src/ripple/app/misc/SHAMapStoreImp.cpp.o
 
 src/ripple/app/misc/SHAMapStoreImp.i: src/ripple/app/misc/SHAMapStoreImp.cpp.i
@@ -1069,7 +1069,7 @@ src/ripple/app/misc/SHAMapStoreImp.i: src/ripple/app/misc/SHAMapStoreImp.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/misc/SHAMapStoreImp.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/SHAMapStoreImp.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/SHAMapStoreImp.cpp.i
 .PHONY : src/ripple/app/misc/SHAMapStoreImp.cpp.i
 
 src/ripple/app/misc/SHAMapStoreImp.s: src/ripple/app/misc/SHAMapStoreImp.cpp.s
@@ -1078,7 +1078,7 @@ src/ripple/app/misc/SHAMapStoreImp.s: src/ripple/app/misc/SHAMapStoreImp.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/misc/SHAMapStoreImp.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/SHAMapStoreImp.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/SHAMapStoreImp.cpp.s
 .PHONY : src/ripple/app/misc/SHAMapStoreImp.cpp.s
 
 src/ripple/app/misc/impl/AccountTxPaging.o: src/ripple/app/misc/impl/AccountTxPaging.cpp.o
@@ -1087,7 +1087,7 @@ src/ripple/app/misc/impl/AccountTxPaging.o: src/ripple/app/misc/impl/AccountTxPa
 
 # target to build an object file
 src/ripple/app/misc/impl/AccountTxPaging.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/AccountTxPaging.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/AccountTxPaging.cpp.o
 .PHONY : src/ripple/app/misc/impl/AccountTxPaging.cpp.o
 
 src/ripple/app/misc/impl/AccountTxPaging.i: src/ripple/app/misc/impl/AccountTxPaging.cpp.i
@@ -1096,7 +1096,7 @@ src/ripple/app/misc/impl/AccountTxPaging.i: src/ripple/app/misc/impl/AccountTxPa
 
 # target to preprocess a source file
 src/ripple/app/misc/impl/AccountTxPaging.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/AccountTxPaging.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/AccountTxPaging.cpp.i
 .PHONY : src/ripple/app/misc/impl/AccountTxPaging.cpp.i
 
 src/ripple/app/misc/impl/AccountTxPaging.s: src/ripple/app/misc/impl/AccountTxPaging.cpp.s
@@ -1105,7 +1105,7 @@ src/ripple/app/misc/impl/AccountTxPaging.s: src/ripple/app/misc/impl/AccountTxPa
 
 # target to generate assembly for a file
 src/ripple/app/misc/impl/AccountTxPaging.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/AccountTxPaging.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/AccountTxPaging.cpp.s
 .PHONY : src/ripple/app/misc/impl/AccountTxPaging.cpp.s
 
 src/ripple/app/misc/impl/AmendmentTable.o: src/ripple/app/misc/impl/AmendmentTable.cpp.o
@@ -1114,7 +1114,7 @@ src/ripple/app/misc/impl/AmendmentTable.o: src/ripple/app/misc/impl/AmendmentTab
 
 # target to build an object file
 src/ripple/app/misc/impl/AmendmentTable.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/AmendmentTable.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/AmendmentTable.cpp.o
 .PHONY : src/ripple/app/misc/impl/AmendmentTable.cpp.o
 
 src/ripple/app/misc/impl/AmendmentTable.i: src/ripple/app/misc/impl/AmendmentTable.cpp.i
@@ -1123,7 +1123,7 @@ src/ripple/app/misc/impl/AmendmentTable.i: src/ripple/app/misc/impl/AmendmentTab
 
 # target to preprocess a source file
 src/ripple/app/misc/impl/AmendmentTable.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/AmendmentTable.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/AmendmentTable.cpp.i
 .PHONY : src/ripple/app/misc/impl/AmendmentTable.cpp.i
 
 src/ripple/app/misc/impl/AmendmentTable.s: src/ripple/app/misc/impl/AmendmentTable.cpp.s
@@ -1132,7 +1132,7 @@ src/ripple/app/misc/impl/AmendmentTable.s: src/ripple/app/misc/impl/AmendmentTab
 
 # target to generate assembly for a file
 src/ripple/app/misc/impl/AmendmentTable.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/AmendmentTable.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/AmendmentTable.cpp.s
 .PHONY : src/ripple/app/misc/impl/AmendmentTable.cpp.s
 
 src/ripple/app/misc/impl/LoadFeeTrack.o: src/ripple/app/misc/impl/LoadFeeTrack.cpp.o
@@ -1141,7 +1141,7 @@ src/ripple/app/misc/impl/LoadFeeTrack.o: src/ripple/app/misc/impl/LoadFeeTrack.c
 
 # target to build an object file
 src/ripple/app/misc/impl/LoadFeeTrack.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/LoadFeeTrack.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/LoadFeeTrack.cpp.o
 .PHONY : src/ripple/app/misc/impl/LoadFeeTrack.cpp.o
 
 src/ripple/app/misc/impl/LoadFeeTrack.i: src/ripple/app/misc/impl/LoadFeeTrack.cpp.i
@@ -1150,7 +1150,7 @@ src/ripple/app/misc/impl/LoadFeeTrack.i: src/ripple/app/misc/impl/LoadFeeTrack.c
 
 # target to preprocess a source file
 src/ripple/app/misc/impl/LoadFeeTrack.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/LoadFeeTrack.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/LoadFeeTrack.cpp.i
 .PHONY : src/ripple/app/misc/impl/LoadFeeTrack.cpp.i
 
 src/ripple/app/misc/impl/LoadFeeTrack.s: src/ripple/app/misc/impl/LoadFeeTrack.cpp.s
@@ -1159,7 +1159,7 @@ src/ripple/app/misc/impl/LoadFeeTrack.s: src/ripple/app/misc/impl/LoadFeeTrack.c
 
 # target to generate assembly for a file
 src/ripple/app/misc/impl/LoadFeeTrack.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/LoadFeeTrack.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/LoadFeeTrack.cpp.s
 .PHONY : src/ripple/app/misc/impl/LoadFeeTrack.cpp.s
 
 src/ripple/app/misc/impl/Manifest.o: src/ripple/app/misc/impl/Manifest.cpp.o
@@ -1168,7 +1168,7 @@ src/ripple/app/misc/impl/Manifest.o: src/ripple/app/misc/impl/Manifest.cpp.o
 
 # target to build an object file
 src/ripple/app/misc/impl/Manifest.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/Manifest.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/Manifest.cpp.o
 .PHONY : src/ripple/app/misc/impl/Manifest.cpp.o
 
 src/ripple/app/misc/impl/Manifest.i: src/ripple/app/misc/impl/Manifest.cpp.i
@@ -1177,7 +1177,7 @@ src/ripple/app/misc/impl/Manifest.i: src/ripple/app/misc/impl/Manifest.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/misc/impl/Manifest.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/Manifest.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/Manifest.cpp.i
 .PHONY : src/ripple/app/misc/impl/Manifest.cpp.i
 
 src/ripple/app/misc/impl/Manifest.s: src/ripple/app/misc/impl/Manifest.cpp.s
@@ -1186,7 +1186,7 @@ src/ripple/app/misc/impl/Manifest.s: src/ripple/app/misc/impl/Manifest.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/misc/impl/Manifest.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/Manifest.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/Manifest.cpp.s
 .PHONY : src/ripple/app/misc/impl/Manifest.cpp.s
 
 src/ripple/app/misc/impl/Transaction.o: src/ripple/app/misc/impl/Transaction.cpp.o
@@ -1195,7 +1195,7 @@ src/ripple/app/misc/impl/Transaction.o: src/ripple/app/misc/impl/Transaction.cpp
 
 # target to build an object file
 src/ripple/app/misc/impl/Transaction.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/Transaction.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/Transaction.cpp.o
 .PHONY : src/ripple/app/misc/impl/Transaction.cpp.o
 
 src/ripple/app/misc/impl/Transaction.i: src/ripple/app/misc/impl/Transaction.cpp.i
@@ -1204,7 +1204,7 @@ src/ripple/app/misc/impl/Transaction.i: src/ripple/app/misc/impl/Transaction.cpp
 
 # target to preprocess a source file
 src/ripple/app/misc/impl/Transaction.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/Transaction.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/Transaction.cpp.i
 .PHONY : src/ripple/app/misc/impl/Transaction.cpp.i
 
 src/ripple/app/misc/impl/Transaction.s: src/ripple/app/misc/impl/Transaction.cpp.s
@@ -1213,7 +1213,7 @@ src/ripple/app/misc/impl/Transaction.s: src/ripple/app/misc/impl/Transaction.cpp
 
 # target to generate assembly for a file
 src/ripple/app/misc/impl/Transaction.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/Transaction.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/Transaction.cpp.s
 .PHONY : src/ripple/app/misc/impl/Transaction.cpp.s
 
 src/ripple/app/misc/impl/TxQ.o: src/ripple/app/misc/impl/TxQ.cpp.o
@@ -1222,7 +1222,7 @@ src/ripple/app/misc/impl/TxQ.o: src/ripple/app/misc/impl/TxQ.cpp.o
 
 # target to build an object file
 src/ripple/app/misc/impl/TxQ.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/TxQ.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/TxQ.cpp.o
 .PHONY : src/ripple/app/misc/impl/TxQ.cpp.o
 
 src/ripple/app/misc/impl/TxQ.i: src/ripple/app/misc/impl/TxQ.cpp.i
@@ -1231,7 +1231,7 @@ src/ripple/app/misc/impl/TxQ.i: src/ripple/app/misc/impl/TxQ.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/misc/impl/TxQ.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/TxQ.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/TxQ.cpp.i
 .PHONY : src/ripple/app/misc/impl/TxQ.cpp.i
 
 src/ripple/app/misc/impl/TxQ.s: src/ripple/app/misc/impl/TxQ.cpp.s
@@ -1240,7 +1240,7 @@ src/ripple/app/misc/impl/TxQ.s: src/ripple/app/misc/impl/TxQ.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/misc/impl/TxQ.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/TxQ.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/TxQ.cpp.s
 .PHONY : src/ripple/app/misc/impl/TxQ.cpp.s
 
 src/ripple/app/misc/impl/ValidatorKeys.o: src/ripple/app/misc/impl/ValidatorKeys.cpp.o
@@ -1249,7 +1249,7 @@ src/ripple/app/misc/impl/ValidatorKeys.o: src/ripple/app/misc/impl/ValidatorKeys
 
 # target to build an object file
 src/ripple/app/misc/impl/ValidatorKeys.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/ValidatorKeys.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/ValidatorKeys.cpp.o
 .PHONY : src/ripple/app/misc/impl/ValidatorKeys.cpp.o
 
 src/ripple/app/misc/impl/ValidatorKeys.i: src/ripple/app/misc/impl/ValidatorKeys.cpp.i
@@ -1258,7 +1258,7 @@ src/ripple/app/misc/impl/ValidatorKeys.i: src/ripple/app/misc/impl/ValidatorKeys
 
 # target to preprocess a source file
 src/ripple/app/misc/impl/ValidatorKeys.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/ValidatorKeys.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/ValidatorKeys.cpp.i
 .PHONY : src/ripple/app/misc/impl/ValidatorKeys.cpp.i
 
 src/ripple/app/misc/impl/ValidatorKeys.s: src/ripple/app/misc/impl/ValidatorKeys.cpp.s
@@ -1267,7 +1267,7 @@ src/ripple/app/misc/impl/ValidatorKeys.s: src/ripple/app/misc/impl/ValidatorKeys
 
 # target to generate assembly for a file
 src/ripple/app/misc/impl/ValidatorKeys.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/ValidatorKeys.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/ValidatorKeys.cpp.s
 .PHONY : src/ripple/app/misc/impl/ValidatorKeys.cpp.s
 
 src/ripple/app/misc/impl/ValidatorList.o: src/ripple/app/misc/impl/ValidatorList.cpp.o
@@ -1276,7 +1276,7 @@ src/ripple/app/misc/impl/ValidatorList.o: src/ripple/app/misc/impl/ValidatorList
 
 # target to build an object file
 src/ripple/app/misc/impl/ValidatorList.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/ValidatorList.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/ValidatorList.cpp.o
 .PHONY : src/ripple/app/misc/impl/ValidatorList.cpp.o
 
 src/ripple/app/misc/impl/ValidatorList.i: src/ripple/app/misc/impl/ValidatorList.cpp.i
@@ -1285,7 +1285,7 @@ src/ripple/app/misc/impl/ValidatorList.i: src/ripple/app/misc/impl/ValidatorList
 
 # target to preprocess a source file
 src/ripple/app/misc/impl/ValidatorList.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/ValidatorList.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/ValidatorList.cpp.i
 .PHONY : src/ripple/app/misc/impl/ValidatorList.cpp.i
 
 src/ripple/app/misc/impl/ValidatorList.s: src/ripple/app/misc/impl/ValidatorList.cpp.s
@@ -1294,7 +1294,7 @@ src/ripple/app/misc/impl/ValidatorList.s: src/ripple/app/misc/impl/ValidatorList
 
 # target to generate assembly for a file
 src/ripple/app/misc/impl/ValidatorList.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/ValidatorList.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/ValidatorList.cpp.s
 .PHONY : src/ripple/app/misc/impl/ValidatorList.cpp.s
 
 src/ripple/app/misc/impl/ValidatorSite.o: src/ripple/app/misc/impl/ValidatorSite.cpp.o
@@ -1303,7 +1303,7 @@ src/ripple/app/misc/impl/ValidatorSite.o: src/ripple/app/misc/impl/ValidatorSite
 
 # target to build an object file
 src/ripple/app/misc/impl/ValidatorSite.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/ValidatorSite.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/ValidatorSite.cpp.o
 .PHONY : src/ripple/app/misc/impl/ValidatorSite.cpp.o
 
 src/ripple/app/misc/impl/ValidatorSite.i: src/ripple/app/misc/impl/ValidatorSite.cpp.i
@@ -1312,7 +1312,7 @@ src/ripple/app/misc/impl/ValidatorSite.i: src/ripple/app/misc/impl/ValidatorSite
 
 # target to preprocess a source file
 src/ripple/app/misc/impl/ValidatorSite.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/ValidatorSite.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/ValidatorSite.cpp.i
 .PHONY : src/ripple/app/misc/impl/ValidatorSite.cpp.i
 
 src/ripple/app/misc/impl/ValidatorSite.s: src/ripple/app/misc/impl/ValidatorSite.cpp.s
@@ -1321,7 +1321,7 @@ src/ripple/app/misc/impl/ValidatorSite.s: src/ripple/app/misc/impl/ValidatorSite
 
 # target to generate assembly for a file
 src/ripple/app/misc/impl/ValidatorSite.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/misc/impl/ValidatorSite.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/misc/impl/ValidatorSite.cpp.s
 .PHONY : src/ripple/app/misc/impl/ValidatorSite.cpp.s
 
 src/ripple/app/paths/AccountCurrencies.o: src/ripple/app/paths/AccountCurrencies.cpp.o
@@ -1330,7 +1330,7 @@ src/ripple/app/paths/AccountCurrencies.o: src/ripple/app/paths/AccountCurrencies
 
 # target to build an object file
 src/ripple/app/paths/AccountCurrencies.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/AccountCurrencies.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/AccountCurrencies.cpp.o
 .PHONY : src/ripple/app/paths/AccountCurrencies.cpp.o
 
 src/ripple/app/paths/AccountCurrencies.i: src/ripple/app/paths/AccountCurrencies.cpp.i
@@ -1339,7 +1339,7 @@ src/ripple/app/paths/AccountCurrencies.i: src/ripple/app/paths/AccountCurrencies
 
 # target to preprocess a source file
 src/ripple/app/paths/AccountCurrencies.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/AccountCurrencies.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/AccountCurrencies.cpp.i
 .PHONY : src/ripple/app/paths/AccountCurrencies.cpp.i
 
 src/ripple/app/paths/AccountCurrencies.s: src/ripple/app/paths/AccountCurrencies.cpp.s
@@ -1348,7 +1348,7 @@ src/ripple/app/paths/AccountCurrencies.s: src/ripple/app/paths/AccountCurrencies
 
 # target to generate assembly for a file
 src/ripple/app/paths/AccountCurrencies.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/AccountCurrencies.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/AccountCurrencies.cpp.s
 .PHONY : src/ripple/app/paths/AccountCurrencies.cpp.s
 
 src/ripple/app/paths/Credit.o: src/ripple/app/paths/Credit.cpp.o
@@ -1357,7 +1357,7 @@ src/ripple/app/paths/Credit.o: src/ripple/app/paths/Credit.cpp.o
 
 # target to build an object file
 src/ripple/app/paths/Credit.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/Credit.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/Credit.cpp.o
 .PHONY : src/ripple/app/paths/Credit.cpp.o
 
 src/ripple/app/paths/Credit.i: src/ripple/app/paths/Credit.cpp.i
@@ -1366,7 +1366,7 @@ src/ripple/app/paths/Credit.i: src/ripple/app/paths/Credit.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/paths/Credit.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/Credit.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/Credit.cpp.i
 .PHONY : src/ripple/app/paths/Credit.cpp.i
 
 src/ripple/app/paths/Credit.s: src/ripple/app/paths/Credit.cpp.s
@@ -1375,7 +1375,7 @@ src/ripple/app/paths/Credit.s: src/ripple/app/paths/Credit.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/paths/Credit.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/Credit.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/Credit.cpp.s
 .PHONY : src/ripple/app/paths/Credit.cpp.s
 
 src/ripple/app/paths/Flow.o: src/ripple/app/paths/Flow.cpp.o
@@ -1384,7 +1384,7 @@ src/ripple/app/paths/Flow.o: src/ripple/app/paths/Flow.cpp.o
 
 # target to build an object file
 src/ripple/app/paths/Flow.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/Flow.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/Flow.cpp.o
 .PHONY : src/ripple/app/paths/Flow.cpp.o
 
 src/ripple/app/paths/Flow.i: src/ripple/app/paths/Flow.cpp.i
@@ -1393,7 +1393,7 @@ src/ripple/app/paths/Flow.i: src/ripple/app/paths/Flow.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/paths/Flow.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/Flow.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/Flow.cpp.i
 .PHONY : src/ripple/app/paths/Flow.cpp.i
 
 src/ripple/app/paths/Flow.s: src/ripple/app/paths/Flow.cpp.s
@@ -1402,7 +1402,7 @@ src/ripple/app/paths/Flow.s: src/ripple/app/paths/Flow.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/paths/Flow.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/Flow.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/Flow.cpp.s
 .PHONY : src/ripple/app/paths/Flow.cpp.s
 
 src/ripple/app/paths/Node.o: src/ripple/app/paths/Node.cpp.o
@@ -1411,7 +1411,7 @@ src/ripple/app/paths/Node.o: src/ripple/app/paths/Node.cpp.o
 
 # target to build an object file
 src/ripple/app/paths/Node.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/Node.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/Node.cpp.o
 .PHONY : src/ripple/app/paths/Node.cpp.o
 
 src/ripple/app/paths/Node.i: src/ripple/app/paths/Node.cpp.i
@@ -1420,7 +1420,7 @@ src/ripple/app/paths/Node.i: src/ripple/app/paths/Node.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/paths/Node.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/Node.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/Node.cpp.i
 .PHONY : src/ripple/app/paths/Node.cpp.i
 
 src/ripple/app/paths/Node.s: src/ripple/app/paths/Node.cpp.s
@@ -1429,7 +1429,7 @@ src/ripple/app/paths/Node.s: src/ripple/app/paths/Node.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/paths/Node.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/Node.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/Node.cpp.s
 .PHONY : src/ripple/app/paths/Node.cpp.s
 
 src/ripple/app/paths/PathRequest.o: src/ripple/app/paths/PathRequest.cpp.o
@@ -1438,7 +1438,7 @@ src/ripple/app/paths/PathRequest.o: src/ripple/app/paths/PathRequest.cpp.o
 
 # target to build an object file
 src/ripple/app/paths/PathRequest.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/PathRequest.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/PathRequest.cpp.o
 .PHONY : src/ripple/app/paths/PathRequest.cpp.o
 
 src/ripple/app/paths/PathRequest.i: src/ripple/app/paths/PathRequest.cpp.i
@@ -1447,7 +1447,7 @@ src/ripple/app/paths/PathRequest.i: src/ripple/app/paths/PathRequest.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/paths/PathRequest.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/PathRequest.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/PathRequest.cpp.i
 .PHONY : src/ripple/app/paths/PathRequest.cpp.i
 
 src/ripple/app/paths/PathRequest.s: src/ripple/app/paths/PathRequest.cpp.s
@@ -1456,7 +1456,7 @@ src/ripple/app/paths/PathRequest.s: src/ripple/app/paths/PathRequest.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/paths/PathRequest.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/PathRequest.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/PathRequest.cpp.s
 .PHONY : src/ripple/app/paths/PathRequest.cpp.s
 
 src/ripple/app/paths/PathRequests.o: src/ripple/app/paths/PathRequests.cpp.o
@@ -1465,7 +1465,7 @@ src/ripple/app/paths/PathRequests.o: src/ripple/app/paths/PathRequests.cpp.o
 
 # target to build an object file
 src/ripple/app/paths/PathRequests.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/PathRequests.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/PathRequests.cpp.o
 .PHONY : src/ripple/app/paths/PathRequests.cpp.o
 
 src/ripple/app/paths/PathRequests.i: src/ripple/app/paths/PathRequests.cpp.i
@@ -1474,7 +1474,7 @@ src/ripple/app/paths/PathRequests.i: src/ripple/app/paths/PathRequests.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/paths/PathRequests.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/PathRequests.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/PathRequests.cpp.i
 .PHONY : src/ripple/app/paths/PathRequests.cpp.i
 
 src/ripple/app/paths/PathRequests.s: src/ripple/app/paths/PathRequests.cpp.s
@@ -1483,7 +1483,7 @@ src/ripple/app/paths/PathRequests.s: src/ripple/app/paths/PathRequests.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/paths/PathRequests.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/PathRequests.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/PathRequests.cpp.s
 .PHONY : src/ripple/app/paths/PathRequests.cpp.s
 
 src/ripple/app/paths/PathState.o: src/ripple/app/paths/PathState.cpp.o
@@ -1492,7 +1492,7 @@ src/ripple/app/paths/PathState.o: src/ripple/app/paths/PathState.cpp.o
 
 # target to build an object file
 src/ripple/app/paths/PathState.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/PathState.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/PathState.cpp.o
 .PHONY : src/ripple/app/paths/PathState.cpp.o
 
 src/ripple/app/paths/PathState.i: src/ripple/app/paths/PathState.cpp.i
@@ -1501,7 +1501,7 @@ src/ripple/app/paths/PathState.i: src/ripple/app/paths/PathState.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/paths/PathState.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/PathState.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/PathState.cpp.i
 .PHONY : src/ripple/app/paths/PathState.cpp.i
 
 src/ripple/app/paths/PathState.s: src/ripple/app/paths/PathState.cpp.s
@@ -1510,7 +1510,7 @@ src/ripple/app/paths/PathState.s: src/ripple/app/paths/PathState.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/paths/PathState.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/PathState.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/PathState.cpp.s
 .PHONY : src/ripple/app/paths/PathState.cpp.s
 
 src/ripple/app/paths/Pathfinder.o: src/ripple/app/paths/Pathfinder.cpp.o
@@ -1519,7 +1519,7 @@ src/ripple/app/paths/Pathfinder.o: src/ripple/app/paths/Pathfinder.cpp.o
 
 # target to build an object file
 src/ripple/app/paths/Pathfinder.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/Pathfinder.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/Pathfinder.cpp.o
 .PHONY : src/ripple/app/paths/Pathfinder.cpp.o
 
 src/ripple/app/paths/Pathfinder.i: src/ripple/app/paths/Pathfinder.cpp.i
@@ -1528,7 +1528,7 @@ src/ripple/app/paths/Pathfinder.i: src/ripple/app/paths/Pathfinder.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/paths/Pathfinder.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/Pathfinder.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/Pathfinder.cpp.i
 .PHONY : src/ripple/app/paths/Pathfinder.cpp.i
 
 src/ripple/app/paths/Pathfinder.s: src/ripple/app/paths/Pathfinder.cpp.s
@@ -1537,7 +1537,7 @@ src/ripple/app/paths/Pathfinder.s: src/ripple/app/paths/Pathfinder.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/paths/Pathfinder.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/Pathfinder.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/Pathfinder.cpp.s
 .PHONY : src/ripple/app/paths/Pathfinder.cpp.s
 
 src/ripple/app/paths/RippleCalc.o: src/ripple/app/paths/RippleCalc.cpp.o
@@ -1546,7 +1546,7 @@ src/ripple/app/paths/RippleCalc.o: src/ripple/app/paths/RippleCalc.cpp.o
 
 # target to build an object file
 src/ripple/app/paths/RippleCalc.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/RippleCalc.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/RippleCalc.cpp.o
 .PHONY : src/ripple/app/paths/RippleCalc.cpp.o
 
 src/ripple/app/paths/RippleCalc.i: src/ripple/app/paths/RippleCalc.cpp.i
@@ -1555,7 +1555,7 @@ src/ripple/app/paths/RippleCalc.i: src/ripple/app/paths/RippleCalc.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/paths/RippleCalc.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/RippleCalc.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/RippleCalc.cpp.i
 .PHONY : src/ripple/app/paths/RippleCalc.cpp.i
 
 src/ripple/app/paths/RippleCalc.s: src/ripple/app/paths/RippleCalc.cpp.s
@@ -1564,7 +1564,7 @@ src/ripple/app/paths/RippleCalc.s: src/ripple/app/paths/RippleCalc.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/paths/RippleCalc.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/RippleCalc.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/RippleCalc.cpp.s
 .PHONY : src/ripple/app/paths/RippleCalc.cpp.s
 
 src/ripple/app/paths/RippleLineCache.o: src/ripple/app/paths/RippleLineCache.cpp.o
@@ -1573,7 +1573,7 @@ src/ripple/app/paths/RippleLineCache.o: src/ripple/app/paths/RippleLineCache.cpp
 
 # target to build an object file
 src/ripple/app/paths/RippleLineCache.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/RippleLineCache.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/RippleLineCache.cpp.o
 .PHONY : src/ripple/app/paths/RippleLineCache.cpp.o
 
 src/ripple/app/paths/RippleLineCache.i: src/ripple/app/paths/RippleLineCache.cpp.i
@@ -1582,7 +1582,7 @@ src/ripple/app/paths/RippleLineCache.i: src/ripple/app/paths/RippleLineCache.cpp
 
 # target to preprocess a source file
 src/ripple/app/paths/RippleLineCache.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/RippleLineCache.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/RippleLineCache.cpp.i
 .PHONY : src/ripple/app/paths/RippleLineCache.cpp.i
 
 src/ripple/app/paths/RippleLineCache.s: src/ripple/app/paths/RippleLineCache.cpp.s
@@ -1591,7 +1591,7 @@ src/ripple/app/paths/RippleLineCache.s: src/ripple/app/paths/RippleLineCache.cpp
 
 # target to generate assembly for a file
 src/ripple/app/paths/RippleLineCache.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/RippleLineCache.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/RippleLineCache.cpp.s
 .PHONY : src/ripple/app/paths/RippleLineCache.cpp.s
 
 src/ripple/app/paths/RippleState.o: src/ripple/app/paths/RippleState.cpp.o
@@ -1600,7 +1600,7 @@ src/ripple/app/paths/RippleState.o: src/ripple/app/paths/RippleState.cpp.o
 
 # target to build an object file
 src/ripple/app/paths/RippleState.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/RippleState.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/RippleState.cpp.o
 .PHONY : src/ripple/app/paths/RippleState.cpp.o
 
 src/ripple/app/paths/RippleState.i: src/ripple/app/paths/RippleState.cpp.i
@@ -1609,7 +1609,7 @@ src/ripple/app/paths/RippleState.i: src/ripple/app/paths/RippleState.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/paths/RippleState.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/RippleState.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/RippleState.cpp.i
 .PHONY : src/ripple/app/paths/RippleState.cpp.i
 
 src/ripple/app/paths/RippleState.s: src/ripple/app/paths/RippleState.cpp.s
@@ -1618,7 +1618,7 @@ src/ripple/app/paths/RippleState.s: src/ripple/app/paths/RippleState.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/paths/RippleState.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/RippleState.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/RippleState.cpp.s
 .PHONY : src/ripple/app/paths/RippleState.cpp.s
 
 src/ripple/app/paths/cursor/AdvanceNode.o: src/ripple/app/paths/cursor/AdvanceNode.cpp.o
@@ -1627,7 +1627,7 @@ src/ripple/app/paths/cursor/AdvanceNode.o: src/ripple/app/paths/cursor/AdvanceNo
 
 # target to build an object file
 src/ripple/app/paths/cursor/AdvanceNode.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/AdvanceNode.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/AdvanceNode.cpp.o
 .PHONY : src/ripple/app/paths/cursor/AdvanceNode.cpp.o
 
 src/ripple/app/paths/cursor/AdvanceNode.i: src/ripple/app/paths/cursor/AdvanceNode.cpp.i
@@ -1636,7 +1636,7 @@ src/ripple/app/paths/cursor/AdvanceNode.i: src/ripple/app/paths/cursor/AdvanceNo
 
 # target to preprocess a source file
 src/ripple/app/paths/cursor/AdvanceNode.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/AdvanceNode.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/AdvanceNode.cpp.i
 .PHONY : src/ripple/app/paths/cursor/AdvanceNode.cpp.i
 
 src/ripple/app/paths/cursor/AdvanceNode.s: src/ripple/app/paths/cursor/AdvanceNode.cpp.s
@@ -1645,7 +1645,7 @@ src/ripple/app/paths/cursor/AdvanceNode.s: src/ripple/app/paths/cursor/AdvanceNo
 
 # target to generate assembly for a file
 src/ripple/app/paths/cursor/AdvanceNode.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/AdvanceNode.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/AdvanceNode.cpp.s
 .PHONY : src/ripple/app/paths/cursor/AdvanceNode.cpp.s
 
 src/ripple/app/paths/cursor/DeliverNodeForward.o: src/ripple/app/paths/cursor/DeliverNodeForward.cpp.o
@@ -1654,7 +1654,7 @@ src/ripple/app/paths/cursor/DeliverNodeForward.o: src/ripple/app/paths/cursor/De
 
 # target to build an object file
 src/ripple/app/paths/cursor/DeliverNodeForward.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/DeliverNodeForward.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/DeliverNodeForward.cpp.o
 .PHONY : src/ripple/app/paths/cursor/DeliverNodeForward.cpp.o
 
 src/ripple/app/paths/cursor/DeliverNodeForward.i: src/ripple/app/paths/cursor/DeliverNodeForward.cpp.i
@@ -1663,7 +1663,7 @@ src/ripple/app/paths/cursor/DeliverNodeForward.i: src/ripple/app/paths/cursor/De
 
 # target to preprocess a source file
 src/ripple/app/paths/cursor/DeliverNodeForward.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/DeliverNodeForward.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/DeliverNodeForward.cpp.i
 .PHONY : src/ripple/app/paths/cursor/DeliverNodeForward.cpp.i
 
 src/ripple/app/paths/cursor/DeliverNodeForward.s: src/ripple/app/paths/cursor/DeliverNodeForward.cpp.s
@@ -1672,7 +1672,7 @@ src/ripple/app/paths/cursor/DeliverNodeForward.s: src/ripple/app/paths/cursor/De
 
 # target to generate assembly for a file
 src/ripple/app/paths/cursor/DeliverNodeForward.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/DeliverNodeForward.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/DeliverNodeForward.cpp.s
 .PHONY : src/ripple/app/paths/cursor/DeliverNodeForward.cpp.s
 
 src/ripple/app/paths/cursor/DeliverNodeReverse.o: src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.o
@@ -1681,7 +1681,7 @@ src/ripple/app/paths/cursor/DeliverNodeReverse.o: src/ripple/app/paths/cursor/De
 
 # target to build an object file
 src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.o
 .PHONY : src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.o
 
 src/ripple/app/paths/cursor/DeliverNodeReverse.i: src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.i
@@ -1690,7 +1690,7 @@ src/ripple/app/paths/cursor/DeliverNodeReverse.i: src/ripple/app/paths/cursor/De
 
 # target to preprocess a source file
 src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.i
 .PHONY : src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.i
 
 src/ripple/app/paths/cursor/DeliverNodeReverse.s: src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.s
@@ -1699,7 +1699,7 @@ src/ripple/app/paths/cursor/DeliverNodeReverse.s: src/ripple/app/paths/cursor/De
 
 # target to generate assembly for a file
 src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.s
 .PHONY : src/ripple/app/paths/cursor/DeliverNodeReverse.cpp.s
 
 src/ripple/app/paths/cursor/EffectiveRate.o: src/ripple/app/paths/cursor/EffectiveRate.cpp.o
@@ -1708,7 +1708,7 @@ src/ripple/app/paths/cursor/EffectiveRate.o: src/ripple/app/paths/cursor/Effecti
 
 # target to build an object file
 src/ripple/app/paths/cursor/EffectiveRate.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/EffectiveRate.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/EffectiveRate.cpp.o
 .PHONY : src/ripple/app/paths/cursor/EffectiveRate.cpp.o
 
 src/ripple/app/paths/cursor/EffectiveRate.i: src/ripple/app/paths/cursor/EffectiveRate.cpp.i
@@ -1717,7 +1717,7 @@ src/ripple/app/paths/cursor/EffectiveRate.i: src/ripple/app/paths/cursor/Effecti
 
 # target to preprocess a source file
 src/ripple/app/paths/cursor/EffectiveRate.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/EffectiveRate.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/EffectiveRate.cpp.i
 .PHONY : src/ripple/app/paths/cursor/EffectiveRate.cpp.i
 
 src/ripple/app/paths/cursor/EffectiveRate.s: src/ripple/app/paths/cursor/EffectiveRate.cpp.s
@@ -1726,7 +1726,7 @@ src/ripple/app/paths/cursor/EffectiveRate.s: src/ripple/app/paths/cursor/Effecti
 
 # target to generate assembly for a file
 src/ripple/app/paths/cursor/EffectiveRate.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/EffectiveRate.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/EffectiveRate.cpp.s
 .PHONY : src/ripple/app/paths/cursor/EffectiveRate.cpp.s
 
 src/ripple/app/paths/cursor/ForwardLiquidity.o: src/ripple/app/paths/cursor/ForwardLiquidity.cpp.o
@@ -1735,7 +1735,7 @@ src/ripple/app/paths/cursor/ForwardLiquidity.o: src/ripple/app/paths/cursor/Forw
 
 # target to build an object file
 src/ripple/app/paths/cursor/ForwardLiquidity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/ForwardLiquidity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/ForwardLiquidity.cpp.o
 .PHONY : src/ripple/app/paths/cursor/ForwardLiquidity.cpp.o
 
 src/ripple/app/paths/cursor/ForwardLiquidity.i: src/ripple/app/paths/cursor/ForwardLiquidity.cpp.i
@@ -1744,7 +1744,7 @@ src/ripple/app/paths/cursor/ForwardLiquidity.i: src/ripple/app/paths/cursor/Forw
 
 # target to preprocess a source file
 src/ripple/app/paths/cursor/ForwardLiquidity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/ForwardLiquidity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/ForwardLiquidity.cpp.i
 .PHONY : src/ripple/app/paths/cursor/ForwardLiquidity.cpp.i
 
 src/ripple/app/paths/cursor/ForwardLiquidity.s: src/ripple/app/paths/cursor/ForwardLiquidity.cpp.s
@@ -1753,7 +1753,7 @@ src/ripple/app/paths/cursor/ForwardLiquidity.s: src/ripple/app/paths/cursor/Forw
 
 # target to generate assembly for a file
 src/ripple/app/paths/cursor/ForwardLiquidity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/ForwardLiquidity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/ForwardLiquidity.cpp.s
 .PHONY : src/ripple/app/paths/cursor/ForwardLiquidity.cpp.s
 
 src/ripple/app/paths/cursor/ForwardLiquidityForAccount.o: src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.o
@@ -1762,7 +1762,7 @@ src/ripple/app/paths/cursor/ForwardLiquidityForAccount.o: src/ripple/app/paths/c
 
 # target to build an object file
 src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.o
 .PHONY : src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.o
 
 src/ripple/app/paths/cursor/ForwardLiquidityForAccount.i: src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.i
@@ -1771,7 +1771,7 @@ src/ripple/app/paths/cursor/ForwardLiquidityForAccount.i: src/ripple/app/paths/c
 
 # target to preprocess a source file
 src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.i
 .PHONY : src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.i
 
 src/ripple/app/paths/cursor/ForwardLiquidityForAccount.s: src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.s
@@ -1780,7 +1780,7 @@ src/ripple/app/paths/cursor/ForwardLiquidityForAccount.s: src/ripple/app/paths/c
 
 # target to generate assembly for a file
 src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.s
 .PHONY : src/ripple/app/paths/cursor/ForwardLiquidityForAccount.cpp.s
 
 src/ripple/app/paths/cursor/Liquidity.o: src/ripple/app/paths/cursor/Liquidity.cpp.o
@@ -1789,7 +1789,7 @@ src/ripple/app/paths/cursor/Liquidity.o: src/ripple/app/paths/cursor/Liquidity.c
 
 # target to build an object file
 src/ripple/app/paths/cursor/Liquidity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/Liquidity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/Liquidity.cpp.o
 .PHONY : src/ripple/app/paths/cursor/Liquidity.cpp.o
 
 src/ripple/app/paths/cursor/Liquidity.i: src/ripple/app/paths/cursor/Liquidity.cpp.i
@@ -1798,7 +1798,7 @@ src/ripple/app/paths/cursor/Liquidity.i: src/ripple/app/paths/cursor/Liquidity.c
 
 # target to preprocess a source file
 src/ripple/app/paths/cursor/Liquidity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/Liquidity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/Liquidity.cpp.i
 .PHONY : src/ripple/app/paths/cursor/Liquidity.cpp.i
 
 src/ripple/app/paths/cursor/Liquidity.s: src/ripple/app/paths/cursor/Liquidity.cpp.s
@@ -1807,7 +1807,7 @@ src/ripple/app/paths/cursor/Liquidity.s: src/ripple/app/paths/cursor/Liquidity.c
 
 # target to generate assembly for a file
 src/ripple/app/paths/cursor/Liquidity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/Liquidity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/Liquidity.cpp.s
 .PHONY : src/ripple/app/paths/cursor/Liquidity.cpp.s
 
 src/ripple/app/paths/cursor/NextIncrement.o: src/ripple/app/paths/cursor/NextIncrement.cpp.o
@@ -1816,7 +1816,7 @@ src/ripple/app/paths/cursor/NextIncrement.o: src/ripple/app/paths/cursor/NextInc
 
 # target to build an object file
 src/ripple/app/paths/cursor/NextIncrement.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/NextIncrement.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/NextIncrement.cpp.o
 .PHONY : src/ripple/app/paths/cursor/NextIncrement.cpp.o
 
 src/ripple/app/paths/cursor/NextIncrement.i: src/ripple/app/paths/cursor/NextIncrement.cpp.i
@@ -1825,7 +1825,7 @@ src/ripple/app/paths/cursor/NextIncrement.i: src/ripple/app/paths/cursor/NextInc
 
 # target to preprocess a source file
 src/ripple/app/paths/cursor/NextIncrement.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/NextIncrement.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/NextIncrement.cpp.i
 .PHONY : src/ripple/app/paths/cursor/NextIncrement.cpp.i
 
 src/ripple/app/paths/cursor/NextIncrement.s: src/ripple/app/paths/cursor/NextIncrement.cpp.s
@@ -1834,7 +1834,7 @@ src/ripple/app/paths/cursor/NextIncrement.s: src/ripple/app/paths/cursor/NextInc
 
 # target to generate assembly for a file
 src/ripple/app/paths/cursor/NextIncrement.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/NextIncrement.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/NextIncrement.cpp.s
 .PHONY : src/ripple/app/paths/cursor/NextIncrement.cpp.s
 
 src/ripple/app/paths/cursor/ReverseLiquidity.o: src/ripple/app/paths/cursor/ReverseLiquidity.cpp.o
@@ -1843,7 +1843,7 @@ src/ripple/app/paths/cursor/ReverseLiquidity.o: src/ripple/app/paths/cursor/Reve
 
 # target to build an object file
 src/ripple/app/paths/cursor/ReverseLiquidity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/ReverseLiquidity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/ReverseLiquidity.cpp.o
 .PHONY : src/ripple/app/paths/cursor/ReverseLiquidity.cpp.o
 
 src/ripple/app/paths/cursor/ReverseLiquidity.i: src/ripple/app/paths/cursor/ReverseLiquidity.cpp.i
@@ -1852,7 +1852,7 @@ src/ripple/app/paths/cursor/ReverseLiquidity.i: src/ripple/app/paths/cursor/Reve
 
 # target to preprocess a source file
 src/ripple/app/paths/cursor/ReverseLiquidity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/ReverseLiquidity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/ReverseLiquidity.cpp.i
 .PHONY : src/ripple/app/paths/cursor/ReverseLiquidity.cpp.i
 
 src/ripple/app/paths/cursor/ReverseLiquidity.s: src/ripple/app/paths/cursor/ReverseLiquidity.cpp.s
@@ -1861,7 +1861,7 @@ src/ripple/app/paths/cursor/ReverseLiquidity.s: src/ripple/app/paths/cursor/Reve
 
 # target to generate assembly for a file
 src/ripple/app/paths/cursor/ReverseLiquidity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/ReverseLiquidity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/ReverseLiquidity.cpp.s
 .PHONY : src/ripple/app/paths/cursor/ReverseLiquidity.cpp.s
 
 src/ripple/app/paths/cursor/ReverseLiquidityForAccount.o: src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.o
@@ -1870,7 +1870,7 @@ src/ripple/app/paths/cursor/ReverseLiquidityForAccount.o: src/ripple/app/paths/c
 
 # target to build an object file
 src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.o
 .PHONY : src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.o
 
 src/ripple/app/paths/cursor/ReverseLiquidityForAccount.i: src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.i
@@ -1879,7 +1879,7 @@ src/ripple/app/paths/cursor/ReverseLiquidityForAccount.i: src/ripple/app/paths/c
 
 # target to preprocess a source file
 src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.i
 .PHONY : src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.i
 
 src/ripple/app/paths/cursor/ReverseLiquidityForAccount.s: src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.s
@@ -1888,7 +1888,7 @@ src/ripple/app/paths/cursor/ReverseLiquidityForAccount.s: src/ripple/app/paths/c
 
 # target to generate assembly for a file
 src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.s
 .PHONY : src/ripple/app/paths/cursor/ReverseLiquidityForAccount.cpp.s
 
 src/ripple/app/paths/cursor/RippleLiquidity.o: src/ripple/app/paths/cursor/RippleLiquidity.cpp.o
@@ -1897,7 +1897,7 @@ src/ripple/app/paths/cursor/RippleLiquidity.o: src/ripple/app/paths/cursor/Rippl
 
 # target to build an object file
 src/ripple/app/paths/cursor/RippleLiquidity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/RippleLiquidity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/RippleLiquidity.cpp.o
 .PHONY : src/ripple/app/paths/cursor/RippleLiquidity.cpp.o
 
 src/ripple/app/paths/cursor/RippleLiquidity.i: src/ripple/app/paths/cursor/RippleLiquidity.cpp.i
@@ -1906,7 +1906,7 @@ src/ripple/app/paths/cursor/RippleLiquidity.i: src/ripple/app/paths/cursor/Rippl
 
 # target to preprocess a source file
 src/ripple/app/paths/cursor/RippleLiquidity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/RippleLiquidity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/RippleLiquidity.cpp.i
 .PHONY : src/ripple/app/paths/cursor/RippleLiquidity.cpp.i
 
 src/ripple/app/paths/cursor/RippleLiquidity.s: src/ripple/app/paths/cursor/RippleLiquidity.cpp.s
@@ -1915,7 +1915,7 @@ src/ripple/app/paths/cursor/RippleLiquidity.s: src/ripple/app/paths/cursor/Rippl
 
 # target to generate assembly for a file
 src/ripple/app/paths/cursor/RippleLiquidity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/cursor/RippleLiquidity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/cursor/RippleLiquidity.cpp.s
 .PHONY : src/ripple/app/paths/cursor/RippleLiquidity.cpp.s
 
 src/ripple/app/paths/impl/BookStep.o: src/ripple/app/paths/impl/BookStep.cpp.o
@@ -1924,7 +1924,7 @@ src/ripple/app/paths/impl/BookStep.o: src/ripple/app/paths/impl/BookStep.cpp.o
 
 # target to build an object file
 src/ripple/app/paths/impl/BookStep.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/impl/BookStep.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/impl/BookStep.cpp.o
 .PHONY : src/ripple/app/paths/impl/BookStep.cpp.o
 
 src/ripple/app/paths/impl/BookStep.i: src/ripple/app/paths/impl/BookStep.cpp.i
@@ -1933,7 +1933,7 @@ src/ripple/app/paths/impl/BookStep.i: src/ripple/app/paths/impl/BookStep.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/paths/impl/BookStep.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/impl/BookStep.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/impl/BookStep.cpp.i
 .PHONY : src/ripple/app/paths/impl/BookStep.cpp.i
 
 src/ripple/app/paths/impl/BookStep.s: src/ripple/app/paths/impl/BookStep.cpp.s
@@ -1942,7 +1942,7 @@ src/ripple/app/paths/impl/BookStep.s: src/ripple/app/paths/impl/BookStep.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/paths/impl/BookStep.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/impl/BookStep.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/impl/BookStep.cpp.s
 .PHONY : src/ripple/app/paths/impl/BookStep.cpp.s
 
 src/ripple/app/paths/impl/DirectStep.o: src/ripple/app/paths/impl/DirectStep.cpp.o
@@ -1951,7 +1951,7 @@ src/ripple/app/paths/impl/DirectStep.o: src/ripple/app/paths/impl/DirectStep.cpp
 
 # target to build an object file
 src/ripple/app/paths/impl/DirectStep.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/impl/DirectStep.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/impl/DirectStep.cpp.o
 .PHONY : src/ripple/app/paths/impl/DirectStep.cpp.o
 
 src/ripple/app/paths/impl/DirectStep.i: src/ripple/app/paths/impl/DirectStep.cpp.i
@@ -1960,7 +1960,7 @@ src/ripple/app/paths/impl/DirectStep.i: src/ripple/app/paths/impl/DirectStep.cpp
 
 # target to preprocess a source file
 src/ripple/app/paths/impl/DirectStep.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/impl/DirectStep.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/impl/DirectStep.cpp.i
 .PHONY : src/ripple/app/paths/impl/DirectStep.cpp.i
 
 src/ripple/app/paths/impl/DirectStep.s: src/ripple/app/paths/impl/DirectStep.cpp.s
@@ -1969,7 +1969,7 @@ src/ripple/app/paths/impl/DirectStep.s: src/ripple/app/paths/impl/DirectStep.cpp
 
 # target to generate assembly for a file
 src/ripple/app/paths/impl/DirectStep.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/impl/DirectStep.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/impl/DirectStep.cpp.s
 .PHONY : src/ripple/app/paths/impl/DirectStep.cpp.s
 
 src/ripple/app/paths/impl/PaySteps.o: src/ripple/app/paths/impl/PaySteps.cpp.o
@@ -1978,7 +1978,7 @@ src/ripple/app/paths/impl/PaySteps.o: src/ripple/app/paths/impl/PaySteps.cpp.o
 
 # target to build an object file
 src/ripple/app/paths/impl/PaySteps.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/impl/PaySteps.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/impl/PaySteps.cpp.o
 .PHONY : src/ripple/app/paths/impl/PaySteps.cpp.o
 
 src/ripple/app/paths/impl/PaySteps.i: src/ripple/app/paths/impl/PaySteps.cpp.i
@@ -1987,7 +1987,7 @@ src/ripple/app/paths/impl/PaySteps.i: src/ripple/app/paths/impl/PaySteps.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/paths/impl/PaySteps.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/impl/PaySteps.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/impl/PaySteps.cpp.i
 .PHONY : src/ripple/app/paths/impl/PaySteps.cpp.i
 
 src/ripple/app/paths/impl/PaySteps.s: src/ripple/app/paths/impl/PaySteps.cpp.s
@@ -1996,7 +1996,7 @@ src/ripple/app/paths/impl/PaySteps.s: src/ripple/app/paths/impl/PaySteps.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/paths/impl/PaySteps.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/impl/PaySteps.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/impl/PaySteps.cpp.s
 .PHONY : src/ripple/app/paths/impl/PaySteps.cpp.s
 
 src/ripple/app/paths/impl/XRPEndpointStep.o: src/ripple/app/paths/impl/XRPEndpointStep.cpp.o
@@ -2005,7 +2005,7 @@ src/ripple/app/paths/impl/XRPEndpointStep.o: src/ripple/app/paths/impl/XRPEndpoi
 
 # target to build an object file
 src/ripple/app/paths/impl/XRPEndpointStep.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/impl/XRPEndpointStep.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/impl/XRPEndpointStep.cpp.o
 .PHONY : src/ripple/app/paths/impl/XRPEndpointStep.cpp.o
 
 src/ripple/app/paths/impl/XRPEndpointStep.i: src/ripple/app/paths/impl/XRPEndpointStep.cpp.i
@@ -2014,7 +2014,7 @@ src/ripple/app/paths/impl/XRPEndpointStep.i: src/ripple/app/paths/impl/XRPEndpoi
 
 # target to preprocess a source file
 src/ripple/app/paths/impl/XRPEndpointStep.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/impl/XRPEndpointStep.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/impl/XRPEndpointStep.cpp.i
 .PHONY : src/ripple/app/paths/impl/XRPEndpointStep.cpp.i
 
 src/ripple/app/paths/impl/XRPEndpointStep.s: src/ripple/app/paths/impl/XRPEndpointStep.cpp.s
@@ -2023,7 +2023,7 @@ src/ripple/app/paths/impl/XRPEndpointStep.s: src/ripple/app/paths/impl/XRPEndpoi
 
 # target to generate assembly for a file
 src/ripple/app/paths/impl/XRPEndpointStep.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/paths/impl/XRPEndpointStep.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/paths/impl/XRPEndpointStep.cpp.s
 .PHONY : src/ripple/app/paths/impl/XRPEndpointStep.cpp.s
 
 src/ripple/app/tx/impl/ApplyContext.o: src/ripple/app/tx/impl/ApplyContext.cpp.o
@@ -2032,7 +2032,7 @@ src/ripple/app/tx/impl/ApplyContext.o: src/ripple/app/tx/impl/ApplyContext.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/ApplyContext.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/ApplyContext.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/ApplyContext.cpp.o
 .PHONY : src/ripple/app/tx/impl/ApplyContext.cpp.o
 
 src/ripple/app/tx/impl/ApplyContext.i: src/ripple/app/tx/impl/ApplyContext.cpp.i
@@ -2041,7 +2041,7 @@ src/ripple/app/tx/impl/ApplyContext.i: src/ripple/app/tx/impl/ApplyContext.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/ApplyContext.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/ApplyContext.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/ApplyContext.cpp.i
 .PHONY : src/ripple/app/tx/impl/ApplyContext.cpp.i
 
 src/ripple/app/tx/impl/ApplyContext.s: src/ripple/app/tx/impl/ApplyContext.cpp.s
@@ -2050,7 +2050,7 @@ src/ripple/app/tx/impl/ApplyContext.s: src/ripple/app/tx/impl/ApplyContext.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/ApplyContext.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/ApplyContext.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/ApplyContext.cpp.s
 .PHONY : src/ripple/app/tx/impl/ApplyContext.cpp.s
 
 src/ripple/app/tx/impl/BookTip.o: src/ripple/app/tx/impl/BookTip.cpp.o
@@ -2059,7 +2059,7 @@ src/ripple/app/tx/impl/BookTip.o: src/ripple/app/tx/impl/BookTip.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/BookTip.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/BookTip.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/BookTip.cpp.o
 .PHONY : src/ripple/app/tx/impl/BookTip.cpp.o
 
 src/ripple/app/tx/impl/BookTip.i: src/ripple/app/tx/impl/BookTip.cpp.i
@@ -2068,7 +2068,7 @@ src/ripple/app/tx/impl/BookTip.i: src/ripple/app/tx/impl/BookTip.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/BookTip.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/BookTip.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/BookTip.cpp.i
 .PHONY : src/ripple/app/tx/impl/BookTip.cpp.i
 
 src/ripple/app/tx/impl/BookTip.s: src/ripple/app/tx/impl/BookTip.cpp.s
@@ -2077,7 +2077,7 @@ src/ripple/app/tx/impl/BookTip.s: src/ripple/app/tx/impl/BookTip.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/BookTip.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/BookTip.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/BookTip.cpp.s
 .PHONY : src/ripple/app/tx/impl/BookTip.cpp.s
 
 src/ripple/app/tx/impl/CancelCheck.o: src/ripple/app/tx/impl/CancelCheck.cpp.o
@@ -2086,7 +2086,7 @@ src/ripple/app/tx/impl/CancelCheck.o: src/ripple/app/tx/impl/CancelCheck.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/CancelCheck.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CancelCheck.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CancelCheck.cpp.o
 .PHONY : src/ripple/app/tx/impl/CancelCheck.cpp.o
 
 src/ripple/app/tx/impl/CancelCheck.i: src/ripple/app/tx/impl/CancelCheck.cpp.i
@@ -2095,7 +2095,7 @@ src/ripple/app/tx/impl/CancelCheck.i: src/ripple/app/tx/impl/CancelCheck.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/CancelCheck.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CancelCheck.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CancelCheck.cpp.i
 .PHONY : src/ripple/app/tx/impl/CancelCheck.cpp.i
 
 src/ripple/app/tx/impl/CancelCheck.s: src/ripple/app/tx/impl/CancelCheck.cpp.s
@@ -2104,7 +2104,7 @@ src/ripple/app/tx/impl/CancelCheck.s: src/ripple/app/tx/impl/CancelCheck.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/CancelCheck.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CancelCheck.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CancelCheck.cpp.s
 .PHONY : src/ripple/app/tx/impl/CancelCheck.cpp.s
 
 src/ripple/app/tx/impl/CancelOffer.o: src/ripple/app/tx/impl/CancelOffer.cpp.o
@@ -2113,7 +2113,7 @@ src/ripple/app/tx/impl/CancelOffer.o: src/ripple/app/tx/impl/CancelOffer.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/CancelOffer.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CancelOffer.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CancelOffer.cpp.o
 .PHONY : src/ripple/app/tx/impl/CancelOffer.cpp.o
 
 src/ripple/app/tx/impl/CancelOffer.i: src/ripple/app/tx/impl/CancelOffer.cpp.i
@@ -2122,7 +2122,7 @@ src/ripple/app/tx/impl/CancelOffer.i: src/ripple/app/tx/impl/CancelOffer.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/CancelOffer.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CancelOffer.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CancelOffer.cpp.i
 .PHONY : src/ripple/app/tx/impl/CancelOffer.cpp.i
 
 src/ripple/app/tx/impl/CancelOffer.s: src/ripple/app/tx/impl/CancelOffer.cpp.s
@@ -2131,7 +2131,7 @@ src/ripple/app/tx/impl/CancelOffer.s: src/ripple/app/tx/impl/CancelOffer.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/CancelOffer.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CancelOffer.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CancelOffer.cpp.s
 .PHONY : src/ripple/app/tx/impl/CancelOffer.cpp.s
 
 src/ripple/app/tx/impl/CancelTicket.o: src/ripple/app/tx/impl/CancelTicket.cpp.o
@@ -2140,7 +2140,7 @@ src/ripple/app/tx/impl/CancelTicket.o: src/ripple/app/tx/impl/CancelTicket.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/CancelTicket.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CancelTicket.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CancelTicket.cpp.o
 .PHONY : src/ripple/app/tx/impl/CancelTicket.cpp.o
 
 src/ripple/app/tx/impl/CancelTicket.i: src/ripple/app/tx/impl/CancelTicket.cpp.i
@@ -2149,7 +2149,7 @@ src/ripple/app/tx/impl/CancelTicket.i: src/ripple/app/tx/impl/CancelTicket.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/CancelTicket.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CancelTicket.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CancelTicket.cpp.i
 .PHONY : src/ripple/app/tx/impl/CancelTicket.cpp.i
 
 src/ripple/app/tx/impl/CancelTicket.s: src/ripple/app/tx/impl/CancelTicket.cpp.s
@@ -2158,7 +2158,7 @@ src/ripple/app/tx/impl/CancelTicket.s: src/ripple/app/tx/impl/CancelTicket.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/CancelTicket.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CancelTicket.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CancelTicket.cpp.s
 .PHONY : src/ripple/app/tx/impl/CancelTicket.cpp.s
 
 src/ripple/app/tx/impl/CashCheck.o: src/ripple/app/tx/impl/CashCheck.cpp.o
@@ -2167,7 +2167,7 @@ src/ripple/app/tx/impl/CashCheck.o: src/ripple/app/tx/impl/CashCheck.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/CashCheck.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CashCheck.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CashCheck.cpp.o
 .PHONY : src/ripple/app/tx/impl/CashCheck.cpp.o
 
 src/ripple/app/tx/impl/CashCheck.i: src/ripple/app/tx/impl/CashCheck.cpp.i
@@ -2176,7 +2176,7 @@ src/ripple/app/tx/impl/CashCheck.i: src/ripple/app/tx/impl/CashCheck.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/CashCheck.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CashCheck.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CashCheck.cpp.i
 .PHONY : src/ripple/app/tx/impl/CashCheck.cpp.i
 
 src/ripple/app/tx/impl/CashCheck.s: src/ripple/app/tx/impl/CashCheck.cpp.s
@@ -2185,7 +2185,7 @@ src/ripple/app/tx/impl/CashCheck.s: src/ripple/app/tx/impl/CashCheck.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/CashCheck.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CashCheck.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CashCheck.cpp.s
 .PHONY : src/ripple/app/tx/impl/CashCheck.cpp.s
 
 src/ripple/app/tx/impl/Change.o: src/ripple/app/tx/impl/Change.cpp.o
@@ -2194,7 +2194,7 @@ src/ripple/app/tx/impl/Change.o: src/ripple/app/tx/impl/Change.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/Change.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Change.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Change.cpp.o
 .PHONY : src/ripple/app/tx/impl/Change.cpp.o
 
 src/ripple/app/tx/impl/Change.i: src/ripple/app/tx/impl/Change.cpp.i
@@ -2203,7 +2203,7 @@ src/ripple/app/tx/impl/Change.i: src/ripple/app/tx/impl/Change.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/Change.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Change.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Change.cpp.i
 .PHONY : src/ripple/app/tx/impl/Change.cpp.i
 
 src/ripple/app/tx/impl/Change.s: src/ripple/app/tx/impl/Change.cpp.s
@@ -2212,7 +2212,7 @@ src/ripple/app/tx/impl/Change.s: src/ripple/app/tx/impl/Change.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/Change.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Change.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Change.cpp.s
 .PHONY : src/ripple/app/tx/impl/Change.cpp.s
 
 src/ripple/app/tx/impl/CreateCheck.o: src/ripple/app/tx/impl/CreateCheck.cpp.o
@@ -2221,7 +2221,7 @@ src/ripple/app/tx/impl/CreateCheck.o: src/ripple/app/tx/impl/CreateCheck.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/CreateCheck.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CreateCheck.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CreateCheck.cpp.o
 .PHONY : src/ripple/app/tx/impl/CreateCheck.cpp.o
 
 src/ripple/app/tx/impl/CreateCheck.i: src/ripple/app/tx/impl/CreateCheck.cpp.i
@@ -2230,7 +2230,7 @@ src/ripple/app/tx/impl/CreateCheck.i: src/ripple/app/tx/impl/CreateCheck.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/CreateCheck.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CreateCheck.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CreateCheck.cpp.i
 .PHONY : src/ripple/app/tx/impl/CreateCheck.cpp.i
 
 src/ripple/app/tx/impl/CreateCheck.s: src/ripple/app/tx/impl/CreateCheck.cpp.s
@@ -2239,7 +2239,7 @@ src/ripple/app/tx/impl/CreateCheck.s: src/ripple/app/tx/impl/CreateCheck.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/CreateCheck.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CreateCheck.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CreateCheck.cpp.s
 .PHONY : src/ripple/app/tx/impl/CreateCheck.cpp.s
 
 src/ripple/app/tx/impl/CreateOffer.o: src/ripple/app/tx/impl/CreateOffer.cpp.o
@@ -2248,7 +2248,7 @@ src/ripple/app/tx/impl/CreateOffer.o: src/ripple/app/tx/impl/CreateOffer.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/CreateOffer.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CreateOffer.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CreateOffer.cpp.o
 .PHONY : src/ripple/app/tx/impl/CreateOffer.cpp.o
 
 src/ripple/app/tx/impl/CreateOffer.i: src/ripple/app/tx/impl/CreateOffer.cpp.i
@@ -2257,7 +2257,7 @@ src/ripple/app/tx/impl/CreateOffer.i: src/ripple/app/tx/impl/CreateOffer.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/CreateOffer.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CreateOffer.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CreateOffer.cpp.i
 .PHONY : src/ripple/app/tx/impl/CreateOffer.cpp.i
 
 src/ripple/app/tx/impl/CreateOffer.s: src/ripple/app/tx/impl/CreateOffer.cpp.s
@@ -2266,7 +2266,7 @@ src/ripple/app/tx/impl/CreateOffer.s: src/ripple/app/tx/impl/CreateOffer.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/CreateOffer.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CreateOffer.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CreateOffer.cpp.s
 .PHONY : src/ripple/app/tx/impl/CreateOffer.cpp.s
 
 src/ripple/app/tx/impl/CreateTicket.o: src/ripple/app/tx/impl/CreateTicket.cpp.o
@@ -2275,7 +2275,7 @@ src/ripple/app/tx/impl/CreateTicket.o: src/ripple/app/tx/impl/CreateTicket.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/CreateTicket.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CreateTicket.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CreateTicket.cpp.o
 .PHONY : src/ripple/app/tx/impl/CreateTicket.cpp.o
 
 src/ripple/app/tx/impl/CreateTicket.i: src/ripple/app/tx/impl/CreateTicket.cpp.i
@@ -2284,7 +2284,7 @@ src/ripple/app/tx/impl/CreateTicket.i: src/ripple/app/tx/impl/CreateTicket.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/CreateTicket.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CreateTicket.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CreateTicket.cpp.i
 .PHONY : src/ripple/app/tx/impl/CreateTicket.cpp.i
 
 src/ripple/app/tx/impl/CreateTicket.s: src/ripple/app/tx/impl/CreateTicket.cpp.s
@@ -2293,7 +2293,7 @@ src/ripple/app/tx/impl/CreateTicket.s: src/ripple/app/tx/impl/CreateTicket.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/CreateTicket.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/CreateTicket.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/CreateTicket.cpp.s
 .PHONY : src/ripple/app/tx/impl/CreateTicket.cpp.s
 
 src/ripple/app/tx/impl/Escrow.o: src/ripple/app/tx/impl/Escrow.cpp.o
@@ -2302,7 +2302,7 @@ src/ripple/app/tx/impl/Escrow.o: src/ripple/app/tx/impl/Escrow.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/Escrow.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Escrow.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Escrow.cpp.o
 .PHONY : src/ripple/app/tx/impl/Escrow.cpp.o
 
 src/ripple/app/tx/impl/Escrow.i: src/ripple/app/tx/impl/Escrow.cpp.i
@@ -2311,7 +2311,7 @@ src/ripple/app/tx/impl/Escrow.i: src/ripple/app/tx/impl/Escrow.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/Escrow.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Escrow.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Escrow.cpp.i
 .PHONY : src/ripple/app/tx/impl/Escrow.cpp.i
 
 src/ripple/app/tx/impl/Escrow.s: src/ripple/app/tx/impl/Escrow.cpp.s
@@ -2320,7 +2320,7 @@ src/ripple/app/tx/impl/Escrow.s: src/ripple/app/tx/impl/Escrow.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/Escrow.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Escrow.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Escrow.cpp.s
 .PHONY : src/ripple/app/tx/impl/Escrow.cpp.s
 
 src/ripple/app/tx/impl/InvariantCheck.o: src/ripple/app/tx/impl/InvariantCheck.cpp.o
@@ -2329,7 +2329,7 @@ src/ripple/app/tx/impl/InvariantCheck.o: src/ripple/app/tx/impl/InvariantCheck.c
 
 # target to build an object file
 src/ripple/app/tx/impl/InvariantCheck.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/InvariantCheck.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/InvariantCheck.cpp.o
 .PHONY : src/ripple/app/tx/impl/InvariantCheck.cpp.o
 
 src/ripple/app/tx/impl/InvariantCheck.i: src/ripple/app/tx/impl/InvariantCheck.cpp.i
@@ -2338,7 +2338,7 @@ src/ripple/app/tx/impl/InvariantCheck.i: src/ripple/app/tx/impl/InvariantCheck.c
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/InvariantCheck.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/InvariantCheck.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/InvariantCheck.cpp.i
 .PHONY : src/ripple/app/tx/impl/InvariantCheck.cpp.i
 
 src/ripple/app/tx/impl/InvariantCheck.s: src/ripple/app/tx/impl/InvariantCheck.cpp.s
@@ -2347,7 +2347,7 @@ src/ripple/app/tx/impl/InvariantCheck.s: src/ripple/app/tx/impl/InvariantCheck.c
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/InvariantCheck.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/InvariantCheck.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/InvariantCheck.cpp.s
 .PHONY : src/ripple/app/tx/impl/InvariantCheck.cpp.s
 
 src/ripple/app/tx/impl/LogTransaction.o: src/ripple/app/tx/impl/LogTransaction.cpp.o
@@ -2356,7 +2356,7 @@ src/ripple/app/tx/impl/LogTransaction.o: src/ripple/app/tx/impl/LogTransaction.c
 
 # target to build an object file
 src/ripple/app/tx/impl/LogTransaction.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/LogTransaction.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/LogTransaction.cpp.o
 .PHONY : src/ripple/app/tx/impl/LogTransaction.cpp.o
 
 src/ripple/app/tx/impl/LogTransaction.i: src/ripple/app/tx/impl/LogTransaction.cpp.i
@@ -2365,7 +2365,7 @@ src/ripple/app/tx/impl/LogTransaction.i: src/ripple/app/tx/impl/LogTransaction.c
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/LogTransaction.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/LogTransaction.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/LogTransaction.cpp.i
 .PHONY : src/ripple/app/tx/impl/LogTransaction.cpp.i
 
 src/ripple/app/tx/impl/LogTransaction.s: src/ripple/app/tx/impl/LogTransaction.cpp.s
@@ -2374,7 +2374,7 @@ src/ripple/app/tx/impl/LogTransaction.s: src/ripple/app/tx/impl/LogTransaction.c
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/LogTransaction.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/LogTransaction.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/LogTransaction.cpp.s
 .PHONY : src/ripple/app/tx/impl/LogTransaction.cpp.s
 
 src/ripple/app/tx/impl/OfferStream.o: src/ripple/app/tx/impl/OfferStream.cpp.o
@@ -2383,7 +2383,7 @@ src/ripple/app/tx/impl/OfferStream.o: src/ripple/app/tx/impl/OfferStream.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/OfferStream.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/OfferStream.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/OfferStream.cpp.o
 .PHONY : src/ripple/app/tx/impl/OfferStream.cpp.o
 
 src/ripple/app/tx/impl/OfferStream.i: src/ripple/app/tx/impl/OfferStream.cpp.i
@@ -2392,7 +2392,7 @@ src/ripple/app/tx/impl/OfferStream.i: src/ripple/app/tx/impl/OfferStream.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/OfferStream.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/OfferStream.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/OfferStream.cpp.i
 .PHONY : src/ripple/app/tx/impl/OfferStream.cpp.i
 
 src/ripple/app/tx/impl/OfferStream.s: src/ripple/app/tx/impl/OfferStream.cpp.s
@@ -2401,7 +2401,7 @@ src/ripple/app/tx/impl/OfferStream.s: src/ripple/app/tx/impl/OfferStream.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/OfferStream.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/OfferStream.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/OfferStream.cpp.s
 .PHONY : src/ripple/app/tx/impl/OfferStream.cpp.s
 
 src/ripple/app/tx/impl/PayChan.o: src/ripple/app/tx/impl/PayChan.cpp.o
@@ -2410,7 +2410,7 @@ src/ripple/app/tx/impl/PayChan.o: src/ripple/app/tx/impl/PayChan.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/PayChan.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/PayChan.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/PayChan.cpp.o
 .PHONY : src/ripple/app/tx/impl/PayChan.cpp.o
 
 src/ripple/app/tx/impl/PayChan.i: src/ripple/app/tx/impl/PayChan.cpp.i
@@ -2419,7 +2419,7 @@ src/ripple/app/tx/impl/PayChan.i: src/ripple/app/tx/impl/PayChan.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/PayChan.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/PayChan.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/PayChan.cpp.i
 .PHONY : src/ripple/app/tx/impl/PayChan.cpp.i
 
 src/ripple/app/tx/impl/PayChan.s: src/ripple/app/tx/impl/PayChan.cpp.s
@@ -2428,7 +2428,7 @@ src/ripple/app/tx/impl/PayChan.s: src/ripple/app/tx/impl/PayChan.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/PayChan.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/PayChan.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/PayChan.cpp.s
 .PHONY : src/ripple/app/tx/impl/PayChan.cpp.s
 
 src/ripple/app/tx/impl/Payment.o: src/ripple/app/tx/impl/Payment.cpp.o
@@ -2437,7 +2437,7 @@ src/ripple/app/tx/impl/Payment.o: src/ripple/app/tx/impl/Payment.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/Payment.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Payment.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Payment.cpp.o
 .PHONY : src/ripple/app/tx/impl/Payment.cpp.o
 
 src/ripple/app/tx/impl/Payment.i: src/ripple/app/tx/impl/Payment.cpp.i
@@ -2446,7 +2446,7 @@ src/ripple/app/tx/impl/Payment.i: src/ripple/app/tx/impl/Payment.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/Payment.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Payment.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Payment.cpp.i
 .PHONY : src/ripple/app/tx/impl/Payment.cpp.i
 
 src/ripple/app/tx/impl/Payment.s: src/ripple/app/tx/impl/Payment.cpp.s
@@ -2455,7 +2455,7 @@ src/ripple/app/tx/impl/Payment.s: src/ripple/app/tx/impl/Payment.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/Payment.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Payment.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Payment.cpp.s
 .PHONY : src/ripple/app/tx/impl/Payment.cpp.s
 
 src/ripple/app/tx/impl/SetAccount.o: src/ripple/app/tx/impl/SetAccount.cpp.o
@@ -2464,7 +2464,7 @@ src/ripple/app/tx/impl/SetAccount.o: src/ripple/app/tx/impl/SetAccount.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/SetAccount.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SetAccount.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SetAccount.cpp.o
 .PHONY : src/ripple/app/tx/impl/SetAccount.cpp.o
 
 src/ripple/app/tx/impl/SetAccount.i: src/ripple/app/tx/impl/SetAccount.cpp.i
@@ -2473,7 +2473,7 @@ src/ripple/app/tx/impl/SetAccount.i: src/ripple/app/tx/impl/SetAccount.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/SetAccount.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SetAccount.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SetAccount.cpp.i
 .PHONY : src/ripple/app/tx/impl/SetAccount.cpp.i
 
 src/ripple/app/tx/impl/SetAccount.s: src/ripple/app/tx/impl/SetAccount.cpp.s
@@ -2482,7 +2482,7 @@ src/ripple/app/tx/impl/SetAccount.s: src/ripple/app/tx/impl/SetAccount.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/SetAccount.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SetAccount.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SetAccount.cpp.s
 .PHONY : src/ripple/app/tx/impl/SetAccount.cpp.s
 
 src/ripple/app/tx/impl/SetRegularKey.o: src/ripple/app/tx/impl/SetRegularKey.cpp.o
@@ -2491,7 +2491,7 @@ src/ripple/app/tx/impl/SetRegularKey.o: src/ripple/app/tx/impl/SetRegularKey.cpp
 
 # target to build an object file
 src/ripple/app/tx/impl/SetRegularKey.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SetRegularKey.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SetRegularKey.cpp.o
 .PHONY : src/ripple/app/tx/impl/SetRegularKey.cpp.o
 
 src/ripple/app/tx/impl/SetRegularKey.i: src/ripple/app/tx/impl/SetRegularKey.cpp.i
@@ -2500,7 +2500,7 @@ src/ripple/app/tx/impl/SetRegularKey.i: src/ripple/app/tx/impl/SetRegularKey.cpp
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/SetRegularKey.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SetRegularKey.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SetRegularKey.cpp.i
 .PHONY : src/ripple/app/tx/impl/SetRegularKey.cpp.i
 
 src/ripple/app/tx/impl/SetRegularKey.s: src/ripple/app/tx/impl/SetRegularKey.cpp.s
@@ -2509,7 +2509,7 @@ src/ripple/app/tx/impl/SetRegularKey.s: src/ripple/app/tx/impl/SetRegularKey.cpp
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/SetRegularKey.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SetRegularKey.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SetRegularKey.cpp.s
 .PHONY : src/ripple/app/tx/impl/SetRegularKey.cpp.s
 
 src/ripple/app/tx/impl/SetSignerList.o: src/ripple/app/tx/impl/SetSignerList.cpp.o
@@ -2518,7 +2518,7 @@ src/ripple/app/tx/impl/SetSignerList.o: src/ripple/app/tx/impl/SetSignerList.cpp
 
 # target to build an object file
 src/ripple/app/tx/impl/SetSignerList.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SetSignerList.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SetSignerList.cpp.o
 .PHONY : src/ripple/app/tx/impl/SetSignerList.cpp.o
 
 src/ripple/app/tx/impl/SetSignerList.i: src/ripple/app/tx/impl/SetSignerList.cpp.i
@@ -2527,7 +2527,7 @@ src/ripple/app/tx/impl/SetSignerList.i: src/ripple/app/tx/impl/SetSignerList.cpp
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/SetSignerList.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SetSignerList.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SetSignerList.cpp.i
 .PHONY : src/ripple/app/tx/impl/SetSignerList.cpp.i
 
 src/ripple/app/tx/impl/SetSignerList.s: src/ripple/app/tx/impl/SetSignerList.cpp.s
@@ -2536,7 +2536,7 @@ src/ripple/app/tx/impl/SetSignerList.s: src/ripple/app/tx/impl/SetSignerList.cpp
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/SetSignerList.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SetSignerList.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SetSignerList.cpp.s
 .PHONY : src/ripple/app/tx/impl/SetSignerList.cpp.s
 
 src/ripple/app/tx/impl/SetTrust.o: src/ripple/app/tx/impl/SetTrust.cpp.o
@@ -2545,7 +2545,7 @@ src/ripple/app/tx/impl/SetTrust.o: src/ripple/app/tx/impl/SetTrust.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/SetTrust.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SetTrust.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SetTrust.cpp.o
 .PHONY : src/ripple/app/tx/impl/SetTrust.cpp.o
 
 src/ripple/app/tx/impl/SetTrust.i: src/ripple/app/tx/impl/SetTrust.cpp.i
@@ -2554,7 +2554,7 @@ src/ripple/app/tx/impl/SetTrust.i: src/ripple/app/tx/impl/SetTrust.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/SetTrust.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SetTrust.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SetTrust.cpp.i
 .PHONY : src/ripple/app/tx/impl/SetTrust.cpp.i
 
 src/ripple/app/tx/impl/SetTrust.s: src/ripple/app/tx/impl/SetTrust.cpp.s
@@ -2563,7 +2563,7 @@ src/ripple/app/tx/impl/SetTrust.s: src/ripple/app/tx/impl/SetTrust.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/SetTrust.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SetTrust.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SetTrust.cpp.s
 .PHONY : src/ripple/app/tx/impl/SetTrust.cpp.s
 
 src/ripple/app/tx/impl/SignerEntries.o: src/ripple/app/tx/impl/SignerEntries.cpp.o
@@ -2572,7 +2572,7 @@ src/ripple/app/tx/impl/SignerEntries.o: src/ripple/app/tx/impl/SignerEntries.cpp
 
 # target to build an object file
 src/ripple/app/tx/impl/SignerEntries.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SignerEntries.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SignerEntries.cpp.o
 .PHONY : src/ripple/app/tx/impl/SignerEntries.cpp.o
 
 src/ripple/app/tx/impl/SignerEntries.i: src/ripple/app/tx/impl/SignerEntries.cpp.i
@@ -2581,7 +2581,7 @@ src/ripple/app/tx/impl/SignerEntries.i: src/ripple/app/tx/impl/SignerEntries.cpp
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/SignerEntries.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SignerEntries.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SignerEntries.cpp.i
 .PHONY : src/ripple/app/tx/impl/SignerEntries.cpp.i
 
 src/ripple/app/tx/impl/SignerEntries.s: src/ripple/app/tx/impl/SignerEntries.cpp.s
@@ -2590,7 +2590,7 @@ src/ripple/app/tx/impl/SignerEntries.s: src/ripple/app/tx/impl/SignerEntries.cpp
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/SignerEntries.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/SignerEntries.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/SignerEntries.cpp.s
 .PHONY : src/ripple/app/tx/impl/SignerEntries.cpp.s
 
 src/ripple/app/tx/impl/Taker.o: src/ripple/app/tx/impl/Taker.cpp.o
@@ -2599,7 +2599,7 @@ src/ripple/app/tx/impl/Taker.o: src/ripple/app/tx/impl/Taker.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/Taker.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Taker.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Taker.cpp.o
 .PHONY : src/ripple/app/tx/impl/Taker.cpp.o
 
 src/ripple/app/tx/impl/Taker.i: src/ripple/app/tx/impl/Taker.cpp.i
@@ -2608,7 +2608,7 @@ src/ripple/app/tx/impl/Taker.i: src/ripple/app/tx/impl/Taker.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/Taker.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Taker.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Taker.cpp.i
 .PHONY : src/ripple/app/tx/impl/Taker.cpp.i
 
 src/ripple/app/tx/impl/Taker.s: src/ripple/app/tx/impl/Taker.cpp.s
@@ -2617,7 +2617,7 @@ src/ripple/app/tx/impl/Taker.s: src/ripple/app/tx/impl/Taker.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/Taker.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Taker.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Taker.cpp.s
 .PHONY : src/ripple/app/tx/impl/Taker.cpp.s
 
 src/ripple/app/tx/impl/Transactor.o: src/ripple/app/tx/impl/Transactor.cpp.o
@@ -2626,7 +2626,7 @@ src/ripple/app/tx/impl/Transactor.o: src/ripple/app/tx/impl/Transactor.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/Transactor.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Transactor.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Transactor.cpp.o
 .PHONY : src/ripple/app/tx/impl/Transactor.cpp.o
 
 src/ripple/app/tx/impl/Transactor.i: src/ripple/app/tx/impl/Transactor.cpp.i
@@ -2635,7 +2635,7 @@ src/ripple/app/tx/impl/Transactor.i: src/ripple/app/tx/impl/Transactor.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/Transactor.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Transactor.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Transactor.cpp.i
 .PHONY : src/ripple/app/tx/impl/Transactor.cpp.i
 
 src/ripple/app/tx/impl/Transactor.s: src/ripple/app/tx/impl/Transactor.cpp.s
@@ -2644,7 +2644,7 @@ src/ripple/app/tx/impl/Transactor.s: src/ripple/app/tx/impl/Transactor.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/Transactor.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/Transactor.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/Transactor.cpp.s
 .PHONY : src/ripple/app/tx/impl/Transactor.cpp.s
 
 src/ripple/app/tx/impl/apply.o: src/ripple/app/tx/impl/apply.cpp.o
@@ -2653,7 +2653,7 @@ src/ripple/app/tx/impl/apply.o: src/ripple/app/tx/impl/apply.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/apply.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/apply.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/apply.cpp.o
 .PHONY : src/ripple/app/tx/impl/apply.cpp.o
 
 src/ripple/app/tx/impl/apply.i: src/ripple/app/tx/impl/apply.cpp.i
@@ -2662,7 +2662,7 @@ src/ripple/app/tx/impl/apply.i: src/ripple/app/tx/impl/apply.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/apply.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/apply.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/apply.cpp.i
 .PHONY : src/ripple/app/tx/impl/apply.cpp.i
 
 src/ripple/app/tx/impl/apply.s: src/ripple/app/tx/impl/apply.cpp.s
@@ -2671,7 +2671,7 @@ src/ripple/app/tx/impl/apply.s: src/ripple/app/tx/impl/apply.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/apply.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/apply.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/apply.cpp.s
 .PHONY : src/ripple/app/tx/impl/apply.cpp.s
 
 src/ripple/app/tx/impl/applySteps.o: src/ripple/app/tx/impl/applySteps.cpp.o
@@ -2680,7 +2680,7 @@ src/ripple/app/tx/impl/applySteps.o: src/ripple/app/tx/impl/applySteps.cpp.o
 
 # target to build an object file
 src/ripple/app/tx/impl/applySteps.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/applySteps.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/applySteps.cpp.o
 .PHONY : src/ripple/app/tx/impl/applySteps.cpp.o
 
 src/ripple/app/tx/impl/applySteps.i: src/ripple/app/tx/impl/applySteps.cpp.i
@@ -2689,7 +2689,7 @@ src/ripple/app/tx/impl/applySteps.i: src/ripple/app/tx/impl/applySteps.cpp.i
 
 # target to preprocess a source file
 src/ripple/app/tx/impl/applySteps.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/applySteps.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/applySteps.cpp.i
 .PHONY : src/ripple/app/tx/impl/applySteps.cpp.i
 
 src/ripple/app/tx/impl/applySteps.s: src/ripple/app/tx/impl/applySteps.cpp.s
@@ -2698,7 +2698,7 @@ src/ripple/app/tx/impl/applySteps.s: src/ripple/app/tx/impl/applySteps.cpp.s
 
 # target to generate assembly for a file
 src/ripple/app/tx/impl/applySteps.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/app/tx/impl/applySteps.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/app/tx/impl/applySteps.cpp.s
 .PHONY : src/ripple/app/tx/impl/applySteps.cpp.s
 
 src/ripple/basics/impl/BasicConfig.o: src/ripple/basics/impl/BasicConfig.cpp.o
@@ -2707,7 +2707,7 @@ src/ripple/basics/impl/BasicConfig.o: src/ripple/basics/impl/BasicConfig.cpp.o
 
 # target to build an object file
 src/ripple/basics/impl/BasicConfig.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/BasicConfig.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/BasicConfig.cpp.o
 .PHONY : src/ripple/basics/impl/BasicConfig.cpp.o
 
 src/ripple/basics/impl/BasicConfig.i: src/ripple/basics/impl/BasicConfig.cpp.i
@@ -2716,7 +2716,7 @@ src/ripple/basics/impl/BasicConfig.i: src/ripple/basics/impl/BasicConfig.cpp.i
 
 # target to preprocess a source file
 src/ripple/basics/impl/BasicConfig.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/BasicConfig.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/BasicConfig.cpp.i
 .PHONY : src/ripple/basics/impl/BasicConfig.cpp.i
 
 src/ripple/basics/impl/BasicConfig.s: src/ripple/basics/impl/BasicConfig.cpp.s
@@ -2725,7 +2725,7 @@ src/ripple/basics/impl/BasicConfig.s: src/ripple/basics/impl/BasicConfig.cpp.s
 
 # target to generate assembly for a file
 src/ripple/basics/impl/BasicConfig.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/BasicConfig.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/BasicConfig.cpp.s
 .PHONY : src/ripple/basics/impl/BasicConfig.cpp.s
 
 src/ripple/basics/impl/CheckLibraryVersions.o: src/ripple/basics/impl/CheckLibraryVersions.cpp.o
@@ -2734,7 +2734,7 @@ src/ripple/basics/impl/CheckLibraryVersions.o: src/ripple/basics/impl/CheckLibra
 
 # target to build an object file
 src/ripple/basics/impl/CheckLibraryVersions.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/CheckLibraryVersions.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/CheckLibraryVersions.cpp.o
 .PHONY : src/ripple/basics/impl/CheckLibraryVersions.cpp.o
 
 src/ripple/basics/impl/CheckLibraryVersions.i: src/ripple/basics/impl/CheckLibraryVersions.cpp.i
@@ -2743,7 +2743,7 @@ src/ripple/basics/impl/CheckLibraryVersions.i: src/ripple/basics/impl/CheckLibra
 
 # target to preprocess a source file
 src/ripple/basics/impl/CheckLibraryVersions.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/CheckLibraryVersions.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/CheckLibraryVersions.cpp.i
 .PHONY : src/ripple/basics/impl/CheckLibraryVersions.cpp.i
 
 src/ripple/basics/impl/CheckLibraryVersions.s: src/ripple/basics/impl/CheckLibraryVersions.cpp.s
@@ -2752,7 +2752,7 @@ src/ripple/basics/impl/CheckLibraryVersions.s: src/ripple/basics/impl/CheckLibra
 
 # target to generate assembly for a file
 src/ripple/basics/impl/CheckLibraryVersions.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/CheckLibraryVersions.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/CheckLibraryVersions.cpp.s
 .PHONY : src/ripple/basics/impl/CheckLibraryVersions.cpp.s
 
 src/ripple/basics/impl/CountedObject.o: src/ripple/basics/impl/CountedObject.cpp.o
@@ -2761,7 +2761,7 @@ src/ripple/basics/impl/CountedObject.o: src/ripple/basics/impl/CountedObject.cpp
 
 # target to build an object file
 src/ripple/basics/impl/CountedObject.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/CountedObject.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/CountedObject.cpp.o
 .PHONY : src/ripple/basics/impl/CountedObject.cpp.o
 
 src/ripple/basics/impl/CountedObject.i: src/ripple/basics/impl/CountedObject.cpp.i
@@ -2770,7 +2770,7 @@ src/ripple/basics/impl/CountedObject.i: src/ripple/basics/impl/CountedObject.cpp
 
 # target to preprocess a source file
 src/ripple/basics/impl/CountedObject.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/CountedObject.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/CountedObject.cpp.i
 .PHONY : src/ripple/basics/impl/CountedObject.cpp.i
 
 src/ripple/basics/impl/CountedObject.s: src/ripple/basics/impl/CountedObject.cpp.s
@@ -2779,7 +2779,7 @@ src/ripple/basics/impl/CountedObject.s: src/ripple/basics/impl/CountedObject.cpp
 
 # target to generate assembly for a file
 src/ripple/basics/impl/CountedObject.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/CountedObject.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/CountedObject.cpp.s
 .PHONY : src/ripple/basics/impl/CountedObject.cpp.s
 
 src/ripple/basics/impl/Log.o: src/ripple/basics/impl/Log.cpp.o
@@ -2788,7 +2788,7 @@ src/ripple/basics/impl/Log.o: src/ripple/basics/impl/Log.cpp.o
 
 # target to build an object file
 src/ripple/basics/impl/Log.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/Log.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/Log.cpp.o
 .PHONY : src/ripple/basics/impl/Log.cpp.o
 
 src/ripple/basics/impl/Log.i: src/ripple/basics/impl/Log.cpp.i
@@ -2797,7 +2797,7 @@ src/ripple/basics/impl/Log.i: src/ripple/basics/impl/Log.cpp.i
 
 # target to preprocess a source file
 src/ripple/basics/impl/Log.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/Log.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/Log.cpp.i
 .PHONY : src/ripple/basics/impl/Log.cpp.i
 
 src/ripple/basics/impl/Log.s: src/ripple/basics/impl/Log.cpp.s
@@ -2806,7 +2806,7 @@ src/ripple/basics/impl/Log.s: src/ripple/basics/impl/Log.cpp.s
 
 # target to generate assembly for a file
 src/ripple/basics/impl/Log.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/Log.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/Log.cpp.s
 .PHONY : src/ripple/basics/impl/Log.cpp.s
 
 src/ripple/basics/impl/PerfLogImp.o: src/ripple/basics/impl/PerfLogImp.cpp.o
@@ -2815,7 +2815,7 @@ src/ripple/basics/impl/PerfLogImp.o: src/ripple/basics/impl/PerfLogImp.cpp.o
 
 # target to build an object file
 src/ripple/basics/impl/PerfLogImp.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/PerfLogImp.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/PerfLogImp.cpp.o
 .PHONY : src/ripple/basics/impl/PerfLogImp.cpp.o
 
 src/ripple/basics/impl/PerfLogImp.i: src/ripple/basics/impl/PerfLogImp.cpp.i
@@ -2824,7 +2824,7 @@ src/ripple/basics/impl/PerfLogImp.i: src/ripple/basics/impl/PerfLogImp.cpp.i
 
 # target to preprocess a source file
 src/ripple/basics/impl/PerfLogImp.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/PerfLogImp.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/PerfLogImp.cpp.i
 .PHONY : src/ripple/basics/impl/PerfLogImp.cpp.i
 
 src/ripple/basics/impl/PerfLogImp.s: src/ripple/basics/impl/PerfLogImp.cpp.s
@@ -2833,7 +2833,7 @@ src/ripple/basics/impl/PerfLogImp.s: src/ripple/basics/impl/PerfLogImp.cpp.s
 
 # target to generate assembly for a file
 src/ripple/basics/impl/PerfLogImp.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/PerfLogImp.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/PerfLogImp.cpp.s
 .PHONY : src/ripple/basics/impl/PerfLogImp.cpp.s
 
 src/ripple/basics/impl/ResolverAsio.o: src/ripple/basics/impl/ResolverAsio.cpp.o
@@ -2842,7 +2842,7 @@ src/ripple/basics/impl/ResolverAsio.o: src/ripple/basics/impl/ResolverAsio.cpp.o
 
 # target to build an object file
 src/ripple/basics/impl/ResolverAsio.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/ResolverAsio.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/ResolverAsio.cpp.o
 .PHONY : src/ripple/basics/impl/ResolverAsio.cpp.o
 
 src/ripple/basics/impl/ResolverAsio.i: src/ripple/basics/impl/ResolverAsio.cpp.i
@@ -2851,7 +2851,7 @@ src/ripple/basics/impl/ResolverAsio.i: src/ripple/basics/impl/ResolverAsio.cpp.i
 
 # target to preprocess a source file
 src/ripple/basics/impl/ResolverAsio.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/ResolverAsio.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/ResolverAsio.cpp.i
 .PHONY : src/ripple/basics/impl/ResolverAsio.cpp.i
 
 src/ripple/basics/impl/ResolverAsio.s: src/ripple/basics/impl/ResolverAsio.cpp.s
@@ -2860,7 +2860,7 @@ src/ripple/basics/impl/ResolverAsio.s: src/ripple/basics/impl/ResolverAsio.cpp.s
 
 # target to generate assembly for a file
 src/ripple/basics/impl/ResolverAsio.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/ResolverAsio.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/ResolverAsio.cpp.s
 .PHONY : src/ripple/basics/impl/ResolverAsio.cpp.s
 
 src/ripple/basics/impl/StringUtilities.o: src/ripple/basics/impl/StringUtilities.cpp.o
@@ -2869,7 +2869,7 @@ src/ripple/basics/impl/StringUtilities.o: src/ripple/basics/impl/StringUtilities
 
 # target to build an object file
 src/ripple/basics/impl/StringUtilities.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/StringUtilities.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/StringUtilities.cpp.o
 .PHONY : src/ripple/basics/impl/StringUtilities.cpp.o
 
 src/ripple/basics/impl/StringUtilities.i: src/ripple/basics/impl/StringUtilities.cpp.i
@@ -2878,7 +2878,7 @@ src/ripple/basics/impl/StringUtilities.i: src/ripple/basics/impl/StringUtilities
 
 # target to preprocess a source file
 src/ripple/basics/impl/StringUtilities.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/StringUtilities.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/StringUtilities.cpp.i
 .PHONY : src/ripple/basics/impl/StringUtilities.cpp.i
 
 src/ripple/basics/impl/StringUtilities.s: src/ripple/basics/impl/StringUtilities.cpp.s
@@ -2887,7 +2887,7 @@ src/ripple/basics/impl/StringUtilities.s: src/ripple/basics/impl/StringUtilities
 
 # target to generate assembly for a file
 src/ripple/basics/impl/StringUtilities.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/StringUtilities.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/StringUtilities.cpp.s
 .PHONY : src/ripple/basics/impl/StringUtilities.cpp.s
 
 src/ripple/basics/impl/Sustain.o: src/ripple/basics/impl/Sustain.cpp.o
@@ -2896,7 +2896,7 @@ src/ripple/basics/impl/Sustain.o: src/ripple/basics/impl/Sustain.cpp.o
 
 # target to build an object file
 src/ripple/basics/impl/Sustain.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/Sustain.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/Sustain.cpp.o
 .PHONY : src/ripple/basics/impl/Sustain.cpp.o
 
 src/ripple/basics/impl/Sustain.i: src/ripple/basics/impl/Sustain.cpp.i
@@ -2905,7 +2905,7 @@ src/ripple/basics/impl/Sustain.i: src/ripple/basics/impl/Sustain.cpp.i
 
 # target to preprocess a source file
 src/ripple/basics/impl/Sustain.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/Sustain.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/Sustain.cpp.i
 .PHONY : src/ripple/basics/impl/Sustain.cpp.i
 
 src/ripple/basics/impl/Sustain.s: src/ripple/basics/impl/Sustain.cpp.s
@@ -2914,7 +2914,7 @@ src/ripple/basics/impl/Sustain.s: src/ripple/basics/impl/Sustain.cpp.s
 
 # target to generate assembly for a file
 src/ripple/basics/impl/Sustain.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/Sustain.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/Sustain.cpp.s
 .PHONY : src/ripple/basics/impl/Sustain.cpp.s
 
 src/ripple/basics/impl/UptimeTimer.o: src/ripple/basics/impl/UptimeTimer.cpp.o
@@ -2923,7 +2923,7 @@ src/ripple/basics/impl/UptimeTimer.o: src/ripple/basics/impl/UptimeTimer.cpp.o
 
 # target to build an object file
 src/ripple/basics/impl/UptimeTimer.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/UptimeTimer.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/UptimeTimer.cpp.o
 .PHONY : src/ripple/basics/impl/UptimeTimer.cpp.o
 
 src/ripple/basics/impl/UptimeTimer.i: src/ripple/basics/impl/UptimeTimer.cpp.i
@@ -2932,7 +2932,7 @@ src/ripple/basics/impl/UptimeTimer.i: src/ripple/basics/impl/UptimeTimer.cpp.i
 
 # target to preprocess a source file
 src/ripple/basics/impl/UptimeTimer.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/UptimeTimer.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/UptimeTimer.cpp.i
 .PHONY : src/ripple/basics/impl/UptimeTimer.cpp.i
 
 src/ripple/basics/impl/UptimeTimer.s: src/ripple/basics/impl/UptimeTimer.cpp.s
@@ -2941,7 +2941,7 @@ src/ripple/basics/impl/UptimeTimer.s: src/ripple/basics/impl/UptimeTimer.cpp.s
 
 # target to generate assembly for a file
 src/ripple/basics/impl/UptimeTimer.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/UptimeTimer.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/UptimeTimer.cpp.s
 .PHONY : src/ripple/basics/impl/UptimeTimer.cpp.s
 
 src/ripple/basics/impl/contract.o: src/ripple/basics/impl/contract.cpp.o
@@ -2950,7 +2950,7 @@ src/ripple/basics/impl/contract.o: src/ripple/basics/impl/contract.cpp.o
 
 # target to build an object file
 src/ripple/basics/impl/contract.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/contract.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/contract.cpp.o
 .PHONY : src/ripple/basics/impl/contract.cpp.o
 
 src/ripple/basics/impl/contract.i: src/ripple/basics/impl/contract.cpp.i
@@ -2959,7 +2959,7 @@ src/ripple/basics/impl/contract.i: src/ripple/basics/impl/contract.cpp.i
 
 # target to preprocess a source file
 src/ripple/basics/impl/contract.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/contract.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/contract.cpp.i
 .PHONY : src/ripple/basics/impl/contract.cpp.i
 
 src/ripple/basics/impl/contract.s: src/ripple/basics/impl/contract.cpp.s
@@ -2968,7 +2968,7 @@ src/ripple/basics/impl/contract.s: src/ripple/basics/impl/contract.cpp.s
 
 # target to generate assembly for a file
 src/ripple/basics/impl/contract.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/contract.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/contract.cpp.s
 .PHONY : src/ripple/basics/impl/contract.cpp.s
 
 src/ripple/basics/impl/make_SSLContext.o: src/ripple/basics/impl/make_SSLContext.cpp.o
@@ -2977,7 +2977,7 @@ src/ripple/basics/impl/make_SSLContext.o: src/ripple/basics/impl/make_SSLContext
 
 # target to build an object file
 src/ripple/basics/impl/make_SSLContext.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/make_SSLContext.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/make_SSLContext.cpp.o
 .PHONY : src/ripple/basics/impl/make_SSLContext.cpp.o
 
 src/ripple/basics/impl/make_SSLContext.i: src/ripple/basics/impl/make_SSLContext.cpp.i
@@ -2986,7 +2986,7 @@ src/ripple/basics/impl/make_SSLContext.i: src/ripple/basics/impl/make_SSLContext
 
 # target to preprocess a source file
 src/ripple/basics/impl/make_SSLContext.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/make_SSLContext.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/make_SSLContext.cpp.i
 .PHONY : src/ripple/basics/impl/make_SSLContext.cpp.i
 
 src/ripple/basics/impl/make_SSLContext.s: src/ripple/basics/impl/make_SSLContext.cpp.s
@@ -2995,7 +2995,7 @@ src/ripple/basics/impl/make_SSLContext.s: src/ripple/basics/impl/make_SSLContext
 
 # target to generate assembly for a file
 src/ripple/basics/impl/make_SSLContext.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/make_SSLContext.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/make_SSLContext.cpp.s
 .PHONY : src/ripple/basics/impl/make_SSLContext.cpp.s
 
 src/ripple/basics/impl/mulDiv.o: src/ripple/basics/impl/mulDiv.cpp.o
@@ -3004,7 +3004,7 @@ src/ripple/basics/impl/mulDiv.o: src/ripple/basics/impl/mulDiv.cpp.o
 
 # target to build an object file
 src/ripple/basics/impl/mulDiv.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/mulDiv.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/mulDiv.cpp.o
 .PHONY : src/ripple/basics/impl/mulDiv.cpp.o
 
 src/ripple/basics/impl/mulDiv.i: src/ripple/basics/impl/mulDiv.cpp.i
@@ -3013,7 +3013,7 @@ src/ripple/basics/impl/mulDiv.i: src/ripple/basics/impl/mulDiv.cpp.i
 
 # target to preprocess a source file
 src/ripple/basics/impl/mulDiv.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/mulDiv.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/mulDiv.cpp.i
 .PHONY : src/ripple/basics/impl/mulDiv.cpp.i
 
 src/ripple/basics/impl/mulDiv.s: src/ripple/basics/impl/mulDiv.cpp.s
@@ -3022,7 +3022,7 @@ src/ripple/basics/impl/mulDiv.s: src/ripple/basics/impl/mulDiv.cpp.s
 
 # target to generate assembly for a file
 src/ripple/basics/impl/mulDiv.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/mulDiv.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/mulDiv.cpp.s
 .PHONY : src/ripple/basics/impl/mulDiv.cpp.s
 
 src/ripple/basics/impl/strHex.o: src/ripple/basics/impl/strHex.cpp.o
@@ -3031,7 +3031,7 @@ src/ripple/basics/impl/strHex.o: src/ripple/basics/impl/strHex.cpp.o
 
 # target to build an object file
 src/ripple/basics/impl/strHex.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/strHex.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/strHex.cpp.o
 .PHONY : src/ripple/basics/impl/strHex.cpp.o
 
 src/ripple/basics/impl/strHex.i: src/ripple/basics/impl/strHex.cpp.i
@@ -3040,7 +3040,7 @@ src/ripple/basics/impl/strHex.i: src/ripple/basics/impl/strHex.cpp.i
 
 # target to preprocess a source file
 src/ripple/basics/impl/strHex.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/strHex.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/strHex.cpp.i
 .PHONY : src/ripple/basics/impl/strHex.cpp.i
 
 src/ripple/basics/impl/strHex.s: src/ripple/basics/impl/strHex.cpp.s
@@ -3049,7 +3049,7 @@ src/ripple/basics/impl/strHex.s: src/ripple/basics/impl/strHex.cpp.s
 
 # target to generate assembly for a file
 src/ripple/basics/impl/strHex.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/basics/impl/strHex.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/basics/impl/strHex.cpp.s
 .PHONY : src/ripple/basics/impl/strHex.cpp.s
 
 src/ripple/beast/hash/impl/xxhash.o: src/ripple/beast/hash/impl/xxhash.cpp.o
@@ -3058,7 +3058,7 @@ src/ripple/beast/hash/impl/xxhash.o: src/ripple/beast/hash/impl/xxhash.cpp.o
 
 # target to build an object file
 src/ripple/beast/hash/impl/xxhash.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/hash/impl/xxhash.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/hash/impl/xxhash.cpp.o
 .PHONY : src/ripple/beast/hash/impl/xxhash.cpp.o
 
 src/ripple/beast/hash/impl/xxhash.i: src/ripple/beast/hash/impl/xxhash.cpp.i
@@ -3067,7 +3067,7 @@ src/ripple/beast/hash/impl/xxhash.i: src/ripple/beast/hash/impl/xxhash.cpp.i
 
 # target to preprocess a source file
 src/ripple/beast/hash/impl/xxhash.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/hash/impl/xxhash.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/hash/impl/xxhash.cpp.i
 .PHONY : src/ripple/beast/hash/impl/xxhash.cpp.i
 
 src/ripple/beast/hash/impl/xxhash.s: src/ripple/beast/hash/impl/xxhash.cpp.s
@@ -3076,7 +3076,7 @@ src/ripple/beast/hash/impl/xxhash.s: src/ripple/beast/hash/impl/xxhash.cpp.s
 
 # target to generate assembly for a file
 src/ripple/beast/hash/impl/xxhash.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/hash/impl/xxhash.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/hash/impl/xxhash.cpp.s
 .PHONY : src/ripple/beast/hash/impl/xxhash.cpp.s
 
 src/ripple/beast/insight/impl/Collector.o: src/ripple/beast/insight/impl/Collector.cpp.o
@@ -3085,7 +3085,7 @@ src/ripple/beast/insight/impl/Collector.o: src/ripple/beast/insight/impl/Collect
 
 # target to build an object file
 src/ripple/beast/insight/impl/Collector.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Collector.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Collector.cpp.o
 .PHONY : src/ripple/beast/insight/impl/Collector.cpp.o
 
 src/ripple/beast/insight/impl/Collector.i: src/ripple/beast/insight/impl/Collector.cpp.i
@@ -3094,7 +3094,7 @@ src/ripple/beast/insight/impl/Collector.i: src/ripple/beast/insight/impl/Collect
 
 # target to preprocess a source file
 src/ripple/beast/insight/impl/Collector.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Collector.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Collector.cpp.i
 .PHONY : src/ripple/beast/insight/impl/Collector.cpp.i
 
 src/ripple/beast/insight/impl/Collector.s: src/ripple/beast/insight/impl/Collector.cpp.s
@@ -3103,7 +3103,7 @@ src/ripple/beast/insight/impl/Collector.s: src/ripple/beast/insight/impl/Collect
 
 # target to generate assembly for a file
 src/ripple/beast/insight/impl/Collector.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Collector.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Collector.cpp.s
 .PHONY : src/ripple/beast/insight/impl/Collector.cpp.s
 
 src/ripple/beast/insight/impl/Group.o: src/ripple/beast/insight/impl/Group.cpp.o
@@ -3112,7 +3112,7 @@ src/ripple/beast/insight/impl/Group.o: src/ripple/beast/insight/impl/Group.cpp.o
 
 # target to build an object file
 src/ripple/beast/insight/impl/Group.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Group.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Group.cpp.o
 .PHONY : src/ripple/beast/insight/impl/Group.cpp.o
 
 src/ripple/beast/insight/impl/Group.i: src/ripple/beast/insight/impl/Group.cpp.i
@@ -3121,7 +3121,7 @@ src/ripple/beast/insight/impl/Group.i: src/ripple/beast/insight/impl/Group.cpp.i
 
 # target to preprocess a source file
 src/ripple/beast/insight/impl/Group.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Group.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Group.cpp.i
 .PHONY : src/ripple/beast/insight/impl/Group.cpp.i
 
 src/ripple/beast/insight/impl/Group.s: src/ripple/beast/insight/impl/Group.cpp.s
@@ -3130,7 +3130,7 @@ src/ripple/beast/insight/impl/Group.s: src/ripple/beast/insight/impl/Group.cpp.s
 
 # target to generate assembly for a file
 src/ripple/beast/insight/impl/Group.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Group.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Group.cpp.s
 .PHONY : src/ripple/beast/insight/impl/Group.cpp.s
 
 src/ripple/beast/insight/impl/Groups.o: src/ripple/beast/insight/impl/Groups.cpp.o
@@ -3139,7 +3139,7 @@ src/ripple/beast/insight/impl/Groups.o: src/ripple/beast/insight/impl/Groups.cpp
 
 # target to build an object file
 src/ripple/beast/insight/impl/Groups.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Groups.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Groups.cpp.o
 .PHONY : src/ripple/beast/insight/impl/Groups.cpp.o
 
 src/ripple/beast/insight/impl/Groups.i: src/ripple/beast/insight/impl/Groups.cpp.i
@@ -3148,7 +3148,7 @@ src/ripple/beast/insight/impl/Groups.i: src/ripple/beast/insight/impl/Groups.cpp
 
 # target to preprocess a source file
 src/ripple/beast/insight/impl/Groups.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Groups.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Groups.cpp.i
 .PHONY : src/ripple/beast/insight/impl/Groups.cpp.i
 
 src/ripple/beast/insight/impl/Groups.s: src/ripple/beast/insight/impl/Groups.cpp.s
@@ -3157,7 +3157,7 @@ src/ripple/beast/insight/impl/Groups.s: src/ripple/beast/insight/impl/Groups.cpp
 
 # target to generate assembly for a file
 src/ripple/beast/insight/impl/Groups.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Groups.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Groups.cpp.s
 .PHONY : src/ripple/beast/insight/impl/Groups.cpp.s
 
 src/ripple/beast/insight/impl/Hook.o: src/ripple/beast/insight/impl/Hook.cpp.o
@@ -3166,7 +3166,7 @@ src/ripple/beast/insight/impl/Hook.o: src/ripple/beast/insight/impl/Hook.cpp.o
 
 # target to build an object file
 src/ripple/beast/insight/impl/Hook.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Hook.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Hook.cpp.o
 .PHONY : src/ripple/beast/insight/impl/Hook.cpp.o
 
 src/ripple/beast/insight/impl/Hook.i: src/ripple/beast/insight/impl/Hook.cpp.i
@@ -3175,7 +3175,7 @@ src/ripple/beast/insight/impl/Hook.i: src/ripple/beast/insight/impl/Hook.cpp.i
 
 # target to preprocess a source file
 src/ripple/beast/insight/impl/Hook.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Hook.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Hook.cpp.i
 .PHONY : src/ripple/beast/insight/impl/Hook.cpp.i
 
 src/ripple/beast/insight/impl/Hook.s: src/ripple/beast/insight/impl/Hook.cpp.s
@@ -3184,7 +3184,7 @@ src/ripple/beast/insight/impl/Hook.s: src/ripple/beast/insight/impl/Hook.cpp.s
 
 # target to generate assembly for a file
 src/ripple/beast/insight/impl/Hook.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Hook.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Hook.cpp.s
 .PHONY : src/ripple/beast/insight/impl/Hook.cpp.s
 
 src/ripple/beast/insight/impl/Metric.o: src/ripple/beast/insight/impl/Metric.cpp.o
@@ -3193,7 +3193,7 @@ src/ripple/beast/insight/impl/Metric.o: src/ripple/beast/insight/impl/Metric.cpp
 
 # target to build an object file
 src/ripple/beast/insight/impl/Metric.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Metric.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Metric.cpp.o
 .PHONY : src/ripple/beast/insight/impl/Metric.cpp.o
 
 src/ripple/beast/insight/impl/Metric.i: src/ripple/beast/insight/impl/Metric.cpp.i
@@ -3202,7 +3202,7 @@ src/ripple/beast/insight/impl/Metric.i: src/ripple/beast/insight/impl/Metric.cpp
 
 # target to preprocess a source file
 src/ripple/beast/insight/impl/Metric.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Metric.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Metric.cpp.i
 .PHONY : src/ripple/beast/insight/impl/Metric.cpp.i
 
 src/ripple/beast/insight/impl/Metric.s: src/ripple/beast/insight/impl/Metric.cpp.s
@@ -3211,7 +3211,7 @@ src/ripple/beast/insight/impl/Metric.s: src/ripple/beast/insight/impl/Metric.cpp
 
 # target to generate assembly for a file
 src/ripple/beast/insight/impl/Metric.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/Metric.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/Metric.cpp.s
 .PHONY : src/ripple/beast/insight/impl/Metric.cpp.s
 
 src/ripple/beast/insight/impl/NullCollector.o: src/ripple/beast/insight/impl/NullCollector.cpp.o
@@ -3220,7 +3220,7 @@ src/ripple/beast/insight/impl/NullCollector.o: src/ripple/beast/insight/impl/Nul
 
 # target to build an object file
 src/ripple/beast/insight/impl/NullCollector.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/NullCollector.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/NullCollector.cpp.o
 .PHONY : src/ripple/beast/insight/impl/NullCollector.cpp.o
 
 src/ripple/beast/insight/impl/NullCollector.i: src/ripple/beast/insight/impl/NullCollector.cpp.i
@@ -3229,7 +3229,7 @@ src/ripple/beast/insight/impl/NullCollector.i: src/ripple/beast/insight/impl/Nul
 
 # target to preprocess a source file
 src/ripple/beast/insight/impl/NullCollector.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/NullCollector.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/NullCollector.cpp.i
 .PHONY : src/ripple/beast/insight/impl/NullCollector.cpp.i
 
 src/ripple/beast/insight/impl/NullCollector.s: src/ripple/beast/insight/impl/NullCollector.cpp.s
@@ -3238,7 +3238,7 @@ src/ripple/beast/insight/impl/NullCollector.s: src/ripple/beast/insight/impl/Nul
 
 # target to generate assembly for a file
 src/ripple/beast/insight/impl/NullCollector.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/NullCollector.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/NullCollector.cpp.s
 .PHONY : src/ripple/beast/insight/impl/NullCollector.cpp.s
 
 src/ripple/beast/insight/impl/StatsDCollector.o: src/ripple/beast/insight/impl/StatsDCollector.cpp.o
@@ -3247,7 +3247,7 @@ src/ripple/beast/insight/impl/StatsDCollector.o: src/ripple/beast/insight/impl/S
 
 # target to build an object file
 src/ripple/beast/insight/impl/StatsDCollector.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/StatsDCollector.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/StatsDCollector.cpp.o
 .PHONY : src/ripple/beast/insight/impl/StatsDCollector.cpp.o
 
 src/ripple/beast/insight/impl/StatsDCollector.i: src/ripple/beast/insight/impl/StatsDCollector.cpp.i
@@ -3256,7 +3256,7 @@ src/ripple/beast/insight/impl/StatsDCollector.i: src/ripple/beast/insight/impl/S
 
 # target to preprocess a source file
 src/ripple/beast/insight/impl/StatsDCollector.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/StatsDCollector.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/StatsDCollector.cpp.i
 .PHONY : src/ripple/beast/insight/impl/StatsDCollector.cpp.i
 
 src/ripple/beast/insight/impl/StatsDCollector.s: src/ripple/beast/insight/impl/StatsDCollector.cpp.s
@@ -3265,7 +3265,7 @@ src/ripple/beast/insight/impl/StatsDCollector.s: src/ripple/beast/insight/impl/S
 
 # target to generate assembly for a file
 src/ripple/beast/insight/impl/StatsDCollector.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/insight/impl/StatsDCollector.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/insight/impl/StatsDCollector.cpp.s
 .PHONY : src/ripple/beast/insight/impl/StatsDCollector.cpp.s
 
 src/ripple/beast/net/impl/IPAddressConversion.o: src/ripple/beast/net/impl/IPAddressConversion.cpp.o
@@ -3274,7 +3274,7 @@ src/ripple/beast/net/impl/IPAddressConversion.o: src/ripple/beast/net/impl/IPAdd
 
 # target to build an object file
 src/ripple/beast/net/impl/IPAddressConversion.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/net/impl/IPAddressConversion.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/net/impl/IPAddressConversion.cpp.o
 .PHONY : src/ripple/beast/net/impl/IPAddressConversion.cpp.o
 
 src/ripple/beast/net/impl/IPAddressConversion.i: src/ripple/beast/net/impl/IPAddressConversion.cpp.i
@@ -3283,7 +3283,7 @@ src/ripple/beast/net/impl/IPAddressConversion.i: src/ripple/beast/net/impl/IPAdd
 
 # target to preprocess a source file
 src/ripple/beast/net/impl/IPAddressConversion.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/net/impl/IPAddressConversion.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/net/impl/IPAddressConversion.cpp.i
 .PHONY : src/ripple/beast/net/impl/IPAddressConversion.cpp.i
 
 src/ripple/beast/net/impl/IPAddressConversion.s: src/ripple/beast/net/impl/IPAddressConversion.cpp.s
@@ -3292,7 +3292,7 @@ src/ripple/beast/net/impl/IPAddressConversion.s: src/ripple/beast/net/impl/IPAdd
 
 # target to generate assembly for a file
 src/ripple/beast/net/impl/IPAddressConversion.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/net/impl/IPAddressConversion.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/net/impl/IPAddressConversion.cpp.s
 .PHONY : src/ripple/beast/net/impl/IPAddressConversion.cpp.s
 
 src/ripple/beast/net/impl/IPAddressV4.o: src/ripple/beast/net/impl/IPAddressV4.cpp.o
@@ -3301,7 +3301,7 @@ src/ripple/beast/net/impl/IPAddressV4.o: src/ripple/beast/net/impl/IPAddressV4.c
 
 # target to build an object file
 src/ripple/beast/net/impl/IPAddressV4.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/net/impl/IPAddressV4.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/net/impl/IPAddressV4.cpp.o
 .PHONY : src/ripple/beast/net/impl/IPAddressV4.cpp.o
 
 src/ripple/beast/net/impl/IPAddressV4.i: src/ripple/beast/net/impl/IPAddressV4.cpp.i
@@ -3310,7 +3310,7 @@ src/ripple/beast/net/impl/IPAddressV4.i: src/ripple/beast/net/impl/IPAddressV4.c
 
 # target to preprocess a source file
 src/ripple/beast/net/impl/IPAddressV4.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/net/impl/IPAddressV4.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/net/impl/IPAddressV4.cpp.i
 .PHONY : src/ripple/beast/net/impl/IPAddressV4.cpp.i
 
 src/ripple/beast/net/impl/IPAddressV4.s: src/ripple/beast/net/impl/IPAddressV4.cpp.s
@@ -3319,7 +3319,7 @@ src/ripple/beast/net/impl/IPAddressV4.s: src/ripple/beast/net/impl/IPAddressV4.c
 
 # target to generate assembly for a file
 src/ripple/beast/net/impl/IPAddressV4.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/net/impl/IPAddressV4.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/net/impl/IPAddressV4.cpp.s
 .PHONY : src/ripple/beast/net/impl/IPAddressV4.cpp.s
 
 src/ripple/beast/net/impl/IPAddressV6.o: src/ripple/beast/net/impl/IPAddressV6.cpp.o
@@ -3328,7 +3328,7 @@ src/ripple/beast/net/impl/IPAddressV6.o: src/ripple/beast/net/impl/IPAddressV6.c
 
 # target to build an object file
 src/ripple/beast/net/impl/IPAddressV6.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/net/impl/IPAddressV6.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/net/impl/IPAddressV6.cpp.o
 .PHONY : src/ripple/beast/net/impl/IPAddressV6.cpp.o
 
 src/ripple/beast/net/impl/IPAddressV6.i: src/ripple/beast/net/impl/IPAddressV6.cpp.i
@@ -3337,7 +3337,7 @@ src/ripple/beast/net/impl/IPAddressV6.i: src/ripple/beast/net/impl/IPAddressV6.c
 
 # target to preprocess a source file
 src/ripple/beast/net/impl/IPAddressV6.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/net/impl/IPAddressV6.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/net/impl/IPAddressV6.cpp.i
 .PHONY : src/ripple/beast/net/impl/IPAddressV6.cpp.i
 
 src/ripple/beast/net/impl/IPAddressV6.s: src/ripple/beast/net/impl/IPAddressV6.cpp.s
@@ -3346,7 +3346,7 @@ src/ripple/beast/net/impl/IPAddressV6.s: src/ripple/beast/net/impl/IPAddressV6.c
 
 # target to generate assembly for a file
 src/ripple/beast/net/impl/IPAddressV6.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/net/impl/IPAddressV6.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/net/impl/IPAddressV6.cpp.s
 .PHONY : src/ripple/beast/net/impl/IPAddressV6.cpp.s
 
 src/ripple/beast/net/impl/IPEndpoint.o: src/ripple/beast/net/impl/IPEndpoint.cpp.o
@@ -3355,7 +3355,7 @@ src/ripple/beast/net/impl/IPEndpoint.o: src/ripple/beast/net/impl/IPEndpoint.cpp
 
 # target to build an object file
 src/ripple/beast/net/impl/IPEndpoint.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/net/impl/IPEndpoint.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/net/impl/IPEndpoint.cpp.o
 .PHONY : src/ripple/beast/net/impl/IPEndpoint.cpp.o
 
 src/ripple/beast/net/impl/IPEndpoint.i: src/ripple/beast/net/impl/IPEndpoint.cpp.i
@@ -3364,7 +3364,7 @@ src/ripple/beast/net/impl/IPEndpoint.i: src/ripple/beast/net/impl/IPEndpoint.cpp
 
 # target to preprocess a source file
 src/ripple/beast/net/impl/IPEndpoint.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/net/impl/IPEndpoint.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/net/impl/IPEndpoint.cpp.i
 .PHONY : src/ripple/beast/net/impl/IPEndpoint.cpp.i
 
 src/ripple/beast/net/impl/IPEndpoint.s: src/ripple/beast/net/impl/IPEndpoint.cpp.s
@@ -3373,7 +3373,7 @@ src/ripple/beast/net/impl/IPEndpoint.s: src/ripple/beast/net/impl/IPEndpoint.cpp
 
 # target to generate assembly for a file
 src/ripple/beast/net/impl/IPEndpoint.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/net/impl/IPEndpoint.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/net/impl/IPEndpoint.cpp.s
 .PHONY : src/ripple/beast/net/impl/IPEndpoint.cpp.s
 
 src/ripple/beast/unity/beast_hash_unity.o: src/ripple/beast/unity/beast_hash_unity.cpp.o
@@ -3382,7 +3382,7 @@ src/ripple/beast/unity/beast_hash_unity.o: src/ripple/beast/unity/beast_hash_uni
 
 # target to build an object file
 src/ripple/beast/unity/beast_hash_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/unity/beast_hash_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/beast/unity/beast_hash_unity.cpp.o
 .PHONY : src/ripple/beast/unity/beast_hash_unity.cpp.o
 
 src/ripple/beast/unity/beast_hash_unity.i: src/ripple/beast/unity/beast_hash_unity.cpp.i
@@ -3391,7 +3391,7 @@ src/ripple/beast/unity/beast_hash_unity.i: src/ripple/beast/unity/beast_hash_uni
 
 # target to preprocess a source file
 src/ripple/beast/unity/beast_hash_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/unity/beast_hash_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/beast/unity/beast_hash_unity.cpp.i
 .PHONY : src/ripple/beast/unity/beast_hash_unity.cpp.i
 
 src/ripple/beast/unity/beast_hash_unity.s: src/ripple/beast/unity/beast_hash_unity.cpp.s
@@ -3400,7 +3400,7 @@ src/ripple/beast/unity/beast_hash_unity.s: src/ripple/beast/unity/beast_hash_uni
 
 # target to generate assembly for a file
 src/ripple/beast/unity/beast_hash_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/unity/beast_hash_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/beast/unity/beast_hash_unity.cpp.s
 .PHONY : src/ripple/beast/unity/beast_hash_unity.cpp.s
 
 src/ripple/beast/unity/beast_insight_unity.o: src/ripple/beast/unity/beast_insight_unity.cpp.o
@@ -3409,7 +3409,7 @@ src/ripple/beast/unity/beast_insight_unity.o: src/ripple/beast/unity/beast_insig
 
 # target to build an object file
 src/ripple/beast/unity/beast_insight_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/unity/beast_insight_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/beast/unity/beast_insight_unity.cpp.o
 .PHONY : src/ripple/beast/unity/beast_insight_unity.cpp.o
 
 src/ripple/beast/unity/beast_insight_unity.i: src/ripple/beast/unity/beast_insight_unity.cpp.i
@@ -3418,7 +3418,7 @@ src/ripple/beast/unity/beast_insight_unity.i: src/ripple/beast/unity/beast_insig
 
 # target to preprocess a source file
 src/ripple/beast/unity/beast_insight_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/unity/beast_insight_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/beast/unity/beast_insight_unity.cpp.i
 .PHONY : src/ripple/beast/unity/beast_insight_unity.cpp.i
 
 src/ripple/beast/unity/beast_insight_unity.s: src/ripple/beast/unity/beast_insight_unity.cpp.s
@@ -3427,7 +3427,7 @@ src/ripple/beast/unity/beast_insight_unity.s: src/ripple/beast/unity/beast_insig
 
 # target to generate assembly for a file
 src/ripple/beast/unity/beast_insight_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/unity/beast_insight_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/beast/unity/beast_insight_unity.cpp.s
 .PHONY : src/ripple/beast/unity/beast_insight_unity.cpp.s
 
 src/ripple/beast/unity/beast_net_unity.o: src/ripple/beast/unity/beast_net_unity.cpp.o
@@ -3436,7 +3436,7 @@ src/ripple/beast/unity/beast_net_unity.o: src/ripple/beast/unity/beast_net_unity
 
 # target to build an object file
 src/ripple/beast/unity/beast_net_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/unity/beast_net_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/beast/unity/beast_net_unity.cpp.o
 .PHONY : src/ripple/beast/unity/beast_net_unity.cpp.o
 
 src/ripple/beast/unity/beast_net_unity.i: src/ripple/beast/unity/beast_net_unity.cpp.i
@@ -3445,7 +3445,7 @@ src/ripple/beast/unity/beast_net_unity.i: src/ripple/beast/unity/beast_net_unity
 
 # target to preprocess a source file
 src/ripple/beast/unity/beast_net_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/unity/beast_net_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/beast/unity/beast_net_unity.cpp.i
 .PHONY : src/ripple/beast/unity/beast_net_unity.cpp.i
 
 src/ripple/beast/unity/beast_net_unity.s: src/ripple/beast/unity/beast_net_unity.cpp.s
@@ -3454,7 +3454,7 @@ src/ripple/beast/unity/beast_net_unity.s: src/ripple/beast/unity/beast_net_unity
 
 # target to generate assembly for a file
 src/ripple/beast/unity/beast_net_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/unity/beast_net_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/beast/unity/beast_net_unity.cpp.s
 .PHONY : src/ripple/beast/unity/beast_net_unity.cpp.s
 
 src/ripple/beast/unity/beast_utility_unity.o: src/ripple/beast/unity/beast_utility_unity.cpp.o
@@ -3463,7 +3463,7 @@ src/ripple/beast/unity/beast_utility_unity.o: src/ripple/beast/unity/beast_utili
 
 # target to build an object file
 src/ripple/beast/unity/beast_utility_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/unity/beast_utility_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/beast/unity/beast_utility_unity.cpp.o
 .PHONY : src/ripple/beast/unity/beast_utility_unity.cpp.o
 
 src/ripple/beast/unity/beast_utility_unity.i: src/ripple/beast/unity/beast_utility_unity.cpp.i
@@ -3472,7 +3472,7 @@ src/ripple/beast/unity/beast_utility_unity.i: src/ripple/beast/unity/beast_utili
 
 # target to preprocess a source file
 src/ripple/beast/unity/beast_utility_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/unity/beast_utility_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/beast/unity/beast_utility_unity.cpp.i
 .PHONY : src/ripple/beast/unity/beast_utility_unity.cpp.i
 
 src/ripple/beast/unity/beast_utility_unity.s: src/ripple/beast/unity/beast_utility_unity.cpp.s
@@ -3481,7 +3481,7 @@ src/ripple/beast/unity/beast_utility_unity.s: src/ripple/beast/unity/beast_utili
 
 # target to generate assembly for a file
 src/ripple/beast/unity/beast_utility_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/unity/beast_utility_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/beast/unity/beast_utility_unity.cpp.s
 .PHONY : src/ripple/beast/unity/beast_utility_unity.cpp.s
 
 src/ripple/beast/utility/src/beast_Debug.o: src/ripple/beast/utility/src/beast_Debug.cpp.o
@@ -3490,7 +3490,7 @@ src/ripple/beast/utility/src/beast_Debug.o: src/ripple/beast/utility/src/beast_D
 
 # target to build an object file
 src/ripple/beast/utility/src/beast_Debug.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/utility/src/beast_Debug.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/utility/src/beast_Debug.cpp.o
 .PHONY : src/ripple/beast/utility/src/beast_Debug.cpp.o
 
 src/ripple/beast/utility/src/beast_Debug.i: src/ripple/beast/utility/src/beast_Debug.cpp.i
@@ -3499,7 +3499,7 @@ src/ripple/beast/utility/src/beast_Debug.i: src/ripple/beast/utility/src/beast_D
 
 # target to preprocess a source file
 src/ripple/beast/utility/src/beast_Debug.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/utility/src/beast_Debug.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/utility/src/beast_Debug.cpp.i
 .PHONY : src/ripple/beast/utility/src/beast_Debug.cpp.i
 
 src/ripple/beast/utility/src/beast_Debug.s: src/ripple/beast/utility/src/beast_Debug.cpp.s
@@ -3508,7 +3508,7 @@ src/ripple/beast/utility/src/beast_Debug.s: src/ripple/beast/utility/src/beast_D
 
 # target to generate assembly for a file
 src/ripple/beast/utility/src/beast_Debug.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/utility/src/beast_Debug.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/utility/src/beast_Debug.cpp.s
 .PHONY : src/ripple/beast/utility/src/beast_Debug.cpp.s
 
 src/ripple/beast/utility/src/beast_Journal.o: src/ripple/beast/utility/src/beast_Journal.cpp.o
@@ -3517,7 +3517,7 @@ src/ripple/beast/utility/src/beast_Journal.o: src/ripple/beast/utility/src/beast
 
 # target to build an object file
 src/ripple/beast/utility/src/beast_Journal.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/utility/src/beast_Journal.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/utility/src/beast_Journal.cpp.o
 .PHONY : src/ripple/beast/utility/src/beast_Journal.cpp.o
 
 src/ripple/beast/utility/src/beast_Journal.i: src/ripple/beast/utility/src/beast_Journal.cpp.i
@@ -3526,7 +3526,7 @@ src/ripple/beast/utility/src/beast_Journal.i: src/ripple/beast/utility/src/beast
 
 # target to preprocess a source file
 src/ripple/beast/utility/src/beast_Journal.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/utility/src/beast_Journal.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/utility/src/beast_Journal.cpp.i
 .PHONY : src/ripple/beast/utility/src/beast_Journal.cpp.i
 
 src/ripple/beast/utility/src/beast_Journal.s: src/ripple/beast/utility/src/beast_Journal.cpp.s
@@ -3535,7 +3535,7 @@ src/ripple/beast/utility/src/beast_Journal.s: src/ripple/beast/utility/src/beast
 
 # target to generate assembly for a file
 src/ripple/beast/utility/src/beast_Journal.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/utility/src/beast_Journal.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/utility/src/beast_Journal.cpp.s
 .PHONY : src/ripple/beast/utility/src/beast_Journal.cpp.s
 
 src/ripple/beast/utility/src/beast_PropertyStream.o: src/ripple/beast/utility/src/beast_PropertyStream.cpp.o
@@ -3544,7 +3544,7 @@ src/ripple/beast/utility/src/beast_PropertyStream.o: src/ripple/beast/utility/sr
 
 # target to build an object file
 src/ripple/beast/utility/src/beast_PropertyStream.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/utility/src/beast_PropertyStream.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/utility/src/beast_PropertyStream.cpp.o
 .PHONY : src/ripple/beast/utility/src/beast_PropertyStream.cpp.o
 
 src/ripple/beast/utility/src/beast_PropertyStream.i: src/ripple/beast/utility/src/beast_PropertyStream.cpp.i
@@ -3553,7 +3553,7 @@ src/ripple/beast/utility/src/beast_PropertyStream.i: src/ripple/beast/utility/sr
 
 # target to preprocess a source file
 src/ripple/beast/utility/src/beast_PropertyStream.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/utility/src/beast_PropertyStream.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/utility/src/beast_PropertyStream.cpp.i
 .PHONY : src/ripple/beast/utility/src/beast_PropertyStream.cpp.i
 
 src/ripple/beast/utility/src/beast_PropertyStream.s: src/ripple/beast/utility/src/beast_PropertyStream.cpp.s
@@ -3562,7 +3562,7 @@ src/ripple/beast/utility/src/beast_PropertyStream.s: src/ripple/beast/utility/sr
 
 # target to generate assembly for a file
 src/ripple/beast/utility/src/beast_PropertyStream.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/beast/utility/src/beast_PropertyStream.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/beast/utility/src/beast_PropertyStream.cpp.s
 .PHONY : src/ripple/beast/utility/src/beast_PropertyStream.cpp.s
 
 src/ripple/conditions/impl/Condition.o: src/ripple/conditions/impl/Condition.cpp.o
@@ -3571,7 +3571,7 @@ src/ripple/conditions/impl/Condition.o: src/ripple/conditions/impl/Condition.cpp
 
 # target to build an object file
 src/ripple/conditions/impl/Condition.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/conditions/impl/Condition.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/conditions/impl/Condition.cpp.o
 .PHONY : src/ripple/conditions/impl/Condition.cpp.o
 
 src/ripple/conditions/impl/Condition.i: src/ripple/conditions/impl/Condition.cpp.i
@@ -3580,7 +3580,7 @@ src/ripple/conditions/impl/Condition.i: src/ripple/conditions/impl/Condition.cpp
 
 # target to preprocess a source file
 src/ripple/conditions/impl/Condition.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/conditions/impl/Condition.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/conditions/impl/Condition.cpp.i
 .PHONY : src/ripple/conditions/impl/Condition.cpp.i
 
 src/ripple/conditions/impl/Condition.s: src/ripple/conditions/impl/Condition.cpp.s
@@ -3589,7 +3589,7 @@ src/ripple/conditions/impl/Condition.s: src/ripple/conditions/impl/Condition.cpp
 
 # target to generate assembly for a file
 src/ripple/conditions/impl/Condition.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/conditions/impl/Condition.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/conditions/impl/Condition.cpp.s
 .PHONY : src/ripple/conditions/impl/Condition.cpp.s
 
 src/ripple/conditions/impl/Fulfillment.o: src/ripple/conditions/impl/Fulfillment.cpp.o
@@ -3598,7 +3598,7 @@ src/ripple/conditions/impl/Fulfillment.o: src/ripple/conditions/impl/Fulfillment
 
 # target to build an object file
 src/ripple/conditions/impl/Fulfillment.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/conditions/impl/Fulfillment.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/conditions/impl/Fulfillment.cpp.o
 .PHONY : src/ripple/conditions/impl/Fulfillment.cpp.o
 
 src/ripple/conditions/impl/Fulfillment.i: src/ripple/conditions/impl/Fulfillment.cpp.i
@@ -3607,7 +3607,7 @@ src/ripple/conditions/impl/Fulfillment.i: src/ripple/conditions/impl/Fulfillment
 
 # target to preprocess a source file
 src/ripple/conditions/impl/Fulfillment.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/conditions/impl/Fulfillment.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/conditions/impl/Fulfillment.cpp.i
 .PHONY : src/ripple/conditions/impl/Fulfillment.cpp.i
 
 src/ripple/conditions/impl/Fulfillment.s: src/ripple/conditions/impl/Fulfillment.cpp.s
@@ -3616,7 +3616,7 @@ src/ripple/conditions/impl/Fulfillment.s: src/ripple/conditions/impl/Fulfillment
 
 # target to generate assembly for a file
 src/ripple/conditions/impl/Fulfillment.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/conditions/impl/Fulfillment.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/conditions/impl/Fulfillment.cpp.s
 .PHONY : src/ripple/conditions/impl/Fulfillment.cpp.s
 
 src/ripple/conditions/impl/error.o: src/ripple/conditions/impl/error.cpp.o
@@ -3625,7 +3625,7 @@ src/ripple/conditions/impl/error.o: src/ripple/conditions/impl/error.cpp.o
 
 # target to build an object file
 src/ripple/conditions/impl/error.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/conditions/impl/error.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/conditions/impl/error.cpp.o
 .PHONY : src/ripple/conditions/impl/error.cpp.o
 
 src/ripple/conditions/impl/error.i: src/ripple/conditions/impl/error.cpp.i
@@ -3634,7 +3634,7 @@ src/ripple/conditions/impl/error.i: src/ripple/conditions/impl/error.cpp.i
 
 # target to preprocess a source file
 src/ripple/conditions/impl/error.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/conditions/impl/error.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/conditions/impl/error.cpp.i
 .PHONY : src/ripple/conditions/impl/error.cpp.i
 
 src/ripple/conditions/impl/error.s: src/ripple/conditions/impl/error.cpp.s
@@ -3643,7 +3643,7 @@ src/ripple/conditions/impl/error.s: src/ripple/conditions/impl/error.cpp.s
 
 # target to generate assembly for a file
 src/ripple/conditions/impl/error.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/conditions/impl/error.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/conditions/impl/error.cpp.s
 .PHONY : src/ripple/conditions/impl/error.cpp.s
 
 src/ripple/consensus/Consensus.o: src/ripple/consensus/Consensus.cpp.o
@@ -3652,7 +3652,7 @@ src/ripple/consensus/Consensus.o: src/ripple/consensus/Consensus.cpp.o
 
 # target to build an object file
 src/ripple/consensus/Consensus.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/consensus/Consensus.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/consensus/Consensus.cpp.o
 .PHONY : src/ripple/consensus/Consensus.cpp.o
 
 src/ripple/consensus/Consensus.i: src/ripple/consensus/Consensus.cpp.i
@@ -3661,7 +3661,7 @@ src/ripple/consensus/Consensus.i: src/ripple/consensus/Consensus.cpp.i
 
 # target to preprocess a source file
 src/ripple/consensus/Consensus.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/consensus/Consensus.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/consensus/Consensus.cpp.i
 .PHONY : src/ripple/consensus/Consensus.cpp.i
 
 src/ripple/consensus/Consensus.s: src/ripple/consensus/Consensus.cpp.s
@@ -3670,7 +3670,7 @@ src/ripple/consensus/Consensus.s: src/ripple/consensus/Consensus.cpp.s
 
 # target to generate assembly for a file
 src/ripple/consensus/Consensus.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/consensus/Consensus.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/consensus/Consensus.cpp.s
 .PHONY : src/ripple/consensus/Consensus.cpp.s
 
 src/ripple/core/impl/Config.o: src/ripple/core/impl/Config.cpp.o
@@ -3679,7 +3679,7 @@ src/ripple/core/impl/Config.o: src/ripple/core/impl/Config.cpp.o
 
 # target to build an object file
 src/ripple/core/impl/Config.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/Config.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/Config.cpp.o
 .PHONY : src/ripple/core/impl/Config.cpp.o
 
 src/ripple/core/impl/Config.i: src/ripple/core/impl/Config.cpp.i
@@ -3688,7 +3688,7 @@ src/ripple/core/impl/Config.i: src/ripple/core/impl/Config.cpp.i
 
 # target to preprocess a source file
 src/ripple/core/impl/Config.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/Config.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/Config.cpp.i
 .PHONY : src/ripple/core/impl/Config.cpp.i
 
 src/ripple/core/impl/Config.s: src/ripple/core/impl/Config.cpp.s
@@ -3697,7 +3697,7 @@ src/ripple/core/impl/Config.s: src/ripple/core/impl/Config.cpp.s
 
 # target to generate assembly for a file
 src/ripple/core/impl/Config.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/Config.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/Config.cpp.s
 .PHONY : src/ripple/core/impl/Config.cpp.s
 
 src/ripple/core/impl/DatabaseCon.o: src/ripple/core/impl/DatabaseCon.cpp.o
@@ -3706,7 +3706,7 @@ src/ripple/core/impl/DatabaseCon.o: src/ripple/core/impl/DatabaseCon.cpp.o
 
 # target to build an object file
 src/ripple/core/impl/DatabaseCon.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/DatabaseCon.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/DatabaseCon.cpp.o
 .PHONY : src/ripple/core/impl/DatabaseCon.cpp.o
 
 src/ripple/core/impl/DatabaseCon.i: src/ripple/core/impl/DatabaseCon.cpp.i
@@ -3715,7 +3715,7 @@ src/ripple/core/impl/DatabaseCon.i: src/ripple/core/impl/DatabaseCon.cpp.i
 
 # target to preprocess a source file
 src/ripple/core/impl/DatabaseCon.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/DatabaseCon.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/DatabaseCon.cpp.i
 .PHONY : src/ripple/core/impl/DatabaseCon.cpp.i
 
 src/ripple/core/impl/DatabaseCon.s: src/ripple/core/impl/DatabaseCon.cpp.s
@@ -3724,7 +3724,7 @@ src/ripple/core/impl/DatabaseCon.s: src/ripple/core/impl/DatabaseCon.cpp.s
 
 # target to generate assembly for a file
 src/ripple/core/impl/DatabaseCon.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/DatabaseCon.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/DatabaseCon.cpp.s
 .PHONY : src/ripple/core/impl/DatabaseCon.cpp.s
 
 src/ripple/core/impl/DummySociDynamicBackend.o: src/ripple/core/impl/DummySociDynamicBackend.cpp.o
@@ -3733,7 +3733,7 @@ src/ripple/core/impl/DummySociDynamicBackend.o: src/ripple/core/impl/DummySociDy
 
 # target to build an object file
 src/ripple/core/impl/DummySociDynamicBackend.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/DummySociDynamicBackend.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/DummySociDynamicBackend.cpp.o
 .PHONY : src/ripple/core/impl/DummySociDynamicBackend.cpp.o
 
 src/ripple/core/impl/DummySociDynamicBackend.i: src/ripple/core/impl/DummySociDynamicBackend.cpp.i
@@ -3742,7 +3742,7 @@ src/ripple/core/impl/DummySociDynamicBackend.i: src/ripple/core/impl/DummySociDy
 
 # target to preprocess a source file
 src/ripple/core/impl/DummySociDynamicBackend.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/DummySociDynamicBackend.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/DummySociDynamicBackend.cpp.i
 .PHONY : src/ripple/core/impl/DummySociDynamicBackend.cpp.i
 
 src/ripple/core/impl/DummySociDynamicBackend.s: src/ripple/core/impl/DummySociDynamicBackend.cpp.s
@@ -3751,7 +3751,7 @@ src/ripple/core/impl/DummySociDynamicBackend.s: src/ripple/core/impl/DummySociDy
 
 # target to generate assembly for a file
 src/ripple/core/impl/DummySociDynamicBackend.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/DummySociDynamicBackend.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/DummySociDynamicBackend.cpp.s
 .PHONY : src/ripple/core/impl/DummySociDynamicBackend.cpp.s
 
 src/ripple/core/impl/Job.o: src/ripple/core/impl/Job.cpp.o
@@ -3760,7 +3760,7 @@ src/ripple/core/impl/Job.o: src/ripple/core/impl/Job.cpp.o
 
 # target to build an object file
 src/ripple/core/impl/Job.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/Job.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/Job.cpp.o
 .PHONY : src/ripple/core/impl/Job.cpp.o
 
 src/ripple/core/impl/Job.i: src/ripple/core/impl/Job.cpp.i
@@ -3769,7 +3769,7 @@ src/ripple/core/impl/Job.i: src/ripple/core/impl/Job.cpp.i
 
 # target to preprocess a source file
 src/ripple/core/impl/Job.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/Job.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/Job.cpp.i
 .PHONY : src/ripple/core/impl/Job.cpp.i
 
 src/ripple/core/impl/Job.s: src/ripple/core/impl/Job.cpp.s
@@ -3778,7 +3778,7 @@ src/ripple/core/impl/Job.s: src/ripple/core/impl/Job.cpp.s
 
 # target to generate assembly for a file
 src/ripple/core/impl/Job.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/Job.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/Job.cpp.s
 .PHONY : src/ripple/core/impl/Job.cpp.s
 
 src/ripple/core/impl/JobQueue.o: src/ripple/core/impl/JobQueue.cpp.o
@@ -3787,7 +3787,7 @@ src/ripple/core/impl/JobQueue.o: src/ripple/core/impl/JobQueue.cpp.o
 
 # target to build an object file
 src/ripple/core/impl/JobQueue.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/JobQueue.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/JobQueue.cpp.o
 .PHONY : src/ripple/core/impl/JobQueue.cpp.o
 
 src/ripple/core/impl/JobQueue.i: src/ripple/core/impl/JobQueue.cpp.i
@@ -3796,7 +3796,7 @@ src/ripple/core/impl/JobQueue.i: src/ripple/core/impl/JobQueue.cpp.i
 
 # target to preprocess a source file
 src/ripple/core/impl/JobQueue.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/JobQueue.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/JobQueue.cpp.i
 .PHONY : src/ripple/core/impl/JobQueue.cpp.i
 
 src/ripple/core/impl/JobQueue.s: src/ripple/core/impl/JobQueue.cpp.s
@@ -3805,7 +3805,7 @@ src/ripple/core/impl/JobQueue.s: src/ripple/core/impl/JobQueue.cpp.s
 
 # target to generate assembly for a file
 src/ripple/core/impl/JobQueue.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/JobQueue.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/JobQueue.cpp.s
 .PHONY : src/ripple/core/impl/JobQueue.cpp.s
 
 src/ripple/core/impl/LoadEvent.o: src/ripple/core/impl/LoadEvent.cpp.o
@@ -3814,7 +3814,7 @@ src/ripple/core/impl/LoadEvent.o: src/ripple/core/impl/LoadEvent.cpp.o
 
 # target to build an object file
 src/ripple/core/impl/LoadEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/LoadEvent.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/LoadEvent.cpp.o
 .PHONY : src/ripple/core/impl/LoadEvent.cpp.o
 
 src/ripple/core/impl/LoadEvent.i: src/ripple/core/impl/LoadEvent.cpp.i
@@ -3823,7 +3823,7 @@ src/ripple/core/impl/LoadEvent.i: src/ripple/core/impl/LoadEvent.cpp.i
 
 # target to preprocess a source file
 src/ripple/core/impl/LoadEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/LoadEvent.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/LoadEvent.cpp.i
 .PHONY : src/ripple/core/impl/LoadEvent.cpp.i
 
 src/ripple/core/impl/LoadEvent.s: src/ripple/core/impl/LoadEvent.cpp.s
@@ -3832,7 +3832,7 @@ src/ripple/core/impl/LoadEvent.s: src/ripple/core/impl/LoadEvent.cpp.s
 
 # target to generate assembly for a file
 src/ripple/core/impl/LoadEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/LoadEvent.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/LoadEvent.cpp.s
 .PHONY : src/ripple/core/impl/LoadEvent.cpp.s
 
 src/ripple/core/impl/LoadMonitor.o: src/ripple/core/impl/LoadMonitor.cpp.o
@@ -3841,7 +3841,7 @@ src/ripple/core/impl/LoadMonitor.o: src/ripple/core/impl/LoadMonitor.cpp.o
 
 # target to build an object file
 src/ripple/core/impl/LoadMonitor.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/LoadMonitor.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/LoadMonitor.cpp.o
 .PHONY : src/ripple/core/impl/LoadMonitor.cpp.o
 
 src/ripple/core/impl/LoadMonitor.i: src/ripple/core/impl/LoadMonitor.cpp.i
@@ -3850,7 +3850,7 @@ src/ripple/core/impl/LoadMonitor.i: src/ripple/core/impl/LoadMonitor.cpp.i
 
 # target to preprocess a source file
 src/ripple/core/impl/LoadMonitor.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/LoadMonitor.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/LoadMonitor.cpp.i
 .PHONY : src/ripple/core/impl/LoadMonitor.cpp.i
 
 src/ripple/core/impl/LoadMonitor.s: src/ripple/core/impl/LoadMonitor.cpp.s
@@ -3859,7 +3859,7 @@ src/ripple/core/impl/LoadMonitor.s: src/ripple/core/impl/LoadMonitor.cpp.s
 
 # target to generate assembly for a file
 src/ripple/core/impl/LoadMonitor.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/LoadMonitor.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/LoadMonitor.cpp.s
 .PHONY : src/ripple/core/impl/LoadMonitor.cpp.s
 
 src/ripple/core/impl/SNTPClock.o: src/ripple/core/impl/SNTPClock.cpp.o
@@ -3868,7 +3868,7 @@ src/ripple/core/impl/SNTPClock.o: src/ripple/core/impl/SNTPClock.cpp.o
 
 # target to build an object file
 src/ripple/core/impl/SNTPClock.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/SNTPClock.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/SNTPClock.cpp.o
 .PHONY : src/ripple/core/impl/SNTPClock.cpp.o
 
 src/ripple/core/impl/SNTPClock.i: src/ripple/core/impl/SNTPClock.cpp.i
@@ -3877,7 +3877,7 @@ src/ripple/core/impl/SNTPClock.i: src/ripple/core/impl/SNTPClock.cpp.i
 
 # target to preprocess a source file
 src/ripple/core/impl/SNTPClock.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/SNTPClock.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/SNTPClock.cpp.i
 .PHONY : src/ripple/core/impl/SNTPClock.cpp.i
 
 src/ripple/core/impl/SNTPClock.s: src/ripple/core/impl/SNTPClock.cpp.s
@@ -3886,7 +3886,7 @@ src/ripple/core/impl/SNTPClock.s: src/ripple/core/impl/SNTPClock.cpp.s
 
 # target to generate assembly for a file
 src/ripple/core/impl/SNTPClock.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/SNTPClock.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/SNTPClock.cpp.s
 .PHONY : src/ripple/core/impl/SNTPClock.cpp.s
 
 src/ripple/core/impl/SociDB.o: src/ripple/core/impl/SociDB.cpp.o
@@ -3895,7 +3895,7 @@ src/ripple/core/impl/SociDB.o: src/ripple/core/impl/SociDB.cpp.o
 
 # target to build an object file
 src/ripple/core/impl/SociDB.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/SociDB.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/SociDB.cpp.o
 .PHONY : src/ripple/core/impl/SociDB.cpp.o
 
 src/ripple/core/impl/SociDB.i: src/ripple/core/impl/SociDB.cpp.i
@@ -3904,7 +3904,7 @@ src/ripple/core/impl/SociDB.i: src/ripple/core/impl/SociDB.cpp.i
 
 # target to preprocess a source file
 src/ripple/core/impl/SociDB.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/SociDB.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/SociDB.cpp.i
 .PHONY : src/ripple/core/impl/SociDB.cpp.i
 
 src/ripple/core/impl/SociDB.s: src/ripple/core/impl/SociDB.cpp.s
@@ -3913,7 +3913,7 @@ src/ripple/core/impl/SociDB.s: src/ripple/core/impl/SociDB.cpp.s
 
 # target to generate assembly for a file
 src/ripple/core/impl/SociDB.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/SociDB.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/SociDB.cpp.s
 .PHONY : src/ripple/core/impl/SociDB.cpp.s
 
 src/ripple/core/impl/Stoppable.o: src/ripple/core/impl/Stoppable.cpp.o
@@ -3922,7 +3922,7 @@ src/ripple/core/impl/Stoppable.o: src/ripple/core/impl/Stoppable.cpp.o
 
 # target to build an object file
 src/ripple/core/impl/Stoppable.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/Stoppable.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/Stoppable.cpp.o
 .PHONY : src/ripple/core/impl/Stoppable.cpp.o
 
 src/ripple/core/impl/Stoppable.i: src/ripple/core/impl/Stoppable.cpp.i
@@ -3931,7 +3931,7 @@ src/ripple/core/impl/Stoppable.i: src/ripple/core/impl/Stoppable.cpp.i
 
 # target to preprocess a source file
 src/ripple/core/impl/Stoppable.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/Stoppable.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/Stoppable.cpp.i
 .PHONY : src/ripple/core/impl/Stoppable.cpp.i
 
 src/ripple/core/impl/Stoppable.s: src/ripple/core/impl/Stoppable.cpp.s
@@ -3940,7 +3940,7 @@ src/ripple/core/impl/Stoppable.s: src/ripple/core/impl/Stoppable.cpp.s
 
 # target to generate assembly for a file
 src/ripple/core/impl/Stoppable.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/Stoppable.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/Stoppable.cpp.s
 .PHONY : src/ripple/core/impl/Stoppable.cpp.s
 
 src/ripple/core/impl/TerminateHandler.o: src/ripple/core/impl/TerminateHandler.cpp.o
@@ -3949,7 +3949,7 @@ src/ripple/core/impl/TerminateHandler.o: src/ripple/core/impl/TerminateHandler.c
 
 # target to build an object file
 src/ripple/core/impl/TerminateHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/TerminateHandler.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/TerminateHandler.cpp.o
 .PHONY : src/ripple/core/impl/TerminateHandler.cpp.o
 
 src/ripple/core/impl/TerminateHandler.i: src/ripple/core/impl/TerminateHandler.cpp.i
@@ -3958,7 +3958,7 @@ src/ripple/core/impl/TerminateHandler.i: src/ripple/core/impl/TerminateHandler.c
 
 # target to preprocess a source file
 src/ripple/core/impl/TerminateHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/TerminateHandler.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/TerminateHandler.cpp.i
 .PHONY : src/ripple/core/impl/TerminateHandler.cpp.i
 
 src/ripple/core/impl/TerminateHandler.s: src/ripple/core/impl/TerminateHandler.cpp.s
@@ -3967,7 +3967,7 @@ src/ripple/core/impl/TerminateHandler.s: src/ripple/core/impl/TerminateHandler.c
 
 # target to generate assembly for a file
 src/ripple/core/impl/TerminateHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/TerminateHandler.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/TerminateHandler.cpp.s
 .PHONY : src/ripple/core/impl/TerminateHandler.cpp.s
 
 src/ripple/core/impl/TimeKeeper.o: src/ripple/core/impl/TimeKeeper.cpp.o
@@ -3976,7 +3976,7 @@ src/ripple/core/impl/TimeKeeper.o: src/ripple/core/impl/TimeKeeper.cpp.o
 
 # target to build an object file
 src/ripple/core/impl/TimeKeeper.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/TimeKeeper.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/TimeKeeper.cpp.o
 .PHONY : src/ripple/core/impl/TimeKeeper.cpp.o
 
 src/ripple/core/impl/TimeKeeper.i: src/ripple/core/impl/TimeKeeper.cpp.i
@@ -3985,7 +3985,7 @@ src/ripple/core/impl/TimeKeeper.i: src/ripple/core/impl/TimeKeeper.cpp.i
 
 # target to preprocess a source file
 src/ripple/core/impl/TimeKeeper.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/TimeKeeper.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/TimeKeeper.cpp.i
 .PHONY : src/ripple/core/impl/TimeKeeper.cpp.i
 
 src/ripple/core/impl/TimeKeeper.s: src/ripple/core/impl/TimeKeeper.cpp.s
@@ -3994,7 +3994,7 @@ src/ripple/core/impl/TimeKeeper.s: src/ripple/core/impl/TimeKeeper.cpp.s
 
 # target to generate assembly for a file
 src/ripple/core/impl/TimeKeeper.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/TimeKeeper.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/TimeKeeper.cpp.s
 .PHONY : src/ripple/core/impl/TimeKeeper.cpp.s
 
 src/ripple/core/impl/Workers.o: src/ripple/core/impl/Workers.cpp.o
@@ -4003,7 +4003,7 @@ src/ripple/core/impl/Workers.o: src/ripple/core/impl/Workers.cpp.o
 
 # target to build an object file
 src/ripple/core/impl/Workers.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/Workers.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/Workers.cpp.o
 .PHONY : src/ripple/core/impl/Workers.cpp.o
 
 src/ripple/core/impl/Workers.i: src/ripple/core/impl/Workers.cpp.i
@@ -4012,7 +4012,7 @@ src/ripple/core/impl/Workers.i: src/ripple/core/impl/Workers.cpp.i
 
 # target to preprocess a source file
 src/ripple/core/impl/Workers.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/Workers.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/Workers.cpp.i
 .PHONY : src/ripple/core/impl/Workers.cpp.i
 
 src/ripple/core/impl/Workers.s: src/ripple/core/impl/Workers.cpp.s
@@ -4021,7 +4021,7 @@ src/ripple/core/impl/Workers.s: src/ripple/core/impl/Workers.cpp.s
 
 # target to generate assembly for a file
 src/ripple/core/impl/Workers.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/core/impl/Workers.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/core/impl/Workers.cpp.s
 .PHONY : src/ripple/core/impl/Workers.cpp.s
 
 src/ripple/crypto/impl/GenerateDeterministicKey.o: src/ripple/crypto/impl/GenerateDeterministicKey.cpp.o
@@ -4030,7 +4030,7 @@ src/ripple/crypto/impl/GenerateDeterministicKey.o: src/ripple/crypto/impl/Genera
 
 # target to build an object file
 src/ripple/crypto/impl/GenerateDeterministicKey.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/GenerateDeterministicKey.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/GenerateDeterministicKey.cpp.o
 .PHONY : src/ripple/crypto/impl/GenerateDeterministicKey.cpp.o
 
 src/ripple/crypto/impl/GenerateDeterministicKey.i: src/ripple/crypto/impl/GenerateDeterministicKey.cpp.i
@@ -4039,7 +4039,7 @@ src/ripple/crypto/impl/GenerateDeterministicKey.i: src/ripple/crypto/impl/Genera
 
 # target to preprocess a source file
 src/ripple/crypto/impl/GenerateDeterministicKey.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/GenerateDeterministicKey.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/GenerateDeterministicKey.cpp.i
 .PHONY : src/ripple/crypto/impl/GenerateDeterministicKey.cpp.i
 
 src/ripple/crypto/impl/GenerateDeterministicKey.s: src/ripple/crypto/impl/GenerateDeterministicKey.cpp.s
@@ -4048,7 +4048,7 @@ src/ripple/crypto/impl/GenerateDeterministicKey.s: src/ripple/crypto/impl/Genera
 
 # target to generate assembly for a file
 src/ripple/crypto/impl/GenerateDeterministicKey.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/GenerateDeterministicKey.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/GenerateDeterministicKey.cpp.s
 .PHONY : src/ripple/crypto/impl/GenerateDeterministicKey.cpp.s
 
 src/ripple/crypto/impl/KeyType.o: src/ripple/crypto/impl/KeyType.cpp.o
@@ -4057,7 +4057,7 @@ src/ripple/crypto/impl/KeyType.o: src/ripple/crypto/impl/KeyType.cpp.o
 
 # target to build an object file
 src/ripple/crypto/impl/KeyType.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/KeyType.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/KeyType.cpp.o
 .PHONY : src/ripple/crypto/impl/KeyType.cpp.o
 
 src/ripple/crypto/impl/KeyType.i: src/ripple/crypto/impl/KeyType.cpp.i
@@ -4066,7 +4066,7 @@ src/ripple/crypto/impl/KeyType.i: src/ripple/crypto/impl/KeyType.cpp.i
 
 # target to preprocess a source file
 src/ripple/crypto/impl/KeyType.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/KeyType.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/KeyType.cpp.i
 .PHONY : src/ripple/crypto/impl/KeyType.cpp.i
 
 src/ripple/crypto/impl/KeyType.s: src/ripple/crypto/impl/KeyType.cpp.s
@@ -4075,7 +4075,7 @@ src/ripple/crypto/impl/KeyType.s: src/ripple/crypto/impl/KeyType.cpp.s
 
 # target to generate assembly for a file
 src/ripple/crypto/impl/KeyType.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/KeyType.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/KeyType.cpp.s
 .PHONY : src/ripple/crypto/impl/KeyType.cpp.s
 
 src/ripple/crypto/impl/RFC1751.o: src/ripple/crypto/impl/RFC1751.cpp.o
@@ -4084,7 +4084,7 @@ src/ripple/crypto/impl/RFC1751.o: src/ripple/crypto/impl/RFC1751.cpp.o
 
 # target to build an object file
 src/ripple/crypto/impl/RFC1751.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/RFC1751.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/RFC1751.cpp.o
 .PHONY : src/ripple/crypto/impl/RFC1751.cpp.o
 
 src/ripple/crypto/impl/RFC1751.i: src/ripple/crypto/impl/RFC1751.cpp.i
@@ -4093,7 +4093,7 @@ src/ripple/crypto/impl/RFC1751.i: src/ripple/crypto/impl/RFC1751.cpp.i
 
 # target to preprocess a source file
 src/ripple/crypto/impl/RFC1751.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/RFC1751.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/RFC1751.cpp.i
 .PHONY : src/ripple/crypto/impl/RFC1751.cpp.i
 
 src/ripple/crypto/impl/RFC1751.s: src/ripple/crypto/impl/RFC1751.cpp.s
@@ -4102,7 +4102,7 @@ src/ripple/crypto/impl/RFC1751.s: src/ripple/crypto/impl/RFC1751.cpp.s
 
 # target to generate assembly for a file
 src/ripple/crypto/impl/RFC1751.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/RFC1751.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/RFC1751.cpp.s
 .PHONY : src/ripple/crypto/impl/RFC1751.cpp.s
 
 src/ripple/crypto/impl/csprng.o: src/ripple/crypto/impl/csprng.cpp.o
@@ -4111,7 +4111,7 @@ src/ripple/crypto/impl/csprng.o: src/ripple/crypto/impl/csprng.cpp.o
 
 # target to build an object file
 src/ripple/crypto/impl/csprng.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/csprng.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/csprng.cpp.o
 .PHONY : src/ripple/crypto/impl/csprng.cpp.o
 
 src/ripple/crypto/impl/csprng.i: src/ripple/crypto/impl/csprng.cpp.i
@@ -4120,7 +4120,7 @@ src/ripple/crypto/impl/csprng.i: src/ripple/crypto/impl/csprng.cpp.i
 
 # target to preprocess a source file
 src/ripple/crypto/impl/csprng.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/csprng.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/csprng.cpp.i
 .PHONY : src/ripple/crypto/impl/csprng.cpp.i
 
 src/ripple/crypto/impl/csprng.s: src/ripple/crypto/impl/csprng.cpp.s
@@ -4129,7 +4129,7 @@ src/ripple/crypto/impl/csprng.s: src/ripple/crypto/impl/csprng.cpp.s
 
 # target to generate assembly for a file
 src/ripple/crypto/impl/csprng.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/csprng.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/csprng.cpp.s
 .PHONY : src/ripple/crypto/impl/csprng.cpp.s
 
 src/ripple/crypto/impl/ec_key.o: src/ripple/crypto/impl/ec_key.cpp.o
@@ -4138,7 +4138,7 @@ src/ripple/crypto/impl/ec_key.o: src/ripple/crypto/impl/ec_key.cpp.o
 
 # target to build an object file
 src/ripple/crypto/impl/ec_key.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/ec_key.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/ec_key.cpp.o
 .PHONY : src/ripple/crypto/impl/ec_key.cpp.o
 
 src/ripple/crypto/impl/ec_key.i: src/ripple/crypto/impl/ec_key.cpp.i
@@ -4147,7 +4147,7 @@ src/ripple/crypto/impl/ec_key.i: src/ripple/crypto/impl/ec_key.cpp.i
 
 # target to preprocess a source file
 src/ripple/crypto/impl/ec_key.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/ec_key.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/ec_key.cpp.i
 .PHONY : src/ripple/crypto/impl/ec_key.cpp.i
 
 src/ripple/crypto/impl/ec_key.s: src/ripple/crypto/impl/ec_key.cpp.s
@@ -4156,7 +4156,7 @@ src/ripple/crypto/impl/ec_key.s: src/ripple/crypto/impl/ec_key.cpp.s
 
 # target to generate assembly for a file
 src/ripple/crypto/impl/ec_key.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/ec_key.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/ec_key.cpp.s
 .PHONY : src/ripple/crypto/impl/ec_key.cpp.s
 
 src/ripple/crypto/impl/openssl.o: src/ripple/crypto/impl/openssl.cpp.o
@@ -4165,7 +4165,7 @@ src/ripple/crypto/impl/openssl.o: src/ripple/crypto/impl/openssl.cpp.o
 
 # target to build an object file
 src/ripple/crypto/impl/openssl.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/openssl.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/openssl.cpp.o
 .PHONY : src/ripple/crypto/impl/openssl.cpp.o
 
 src/ripple/crypto/impl/openssl.i: src/ripple/crypto/impl/openssl.cpp.i
@@ -4174,7 +4174,7 @@ src/ripple/crypto/impl/openssl.i: src/ripple/crypto/impl/openssl.cpp.i
 
 # target to preprocess a source file
 src/ripple/crypto/impl/openssl.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/openssl.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/openssl.cpp.i
 .PHONY : src/ripple/crypto/impl/openssl.cpp.i
 
 src/ripple/crypto/impl/openssl.s: src/ripple/crypto/impl/openssl.cpp.s
@@ -4183,7 +4183,7 @@ src/ripple/crypto/impl/openssl.s: src/ripple/crypto/impl/openssl.cpp.s
 
 # target to generate assembly for a file
 src/ripple/crypto/impl/openssl.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/crypto/impl/openssl.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/crypto/impl/openssl.cpp.s
 .PHONY : src/ripple/crypto/impl/openssl.cpp.s
 
 src/ripple/json/impl/JsonPropertyStream.o: src/ripple/json/impl/JsonPropertyStream.cpp.o
@@ -4192,7 +4192,7 @@ src/ripple/json/impl/JsonPropertyStream.o: src/ripple/json/impl/JsonPropertyStre
 
 # target to build an object file
 src/ripple/json/impl/JsonPropertyStream.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/JsonPropertyStream.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/JsonPropertyStream.cpp.o
 .PHONY : src/ripple/json/impl/JsonPropertyStream.cpp.o
 
 src/ripple/json/impl/JsonPropertyStream.i: src/ripple/json/impl/JsonPropertyStream.cpp.i
@@ -4201,7 +4201,7 @@ src/ripple/json/impl/JsonPropertyStream.i: src/ripple/json/impl/JsonPropertyStre
 
 # target to preprocess a source file
 src/ripple/json/impl/JsonPropertyStream.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/JsonPropertyStream.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/JsonPropertyStream.cpp.i
 .PHONY : src/ripple/json/impl/JsonPropertyStream.cpp.i
 
 src/ripple/json/impl/JsonPropertyStream.s: src/ripple/json/impl/JsonPropertyStream.cpp.s
@@ -4210,7 +4210,7 @@ src/ripple/json/impl/JsonPropertyStream.s: src/ripple/json/impl/JsonPropertyStre
 
 # target to generate assembly for a file
 src/ripple/json/impl/JsonPropertyStream.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/JsonPropertyStream.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/JsonPropertyStream.cpp.s
 .PHONY : src/ripple/json/impl/JsonPropertyStream.cpp.s
 
 src/ripple/json/impl/Object.o: src/ripple/json/impl/Object.cpp.o
@@ -4219,7 +4219,7 @@ src/ripple/json/impl/Object.o: src/ripple/json/impl/Object.cpp.o
 
 # target to build an object file
 src/ripple/json/impl/Object.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/Object.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/Object.cpp.o
 .PHONY : src/ripple/json/impl/Object.cpp.o
 
 src/ripple/json/impl/Object.i: src/ripple/json/impl/Object.cpp.i
@@ -4228,7 +4228,7 @@ src/ripple/json/impl/Object.i: src/ripple/json/impl/Object.cpp.i
 
 # target to preprocess a source file
 src/ripple/json/impl/Object.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/Object.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/Object.cpp.i
 .PHONY : src/ripple/json/impl/Object.cpp.i
 
 src/ripple/json/impl/Object.s: src/ripple/json/impl/Object.cpp.s
@@ -4237,7 +4237,7 @@ src/ripple/json/impl/Object.s: src/ripple/json/impl/Object.cpp.s
 
 # target to generate assembly for a file
 src/ripple/json/impl/Object.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/Object.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/Object.cpp.s
 .PHONY : src/ripple/json/impl/Object.cpp.s
 
 src/ripple/json/impl/Output.o: src/ripple/json/impl/Output.cpp.o
@@ -4246,7 +4246,7 @@ src/ripple/json/impl/Output.o: src/ripple/json/impl/Output.cpp.o
 
 # target to build an object file
 src/ripple/json/impl/Output.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/Output.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/Output.cpp.o
 .PHONY : src/ripple/json/impl/Output.cpp.o
 
 src/ripple/json/impl/Output.i: src/ripple/json/impl/Output.cpp.i
@@ -4255,7 +4255,7 @@ src/ripple/json/impl/Output.i: src/ripple/json/impl/Output.cpp.i
 
 # target to preprocess a source file
 src/ripple/json/impl/Output.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/Output.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/Output.cpp.i
 .PHONY : src/ripple/json/impl/Output.cpp.i
 
 src/ripple/json/impl/Output.s: src/ripple/json/impl/Output.cpp.s
@@ -4264,7 +4264,7 @@ src/ripple/json/impl/Output.s: src/ripple/json/impl/Output.cpp.s
 
 # target to generate assembly for a file
 src/ripple/json/impl/Output.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/Output.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/Output.cpp.s
 .PHONY : src/ripple/json/impl/Output.cpp.s
 
 src/ripple/json/impl/Writer.o: src/ripple/json/impl/Writer.cpp.o
@@ -4273,7 +4273,7 @@ src/ripple/json/impl/Writer.o: src/ripple/json/impl/Writer.cpp.o
 
 # target to build an object file
 src/ripple/json/impl/Writer.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/Writer.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/Writer.cpp.o
 .PHONY : src/ripple/json/impl/Writer.cpp.o
 
 src/ripple/json/impl/Writer.i: src/ripple/json/impl/Writer.cpp.i
@@ -4282,7 +4282,7 @@ src/ripple/json/impl/Writer.i: src/ripple/json/impl/Writer.cpp.i
 
 # target to preprocess a source file
 src/ripple/json/impl/Writer.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/Writer.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/Writer.cpp.i
 .PHONY : src/ripple/json/impl/Writer.cpp.i
 
 src/ripple/json/impl/Writer.s: src/ripple/json/impl/Writer.cpp.s
@@ -4291,7 +4291,7 @@ src/ripple/json/impl/Writer.s: src/ripple/json/impl/Writer.cpp.s
 
 # target to generate assembly for a file
 src/ripple/json/impl/Writer.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/Writer.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/Writer.cpp.s
 .PHONY : src/ripple/json/impl/Writer.cpp.s
 
 src/ripple/json/impl/json_reader.o: src/ripple/json/impl/json_reader.cpp.o
@@ -4300,7 +4300,7 @@ src/ripple/json/impl/json_reader.o: src/ripple/json/impl/json_reader.cpp.o
 
 # target to build an object file
 src/ripple/json/impl/json_reader.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/json_reader.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/json_reader.cpp.o
 .PHONY : src/ripple/json/impl/json_reader.cpp.o
 
 src/ripple/json/impl/json_reader.i: src/ripple/json/impl/json_reader.cpp.i
@@ -4309,7 +4309,7 @@ src/ripple/json/impl/json_reader.i: src/ripple/json/impl/json_reader.cpp.i
 
 # target to preprocess a source file
 src/ripple/json/impl/json_reader.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/json_reader.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/json_reader.cpp.i
 .PHONY : src/ripple/json/impl/json_reader.cpp.i
 
 src/ripple/json/impl/json_reader.s: src/ripple/json/impl/json_reader.cpp.s
@@ -4318,7 +4318,7 @@ src/ripple/json/impl/json_reader.s: src/ripple/json/impl/json_reader.cpp.s
 
 # target to generate assembly for a file
 src/ripple/json/impl/json_reader.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/json_reader.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/json_reader.cpp.s
 .PHONY : src/ripple/json/impl/json_reader.cpp.s
 
 src/ripple/json/impl/json_value.o: src/ripple/json/impl/json_value.cpp.o
@@ -4327,7 +4327,7 @@ src/ripple/json/impl/json_value.o: src/ripple/json/impl/json_value.cpp.o
 
 # target to build an object file
 src/ripple/json/impl/json_value.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/json_value.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/json_value.cpp.o
 .PHONY : src/ripple/json/impl/json_value.cpp.o
 
 src/ripple/json/impl/json_value.i: src/ripple/json/impl/json_value.cpp.i
@@ -4336,7 +4336,7 @@ src/ripple/json/impl/json_value.i: src/ripple/json/impl/json_value.cpp.i
 
 # target to preprocess a source file
 src/ripple/json/impl/json_value.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/json_value.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/json_value.cpp.i
 .PHONY : src/ripple/json/impl/json_value.cpp.i
 
 src/ripple/json/impl/json_value.s: src/ripple/json/impl/json_value.cpp.s
@@ -4345,7 +4345,7 @@ src/ripple/json/impl/json_value.s: src/ripple/json/impl/json_value.cpp.s
 
 # target to generate assembly for a file
 src/ripple/json/impl/json_value.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/json_value.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/json_value.cpp.s
 .PHONY : src/ripple/json/impl/json_value.cpp.s
 
 src/ripple/json/impl/json_valueiterator.o: src/ripple/json/impl/json_valueiterator.cpp.o
@@ -4354,7 +4354,7 @@ src/ripple/json/impl/json_valueiterator.o: src/ripple/json/impl/json_valueiterat
 
 # target to build an object file
 src/ripple/json/impl/json_valueiterator.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/json_valueiterator.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/json_valueiterator.cpp.o
 .PHONY : src/ripple/json/impl/json_valueiterator.cpp.o
 
 src/ripple/json/impl/json_valueiterator.i: src/ripple/json/impl/json_valueiterator.cpp.i
@@ -4363,7 +4363,7 @@ src/ripple/json/impl/json_valueiterator.i: src/ripple/json/impl/json_valueiterat
 
 # target to preprocess a source file
 src/ripple/json/impl/json_valueiterator.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/json_valueiterator.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/json_valueiterator.cpp.i
 .PHONY : src/ripple/json/impl/json_valueiterator.cpp.i
 
 src/ripple/json/impl/json_valueiterator.s: src/ripple/json/impl/json_valueiterator.cpp.s
@@ -4372,7 +4372,7 @@ src/ripple/json/impl/json_valueiterator.s: src/ripple/json/impl/json_valueiterat
 
 # target to generate assembly for a file
 src/ripple/json/impl/json_valueiterator.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/json_valueiterator.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/json_valueiterator.cpp.s
 .PHONY : src/ripple/json/impl/json_valueiterator.cpp.s
 
 src/ripple/json/impl/json_writer.o: src/ripple/json/impl/json_writer.cpp.o
@@ -4381,7 +4381,7 @@ src/ripple/json/impl/json_writer.o: src/ripple/json/impl/json_writer.cpp.o
 
 # target to build an object file
 src/ripple/json/impl/json_writer.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/json_writer.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/json_writer.cpp.o
 .PHONY : src/ripple/json/impl/json_writer.cpp.o
 
 src/ripple/json/impl/json_writer.i: src/ripple/json/impl/json_writer.cpp.i
@@ -4390,7 +4390,7 @@ src/ripple/json/impl/json_writer.i: src/ripple/json/impl/json_writer.cpp.i
 
 # target to preprocess a source file
 src/ripple/json/impl/json_writer.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/json_writer.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/json_writer.cpp.i
 .PHONY : src/ripple/json/impl/json_writer.cpp.i
 
 src/ripple/json/impl/json_writer.s: src/ripple/json/impl/json_writer.cpp.s
@@ -4399,7 +4399,7 @@ src/ripple/json/impl/json_writer.s: src/ripple/json/impl/json_writer.cpp.s
 
 # target to generate assembly for a file
 src/ripple/json/impl/json_writer.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/json_writer.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/json_writer.cpp.s
 .PHONY : src/ripple/json/impl/json_writer.cpp.s
 
 src/ripple/json/impl/to_string.o: src/ripple/json/impl/to_string.cpp.o
@@ -4408,7 +4408,7 @@ src/ripple/json/impl/to_string.o: src/ripple/json/impl/to_string.cpp.o
 
 # target to build an object file
 src/ripple/json/impl/to_string.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/to_string.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/to_string.cpp.o
 .PHONY : src/ripple/json/impl/to_string.cpp.o
 
 src/ripple/json/impl/to_string.i: src/ripple/json/impl/to_string.cpp.i
@@ -4417,7 +4417,7 @@ src/ripple/json/impl/to_string.i: src/ripple/json/impl/to_string.cpp.i
 
 # target to preprocess a source file
 src/ripple/json/impl/to_string.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/to_string.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/to_string.cpp.i
 .PHONY : src/ripple/json/impl/to_string.cpp.i
 
 src/ripple/json/impl/to_string.s: src/ripple/json/impl/to_string.cpp.s
@@ -4426,7 +4426,7 @@ src/ripple/json/impl/to_string.s: src/ripple/json/impl/to_string.cpp.s
 
 # target to generate assembly for a file
 src/ripple/json/impl/to_string.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/json/impl/to_string.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/json/impl/to_string.cpp.s
 .PHONY : src/ripple/json/impl/to_string.cpp.s
 
 src/ripple/ledger/impl/ApplyStateTable.o: src/ripple/ledger/impl/ApplyStateTable.cpp.o
@@ -4435,7 +4435,7 @@ src/ripple/ledger/impl/ApplyStateTable.o: src/ripple/ledger/impl/ApplyStateTable
 
 # target to build an object file
 src/ripple/ledger/impl/ApplyStateTable.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ApplyStateTable.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ApplyStateTable.cpp.o
 .PHONY : src/ripple/ledger/impl/ApplyStateTable.cpp.o
 
 src/ripple/ledger/impl/ApplyStateTable.i: src/ripple/ledger/impl/ApplyStateTable.cpp.i
@@ -4444,7 +4444,7 @@ src/ripple/ledger/impl/ApplyStateTable.i: src/ripple/ledger/impl/ApplyStateTable
 
 # target to preprocess a source file
 src/ripple/ledger/impl/ApplyStateTable.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ApplyStateTable.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ApplyStateTable.cpp.i
 .PHONY : src/ripple/ledger/impl/ApplyStateTable.cpp.i
 
 src/ripple/ledger/impl/ApplyStateTable.s: src/ripple/ledger/impl/ApplyStateTable.cpp.s
@@ -4453,7 +4453,7 @@ src/ripple/ledger/impl/ApplyStateTable.s: src/ripple/ledger/impl/ApplyStateTable
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/ApplyStateTable.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ApplyStateTable.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ApplyStateTable.cpp.s
 .PHONY : src/ripple/ledger/impl/ApplyStateTable.cpp.s
 
 src/ripple/ledger/impl/ApplyView.o: src/ripple/ledger/impl/ApplyView.cpp.o
@@ -4462,7 +4462,7 @@ src/ripple/ledger/impl/ApplyView.o: src/ripple/ledger/impl/ApplyView.cpp.o
 
 # target to build an object file
 src/ripple/ledger/impl/ApplyView.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ApplyView.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ApplyView.cpp.o
 .PHONY : src/ripple/ledger/impl/ApplyView.cpp.o
 
 src/ripple/ledger/impl/ApplyView.i: src/ripple/ledger/impl/ApplyView.cpp.i
@@ -4471,7 +4471,7 @@ src/ripple/ledger/impl/ApplyView.i: src/ripple/ledger/impl/ApplyView.cpp.i
 
 # target to preprocess a source file
 src/ripple/ledger/impl/ApplyView.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ApplyView.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ApplyView.cpp.i
 .PHONY : src/ripple/ledger/impl/ApplyView.cpp.i
 
 src/ripple/ledger/impl/ApplyView.s: src/ripple/ledger/impl/ApplyView.cpp.s
@@ -4480,7 +4480,7 @@ src/ripple/ledger/impl/ApplyView.s: src/ripple/ledger/impl/ApplyView.cpp.s
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/ApplyView.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ApplyView.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ApplyView.cpp.s
 .PHONY : src/ripple/ledger/impl/ApplyView.cpp.s
 
 src/ripple/ledger/impl/ApplyViewBase.o: src/ripple/ledger/impl/ApplyViewBase.cpp.o
@@ -4489,7 +4489,7 @@ src/ripple/ledger/impl/ApplyViewBase.o: src/ripple/ledger/impl/ApplyViewBase.cpp
 
 # target to build an object file
 src/ripple/ledger/impl/ApplyViewBase.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ApplyViewBase.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ApplyViewBase.cpp.o
 .PHONY : src/ripple/ledger/impl/ApplyViewBase.cpp.o
 
 src/ripple/ledger/impl/ApplyViewBase.i: src/ripple/ledger/impl/ApplyViewBase.cpp.i
@@ -4498,7 +4498,7 @@ src/ripple/ledger/impl/ApplyViewBase.i: src/ripple/ledger/impl/ApplyViewBase.cpp
 
 # target to preprocess a source file
 src/ripple/ledger/impl/ApplyViewBase.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ApplyViewBase.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ApplyViewBase.cpp.i
 .PHONY : src/ripple/ledger/impl/ApplyViewBase.cpp.i
 
 src/ripple/ledger/impl/ApplyViewBase.s: src/ripple/ledger/impl/ApplyViewBase.cpp.s
@@ -4507,7 +4507,7 @@ src/ripple/ledger/impl/ApplyViewBase.s: src/ripple/ledger/impl/ApplyViewBase.cpp
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/ApplyViewBase.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ApplyViewBase.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ApplyViewBase.cpp.s
 .PHONY : src/ripple/ledger/impl/ApplyViewBase.cpp.s
 
 src/ripple/ledger/impl/ApplyViewImpl.o: src/ripple/ledger/impl/ApplyViewImpl.cpp.o
@@ -4516,7 +4516,7 @@ src/ripple/ledger/impl/ApplyViewImpl.o: src/ripple/ledger/impl/ApplyViewImpl.cpp
 
 # target to build an object file
 src/ripple/ledger/impl/ApplyViewImpl.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ApplyViewImpl.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ApplyViewImpl.cpp.o
 .PHONY : src/ripple/ledger/impl/ApplyViewImpl.cpp.o
 
 src/ripple/ledger/impl/ApplyViewImpl.i: src/ripple/ledger/impl/ApplyViewImpl.cpp.i
@@ -4525,7 +4525,7 @@ src/ripple/ledger/impl/ApplyViewImpl.i: src/ripple/ledger/impl/ApplyViewImpl.cpp
 
 # target to preprocess a source file
 src/ripple/ledger/impl/ApplyViewImpl.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ApplyViewImpl.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ApplyViewImpl.cpp.i
 .PHONY : src/ripple/ledger/impl/ApplyViewImpl.cpp.i
 
 src/ripple/ledger/impl/ApplyViewImpl.s: src/ripple/ledger/impl/ApplyViewImpl.cpp.s
@@ -4534,7 +4534,7 @@ src/ripple/ledger/impl/ApplyViewImpl.s: src/ripple/ledger/impl/ApplyViewImpl.cpp
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/ApplyViewImpl.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ApplyViewImpl.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ApplyViewImpl.cpp.s
 .PHONY : src/ripple/ledger/impl/ApplyViewImpl.cpp.s
 
 src/ripple/ledger/impl/BookDirs.o: src/ripple/ledger/impl/BookDirs.cpp.o
@@ -4543,7 +4543,7 @@ src/ripple/ledger/impl/BookDirs.o: src/ripple/ledger/impl/BookDirs.cpp.o
 
 # target to build an object file
 src/ripple/ledger/impl/BookDirs.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/BookDirs.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/BookDirs.cpp.o
 .PHONY : src/ripple/ledger/impl/BookDirs.cpp.o
 
 src/ripple/ledger/impl/BookDirs.i: src/ripple/ledger/impl/BookDirs.cpp.i
@@ -4552,7 +4552,7 @@ src/ripple/ledger/impl/BookDirs.i: src/ripple/ledger/impl/BookDirs.cpp.i
 
 # target to preprocess a source file
 src/ripple/ledger/impl/BookDirs.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/BookDirs.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/BookDirs.cpp.i
 .PHONY : src/ripple/ledger/impl/BookDirs.cpp.i
 
 src/ripple/ledger/impl/BookDirs.s: src/ripple/ledger/impl/BookDirs.cpp.s
@@ -4561,7 +4561,7 @@ src/ripple/ledger/impl/BookDirs.s: src/ripple/ledger/impl/BookDirs.cpp.s
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/BookDirs.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/BookDirs.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/BookDirs.cpp.s
 .PHONY : src/ripple/ledger/impl/BookDirs.cpp.s
 
 src/ripple/ledger/impl/CachedSLEs.o: src/ripple/ledger/impl/CachedSLEs.cpp.o
@@ -4570,7 +4570,7 @@ src/ripple/ledger/impl/CachedSLEs.o: src/ripple/ledger/impl/CachedSLEs.cpp.o
 
 # target to build an object file
 src/ripple/ledger/impl/CachedSLEs.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/CachedSLEs.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/CachedSLEs.cpp.o
 .PHONY : src/ripple/ledger/impl/CachedSLEs.cpp.o
 
 src/ripple/ledger/impl/CachedSLEs.i: src/ripple/ledger/impl/CachedSLEs.cpp.i
@@ -4579,7 +4579,7 @@ src/ripple/ledger/impl/CachedSLEs.i: src/ripple/ledger/impl/CachedSLEs.cpp.i
 
 # target to preprocess a source file
 src/ripple/ledger/impl/CachedSLEs.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/CachedSLEs.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/CachedSLEs.cpp.i
 .PHONY : src/ripple/ledger/impl/CachedSLEs.cpp.i
 
 src/ripple/ledger/impl/CachedSLEs.s: src/ripple/ledger/impl/CachedSLEs.cpp.s
@@ -4588,7 +4588,7 @@ src/ripple/ledger/impl/CachedSLEs.s: src/ripple/ledger/impl/CachedSLEs.cpp.s
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/CachedSLEs.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/CachedSLEs.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/CachedSLEs.cpp.s
 .PHONY : src/ripple/ledger/impl/CachedSLEs.cpp.s
 
 src/ripple/ledger/impl/CachedView.o: src/ripple/ledger/impl/CachedView.cpp.o
@@ -4597,7 +4597,7 @@ src/ripple/ledger/impl/CachedView.o: src/ripple/ledger/impl/CachedView.cpp.o
 
 # target to build an object file
 src/ripple/ledger/impl/CachedView.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/CachedView.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/CachedView.cpp.o
 .PHONY : src/ripple/ledger/impl/CachedView.cpp.o
 
 src/ripple/ledger/impl/CachedView.i: src/ripple/ledger/impl/CachedView.cpp.i
@@ -4606,7 +4606,7 @@ src/ripple/ledger/impl/CachedView.i: src/ripple/ledger/impl/CachedView.cpp.i
 
 # target to preprocess a source file
 src/ripple/ledger/impl/CachedView.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/CachedView.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/CachedView.cpp.i
 .PHONY : src/ripple/ledger/impl/CachedView.cpp.i
 
 src/ripple/ledger/impl/CachedView.s: src/ripple/ledger/impl/CachedView.cpp.s
@@ -4615,7 +4615,7 @@ src/ripple/ledger/impl/CachedView.s: src/ripple/ledger/impl/CachedView.cpp.s
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/CachedView.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/CachedView.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/CachedView.cpp.s
 .PHONY : src/ripple/ledger/impl/CachedView.cpp.s
 
 src/ripple/ledger/impl/CashDiff.o: src/ripple/ledger/impl/CashDiff.cpp.o
@@ -4624,7 +4624,7 @@ src/ripple/ledger/impl/CashDiff.o: src/ripple/ledger/impl/CashDiff.cpp.o
 
 # target to build an object file
 src/ripple/ledger/impl/CashDiff.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/CashDiff.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/CashDiff.cpp.o
 .PHONY : src/ripple/ledger/impl/CashDiff.cpp.o
 
 src/ripple/ledger/impl/CashDiff.i: src/ripple/ledger/impl/CashDiff.cpp.i
@@ -4633,7 +4633,7 @@ src/ripple/ledger/impl/CashDiff.i: src/ripple/ledger/impl/CashDiff.cpp.i
 
 # target to preprocess a source file
 src/ripple/ledger/impl/CashDiff.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/CashDiff.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/CashDiff.cpp.i
 .PHONY : src/ripple/ledger/impl/CashDiff.cpp.i
 
 src/ripple/ledger/impl/CashDiff.s: src/ripple/ledger/impl/CashDiff.cpp.s
@@ -4642,7 +4642,7 @@ src/ripple/ledger/impl/CashDiff.s: src/ripple/ledger/impl/CashDiff.cpp.s
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/CashDiff.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/CashDiff.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/CashDiff.cpp.s
 .PHONY : src/ripple/ledger/impl/CashDiff.cpp.s
 
 src/ripple/ledger/impl/Directory.o: src/ripple/ledger/impl/Directory.cpp.o
@@ -4651,7 +4651,7 @@ src/ripple/ledger/impl/Directory.o: src/ripple/ledger/impl/Directory.cpp.o
 
 # target to build an object file
 src/ripple/ledger/impl/Directory.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/Directory.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/Directory.cpp.o
 .PHONY : src/ripple/ledger/impl/Directory.cpp.o
 
 src/ripple/ledger/impl/Directory.i: src/ripple/ledger/impl/Directory.cpp.i
@@ -4660,7 +4660,7 @@ src/ripple/ledger/impl/Directory.i: src/ripple/ledger/impl/Directory.cpp.i
 
 # target to preprocess a source file
 src/ripple/ledger/impl/Directory.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/Directory.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/Directory.cpp.i
 .PHONY : src/ripple/ledger/impl/Directory.cpp.i
 
 src/ripple/ledger/impl/Directory.s: src/ripple/ledger/impl/Directory.cpp.s
@@ -4669,7 +4669,7 @@ src/ripple/ledger/impl/Directory.s: src/ripple/ledger/impl/Directory.cpp.s
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/Directory.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/Directory.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/Directory.cpp.s
 .PHONY : src/ripple/ledger/impl/Directory.cpp.s
 
 src/ripple/ledger/impl/OpenView.o: src/ripple/ledger/impl/OpenView.cpp.o
@@ -4678,7 +4678,7 @@ src/ripple/ledger/impl/OpenView.o: src/ripple/ledger/impl/OpenView.cpp.o
 
 # target to build an object file
 src/ripple/ledger/impl/OpenView.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/OpenView.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/OpenView.cpp.o
 .PHONY : src/ripple/ledger/impl/OpenView.cpp.o
 
 src/ripple/ledger/impl/OpenView.i: src/ripple/ledger/impl/OpenView.cpp.i
@@ -4687,7 +4687,7 @@ src/ripple/ledger/impl/OpenView.i: src/ripple/ledger/impl/OpenView.cpp.i
 
 # target to preprocess a source file
 src/ripple/ledger/impl/OpenView.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/OpenView.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/OpenView.cpp.i
 .PHONY : src/ripple/ledger/impl/OpenView.cpp.i
 
 src/ripple/ledger/impl/OpenView.s: src/ripple/ledger/impl/OpenView.cpp.s
@@ -4696,7 +4696,7 @@ src/ripple/ledger/impl/OpenView.s: src/ripple/ledger/impl/OpenView.cpp.s
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/OpenView.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/OpenView.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/OpenView.cpp.s
 .PHONY : src/ripple/ledger/impl/OpenView.cpp.s
 
 src/ripple/ledger/impl/PaymentSandbox.o: src/ripple/ledger/impl/PaymentSandbox.cpp.o
@@ -4705,7 +4705,7 @@ src/ripple/ledger/impl/PaymentSandbox.o: src/ripple/ledger/impl/PaymentSandbox.c
 
 # target to build an object file
 src/ripple/ledger/impl/PaymentSandbox.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/PaymentSandbox.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/PaymentSandbox.cpp.o
 .PHONY : src/ripple/ledger/impl/PaymentSandbox.cpp.o
 
 src/ripple/ledger/impl/PaymentSandbox.i: src/ripple/ledger/impl/PaymentSandbox.cpp.i
@@ -4714,7 +4714,7 @@ src/ripple/ledger/impl/PaymentSandbox.i: src/ripple/ledger/impl/PaymentSandbox.c
 
 # target to preprocess a source file
 src/ripple/ledger/impl/PaymentSandbox.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/PaymentSandbox.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/PaymentSandbox.cpp.i
 .PHONY : src/ripple/ledger/impl/PaymentSandbox.cpp.i
 
 src/ripple/ledger/impl/PaymentSandbox.s: src/ripple/ledger/impl/PaymentSandbox.cpp.s
@@ -4723,7 +4723,7 @@ src/ripple/ledger/impl/PaymentSandbox.s: src/ripple/ledger/impl/PaymentSandbox.c
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/PaymentSandbox.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/PaymentSandbox.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/PaymentSandbox.cpp.s
 .PHONY : src/ripple/ledger/impl/PaymentSandbox.cpp.s
 
 src/ripple/ledger/impl/RawStateTable.o: src/ripple/ledger/impl/RawStateTable.cpp.o
@@ -4732,7 +4732,7 @@ src/ripple/ledger/impl/RawStateTable.o: src/ripple/ledger/impl/RawStateTable.cpp
 
 # target to build an object file
 src/ripple/ledger/impl/RawStateTable.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/RawStateTable.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/RawStateTable.cpp.o
 .PHONY : src/ripple/ledger/impl/RawStateTable.cpp.o
 
 src/ripple/ledger/impl/RawStateTable.i: src/ripple/ledger/impl/RawStateTable.cpp.i
@@ -4741,7 +4741,7 @@ src/ripple/ledger/impl/RawStateTable.i: src/ripple/ledger/impl/RawStateTable.cpp
 
 # target to preprocess a source file
 src/ripple/ledger/impl/RawStateTable.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/RawStateTable.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/RawStateTable.cpp.i
 .PHONY : src/ripple/ledger/impl/RawStateTable.cpp.i
 
 src/ripple/ledger/impl/RawStateTable.s: src/ripple/ledger/impl/RawStateTable.cpp.s
@@ -4750,7 +4750,7 @@ src/ripple/ledger/impl/RawStateTable.s: src/ripple/ledger/impl/RawStateTable.cpp
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/RawStateTable.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/RawStateTable.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/RawStateTable.cpp.s
 .PHONY : src/ripple/ledger/impl/RawStateTable.cpp.s
 
 src/ripple/ledger/impl/ReadView.o: src/ripple/ledger/impl/ReadView.cpp.o
@@ -4759,7 +4759,7 @@ src/ripple/ledger/impl/ReadView.o: src/ripple/ledger/impl/ReadView.cpp.o
 
 # target to build an object file
 src/ripple/ledger/impl/ReadView.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ReadView.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ReadView.cpp.o
 .PHONY : src/ripple/ledger/impl/ReadView.cpp.o
 
 src/ripple/ledger/impl/ReadView.i: src/ripple/ledger/impl/ReadView.cpp.i
@@ -4768,7 +4768,7 @@ src/ripple/ledger/impl/ReadView.i: src/ripple/ledger/impl/ReadView.cpp.i
 
 # target to preprocess a source file
 src/ripple/ledger/impl/ReadView.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ReadView.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ReadView.cpp.i
 .PHONY : src/ripple/ledger/impl/ReadView.cpp.i
 
 src/ripple/ledger/impl/ReadView.s: src/ripple/ledger/impl/ReadView.cpp.s
@@ -4777,7 +4777,7 @@ src/ripple/ledger/impl/ReadView.s: src/ripple/ledger/impl/ReadView.cpp.s
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/ReadView.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/ReadView.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/ReadView.cpp.s
 .PHONY : src/ripple/ledger/impl/ReadView.cpp.s
 
 src/ripple/ledger/impl/TxMeta.o: src/ripple/ledger/impl/TxMeta.cpp.o
@@ -4786,7 +4786,7 @@ src/ripple/ledger/impl/TxMeta.o: src/ripple/ledger/impl/TxMeta.cpp.o
 
 # target to build an object file
 src/ripple/ledger/impl/TxMeta.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/TxMeta.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/TxMeta.cpp.o
 .PHONY : src/ripple/ledger/impl/TxMeta.cpp.o
 
 src/ripple/ledger/impl/TxMeta.i: src/ripple/ledger/impl/TxMeta.cpp.i
@@ -4795,7 +4795,7 @@ src/ripple/ledger/impl/TxMeta.i: src/ripple/ledger/impl/TxMeta.cpp.i
 
 # target to preprocess a source file
 src/ripple/ledger/impl/TxMeta.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/TxMeta.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/TxMeta.cpp.i
 .PHONY : src/ripple/ledger/impl/TxMeta.cpp.i
 
 src/ripple/ledger/impl/TxMeta.s: src/ripple/ledger/impl/TxMeta.cpp.s
@@ -4804,7 +4804,7 @@ src/ripple/ledger/impl/TxMeta.s: src/ripple/ledger/impl/TxMeta.cpp.s
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/TxMeta.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/TxMeta.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/TxMeta.cpp.s
 .PHONY : src/ripple/ledger/impl/TxMeta.cpp.s
 
 src/ripple/ledger/impl/View.o: src/ripple/ledger/impl/View.cpp.o
@@ -4813,7 +4813,7 @@ src/ripple/ledger/impl/View.o: src/ripple/ledger/impl/View.cpp.o
 
 # target to build an object file
 src/ripple/ledger/impl/View.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/View.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/View.cpp.o
 .PHONY : src/ripple/ledger/impl/View.cpp.o
 
 src/ripple/ledger/impl/View.i: src/ripple/ledger/impl/View.cpp.i
@@ -4822,7 +4822,7 @@ src/ripple/ledger/impl/View.i: src/ripple/ledger/impl/View.cpp.i
 
 # target to preprocess a source file
 src/ripple/ledger/impl/View.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/View.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/View.cpp.i
 .PHONY : src/ripple/ledger/impl/View.cpp.i
 
 src/ripple/ledger/impl/View.s: src/ripple/ledger/impl/View.cpp.s
@@ -4831,7 +4831,7 @@ src/ripple/ledger/impl/View.s: src/ripple/ledger/impl/View.cpp.s
 
 # target to generate assembly for a file
 src/ripple/ledger/impl/View.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/ledger/impl/View.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/ledger/impl/View.cpp.s
 .PHONY : src/ripple/ledger/impl/View.cpp.s
 
 src/ripple/net/impl/HTTPClient.o: src/ripple/net/impl/HTTPClient.cpp.o
@@ -4840,7 +4840,7 @@ src/ripple/net/impl/HTTPClient.o: src/ripple/net/impl/HTTPClient.cpp.o
 
 # target to build an object file
 src/ripple/net/impl/HTTPClient.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/HTTPClient.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/HTTPClient.cpp.o
 .PHONY : src/ripple/net/impl/HTTPClient.cpp.o
 
 src/ripple/net/impl/HTTPClient.i: src/ripple/net/impl/HTTPClient.cpp.i
@@ -4849,7 +4849,7 @@ src/ripple/net/impl/HTTPClient.i: src/ripple/net/impl/HTTPClient.cpp.i
 
 # target to preprocess a source file
 src/ripple/net/impl/HTTPClient.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/HTTPClient.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/HTTPClient.cpp.i
 .PHONY : src/ripple/net/impl/HTTPClient.cpp.i
 
 src/ripple/net/impl/HTTPClient.s: src/ripple/net/impl/HTTPClient.cpp.s
@@ -4858,7 +4858,7 @@ src/ripple/net/impl/HTTPClient.s: src/ripple/net/impl/HTTPClient.cpp.s
 
 # target to generate assembly for a file
 src/ripple/net/impl/HTTPClient.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/HTTPClient.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/HTTPClient.cpp.s
 .PHONY : src/ripple/net/impl/HTTPClient.cpp.s
 
 src/ripple/net/impl/InfoSub.o: src/ripple/net/impl/InfoSub.cpp.o
@@ -4867,7 +4867,7 @@ src/ripple/net/impl/InfoSub.o: src/ripple/net/impl/InfoSub.cpp.o
 
 # target to build an object file
 src/ripple/net/impl/InfoSub.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/InfoSub.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/InfoSub.cpp.o
 .PHONY : src/ripple/net/impl/InfoSub.cpp.o
 
 src/ripple/net/impl/InfoSub.i: src/ripple/net/impl/InfoSub.cpp.i
@@ -4876,7 +4876,7 @@ src/ripple/net/impl/InfoSub.i: src/ripple/net/impl/InfoSub.cpp.i
 
 # target to preprocess a source file
 src/ripple/net/impl/InfoSub.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/InfoSub.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/InfoSub.cpp.i
 .PHONY : src/ripple/net/impl/InfoSub.cpp.i
 
 src/ripple/net/impl/InfoSub.s: src/ripple/net/impl/InfoSub.cpp.s
@@ -4885,7 +4885,7 @@ src/ripple/net/impl/InfoSub.s: src/ripple/net/impl/InfoSub.cpp.s
 
 # target to generate assembly for a file
 src/ripple/net/impl/InfoSub.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/InfoSub.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/InfoSub.cpp.s
 .PHONY : src/ripple/net/impl/InfoSub.cpp.s
 
 src/ripple/net/impl/RPCCall.o: src/ripple/net/impl/RPCCall.cpp.o
@@ -4894,7 +4894,7 @@ src/ripple/net/impl/RPCCall.o: src/ripple/net/impl/RPCCall.cpp.o
 
 # target to build an object file
 src/ripple/net/impl/RPCCall.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/RPCCall.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/RPCCall.cpp.o
 .PHONY : src/ripple/net/impl/RPCCall.cpp.o
 
 src/ripple/net/impl/RPCCall.i: src/ripple/net/impl/RPCCall.cpp.i
@@ -4903,7 +4903,7 @@ src/ripple/net/impl/RPCCall.i: src/ripple/net/impl/RPCCall.cpp.i
 
 # target to preprocess a source file
 src/ripple/net/impl/RPCCall.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/RPCCall.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/RPCCall.cpp.i
 .PHONY : src/ripple/net/impl/RPCCall.cpp.i
 
 src/ripple/net/impl/RPCCall.s: src/ripple/net/impl/RPCCall.cpp.s
@@ -4912,7 +4912,7 @@ src/ripple/net/impl/RPCCall.s: src/ripple/net/impl/RPCCall.cpp.s
 
 # target to generate assembly for a file
 src/ripple/net/impl/RPCCall.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/RPCCall.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/RPCCall.cpp.s
 .PHONY : src/ripple/net/impl/RPCCall.cpp.s
 
 src/ripple/net/impl/RPCErr.o: src/ripple/net/impl/RPCErr.cpp.o
@@ -4921,7 +4921,7 @@ src/ripple/net/impl/RPCErr.o: src/ripple/net/impl/RPCErr.cpp.o
 
 # target to build an object file
 src/ripple/net/impl/RPCErr.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/RPCErr.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/RPCErr.cpp.o
 .PHONY : src/ripple/net/impl/RPCErr.cpp.o
 
 src/ripple/net/impl/RPCErr.i: src/ripple/net/impl/RPCErr.cpp.i
@@ -4930,7 +4930,7 @@ src/ripple/net/impl/RPCErr.i: src/ripple/net/impl/RPCErr.cpp.i
 
 # target to preprocess a source file
 src/ripple/net/impl/RPCErr.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/RPCErr.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/RPCErr.cpp.i
 .PHONY : src/ripple/net/impl/RPCErr.cpp.i
 
 src/ripple/net/impl/RPCErr.s: src/ripple/net/impl/RPCErr.cpp.s
@@ -4939,7 +4939,7 @@ src/ripple/net/impl/RPCErr.s: src/ripple/net/impl/RPCErr.cpp.s
 
 # target to generate assembly for a file
 src/ripple/net/impl/RPCErr.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/RPCErr.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/RPCErr.cpp.s
 .PHONY : src/ripple/net/impl/RPCErr.cpp.s
 
 src/ripple/net/impl/RPCSub.o: src/ripple/net/impl/RPCSub.cpp.o
@@ -4948,7 +4948,7 @@ src/ripple/net/impl/RPCSub.o: src/ripple/net/impl/RPCSub.cpp.o
 
 # target to build an object file
 src/ripple/net/impl/RPCSub.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/RPCSub.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/RPCSub.cpp.o
 .PHONY : src/ripple/net/impl/RPCSub.cpp.o
 
 src/ripple/net/impl/RPCSub.i: src/ripple/net/impl/RPCSub.cpp.i
@@ -4957,7 +4957,7 @@ src/ripple/net/impl/RPCSub.i: src/ripple/net/impl/RPCSub.cpp.i
 
 # target to preprocess a source file
 src/ripple/net/impl/RPCSub.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/RPCSub.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/RPCSub.cpp.i
 .PHONY : src/ripple/net/impl/RPCSub.cpp.i
 
 src/ripple/net/impl/RPCSub.s: src/ripple/net/impl/RPCSub.cpp.s
@@ -4966,7 +4966,7 @@ src/ripple/net/impl/RPCSub.s: src/ripple/net/impl/RPCSub.cpp.s
 
 # target to generate assembly for a file
 src/ripple/net/impl/RPCSub.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/RPCSub.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/RPCSub.cpp.s
 .PHONY : src/ripple/net/impl/RPCSub.cpp.s
 
 src/ripple/net/impl/RegisterSSLCerts.o: src/ripple/net/impl/RegisterSSLCerts.cpp.o
@@ -4975,7 +4975,7 @@ src/ripple/net/impl/RegisterSSLCerts.o: src/ripple/net/impl/RegisterSSLCerts.cpp
 
 # target to build an object file
 src/ripple/net/impl/RegisterSSLCerts.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/RegisterSSLCerts.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/RegisterSSLCerts.cpp.o
 .PHONY : src/ripple/net/impl/RegisterSSLCerts.cpp.o
 
 src/ripple/net/impl/RegisterSSLCerts.i: src/ripple/net/impl/RegisterSSLCerts.cpp.i
@@ -4984,7 +4984,7 @@ src/ripple/net/impl/RegisterSSLCerts.i: src/ripple/net/impl/RegisterSSLCerts.cpp
 
 # target to preprocess a source file
 src/ripple/net/impl/RegisterSSLCerts.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/RegisterSSLCerts.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/RegisterSSLCerts.cpp.i
 .PHONY : src/ripple/net/impl/RegisterSSLCerts.cpp.i
 
 src/ripple/net/impl/RegisterSSLCerts.s: src/ripple/net/impl/RegisterSSLCerts.cpp.s
@@ -4993,7 +4993,7 @@ src/ripple/net/impl/RegisterSSLCerts.s: src/ripple/net/impl/RegisterSSLCerts.cpp
 
 # target to generate assembly for a file
 src/ripple/net/impl/RegisterSSLCerts.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/net/impl/RegisterSSLCerts.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/net/impl/RegisterSSLCerts.cpp.s
 .PHONY : src/ripple/net/impl/RegisterSSLCerts.cpp.s
 
 src/ripple/nodestore/backend/MemoryFactory.o: src/ripple/nodestore/backend/MemoryFactory.cpp.o
@@ -5002,7 +5002,7 @@ src/ripple/nodestore/backend/MemoryFactory.o: src/ripple/nodestore/backend/Memor
 
 # target to build an object file
 src/ripple/nodestore/backend/MemoryFactory.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/MemoryFactory.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/MemoryFactory.cpp.o
 .PHONY : src/ripple/nodestore/backend/MemoryFactory.cpp.o
 
 src/ripple/nodestore/backend/MemoryFactory.i: src/ripple/nodestore/backend/MemoryFactory.cpp.i
@@ -5011,7 +5011,7 @@ src/ripple/nodestore/backend/MemoryFactory.i: src/ripple/nodestore/backend/Memor
 
 # target to preprocess a source file
 src/ripple/nodestore/backend/MemoryFactory.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/MemoryFactory.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/MemoryFactory.cpp.i
 .PHONY : src/ripple/nodestore/backend/MemoryFactory.cpp.i
 
 src/ripple/nodestore/backend/MemoryFactory.s: src/ripple/nodestore/backend/MemoryFactory.cpp.s
@@ -5020,7 +5020,7 @@ src/ripple/nodestore/backend/MemoryFactory.s: src/ripple/nodestore/backend/Memor
 
 # target to generate assembly for a file
 src/ripple/nodestore/backend/MemoryFactory.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/MemoryFactory.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/MemoryFactory.cpp.s
 .PHONY : src/ripple/nodestore/backend/MemoryFactory.cpp.s
 
 src/ripple/nodestore/backend/NuDBFactory.o: src/ripple/nodestore/backend/NuDBFactory.cpp.o
@@ -5029,7 +5029,7 @@ src/ripple/nodestore/backend/NuDBFactory.o: src/ripple/nodestore/backend/NuDBFac
 
 # target to build an object file
 src/ripple/nodestore/backend/NuDBFactory.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/NuDBFactory.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/NuDBFactory.cpp.o
 .PHONY : src/ripple/nodestore/backend/NuDBFactory.cpp.o
 
 src/ripple/nodestore/backend/NuDBFactory.i: src/ripple/nodestore/backend/NuDBFactory.cpp.i
@@ -5038,7 +5038,7 @@ src/ripple/nodestore/backend/NuDBFactory.i: src/ripple/nodestore/backend/NuDBFac
 
 # target to preprocess a source file
 src/ripple/nodestore/backend/NuDBFactory.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/NuDBFactory.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/NuDBFactory.cpp.i
 .PHONY : src/ripple/nodestore/backend/NuDBFactory.cpp.i
 
 src/ripple/nodestore/backend/NuDBFactory.s: src/ripple/nodestore/backend/NuDBFactory.cpp.s
@@ -5047,7 +5047,7 @@ src/ripple/nodestore/backend/NuDBFactory.s: src/ripple/nodestore/backend/NuDBFac
 
 # target to generate assembly for a file
 src/ripple/nodestore/backend/NuDBFactory.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/NuDBFactory.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/NuDBFactory.cpp.s
 .PHONY : src/ripple/nodestore/backend/NuDBFactory.cpp.s
 
 src/ripple/nodestore/backend/NullFactory.o: src/ripple/nodestore/backend/NullFactory.cpp.o
@@ -5056,7 +5056,7 @@ src/ripple/nodestore/backend/NullFactory.o: src/ripple/nodestore/backend/NullFac
 
 # target to build an object file
 src/ripple/nodestore/backend/NullFactory.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/NullFactory.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/NullFactory.cpp.o
 .PHONY : src/ripple/nodestore/backend/NullFactory.cpp.o
 
 src/ripple/nodestore/backend/NullFactory.i: src/ripple/nodestore/backend/NullFactory.cpp.i
@@ -5065,7 +5065,7 @@ src/ripple/nodestore/backend/NullFactory.i: src/ripple/nodestore/backend/NullFac
 
 # target to preprocess a source file
 src/ripple/nodestore/backend/NullFactory.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/NullFactory.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/NullFactory.cpp.i
 .PHONY : src/ripple/nodestore/backend/NullFactory.cpp.i
 
 src/ripple/nodestore/backend/NullFactory.s: src/ripple/nodestore/backend/NullFactory.cpp.s
@@ -5074,7 +5074,7 @@ src/ripple/nodestore/backend/NullFactory.s: src/ripple/nodestore/backend/NullFac
 
 # target to generate assembly for a file
 src/ripple/nodestore/backend/NullFactory.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/NullFactory.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/NullFactory.cpp.s
 .PHONY : src/ripple/nodestore/backend/NullFactory.cpp.s
 
 src/ripple/nodestore/backend/RocksDBFactory.o: src/ripple/nodestore/backend/RocksDBFactory.cpp.o
@@ -5083,7 +5083,7 @@ src/ripple/nodestore/backend/RocksDBFactory.o: src/ripple/nodestore/backend/Rock
 
 # target to build an object file
 src/ripple/nodestore/backend/RocksDBFactory.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/RocksDBFactory.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/RocksDBFactory.cpp.o
 .PHONY : src/ripple/nodestore/backend/RocksDBFactory.cpp.o
 
 src/ripple/nodestore/backend/RocksDBFactory.i: src/ripple/nodestore/backend/RocksDBFactory.cpp.i
@@ -5092,7 +5092,7 @@ src/ripple/nodestore/backend/RocksDBFactory.i: src/ripple/nodestore/backend/Rock
 
 # target to preprocess a source file
 src/ripple/nodestore/backend/RocksDBFactory.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/RocksDBFactory.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/RocksDBFactory.cpp.i
 .PHONY : src/ripple/nodestore/backend/RocksDBFactory.cpp.i
 
 src/ripple/nodestore/backend/RocksDBFactory.s: src/ripple/nodestore/backend/RocksDBFactory.cpp.s
@@ -5101,7 +5101,7 @@ src/ripple/nodestore/backend/RocksDBFactory.s: src/ripple/nodestore/backend/Rock
 
 # target to generate assembly for a file
 src/ripple/nodestore/backend/RocksDBFactory.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/RocksDBFactory.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/RocksDBFactory.cpp.s
 .PHONY : src/ripple/nodestore/backend/RocksDBFactory.cpp.s
 
 src/ripple/nodestore/backend/RocksDBQuickFactory.o: src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.o
@@ -5110,7 +5110,7 @@ src/ripple/nodestore/backend/RocksDBQuickFactory.o: src/ripple/nodestore/backend
 
 # target to build an object file
 src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.o
 .PHONY : src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.o
 
 src/ripple/nodestore/backend/RocksDBQuickFactory.i: src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.i
@@ -5119,7 +5119,7 @@ src/ripple/nodestore/backend/RocksDBQuickFactory.i: src/ripple/nodestore/backend
 
 # target to preprocess a source file
 src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.i
 .PHONY : src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.i
 
 src/ripple/nodestore/backend/RocksDBQuickFactory.s: src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.s
@@ -5128,7 +5128,7 @@ src/ripple/nodestore/backend/RocksDBQuickFactory.s: src/ripple/nodestore/backend
 
 # target to generate assembly for a file
 src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.s
 .PHONY : src/ripple/nodestore/backend/RocksDBQuickFactory.cpp.s
 
 src/ripple/nodestore/impl/BatchWriter.o: src/ripple/nodestore/impl/BatchWriter.cpp.o
@@ -5137,7 +5137,7 @@ src/ripple/nodestore/impl/BatchWriter.o: src/ripple/nodestore/impl/BatchWriter.c
 
 # target to build an object file
 src/ripple/nodestore/impl/BatchWriter.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/BatchWriter.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/BatchWriter.cpp.o
 .PHONY : src/ripple/nodestore/impl/BatchWriter.cpp.o
 
 src/ripple/nodestore/impl/BatchWriter.i: src/ripple/nodestore/impl/BatchWriter.cpp.i
@@ -5146,7 +5146,7 @@ src/ripple/nodestore/impl/BatchWriter.i: src/ripple/nodestore/impl/BatchWriter.c
 
 # target to preprocess a source file
 src/ripple/nodestore/impl/BatchWriter.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/BatchWriter.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/BatchWriter.cpp.i
 .PHONY : src/ripple/nodestore/impl/BatchWriter.cpp.i
 
 src/ripple/nodestore/impl/BatchWriter.s: src/ripple/nodestore/impl/BatchWriter.cpp.s
@@ -5155,7 +5155,7 @@ src/ripple/nodestore/impl/BatchWriter.s: src/ripple/nodestore/impl/BatchWriter.c
 
 # target to generate assembly for a file
 src/ripple/nodestore/impl/BatchWriter.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/BatchWriter.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/BatchWriter.cpp.s
 .PHONY : src/ripple/nodestore/impl/BatchWriter.cpp.s
 
 src/ripple/nodestore/impl/Database.o: src/ripple/nodestore/impl/Database.cpp.o
@@ -5164,7 +5164,7 @@ src/ripple/nodestore/impl/Database.o: src/ripple/nodestore/impl/Database.cpp.o
 
 # target to build an object file
 src/ripple/nodestore/impl/Database.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/Database.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/Database.cpp.o
 .PHONY : src/ripple/nodestore/impl/Database.cpp.o
 
 src/ripple/nodestore/impl/Database.i: src/ripple/nodestore/impl/Database.cpp.i
@@ -5173,7 +5173,7 @@ src/ripple/nodestore/impl/Database.i: src/ripple/nodestore/impl/Database.cpp.i
 
 # target to preprocess a source file
 src/ripple/nodestore/impl/Database.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/Database.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/Database.cpp.i
 .PHONY : src/ripple/nodestore/impl/Database.cpp.i
 
 src/ripple/nodestore/impl/Database.s: src/ripple/nodestore/impl/Database.cpp.s
@@ -5182,7 +5182,7 @@ src/ripple/nodestore/impl/Database.s: src/ripple/nodestore/impl/Database.cpp.s
 
 # target to generate assembly for a file
 src/ripple/nodestore/impl/Database.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/Database.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/Database.cpp.s
 .PHONY : src/ripple/nodestore/impl/Database.cpp.s
 
 src/ripple/nodestore/impl/DatabaseNodeImp.o: src/ripple/nodestore/impl/DatabaseNodeImp.cpp.o
@@ -5191,7 +5191,7 @@ src/ripple/nodestore/impl/DatabaseNodeImp.o: src/ripple/nodestore/impl/DatabaseN
 
 # target to build an object file
 src/ripple/nodestore/impl/DatabaseNodeImp.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DatabaseNodeImp.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DatabaseNodeImp.cpp.o
 .PHONY : src/ripple/nodestore/impl/DatabaseNodeImp.cpp.o
 
 src/ripple/nodestore/impl/DatabaseNodeImp.i: src/ripple/nodestore/impl/DatabaseNodeImp.cpp.i
@@ -5200,7 +5200,7 @@ src/ripple/nodestore/impl/DatabaseNodeImp.i: src/ripple/nodestore/impl/DatabaseN
 
 # target to preprocess a source file
 src/ripple/nodestore/impl/DatabaseNodeImp.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DatabaseNodeImp.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DatabaseNodeImp.cpp.i
 .PHONY : src/ripple/nodestore/impl/DatabaseNodeImp.cpp.i
 
 src/ripple/nodestore/impl/DatabaseNodeImp.s: src/ripple/nodestore/impl/DatabaseNodeImp.cpp.s
@@ -5209,7 +5209,7 @@ src/ripple/nodestore/impl/DatabaseNodeImp.s: src/ripple/nodestore/impl/DatabaseN
 
 # target to generate assembly for a file
 src/ripple/nodestore/impl/DatabaseNodeImp.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DatabaseNodeImp.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DatabaseNodeImp.cpp.s
 .PHONY : src/ripple/nodestore/impl/DatabaseNodeImp.cpp.s
 
 src/ripple/nodestore/impl/DatabaseRotatingImp.o: src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.o
@@ -5218,7 +5218,7 @@ src/ripple/nodestore/impl/DatabaseRotatingImp.o: src/ripple/nodestore/impl/Datab
 
 # target to build an object file
 src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.o
 .PHONY : src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.o
 
 src/ripple/nodestore/impl/DatabaseRotatingImp.i: src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.i
@@ -5227,7 +5227,7 @@ src/ripple/nodestore/impl/DatabaseRotatingImp.i: src/ripple/nodestore/impl/Datab
 
 # target to preprocess a source file
 src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.i
 .PHONY : src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.i
 
 src/ripple/nodestore/impl/DatabaseRotatingImp.s: src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.s
@@ -5236,7 +5236,7 @@ src/ripple/nodestore/impl/DatabaseRotatingImp.s: src/ripple/nodestore/impl/Datab
 
 # target to generate assembly for a file
 src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.s
 .PHONY : src/ripple/nodestore/impl/DatabaseRotatingImp.cpp.s
 
 src/ripple/nodestore/impl/DatabaseShardImp.o: src/ripple/nodestore/impl/DatabaseShardImp.cpp.o
@@ -5245,7 +5245,7 @@ src/ripple/nodestore/impl/DatabaseShardImp.o: src/ripple/nodestore/impl/Database
 
 # target to build an object file
 src/ripple/nodestore/impl/DatabaseShardImp.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DatabaseShardImp.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DatabaseShardImp.cpp.o
 .PHONY : src/ripple/nodestore/impl/DatabaseShardImp.cpp.o
 
 src/ripple/nodestore/impl/DatabaseShardImp.i: src/ripple/nodestore/impl/DatabaseShardImp.cpp.i
@@ -5254,7 +5254,7 @@ src/ripple/nodestore/impl/DatabaseShardImp.i: src/ripple/nodestore/impl/Database
 
 # target to preprocess a source file
 src/ripple/nodestore/impl/DatabaseShardImp.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DatabaseShardImp.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DatabaseShardImp.cpp.i
 .PHONY : src/ripple/nodestore/impl/DatabaseShardImp.cpp.i
 
 src/ripple/nodestore/impl/DatabaseShardImp.s: src/ripple/nodestore/impl/DatabaseShardImp.cpp.s
@@ -5263,7 +5263,7 @@ src/ripple/nodestore/impl/DatabaseShardImp.s: src/ripple/nodestore/impl/Database
 
 # target to generate assembly for a file
 src/ripple/nodestore/impl/DatabaseShardImp.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DatabaseShardImp.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DatabaseShardImp.cpp.s
 .PHONY : src/ripple/nodestore/impl/DatabaseShardImp.cpp.s
 
 src/ripple/nodestore/impl/DecodedBlob.o: src/ripple/nodestore/impl/DecodedBlob.cpp.o
@@ -5272,7 +5272,7 @@ src/ripple/nodestore/impl/DecodedBlob.o: src/ripple/nodestore/impl/DecodedBlob.c
 
 # target to build an object file
 src/ripple/nodestore/impl/DecodedBlob.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DecodedBlob.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DecodedBlob.cpp.o
 .PHONY : src/ripple/nodestore/impl/DecodedBlob.cpp.o
 
 src/ripple/nodestore/impl/DecodedBlob.i: src/ripple/nodestore/impl/DecodedBlob.cpp.i
@@ -5281,7 +5281,7 @@ src/ripple/nodestore/impl/DecodedBlob.i: src/ripple/nodestore/impl/DecodedBlob.c
 
 # target to preprocess a source file
 src/ripple/nodestore/impl/DecodedBlob.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DecodedBlob.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DecodedBlob.cpp.i
 .PHONY : src/ripple/nodestore/impl/DecodedBlob.cpp.i
 
 src/ripple/nodestore/impl/DecodedBlob.s: src/ripple/nodestore/impl/DecodedBlob.cpp.s
@@ -5290,7 +5290,7 @@ src/ripple/nodestore/impl/DecodedBlob.s: src/ripple/nodestore/impl/DecodedBlob.c
 
 # target to generate assembly for a file
 src/ripple/nodestore/impl/DecodedBlob.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DecodedBlob.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DecodedBlob.cpp.s
 .PHONY : src/ripple/nodestore/impl/DecodedBlob.cpp.s
 
 src/ripple/nodestore/impl/DummyScheduler.o: src/ripple/nodestore/impl/DummyScheduler.cpp.o
@@ -5299,7 +5299,7 @@ src/ripple/nodestore/impl/DummyScheduler.o: src/ripple/nodestore/impl/DummySched
 
 # target to build an object file
 src/ripple/nodestore/impl/DummyScheduler.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DummyScheduler.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DummyScheduler.cpp.o
 .PHONY : src/ripple/nodestore/impl/DummyScheduler.cpp.o
 
 src/ripple/nodestore/impl/DummyScheduler.i: src/ripple/nodestore/impl/DummyScheduler.cpp.i
@@ -5308,7 +5308,7 @@ src/ripple/nodestore/impl/DummyScheduler.i: src/ripple/nodestore/impl/DummySched
 
 # target to preprocess a source file
 src/ripple/nodestore/impl/DummyScheduler.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DummyScheduler.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DummyScheduler.cpp.i
 .PHONY : src/ripple/nodestore/impl/DummyScheduler.cpp.i
 
 src/ripple/nodestore/impl/DummyScheduler.s: src/ripple/nodestore/impl/DummyScheduler.cpp.s
@@ -5317,7 +5317,7 @@ src/ripple/nodestore/impl/DummyScheduler.s: src/ripple/nodestore/impl/DummySched
 
 # target to generate assembly for a file
 src/ripple/nodestore/impl/DummyScheduler.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/DummyScheduler.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/DummyScheduler.cpp.s
 .PHONY : src/ripple/nodestore/impl/DummyScheduler.cpp.s
 
 src/ripple/nodestore/impl/EncodedBlob.o: src/ripple/nodestore/impl/EncodedBlob.cpp.o
@@ -5326,7 +5326,7 @@ src/ripple/nodestore/impl/EncodedBlob.o: src/ripple/nodestore/impl/EncodedBlob.c
 
 # target to build an object file
 src/ripple/nodestore/impl/EncodedBlob.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/EncodedBlob.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/EncodedBlob.cpp.o
 .PHONY : src/ripple/nodestore/impl/EncodedBlob.cpp.o
 
 src/ripple/nodestore/impl/EncodedBlob.i: src/ripple/nodestore/impl/EncodedBlob.cpp.i
@@ -5335,7 +5335,7 @@ src/ripple/nodestore/impl/EncodedBlob.i: src/ripple/nodestore/impl/EncodedBlob.c
 
 # target to preprocess a source file
 src/ripple/nodestore/impl/EncodedBlob.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/EncodedBlob.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/EncodedBlob.cpp.i
 .PHONY : src/ripple/nodestore/impl/EncodedBlob.cpp.i
 
 src/ripple/nodestore/impl/EncodedBlob.s: src/ripple/nodestore/impl/EncodedBlob.cpp.s
@@ -5344,7 +5344,7 @@ src/ripple/nodestore/impl/EncodedBlob.s: src/ripple/nodestore/impl/EncodedBlob.c
 
 # target to generate assembly for a file
 src/ripple/nodestore/impl/EncodedBlob.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/EncodedBlob.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/EncodedBlob.cpp.s
 .PHONY : src/ripple/nodestore/impl/EncodedBlob.cpp.s
 
 src/ripple/nodestore/impl/ManagerImp.o: src/ripple/nodestore/impl/ManagerImp.cpp.o
@@ -5353,7 +5353,7 @@ src/ripple/nodestore/impl/ManagerImp.o: src/ripple/nodestore/impl/ManagerImp.cpp
 
 # target to build an object file
 src/ripple/nodestore/impl/ManagerImp.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/ManagerImp.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/ManagerImp.cpp.o
 .PHONY : src/ripple/nodestore/impl/ManagerImp.cpp.o
 
 src/ripple/nodestore/impl/ManagerImp.i: src/ripple/nodestore/impl/ManagerImp.cpp.i
@@ -5362,7 +5362,7 @@ src/ripple/nodestore/impl/ManagerImp.i: src/ripple/nodestore/impl/ManagerImp.cpp
 
 # target to preprocess a source file
 src/ripple/nodestore/impl/ManagerImp.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/ManagerImp.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/ManagerImp.cpp.i
 .PHONY : src/ripple/nodestore/impl/ManagerImp.cpp.i
 
 src/ripple/nodestore/impl/ManagerImp.s: src/ripple/nodestore/impl/ManagerImp.cpp.s
@@ -5371,7 +5371,7 @@ src/ripple/nodestore/impl/ManagerImp.s: src/ripple/nodestore/impl/ManagerImp.cpp
 
 # target to generate assembly for a file
 src/ripple/nodestore/impl/ManagerImp.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/ManagerImp.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/ManagerImp.cpp.s
 .PHONY : src/ripple/nodestore/impl/ManagerImp.cpp.s
 
 src/ripple/nodestore/impl/NodeObject.o: src/ripple/nodestore/impl/NodeObject.cpp.o
@@ -5380,7 +5380,7 @@ src/ripple/nodestore/impl/NodeObject.o: src/ripple/nodestore/impl/NodeObject.cpp
 
 # target to build an object file
 src/ripple/nodestore/impl/NodeObject.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/NodeObject.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/NodeObject.cpp.o
 .PHONY : src/ripple/nodestore/impl/NodeObject.cpp.o
 
 src/ripple/nodestore/impl/NodeObject.i: src/ripple/nodestore/impl/NodeObject.cpp.i
@@ -5389,7 +5389,7 @@ src/ripple/nodestore/impl/NodeObject.i: src/ripple/nodestore/impl/NodeObject.cpp
 
 # target to preprocess a source file
 src/ripple/nodestore/impl/NodeObject.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/NodeObject.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/NodeObject.cpp.i
 .PHONY : src/ripple/nodestore/impl/NodeObject.cpp.i
 
 src/ripple/nodestore/impl/NodeObject.s: src/ripple/nodestore/impl/NodeObject.cpp.s
@@ -5398,7 +5398,7 @@ src/ripple/nodestore/impl/NodeObject.s: src/ripple/nodestore/impl/NodeObject.cpp
 
 # target to generate assembly for a file
 src/ripple/nodestore/impl/NodeObject.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/NodeObject.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/NodeObject.cpp.s
 .PHONY : src/ripple/nodestore/impl/NodeObject.cpp.s
 
 src/ripple/nodestore/impl/Shard.o: src/ripple/nodestore/impl/Shard.cpp.o
@@ -5407,7 +5407,7 @@ src/ripple/nodestore/impl/Shard.o: src/ripple/nodestore/impl/Shard.cpp.o
 
 # target to build an object file
 src/ripple/nodestore/impl/Shard.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/Shard.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/Shard.cpp.o
 .PHONY : src/ripple/nodestore/impl/Shard.cpp.o
 
 src/ripple/nodestore/impl/Shard.i: src/ripple/nodestore/impl/Shard.cpp.i
@@ -5416,7 +5416,7 @@ src/ripple/nodestore/impl/Shard.i: src/ripple/nodestore/impl/Shard.cpp.i
 
 # target to preprocess a source file
 src/ripple/nodestore/impl/Shard.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/Shard.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/Shard.cpp.i
 .PHONY : src/ripple/nodestore/impl/Shard.cpp.i
 
 src/ripple/nodestore/impl/Shard.s: src/ripple/nodestore/impl/Shard.cpp.s
@@ -5425,7 +5425,7 @@ src/ripple/nodestore/impl/Shard.s: src/ripple/nodestore/impl/Shard.cpp.s
 
 # target to generate assembly for a file
 src/ripple/nodestore/impl/Shard.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/nodestore/impl/Shard.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/nodestore/impl/Shard.cpp.s
 .PHONY : src/ripple/nodestore/impl/Shard.cpp.s
 
 src/ripple/overlay/impl/Cluster.o: src/ripple/overlay/impl/Cluster.cpp.o
@@ -5434,7 +5434,7 @@ src/ripple/overlay/impl/Cluster.o: src/ripple/overlay/impl/Cluster.cpp.o
 
 # target to build an object file
 src/ripple/overlay/impl/Cluster.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/Cluster.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/Cluster.cpp.o
 .PHONY : src/ripple/overlay/impl/Cluster.cpp.o
 
 src/ripple/overlay/impl/Cluster.i: src/ripple/overlay/impl/Cluster.cpp.i
@@ -5443,7 +5443,7 @@ src/ripple/overlay/impl/Cluster.i: src/ripple/overlay/impl/Cluster.cpp.i
 
 # target to preprocess a source file
 src/ripple/overlay/impl/Cluster.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/Cluster.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/Cluster.cpp.i
 .PHONY : src/ripple/overlay/impl/Cluster.cpp.i
 
 src/ripple/overlay/impl/Cluster.s: src/ripple/overlay/impl/Cluster.cpp.s
@@ -5452,7 +5452,7 @@ src/ripple/overlay/impl/Cluster.s: src/ripple/overlay/impl/Cluster.cpp.s
 
 # target to generate assembly for a file
 src/ripple/overlay/impl/Cluster.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/Cluster.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/Cluster.cpp.s
 .PHONY : src/ripple/overlay/impl/Cluster.cpp.s
 
 src/ripple/overlay/impl/ConnectAttempt.o: src/ripple/overlay/impl/ConnectAttempt.cpp.o
@@ -5461,7 +5461,7 @@ src/ripple/overlay/impl/ConnectAttempt.o: src/ripple/overlay/impl/ConnectAttempt
 
 # target to build an object file
 src/ripple/overlay/impl/ConnectAttempt.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/ConnectAttempt.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/ConnectAttempt.cpp.o
 .PHONY : src/ripple/overlay/impl/ConnectAttempt.cpp.o
 
 src/ripple/overlay/impl/ConnectAttempt.i: src/ripple/overlay/impl/ConnectAttempt.cpp.i
@@ -5470,7 +5470,7 @@ src/ripple/overlay/impl/ConnectAttempt.i: src/ripple/overlay/impl/ConnectAttempt
 
 # target to preprocess a source file
 src/ripple/overlay/impl/ConnectAttempt.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/ConnectAttempt.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/ConnectAttempt.cpp.i
 .PHONY : src/ripple/overlay/impl/ConnectAttempt.cpp.i
 
 src/ripple/overlay/impl/ConnectAttempt.s: src/ripple/overlay/impl/ConnectAttempt.cpp.s
@@ -5479,7 +5479,7 @@ src/ripple/overlay/impl/ConnectAttempt.s: src/ripple/overlay/impl/ConnectAttempt
 
 # target to generate assembly for a file
 src/ripple/overlay/impl/ConnectAttempt.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/ConnectAttempt.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/ConnectAttempt.cpp.s
 .PHONY : src/ripple/overlay/impl/ConnectAttempt.cpp.s
 
 src/ripple/overlay/impl/Message.o: src/ripple/overlay/impl/Message.cpp.o
@@ -5488,7 +5488,7 @@ src/ripple/overlay/impl/Message.o: src/ripple/overlay/impl/Message.cpp.o
 
 # target to build an object file
 src/ripple/overlay/impl/Message.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/Message.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/Message.cpp.o
 .PHONY : src/ripple/overlay/impl/Message.cpp.o
 
 src/ripple/overlay/impl/Message.i: src/ripple/overlay/impl/Message.cpp.i
@@ -5497,7 +5497,7 @@ src/ripple/overlay/impl/Message.i: src/ripple/overlay/impl/Message.cpp.i
 
 # target to preprocess a source file
 src/ripple/overlay/impl/Message.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/Message.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/Message.cpp.i
 .PHONY : src/ripple/overlay/impl/Message.cpp.i
 
 src/ripple/overlay/impl/Message.s: src/ripple/overlay/impl/Message.cpp.s
@@ -5506,7 +5506,7 @@ src/ripple/overlay/impl/Message.s: src/ripple/overlay/impl/Message.cpp.s
 
 # target to generate assembly for a file
 src/ripple/overlay/impl/Message.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/Message.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/Message.cpp.s
 .PHONY : src/ripple/overlay/impl/Message.cpp.s
 
 src/ripple/overlay/impl/OverlayImpl.o: src/ripple/overlay/impl/OverlayImpl.cpp.o
@@ -5515,7 +5515,7 @@ src/ripple/overlay/impl/OverlayImpl.o: src/ripple/overlay/impl/OverlayImpl.cpp.o
 
 # target to build an object file
 src/ripple/overlay/impl/OverlayImpl.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/OverlayImpl.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/OverlayImpl.cpp.o
 .PHONY : src/ripple/overlay/impl/OverlayImpl.cpp.o
 
 src/ripple/overlay/impl/OverlayImpl.i: src/ripple/overlay/impl/OverlayImpl.cpp.i
@@ -5524,7 +5524,7 @@ src/ripple/overlay/impl/OverlayImpl.i: src/ripple/overlay/impl/OverlayImpl.cpp.i
 
 # target to preprocess a source file
 src/ripple/overlay/impl/OverlayImpl.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/OverlayImpl.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/OverlayImpl.cpp.i
 .PHONY : src/ripple/overlay/impl/OverlayImpl.cpp.i
 
 src/ripple/overlay/impl/OverlayImpl.s: src/ripple/overlay/impl/OverlayImpl.cpp.s
@@ -5533,7 +5533,7 @@ src/ripple/overlay/impl/OverlayImpl.s: src/ripple/overlay/impl/OverlayImpl.cpp.s
 
 # target to generate assembly for a file
 src/ripple/overlay/impl/OverlayImpl.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/OverlayImpl.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/OverlayImpl.cpp.s
 .PHONY : src/ripple/overlay/impl/OverlayImpl.cpp.s
 
 src/ripple/overlay/impl/PeerImp.o: src/ripple/overlay/impl/PeerImp.cpp.o
@@ -5542,7 +5542,7 @@ src/ripple/overlay/impl/PeerImp.o: src/ripple/overlay/impl/PeerImp.cpp.o
 
 # target to build an object file
 src/ripple/overlay/impl/PeerImp.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/PeerImp.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/PeerImp.cpp.o
 .PHONY : src/ripple/overlay/impl/PeerImp.cpp.o
 
 src/ripple/overlay/impl/PeerImp.i: src/ripple/overlay/impl/PeerImp.cpp.i
@@ -5551,7 +5551,7 @@ src/ripple/overlay/impl/PeerImp.i: src/ripple/overlay/impl/PeerImp.cpp.i
 
 # target to preprocess a source file
 src/ripple/overlay/impl/PeerImp.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/PeerImp.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/PeerImp.cpp.i
 .PHONY : src/ripple/overlay/impl/PeerImp.cpp.i
 
 src/ripple/overlay/impl/PeerImp.s: src/ripple/overlay/impl/PeerImp.cpp.s
@@ -5560,7 +5560,7 @@ src/ripple/overlay/impl/PeerImp.s: src/ripple/overlay/impl/PeerImp.cpp.s
 
 # target to generate assembly for a file
 src/ripple/overlay/impl/PeerImp.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/PeerImp.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/PeerImp.cpp.s
 .PHONY : src/ripple/overlay/impl/PeerImp.cpp.s
 
 src/ripple/overlay/impl/PeerSet.o: src/ripple/overlay/impl/PeerSet.cpp.o
@@ -5569,7 +5569,7 @@ src/ripple/overlay/impl/PeerSet.o: src/ripple/overlay/impl/PeerSet.cpp.o
 
 # target to build an object file
 src/ripple/overlay/impl/PeerSet.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/PeerSet.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/PeerSet.cpp.o
 .PHONY : src/ripple/overlay/impl/PeerSet.cpp.o
 
 src/ripple/overlay/impl/PeerSet.i: src/ripple/overlay/impl/PeerSet.cpp.i
@@ -5578,7 +5578,7 @@ src/ripple/overlay/impl/PeerSet.i: src/ripple/overlay/impl/PeerSet.cpp.i
 
 # target to preprocess a source file
 src/ripple/overlay/impl/PeerSet.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/PeerSet.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/PeerSet.cpp.i
 .PHONY : src/ripple/overlay/impl/PeerSet.cpp.i
 
 src/ripple/overlay/impl/PeerSet.s: src/ripple/overlay/impl/PeerSet.cpp.s
@@ -5587,7 +5587,7 @@ src/ripple/overlay/impl/PeerSet.s: src/ripple/overlay/impl/PeerSet.cpp.s
 
 # target to generate assembly for a file
 src/ripple/overlay/impl/PeerSet.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/PeerSet.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/PeerSet.cpp.s
 .PHONY : src/ripple/overlay/impl/PeerSet.cpp.s
 
 src/ripple/overlay/impl/TMHello.o: src/ripple/overlay/impl/TMHello.cpp.o
@@ -5596,7 +5596,7 @@ src/ripple/overlay/impl/TMHello.o: src/ripple/overlay/impl/TMHello.cpp.o
 
 # target to build an object file
 src/ripple/overlay/impl/TMHello.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/TMHello.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/TMHello.cpp.o
 .PHONY : src/ripple/overlay/impl/TMHello.cpp.o
 
 src/ripple/overlay/impl/TMHello.i: src/ripple/overlay/impl/TMHello.cpp.i
@@ -5605,7 +5605,7 @@ src/ripple/overlay/impl/TMHello.i: src/ripple/overlay/impl/TMHello.cpp.i
 
 # target to preprocess a source file
 src/ripple/overlay/impl/TMHello.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/TMHello.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/TMHello.cpp.i
 .PHONY : src/ripple/overlay/impl/TMHello.cpp.i
 
 src/ripple/overlay/impl/TMHello.s: src/ripple/overlay/impl/TMHello.cpp.s
@@ -5614,7 +5614,7 @@ src/ripple/overlay/impl/TMHello.s: src/ripple/overlay/impl/TMHello.cpp.s
 
 # target to generate assembly for a file
 src/ripple/overlay/impl/TMHello.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/TMHello.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/TMHello.cpp.s
 .PHONY : src/ripple/overlay/impl/TMHello.cpp.s
 
 src/ripple/overlay/impl/TrafficCount.o: src/ripple/overlay/impl/TrafficCount.cpp.o
@@ -5623,7 +5623,7 @@ src/ripple/overlay/impl/TrafficCount.o: src/ripple/overlay/impl/TrafficCount.cpp
 
 # target to build an object file
 src/ripple/overlay/impl/TrafficCount.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/TrafficCount.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/TrafficCount.cpp.o
 .PHONY : src/ripple/overlay/impl/TrafficCount.cpp.o
 
 src/ripple/overlay/impl/TrafficCount.i: src/ripple/overlay/impl/TrafficCount.cpp.i
@@ -5632,7 +5632,7 @@ src/ripple/overlay/impl/TrafficCount.i: src/ripple/overlay/impl/TrafficCount.cpp
 
 # target to preprocess a source file
 src/ripple/overlay/impl/TrafficCount.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/TrafficCount.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/TrafficCount.cpp.i
 .PHONY : src/ripple/overlay/impl/TrafficCount.cpp.i
 
 src/ripple/overlay/impl/TrafficCount.s: src/ripple/overlay/impl/TrafficCount.cpp.s
@@ -5641,7 +5641,7 @@ src/ripple/overlay/impl/TrafficCount.s: src/ripple/overlay/impl/TrafficCount.cpp
 
 # target to generate assembly for a file
 src/ripple/overlay/impl/TrafficCount.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/overlay/impl/TrafficCount.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/overlay/impl/TrafficCount.cpp.s
 .PHONY : src/ripple/overlay/impl/TrafficCount.cpp.s
 
 src/ripple/peerfinder/impl/Bootcache.o: src/ripple/peerfinder/impl/Bootcache.cpp.o
@@ -5650,7 +5650,7 @@ src/ripple/peerfinder/impl/Bootcache.o: src/ripple/peerfinder/impl/Bootcache.cpp
 
 # target to build an object file
 src/ripple/peerfinder/impl/Bootcache.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/Bootcache.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/Bootcache.cpp.o
 .PHONY : src/ripple/peerfinder/impl/Bootcache.cpp.o
 
 src/ripple/peerfinder/impl/Bootcache.i: src/ripple/peerfinder/impl/Bootcache.cpp.i
@@ -5659,7 +5659,7 @@ src/ripple/peerfinder/impl/Bootcache.i: src/ripple/peerfinder/impl/Bootcache.cpp
 
 # target to preprocess a source file
 src/ripple/peerfinder/impl/Bootcache.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/Bootcache.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/Bootcache.cpp.i
 .PHONY : src/ripple/peerfinder/impl/Bootcache.cpp.i
 
 src/ripple/peerfinder/impl/Bootcache.s: src/ripple/peerfinder/impl/Bootcache.cpp.s
@@ -5668,7 +5668,7 @@ src/ripple/peerfinder/impl/Bootcache.s: src/ripple/peerfinder/impl/Bootcache.cpp
 
 # target to generate assembly for a file
 src/ripple/peerfinder/impl/Bootcache.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/Bootcache.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/Bootcache.cpp.s
 .PHONY : src/ripple/peerfinder/impl/Bootcache.cpp.s
 
 src/ripple/peerfinder/impl/Endpoint.o: src/ripple/peerfinder/impl/Endpoint.cpp.o
@@ -5677,7 +5677,7 @@ src/ripple/peerfinder/impl/Endpoint.o: src/ripple/peerfinder/impl/Endpoint.cpp.o
 
 # target to build an object file
 src/ripple/peerfinder/impl/Endpoint.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/Endpoint.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/Endpoint.cpp.o
 .PHONY : src/ripple/peerfinder/impl/Endpoint.cpp.o
 
 src/ripple/peerfinder/impl/Endpoint.i: src/ripple/peerfinder/impl/Endpoint.cpp.i
@@ -5686,7 +5686,7 @@ src/ripple/peerfinder/impl/Endpoint.i: src/ripple/peerfinder/impl/Endpoint.cpp.i
 
 # target to preprocess a source file
 src/ripple/peerfinder/impl/Endpoint.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/Endpoint.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/Endpoint.cpp.i
 .PHONY : src/ripple/peerfinder/impl/Endpoint.cpp.i
 
 src/ripple/peerfinder/impl/Endpoint.s: src/ripple/peerfinder/impl/Endpoint.cpp.s
@@ -5695,7 +5695,7 @@ src/ripple/peerfinder/impl/Endpoint.s: src/ripple/peerfinder/impl/Endpoint.cpp.s
 
 # target to generate assembly for a file
 src/ripple/peerfinder/impl/Endpoint.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/Endpoint.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/Endpoint.cpp.s
 .PHONY : src/ripple/peerfinder/impl/Endpoint.cpp.s
 
 src/ripple/peerfinder/impl/PeerfinderConfig.o: src/ripple/peerfinder/impl/PeerfinderConfig.cpp.o
@@ -5704,7 +5704,7 @@ src/ripple/peerfinder/impl/PeerfinderConfig.o: src/ripple/peerfinder/impl/Peerfi
 
 # target to build an object file
 src/ripple/peerfinder/impl/PeerfinderConfig.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/PeerfinderConfig.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/PeerfinderConfig.cpp.o
 .PHONY : src/ripple/peerfinder/impl/PeerfinderConfig.cpp.o
 
 src/ripple/peerfinder/impl/PeerfinderConfig.i: src/ripple/peerfinder/impl/PeerfinderConfig.cpp.i
@@ -5713,7 +5713,7 @@ src/ripple/peerfinder/impl/PeerfinderConfig.i: src/ripple/peerfinder/impl/Peerfi
 
 # target to preprocess a source file
 src/ripple/peerfinder/impl/PeerfinderConfig.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/PeerfinderConfig.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/PeerfinderConfig.cpp.i
 .PHONY : src/ripple/peerfinder/impl/PeerfinderConfig.cpp.i
 
 src/ripple/peerfinder/impl/PeerfinderConfig.s: src/ripple/peerfinder/impl/PeerfinderConfig.cpp.s
@@ -5722,7 +5722,7 @@ src/ripple/peerfinder/impl/PeerfinderConfig.s: src/ripple/peerfinder/impl/Peerfi
 
 # target to generate assembly for a file
 src/ripple/peerfinder/impl/PeerfinderConfig.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/PeerfinderConfig.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/PeerfinderConfig.cpp.s
 .PHONY : src/ripple/peerfinder/impl/PeerfinderConfig.cpp.s
 
 src/ripple/peerfinder/impl/PeerfinderManager.o: src/ripple/peerfinder/impl/PeerfinderManager.cpp.o
@@ -5731,7 +5731,7 @@ src/ripple/peerfinder/impl/PeerfinderManager.o: src/ripple/peerfinder/impl/Peerf
 
 # target to build an object file
 src/ripple/peerfinder/impl/PeerfinderManager.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/PeerfinderManager.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/PeerfinderManager.cpp.o
 .PHONY : src/ripple/peerfinder/impl/PeerfinderManager.cpp.o
 
 src/ripple/peerfinder/impl/PeerfinderManager.i: src/ripple/peerfinder/impl/PeerfinderManager.cpp.i
@@ -5740,7 +5740,7 @@ src/ripple/peerfinder/impl/PeerfinderManager.i: src/ripple/peerfinder/impl/Peerf
 
 # target to preprocess a source file
 src/ripple/peerfinder/impl/PeerfinderManager.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/PeerfinderManager.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/PeerfinderManager.cpp.i
 .PHONY : src/ripple/peerfinder/impl/PeerfinderManager.cpp.i
 
 src/ripple/peerfinder/impl/PeerfinderManager.s: src/ripple/peerfinder/impl/PeerfinderManager.cpp.s
@@ -5749,7 +5749,7 @@ src/ripple/peerfinder/impl/PeerfinderManager.s: src/ripple/peerfinder/impl/Peerf
 
 # target to generate assembly for a file
 src/ripple/peerfinder/impl/PeerfinderManager.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/PeerfinderManager.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/PeerfinderManager.cpp.s
 .PHONY : src/ripple/peerfinder/impl/PeerfinderManager.cpp.s
 
 src/ripple/peerfinder/impl/SlotImp.o: src/ripple/peerfinder/impl/SlotImp.cpp.o
@@ -5758,7 +5758,7 @@ src/ripple/peerfinder/impl/SlotImp.o: src/ripple/peerfinder/impl/SlotImp.cpp.o
 
 # target to build an object file
 src/ripple/peerfinder/impl/SlotImp.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/SlotImp.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/SlotImp.cpp.o
 .PHONY : src/ripple/peerfinder/impl/SlotImp.cpp.o
 
 src/ripple/peerfinder/impl/SlotImp.i: src/ripple/peerfinder/impl/SlotImp.cpp.i
@@ -5767,7 +5767,7 @@ src/ripple/peerfinder/impl/SlotImp.i: src/ripple/peerfinder/impl/SlotImp.cpp.i
 
 # target to preprocess a source file
 src/ripple/peerfinder/impl/SlotImp.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/SlotImp.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/SlotImp.cpp.i
 .PHONY : src/ripple/peerfinder/impl/SlotImp.cpp.i
 
 src/ripple/peerfinder/impl/SlotImp.s: src/ripple/peerfinder/impl/SlotImp.cpp.s
@@ -5776,7 +5776,7 @@ src/ripple/peerfinder/impl/SlotImp.s: src/ripple/peerfinder/impl/SlotImp.cpp.s
 
 # target to generate assembly for a file
 src/ripple/peerfinder/impl/SlotImp.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/SlotImp.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/SlotImp.cpp.s
 .PHONY : src/ripple/peerfinder/impl/SlotImp.cpp.s
 
 src/ripple/peerfinder/impl/SourceStrings.o: src/ripple/peerfinder/impl/SourceStrings.cpp.o
@@ -5785,7 +5785,7 @@ src/ripple/peerfinder/impl/SourceStrings.o: src/ripple/peerfinder/impl/SourceStr
 
 # target to build an object file
 src/ripple/peerfinder/impl/SourceStrings.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/SourceStrings.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/SourceStrings.cpp.o
 .PHONY : src/ripple/peerfinder/impl/SourceStrings.cpp.o
 
 src/ripple/peerfinder/impl/SourceStrings.i: src/ripple/peerfinder/impl/SourceStrings.cpp.i
@@ -5794,7 +5794,7 @@ src/ripple/peerfinder/impl/SourceStrings.i: src/ripple/peerfinder/impl/SourceStr
 
 # target to preprocess a source file
 src/ripple/peerfinder/impl/SourceStrings.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/SourceStrings.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/SourceStrings.cpp.i
 .PHONY : src/ripple/peerfinder/impl/SourceStrings.cpp.i
 
 src/ripple/peerfinder/impl/SourceStrings.s: src/ripple/peerfinder/impl/SourceStrings.cpp.s
@@ -5803,7 +5803,7 @@ src/ripple/peerfinder/impl/SourceStrings.s: src/ripple/peerfinder/impl/SourceStr
 
 # target to generate assembly for a file
 src/ripple/peerfinder/impl/SourceStrings.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/peerfinder/impl/SourceStrings.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/peerfinder/impl/SourceStrings.cpp.s
 .PHONY : src/ripple/peerfinder/impl/SourceStrings.cpp.s
 
 src/ripple/protocol/impl/AccountID.o: src/ripple/protocol/impl/AccountID.cpp.o
@@ -5812,7 +5812,7 @@ src/ripple/protocol/impl/AccountID.o: src/ripple/protocol/impl/AccountID.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/AccountID.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/AccountID.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/AccountID.cpp.o
 .PHONY : src/ripple/protocol/impl/AccountID.cpp.o
 
 src/ripple/protocol/impl/AccountID.i: src/ripple/protocol/impl/AccountID.cpp.i
@@ -5821,7 +5821,7 @@ src/ripple/protocol/impl/AccountID.i: src/ripple/protocol/impl/AccountID.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/AccountID.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/AccountID.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/AccountID.cpp.i
 .PHONY : src/ripple/protocol/impl/AccountID.cpp.i
 
 src/ripple/protocol/impl/AccountID.s: src/ripple/protocol/impl/AccountID.cpp.s
@@ -5830,7 +5830,7 @@ src/ripple/protocol/impl/AccountID.s: src/ripple/protocol/impl/AccountID.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/AccountID.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/AccountID.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/AccountID.cpp.s
 .PHONY : src/ripple/protocol/impl/AccountID.cpp.s
 
 src/ripple/protocol/impl/Book.o: src/ripple/protocol/impl/Book.cpp.o
@@ -5839,7 +5839,7 @@ src/ripple/protocol/impl/Book.o: src/ripple/protocol/impl/Book.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/Book.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Book.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Book.cpp.o
 .PHONY : src/ripple/protocol/impl/Book.cpp.o
 
 src/ripple/protocol/impl/Book.i: src/ripple/protocol/impl/Book.cpp.i
@@ -5848,7 +5848,7 @@ src/ripple/protocol/impl/Book.i: src/ripple/protocol/impl/Book.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/Book.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Book.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Book.cpp.i
 .PHONY : src/ripple/protocol/impl/Book.cpp.i
 
 src/ripple/protocol/impl/Book.s: src/ripple/protocol/impl/Book.cpp.s
@@ -5857,7 +5857,7 @@ src/ripple/protocol/impl/Book.s: src/ripple/protocol/impl/Book.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/Book.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Book.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Book.cpp.s
 .PHONY : src/ripple/protocol/impl/Book.cpp.s
 
 src/ripple/protocol/impl/BuildInfo.o: src/ripple/protocol/impl/BuildInfo.cpp.o
@@ -5866,7 +5866,7 @@ src/ripple/protocol/impl/BuildInfo.o: src/ripple/protocol/impl/BuildInfo.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/BuildInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/BuildInfo.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/BuildInfo.cpp.o
 .PHONY : src/ripple/protocol/impl/BuildInfo.cpp.o
 
 src/ripple/protocol/impl/BuildInfo.i: src/ripple/protocol/impl/BuildInfo.cpp.i
@@ -5875,7 +5875,7 @@ src/ripple/protocol/impl/BuildInfo.i: src/ripple/protocol/impl/BuildInfo.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/BuildInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/BuildInfo.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/BuildInfo.cpp.i
 .PHONY : src/ripple/protocol/impl/BuildInfo.cpp.i
 
 src/ripple/protocol/impl/BuildInfo.s: src/ripple/protocol/impl/BuildInfo.cpp.s
@@ -5884,7 +5884,7 @@ src/ripple/protocol/impl/BuildInfo.s: src/ripple/protocol/impl/BuildInfo.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/BuildInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/BuildInfo.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/BuildInfo.cpp.s
 .PHONY : src/ripple/protocol/impl/BuildInfo.cpp.s
 
 src/ripple/protocol/impl/ByteOrder.o: src/ripple/protocol/impl/ByteOrder.cpp.o
@@ -5893,7 +5893,7 @@ src/ripple/protocol/impl/ByteOrder.o: src/ripple/protocol/impl/ByteOrder.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/ByteOrder.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/ByteOrder.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/ByteOrder.cpp.o
 .PHONY : src/ripple/protocol/impl/ByteOrder.cpp.o
 
 src/ripple/protocol/impl/ByteOrder.i: src/ripple/protocol/impl/ByteOrder.cpp.i
@@ -5902,7 +5902,7 @@ src/ripple/protocol/impl/ByteOrder.i: src/ripple/protocol/impl/ByteOrder.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/ByteOrder.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/ByteOrder.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/ByteOrder.cpp.i
 .PHONY : src/ripple/protocol/impl/ByteOrder.cpp.i
 
 src/ripple/protocol/impl/ByteOrder.s: src/ripple/protocol/impl/ByteOrder.cpp.s
@@ -5911,7 +5911,7 @@ src/ripple/protocol/impl/ByteOrder.s: src/ripple/protocol/impl/ByteOrder.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/ByteOrder.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/ByteOrder.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/ByteOrder.cpp.s
 .PHONY : src/ripple/protocol/impl/ByteOrder.cpp.s
 
 src/ripple/protocol/impl/ErrorCodes.o: src/ripple/protocol/impl/ErrorCodes.cpp.o
@@ -5920,7 +5920,7 @@ src/ripple/protocol/impl/ErrorCodes.o: src/ripple/protocol/impl/ErrorCodes.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/ErrorCodes.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/ErrorCodes.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/ErrorCodes.cpp.o
 .PHONY : src/ripple/protocol/impl/ErrorCodes.cpp.o
 
 src/ripple/protocol/impl/ErrorCodes.i: src/ripple/protocol/impl/ErrorCodes.cpp.i
@@ -5929,7 +5929,7 @@ src/ripple/protocol/impl/ErrorCodes.i: src/ripple/protocol/impl/ErrorCodes.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/ErrorCodes.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/ErrorCodes.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/ErrorCodes.cpp.i
 .PHONY : src/ripple/protocol/impl/ErrorCodes.cpp.i
 
 src/ripple/protocol/impl/ErrorCodes.s: src/ripple/protocol/impl/ErrorCodes.cpp.s
@@ -5938,7 +5938,7 @@ src/ripple/protocol/impl/ErrorCodes.s: src/ripple/protocol/impl/ErrorCodes.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/ErrorCodes.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/ErrorCodes.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/ErrorCodes.cpp.s
 .PHONY : src/ripple/protocol/impl/ErrorCodes.cpp.s
 
 src/ripple/protocol/impl/Feature.o: src/ripple/protocol/impl/Feature.cpp.o
@@ -5947,7 +5947,7 @@ src/ripple/protocol/impl/Feature.o: src/ripple/protocol/impl/Feature.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/Feature.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Feature.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Feature.cpp.o
 .PHONY : src/ripple/protocol/impl/Feature.cpp.o
 
 src/ripple/protocol/impl/Feature.i: src/ripple/protocol/impl/Feature.cpp.i
@@ -5956,7 +5956,7 @@ src/ripple/protocol/impl/Feature.i: src/ripple/protocol/impl/Feature.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/Feature.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Feature.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Feature.cpp.i
 .PHONY : src/ripple/protocol/impl/Feature.cpp.i
 
 src/ripple/protocol/impl/Feature.s: src/ripple/protocol/impl/Feature.cpp.s
@@ -5965,7 +5965,7 @@ src/ripple/protocol/impl/Feature.s: src/ripple/protocol/impl/Feature.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/Feature.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Feature.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Feature.cpp.s
 .PHONY : src/ripple/protocol/impl/Feature.cpp.s
 
 src/ripple/protocol/impl/HashPrefix.o: src/ripple/protocol/impl/HashPrefix.cpp.o
@@ -5974,7 +5974,7 @@ src/ripple/protocol/impl/HashPrefix.o: src/ripple/protocol/impl/HashPrefix.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/HashPrefix.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/HashPrefix.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/HashPrefix.cpp.o
 .PHONY : src/ripple/protocol/impl/HashPrefix.cpp.o
 
 src/ripple/protocol/impl/HashPrefix.i: src/ripple/protocol/impl/HashPrefix.cpp.i
@@ -5983,7 +5983,7 @@ src/ripple/protocol/impl/HashPrefix.i: src/ripple/protocol/impl/HashPrefix.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/HashPrefix.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/HashPrefix.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/HashPrefix.cpp.i
 .PHONY : src/ripple/protocol/impl/HashPrefix.cpp.i
 
 src/ripple/protocol/impl/HashPrefix.s: src/ripple/protocol/impl/HashPrefix.cpp.s
@@ -5992,7 +5992,7 @@ src/ripple/protocol/impl/HashPrefix.s: src/ripple/protocol/impl/HashPrefix.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/HashPrefix.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/HashPrefix.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/HashPrefix.cpp.s
 .PHONY : src/ripple/protocol/impl/HashPrefix.cpp.s
 
 src/ripple/protocol/impl/IOUAmount.o: src/ripple/protocol/impl/IOUAmount.cpp.o
@@ -6001,7 +6001,7 @@ src/ripple/protocol/impl/IOUAmount.o: src/ripple/protocol/impl/IOUAmount.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/IOUAmount.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/IOUAmount.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/IOUAmount.cpp.o
 .PHONY : src/ripple/protocol/impl/IOUAmount.cpp.o
 
 src/ripple/protocol/impl/IOUAmount.i: src/ripple/protocol/impl/IOUAmount.cpp.i
@@ -6010,7 +6010,7 @@ src/ripple/protocol/impl/IOUAmount.i: src/ripple/protocol/impl/IOUAmount.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/IOUAmount.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/IOUAmount.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/IOUAmount.cpp.i
 .PHONY : src/ripple/protocol/impl/IOUAmount.cpp.i
 
 src/ripple/protocol/impl/IOUAmount.s: src/ripple/protocol/impl/IOUAmount.cpp.s
@@ -6019,7 +6019,7 @@ src/ripple/protocol/impl/IOUAmount.s: src/ripple/protocol/impl/IOUAmount.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/IOUAmount.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/IOUAmount.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/IOUAmount.cpp.s
 .PHONY : src/ripple/protocol/impl/IOUAmount.cpp.s
 
 src/ripple/protocol/impl/Indexes.o: src/ripple/protocol/impl/Indexes.cpp.o
@@ -6028,7 +6028,7 @@ src/ripple/protocol/impl/Indexes.o: src/ripple/protocol/impl/Indexes.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/Indexes.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Indexes.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Indexes.cpp.o
 .PHONY : src/ripple/protocol/impl/Indexes.cpp.o
 
 src/ripple/protocol/impl/Indexes.i: src/ripple/protocol/impl/Indexes.cpp.i
@@ -6037,7 +6037,7 @@ src/ripple/protocol/impl/Indexes.i: src/ripple/protocol/impl/Indexes.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/Indexes.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Indexes.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Indexes.cpp.i
 .PHONY : src/ripple/protocol/impl/Indexes.cpp.i
 
 src/ripple/protocol/impl/Indexes.s: src/ripple/protocol/impl/Indexes.cpp.s
@@ -6046,7 +6046,7 @@ src/ripple/protocol/impl/Indexes.s: src/ripple/protocol/impl/Indexes.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/Indexes.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Indexes.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Indexes.cpp.s
 .PHONY : src/ripple/protocol/impl/Indexes.cpp.s
 
 src/ripple/protocol/impl/InnerObjectFormats.o: src/ripple/protocol/impl/InnerObjectFormats.cpp.o
@@ -6055,7 +6055,7 @@ src/ripple/protocol/impl/InnerObjectFormats.o: src/ripple/protocol/impl/InnerObj
 
 # target to build an object file
 src/ripple/protocol/impl/InnerObjectFormats.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/InnerObjectFormats.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/InnerObjectFormats.cpp.o
 .PHONY : src/ripple/protocol/impl/InnerObjectFormats.cpp.o
 
 src/ripple/protocol/impl/InnerObjectFormats.i: src/ripple/protocol/impl/InnerObjectFormats.cpp.i
@@ -6064,7 +6064,7 @@ src/ripple/protocol/impl/InnerObjectFormats.i: src/ripple/protocol/impl/InnerObj
 
 # target to preprocess a source file
 src/ripple/protocol/impl/InnerObjectFormats.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/InnerObjectFormats.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/InnerObjectFormats.cpp.i
 .PHONY : src/ripple/protocol/impl/InnerObjectFormats.cpp.i
 
 src/ripple/protocol/impl/InnerObjectFormats.s: src/ripple/protocol/impl/InnerObjectFormats.cpp.s
@@ -6073,7 +6073,7 @@ src/ripple/protocol/impl/InnerObjectFormats.s: src/ripple/protocol/impl/InnerObj
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/InnerObjectFormats.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/InnerObjectFormats.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/InnerObjectFormats.cpp.s
 .PHONY : src/ripple/protocol/impl/InnerObjectFormats.cpp.s
 
 src/ripple/protocol/impl/Issue.o: src/ripple/protocol/impl/Issue.cpp.o
@@ -6082,7 +6082,7 @@ src/ripple/protocol/impl/Issue.o: src/ripple/protocol/impl/Issue.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/Issue.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Issue.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Issue.cpp.o
 .PHONY : src/ripple/protocol/impl/Issue.cpp.o
 
 src/ripple/protocol/impl/Issue.i: src/ripple/protocol/impl/Issue.cpp.i
@@ -6091,7 +6091,7 @@ src/ripple/protocol/impl/Issue.i: src/ripple/protocol/impl/Issue.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/Issue.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Issue.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Issue.cpp.i
 .PHONY : src/ripple/protocol/impl/Issue.cpp.i
 
 src/ripple/protocol/impl/Issue.s: src/ripple/protocol/impl/Issue.cpp.s
@@ -6100,7 +6100,7 @@ src/ripple/protocol/impl/Issue.s: src/ripple/protocol/impl/Issue.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/Issue.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Issue.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Issue.cpp.s
 .PHONY : src/ripple/protocol/impl/Issue.cpp.s
 
 src/ripple/protocol/impl/Keylet.o: src/ripple/protocol/impl/Keylet.cpp.o
@@ -6109,7 +6109,7 @@ src/ripple/protocol/impl/Keylet.o: src/ripple/protocol/impl/Keylet.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/Keylet.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Keylet.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Keylet.cpp.o
 .PHONY : src/ripple/protocol/impl/Keylet.cpp.o
 
 src/ripple/protocol/impl/Keylet.i: src/ripple/protocol/impl/Keylet.cpp.i
@@ -6118,7 +6118,7 @@ src/ripple/protocol/impl/Keylet.i: src/ripple/protocol/impl/Keylet.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/Keylet.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Keylet.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Keylet.cpp.i
 .PHONY : src/ripple/protocol/impl/Keylet.cpp.i
 
 src/ripple/protocol/impl/Keylet.s: src/ripple/protocol/impl/Keylet.cpp.s
@@ -6127,7 +6127,7 @@ src/ripple/protocol/impl/Keylet.s: src/ripple/protocol/impl/Keylet.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/Keylet.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Keylet.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Keylet.cpp.s
 .PHONY : src/ripple/protocol/impl/Keylet.cpp.s
 
 src/ripple/protocol/impl/LedgerFormats.o: src/ripple/protocol/impl/LedgerFormats.cpp.o
@@ -6136,7 +6136,7 @@ src/ripple/protocol/impl/LedgerFormats.o: src/ripple/protocol/impl/LedgerFormats
 
 # target to build an object file
 src/ripple/protocol/impl/LedgerFormats.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/LedgerFormats.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/LedgerFormats.cpp.o
 .PHONY : src/ripple/protocol/impl/LedgerFormats.cpp.o
 
 src/ripple/protocol/impl/LedgerFormats.i: src/ripple/protocol/impl/LedgerFormats.cpp.i
@@ -6145,7 +6145,7 @@ src/ripple/protocol/impl/LedgerFormats.i: src/ripple/protocol/impl/LedgerFormats
 
 # target to preprocess a source file
 src/ripple/protocol/impl/LedgerFormats.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/LedgerFormats.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/LedgerFormats.cpp.i
 .PHONY : src/ripple/protocol/impl/LedgerFormats.cpp.i
 
 src/ripple/protocol/impl/LedgerFormats.s: src/ripple/protocol/impl/LedgerFormats.cpp.s
@@ -6154,7 +6154,7 @@ src/ripple/protocol/impl/LedgerFormats.s: src/ripple/protocol/impl/LedgerFormats
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/LedgerFormats.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/LedgerFormats.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/LedgerFormats.cpp.s
 .PHONY : src/ripple/protocol/impl/LedgerFormats.cpp.s
 
 src/ripple/protocol/impl/PublicKey.o: src/ripple/protocol/impl/PublicKey.cpp.o
@@ -6163,7 +6163,7 @@ src/ripple/protocol/impl/PublicKey.o: src/ripple/protocol/impl/PublicKey.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/PublicKey.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/PublicKey.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/PublicKey.cpp.o
 .PHONY : src/ripple/protocol/impl/PublicKey.cpp.o
 
 src/ripple/protocol/impl/PublicKey.i: src/ripple/protocol/impl/PublicKey.cpp.i
@@ -6172,7 +6172,7 @@ src/ripple/protocol/impl/PublicKey.i: src/ripple/protocol/impl/PublicKey.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/PublicKey.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/PublicKey.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/PublicKey.cpp.i
 .PHONY : src/ripple/protocol/impl/PublicKey.cpp.i
 
 src/ripple/protocol/impl/PublicKey.s: src/ripple/protocol/impl/PublicKey.cpp.s
@@ -6181,7 +6181,7 @@ src/ripple/protocol/impl/PublicKey.s: src/ripple/protocol/impl/PublicKey.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/PublicKey.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/PublicKey.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/PublicKey.cpp.s
 .PHONY : src/ripple/protocol/impl/PublicKey.cpp.s
 
 src/ripple/protocol/impl/Quality.o: src/ripple/protocol/impl/Quality.cpp.o
@@ -6190,7 +6190,7 @@ src/ripple/protocol/impl/Quality.o: src/ripple/protocol/impl/Quality.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/Quality.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Quality.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Quality.cpp.o
 .PHONY : src/ripple/protocol/impl/Quality.cpp.o
 
 src/ripple/protocol/impl/Quality.i: src/ripple/protocol/impl/Quality.cpp.i
@@ -6199,7 +6199,7 @@ src/ripple/protocol/impl/Quality.i: src/ripple/protocol/impl/Quality.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/Quality.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Quality.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Quality.cpp.i
 .PHONY : src/ripple/protocol/impl/Quality.cpp.i
 
 src/ripple/protocol/impl/Quality.s: src/ripple/protocol/impl/Quality.cpp.s
@@ -6208,7 +6208,7 @@ src/ripple/protocol/impl/Quality.s: src/ripple/protocol/impl/Quality.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/Quality.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Quality.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Quality.cpp.s
 .PHONY : src/ripple/protocol/impl/Quality.cpp.s
 
 src/ripple/protocol/impl/Rate2.o: src/ripple/protocol/impl/Rate2.cpp.o
@@ -6217,7 +6217,7 @@ src/ripple/protocol/impl/Rate2.o: src/ripple/protocol/impl/Rate2.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/Rate2.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Rate2.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Rate2.cpp.o
 .PHONY : src/ripple/protocol/impl/Rate2.cpp.o
 
 src/ripple/protocol/impl/Rate2.i: src/ripple/protocol/impl/Rate2.cpp.i
@@ -6226,7 +6226,7 @@ src/ripple/protocol/impl/Rate2.i: src/ripple/protocol/impl/Rate2.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/Rate2.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Rate2.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Rate2.cpp.i
 .PHONY : src/ripple/protocol/impl/Rate2.cpp.i
 
 src/ripple/protocol/impl/Rate2.s: src/ripple/protocol/impl/Rate2.cpp.s
@@ -6235,7 +6235,7 @@ src/ripple/protocol/impl/Rate2.s: src/ripple/protocol/impl/Rate2.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/Rate2.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Rate2.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Rate2.cpp.s
 .PHONY : src/ripple/protocol/impl/Rate2.cpp.s
 
 src/ripple/protocol/impl/SField.o: src/ripple/protocol/impl/SField.cpp.o
@@ -6244,7 +6244,7 @@ src/ripple/protocol/impl/SField.o: src/ripple/protocol/impl/SField.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/SField.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/SField.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/SField.cpp.o
 .PHONY : src/ripple/protocol/impl/SField.cpp.o
 
 src/ripple/protocol/impl/SField.i: src/ripple/protocol/impl/SField.cpp.i
@@ -6253,7 +6253,7 @@ src/ripple/protocol/impl/SField.i: src/ripple/protocol/impl/SField.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/SField.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/SField.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/SField.cpp.i
 .PHONY : src/ripple/protocol/impl/SField.cpp.i
 
 src/ripple/protocol/impl/SField.s: src/ripple/protocol/impl/SField.cpp.s
@@ -6262,7 +6262,7 @@ src/ripple/protocol/impl/SField.s: src/ripple/protocol/impl/SField.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/SField.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/SField.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/SField.cpp.s
 .PHONY : src/ripple/protocol/impl/SField.cpp.s
 
 src/ripple/protocol/impl/SOTemplate.o: src/ripple/protocol/impl/SOTemplate.cpp.o
@@ -6271,7 +6271,7 @@ src/ripple/protocol/impl/SOTemplate.o: src/ripple/protocol/impl/SOTemplate.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/SOTemplate.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/SOTemplate.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/SOTemplate.cpp.o
 .PHONY : src/ripple/protocol/impl/SOTemplate.cpp.o
 
 src/ripple/protocol/impl/SOTemplate.i: src/ripple/protocol/impl/SOTemplate.cpp.i
@@ -6280,7 +6280,7 @@ src/ripple/protocol/impl/SOTemplate.i: src/ripple/protocol/impl/SOTemplate.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/SOTemplate.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/SOTemplate.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/SOTemplate.cpp.i
 .PHONY : src/ripple/protocol/impl/SOTemplate.cpp.i
 
 src/ripple/protocol/impl/SOTemplate.s: src/ripple/protocol/impl/SOTemplate.cpp.s
@@ -6289,7 +6289,7 @@ src/ripple/protocol/impl/SOTemplate.s: src/ripple/protocol/impl/SOTemplate.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/SOTemplate.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/SOTemplate.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/SOTemplate.cpp.s
 .PHONY : src/ripple/protocol/impl/SOTemplate.cpp.s
 
 src/ripple/protocol/impl/STAccount.o: src/ripple/protocol/impl/STAccount.cpp.o
@@ -6298,7 +6298,7 @@ src/ripple/protocol/impl/STAccount.o: src/ripple/protocol/impl/STAccount.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/STAccount.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STAccount.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STAccount.cpp.o
 .PHONY : src/ripple/protocol/impl/STAccount.cpp.o
 
 src/ripple/protocol/impl/STAccount.i: src/ripple/protocol/impl/STAccount.cpp.i
@@ -6307,7 +6307,7 @@ src/ripple/protocol/impl/STAccount.i: src/ripple/protocol/impl/STAccount.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STAccount.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STAccount.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STAccount.cpp.i
 .PHONY : src/ripple/protocol/impl/STAccount.cpp.i
 
 src/ripple/protocol/impl/STAccount.s: src/ripple/protocol/impl/STAccount.cpp.s
@@ -6316,7 +6316,7 @@ src/ripple/protocol/impl/STAccount.s: src/ripple/protocol/impl/STAccount.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STAccount.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STAccount.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STAccount.cpp.s
 .PHONY : src/ripple/protocol/impl/STAccount.cpp.s
 
 src/ripple/protocol/impl/STAmount.o: src/ripple/protocol/impl/STAmount.cpp.o
@@ -6325,7 +6325,7 @@ src/ripple/protocol/impl/STAmount.o: src/ripple/protocol/impl/STAmount.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/STAmount.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STAmount.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STAmount.cpp.o
 .PHONY : src/ripple/protocol/impl/STAmount.cpp.o
 
 src/ripple/protocol/impl/STAmount.i: src/ripple/protocol/impl/STAmount.cpp.i
@@ -6334,7 +6334,7 @@ src/ripple/protocol/impl/STAmount.i: src/ripple/protocol/impl/STAmount.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STAmount.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STAmount.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STAmount.cpp.i
 .PHONY : src/ripple/protocol/impl/STAmount.cpp.i
 
 src/ripple/protocol/impl/STAmount.s: src/ripple/protocol/impl/STAmount.cpp.s
@@ -6343,7 +6343,7 @@ src/ripple/protocol/impl/STAmount.s: src/ripple/protocol/impl/STAmount.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STAmount.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STAmount.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STAmount.cpp.s
 .PHONY : src/ripple/protocol/impl/STAmount.cpp.s
 
 src/ripple/protocol/impl/STArray.o: src/ripple/protocol/impl/STArray.cpp.o
@@ -6352,7 +6352,7 @@ src/ripple/protocol/impl/STArray.o: src/ripple/protocol/impl/STArray.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/STArray.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STArray.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STArray.cpp.o
 .PHONY : src/ripple/protocol/impl/STArray.cpp.o
 
 src/ripple/protocol/impl/STArray.i: src/ripple/protocol/impl/STArray.cpp.i
@@ -6361,7 +6361,7 @@ src/ripple/protocol/impl/STArray.i: src/ripple/protocol/impl/STArray.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STArray.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STArray.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STArray.cpp.i
 .PHONY : src/ripple/protocol/impl/STArray.cpp.i
 
 src/ripple/protocol/impl/STArray.s: src/ripple/protocol/impl/STArray.cpp.s
@@ -6370,7 +6370,7 @@ src/ripple/protocol/impl/STArray.s: src/ripple/protocol/impl/STArray.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STArray.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STArray.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STArray.cpp.s
 .PHONY : src/ripple/protocol/impl/STArray.cpp.s
 
 src/ripple/protocol/impl/STBase.o: src/ripple/protocol/impl/STBase.cpp.o
@@ -6379,7 +6379,7 @@ src/ripple/protocol/impl/STBase.o: src/ripple/protocol/impl/STBase.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/STBase.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STBase.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STBase.cpp.o
 .PHONY : src/ripple/protocol/impl/STBase.cpp.o
 
 src/ripple/protocol/impl/STBase.i: src/ripple/protocol/impl/STBase.cpp.i
@@ -6388,7 +6388,7 @@ src/ripple/protocol/impl/STBase.i: src/ripple/protocol/impl/STBase.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STBase.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STBase.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STBase.cpp.i
 .PHONY : src/ripple/protocol/impl/STBase.cpp.i
 
 src/ripple/protocol/impl/STBase.s: src/ripple/protocol/impl/STBase.cpp.s
@@ -6397,7 +6397,7 @@ src/ripple/protocol/impl/STBase.s: src/ripple/protocol/impl/STBase.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STBase.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STBase.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STBase.cpp.s
 .PHONY : src/ripple/protocol/impl/STBase.cpp.s
 
 src/ripple/protocol/impl/STBlob.o: src/ripple/protocol/impl/STBlob.cpp.o
@@ -6406,7 +6406,7 @@ src/ripple/protocol/impl/STBlob.o: src/ripple/protocol/impl/STBlob.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/STBlob.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STBlob.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STBlob.cpp.o
 .PHONY : src/ripple/protocol/impl/STBlob.cpp.o
 
 src/ripple/protocol/impl/STBlob.i: src/ripple/protocol/impl/STBlob.cpp.i
@@ -6415,7 +6415,7 @@ src/ripple/protocol/impl/STBlob.i: src/ripple/protocol/impl/STBlob.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STBlob.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STBlob.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STBlob.cpp.i
 .PHONY : src/ripple/protocol/impl/STBlob.cpp.i
 
 src/ripple/protocol/impl/STBlob.s: src/ripple/protocol/impl/STBlob.cpp.s
@@ -6424,7 +6424,7 @@ src/ripple/protocol/impl/STBlob.s: src/ripple/protocol/impl/STBlob.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STBlob.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STBlob.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STBlob.cpp.s
 .PHONY : src/ripple/protocol/impl/STBlob.cpp.s
 
 src/ripple/protocol/impl/STInteger.o: src/ripple/protocol/impl/STInteger.cpp.o
@@ -6433,7 +6433,7 @@ src/ripple/protocol/impl/STInteger.o: src/ripple/protocol/impl/STInteger.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/STInteger.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STInteger.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STInteger.cpp.o
 .PHONY : src/ripple/protocol/impl/STInteger.cpp.o
 
 src/ripple/protocol/impl/STInteger.i: src/ripple/protocol/impl/STInteger.cpp.i
@@ -6442,7 +6442,7 @@ src/ripple/protocol/impl/STInteger.i: src/ripple/protocol/impl/STInteger.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STInteger.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STInteger.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STInteger.cpp.i
 .PHONY : src/ripple/protocol/impl/STInteger.cpp.i
 
 src/ripple/protocol/impl/STInteger.s: src/ripple/protocol/impl/STInteger.cpp.s
@@ -6451,7 +6451,7 @@ src/ripple/protocol/impl/STInteger.s: src/ripple/protocol/impl/STInteger.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STInteger.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STInteger.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STInteger.cpp.s
 .PHONY : src/ripple/protocol/impl/STInteger.cpp.s
 
 src/ripple/protocol/impl/STLedgerEntry.o: src/ripple/protocol/impl/STLedgerEntry.cpp.o
@@ -6460,7 +6460,7 @@ src/ripple/protocol/impl/STLedgerEntry.o: src/ripple/protocol/impl/STLedgerEntry
 
 # target to build an object file
 src/ripple/protocol/impl/STLedgerEntry.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STLedgerEntry.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STLedgerEntry.cpp.o
 .PHONY : src/ripple/protocol/impl/STLedgerEntry.cpp.o
 
 src/ripple/protocol/impl/STLedgerEntry.i: src/ripple/protocol/impl/STLedgerEntry.cpp.i
@@ -6469,7 +6469,7 @@ src/ripple/protocol/impl/STLedgerEntry.i: src/ripple/protocol/impl/STLedgerEntry
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STLedgerEntry.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STLedgerEntry.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STLedgerEntry.cpp.i
 .PHONY : src/ripple/protocol/impl/STLedgerEntry.cpp.i
 
 src/ripple/protocol/impl/STLedgerEntry.s: src/ripple/protocol/impl/STLedgerEntry.cpp.s
@@ -6478,7 +6478,7 @@ src/ripple/protocol/impl/STLedgerEntry.s: src/ripple/protocol/impl/STLedgerEntry
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STLedgerEntry.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STLedgerEntry.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STLedgerEntry.cpp.s
 .PHONY : src/ripple/protocol/impl/STLedgerEntry.cpp.s
 
 src/ripple/protocol/impl/STObject.o: src/ripple/protocol/impl/STObject.cpp.o
@@ -6487,7 +6487,7 @@ src/ripple/protocol/impl/STObject.o: src/ripple/protocol/impl/STObject.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/STObject.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STObject.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STObject.cpp.o
 .PHONY : src/ripple/protocol/impl/STObject.cpp.o
 
 src/ripple/protocol/impl/STObject.i: src/ripple/protocol/impl/STObject.cpp.i
@@ -6496,7 +6496,7 @@ src/ripple/protocol/impl/STObject.i: src/ripple/protocol/impl/STObject.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STObject.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STObject.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STObject.cpp.i
 .PHONY : src/ripple/protocol/impl/STObject.cpp.i
 
 src/ripple/protocol/impl/STObject.s: src/ripple/protocol/impl/STObject.cpp.s
@@ -6505,7 +6505,7 @@ src/ripple/protocol/impl/STObject.s: src/ripple/protocol/impl/STObject.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STObject.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STObject.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STObject.cpp.s
 .PHONY : src/ripple/protocol/impl/STObject.cpp.s
 
 src/ripple/protocol/impl/STParsedJSON.o: src/ripple/protocol/impl/STParsedJSON.cpp.o
@@ -6514,7 +6514,7 @@ src/ripple/protocol/impl/STParsedJSON.o: src/ripple/protocol/impl/STParsedJSON.c
 
 # target to build an object file
 src/ripple/protocol/impl/STParsedJSON.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STParsedJSON.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STParsedJSON.cpp.o
 .PHONY : src/ripple/protocol/impl/STParsedJSON.cpp.o
 
 src/ripple/protocol/impl/STParsedJSON.i: src/ripple/protocol/impl/STParsedJSON.cpp.i
@@ -6523,7 +6523,7 @@ src/ripple/protocol/impl/STParsedJSON.i: src/ripple/protocol/impl/STParsedJSON.c
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STParsedJSON.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STParsedJSON.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STParsedJSON.cpp.i
 .PHONY : src/ripple/protocol/impl/STParsedJSON.cpp.i
 
 src/ripple/protocol/impl/STParsedJSON.s: src/ripple/protocol/impl/STParsedJSON.cpp.s
@@ -6532,7 +6532,7 @@ src/ripple/protocol/impl/STParsedJSON.s: src/ripple/protocol/impl/STParsedJSON.c
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STParsedJSON.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STParsedJSON.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STParsedJSON.cpp.s
 .PHONY : src/ripple/protocol/impl/STParsedJSON.cpp.s
 
 src/ripple/protocol/impl/STPathSet.o: src/ripple/protocol/impl/STPathSet.cpp.o
@@ -6541,7 +6541,7 @@ src/ripple/protocol/impl/STPathSet.o: src/ripple/protocol/impl/STPathSet.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/STPathSet.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STPathSet.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STPathSet.cpp.o
 .PHONY : src/ripple/protocol/impl/STPathSet.cpp.o
 
 src/ripple/protocol/impl/STPathSet.i: src/ripple/protocol/impl/STPathSet.cpp.i
@@ -6550,7 +6550,7 @@ src/ripple/protocol/impl/STPathSet.i: src/ripple/protocol/impl/STPathSet.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STPathSet.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STPathSet.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STPathSet.cpp.i
 .PHONY : src/ripple/protocol/impl/STPathSet.cpp.i
 
 src/ripple/protocol/impl/STPathSet.s: src/ripple/protocol/impl/STPathSet.cpp.s
@@ -6559,7 +6559,7 @@ src/ripple/protocol/impl/STPathSet.s: src/ripple/protocol/impl/STPathSet.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STPathSet.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STPathSet.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STPathSet.cpp.s
 .PHONY : src/ripple/protocol/impl/STPathSet.cpp.s
 
 src/ripple/protocol/impl/STTx.o: src/ripple/protocol/impl/STTx.cpp.o
@@ -6568,7 +6568,7 @@ src/ripple/protocol/impl/STTx.o: src/ripple/protocol/impl/STTx.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/STTx.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STTx.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STTx.cpp.o
 .PHONY : src/ripple/protocol/impl/STTx.cpp.o
 
 src/ripple/protocol/impl/STTx.i: src/ripple/protocol/impl/STTx.cpp.i
@@ -6577,7 +6577,7 @@ src/ripple/protocol/impl/STTx.i: src/ripple/protocol/impl/STTx.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STTx.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STTx.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STTx.cpp.i
 .PHONY : src/ripple/protocol/impl/STTx.cpp.i
 
 src/ripple/protocol/impl/STTx.s: src/ripple/protocol/impl/STTx.cpp.s
@@ -6586,7 +6586,7 @@ src/ripple/protocol/impl/STTx.s: src/ripple/protocol/impl/STTx.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STTx.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STTx.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STTx.cpp.s
 .PHONY : src/ripple/protocol/impl/STTx.cpp.s
 
 src/ripple/protocol/impl/STValidation.o: src/ripple/protocol/impl/STValidation.cpp.o
@@ -6595,7 +6595,7 @@ src/ripple/protocol/impl/STValidation.o: src/ripple/protocol/impl/STValidation.c
 
 # target to build an object file
 src/ripple/protocol/impl/STValidation.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STValidation.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STValidation.cpp.o
 .PHONY : src/ripple/protocol/impl/STValidation.cpp.o
 
 src/ripple/protocol/impl/STValidation.i: src/ripple/protocol/impl/STValidation.cpp.i
@@ -6604,7 +6604,7 @@ src/ripple/protocol/impl/STValidation.i: src/ripple/protocol/impl/STValidation.c
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STValidation.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STValidation.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STValidation.cpp.i
 .PHONY : src/ripple/protocol/impl/STValidation.cpp.i
 
 src/ripple/protocol/impl/STValidation.s: src/ripple/protocol/impl/STValidation.cpp.s
@@ -6613,7 +6613,7 @@ src/ripple/protocol/impl/STValidation.s: src/ripple/protocol/impl/STValidation.c
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STValidation.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STValidation.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STValidation.cpp.s
 .PHONY : src/ripple/protocol/impl/STValidation.cpp.s
 
 src/ripple/protocol/impl/STVar.o: src/ripple/protocol/impl/STVar.cpp.o
@@ -6622,7 +6622,7 @@ src/ripple/protocol/impl/STVar.o: src/ripple/protocol/impl/STVar.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/STVar.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STVar.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STVar.cpp.o
 .PHONY : src/ripple/protocol/impl/STVar.cpp.o
 
 src/ripple/protocol/impl/STVar.i: src/ripple/protocol/impl/STVar.cpp.i
@@ -6631,7 +6631,7 @@ src/ripple/protocol/impl/STVar.i: src/ripple/protocol/impl/STVar.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STVar.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STVar.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STVar.cpp.i
 .PHONY : src/ripple/protocol/impl/STVar.cpp.i
 
 src/ripple/protocol/impl/STVar.s: src/ripple/protocol/impl/STVar.cpp.s
@@ -6640,7 +6640,7 @@ src/ripple/protocol/impl/STVar.s: src/ripple/protocol/impl/STVar.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STVar.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STVar.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STVar.cpp.s
 .PHONY : src/ripple/protocol/impl/STVar.cpp.s
 
 src/ripple/protocol/impl/STVector256.o: src/ripple/protocol/impl/STVector256.cpp.o
@@ -6649,7 +6649,7 @@ src/ripple/protocol/impl/STVector256.o: src/ripple/protocol/impl/STVector256.cpp
 
 # target to build an object file
 src/ripple/protocol/impl/STVector256.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STVector256.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STVector256.cpp.o
 .PHONY : src/ripple/protocol/impl/STVector256.cpp.o
 
 src/ripple/protocol/impl/STVector256.i: src/ripple/protocol/impl/STVector256.cpp.i
@@ -6658,7 +6658,7 @@ src/ripple/protocol/impl/STVector256.i: src/ripple/protocol/impl/STVector256.cpp
 
 # target to preprocess a source file
 src/ripple/protocol/impl/STVector256.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STVector256.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STVector256.cpp.i
 .PHONY : src/ripple/protocol/impl/STVector256.cpp.i
 
 src/ripple/protocol/impl/STVector256.s: src/ripple/protocol/impl/STVector256.cpp.s
@@ -6667,7 +6667,7 @@ src/ripple/protocol/impl/STVector256.s: src/ripple/protocol/impl/STVector256.cpp
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/STVector256.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/STVector256.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/STVector256.cpp.s
 .PHONY : src/ripple/protocol/impl/STVector256.cpp.s
 
 src/ripple/protocol/impl/SecretKey.o: src/ripple/protocol/impl/SecretKey.cpp.o
@@ -6676,7 +6676,7 @@ src/ripple/protocol/impl/SecretKey.o: src/ripple/protocol/impl/SecretKey.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/SecretKey.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/SecretKey.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/SecretKey.cpp.o
 .PHONY : src/ripple/protocol/impl/SecretKey.cpp.o
 
 src/ripple/protocol/impl/SecretKey.i: src/ripple/protocol/impl/SecretKey.cpp.i
@@ -6685,7 +6685,7 @@ src/ripple/protocol/impl/SecretKey.i: src/ripple/protocol/impl/SecretKey.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/SecretKey.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/SecretKey.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/SecretKey.cpp.i
 .PHONY : src/ripple/protocol/impl/SecretKey.cpp.i
 
 src/ripple/protocol/impl/SecretKey.s: src/ripple/protocol/impl/SecretKey.cpp.s
@@ -6694,7 +6694,7 @@ src/ripple/protocol/impl/SecretKey.s: src/ripple/protocol/impl/SecretKey.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/SecretKey.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/SecretKey.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/SecretKey.cpp.s
 .PHONY : src/ripple/protocol/impl/SecretKey.cpp.s
 
 src/ripple/protocol/impl/Seed.o: src/ripple/protocol/impl/Seed.cpp.o
@@ -6703,7 +6703,7 @@ src/ripple/protocol/impl/Seed.o: src/ripple/protocol/impl/Seed.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/Seed.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Seed.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Seed.cpp.o
 .PHONY : src/ripple/protocol/impl/Seed.cpp.o
 
 src/ripple/protocol/impl/Seed.i: src/ripple/protocol/impl/Seed.cpp.i
@@ -6712,7 +6712,7 @@ src/ripple/protocol/impl/Seed.i: src/ripple/protocol/impl/Seed.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/Seed.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Seed.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Seed.cpp.i
 .PHONY : src/ripple/protocol/impl/Seed.cpp.i
 
 src/ripple/protocol/impl/Seed.s: src/ripple/protocol/impl/Seed.cpp.s
@@ -6721,7 +6721,7 @@ src/ripple/protocol/impl/Seed.s: src/ripple/protocol/impl/Seed.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/Seed.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Seed.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Seed.cpp.s
 .PHONY : src/ripple/protocol/impl/Seed.cpp.s
 
 src/ripple/protocol/impl/Serializer.o: src/ripple/protocol/impl/Serializer.cpp.o
@@ -6730,7 +6730,7 @@ src/ripple/protocol/impl/Serializer.o: src/ripple/protocol/impl/Serializer.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/Serializer.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Serializer.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Serializer.cpp.o
 .PHONY : src/ripple/protocol/impl/Serializer.cpp.o
 
 src/ripple/protocol/impl/Serializer.i: src/ripple/protocol/impl/Serializer.cpp.i
@@ -6739,7 +6739,7 @@ src/ripple/protocol/impl/Serializer.i: src/ripple/protocol/impl/Serializer.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/Serializer.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Serializer.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Serializer.cpp.i
 .PHONY : src/ripple/protocol/impl/Serializer.cpp.i
 
 src/ripple/protocol/impl/Serializer.s: src/ripple/protocol/impl/Serializer.cpp.s
@@ -6748,7 +6748,7 @@ src/ripple/protocol/impl/Serializer.s: src/ripple/protocol/impl/Serializer.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/Serializer.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Serializer.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Serializer.cpp.s
 .PHONY : src/ripple/protocol/impl/Serializer.cpp.s
 
 src/ripple/protocol/impl/Sign.o: src/ripple/protocol/impl/Sign.cpp.o
@@ -6757,7 +6757,7 @@ src/ripple/protocol/impl/Sign.o: src/ripple/protocol/impl/Sign.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/Sign.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Sign.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Sign.cpp.o
 .PHONY : src/ripple/protocol/impl/Sign.cpp.o
 
 src/ripple/protocol/impl/Sign.i: src/ripple/protocol/impl/Sign.cpp.i
@@ -6766,7 +6766,7 @@ src/ripple/protocol/impl/Sign.i: src/ripple/protocol/impl/Sign.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/Sign.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Sign.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Sign.cpp.i
 .PHONY : src/ripple/protocol/impl/Sign.cpp.i
 
 src/ripple/protocol/impl/Sign.s: src/ripple/protocol/impl/Sign.cpp.s
@@ -6775,7 +6775,7 @@ src/ripple/protocol/impl/Sign.s: src/ripple/protocol/impl/Sign.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/Sign.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/Sign.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/Sign.cpp.s
 .PHONY : src/ripple/protocol/impl/Sign.cpp.s
 
 src/ripple/protocol/impl/TER.o: src/ripple/protocol/impl/TER.cpp.o
@@ -6784,7 +6784,7 @@ src/ripple/protocol/impl/TER.o: src/ripple/protocol/impl/TER.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/TER.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/TER.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/TER.cpp.o
 .PHONY : src/ripple/protocol/impl/TER.cpp.o
 
 src/ripple/protocol/impl/TER.i: src/ripple/protocol/impl/TER.cpp.i
@@ -6793,7 +6793,7 @@ src/ripple/protocol/impl/TER.i: src/ripple/protocol/impl/TER.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/TER.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/TER.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/TER.cpp.i
 .PHONY : src/ripple/protocol/impl/TER.cpp.i
 
 src/ripple/protocol/impl/TER.s: src/ripple/protocol/impl/TER.cpp.s
@@ -6802,7 +6802,7 @@ src/ripple/protocol/impl/TER.s: src/ripple/protocol/impl/TER.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/TER.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/TER.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/TER.cpp.s
 .PHONY : src/ripple/protocol/impl/TER.cpp.s
 
 src/ripple/protocol/impl/TxFormats.o: src/ripple/protocol/impl/TxFormats.cpp.o
@@ -6811,7 +6811,7 @@ src/ripple/protocol/impl/TxFormats.o: src/ripple/protocol/impl/TxFormats.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/TxFormats.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/TxFormats.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/TxFormats.cpp.o
 .PHONY : src/ripple/protocol/impl/TxFormats.cpp.o
 
 src/ripple/protocol/impl/TxFormats.i: src/ripple/protocol/impl/TxFormats.cpp.i
@@ -6820,7 +6820,7 @@ src/ripple/protocol/impl/TxFormats.i: src/ripple/protocol/impl/TxFormats.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/TxFormats.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/TxFormats.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/TxFormats.cpp.i
 .PHONY : src/ripple/protocol/impl/TxFormats.cpp.i
 
 src/ripple/protocol/impl/TxFormats.s: src/ripple/protocol/impl/TxFormats.cpp.s
@@ -6829,7 +6829,7 @@ src/ripple/protocol/impl/TxFormats.s: src/ripple/protocol/impl/TxFormats.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/TxFormats.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/TxFormats.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/TxFormats.cpp.s
 .PHONY : src/ripple/protocol/impl/TxFormats.cpp.s
 
 src/ripple/protocol/impl/UintTypes.o: src/ripple/protocol/impl/UintTypes.cpp.o
@@ -6838,7 +6838,7 @@ src/ripple/protocol/impl/UintTypes.o: src/ripple/protocol/impl/UintTypes.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/UintTypes.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/UintTypes.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/UintTypes.cpp.o
 .PHONY : src/ripple/protocol/impl/UintTypes.cpp.o
 
 src/ripple/protocol/impl/UintTypes.i: src/ripple/protocol/impl/UintTypes.cpp.i
@@ -6847,7 +6847,7 @@ src/ripple/protocol/impl/UintTypes.i: src/ripple/protocol/impl/UintTypes.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/UintTypes.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/UintTypes.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/UintTypes.cpp.i
 .PHONY : src/ripple/protocol/impl/UintTypes.cpp.i
 
 src/ripple/protocol/impl/UintTypes.s: src/ripple/protocol/impl/UintTypes.cpp.s
@@ -6856,7 +6856,7 @@ src/ripple/protocol/impl/UintTypes.s: src/ripple/protocol/impl/UintTypes.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/UintTypes.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/UintTypes.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/UintTypes.cpp.s
 .PHONY : src/ripple/protocol/impl/UintTypes.cpp.s
 
 src/ripple/protocol/impl/digest.o: src/ripple/protocol/impl/digest.cpp.o
@@ -6865,7 +6865,7 @@ src/ripple/protocol/impl/digest.o: src/ripple/protocol/impl/digest.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/digest.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/digest.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/digest.cpp.o
 .PHONY : src/ripple/protocol/impl/digest.cpp.o
 
 src/ripple/protocol/impl/digest.i: src/ripple/protocol/impl/digest.cpp.i
@@ -6874,7 +6874,7 @@ src/ripple/protocol/impl/digest.i: src/ripple/protocol/impl/digest.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/digest.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/digest.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/digest.cpp.i
 .PHONY : src/ripple/protocol/impl/digest.cpp.i
 
 src/ripple/protocol/impl/digest.s: src/ripple/protocol/impl/digest.cpp.s
@@ -6883,7 +6883,7 @@ src/ripple/protocol/impl/digest.s: src/ripple/protocol/impl/digest.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/digest.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/digest.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/digest.cpp.s
 .PHONY : src/ripple/protocol/impl/digest.cpp.s
 
 src/ripple/protocol/impl/tokens.o: src/ripple/protocol/impl/tokens.cpp.o
@@ -6892,7 +6892,7 @@ src/ripple/protocol/impl/tokens.o: src/ripple/protocol/impl/tokens.cpp.o
 
 # target to build an object file
 src/ripple/protocol/impl/tokens.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/tokens.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/tokens.cpp.o
 .PHONY : src/ripple/protocol/impl/tokens.cpp.o
 
 src/ripple/protocol/impl/tokens.i: src/ripple/protocol/impl/tokens.cpp.i
@@ -6901,7 +6901,7 @@ src/ripple/protocol/impl/tokens.i: src/ripple/protocol/impl/tokens.cpp.i
 
 # target to preprocess a source file
 src/ripple/protocol/impl/tokens.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/tokens.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/tokens.cpp.i
 .PHONY : src/ripple/protocol/impl/tokens.cpp.i
 
 src/ripple/protocol/impl/tokens.s: src/ripple/protocol/impl/tokens.cpp.s
@@ -6910,7 +6910,7 @@ src/ripple/protocol/impl/tokens.s: src/ripple/protocol/impl/tokens.cpp.s
 
 # target to generate assembly for a file
 src/ripple/protocol/impl/tokens.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/protocol/impl/tokens.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/protocol/impl/tokens.cpp.s
 .PHONY : src/ripple/protocol/impl/tokens.cpp.s
 
 src/ripple/resource/impl/Charge.o: src/ripple/resource/impl/Charge.cpp.o
@@ -6919,7 +6919,7 @@ src/ripple/resource/impl/Charge.o: src/ripple/resource/impl/Charge.cpp.o
 
 # target to build an object file
 src/ripple/resource/impl/Charge.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/resource/impl/Charge.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/resource/impl/Charge.cpp.o
 .PHONY : src/ripple/resource/impl/Charge.cpp.o
 
 src/ripple/resource/impl/Charge.i: src/ripple/resource/impl/Charge.cpp.i
@@ -6928,7 +6928,7 @@ src/ripple/resource/impl/Charge.i: src/ripple/resource/impl/Charge.cpp.i
 
 # target to preprocess a source file
 src/ripple/resource/impl/Charge.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/resource/impl/Charge.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/resource/impl/Charge.cpp.i
 .PHONY : src/ripple/resource/impl/Charge.cpp.i
 
 src/ripple/resource/impl/Charge.s: src/ripple/resource/impl/Charge.cpp.s
@@ -6937,7 +6937,7 @@ src/ripple/resource/impl/Charge.s: src/ripple/resource/impl/Charge.cpp.s
 
 # target to generate assembly for a file
 src/ripple/resource/impl/Charge.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/resource/impl/Charge.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/resource/impl/Charge.cpp.s
 .PHONY : src/ripple/resource/impl/Charge.cpp.s
 
 src/ripple/resource/impl/Consumer.o: src/ripple/resource/impl/Consumer.cpp.o
@@ -6946,7 +6946,7 @@ src/ripple/resource/impl/Consumer.o: src/ripple/resource/impl/Consumer.cpp.o
 
 # target to build an object file
 src/ripple/resource/impl/Consumer.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/resource/impl/Consumer.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/resource/impl/Consumer.cpp.o
 .PHONY : src/ripple/resource/impl/Consumer.cpp.o
 
 src/ripple/resource/impl/Consumer.i: src/ripple/resource/impl/Consumer.cpp.i
@@ -6955,7 +6955,7 @@ src/ripple/resource/impl/Consumer.i: src/ripple/resource/impl/Consumer.cpp.i
 
 # target to preprocess a source file
 src/ripple/resource/impl/Consumer.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/resource/impl/Consumer.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/resource/impl/Consumer.cpp.i
 .PHONY : src/ripple/resource/impl/Consumer.cpp.i
 
 src/ripple/resource/impl/Consumer.s: src/ripple/resource/impl/Consumer.cpp.s
@@ -6964,7 +6964,7 @@ src/ripple/resource/impl/Consumer.s: src/ripple/resource/impl/Consumer.cpp.s
 
 # target to generate assembly for a file
 src/ripple/resource/impl/Consumer.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/resource/impl/Consumer.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/resource/impl/Consumer.cpp.s
 .PHONY : src/ripple/resource/impl/Consumer.cpp.s
 
 src/ripple/resource/impl/Fees.o: src/ripple/resource/impl/Fees.cpp.o
@@ -6973,7 +6973,7 @@ src/ripple/resource/impl/Fees.o: src/ripple/resource/impl/Fees.cpp.o
 
 # target to build an object file
 src/ripple/resource/impl/Fees.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/resource/impl/Fees.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/resource/impl/Fees.cpp.o
 .PHONY : src/ripple/resource/impl/Fees.cpp.o
 
 src/ripple/resource/impl/Fees.i: src/ripple/resource/impl/Fees.cpp.i
@@ -6982,7 +6982,7 @@ src/ripple/resource/impl/Fees.i: src/ripple/resource/impl/Fees.cpp.i
 
 # target to preprocess a source file
 src/ripple/resource/impl/Fees.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/resource/impl/Fees.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/resource/impl/Fees.cpp.i
 .PHONY : src/ripple/resource/impl/Fees.cpp.i
 
 src/ripple/resource/impl/Fees.s: src/ripple/resource/impl/Fees.cpp.s
@@ -6991,7 +6991,7 @@ src/ripple/resource/impl/Fees.s: src/ripple/resource/impl/Fees.cpp.s
 
 # target to generate assembly for a file
 src/ripple/resource/impl/Fees.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/resource/impl/Fees.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/resource/impl/Fees.cpp.s
 .PHONY : src/ripple/resource/impl/Fees.cpp.s
 
 src/ripple/resource/impl/ResourceManager.o: src/ripple/resource/impl/ResourceManager.cpp.o
@@ -7000,7 +7000,7 @@ src/ripple/resource/impl/ResourceManager.o: src/ripple/resource/impl/ResourceMan
 
 # target to build an object file
 src/ripple/resource/impl/ResourceManager.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/resource/impl/ResourceManager.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/resource/impl/ResourceManager.cpp.o
 .PHONY : src/ripple/resource/impl/ResourceManager.cpp.o
 
 src/ripple/resource/impl/ResourceManager.i: src/ripple/resource/impl/ResourceManager.cpp.i
@@ -7009,7 +7009,7 @@ src/ripple/resource/impl/ResourceManager.i: src/ripple/resource/impl/ResourceMan
 
 # target to preprocess a source file
 src/ripple/resource/impl/ResourceManager.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/resource/impl/ResourceManager.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/resource/impl/ResourceManager.cpp.i
 .PHONY : src/ripple/resource/impl/ResourceManager.cpp.i
 
 src/ripple/resource/impl/ResourceManager.s: src/ripple/resource/impl/ResourceManager.cpp.s
@@ -7018,7 +7018,7 @@ src/ripple/resource/impl/ResourceManager.s: src/ripple/resource/impl/ResourceMan
 
 # target to generate assembly for a file
 src/ripple/resource/impl/ResourceManager.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/resource/impl/ResourceManager.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/resource/impl/ResourceManager.cpp.s
 .PHONY : src/ripple/resource/impl/ResourceManager.cpp.s
 
 src/ripple/rpc/handlers/AccountChannels.o: src/ripple/rpc/handlers/AccountChannels.cpp.o
@@ -7027,7 +7027,7 @@ src/ripple/rpc/handlers/AccountChannels.o: src/ripple/rpc/handlers/AccountChanne
 
 # target to build an object file
 src/ripple/rpc/handlers/AccountChannels.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountChannels.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountChannels.cpp.o
 .PHONY : src/ripple/rpc/handlers/AccountChannels.cpp.o
 
 src/ripple/rpc/handlers/AccountChannels.i: src/ripple/rpc/handlers/AccountChannels.cpp.i
@@ -7036,7 +7036,7 @@ src/ripple/rpc/handlers/AccountChannels.i: src/ripple/rpc/handlers/AccountChanne
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/AccountChannels.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountChannels.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountChannels.cpp.i
 .PHONY : src/ripple/rpc/handlers/AccountChannels.cpp.i
 
 src/ripple/rpc/handlers/AccountChannels.s: src/ripple/rpc/handlers/AccountChannels.cpp.s
@@ -7045,7 +7045,7 @@ src/ripple/rpc/handlers/AccountChannels.s: src/ripple/rpc/handlers/AccountChanne
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/AccountChannels.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountChannels.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountChannels.cpp.s
 .PHONY : src/ripple/rpc/handlers/AccountChannels.cpp.s
 
 src/ripple/rpc/handlers/AccountCurrenciesHandler.o: src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.o
@@ -7054,7 +7054,7 @@ src/ripple/rpc/handlers/AccountCurrenciesHandler.o: src/ripple/rpc/handlers/Acco
 
 # target to build an object file
 src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.o
 .PHONY : src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.o
 
 src/ripple/rpc/handlers/AccountCurrenciesHandler.i: src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.i
@@ -7063,7 +7063,7 @@ src/ripple/rpc/handlers/AccountCurrenciesHandler.i: src/ripple/rpc/handlers/Acco
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.i
 .PHONY : src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.i
 
 src/ripple/rpc/handlers/AccountCurrenciesHandler.s: src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.s
@@ -7072,7 +7072,7 @@ src/ripple/rpc/handlers/AccountCurrenciesHandler.s: src/ripple/rpc/handlers/Acco
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.s
 .PHONY : src/ripple/rpc/handlers/AccountCurrenciesHandler.cpp.s
 
 src/ripple/rpc/handlers/AccountInfo.o: src/ripple/rpc/handlers/AccountInfo.cpp.o
@@ -7081,7 +7081,7 @@ src/ripple/rpc/handlers/AccountInfo.o: src/ripple/rpc/handlers/AccountInfo.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/AccountInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountInfo.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountInfo.cpp.o
 .PHONY : src/ripple/rpc/handlers/AccountInfo.cpp.o
 
 src/ripple/rpc/handlers/AccountInfo.i: src/ripple/rpc/handlers/AccountInfo.cpp.i
@@ -7090,7 +7090,7 @@ src/ripple/rpc/handlers/AccountInfo.i: src/ripple/rpc/handlers/AccountInfo.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/AccountInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountInfo.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountInfo.cpp.i
 .PHONY : src/ripple/rpc/handlers/AccountInfo.cpp.i
 
 src/ripple/rpc/handlers/AccountInfo.s: src/ripple/rpc/handlers/AccountInfo.cpp.s
@@ -7099,7 +7099,7 @@ src/ripple/rpc/handlers/AccountInfo.s: src/ripple/rpc/handlers/AccountInfo.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/AccountInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountInfo.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountInfo.cpp.s
 .PHONY : src/ripple/rpc/handlers/AccountInfo.cpp.s
 
 src/ripple/rpc/handlers/AccountLines.o: src/ripple/rpc/handlers/AccountLines.cpp.o
@@ -7108,7 +7108,7 @@ src/ripple/rpc/handlers/AccountLines.o: src/ripple/rpc/handlers/AccountLines.cpp
 
 # target to build an object file
 src/ripple/rpc/handlers/AccountLines.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountLines.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountLines.cpp.o
 .PHONY : src/ripple/rpc/handlers/AccountLines.cpp.o
 
 src/ripple/rpc/handlers/AccountLines.i: src/ripple/rpc/handlers/AccountLines.cpp.i
@@ -7117,7 +7117,7 @@ src/ripple/rpc/handlers/AccountLines.i: src/ripple/rpc/handlers/AccountLines.cpp
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/AccountLines.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountLines.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountLines.cpp.i
 .PHONY : src/ripple/rpc/handlers/AccountLines.cpp.i
 
 src/ripple/rpc/handlers/AccountLines.s: src/ripple/rpc/handlers/AccountLines.cpp.s
@@ -7126,7 +7126,7 @@ src/ripple/rpc/handlers/AccountLines.s: src/ripple/rpc/handlers/AccountLines.cpp
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/AccountLines.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountLines.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountLines.cpp.s
 .PHONY : src/ripple/rpc/handlers/AccountLines.cpp.s
 
 src/ripple/rpc/handlers/AccountObjects.o: src/ripple/rpc/handlers/AccountObjects.cpp.o
@@ -7135,7 +7135,7 @@ src/ripple/rpc/handlers/AccountObjects.o: src/ripple/rpc/handlers/AccountObjects
 
 # target to build an object file
 src/ripple/rpc/handlers/AccountObjects.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountObjects.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountObjects.cpp.o
 .PHONY : src/ripple/rpc/handlers/AccountObjects.cpp.o
 
 src/ripple/rpc/handlers/AccountObjects.i: src/ripple/rpc/handlers/AccountObjects.cpp.i
@@ -7144,7 +7144,7 @@ src/ripple/rpc/handlers/AccountObjects.i: src/ripple/rpc/handlers/AccountObjects
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/AccountObjects.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountObjects.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountObjects.cpp.i
 .PHONY : src/ripple/rpc/handlers/AccountObjects.cpp.i
 
 src/ripple/rpc/handlers/AccountObjects.s: src/ripple/rpc/handlers/AccountObjects.cpp.s
@@ -7153,7 +7153,7 @@ src/ripple/rpc/handlers/AccountObjects.s: src/ripple/rpc/handlers/AccountObjects
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/AccountObjects.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountObjects.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountObjects.cpp.s
 .PHONY : src/ripple/rpc/handlers/AccountObjects.cpp.s
 
 src/ripple/rpc/handlers/AccountOffers.o: src/ripple/rpc/handlers/AccountOffers.cpp.o
@@ -7162,7 +7162,7 @@ src/ripple/rpc/handlers/AccountOffers.o: src/ripple/rpc/handlers/AccountOffers.c
 
 # target to build an object file
 src/ripple/rpc/handlers/AccountOffers.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountOffers.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountOffers.cpp.o
 .PHONY : src/ripple/rpc/handlers/AccountOffers.cpp.o
 
 src/ripple/rpc/handlers/AccountOffers.i: src/ripple/rpc/handlers/AccountOffers.cpp.i
@@ -7171,7 +7171,7 @@ src/ripple/rpc/handlers/AccountOffers.i: src/ripple/rpc/handlers/AccountOffers.c
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/AccountOffers.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountOffers.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountOffers.cpp.i
 .PHONY : src/ripple/rpc/handlers/AccountOffers.cpp.i
 
 src/ripple/rpc/handlers/AccountOffers.s: src/ripple/rpc/handlers/AccountOffers.cpp.s
@@ -7180,7 +7180,7 @@ src/ripple/rpc/handlers/AccountOffers.s: src/ripple/rpc/handlers/AccountOffers.c
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/AccountOffers.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountOffers.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountOffers.cpp.s
 .PHONY : src/ripple/rpc/handlers/AccountOffers.cpp.s
 
 src/ripple/rpc/handlers/AccountTx.o: src/ripple/rpc/handlers/AccountTx.cpp.o
@@ -7189,7 +7189,7 @@ src/ripple/rpc/handlers/AccountTx.o: src/ripple/rpc/handlers/AccountTx.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/AccountTx.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountTx.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountTx.cpp.o
 .PHONY : src/ripple/rpc/handlers/AccountTx.cpp.o
 
 src/ripple/rpc/handlers/AccountTx.i: src/ripple/rpc/handlers/AccountTx.cpp.i
@@ -7198,7 +7198,7 @@ src/ripple/rpc/handlers/AccountTx.i: src/ripple/rpc/handlers/AccountTx.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/AccountTx.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountTx.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountTx.cpp.i
 .PHONY : src/ripple/rpc/handlers/AccountTx.cpp.i
 
 src/ripple/rpc/handlers/AccountTx.s: src/ripple/rpc/handlers/AccountTx.cpp.s
@@ -7207,7 +7207,7 @@ src/ripple/rpc/handlers/AccountTx.s: src/ripple/rpc/handlers/AccountTx.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/AccountTx.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountTx.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountTx.cpp.s
 .PHONY : src/ripple/rpc/handlers/AccountTx.cpp.s
 
 src/ripple/rpc/handlers/AccountTxOld.o: src/ripple/rpc/handlers/AccountTxOld.cpp.o
@@ -7216,7 +7216,7 @@ src/ripple/rpc/handlers/AccountTxOld.o: src/ripple/rpc/handlers/AccountTxOld.cpp
 
 # target to build an object file
 src/ripple/rpc/handlers/AccountTxOld.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountTxOld.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountTxOld.cpp.o
 .PHONY : src/ripple/rpc/handlers/AccountTxOld.cpp.o
 
 src/ripple/rpc/handlers/AccountTxOld.i: src/ripple/rpc/handlers/AccountTxOld.cpp.i
@@ -7225,7 +7225,7 @@ src/ripple/rpc/handlers/AccountTxOld.i: src/ripple/rpc/handlers/AccountTxOld.cpp
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/AccountTxOld.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountTxOld.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountTxOld.cpp.i
 .PHONY : src/ripple/rpc/handlers/AccountTxOld.cpp.i
 
 src/ripple/rpc/handlers/AccountTxOld.s: src/ripple/rpc/handlers/AccountTxOld.cpp.s
@@ -7234,7 +7234,7 @@ src/ripple/rpc/handlers/AccountTxOld.s: src/ripple/rpc/handlers/AccountTxOld.cpp
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/AccountTxOld.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountTxOld.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountTxOld.cpp.s
 .PHONY : src/ripple/rpc/handlers/AccountTxOld.cpp.s
 
 src/ripple/rpc/handlers/AccountTxSwitch.o: src/ripple/rpc/handlers/AccountTxSwitch.cpp.o
@@ -7243,7 +7243,7 @@ src/ripple/rpc/handlers/AccountTxSwitch.o: src/ripple/rpc/handlers/AccountTxSwit
 
 # target to build an object file
 src/ripple/rpc/handlers/AccountTxSwitch.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountTxSwitch.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountTxSwitch.cpp.o
 .PHONY : src/ripple/rpc/handlers/AccountTxSwitch.cpp.o
 
 src/ripple/rpc/handlers/AccountTxSwitch.i: src/ripple/rpc/handlers/AccountTxSwitch.cpp.i
@@ -7252,7 +7252,7 @@ src/ripple/rpc/handlers/AccountTxSwitch.i: src/ripple/rpc/handlers/AccountTxSwit
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/AccountTxSwitch.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountTxSwitch.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountTxSwitch.cpp.i
 .PHONY : src/ripple/rpc/handlers/AccountTxSwitch.cpp.i
 
 src/ripple/rpc/handlers/AccountTxSwitch.s: src/ripple/rpc/handlers/AccountTxSwitch.cpp.s
@@ -7261,7 +7261,7 @@ src/ripple/rpc/handlers/AccountTxSwitch.s: src/ripple/rpc/handlers/AccountTxSwit
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/AccountTxSwitch.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/AccountTxSwitch.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/AccountTxSwitch.cpp.s
 .PHONY : src/ripple/rpc/handlers/AccountTxSwitch.cpp.s
 
 src/ripple/rpc/handlers/BlackList.o: src/ripple/rpc/handlers/BlackList.cpp.o
@@ -7270,7 +7270,7 @@ src/ripple/rpc/handlers/BlackList.o: src/ripple/rpc/handlers/BlackList.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/BlackList.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/BlackList.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/BlackList.cpp.o
 .PHONY : src/ripple/rpc/handlers/BlackList.cpp.o
 
 src/ripple/rpc/handlers/BlackList.i: src/ripple/rpc/handlers/BlackList.cpp.i
@@ -7279,7 +7279,7 @@ src/ripple/rpc/handlers/BlackList.i: src/ripple/rpc/handlers/BlackList.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/BlackList.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/BlackList.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/BlackList.cpp.i
 .PHONY : src/ripple/rpc/handlers/BlackList.cpp.i
 
 src/ripple/rpc/handlers/BlackList.s: src/ripple/rpc/handlers/BlackList.cpp.s
@@ -7288,7 +7288,7 @@ src/ripple/rpc/handlers/BlackList.s: src/ripple/rpc/handlers/BlackList.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/BlackList.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/BlackList.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/BlackList.cpp.s
 .PHONY : src/ripple/rpc/handlers/BlackList.cpp.s
 
 src/ripple/rpc/handlers/BookOffers.o: src/ripple/rpc/handlers/BookOffers.cpp.o
@@ -7297,7 +7297,7 @@ src/ripple/rpc/handlers/BookOffers.o: src/ripple/rpc/handlers/BookOffers.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/BookOffers.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/BookOffers.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/BookOffers.cpp.o
 .PHONY : src/ripple/rpc/handlers/BookOffers.cpp.o
 
 src/ripple/rpc/handlers/BookOffers.i: src/ripple/rpc/handlers/BookOffers.cpp.i
@@ -7306,7 +7306,7 @@ src/ripple/rpc/handlers/BookOffers.i: src/ripple/rpc/handlers/BookOffers.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/BookOffers.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/BookOffers.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/BookOffers.cpp.i
 .PHONY : src/ripple/rpc/handlers/BookOffers.cpp.i
 
 src/ripple/rpc/handlers/BookOffers.s: src/ripple/rpc/handlers/BookOffers.cpp.s
@@ -7315,7 +7315,7 @@ src/ripple/rpc/handlers/BookOffers.s: src/ripple/rpc/handlers/BookOffers.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/BookOffers.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/BookOffers.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/BookOffers.cpp.s
 .PHONY : src/ripple/rpc/handlers/BookOffers.cpp.s
 
 src/ripple/rpc/handlers/CanDelete.o: src/ripple/rpc/handlers/CanDelete.cpp.o
@@ -7324,7 +7324,7 @@ src/ripple/rpc/handlers/CanDelete.o: src/ripple/rpc/handlers/CanDelete.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/CanDelete.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/CanDelete.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/CanDelete.cpp.o
 .PHONY : src/ripple/rpc/handlers/CanDelete.cpp.o
 
 src/ripple/rpc/handlers/CanDelete.i: src/ripple/rpc/handlers/CanDelete.cpp.i
@@ -7333,7 +7333,7 @@ src/ripple/rpc/handlers/CanDelete.i: src/ripple/rpc/handlers/CanDelete.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/CanDelete.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/CanDelete.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/CanDelete.cpp.i
 .PHONY : src/ripple/rpc/handlers/CanDelete.cpp.i
 
 src/ripple/rpc/handlers/CanDelete.s: src/ripple/rpc/handlers/CanDelete.cpp.s
@@ -7342,7 +7342,7 @@ src/ripple/rpc/handlers/CanDelete.s: src/ripple/rpc/handlers/CanDelete.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/CanDelete.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/CanDelete.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/CanDelete.cpp.s
 .PHONY : src/ripple/rpc/handlers/CanDelete.cpp.s
 
 src/ripple/rpc/handlers/Connect.o: src/ripple/rpc/handlers/Connect.cpp.o
@@ -7351,7 +7351,7 @@ src/ripple/rpc/handlers/Connect.o: src/ripple/rpc/handlers/Connect.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/Connect.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Connect.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Connect.cpp.o
 .PHONY : src/ripple/rpc/handlers/Connect.cpp.o
 
 src/ripple/rpc/handlers/Connect.i: src/ripple/rpc/handlers/Connect.cpp.i
@@ -7360,7 +7360,7 @@ src/ripple/rpc/handlers/Connect.i: src/ripple/rpc/handlers/Connect.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/Connect.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Connect.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Connect.cpp.i
 .PHONY : src/ripple/rpc/handlers/Connect.cpp.i
 
 src/ripple/rpc/handlers/Connect.s: src/ripple/rpc/handlers/Connect.cpp.s
@@ -7369,7 +7369,7 @@ src/ripple/rpc/handlers/Connect.s: src/ripple/rpc/handlers/Connect.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/Connect.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Connect.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Connect.cpp.s
 .PHONY : src/ripple/rpc/handlers/Connect.cpp.s
 
 src/ripple/rpc/handlers/ConsensusInfo.o: src/ripple/rpc/handlers/ConsensusInfo.cpp.o
@@ -7378,7 +7378,7 @@ src/ripple/rpc/handlers/ConsensusInfo.o: src/ripple/rpc/handlers/ConsensusInfo.c
 
 # target to build an object file
 src/ripple/rpc/handlers/ConsensusInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ConsensusInfo.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ConsensusInfo.cpp.o
 .PHONY : src/ripple/rpc/handlers/ConsensusInfo.cpp.o
 
 src/ripple/rpc/handlers/ConsensusInfo.i: src/ripple/rpc/handlers/ConsensusInfo.cpp.i
@@ -7387,7 +7387,7 @@ src/ripple/rpc/handlers/ConsensusInfo.i: src/ripple/rpc/handlers/ConsensusInfo.c
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/ConsensusInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ConsensusInfo.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ConsensusInfo.cpp.i
 .PHONY : src/ripple/rpc/handlers/ConsensusInfo.cpp.i
 
 src/ripple/rpc/handlers/ConsensusInfo.s: src/ripple/rpc/handlers/ConsensusInfo.cpp.s
@@ -7396,7 +7396,7 @@ src/ripple/rpc/handlers/ConsensusInfo.s: src/ripple/rpc/handlers/ConsensusInfo.c
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/ConsensusInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ConsensusInfo.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ConsensusInfo.cpp.s
 .PHONY : src/ripple/rpc/handlers/ConsensusInfo.cpp.s
 
 src/ripple/rpc/handlers/Feature1.o: src/ripple/rpc/handlers/Feature1.cpp.o
@@ -7405,7 +7405,7 @@ src/ripple/rpc/handlers/Feature1.o: src/ripple/rpc/handlers/Feature1.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/Feature1.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Feature1.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Feature1.cpp.o
 .PHONY : src/ripple/rpc/handlers/Feature1.cpp.o
 
 src/ripple/rpc/handlers/Feature1.i: src/ripple/rpc/handlers/Feature1.cpp.i
@@ -7414,7 +7414,7 @@ src/ripple/rpc/handlers/Feature1.i: src/ripple/rpc/handlers/Feature1.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/Feature1.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Feature1.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Feature1.cpp.i
 .PHONY : src/ripple/rpc/handlers/Feature1.cpp.i
 
 src/ripple/rpc/handlers/Feature1.s: src/ripple/rpc/handlers/Feature1.cpp.s
@@ -7423,7 +7423,7 @@ src/ripple/rpc/handlers/Feature1.s: src/ripple/rpc/handlers/Feature1.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/Feature1.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Feature1.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Feature1.cpp.s
 .PHONY : src/ripple/rpc/handlers/Feature1.cpp.s
 
 src/ripple/rpc/handlers/Fee1.o: src/ripple/rpc/handlers/Fee1.cpp.o
@@ -7432,7 +7432,7 @@ src/ripple/rpc/handlers/Fee1.o: src/ripple/rpc/handlers/Fee1.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/Fee1.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Fee1.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Fee1.cpp.o
 .PHONY : src/ripple/rpc/handlers/Fee1.cpp.o
 
 src/ripple/rpc/handlers/Fee1.i: src/ripple/rpc/handlers/Fee1.cpp.i
@@ -7441,7 +7441,7 @@ src/ripple/rpc/handlers/Fee1.i: src/ripple/rpc/handlers/Fee1.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/Fee1.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Fee1.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Fee1.cpp.i
 .PHONY : src/ripple/rpc/handlers/Fee1.cpp.i
 
 src/ripple/rpc/handlers/Fee1.s: src/ripple/rpc/handlers/Fee1.cpp.s
@@ -7450,7 +7450,7 @@ src/ripple/rpc/handlers/Fee1.s: src/ripple/rpc/handlers/Fee1.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/Fee1.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Fee1.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Fee1.cpp.s
 .PHONY : src/ripple/rpc/handlers/Fee1.cpp.s
 
 src/ripple/rpc/handlers/FetchInfo.o: src/ripple/rpc/handlers/FetchInfo.cpp.o
@@ -7459,7 +7459,7 @@ src/ripple/rpc/handlers/FetchInfo.o: src/ripple/rpc/handlers/FetchInfo.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/FetchInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/FetchInfo.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/FetchInfo.cpp.o
 .PHONY : src/ripple/rpc/handlers/FetchInfo.cpp.o
 
 src/ripple/rpc/handlers/FetchInfo.i: src/ripple/rpc/handlers/FetchInfo.cpp.i
@@ -7468,7 +7468,7 @@ src/ripple/rpc/handlers/FetchInfo.i: src/ripple/rpc/handlers/FetchInfo.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/FetchInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/FetchInfo.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/FetchInfo.cpp.i
 .PHONY : src/ripple/rpc/handlers/FetchInfo.cpp.i
 
 src/ripple/rpc/handlers/FetchInfo.s: src/ripple/rpc/handlers/FetchInfo.cpp.s
@@ -7477,7 +7477,7 @@ src/ripple/rpc/handlers/FetchInfo.s: src/ripple/rpc/handlers/FetchInfo.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/FetchInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/FetchInfo.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/FetchInfo.cpp.s
 .PHONY : src/ripple/rpc/handlers/FetchInfo.cpp.s
 
 src/ripple/rpc/handlers/GatewayBalances.o: src/ripple/rpc/handlers/GatewayBalances.cpp.o
@@ -7486,7 +7486,7 @@ src/ripple/rpc/handlers/GatewayBalances.o: src/ripple/rpc/handlers/GatewayBalanc
 
 # target to build an object file
 src/ripple/rpc/handlers/GatewayBalances.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/GatewayBalances.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/GatewayBalances.cpp.o
 .PHONY : src/ripple/rpc/handlers/GatewayBalances.cpp.o
 
 src/ripple/rpc/handlers/GatewayBalances.i: src/ripple/rpc/handlers/GatewayBalances.cpp.i
@@ -7495,7 +7495,7 @@ src/ripple/rpc/handlers/GatewayBalances.i: src/ripple/rpc/handlers/GatewayBalanc
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/GatewayBalances.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/GatewayBalances.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/GatewayBalances.cpp.i
 .PHONY : src/ripple/rpc/handlers/GatewayBalances.cpp.i
 
 src/ripple/rpc/handlers/GatewayBalances.s: src/ripple/rpc/handlers/GatewayBalances.cpp.s
@@ -7504,7 +7504,7 @@ src/ripple/rpc/handlers/GatewayBalances.s: src/ripple/rpc/handlers/GatewayBalanc
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/GatewayBalances.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/GatewayBalances.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/GatewayBalances.cpp.s
 .PHONY : src/ripple/rpc/handlers/GatewayBalances.cpp.s
 
 src/ripple/rpc/handlers/GetCounts.o: src/ripple/rpc/handlers/GetCounts.cpp.o
@@ -7513,7 +7513,7 @@ src/ripple/rpc/handlers/GetCounts.o: src/ripple/rpc/handlers/GetCounts.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/GetCounts.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/GetCounts.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/GetCounts.cpp.o
 .PHONY : src/ripple/rpc/handlers/GetCounts.cpp.o
 
 src/ripple/rpc/handlers/GetCounts.i: src/ripple/rpc/handlers/GetCounts.cpp.i
@@ -7522,7 +7522,7 @@ src/ripple/rpc/handlers/GetCounts.i: src/ripple/rpc/handlers/GetCounts.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/GetCounts.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/GetCounts.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/GetCounts.cpp.i
 .PHONY : src/ripple/rpc/handlers/GetCounts.cpp.i
 
 src/ripple/rpc/handlers/GetCounts.s: src/ripple/rpc/handlers/GetCounts.cpp.s
@@ -7531,7 +7531,7 @@ src/ripple/rpc/handlers/GetCounts.s: src/ripple/rpc/handlers/GetCounts.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/GetCounts.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/GetCounts.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/GetCounts.cpp.s
 .PHONY : src/ripple/rpc/handlers/GetCounts.cpp.s
 
 src/ripple/rpc/handlers/LedgerAccept.o: src/ripple/rpc/handlers/LedgerAccept.cpp.o
@@ -7540,7 +7540,7 @@ src/ripple/rpc/handlers/LedgerAccept.o: src/ripple/rpc/handlers/LedgerAccept.cpp
 
 # target to build an object file
 src/ripple/rpc/handlers/LedgerAccept.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerAccept.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerAccept.cpp.o
 .PHONY : src/ripple/rpc/handlers/LedgerAccept.cpp.o
 
 src/ripple/rpc/handlers/LedgerAccept.i: src/ripple/rpc/handlers/LedgerAccept.cpp.i
@@ -7549,7 +7549,7 @@ src/ripple/rpc/handlers/LedgerAccept.i: src/ripple/rpc/handlers/LedgerAccept.cpp
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/LedgerAccept.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerAccept.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerAccept.cpp.i
 .PHONY : src/ripple/rpc/handlers/LedgerAccept.cpp.i
 
 src/ripple/rpc/handlers/LedgerAccept.s: src/ripple/rpc/handlers/LedgerAccept.cpp.s
@@ -7558,7 +7558,7 @@ src/ripple/rpc/handlers/LedgerAccept.s: src/ripple/rpc/handlers/LedgerAccept.cpp
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/LedgerAccept.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerAccept.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerAccept.cpp.s
 .PHONY : src/ripple/rpc/handlers/LedgerAccept.cpp.s
 
 src/ripple/rpc/handlers/LedgerCleanerHandler.o: src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.o
@@ -7567,7 +7567,7 @@ src/ripple/rpc/handlers/LedgerCleanerHandler.o: src/ripple/rpc/handlers/LedgerCl
 
 # target to build an object file
 src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.o
 .PHONY : src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.o
 
 src/ripple/rpc/handlers/LedgerCleanerHandler.i: src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.i
@@ -7576,7 +7576,7 @@ src/ripple/rpc/handlers/LedgerCleanerHandler.i: src/ripple/rpc/handlers/LedgerCl
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.i
 .PHONY : src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.i
 
 src/ripple/rpc/handlers/LedgerCleanerHandler.s: src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.s
@@ -7585,7 +7585,7 @@ src/ripple/rpc/handlers/LedgerCleanerHandler.s: src/ripple/rpc/handlers/LedgerCl
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.s
 .PHONY : src/ripple/rpc/handlers/LedgerCleanerHandler.cpp.s
 
 src/ripple/rpc/handlers/LedgerClosed.o: src/ripple/rpc/handlers/LedgerClosed.cpp.o
@@ -7594,7 +7594,7 @@ src/ripple/rpc/handlers/LedgerClosed.o: src/ripple/rpc/handlers/LedgerClosed.cpp
 
 # target to build an object file
 src/ripple/rpc/handlers/LedgerClosed.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerClosed.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerClosed.cpp.o
 .PHONY : src/ripple/rpc/handlers/LedgerClosed.cpp.o
 
 src/ripple/rpc/handlers/LedgerClosed.i: src/ripple/rpc/handlers/LedgerClosed.cpp.i
@@ -7603,7 +7603,7 @@ src/ripple/rpc/handlers/LedgerClosed.i: src/ripple/rpc/handlers/LedgerClosed.cpp
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/LedgerClosed.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerClosed.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerClosed.cpp.i
 .PHONY : src/ripple/rpc/handlers/LedgerClosed.cpp.i
 
 src/ripple/rpc/handlers/LedgerClosed.s: src/ripple/rpc/handlers/LedgerClosed.cpp.s
@@ -7612,7 +7612,7 @@ src/ripple/rpc/handlers/LedgerClosed.s: src/ripple/rpc/handlers/LedgerClosed.cpp
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/LedgerClosed.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerClosed.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerClosed.cpp.s
 .PHONY : src/ripple/rpc/handlers/LedgerClosed.cpp.s
 
 src/ripple/rpc/handlers/LedgerCurrent.o: src/ripple/rpc/handlers/LedgerCurrent.cpp.o
@@ -7621,7 +7621,7 @@ src/ripple/rpc/handlers/LedgerCurrent.o: src/ripple/rpc/handlers/LedgerCurrent.c
 
 # target to build an object file
 src/ripple/rpc/handlers/LedgerCurrent.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerCurrent.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerCurrent.cpp.o
 .PHONY : src/ripple/rpc/handlers/LedgerCurrent.cpp.o
 
 src/ripple/rpc/handlers/LedgerCurrent.i: src/ripple/rpc/handlers/LedgerCurrent.cpp.i
@@ -7630,7 +7630,7 @@ src/ripple/rpc/handlers/LedgerCurrent.i: src/ripple/rpc/handlers/LedgerCurrent.c
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/LedgerCurrent.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerCurrent.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerCurrent.cpp.i
 .PHONY : src/ripple/rpc/handlers/LedgerCurrent.cpp.i
 
 src/ripple/rpc/handlers/LedgerCurrent.s: src/ripple/rpc/handlers/LedgerCurrent.cpp.s
@@ -7639,7 +7639,7 @@ src/ripple/rpc/handlers/LedgerCurrent.s: src/ripple/rpc/handlers/LedgerCurrent.c
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/LedgerCurrent.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerCurrent.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerCurrent.cpp.s
 .PHONY : src/ripple/rpc/handlers/LedgerCurrent.cpp.s
 
 src/ripple/rpc/handlers/LedgerData.o: src/ripple/rpc/handlers/LedgerData.cpp.o
@@ -7648,7 +7648,7 @@ src/ripple/rpc/handlers/LedgerData.o: src/ripple/rpc/handlers/LedgerData.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/LedgerData.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerData.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerData.cpp.o
 .PHONY : src/ripple/rpc/handlers/LedgerData.cpp.o
 
 src/ripple/rpc/handlers/LedgerData.i: src/ripple/rpc/handlers/LedgerData.cpp.i
@@ -7657,7 +7657,7 @@ src/ripple/rpc/handlers/LedgerData.i: src/ripple/rpc/handlers/LedgerData.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/LedgerData.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerData.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerData.cpp.i
 .PHONY : src/ripple/rpc/handlers/LedgerData.cpp.i
 
 src/ripple/rpc/handlers/LedgerData.s: src/ripple/rpc/handlers/LedgerData.cpp.s
@@ -7666,7 +7666,7 @@ src/ripple/rpc/handlers/LedgerData.s: src/ripple/rpc/handlers/LedgerData.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/LedgerData.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerData.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerData.cpp.s
 .PHONY : src/ripple/rpc/handlers/LedgerData.cpp.s
 
 src/ripple/rpc/handlers/LedgerEntry.o: src/ripple/rpc/handlers/LedgerEntry.cpp.o
@@ -7675,7 +7675,7 @@ src/ripple/rpc/handlers/LedgerEntry.o: src/ripple/rpc/handlers/LedgerEntry.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/LedgerEntry.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerEntry.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerEntry.cpp.o
 .PHONY : src/ripple/rpc/handlers/LedgerEntry.cpp.o
 
 src/ripple/rpc/handlers/LedgerEntry.i: src/ripple/rpc/handlers/LedgerEntry.cpp.i
@@ -7684,7 +7684,7 @@ src/ripple/rpc/handlers/LedgerEntry.i: src/ripple/rpc/handlers/LedgerEntry.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/LedgerEntry.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerEntry.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerEntry.cpp.i
 .PHONY : src/ripple/rpc/handlers/LedgerEntry.cpp.i
 
 src/ripple/rpc/handlers/LedgerEntry.s: src/ripple/rpc/handlers/LedgerEntry.cpp.s
@@ -7693,7 +7693,7 @@ src/ripple/rpc/handlers/LedgerEntry.s: src/ripple/rpc/handlers/LedgerEntry.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/LedgerEntry.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerEntry.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerEntry.cpp.s
 .PHONY : src/ripple/rpc/handlers/LedgerEntry.cpp.s
 
 src/ripple/rpc/handlers/LedgerHandler.o: src/ripple/rpc/handlers/LedgerHandler.cpp.o
@@ -7702,7 +7702,7 @@ src/ripple/rpc/handlers/LedgerHandler.o: src/ripple/rpc/handlers/LedgerHandler.c
 
 # target to build an object file
 src/ripple/rpc/handlers/LedgerHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerHandler.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerHandler.cpp.o
 .PHONY : src/ripple/rpc/handlers/LedgerHandler.cpp.o
 
 src/ripple/rpc/handlers/LedgerHandler.i: src/ripple/rpc/handlers/LedgerHandler.cpp.i
@@ -7711,7 +7711,7 @@ src/ripple/rpc/handlers/LedgerHandler.i: src/ripple/rpc/handlers/LedgerHandler.c
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/LedgerHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerHandler.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerHandler.cpp.i
 .PHONY : src/ripple/rpc/handlers/LedgerHandler.cpp.i
 
 src/ripple/rpc/handlers/LedgerHandler.s: src/ripple/rpc/handlers/LedgerHandler.cpp.s
@@ -7720,7 +7720,7 @@ src/ripple/rpc/handlers/LedgerHandler.s: src/ripple/rpc/handlers/LedgerHandler.c
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/LedgerHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerHandler.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerHandler.cpp.s
 .PHONY : src/ripple/rpc/handlers/LedgerHandler.cpp.s
 
 src/ripple/rpc/handlers/LedgerHeader.o: src/ripple/rpc/handlers/LedgerHeader.cpp.o
@@ -7729,7 +7729,7 @@ src/ripple/rpc/handlers/LedgerHeader.o: src/ripple/rpc/handlers/LedgerHeader.cpp
 
 # target to build an object file
 src/ripple/rpc/handlers/LedgerHeader.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerHeader.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerHeader.cpp.o
 .PHONY : src/ripple/rpc/handlers/LedgerHeader.cpp.o
 
 src/ripple/rpc/handlers/LedgerHeader.i: src/ripple/rpc/handlers/LedgerHeader.cpp.i
@@ -7738,7 +7738,7 @@ src/ripple/rpc/handlers/LedgerHeader.i: src/ripple/rpc/handlers/LedgerHeader.cpp
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/LedgerHeader.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerHeader.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerHeader.cpp.i
 .PHONY : src/ripple/rpc/handlers/LedgerHeader.cpp.i
 
 src/ripple/rpc/handlers/LedgerHeader.s: src/ripple/rpc/handlers/LedgerHeader.cpp.s
@@ -7747,7 +7747,7 @@ src/ripple/rpc/handlers/LedgerHeader.s: src/ripple/rpc/handlers/LedgerHeader.cpp
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/LedgerHeader.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerHeader.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerHeader.cpp.s
 .PHONY : src/ripple/rpc/handlers/LedgerHeader.cpp.s
 
 src/ripple/rpc/handlers/LedgerRequest.o: src/ripple/rpc/handlers/LedgerRequest.cpp.o
@@ -7756,7 +7756,7 @@ src/ripple/rpc/handlers/LedgerRequest.o: src/ripple/rpc/handlers/LedgerRequest.c
 
 # target to build an object file
 src/ripple/rpc/handlers/LedgerRequest.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerRequest.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerRequest.cpp.o
 .PHONY : src/ripple/rpc/handlers/LedgerRequest.cpp.o
 
 src/ripple/rpc/handlers/LedgerRequest.i: src/ripple/rpc/handlers/LedgerRequest.cpp.i
@@ -7765,7 +7765,7 @@ src/ripple/rpc/handlers/LedgerRequest.i: src/ripple/rpc/handlers/LedgerRequest.c
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/LedgerRequest.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerRequest.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerRequest.cpp.i
 .PHONY : src/ripple/rpc/handlers/LedgerRequest.cpp.i
 
 src/ripple/rpc/handlers/LedgerRequest.s: src/ripple/rpc/handlers/LedgerRequest.cpp.s
@@ -7774,7 +7774,7 @@ src/ripple/rpc/handlers/LedgerRequest.s: src/ripple/rpc/handlers/LedgerRequest.c
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/LedgerRequest.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LedgerRequest.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LedgerRequest.cpp.s
 .PHONY : src/ripple/rpc/handlers/LedgerRequest.cpp.s
 
 src/ripple/rpc/handlers/LogLevel.o: src/ripple/rpc/handlers/LogLevel.cpp.o
@@ -7783,7 +7783,7 @@ src/ripple/rpc/handlers/LogLevel.o: src/ripple/rpc/handlers/LogLevel.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/LogLevel.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LogLevel.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LogLevel.cpp.o
 .PHONY : src/ripple/rpc/handlers/LogLevel.cpp.o
 
 src/ripple/rpc/handlers/LogLevel.i: src/ripple/rpc/handlers/LogLevel.cpp.i
@@ -7792,7 +7792,7 @@ src/ripple/rpc/handlers/LogLevel.i: src/ripple/rpc/handlers/LogLevel.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/LogLevel.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LogLevel.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LogLevel.cpp.i
 .PHONY : src/ripple/rpc/handlers/LogLevel.cpp.i
 
 src/ripple/rpc/handlers/LogLevel.s: src/ripple/rpc/handlers/LogLevel.cpp.s
@@ -7801,7 +7801,7 @@ src/ripple/rpc/handlers/LogLevel.s: src/ripple/rpc/handlers/LogLevel.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/LogLevel.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LogLevel.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LogLevel.cpp.s
 .PHONY : src/ripple/rpc/handlers/LogLevel.cpp.s
 
 src/ripple/rpc/handlers/LogRotate.o: src/ripple/rpc/handlers/LogRotate.cpp.o
@@ -7810,7 +7810,7 @@ src/ripple/rpc/handlers/LogRotate.o: src/ripple/rpc/handlers/LogRotate.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/LogRotate.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LogRotate.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LogRotate.cpp.o
 .PHONY : src/ripple/rpc/handlers/LogRotate.cpp.o
 
 src/ripple/rpc/handlers/LogRotate.i: src/ripple/rpc/handlers/LogRotate.cpp.i
@@ -7819,7 +7819,7 @@ src/ripple/rpc/handlers/LogRotate.i: src/ripple/rpc/handlers/LogRotate.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/LogRotate.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LogRotate.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LogRotate.cpp.i
 .PHONY : src/ripple/rpc/handlers/LogRotate.cpp.i
 
 src/ripple/rpc/handlers/LogRotate.s: src/ripple/rpc/handlers/LogRotate.cpp.s
@@ -7828,7 +7828,7 @@ src/ripple/rpc/handlers/LogRotate.s: src/ripple/rpc/handlers/LogRotate.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/LogRotate.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/LogRotate.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/LogRotate.cpp.s
 .PHONY : src/ripple/rpc/handlers/LogRotate.cpp.s
 
 src/ripple/rpc/handlers/NoRippleCheck.o: src/ripple/rpc/handlers/NoRippleCheck.cpp.o
@@ -7837,7 +7837,7 @@ src/ripple/rpc/handlers/NoRippleCheck.o: src/ripple/rpc/handlers/NoRippleCheck.c
 
 # target to build an object file
 src/ripple/rpc/handlers/NoRippleCheck.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/NoRippleCheck.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/NoRippleCheck.cpp.o
 .PHONY : src/ripple/rpc/handlers/NoRippleCheck.cpp.o
 
 src/ripple/rpc/handlers/NoRippleCheck.i: src/ripple/rpc/handlers/NoRippleCheck.cpp.i
@@ -7846,7 +7846,7 @@ src/ripple/rpc/handlers/NoRippleCheck.i: src/ripple/rpc/handlers/NoRippleCheck.c
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/NoRippleCheck.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/NoRippleCheck.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/NoRippleCheck.cpp.i
 .PHONY : src/ripple/rpc/handlers/NoRippleCheck.cpp.i
 
 src/ripple/rpc/handlers/NoRippleCheck.s: src/ripple/rpc/handlers/NoRippleCheck.cpp.s
@@ -7855,7 +7855,7 @@ src/ripple/rpc/handlers/NoRippleCheck.s: src/ripple/rpc/handlers/NoRippleCheck.c
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/NoRippleCheck.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/NoRippleCheck.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/NoRippleCheck.cpp.s
 .PHONY : src/ripple/rpc/handlers/NoRippleCheck.cpp.s
 
 src/ripple/rpc/handlers/OwnerInfo.o: src/ripple/rpc/handlers/OwnerInfo.cpp.o
@@ -7864,7 +7864,7 @@ src/ripple/rpc/handlers/OwnerInfo.o: src/ripple/rpc/handlers/OwnerInfo.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/OwnerInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/OwnerInfo.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/OwnerInfo.cpp.o
 .PHONY : src/ripple/rpc/handlers/OwnerInfo.cpp.o
 
 src/ripple/rpc/handlers/OwnerInfo.i: src/ripple/rpc/handlers/OwnerInfo.cpp.i
@@ -7873,7 +7873,7 @@ src/ripple/rpc/handlers/OwnerInfo.i: src/ripple/rpc/handlers/OwnerInfo.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/OwnerInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/OwnerInfo.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/OwnerInfo.cpp.i
 .PHONY : src/ripple/rpc/handlers/OwnerInfo.cpp.i
 
 src/ripple/rpc/handlers/OwnerInfo.s: src/ripple/rpc/handlers/OwnerInfo.cpp.s
@@ -7882,7 +7882,7 @@ src/ripple/rpc/handlers/OwnerInfo.s: src/ripple/rpc/handlers/OwnerInfo.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/OwnerInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/OwnerInfo.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/OwnerInfo.cpp.s
 .PHONY : src/ripple/rpc/handlers/OwnerInfo.cpp.s
 
 src/ripple/rpc/handlers/PathFind.o: src/ripple/rpc/handlers/PathFind.cpp.o
@@ -7891,7 +7891,7 @@ src/ripple/rpc/handlers/PathFind.o: src/ripple/rpc/handlers/PathFind.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/PathFind.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/PathFind.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/PathFind.cpp.o
 .PHONY : src/ripple/rpc/handlers/PathFind.cpp.o
 
 src/ripple/rpc/handlers/PathFind.i: src/ripple/rpc/handlers/PathFind.cpp.i
@@ -7900,7 +7900,7 @@ src/ripple/rpc/handlers/PathFind.i: src/ripple/rpc/handlers/PathFind.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/PathFind.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/PathFind.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/PathFind.cpp.i
 .PHONY : src/ripple/rpc/handlers/PathFind.cpp.i
 
 src/ripple/rpc/handlers/PathFind.s: src/ripple/rpc/handlers/PathFind.cpp.s
@@ -7909,7 +7909,7 @@ src/ripple/rpc/handlers/PathFind.s: src/ripple/rpc/handlers/PathFind.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/PathFind.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/PathFind.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/PathFind.cpp.s
 .PHONY : src/ripple/rpc/handlers/PathFind.cpp.s
 
 src/ripple/rpc/handlers/PayChanClaim.o: src/ripple/rpc/handlers/PayChanClaim.cpp.o
@@ -7918,7 +7918,7 @@ src/ripple/rpc/handlers/PayChanClaim.o: src/ripple/rpc/handlers/PayChanClaim.cpp
 
 # target to build an object file
 src/ripple/rpc/handlers/PayChanClaim.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/PayChanClaim.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/PayChanClaim.cpp.o
 .PHONY : src/ripple/rpc/handlers/PayChanClaim.cpp.o
 
 src/ripple/rpc/handlers/PayChanClaim.i: src/ripple/rpc/handlers/PayChanClaim.cpp.i
@@ -7927,7 +7927,7 @@ src/ripple/rpc/handlers/PayChanClaim.i: src/ripple/rpc/handlers/PayChanClaim.cpp
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/PayChanClaim.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/PayChanClaim.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/PayChanClaim.cpp.i
 .PHONY : src/ripple/rpc/handlers/PayChanClaim.cpp.i
 
 src/ripple/rpc/handlers/PayChanClaim.s: src/ripple/rpc/handlers/PayChanClaim.cpp.s
@@ -7936,7 +7936,7 @@ src/ripple/rpc/handlers/PayChanClaim.s: src/ripple/rpc/handlers/PayChanClaim.cpp
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/PayChanClaim.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/PayChanClaim.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/PayChanClaim.cpp.s
 .PHONY : src/ripple/rpc/handlers/PayChanClaim.cpp.s
 
 src/ripple/rpc/handlers/Peers.o: src/ripple/rpc/handlers/Peers.cpp.o
@@ -7945,7 +7945,7 @@ src/ripple/rpc/handlers/Peers.o: src/ripple/rpc/handlers/Peers.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/Peers.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Peers.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Peers.cpp.o
 .PHONY : src/ripple/rpc/handlers/Peers.cpp.o
 
 src/ripple/rpc/handlers/Peers.i: src/ripple/rpc/handlers/Peers.cpp.i
@@ -7954,7 +7954,7 @@ src/ripple/rpc/handlers/Peers.i: src/ripple/rpc/handlers/Peers.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/Peers.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Peers.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Peers.cpp.i
 .PHONY : src/ripple/rpc/handlers/Peers.cpp.i
 
 src/ripple/rpc/handlers/Peers.s: src/ripple/rpc/handlers/Peers.cpp.s
@@ -7963,7 +7963,7 @@ src/ripple/rpc/handlers/Peers.s: src/ripple/rpc/handlers/Peers.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/Peers.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Peers.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Peers.cpp.s
 .PHONY : src/ripple/rpc/handlers/Peers.cpp.s
 
 src/ripple/rpc/handlers/Ping.o: src/ripple/rpc/handlers/Ping.cpp.o
@@ -7972,7 +7972,7 @@ src/ripple/rpc/handlers/Ping.o: src/ripple/rpc/handlers/Ping.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/Ping.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Ping.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Ping.cpp.o
 .PHONY : src/ripple/rpc/handlers/Ping.cpp.o
 
 src/ripple/rpc/handlers/Ping.i: src/ripple/rpc/handlers/Ping.cpp.i
@@ -7981,7 +7981,7 @@ src/ripple/rpc/handlers/Ping.i: src/ripple/rpc/handlers/Ping.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/Ping.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Ping.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Ping.cpp.i
 .PHONY : src/ripple/rpc/handlers/Ping.cpp.i
 
 src/ripple/rpc/handlers/Ping.s: src/ripple/rpc/handlers/Ping.cpp.s
@@ -7990,7 +7990,7 @@ src/ripple/rpc/handlers/Ping.s: src/ripple/rpc/handlers/Ping.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/Ping.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Ping.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Ping.cpp.s
 .PHONY : src/ripple/rpc/handlers/Ping.cpp.s
 
 src/ripple/rpc/handlers/Print.o: src/ripple/rpc/handlers/Print.cpp.o
@@ -7999,7 +7999,7 @@ src/ripple/rpc/handlers/Print.o: src/ripple/rpc/handlers/Print.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/Print.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Print.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Print.cpp.o
 .PHONY : src/ripple/rpc/handlers/Print.cpp.o
 
 src/ripple/rpc/handlers/Print.i: src/ripple/rpc/handlers/Print.cpp.i
@@ -8008,7 +8008,7 @@ src/ripple/rpc/handlers/Print.i: src/ripple/rpc/handlers/Print.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/Print.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Print.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Print.cpp.i
 .PHONY : src/ripple/rpc/handlers/Print.cpp.i
 
 src/ripple/rpc/handlers/Print.s: src/ripple/rpc/handlers/Print.cpp.s
@@ -8017,7 +8017,7 @@ src/ripple/rpc/handlers/Print.s: src/ripple/rpc/handlers/Print.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/Print.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Print.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Print.cpp.s
 .PHONY : src/ripple/rpc/handlers/Print.cpp.s
 
 src/ripple/rpc/handlers/Random.o: src/ripple/rpc/handlers/Random.cpp.o
@@ -8026,7 +8026,7 @@ src/ripple/rpc/handlers/Random.o: src/ripple/rpc/handlers/Random.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/Random.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Random.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Random.cpp.o
 .PHONY : src/ripple/rpc/handlers/Random.cpp.o
 
 src/ripple/rpc/handlers/Random.i: src/ripple/rpc/handlers/Random.cpp.i
@@ -8035,7 +8035,7 @@ src/ripple/rpc/handlers/Random.i: src/ripple/rpc/handlers/Random.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/Random.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Random.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Random.cpp.i
 .PHONY : src/ripple/rpc/handlers/Random.cpp.i
 
 src/ripple/rpc/handlers/Random.s: src/ripple/rpc/handlers/Random.cpp.s
@@ -8044,7 +8044,7 @@ src/ripple/rpc/handlers/Random.s: src/ripple/rpc/handlers/Random.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/Random.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Random.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Random.cpp.s
 .PHONY : src/ripple/rpc/handlers/Random.cpp.s
 
 src/ripple/rpc/handlers/RipplePathFind.o: src/ripple/rpc/handlers/RipplePathFind.cpp.o
@@ -8053,7 +8053,7 @@ src/ripple/rpc/handlers/RipplePathFind.o: src/ripple/rpc/handlers/RipplePathFind
 
 # target to build an object file
 src/ripple/rpc/handlers/RipplePathFind.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/RipplePathFind.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/RipplePathFind.cpp.o
 .PHONY : src/ripple/rpc/handlers/RipplePathFind.cpp.o
 
 src/ripple/rpc/handlers/RipplePathFind.i: src/ripple/rpc/handlers/RipplePathFind.cpp.i
@@ -8062,7 +8062,7 @@ src/ripple/rpc/handlers/RipplePathFind.i: src/ripple/rpc/handlers/RipplePathFind
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/RipplePathFind.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/RipplePathFind.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/RipplePathFind.cpp.i
 .PHONY : src/ripple/rpc/handlers/RipplePathFind.cpp.i
 
 src/ripple/rpc/handlers/RipplePathFind.s: src/ripple/rpc/handlers/RipplePathFind.cpp.s
@@ -8071,7 +8071,7 @@ src/ripple/rpc/handlers/RipplePathFind.s: src/ripple/rpc/handlers/RipplePathFind
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/RipplePathFind.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/RipplePathFind.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/RipplePathFind.cpp.s
 .PHONY : src/ripple/rpc/handlers/RipplePathFind.cpp.s
 
 src/ripple/rpc/handlers/ServerInfo.o: src/ripple/rpc/handlers/ServerInfo.cpp.o
@@ -8080,7 +8080,7 @@ src/ripple/rpc/handlers/ServerInfo.o: src/ripple/rpc/handlers/ServerInfo.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/ServerInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ServerInfo.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ServerInfo.cpp.o
 .PHONY : src/ripple/rpc/handlers/ServerInfo.cpp.o
 
 src/ripple/rpc/handlers/ServerInfo.i: src/ripple/rpc/handlers/ServerInfo.cpp.i
@@ -8089,7 +8089,7 @@ src/ripple/rpc/handlers/ServerInfo.i: src/ripple/rpc/handlers/ServerInfo.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/ServerInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ServerInfo.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ServerInfo.cpp.i
 .PHONY : src/ripple/rpc/handlers/ServerInfo.cpp.i
 
 src/ripple/rpc/handlers/ServerInfo.s: src/ripple/rpc/handlers/ServerInfo.cpp.s
@@ -8098,7 +8098,7 @@ src/ripple/rpc/handlers/ServerInfo.s: src/ripple/rpc/handlers/ServerInfo.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/ServerInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ServerInfo.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ServerInfo.cpp.s
 .PHONY : src/ripple/rpc/handlers/ServerInfo.cpp.s
 
 src/ripple/rpc/handlers/ServerState.o: src/ripple/rpc/handlers/ServerState.cpp.o
@@ -8107,7 +8107,7 @@ src/ripple/rpc/handlers/ServerState.o: src/ripple/rpc/handlers/ServerState.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/ServerState.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ServerState.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ServerState.cpp.o
 .PHONY : src/ripple/rpc/handlers/ServerState.cpp.o
 
 src/ripple/rpc/handlers/ServerState.i: src/ripple/rpc/handlers/ServerState.cpp.i
@@ -8116,7 +8116,7 @@ src/ripple/rpc/handlers/ServerState.i: src/ripple/rpc/handlers/ServerState.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/ServerState.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ServerState.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ServerState.cpp.i
 .PHONY : src/ripple/rpc/handlers/ServerState.cpp.i
 
 src/ripple/rpc/handlers/ServerState.s: src/ripple/rpc/handlers/ServerState.cpp.s
@@ -8125,7 +8125,7 @@ src/ripple/rpc/handlers/ServerState.s: src/ripple/rpc/handlers/ServerState.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/ServerState.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ServerState.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ServerState.cpp.s
 .PHONY : src/ripple/rpc/handlers/ServerState.cpp.s
 
 src/ripple/rpc/handlers/SignFor.o: src/ripple/rpc/handlers/SignFor.cpp.o
@@ -8134,7 +8134,7 @@ src/ripple/rpc/handlers/SignFor.o: src/ripple/rpc/handlers/SignFor.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/SignFor.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/SignFor.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/SignFor.cpp.o
 .PHONY : src/ripple/rpc/handlers/SignFor.cpp.o
 
 src/ripple/rpc/handlers/SignFor.i: src/ripple/rpc/handlers/SignFor.cpp.i
@@ -8143,7 +8143,7 @@ src/ripple/rpc/handlers/SignFor.i: src/ripple/rpc/handlers/SignFor.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/SignFor.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/SignFor.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/SignFor.cpp.i
 .PHONY : src/ripple/rpc/handlers/SignFor.cpp.i
 
 src/ripple/rpc/handlers/SignFor.s: src/ripple/rpc/handlers/SignFor.cpp.s
@@ -8152,7 +8152,7 @@ src/ripple/rpc/handlers/SignFor.s: src/ripple/rpc/handlers/SignFor.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/SignFor.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/SignFor.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/SignFor.cpp.s
 .PHONY : src/ripple/rpc/handlers/SignFor.cpp.s
 
 src/ripple/rpc/handlers/SignHandler.o: src/ripple/rpc/handlers/SignHandler.cpp.o
@@ -8161,7 +8161,7 @@ src/ripple/rpc/handlers/SignHandler.o: src/ripple/rpc/handlers/SignHandler.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/SignHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/SignHandler.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/SignHandler.cpp.o
 .PHONY : src/ripple/rpc/handlers/SignHandler.cpp.o
 
 src/ripple/rpc/handlers/SignHandler.i: src/ripple/rpc/handlers/SignHandler.cpp.i
@@ -8170,7 +8170,7 @@ src/ripple/rpc/handlers/SignHandler.i: src/ripple/rpc/handlers/SignHandler.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/SignHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/SignHandler.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/SignHandler.cpp.i
 .PHONY : src/ripple/rpc/handlers/SignHandler.cpp.i
 
 src/ripple/rpc/handlers/SignHandler.s: src/ripple/rpc/handlers/SignHandler.cpp.s
@@ -8179,7 +8179,7 @@ src/ripple/rpc/handlers/SignHandler.s: src/ripple/rpc/handlers/SignHandler.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/SignHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/SignHandler.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/SignHandler.cpp.s
 .PHONY : src/ripple/rpc/handlers/SignHandler.cpp.s
 
 src/ripple/rpc/handlers/Stop.o: src/ripple/rpc/handlers/Stop.cpp.o
@@ -8188,7 +8188,7 @@ src/ripple/rpc/handlers/Stop.o: src/ripple/rpc/handlers/Stop.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/Stop.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Stop.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Stop.cpp.o
 .PHONY : src/ripple/rpc/handlers/Stop.cpp.o
 
 src/ripple/rpc/handlers/Stop.i: src/ripple/rpc/handlers/Stop.cpp.i
@@ -8197,7 +8197,7 @@ src/ripple/rpc/handlers/Stop.i: src/ripple/rpc/handlers/Stop.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/Stop.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Stop.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Stop.cpp.i
 .PHONY : src/ripple/rpc/handlers/Stop.cpp.i
 
 src/ripple/rpc/handlers/Stop.s: src/ripple/rpc/handlers/Stop.cpp.s
@@ -8206,7 +8206,7 @@ src/ripple/rpc/handlers/Stop.s: src/ripple/rpc/handlers/Stop.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/Stop.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Stop.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Stop.cpp.s
 .PHONY : src/ripple/rpc/handlers/Stop.cpp.s
 
 src/ripple/rpc/handlers/Submit.o: src/ripple/rpc/handlers/Submit.cpp.o
@@ -8215,7 +8215,7 @@ src/ripple/rpc/handlers/Submit.o: src/ripple/rpc/handlers/Submit.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/Submit.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Submit.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Submit.cpp.o
 .PHONY : src/ripple/rpc/handlers/Submit.cpp.o
 
 src/ripple/rpc/handlers/Submit.i: src/ripple/rpc/handlers/Submit.cpp.i
@@ -8224,7 +8224,7 @@ src/ripple/rpc/handlers/Submit.i: src/ripple/rpc/handlers/Submit.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/Submit.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Submit.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Submit.cpp.i
 .PHONY : src/ripple/rpc/handlers/Submit.cpp.i
 
 src/ripple/rpc/handlers/Submit.s: src/ripple/rpc/handlers/Submit.cpp.s
@@ -8233,7 +8233,7 @@ src/ripple/rpc/handlers/Submit.s: src/ripple/rpc/handlers/Submit.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/Submit.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Submit.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Submit.cpp.s
 .PHONY : src/ripple/rpc/handlers/Submit.cpp.s
 
 src/ripple/rpc/handlers/SubmitMultiSigned.o: src/ripple/rpc/handlers/SubmitMultiSigned.cpp.o
@@ -8242,7 +8242,7 @@ src/ripple/rpc/handlers/SubmitMultiSigned.o: src/ripple/rpc/handlers/SubmitMulti
 
 # target to build an object file
 src/ripple/rpc/handlers/SubmitMultiSigned.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/SubmitMultiSigned.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/SubmitMultiSigned.cpp.o
 .PHONY : src/ripple/rpc/handlers/SubmitMultiSigned.cpp.o
 
 src/ripple/rpc/handlers/SubmitMultiSigned.i: src/ripple/rpc/handlers/SubmitMultiSigned.cpp.i
@@ -8251,7 +8251,7 @@ src/ripple/rpc/handlers/SubmitMultiSigned.i: src/ripple/rpc/handlers/SubmitMulti
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/SubmitMultiSigned.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/SubmitMultiSigned.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/SubmitMultiSigned.cpp.i
 .PHONY : src/ripple/rpc/handlers/SubmitMultiSigned.cpp.i
 
 src/ripple/rpc/handlers/SubmitMultiSigned.s: src/ripple/rpc/handlers/SubmitMultiSigned.cpp.s
@@ -8260,7 +8260,7 @@ src/ripple/rpc/handlers/SubmitMultiSigned.s: src/ripple/rpc/handlers/SubmitMulti
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/SubmitMultiSigned.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/SubmitMultiSigned.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/SubmitMultiSigned.cpp.s
 .PHONY : src/ripple/rpc/handlers/SubmitMultiSigned.cpp.s
 
 src/ripple/rpc/handlers/Subscribe.o: src/ripple/rpc/handlers/Subscribe.cpp.o
@@ -8269,7 +8269,7 @@ src/ripple/rpc/handlers/Subscribe.o: src/ripple/rpc/handlers/Subscribe.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/Subscribe.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Subscribe.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Subscribe.cpp.o
 .PHONY : src/ripple/rpc/handlers/Subscribe.cpp.o
 
 src/ripple/rpc/handlers/Subscribe.i: src/ripple/rpc/handlers/Subscribe.cpp.i
@@ -8278,7 +8278,7 @@ src/ripple/rpc/handlers/Subscribe.i: src/ripple/rpc/handlers/Subscribe.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/Subscribe.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Subscribe.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Subscribe.cpp.i
 .PHONY : src/ripple/rpc/handlers/Subscribe.cpp.i
 
 src/ripple/rpc/handlers/Subscribe.s: src/ripple/rpc/handlers/Subscribe.cpp.s
@@ -8287,7 +8287,7 @@ src/ripple/rpc/handlers/Subscribe.s: src/ripple/rpc/handlers/Subscribe.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/Subscribe.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Subscribe.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Subscribe.cpp.s
 .PHONY : src/ripple/rpc/handlers/Subscribe.cpp.s
 
 src/ripple/rpc/handlers/TransactionEntry.o: src/ripple/rpc/handlers/TransactionEntry.cpp.o
@@ -8296,7 +8296,7 @@ src/ripple/rpc/handlers/TransactionEntry.o: src/ripple/rpc/handlers/TransactionE
 
 # target to build an object file
 src/ripple/rpc/handlers/TransactionEntry.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/TransactionEntry.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/TransactionEntry.cpp.o
 .PHONY : src/ripple/rpc/handlers/TransactionEntry.cpp.o
 
 src/ripple/rpc/handlers/TransactionEntry.i: src/ripple/rpc/handlers/TransactionEntry.cpp.i
@@ -8305,7 +8305,7 @@ src/ripple/rpc/handlers/TransactionEntry.i: src/ripple/rpc/handlers/TransactionE
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/TransactionEntry.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/TransactionEntry.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/TransactionEntry.cpp.i
 .PHONY : src/ripple/rpc/handlers/TransactionEntry.cpp.i
 
 src/ripple/rpc/handlers/TransactionEntry.s: src/ripple/rpc/handlers/TransactionEntry.cpp.s
@@ -8314,7 +8314,7 @@ src/ripple/rpc/handlers/TransactionEntry.s: src/ripple/rpc/handlers/TransactionE
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/TransactionEntry.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/TransactionEntry.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/TransactionEntry.cpp.s
 .PHONY : src/ripple/rpc/handlers/TransactionEntry.cpp.s
 
 src/ripple/rpc/handlers/Tx.o: src/ripple/rpc/handlers/Tx.cpp.o
@@ -8323,7 +8323,7 @@ src/ripple/rpc/handlers/Tx.o: src/ripple/rpc/handlers/Tx.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/Tx.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Tx.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Tx.cpp.o
 .PHONY : src/ripple/rpc/handlers/Tx.cpp.o
 
 src/ripple/rpc/handlers/Tx.i: src/ripple/rpc/handlers/Tx.cpp.i
@@ -8332,7 +8332,7 @@ src/ripple/rpc/handlers/Tx.i: src/ripple/rpc/handlers/Tx.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/Tx.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Tx.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Tx.cpp.i
 .PHONY : src/ripple/rpc/handlers/Tx.cpp.i
 
 src/ripple/rpc/handlers/Tx.s: src/ripple/rpc/handlers/Tx.cpp.s
@@ -8341,7 +8341,7 @@ src/ripple/rpc/handlers/Tx.s: src/ripple/rpc/handlers/Tx.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/Tx.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Tx.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Tx.cpp.s
 .PHONY : src/ripple/rpc/handlers/Tx.cpp.s
 
 src/ripple/rpc/handlers/TxHistory.o: src/ripple/rpc/handlers/TxHistory.cpp.o
@@ -8350,7 +8350,7 @@ src/ripple/rpc/handlers/TxHistory.o: src/ripple/rpc/handlers/TxHistory.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/TxHistory.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/TxHistory.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/TxHistory.cpp.o
 .PHONY : src/ripple/rpc/handlers/TxHistory.cpp.o
 
 src/ripple/rpc/handlers/TxHistory.i: src/ripple/rpc/handlers/TxHistory.cpp.i
@@ -8359,7 +8359,7 @@ src/ripple/rpc/handlers/TxHistory.i: src/ripple/rpc/handlers/TxHistory.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/TxHistory.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/TxHistory.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/TxHistory.cpp.i
 .PHONY : src/ripple/rpc/handlers/TxHistory.cpp.i
 
 src/ripple/rpc/handlers/TxHistory.s: src/ripple/rpc/handlers/TxHistory.cpp.s
@@ -8368,7 +8368,7 @@ src/ripple/rpc/handlers/TxHistory.s: src/ripple/rpc/handlers/TxHistory.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/TxHistory.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/TxHistory.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/TxHistory.cpp.s
 .PHONY : src/ripple/rpc/handlers/TxHistory.cpp.s
 
 src/ripple/rpc/handlers/UnlList.o: src/ripple/rpc/handlers/UnlList.cpp.o
@@ -8377,7 +8377,7 @@ src/ripple/rpc/handlers/UnlList.o: src/ripple/rpc/handlers/UnlList.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/UnlList.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/UnlList.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/UnlList.cpp.o
 .PHONY : src/ripple/rpc/handlers/UnlList.cpp.o
 
 src/ripple/rpc/handlers/UnlList.i: src/ripple/rpc/handlers/UnlList.cpp.i
@@ -8386,7 +8386,7 @@ src/ripple/rpc/handlers/UnlList.i: src/ripple/rpc/handlers/UnlList.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/UnlList.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/UnlList.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/UnlList.cpp.i
 .PHONY : src/ripple/rpc/handlers/UnlList.cpp.i
 
 src/ripple/rpc/handlers/UnlList.s: src/ripple/rpc/handlers/UnlList.cpp.s
@@ -8395,7 +8395,7 @@ src/ripple/rpc/handlers/UnlList.s: src/ripple/rpc/handlers/UnlList.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/UnlList.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/UnlList.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/UnlList.cpp.s
 .PHONY : src/ripple/rpc/handlers/UnlList.cpp.s
 
 src/ripple/rpc/handlers/Unsubscribe.o: src/ripple/rpc/handlers/Unsubscribe.cpp.o
@@ -8404,7 +8404,7 @@ src/ripple/rpc/handlers/Unsubscribe.o: src/ripple/rpc/handlers/Unsubscribe.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/Unsubscribe.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Unsubscribe.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Unsubscribe.cpp.o
 .PHONY : src/ripple/rpc/handlers/Unsubscribe.cpp.o
 
 src/ripple/rpc/handlers/Unsubscribe.i: src/ripple/rpc/handlers/Unsubscribe.cpp.i
@@ -8413,7 +8413,7 @@ src/ripple/rpc/handlers/Unsubscribe.i: src/ripple/rpc/handlers/Unsubscribe.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/Unsubscribe.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Unsubscribe.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Unsubscribe.cpp.i
 .PHONY : src/ripple/rpc/handlers/Unsubscribe.cpp.i
 
 src/ripple/rpc/handlers/Unsubscribe.s: src/ripple/rpc/handlers/Unsubscribe.cpp.s
@@ -8422,7 +8422,7 @@ src/ripple/rpc/handlers/Unsubscribe.s: src/ripple/rpc/handlers/Unsubscribe.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/Unsubscribe.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Unsubscribe.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Unsubscribe.cpp.s
 .PHONY : src/ripple/rpc/handlers/Unsubscribe.cpp.s
 
 src/ripple/rpc/handlers/ValidationCreate.o: src/ripple/rpc/handlers/ValidationCreate.cpp.o
@@ -8431,7 +8431,7 @@ src/ripple/rpc/handlers/ValidationCreate.o: src/ripple/rpc/handlers/ValidationCr
 
 # target to build an object file
 src/ripple/rpc/handlers/ValidationCreate.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ValidationCreate.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ValidationCreate.cpp.o
 .PHONY : src/ripple/rpc/handlers/ValidationCreate.cpp.o
 
 src/ripple/rpc/handlers/ValidationCreate.i: src/ripple/rpc/handlers/ValidationCreate.cpp.i
@@ -8440,7 +8440,7 @@ src/ripple/rpc/handlers/ValidationCreate.i: src/ripple/rpc/handlers/ValidationCr
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/ValidationCreate.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ValidationCreate.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ValidationCreate.cpp.i
 .PHONY : src/ripple/rpc/handlers/ValidationCreate.cpp.i
 
 src/ripple/rpc/handlers/ValidationCreate.s: src/ripple/rpc/handlers/ValidationCreate.cpp.s
@@ -8449,7 +8449,7 @@ src/ripple/rpc/handlers/ValidationCreate.s: src/ripple/rpc/handlers/ValidationCr
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/ValidationCreate.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ValidationCreate.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ValidationCreate.cpp.s
 .PHONY : src/ripple/rpc/handlers/ValidationCreate.cpp.s
 
 src/ripple/rpc/handlers/ValidationSeed.o: src/ripple/rpc/handlers/ValidationSeed.cpp.o
@@ -8458,7 +8458,7 @@ src/ripple/rpc/handlers/ValidationSeed.o: src/ripple/rpc/handlers/ValidationSeed
 
 # target to build an object file
 src/ripple/rpc/handlers/ValidationSeed.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ValidationSeed.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ValidationSeed.cpp.o
 .PHONY : src/ripple/rpc/handlers/ValidationSeed.cpp.o
 
 src/ripple/rpc/handlers/ValidationSeed.i: src/ripple/rpc/handlers/ValidationSeed.cpp.i
@@ -8467,7 +8467,7 @@ src/ripple/rpc/handlers/ValidationSeed.i: src/ripple/rpc/handlers/ValidationSeed
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/ValidationSeed.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ValidationSeed.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ValidationSeed.cpp.i
 .PHONY : src/ripple/rpc/handlers/ValidationSeed.cpp.i
 
 src/ripple/rpc/handlers/ValidationSeed.s: src/ripple/rpc/handlers/ValidationSeed.cpp.s
@@ -8476,7 +8476,7 @@ src/ripple/rpc/handlers/ValidationSeed.s: src/ripple/rpc/handlers/ValidationSeed
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/ValidationSeed.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ValidationSeed.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ValidationSeed.cpp.s
 .PHONY : src/ripple/rpc/handlers/ValidationSeed.cpp.s
 
 src/ripple/rpc/handlers/ValidatorListSites.o: src/ripple/rpc/handlers/ValidatorListSites.cpp.o
@@ -8485,7 +8485,7 @@ src/ripple/rpc/handlers/ValidatorListSites.o: src/ripple/rpc/handlers/ValidatorL
 
 # target to build an object file
 src/ripple/rpc/handlers/ValidatorListSites.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ValidatorListSites.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ValidatorListSites.cpp.o
 .PHONY : src/ripple/rpc/handlers/ValidatorListSites.cpp.o
 
 src/ripple/rpc/handlers/ValidatorListSites.i: src/ripple/rpc/handlers/ValidatorListSites.cpp.i
@@ -8494,7 +8494,7 @@ src/ripple/rpc/handlers/ValidatorListSites.i: src/ripple/rpc/handlers/ValidatorL
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/ValidatorListSites.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ValidatorListSites.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ValidatorListSites.cpp.i
 .PHONY : src/ripple/rpc/handlers/ValidatorListSites.cpp.i
 
 src/ripple/rpc/handlers/ValidatorListSites.s: src/ripple/rpc/handlers/ValidatorListSites.cpp.s
@@ -8503,7 +8503,7 @@ src/ripple/rpc/handlers/ValidatorListSites.s: src/ripple/rpc/handlers/ValidatorL
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/ValidatorListSites.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/ValidatorListSites.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/ValidatorListSites.cpp.s
 .PHONY : src/ripple/rpc/handlers/ValidatorListSites.cpp.s
 
 src/ripple/rpc/handlers/Validators.o: src/ripple/rpc/handlers/Validators.cpp.o
@@ -8512,7 +8512,7 @@ src/ripple/rpc/handlers/Validators.o: src/ripple/rpc/handlers/Validators.cpp.o
 
 # target to build an object file
 src/ripple/rpc/handlers/Validators.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Validators.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Validators.cpp.o
 .PHONY : src/ripple/rpc/handlers/Validators.cpp.o
 
 src/ripple/rpc/handlers/Validators.i: src/ripple/rpc/handlers/Validators.cpp.i
@@ -8521,7 +8521,7 @@ src/ripple/rpc/handlers/Validators.i: src/ripple/rpc/handlers/Validators.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/Validators.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Validators.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Validators.cpp.i
 .PHONY : src/ripple/rpc/handlers/Validators.cpp.i
 
 src/ripple/rpc/handlers/Validators.s: src/ripple/rpc/handlers/Validators.cpp.s
@@ -8530,7 +8530,7 @@ src/ripple/rpc/handlers/Validators.s: src/ripple/rpc/handlers/Validators.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/Validators.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/Validators.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/Validators.cpp.s
 .PHONY : src/ripple/rpc/handlers/Validators.cpp.s
 
 src/ripple/rpc/handlers/WalletPropose.o: src/ripple/rpc/handlers/WalletPropose.cpp.o
@@ -8539,7 +8539,7 @@ src/ripple/rpc/handlers/WalletPropose.o: src/ripple/rpc/handlers/WalletPropose.c
 
 # target to build an object file
 src/ripple/rpc/handlers/WalletPropose.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/WalletPropose.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/WalletPropose.cpp.o
 .PHONY : src/ripple/rpc/handlers/WalletPropose.cpp.o
 
 src/ripple/rpc/handlers/WalletPropose.i: src/ripple/rpc/handlers/WalletPropose.cpp.i
@@ -8548,7 +8548,7 @@ src/ripple/rpc/handlers/WalletPropose.i: src/ripple/rpc/handlers/WalletPropose.c
 
 # target to preprocess a source file
 src/ripple/rpc/handlers/WalletPropose.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/WalletPropose.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/WalletPropose.cpp.i
 .PHONY : src/ripple/rpc/handlers/WalletPropose.cpp.i
 
 src/ripple/rpc/handlers/WalletPropose.s: src/ripple/rpc/handlers/WalletPropose.cpp.s
@@ -8557,7 +8557,7 @@ src/ripple/rpc/handlers/WalletPropose.s: src/ripple/rpc/handlers/WalletPropose.c
 
 # target to generate assembly for a file
 src/ripple/rpc/handlers/WalletPropose.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/handlers/WalletPropose.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/handlers/WalletPropose.cpp.s
 .PHONY : src/ripple/rpc/handlers/WalletPropose.cpp.s
 
 src/ripple/rpc/impl/Handler.o: src/ripple/rpc/impl/Handler.cpp.o
@@ -8566,7 +8566,7 @@ src/ripple/rpc/impl/Handler.o: src/ripple/rpc/impl/Handler.cpp.o
 
 # target to build an object file
 src/ripple/rpc/impl/Handler.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/Handler.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/Handler.cpp.o
 .PHONY : src/ripple/rpc/impl/Handler.cpp.o
 
 src/ripple/rpc/impl/Handler.i: src/ripple/rpc/impl/Handler.cpp.i
@@ -8575,7 +8575,7 @@ src/ripple/rpc/impl/Handler.i: src/ripple/rpc/impl/Handler.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/impl/Handler.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/Handler.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/Handler.cpp.i
 .PHONY : src/ripple/rpc/impl/Handler.cpp.i
 
 src/ripple/rpc/impl/Handler.s: src/ripple/rpc/impl/Handler.cpp.s
@@ -8584,7 +8584,7 @@ src/ripple/rpc/impl/Handler.s: src/ripple/rpc/impl/Handler.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/impl/Handler.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/Handler.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/Handler.cpp.s
 .PHONY : src/ripple/rpc/impl/Handler.cpp.s
 
 src/ripple/rpc/impl/LegacyPathFind.o: src/ripple/rpc/impl/LegacyPathFind.cpp.o
@@ -8593,7 +8593,7 @@ src/ripple/rpc/impl/LegacyPathFind.o: src/ripple/rpc/impl/LegacyPathFind.cpp.o
 
 # target to build an object file
 src/ripple/rpc/impl/LegacyPathFind.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/LegacyPathFind.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/LegacyPathFind.cpp.o
 .PHONY : src/ripple/rpc/impl/LegacyPathFind.cpp.o
 
 src/ripple/rpc/impl/LegacyPathFind.i: src/ripple/rpc/impl/LegacyPathFind.cpp.i
@@ -8602,7 +8602,7 @@ src/ripple/rpc/impl/LegacyPathFind.i: src/ripple/rpc/impl/LegacyPathFind.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/impl/LegacyPathFind.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/LegacyPathFind.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/LegacyPathFind.cpp.i
 .PHONY : src/ripple/rpc/impl/LegacyPathFind.cpp.i
 
 src/ripple/rpc/impl/LegacyPathFind.s: src/ripple/rpc/impl/LegacyPathFind.cpp.s
@@ -8611,7 +8611,7 @@ src/ripple/rpc/impl/LegacyPathFind.s: src/ripple/rpc/impl/LegacyPathFind.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/impl/LegacyPathFind.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/LegacyPathFind.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/LegacyPathFind.cpp.s
 .PHONY : src/ripple/rpc/impl/LegacyPathFind.cpp.s
 
 src/ripple/rpc/impl/RPCHandler.o: src/ripple/rpc/impl/RPCHandler.cpp.o
@@ -8620,7 +8620,7 @@ src/ripple/rpc/impl/RPCHandler.o: src/ripple/rpc/impl/RPCHandler.cpp.o
 
 # target to build an object file
 src/ripple/rpc/impl/RPCHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/RPCHandler.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/RPCHandler.cpp.o
 .PHONY : src/ripple/rpc/impl/RPCHandler.cpp.o
 
 src/ripple/rpc/impl/RPCHandler.i: src/ripple/rpc/impl/RPCHandler.cpp.i
@@ -8629,7 +8629,7 @@ src/ripple/rpc/impl/RPCHandler.i: src/ripple/rpc/impl/RPCHandler.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/impl/RPCHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/RPCHandler.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/RPCHandler.cpp.i
 .PHONY : src/ripple/rpc/impl/RPCHandler.cpp.i
 
 src/ripple/rpc/impl/RPCHandler.s: src/ripple/rpc/impl/RPCHandler.cpp.s
@@ -8638,7 +8638,7 @@ src/ripple/rpc/impl/RPCHandler.s: src/ripple/rpc/impl/RPCHandler.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/impl/RPCHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/RPCHandler.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/RPCHandler.cpp.s
 .PHONY : src/ripple/rpc/impl/RPCHandler.cpp.s
 
 src/ripple/rpc/impl/RPCHelpers.o: src/ripple/rpc/impl/RPCHelpers.cpp.o
@@ -8647,7 +8647,7 @@ src/ripple/rpc/impl/RPCHelpers.o: src/ripple/rpc/impl/RPCHelpers.cpp.o
 
 # target to build an object file
 src/ripple/rpc/impl/RPCHelpers.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/RPCHelpers.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/RPCHelpers.cpp.o
 .PHONY : src/ripple/rpc/impl/RPCHelpers.cpp.o
 
 src/ripple/rpc/impl/RPCHelpers.i: src/ripple/rpc/impl/RPCHelpers.cpp.i
@@ -8656,7 +8656,7 @@ src/ripple/rpc/impl/RPCHelpers.i: src/ripple/rpc/impl/RPCHelpers.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/impl/RPCHelpers.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/RPCHelpers.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/RPCHelpers.cpp.i
 .PHONY : src/ripple/rpc/impl/RPCHelpers.cpp.i
 
 src/ripple/rpc/impl/RPCHelpers.s: src/ripple/rpc/impl/RPCHelpers.cpp.s
@@ -8665,7 +8665,7 @@ src/ripple/rpc/impl/RPCHelpers.s: src/ripple/rpc/impl/RPCHelpers.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/impl/RPCHelpers.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/RPCHelpers.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/RPCHelpers.cpp.s
 .PHONY : src/ripple/rpc/impl/RPCHelpers.cpp.s
 
 src/ripple/rpc/impl/Role.o: src/ripple/rpc/impl/Role.cpp.o
@@ -8674,7 +8674,7 @@ src/ripple/rpc/impl/Role.o: src/ripple/rpc/impl/Role.cpp.o
 
 # target to build an object file
 src/ripple/rpc/impl/Role.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/Role.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/Role.cpp.o
 .PHONY : src/ripple/rpc/impl/Role.cpp.o
 
 src/ripple/rpc/impl/Role.i: src/ripple/rpc/impl/Role.cpp.i
@@ -8683,7 +8683,7 @@ src/ripple/rpc/impl/Role.i: src/ripple/rpc/impl/Role.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/impl/Role.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/Role.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/Role.cpp.i
 .PHONY : src/ripple/rpc/impl/Role.cpp.i
 
 src/ripple/rpc/impl/Role.s: src/ripple/rpc/impl/Role.cpp.s
@@ -8692,7 +8692,7 @@ src/ripple/rpc/impl/Role.s: src/ripple/rpc/impl/Role.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/impl/Role.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/Role.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/Role.cpp.s
 .PHONY : src/ripple/rpc/impl/Role.cpp.s
 
 src/ripple/rpc/impl/ServerHandlerImp.o: src/ripple/rpc/impl/ServerHandlerImp.cpp.o
@@ -8701,7 +8701,7 @@ src/ripple/rpc/impl/ServerHandlerImp.o: src/ripple/rpc/impl/ServerHandlerImp.cpp
 
 # target to build an object file
 src/ripple/rpc/impl/ServerHandlerImp.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/ServerHandlerImp.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/ServerHandlerImp.cpp.o
 .PHONY : src/ripple/rpc/impl/ServerHandlerImp.cpp.o
 
 src/ripple/rpc/impl/ServerHandlerImp.i: src/ripple/rpc/impl/ServerHandlerImp.cpp.i
@@ -8710,7 +8710,7 @@ src/ripple/rpc/impl/ServerHandlerImp.i: src/ripple/rpc/impl/ServerHandlerImp.cpp
 
 # target to preprocess a source file
 src/ripple/rpc/impl/ServerHandlerImp.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/ServerHandlerImp.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/ServerHandlerImp.cpp.i
 .PHONY : src/ripple/rpc/impl/ServerHandlerImp.cpp.i
 
 src/ripple/rpc/impl/ServerHandlerImp.s: src/ripple/rpc/impl/ServerHandlerImp.cpp.s
@@ -8719,7 +8719,7 @@ src/ripple/rpc/impl/ServerHandlerImp.s: src/ripple/rpc/impl/ServerHandlerImp.cpp
 
 # target to generate assembly for a file
 src/ripple/rpc/impl/ServerHandlerImp.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/ServerHandlerImp.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/ServerHandlerImp.cpp.s
 .PHONY : src/ripple/rpc/impl/ServerHandlerImp.cpp.s
 
 src/ripple/rpc/impl/Status.o: src/ripple/rpc/impl/Status.cpp.o
@@ -8728,7 +8728,7 @@ src/ripple/rpc/impl/Status.o: src/ripple/rpc/impl/Status.cpp.o
 
 # target to build an object file
 src/ripple/rpc/impl/Status.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/Status.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/Status.cpp.o
 .PHONY : src/ripple/rpc/impl/Status.cpp.o
 
 src/ripple/rpc/impl/Status.i: src/ripple/rpc/impl/Status.cpp.i
@@ -8737,7 +8737,7 @@ src/ripple/rpc/impl/Status.i: src/ripple/rpc/impl/Status.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/impl/Status.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/Status.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/Status.cpp.i
 .PHONY : src/ripple/rpc/impl/Status.cpp.i
 
 src/ripple/rpc/impl/Status.s: src/ripple/rpc/impl/Status.cpp.s
@@ -8746,7 +8746,7 @@ src/ripple/rpc/impl/Status.s: src/ripple/rpc/impl/Status.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/impl/Status.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/Status.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/Status.cpp.s
 .PHONY : src/ripple/rpc/impl/Status.cpp.s
 
 src/ripple/rpc/impl/TransactionSign.o: src/ripple/rpc/impl/TransactionSign.cpp.o
@@ -8755,7 +8755,7 @@ src/ripple/rpc/impl/TransactionSign.o: src/ripple/rpc/impl/TransactionSign.cpp.o
 
 # target to build an object file
 src/ripple/rpc/impl/TransactionSign.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/TransactionSign.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/TransactionSign.cpp.o
 .PHONY : src/ripple/rpc/impl/TransactionSign.cpp.o
 
 src/ripple/rpc/impl/TransactionSign.i: src/ripple/rpc/impl/TransactionSign.cpp.i
@@ -8764,7 +8764,7 @@ src/ripple/rpc/impl/TransactionSign.i: src/ripple/rpc/impl/TransactionSign.cpp.i
 
 # target to preprocess a source file
 src/ripple/rpc/impl/TransactionSign.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/TransactionSign.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/TransactionSign.cpp.i
 .PHONY : src/ripple/rpc/impl/TransactionSign.cpp.i
 
 src/ripple/rpc/impl/TransactionSign.s: src/ripple/rpc/impl/TransactionSign.cpp.s
@@ -8773,7 +8773,7 @@ src/ripple/rpc/impl/TransactionSign.s: src/ripple/rpc/impl/TransactionSign.cpp.s
 
 # target to generate assembly for a file
 src/ripple/rpc/impl/TransactionSign.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/rpc/impl/TransactionSign.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/rpc/impl/TransactionSign.cpp.s
 .PHONY : src/ripple/rpc/impl/TransactionSign.cpp.s
 
 src/ripple/server/impl/JSONRPCUtil.o: src/ripple/server/impl/JSONRPCUtil.cpp.o
@@ -8782,7 +8782,7 @@ src/ripple/server/impl/JSONRPCUtil.o: src/ripple/server/impl/JSONRPCUtil.cpp.o
 
 # target to build an object file
 src/ripple/server/impl/JSONRPCUtil.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/server/impl/JSONRPCUtil.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/server/impl/JSONRPCUtil.cpp.o
 .PHONY : src/ripple/server/impl/JSONRPCUtil.cpp.o
 
 src/ripple/server/impl/JSONRPCUtil.i: src/ripple/server/impl/JSONRPCUtil.cpp.i
@@ -8791,7 +8791,7 @@ src/ripple/server/impl/JSONRPCUtil.i: src/ripple/server/impl/JSONRPCUtil.cpp.i
 
 # target to preprocess a source file
 src/ripple/server/impl/JSONRPCUtil.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/server/impl/JSONRPCUtil.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/server/impl/JSONRPCUtil.cpp.i
 .PHONY : src/ripple/server/impl/JSONRPCUtil.cpp.i
 
 src/ripple/server/impl/JSONRPCUtil.s: src/ripple/server/impl/JSONRPCUtil.cpp.s
@@ -8800,7 +8800,7 @@ src/ripple/server/impl/JSONRPCUtil.s: src/ripple/server/impl/JSONRPCUtil.cpp.s
 
 # target to generate assembly for a file
 src/ripple/server/impl/JSONRPCUtil.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/server/impl/JSONRPCUtil.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/server/impl/JSONRPCUtil.cpp.s
 .PHONY : src/ripple/server/impl/JSONRPCUtil.cpp.s
 
 src/ripple/server/impl/Port.o: src/ripple/server/impl/Port.cpp.o
@@ -8809,7 +8809,7 @@ src/ripple/server/impl/Port.o: src/ripple/server/impl/Port.cpp.o
 
 # target to build an object file
 src/ripple/server/impl/Port.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/server/impl/Port.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/server/impl/Port.cpp.o
 .PHONY : src/ripple/server/impl/Port.cpp.o
 
 src/ripple/server/impl/Port.i: src/ripple/server/impl/Port.cpp.i
@@ -8818,7 +8818,7 @@ src/ripple/server/impl/Port.i: src/ripple/server/impl/Port.cpp.i
 
 # target to preprocess a source file
 src/ripple/server/impl/Port.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/server/impl/Port.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/server/impl/Port.cpp.i
 .PHONY : src/ripple/server/impl/Port.cpp.i
 
 src/ripple/server/impl/Port.s: src/ripple/server/impl/Port.cpp.s
@@ -8827,7 +8827,7 @@ src/ripple/server/impl/Port.s: src/ripple/server/impl/Port.cpp.s
 
 # target to generate assembly for a file
 src/ripple/server/impl/Port.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/server/impl/Port.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/server/impl/Port.cpp.s
 .PHONY : src/ripple/server/impl/Port.cpp.s
 
 src/ripple/shamap/impl/SHAMap.o: src/ripple/shamap/impl/SHAMap.cpp.o
@@ -8836,7 +8836,7 @@ src/ripple/shamap/impl/SHAMap.o: src/ripple/shamap/impl/SHAMap.cpp.o
 
 # target to build an object file
 src/ripple/shamap/impl/SHAMap.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMap.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMap.cpp.o
 .PHONY : src/ripple/shamap/impl/SHAMap.cpp.o
 
 src/ripple/shamap/impl/SHAMap.i: src/ripple/shamap/impl/SHAMap.cpp.i
@@ -8845,7 +8845,7 @@ src/ripple/shamap/impl/SHAMap.i: src/ripple/shamap/impl/SHAMap.cpp.i
 
 # target to preprocess a source file
 src/ripple/shamap/impl/SHAMap.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMap.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMap.cpp.i
 .PHONY : src/ripple/shamap/impl/SHAMap.cpp.i
 
 src/ripple/shamap/impl/SHAMap.s: src/ripple/shamap/impl/SHAMap.cpp.s
@@ -8854,7 +8854,7 @@ src/ripple/shamap/impl/SHAMap.s: src/ripple/shamap/impl/SHAMap.cpp.s
 
 # target to generate assembly for a file
 src/ripple/shamap/impl/SHAMap.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMap.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMap.cpp.s
 .PHONY : src/ripple/shamap/impl/SHAMap.cpp.s
 
 src/ripple/shamap/impl/SHAMapDelta.o: src/ripple/shamap/impl/SHAMapDelta.cpp.o
@@ -8863,7 +8863,7 @@ src/ripple/shamap/impl/SHAMapDelta.o: src/ripple/shamap/impl/SHAMapDelta.cpp.o
 
 # target to build an object file
 src/ripple/shamap/impl/SHAMapDelta.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapDelta.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapDelta.cpp.o
 .PHONY : src/ripple/shamap/impl/SHAMapDelta.cpp.o
 
 src/ripple/shamap/impl/SHAMapDelta.i: src/ripple/shamap/impl/SHAMapDelta.cpp.i
@@ -8872,7 +8872,7 @@ src/ripple/shamap/impl/SHAMapDelta.i: src/ripple/shamap/impl/SHAMapDelta.cpp.i
 
 # target to preprocess a source file
 src/ripple/shamap/impl/SHAMapDelta.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapDelta.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapDelta.cpp.i
 .PHONY : src/ripple/shamap/impl/SHAMapDelta.cpp.i
 
 src/ripple/shamap/impl/SHAMapDelta.s: src/ripple/shamap/impl/SHAMapDelta.cpp.s
@@ -8881,7 +8881,7 @@ src/ripple/shamap/impl/SHAMapDelta.s: src/ripple/shamap/impl/SHAMapDelta.cpp.s
 
 # target to generate assembly for a file
 src/ripple/shamap/impl/SHAMapDelta.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapDelta.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapDelta.cpp.s
 .PHONY : src/ripple/shamap/impl/SHAMapDelta.cpp.s
 
 src/ripple/shamap/impl/SHAMapItem.o: src/ripple/shamap/impl/SHAMapItem.cpp.o
@@ -8890,7 +8890,7 @@ src/ripple/shamap/impl/SHAMapItem.o: src/ripple/shamap/impl/SHAMapItem.cpp.o
 
 # target to build an object file
 src/ripple/shamap/impl/SHAMapItem.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapItem.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapItem.cpp.o
 .PHONY : src/ripple/shamap/impl/SHAMapItem.cpp.o
 
 src/ripple/shamap/impl/SHAMapItem.i: src/ripple/shamap/impl/SHAMapItem.cpp.i
@@ -8899,7 +8899,7 @@ src/ripple/shamap/impl/SHAMapItem.i: src/ripple/shamap/impl/SHAMapItem.cpp.i
 
 # target to preprocess a source file
 src/ripple/shamap/impl/SHAMapItem.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapItem.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapItem.cpp.i
 .PHONY : src/ripple/shamap/impl/SHAMapItem.cpp.i
 
 src/ripple/shamap/impl/SHAMapItem.s: src/ripple/shamap/impl/SHAMapItem.cpp.s
@@ -8908,7 +8908,7 @@ src/ripple/shamap/impl/SHAMapItem.s: src/ripple/shamap/impl/SHAMapItem.cpp.s
 
 # target to generate assembly for a file
 src/ripple/shamap/impl/SHAMapItem.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapItem.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapItem.cpp.s
 .PHONY : src/ripple/shamap/impl/SHAMapItem.cpp.s
 
 src/ripple/shamap/impl/SHAMapMissingNode.o: src/ripple/shamap/impl/SHAMapMissingNode.cpp.o
@@ -8917,7 +8917,7 @@ src/ripple/shamap/impl/SHAMapMissingNode.o: src/ripple/shamap/impl/SHAMapMissing
 
 # target to build an object file
 src/ripple/shamap/impl/SHAMapMissingNode.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapMissingNode.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapMissingNode.cpp.o
 .PHONY : src/ripple/shamap/impl/SHAMapMissingNode.cpp.o
 
 src/ripple/shamap/impl/SHAMapMissingNode.i: src/ripple/shamap/impl/SHAMapMissingNode.cpp.i
@@ -8926,7 +8926,7 @@ src/ripple/shamap/impl/SHAMapMissingNode.i: src/ripple/shamap/impl/SHAMapMissing
 
 # target to preprocess a source file
 src/ripple/shamap/impl/SHAMapMissingNode.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapMissingNode.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapMissingNode.cpp.i
 .PHONY : src/ripple/shamap/impl/SHAMapMissingNode.cpp.i
 
 src/ripple/shamap/impl/SHAMapMissingNode.s: src/ripple/shamap/impl/SHAMapMissingNode.cpp.s
@@ -8935,7 +8935,7 @@ src/ripple/shamap/impl/SHAMapMissingNode.s: src/ripple/shamap/impl/SHAMapMissing
 
 # target to generate assembly for a file
 src/ripple/shamap/impl/SHAMapMissingNode.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapMissingNode.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapMissingNode.cpp.s
 .PHONY : src/ripple/shamap/impl/SHAMapMissingNode.cpp.s
 
 src/ripple/shamap/impl/SHAMapNodeID.o: src/ripple/shamap/impl/SHAMapNodeID.cpp.o
@@ -8944,7 +8944,7 @@ src/ripple/shamap/impl/SHAMapNodeID.o: src/ripple/shamap/impl/SHAMapNodeID.cpp.o
 
 # target to build an object file
 src/ripple/shamap/impl/SHAMapNodeID.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapNodeID.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapNodeID.cpp.o
 .PHONY : src/ripple/shamap/impl/SHAMapNodeID.cpp.o
 
 src/ripple/shamap/impl/SHAMapNodeID.i: src/ripple/shamap/impl/SHAMapNodeID.cpp.i
@@ -8953,7 +8953,7 @@ src/ripple/shamap/impl/SHAMapNodeID.i: src/ripple/shamap/impl/SHAMapNodeID.cpp.i
 
 # target to preprocess a source file
 src/ripple/shamap/impl/SHAMapNodeID.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapNodeID.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapNodeID.cpp.i
 .PHONY : src/ripple/shamap/impl/SHAMapNodeID.cpp.i
 
 src/ripple/shamap/impl/SHAMapNodeID.s: src/ripple/shamap/impl/SHAMapNodeID.cpp.s
@@ -8962,7 +8962,7 @@ src/ripple/shamap/impl/SHAMapNodeID.s: src/ripple/shamap/impl/SHAMapNodeID.cpp.s
 
 # target to generate assembly for a file
 src/ripple/shamap/impl/SHAMapNodeID.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapNodeID.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapNodeID.cpp.s
 .PHONY : src/ripple/shamap/impl/SHAMapNodeID.cpp.s
 
 src/ripple/shamap/impl/SHAMapSync.o: src/ripple/shamap/impl/SHAMapSync.cpp.o
@@ -8971,7 +8971,7 @@ src/ripple/shamap/impl/SHAMapSync.o: src/ripple/shamap/impl/SHAMapSync.cpp.o
 
 # target to build an object file
 src/ripple/shamap/impl/SHAMapSync.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapSync.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapSync.cpp.o
 .PHONY : src/ripple/shamap/impl/SHAMapSync.cpp.o
 
 src/ripple/shamap/impl/SHAMapSync.i: src/ripple/shamap/impl/SHAMapSync.cpp.i
@@ -8980,7 +8980,7 @@ src/ripple/shamap/impl/SHAMapSync.i: src/ripple/shamap/impl/SHAMapSync.cpp.i
 
 # target to preprocess a source file
 src/ripple/shamap/impl/SHAMapSync.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapSync.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapSync.cpp.i
 .PHONY : src/ripple/shamap/impl/SHAMapSync.cpp.i
 
 src/ripple/shamap/impl/SHAMapSync.s: src/ripple/shamap/impl/SHAMapSync.cpp.s
@@ -8989,7 +8989,7 @@ src/ripple/shamap/impl/SHAMapSync.s: src/ripple/shamap/impl/SHAMapSync.cpp.s
 
 # target to generate assembly for a file
 src/ripple/shamap/impl/SHAMapSync.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapSync.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapSync.cpp.s
 .PHONY : src/ripple/shamap/impl/SHAMapSync.cpp.s
 
 src/ripple/shamap/impl/SHAMapTreeNode.o: src/ripple/shamap/impl/SHAMapTreeNode.cpp.o
@@ -8998,7 +8998,7 @@ src/ripple/shamap/impl/SHAMapTreeNode.o: src/ripple/shamap/impl/SHAMapTreeNode.c
 
 # target to build an object file
 src/ripple/shamap/impl/SHAMapTreeNode.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapTreeNode.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapTreeNode.cpp.o
 .PHONY : src/ripple/shamap/impl/SHAMapTreeNode.cpp.o
 
 src/ripple/shamap/impl/SHAMapTreeNode.i: src/ripple/shamap/impl/SHAMapTreeNode.cpp.i
@@ -9007,7 +9007,7 @@ src/ripple/shamap/impl/SHAMapTreeNode.i: src/ripple/shamap/impl/SHAMapTreeNode.c
 
 # target to preprocess a source file
 src/ripple/shamap/impl/SHAMapTreeNode.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapTreeNode.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapTreeNode.cpp.i
 .PHONY : src/ripple/shamap/impl/SHAMapTreeNode.cpp.i
 
 src/ripple/shamap/impl/SHAMapTreeNode.s: src/ripple/shamap/impl/SHAMapTreeNode.cpp.s
@@ -9016,7 +9016,7 @@ src/ripple/shamap/impl/SHAMapTreeNode.s: src/ripple/shamap/impl/SHAMapTreeNode.c
 
 # target to generate assembly for a file
 src/ripple/shamap/impl/SHAMapTreeNode.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/shamap/impl/SHAMapTreeNode.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/shamap/impl/SHAMapTreeNode.cpp.s
 .PHONY : src/ripple/shamap/impl/SHAMapTreeNode.cpp.s
 
 src/ripple/unity/app_consensus.o: src/ripple/unity/app_consensus.cpp.o
@@ -9025,7 +9025,7 @@ src/ripple/unity/app_consensus.o: src/ripple/unity/app_consensus.cpp.o
 
 # target to build an object file
 src/ripple/unity/app_consensus.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_consensus.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_consensus.cpp.o
 .PHONY : src/ripple/unity/app_consensus.cpp.o
 
 src/ripple/unity/app_consensus.i: src/ripple/unity/app_consensus.cpp.i
@@ -9034,7 +9034,7 @@ src/ripple/unity/app_consensus.i: src/ripple/unity/app_consensus.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/app_consensus.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_consensus.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_consensus.cpp.i
 .PHONY : src/ripple/unity/app_consensus.cpp.i
 
 src/ripple/unity/app_consensus.s: src/ripple/unity/app_consensus.cpp.s
@@ -9043,7 +9043,7 @@ src/ripple/unity/app_consensus.s: src/ripple/unity/app_consensus.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/app_consensus.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_consensus.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_consensus.cpp.s
 .PHONY : src/ripple/unity/app_consensus.cpp.s
 
 src/ripple/unity/app_ledger.o: src/ripple/unity/app_ledger.cpp.o
@@ -9052,7 +9052,7 @@ src/ripple/unity/app_ledger.o: src/ripple/unity/app_ledger.cpp.o
 
 # target to build an object file
 src/ripple/unity/app_ledger.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_ledger.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_ledger.cpp.o
 .PHONY : src/ripple/unity/app_ledger.cpp.o
 
 src/ripple/unity/app_ledger.i: src/ripple/unity/app_ledger.cpp.i
@@ -9061,7 +9061,7 @@ src/ripple/unity/app_ledger.i: src/ripple/unity/app_ledger.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/app_ledger.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_ledger.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_ledger.cpp.i
 .PHONY : src/ripple/unity/app_ledger.cpp.i
 
 src/ripple/unity/app_ledger.s: src/ripple/unity/app_ledger.cpp.s
@@ -9070,7 +9070,7 @@ src/ripple/unity/app_ledger.s: src/ripple/unity/app_ledger.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/app_ledger.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_ledger.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_ledger.cpp.s
 .PHONY : src/ripple/unity/app_ledger.cpp.s
 
 src/ripple/unity/app_ledger_impl.o: src/ripple/unity/app_ledger_impl.cpp.o
@@ -9079,7 +9079,7 @@ src/ripple/unity/app_ledger_impl.o: src/ripple/unity/app_ledger_impl.cpp.o
 
 # target to build an object file
 src/ripple/unity/app_ledger_impl.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_ledger_impl.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_ledger_impl.cpp.o
 .PHONY : src/ripple/unity/app_ledger_impl.cpp.o
 
 src/ripple/unity/app_ledger_impl.i: src/ripple/unity/app_ledger_impl.cpp.i
@@ -9088,7 +9088,7 @@ src/ripple/unity/app_ledger_impl.i: src/ripple/unity/app_ledger_impl.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/app_ledger_impl.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_ledger_impl.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_ledger_impl.cpp.i
 .PHONY : src/ripple/unity/app_ledger_impl.cpp.i
 
 src/ripple/unity/app_ledger_impl.s: src/ripple/unity/app_ledger_impl.cpp.s
@@ -9097,7 +9097,7 @@ src/ripple/unity/app_ledger_impl.s: src/ripple/unity/app_ledger_impl.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/app_ledger_impl.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_ledger_impl.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_ledger_impl.cpp.s
 .PHONY : src/ripple/unity/app_ledger_impl.cpp.s
 
 src/ripple/unity/app_main1.o: src/ripple/unity/app_main1.cpp.o
@@ -9106,7 +9106,7 @@ src/ripple/unity/app_main1.o: src/ripple/unity/app_main1.cpp.o
 
 # target to build an object file
 src/ripple/unity/app_main1.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_main1.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_main1.cpp.o
 .PHONY : src/ripple/unity/app_main1.cpp.o
 
 src/ripple/unity/app_main1.i: src/ripple/unity/app_main1.cpp.i
@@ -9115,7 +9115,7 @@ src/ripple/unity/app_main1.i: src/ripple/unity/app_main1.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/app_main1.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_main1.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_main1.cpp.i
 .PHONY : src/ripple/unity/app_main1.cpp.i
 
 src/ripple/unity/app_main1.s: src/ripple/unity/app_main1.cpp.s
@@ -9124,7 +9124,7 @@ src/ripple/unity/app_main1.s: src/ripple/unity/app_main1.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/app_main1.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_main1.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_main1.cpp.s
 .PHONY : src/ripple/unity/app_main1.cpp.s
 
 src/ripple/unity/app_main2.o: src/ripple/unity/app_main2.cpp.o
@@ -9133,7 +9133,7 @@ src/ripple/unity/app_main2.o: src/ripple/unity/app_main2.cpp.o
 
 # target to build an object file
 src/ripple/unity/app_main2.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_main2.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_main2.cpp.o
 .PHONY : src/ripple/unity/app_main2.cpp.o
 
 src/ripple/unity/app_main2.i: src/ripple/unity/app_main2.cpp.i
@@ -9142,7 +9142,7 @@ src/ripple/unity/app_main2.i: src/ripple/unity/app_main2.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/app_main2.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_main2.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_main2.cpp.i
 .PHONY : src/ripple/unity/app_main2.cpp.i
 
 src/ripple/unity/app_main2.s: src/ripple/unity/app_main2.cpp.s
@@ -9151,7 +9151,7 @@ src/ripple/unity/app_main2.s: src/ripple/unity/app_main2.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/app_main2.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_main2.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_main2.cpp.s
 .PHONY : src/ripple/unity/app_main2.cpp.s
 
 src/ripple/unity/app_misc.o: src/ripple/unity/app_misc.cpp.o
@@ -9160,7 +9160,7 @@ src/ripple/unity/app_misc.o: src/ripple/unity/app_misc.cpp.o
 
 # target to build an object file
 src/ripple/unity/app_misc.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_misc.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_misc.cpp.o
 .PHONY : src/ripple/unity/app_misc.cpp.o
 
 src/ripple/unity/app_misc.i: src/ripple/unity/app_misc.cpp.i
@@ -9169,7 +9169,7 @@ src/ripple/unity/app_misc.i: src/ripple/unity/app_misc.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/app_misc.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_misc.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_misc.cpp.i
 .PHONY : src/ripple/unity/app_misc.cpp.i
 
 src/ripple/unity/app_misc.s: src/ripple/unity/app_misc.cpp.s
@@ -9178,7 +9178,7 @@ src/ripple/unity/app_misc.s: src/ripple/unity/app_misc.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/app_misc.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_misc.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_misc.cpp.s
 .PHONY : src/ripple/unity/app_misc.cpp.s
 
 src/ripple/unity/app_misc_impl.o: src/ripple/unity/app_misc_impl.cpp.o
@@ -9187,7 +9187,7 @@ src/ripple/unity/app_misc_impl.o: src/ripple/unity/app_misc_impl.cpp.o
 
 # target to build an object file
 src/ripple/unity/app_misc_impl.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_misc_impl.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_misc_impl.cpp.o
 .PHONY : src/ripple/unity/app_misc_impl.cpp.o
 
 src/ripple/unity/app_misc_impl.i: src/ripple/unity/app_misc_impl.cpp.i
@@ -9196,7 +9196,7 @@ src/ripple/unity/app_misc_impl.i: src/ripple/unity/app_misc_impl.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/app_misc_impl.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_misc_impl.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_misc_impl.cpp.i
 .PHONY : src/ripple/unity/app_misc_impl.cpp.i
 
 src/ripple/unity/app_misc_impl.s: src/ripple/unity/app_misc_impl.cpp.s
@@ -9205,7 +9205,7 @@ src/ripple/unity/app_misc_impl.s: src/ripple/unity/app_misc_impl.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/app_misc_impl.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_misc_impl.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_misc_impl.cpp.s
 .PHONY : src/ripple/unity/app_misc_impl.cpp.s
 
 src/ripple/unity/app_paths.o: src/ripple/unity/app_paths.cpp.o
@@ -9214,7 +9214,7 @@ src/ripple/unity/app_paths.o: src/ripple/unity/app_paths.cpp.o
 
 # target to build an object file
 src/ripple/unity/app_paths.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_paths.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_paths.cpp.o
 .PHONY : src/ripple/unity/app_paths.cpp.o
 
 src/ripple/unity/app_paths.i: src/ripple/unity/app_paths.cpp.i
@@ -9223,7 +9223,7 @@ src/ripple/unity/app_paths.i: src/ripple/unity/app_paths.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/app_paths.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_paths.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_paths.cpp.i
 .PHONY : src/ripple/unity/app_paths.cpp.i
 
 src/ripple/unity/app_paths.s: src/ripple/unity/app_paths.cpp.s
@@ -9232,7 +9232,7 @@ src/ripple/unity/app_paths.s: src/ripple/unity/app_paths.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/app_paths.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_paths.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_paths.cpp.s
 .PHONY : src/ripple/unity/app_paths.cpp.s
 
 src/ripple/unity/app_tx.o: src/ripple/unity/app_tx.cpp.o
@@ -9241,7 +9241,7 @@ src/ripple/unity/app_tx.o: src/ripple/unity/app_tx.cpp.o
 
 # target to build an object file
 src/ripple/unity/app_tx.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_tx.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_tx.cpp.o
 .PHONY : src/ripple/unity/app_tx.cpp.o
 
 src/ripple/unity/app_tx.i: src/ripple/unity/app_tx.cpp.i
@@ -9250,7 +9250,7 @@ src/ripple/unity/app_tx.i: src/ripple/unity/app_tx.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/app_tx.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_tx.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_tx.cpp.i
 .PHONY : src/ripple/unity/app_tx.cpp.i
 
 src/ripple/unity/app_tx.s: src/ripple/unity/app_tx.cpp.s
@@ -9259,7 +9259,7 @@ src/ripple/unity/app_tx.s: src/ripple/unity/app_tx.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/app_tx.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/app_tx.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/app_tx.cpp.s
 .PHONY : src/ripple/unity/app_tx.cpp.s
 
 src/ripple/unity/basics.o: src/ripple/unity/basics.cpp.o
@@ -9268,7 +9268,7 @@ src/ripple/unity/basics.o: src/ripple/unity/basics.cpp.o
 
 # target to build an object file
 src/ripple/unity/basics.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/basics.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/basics.cpp.o
 .PHONY : src/ripple/unity/basics.cpp.o
 
 src/ripple/unity/basics.i: src/ripple/unity/basics.cpp.i
@@ -9277,7 +9277,7 @@ src/ripple/unity/basics.i: src/ripple/unity/basics.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/basics.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/basics.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/basics.cpp.i
 .PHONY : src/ripple/unity/basics.cpp.i
 
 src/ripple/unity/basics.s: src/ripple/unity/basics.cpp.s
@@ -9286,7 +9286,7 @@ src/ripple/unity/basics.s: src/ripple/unity/basics.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/basics.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/basics.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/basics.cpp.s
 .PHONY : src/ripple/unity/basics.cpp.s
 
 src/ripple/unity/beast.o: src/ripple/unity/beast.cpp.o
@@ -9295,7 +9295,7 @@ src/ripple/unity/beast.o: src/ripple/unity/beast.cpp.o
 
 # target to build an object file
 src/ripple/unity/beast.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/beast.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/beast.cpp.o
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/beast.cpp.o
 .PHONY : src/ripple/unity/beast.cpp.o
 
@@ -9305,7 +9305,7 @@ src/ripple/unity/beast.i: src/ripple/unity/beast.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/beast.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/beast.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/beast.cpp.i
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/beast.cpp.i
 .PHONY : src/ripple/unity/beast.cpp.i
 
@@ -9315,7 +9315,7 @@ src/ripple/unity/beast.s: src/ripple/unity/beast.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/beast.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/beast.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/beast.cpp.s
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/beast.cpp.s
 .PHONY : src/ripple/unity/beast.cpp.s
 
@@ -9325,7 +9325,7 @@ src/ripple/unity/conditions.o: src/ripple/unity/conditions.cpp.o
 
 # target to build an object file
 src/ripple/unity/conditions.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/conditions.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/conditions.cpp.o
 .PHONY : src/ripple/unity/conditions.cpp.o
 
 src/ripple/unity/conditions.i: src/ripple/unity/conditions.cpp.i
@@ -9334,7 +9334,7 @@ src/ripple/unity/conditions.i: src/ripple/unity/conditions.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/conditions.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/conditions.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/conditions.cpp.i
 .PHONY : src/ripple/unity/conditions.cpp.i
 
 src/ripple/unity/conditions.s: src/ripple/unity/conditions.cpp.s
@@ -9343,7 +9343,7 @@ src/ripple/unity/conditions.s: src/ripple/unity/conditions.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/conditions.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/conditions.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/conditions.cpp.s
 .PHONY : src/ripple/unity/conditions.cpp.s
 
 src/ripple/unity/consensus.o: src/ripple/unity/consensus.cpp.o
@@ -9352,7 +9352,7 @@ src/ripple/unity/consensus.o: src/ripple/unity/consensus.cpp.o
 
 # target to build an object file
 src/ripple/unity/consensus.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/consensus.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/consensus.cpp.o
 .PHONY : src/ripple/unity/consensus.cpp.o
 
 src/ripple/unity/consensus.i: src/ripple/unity/consensus.cpp.i
@@ -9361,7 +9361,7 @@ src/ripple/unity/consensus.i: src/ripple/unity/consensus.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/consensus.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/consensus.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/consensus.cpp.i
 .PHONY : src/ripple/unity/consensus.cpp.i
 
 src/ripple/unity/consensus.s: src/ripple/unity/consensus.cpp.s
@@ -9370,7 +9370,7 @@ src/ripple/unity/consensus.s: src/ripple/unity/consensus.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/consensus.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/consensus.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/consensus.cpp.s
 .PHONY : src/ripple/unity/consensus.cpp.s
 
 src/ripple/unity/core.o: src/ripple/unity/core.cpp.o
@@ -9379,7 +9379,7 @@ src/ripple/unity/core.o: src/ripple/unity/core.cpp.o
 
 # target to build an object file
 src/ripple/unity/core.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/core.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/core.cpp.o
 .PHONY : src/ripple/unity/core.cpp.o
 
 src/ripple/unity/core.i: src/ripple/unity/core.cpp.i
@@ -9388,7 +9388,7 @@ src/ripple/unity/core.i: src/ripple/unity/core.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/core.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/core.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/core.cpp.i
 .PHONY : src/ripple/unity/core.cpp.i
 
 src/ripple/unity/core.s: src/ripple/unity/core.cpp.s
@@ -9397,7 +9397,7 @@ src/ripple/unity/core.s: src/ripple/unity/core.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/core.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/core.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/core.cpp.s
 .PHONY : src/ripple/unity/core.cpp.s
 
 src/ripple/unity/crypto.o: src/ripple/unity/crypto.cpp.o
@@ -9406,7 +9406,7 @@ src/ripple/unity/crypto.o: src/ripple/unity/crypto.cpp.o
 
 # target to build an object file
 src/ripple/unity/crypto.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/crypto.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/crypto.cpp.o
 .PHONY : src/ripple/unity/crypto.cpp.o
 
 src/ripple/unity/crypto.i: src/ripple/unity/crypto.cpp.i
@@ -9415,7 +9415,7 @@ src/ripple/unity/crypto.i: src/ripple/unity/crypto.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/crypto.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/crypto.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/crypto.cpp.i
 .PHONY : src/ripple/unity/crypto.cpp.i
 
 src/ripple/unity/crypto.s: src/ripple/unity/crypto.cpp.s
@@ -9424,7 +9424,7 @@ src/ripple/unity/crypto.s: src/ripple/unity/crypto.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/crypto.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/crypto.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/crypto.cpp.s
 .PHONY : src/ripple/unity/crypto.cpp.s
 
 src/ripple/unity/ed25519_donna.o: src/ripple/unity/ed25519_donna.c.o
@@ -9433,7 +9433,7 @@ src/ripple/unity/ed25519_donna.o: src/ripple/unity/ed25519_donna.c.o
 
 # target to build an object file
 src/ripple/unity/ed25519_donna.c.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/ed25519_donna.c.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/ed25519_donna.c.o
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/ed25519_donna.c.o
 .PHONY : src/ripple/unity/ed25519_donna.c.o
 
@@ -9443,7 +9443,7 @@ src/ripple/unity/ed25519_donna.i: src/ripple/unity/ed25519_donna.c.i
 
 # target to preprocess a source file
 src/ripple/unity/ed25519_donna.c.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/ed25519_donna.c.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/ed25519_donna.c.i
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/ed25519_donna.c.i
 .PHONY : src/ripple/unity/ed25519_donna.c.i
 
@@ -9453,7 +9453,7 @@ src/ripple/unity/ed25519_donna.s: src/ripple/unity/ed25519_donna.c.s
 
 # target to generate assembly for a file
 src/ripple/unity/ed25519_donna.c.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/ed25519_donna.c.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/ed25519_donna.c.s
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/ed25519_donna.c.s
 .PHONY : src/ripple/unity/ed25519_donna.c.s
 
@@ -9463,7 +9463,7 @@ src/ripple/unity/json.o: src/ripple/unity/json.cpp.o
 
 # target to build an object file
 src/ripple/unity/json.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/json.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/json.cpp.o
 .PHONY : src/ripple/unity/json.cpp.o
 
 src/ripple/unity/json.i: src/ripple/unity/json.cpp.i
@@ -9472,7 +9472,7 @@ src/ripple/unity/json.i: src/ripple/unity/json.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/json.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/json.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/json.cpp.i
 .PHONY : src/ripple/unity/json.cpp.i
 
 src/ripple/unity/json.s: src/ripple/unity/json.cpp.s
@@ -9481,7 +9481,7 @@ src/ripple/unity/json.s: src/ripple/unity/json.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/json.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/json.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/json.cpp.s
 .PHONY : src/ripple/unity/json.cpp.s
 
 src/ripple/unity/ledger.o: src/ripple/unity/ledger.cpp.o
@@ -9490,7 +9490,7 @@ src/ripple/unity/ledger.o: src/ripple/unity/ledger.cpp.o
 
 # target to build an object file
 src/ripple/unity/ledger.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/ledger.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/ledger.cpp.o
 .PHONY : src/ripple/unity/ledger.cpp.o
 
 src/ripple/unity/ledger.i: src/ripple/unity/ledger.cpp.i
@@ -9499,7 +9499,7 @@ src/ripple/unity/ledger.i: src/ripple/unity/ledger.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/ledger.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/ledger.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/ledger.cpp.i
 .PHONY : src/ripple/unity/ledger.cpp.i
 
 src/ripple/unity/ledger.s: src/ripple/unity/ledger.cpp.s
@@ -9508,7 +9508,7 @@ src/ripple/unity/ledger.s: src/ripple/unity/ledger.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/ledger.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/ledger.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/ledger.cpp.s
 .PHONY : src/ripple/unity/ledger.cpp.s
 
 src/ripple/unity/lz4.o: src/ripple/unity/lz4.c.o
@@ -9517,7 +9517,7 @@ src/ripple/unity/lz4.o: src/ripple/unity/lz4.c.o
 
 # target to build an object file
 src/ripple/unity/lz4.c.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/lz4.c.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/lz4.c.o
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/lz4.c.o
 .PHONY : src/ripple/unity/lz4.c.o
 
@@ -9527,7 +9527,7 @@ src/ripple/unity/lz4.i: src/ripple/unity/lz4.c.i
 
 # target to preprocess a source file
 src/ripple/unity/lz4.c.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/lz4.c.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/lz4.c.i
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/lz4.c.i
 .PHONY : src/ripple/unity/lz4.c.i
 
@@ -9537,7 +9537,7 @@ src/ripple/unity/lz4.s: src/ripple/unity/lz4.c.s
 
 # target to generate assembly for a file
 src/ripple/unity/lz4.c.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/lz4.c.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/lz4.c.s
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/lz4.c.s
 .PHONY : src/ripple/unity/lz4.c.s
 
@@ -9547,7 +9547,7 @@ src/ripple/unity/net.o: src/ripple/unity/net.cpp.o
 
 # target to build an object file
 src/ripple/unity/net.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/net.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/net.cpp.o
 .PHONY : src/ripple/unity/net.cpp.o
 
 src/ripple/unity/net.i: src/ripple/unity/net.cpp.i
@@ -9556,7 +9556,7 @@ src/ripple/unity/net.i: src/ripple/unity/net.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/net.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/net.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/net.cpp.i
 .PHONY : src/ripple/unity/net.cpp.i
 
 src/ripple/unity/net.s: src/ripple/unity/net.cpp.s
@@ -9565,7 +9565,7 @@ src/ripple/unity/net.s: src/ripple/unity/net.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/net.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/net.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/net.cpp.s
 .PHONY : src/ripple/unity/net.cpp.s
 
 src/ripple/unity/nodestore.o: src/ripple/unity/nodestore.cpp.o
@@ -9574,7 +9574,7 @@ src/ripple/unity/nodestore.o: src/ripple/unity/nodestore.cpp.o
 
 # target to build an object file
 src/ripple/unity/nodestore.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/nodestore.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/nodestore.cpp.o
 .PHONY : src/ripple/unity/nodestore.cpp.o
 
 src/ripple/unity/nodestore.i: src/ripple/unity/nodestore.cpp.i
@@ -9583,7 +9583,7 @@ src/ripple/unity/nodestore.i: src/ripple/unity/nodestore.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/nodestore.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/nodestore.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/nodestore.cpp.i
 .PHONY : src/ripple/unity/nodestore.cpp.i
 
 src/ripple/unity/nodestore.s: src/ripple/unity/nodestore.cpp.s
@@ -9592,7 +9592,7 @@ src/ripple/unity/nodestore.s: src/ripple/unity/nodestore.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/nodestore.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/nodestore.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/nodestore.cpp.s
 .PHONY : src/ripple/unity/nodestore.cpp.s
 
 src/ripple/unity/overlay1.o: src/ripple/unity/overlay1.cpp.o
@@ -9601,7 +9601,7 @@ src/ripple/unity/overlay1.o: src/ripple/unity/overlay1.cpp.o
 
 # target to build an object file
 src/ripple/unity/overlay1.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/overlay1.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/overlay1.cpp.o
 .PHONY : src/ripple/unity/overlay1.cpp.o
 
 src/ripple/unity/overlay1.i: src/ripple/unity/overlay1.cpp.i
@@ -9610,7 +9610,7 @@ src/ripple/unity/overlay1.i: src/ripple/unity/overlay1.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/overlay1.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/overlay1.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/overlay1.cpp.i
 .PHONY : src/ripple/unity/overlay1.cpp.i
 
 src/ripple/unity/overlay1.s: src/ripple/unity/overlay1.cpp.s
@@ -9619,7 +9619,7 @@ src/ripple/unity/overlay1.s: src/ripple/unity/overlay1.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/overlay1.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/overlay1.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/overlay1.cpp.s
 .PHONY : src/ripple/unity/overlay1.cpp.s
 
 src/ripple/unity/overlay2.o: src/ripple/unity/overlay2.cpp.o
@@ -9628,7 +9628,7 @@ src/ripple/unity/overlay2.o: src/ripple/unity/overlay2.cpp.o
 
 # target to build an object file
 src/ripple/unity/overlay2.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/overlay2.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/overlay2.cpp.o
 .PHONY : src/ripple/unity/overlay2.cpp.o
 
 src/ripple/unity/overlay2.i: src/ripple/unity/overlay2.cpp.i
@@ -9637,7 +9637,7 @@ src/ripple/unity/overlay2.i: src/ripple/unity/overlay2.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/overlay2.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/overlay2.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/overlay2.cpp.i
 .PHONY : src/ripple/unity/overlay2.cpp.i
 
 src/ripple/unity/overlay2.s: src/ripple/unity/overlay2.cpp.s
@@ -9646,7 +9646,7 @@ src/ripple/unity/overlay2.s: src/ripple/unity/overlay2.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/overlay2.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/overlay2.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/overlay2.cpp.s
 .PHONY : src/ripple/unity/overlay2.cpp.s
 
 src/ripple/unity/peerfinder.o: src/ripple/unity/peerfinder.cpp.o
@@ -9655,7 +9655,7 @@ src/ripple/unity/peerfinder.o: src/ripple/unity/peerfinder.cpp.o
 
 # target to build an object file
 src/ripple/unity/peerfinder.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/peerfinder.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/peerfinder.cpp.o
 .PHONY : src/ripple/unity/peerfinder.cpp.o
 
 src/ripple/unity/peerfinder.i: src/ripple/unity/peerfinder.cpp.i
@@ -9664,7 +9664,7 @@ src/ripple/unity/peerfinder.i: src/ripple/unity/peerfinder.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/peerfinder.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/peerfinder.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/peerfinder.cpp.i
 .PHONY : src/ripple/unity/peerfinder.cpp.i
 
 src/ripple/unity/peerfinder.s: src/ripple/unity/peerfinder.cpp.s
@@ -9673,7 +9673,7 @@ src/ripple/unity/peerfinder.s: src/ripple/unity/peerfinder.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/peerfinder.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/peerfinder.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/peerfinder.cpp.s
 .PHONY : src/ripple/unity/peerfinder.cpp.s
 
 src/ripple/unity/protobuf.o: src/ripple/unity/protobuf.cpp.o
@@ -9682,7 +9682,7 @@ src/ripple/unity/protobuf.o: src/ripple/unity/protobuf.cpp.o
 
 # target to build an object file
 src/ripple/unity/protobuf.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/protobuf.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/protobuf.cpp.o
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/protobuf.cpp.o
 .PHONY : src/ripple/unity/protobuf.cpp.o
 
@@ -9692,7 +9692,7 @@ src/ripple/unity/protobuf.i: src/ripple/unity/protobuf.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/protobuf.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/protobuf.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/protobuf.cpp.i
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/protobuf.cpp.i
 .PHONY : src/ripple/unity/protobuf.cpp.i
 
@@ -9702,7 +9702,7 @@ src/ripple/unity/protobuf.s: src/ripple/unity/protobuf.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/protobuf.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/protobuf.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/protobuf.cpp.s
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/protobuf.cpp.s
 .PHONY : src/ripple/unity/protobuf.cpp.s
 
@@ -9712,7 +9712,7 @@ src/ripple/unity/protocol.o: src/ripple/unity/protocol.cpp.o
 
 # target to build an object file
 src/ripple/unity/protocol.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/protocol.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/protocol.cpp.o
 .PHONY : src/ripple/unity/protocol.cpp.o
 
 src/ripple/unity/protocol.i: src/ripple/unity/protocol.cpp.i
@@ -9721,7 +9721,7 @@ src/ripple/unity/protocol.i: src/ripple/unity/protocol.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/protocol.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/protocol.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/protocol.cpp.i
 .PHONY : src/ripple/unity/protocol.cpp.i
 
 src/ripple/unity/protocol.s: src/ripple/unity/protocol.cpp.s
@@ -9730,7 +9730,7 @@ src/ripple/unity/protocol.s: src/ripple/unity/protocol.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/protocol.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/protocol.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/protocol.cpp.s
 .PHONY : src/ripple/unity/protocol.cpp.s
 
 src/ripple/unity/resource.o: src/ripple/unity/resource.cpp.o
@@ -9739,7 +9739,7 @@ src/ripple/unity/resource.o: src/ripple/unity/resource.cpp.o
 
 # target to build an object file
 src/ripple/unity/resource.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/resource.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/resource.cpp.o
 .PHONY : src/ripple/unity/resource.cpp.o
 
 src/ripple/unity/resource.i: src/ripple/unity/resource.cpp.i
@@ -9748,7 +9748,7 @@ src/ripple/unity/resource.i: src/ripple/unity/resource.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/resource.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/resource.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/resource.cpp.i
 .PHONY : src/ripple/unity/resource.cpp.i
 
 src/ripple/unity/resource.s: src/ripple/unity/resource.cpp.s
@@ -9757,7 +9757,7 @@ src/ripple/unity/resource.s: src/ripple/unity/resource.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/resource.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/resource.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/resource.cpp.s
 .PHONY : src/ripple/unity/resource.cpp.s
 
 src/ripple/unity/ripple.proto.o: src/ripple/unity/ripple.proto.cpp.o
@@ -9766,7 +9766,7 @@ src/ripple/unity/ripple.proto.o: src/ripple/unity/ripple.proto.cpp.o
 
 # target to build an object file
 src/ripple/unity/ripple.proto.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/ripple.proto.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/ripple.proto.cpp.o
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/ripple.proto.cpp.o
 .PHONY : src/ripple/unity/ripple.proto.cpp.o
 
@@ -9776,7 +9776,7 @@ src/ripple/unity/ripple.proto.i: src/ripple/unity/ripple.proto.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/ripple.proto.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/ripple.proto.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/ripple.proto.cpp.i
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/ripple.proto.cpp.i
 .PHONY : src/ripple/unity/ripple.proto.cpp.i
 
@@ -9786,7 +9786,7 @@ src/ripple/unity/ripple.proto.s: src/ripple/unity/ripple.proto.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/ripple.proto.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/ripple.proto.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/ripple.proto.cpp.s
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/ripple.proto.cpp.s
 .PHONY : src/ripple/unity/ripple.proto.cpp.s
 
@@ -9796,7 +9796,7 @@ src/ripple/unity/rocksdb.o: src/ripple/unity/rocksdb.cpp.o
 
 # target to build an object file
 src/ripple/unity/rocksdb.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/rocksdb.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/rocksdb.cpp.o
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/rocksdb.cpp.o
 .PHONY : src/ripple/unity/rocksdb.cpp.o
 
@@ -9806,7 +9806,7 @@ src/ripple/unity/rocksdb.i: src/ripple/unity/rocksdb.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/rocksdb.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/rocksdb.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/rocksdb.cpp.i
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/rocksdb.cpp.i
 .PHONY : src/ripple/unity/rocksdb.cpp.i
 
@@ -9816,7 +9816,7 @@ src/ripple/unity/rocksdb.s: src/ripple/unity/rocksdb.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/rocksdb.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/rocksdb.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/rocksdb.cpp.s
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/rocksdb.cpp.s
 .PHONY : src/ripple/unity/rocksdb.cpp.s
 
@@ -9826,7 +9826,7 @@ src/ripple/unity/rpcx1.o: src/ripple/unity/rpcx1.cpp.o
 
 # target to build an object file
 src/ripple/unity/rpcx1.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/rpcx1.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/rpcx1.cpp.o
 .PHONY : src/ripple/unity/rpcx1.cpp.o
 
 src/ripple/unity/rpcx1.i: src/ripple/unity/rpcx1.cpp.i
@@ -9835,7 +9835,7 @@ src/ripple/unity/rpcx1.i: src/ripple/unity/rpcx1.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/rpcx1.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/rpcx1.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/rpcx1.cpp.i
 .PHONY : src/ripple/unity/rpcx1.cpp.i
 
 src/ripple/unity/rpcx1.s: src/ripple/unity/rpcx1.cpp.s
@@ -9844,7 +9844,7 @@ src/ripple/unity/rpcx1.s: src/ripple/unity/rpcx1.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/rpcx1.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/rpcx1.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/rpcx1.cpp.s
 .PHONY : src/ripple/unity/rpcx1.cpp.s
 
 src/ripple/unity/rpcx2.o: src/ripple/unity/rpcx2.cpp.o
@@ -9853,7 +9853,7 @@ src/ripple/unity/rpcx2.o: src/ripple/unity/rpcx2.cpp.o
 
 # target to build an object file
 src/ripple/unity/rpcx2.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/rpcx2.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/rpcx2.cpp.o
 .PHONY : src/ripple/unity/rpcx2.cpp.o
 
 src/ripple/unity/rpcx2.i: src/ripple/unity/rpcx2.cpp.i
@@ -9862,7 +9862,7 @@ src/ripple/unity/rpcx2.i: src/ripple/unity/rpcx2.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/rpcx2.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/rpcx2.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/rpcx2.cpp.i
 .PHONY : src/ripple/unity/rpcx2.cpp.i
 
 src/ripple/unity/rpcx2.s: src/ripple/unity/rpcx2.cpp.s
@@ -9871,7 +9871,7 @@ src/ripple/unity/rpcx2.s: src/ripple/unity/rpcx2.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/rpcx2.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/rpcx2.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/rpcx2.cpp.s
 .PHONY : src/ripple/unity/rpcx2.cpp.s
 
 src/ripple/unity/secp256k1.o: src/ripple/unity/secp256k1.cpp.o
@@ -9880,7 +9880,7 @@ src/ripple/unity/secp256k1.o: src/ripple/unity/secp256k1.cpp.o
 
 # target to build an object file
 src/ripple/unity/secp256k1.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/secp256k1.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/secp256k1.cpp.o
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/secp256k1.cpp.o
 .PHONY : src/ripple/unity/secp256k1.cpp.o
 
@@ -9890,7 +9890,7 @@ src/ripple/unity/secp256k1.i: src/ripple/unity/secp256k1.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/secp256k1.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/secp256k1.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/secp256k1.cpp.i
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/secp256k1.cpp.i
 .PHONY : src/ripple/unity/secp256k1.cpp.i
 
@@ -9900,7 +9900,7 @@ src/ripple/unity/secp256k1.s: src/ripple/unity/secp256k1.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/secp256k1.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/secp256k1.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/secp256k1.cpp.s
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/secp256k1.cpp.s
 .PHONY : src/ripple/unity/secp256k1.cpp.s
 
@@ -9910,7 +9910,7 @@ src/ripple/unity/server.o: src/ripple/unity/server.cpp.o
 
 # target to build an object file
 src/ripple/unity/server.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/server.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/server.cpp.o
 .PHONY : src/ripple/unity/server.cpp.o
 
 src/ripple/unity/server.i: src/ripple/unity/server.cpp.i
@@ -9919,7 +9919,7 @@ src/ripple/unity/server.i: src/ripple/unity/server.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/server.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/server.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/server.cpp.i
 .PHONY : src/ripple/unity/server.cpp.i
 
 src/ripple/unity/server.s: src/ripple/unity/server.cpp.s
@@ -9928,7 +9928,7 @@ src/ripple/unity/server.s: src/ripple/unity/server.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/server.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/server.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/server.cpp.s
 .PHONY : src/ripple/unity/server.cpp.s
 
 src/ripple/unity/shamap.o: src/ripple/unity/shamap.cpp.o
@@ -9937,7 +9937,7 @@ src/ripple/unity/shamap.o: src/ripple/unity/shamap.cpp.o
 
 # target to build an object file
 src/ripple/unity/shamap.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/shamap.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/shamap.cpp.o
 .PHONY : src/ripple/unity/shamap.cpp.o
 
 src/ripple/unity/shamap.i: src/ripple/unity/shamap.cpp.i
@@ -9946,7 +9946,7 @@ src/ripple/unity/shamap.i: src/ripple/unity/shamap.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/shamap.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/shamap.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/shamap.cpp.i
 .PHONY : src/ripple/unity/shamap.cpp.i
 
 src/ripple/unity/shamap.s: src/ripple/unity/shamap.cpp.s
@@ -9955,7 +9955,7 @@ src/ripple/unity/shamap.s: src/ripple/unity/shamap.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/shamap.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/shamap.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/shamap.cpp.s
 .PHONY : src/ripple/unity/shamap.cpp.s
 
 src/ripple/unity/snappy.o: src/ripple/unity/snappy.cpp.o
@@ -9964,7 +9964,7 @@ src/ripple/unity/snappy.o: src/ripple/unity/snappy.cpp.o
 
 # target to build an object file
 src/ripple/unity/snappy.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/snappy.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/snappy.cpp.o
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/snappy.cpp.o
 .PHONY : src/ripple/unity/snappy.cpp.o
 
@@ -9974,7 +9974,7 @@ src/ripple/unity/snappy.i: src/ripple/unity/snappy.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/snappy.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/snappy.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/snappy.cpp.i
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/snappy.cpp.i
 .PHONY : src/ripple/unity/snappy.cpp.i
 
@@ -9984,7 +9984,7 @@ src/ripple/unity/snappy.s: src/ripple/unity/snappy.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/snappy.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/snappy.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/snappy.cpp.s
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/snappy.cpp.s
 .PHONY : src/ripple/unity/snappy.cpp.s
 
@@ -9994,7 +9994,7 @@ src/ripple/unity/soci.o: src/ripple/unity/soci.cpp.o
 
 # target to build an object file
 src/ripple/unity/soci.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/soci.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/soci.cpp.o
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/soci.cpp.o
 .PHONY : src/ripple/unity/soci.cpp.o
 
@@ -10004,7 +10004,7 @@ src/ripple/unity/soci.i: src/ripple/unity/soci.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/soci.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/soci.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/soci.cpp.i
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/soci.cpp.i
 .PHONY : src/ripple/unity/soci.cpp.i
 
@@ -10014,7 +10014,7 @@ src/ripple/unity/soci.s: src/ripple/unity/soci.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/soci.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/ripple/unity/soci.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/soci.cpp.s
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/soci.cpp.s
 .PHONY : src/ripple/unity/soci.cpp.s
 
@@ -10024,7 +10024,7 @@ src/ripple/unity/soci_ripple.o: src/ripple/unity/soci_ripple.cpp.o
 
 # target to build an object file
 src/ripple/unity/soci_ripple.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/soci_ripple.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/soci_ripple.cpp.o
 .PHONY : src/ripple/unity/soci_ripple.cpp.o
 
 src/ripple/unity/soci_ripple.i: src/ripple/unity/soci_ripple.cpp.i
@@ -10033,7 +10033,7 @@ src/ripple/unity/soci_ripple.i: src/ripple/unity/soci_ripple.cpp.i
 
 # target to preprocess a source file
 src/ripple/unity/soci_ripple.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/soci_ripple.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/soci_ripple.cpp.i
 .PHONY : src/ripple/unity/soci_ripple.cpp.i
 
 src/ripple/unity/soci_ripple.s: src/ripple/unity/soci_ripple.cpp.s
@@ -10042,7 +10042,7 @@ src/ripple/unity/soci_ripple.s: src/ripple/unity/soci_ripple.cpp.s
 
 # target to generate assembly for a file
 src/ripple/unity/soci_ripple.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/ripple/unity/soci_ripple.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/ripple/unity/soci_ripple.cpp.s
 .PHONY : src/ripple/unity/soci_ripple.cpp.s
 
 src/sqlite/sqlite_unity.o: src/sqlite/sqlite_unity.c.o
@@ -10051,7 +10051,7 @@ src/sqlite/sqlite_unity.o: src/sqlite/sqlite_unity.c.o
 
 # target to build an object file
 src/sqlite/sqlite_unity.c.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/sqlite/sqlite_unity.c.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/sqlite/sqlite_unity.c.o
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/sqlite/sqlite_unity.c.o
 .PHONY : src/sqlite/sqlite_unity.c.o
 
@@ -10061,7 +10061,7 @@ src/sqlite/sqlite_unity.i: src/sqlite/sqlite_unity.c.i
 
 # target to preprocess a source file
 src/sqlite/sqlite_unity.c.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/sqlite/sqlite_unity.c.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/sqlite/sqlite_unity.c.i
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/sqlite/sqlite_unity.c.i
 .PHONY : src/sqlite/sqlite_unity.c.i
 
@@ -10071,7 +10071,7 @@ src/sqlite/sqlite_unity.s: src/sqlite/sqlite_unity.c.s
 
 # target to generate assembly for a file
 src/sqlite/sqlite_unity.c.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/sqlite/sqlite_unity.c.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/sqlite/sqlite_unity.c.s
 	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/sqlite/sqlite_unity.c.s
 .PHONY : src/sqlite/sqlite_unity.c.s
 
@@ -10081,7 +10081,7 @@ src/test/app/AccountTxPaging_test.o: src/test/app/AccountTxPaging_test.cpp.o
 
 # target to build an object file
 src/test/app/AccountTxPaging_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/AccountTxPaging_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/AccountTxPaging_test.cpp.o
 .PHONY : src/test/app/AccountTxPaging_test.cpp.o
 
 src/test/app/AccountTxPaging_test.i: src/test/app/AccountTxPaging_test.cpp.i
@@ -10090,7 +10090,7 @@ src/test/app/AccountTxPaging_test.i: src/test/app/AccountTxPaging_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/AccountTxPaging_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/AccountTxPaging_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/AccountTxPaging_test.cpp.i
 .PHONY : src/test/app/AccountTxPaging_test.cpp.i
 
 src/test/app/AccountTxPaging_test.s: src/test/app/AccountTxPaging_test.cpp.s
@@ -10099,7 +10099,7 @@ src/test/app/AccountTxPaging_test.s: src/test/app/AccountTxPaging_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/AccountTxPaging_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/AccountTxPaging_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/AccountTxPaging_test.cpp.s
 .PHONY : src/test/app/AccountTxPaging_test.cpp.s
 
 src/test/app/AmendmentTable_test.o: src/test/app/AmendmentTable_test.cpp.o
@@ -10108,7 +10108,7 @@ src/test/app/AmendmentTable_test.o: src/test/app/AmendmentTable_test.cpp.o
 
 # target to build an object file
 src/test/app/AmendmentTable_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/AmendmentTable_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/AmendmentTable_test.cpp.o
 .PHONY : src/test/app/AmendmentTable_test.cpp.o
 
 src/test/app/AmendmentTable_test.i: src/test/app/AmendmentTable_test.cpp.i
@@ -10117,7 +10117,7 @@ src/test/app/AmendmentTable_test.i: src/test/app/AmendmentTable_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/AmendmentTable_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/AmendmentTable_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/AmendmentTable_test.cpp.i
 .PHONY : src/test/app/AmendmentTable_test.cpp.i
 
 src/test/app/AmendmentTable_test.s: src/test/app/AmendmentTable_test.cpp.s
@@ -10126,7 +10126,7 @@ src/test/app/AmendmentTable_test.s: src/test/app/AmendmentTable_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/AmendmentTable_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/AmendmentTable_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/AmendmentTable_test.cpp.s
 .PHONY : src/test/app/AmendmentTable_test.cpp.s
 
 src/test/app/Check_test.o: src/test/app/Check_test.cpp.o
@@ -10135,7 +10135,7 @@ src/test/app/Check_test.o: src/test/app/Check_test.cpp.o
 
 # target to build an object file
 src/test/app/Check_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Check_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Check_test.cpp.o
 .PHONY : src/test/app/Check_test.cpp.o
 
 src/test/app/Check_test.i: src/test/app/Check_test.cpp.i
@@ -10144,7 +10144,7 @@ src/test/app/Check_test.i: src/test/app/Check_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/Check_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Check_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Check_test.cpp.i
 .PHONY : src/test/app/Check_test.cpp.i
 
 src/test/app/Check_test.s: src/test/app/Check_test.cpp.s
@@ -10153,7 +10153,7 @@ src/test/app/Check_test.s: src/test/app/Check_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/Check_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Check_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Check_test.cpp.s
 .PHONY : src/test/app/Check_test.cpp.s
 
 src/test/app/CrossingLimits_test.o: src/test/app/CrossingLimits_test.cpp.o
@@ -10162,7 +10162,7 @@ src/test/app/CrossingLimits_test.o: src/test/app/CrossingLimits_test.cpp.o
 
 # target to build an object file
 src/test/app/CrossingLimits_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/CrossingLimits_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/CrossingLimits_test.cpp.o
 .PHONY : src/test/app/CrossingLimits_test.cpp.o
 
 src/test/app/CrossingLimits_test.i: src/test/app/CrossingLimits_test.cpp.i
@@ -10171,7 +10171,7 @@ src/test/app/CrossingLimits_test.i: src/test/app/CrossingLimits_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/CrossingLimits_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/CrossingLimits_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/CrossingLimits_test.cpp.i
 .PHONY : src/test/app/CrossingLimits_test.cpp.i
 
 src/test/app/CrossingLimits_test.s: src/test/app/CrossingLimits_test.cpp.s
@@ -10180,7 +10180,7 @@ src/test/app/CrossingLimits_test.s: src/test/app/CrossingLimits_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/CrossingLimits_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/CrossingLimits_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/CrossingLimits_test.cpp.s
 .PHONY : src/test/app/CrossingLimits_test.cpp.s
 
 src/test/app/DeliverMin_test.o: src/test/app/DeliverMin_test.cpp.o
@@ -10189,7 +10189,7 @@ src/test/app/DeliverMin_test.o: src/test/app/DeliverMin_test.cpp.o
 
 # target to build an object file
 src/test/app/DeliverMin_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/DeliverMin_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/DeliverMin_test.cpp.o
 .PHONY : src/test/app/DeliverMin_test.cpp.o
 
 src/test/app/DeliverMin_test.i: src/test/app/DeliverMin_test.cpp.i
@@ -10198,7 +10198,7 @@ src/test/app/DeliverMin_test.i: src/test/app/DeliverMin_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/DeliverMin_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/DeliverMin_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/DeliverMin_test.cpp.i
 .PHONY : src/test/app/DeliverMin_test.cpp.i
 
 src/test/app/DeliverMin_test.s: src/test/app/DeliverMin_test.cpp.s
@@ -10207,7 +10207,7 @@ src/test/app/DeliverMin_test.s: src/test/app/DeliverMin_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/DeliverMin_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/DeliverMin_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/DeliverMin_test.cpp.s
 .PHONY : src/test/app/DeliverMin_test.cpp.s
 
 src/test/app/DepositAuth_test.o: src/test/app/DepositAuth_test.cpp.o
@@ -10216,7 +10216,7 @@ src/test/app/DepositAuth_test.o: src/test/app/DepositAuth_test.cpp.o
 
 # target to build an object file
 src/test/app/DepositAuth_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/DepositAuth_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/DepositAuth_test.cpp.o
 .PHONY : src/test/app/DepositAuth_test.cpp.o
 
 src/test/app/DepositAuth_test.i: src/test/app/DepositAuth_test.cpp.i
@@ -10225,7 +10225,7 @@ src/test/app/DepositAuth_test.i: src/test/app/DepositAuth_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/DepositAuth_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/DepositAuth_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/DepositAuth_test.cpp.i
 .PHONY : src/test/app/DepositAuth_test.cpp.i
 
 src/test/app/DepositAuth_test.s: src/test/app/DepositAuth_test.cpp.s
@@ -10234,7 +10234,7 @@ src/test/app/DepositAuth_test.s: src/test/app/DepositAuth_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/DepositAuth_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/DepositAuth_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/DepositAuth_test.cpp.s
 .PHONY : src/test/app/DepositAuth_test.cpp.s
 
 src/test/app/Discrepancy_test.o: src/test/app/Discrepancy_test.cpp.o
@@ -10243,7 +10243,7 @@ src/test/app/Discrepancy_test.o: src/test/app/Discrepancy_test.cpp.o
 
 # target to build an object file
 src/test/app/Discrepancy_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Discrepancy_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Discrepancy_test.cpp.o
 .PHONY : src/test/app/Discrepancy_test.cpp.o
 
 src/test/app/Discrepancy_test.i: src/test/app/Discrepancy_test.cpp.i
@@ -10252,7 +10252,7 @@ src/test/app/Discrepancy_test.i: src/test/app/Discrepancy_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/Discrepancy_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Discrepancy_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Discrepancy_test.cpp.i
 .PHONY : src/test/app/Discrepancy_test.cpp.i
 
 src/test/app/Discrepancy_test.s: src/test/app/Discrepancy_test.cpp.s
@@ -10261,7 +10261,7 @@ src/test/app/Discrepancy_test.s: src/test/app/Discrepancy_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/Discrepancy_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Discrepancy_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Discrepancy_test.cpp.s
 .PHONY : src/test/app/Discrepancy_test.cpp.s
 
 src/test/app/Escrow_test.o: src/test/app/Escrow_test.cpp.o
@@ -10270,7 +10270,7 @@ src/test/app/Escrow_test.o: src/test/app/Escrow_test.cpp.o
 
 # target to build an object file
 src/test/app/Escrow_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Escrow_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Escrow_test.cpp.o
 .PHONY : src/test/app/Escrow_test.cpp.o
 
 src/test/app/Escrow_test.i: src/test/app/Escrow_test.cpp.i
@@ -10279,7 +10279,7 @@ src/test/app/Escrow_test.i: src/test/app/Escrow_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/Escrow_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Escrow_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Escrow_test.cpp.i
 .PHONY : src/test/app/Escrow_test.cpp.i
 
 src/test/app/Escrow_test.s: src/test/app/Escrow_test.cpp.s
@@ -10288,7 +10288,7 @@ src/test/app/Escrow_test.s: src/test/app/Escrow_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/Escrow_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Escrow_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Escrow_test.cpp.s
 .PHONY : src/test/app/Escrow_test.cpp.s
 
 src/test/app/Flow_test.o: src/test/app/Flow_test.cpp.o
@@ -10297,7 +10297,7 @@ src/test/app/Flow_test.o: src/test/app/Flow_test.cpp.o
 
 # target to build an object file
 src/test/app/Flow_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Flow_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Flow_test.cpp.o
 .PHONY : src/test/app/Flow_test.cpp.o
 
 src/test/app/Flow_test.i: src/test/app/Flow_test.cpp.i
@@ -10306,7 +10306,7 @@ src/test/app/Flow_test.i: src/test/app/Flow_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/Flow_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Flow_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Flow_test.cpp.i
 .PHONY : src/test/app/Flow_test.cpp.i
 
 src/test/app/Flow_test.s: src/test/app/Flow_test.cpp.s
@@ -10315,7 +10315,7 @@ src/test/app/Flow_test.s: src/test/app/Flow_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/Flow_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Flow_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Flow_test.cpp.s
 .PHONY : src/test/app/Flow_test.cpp.s
 
 src/test/app/Freeze_test.o: src/test/app/Freeze_test.cpp.o
@@ -10324,7 +10324,7 @@ src/test/app/Freeze_test.o: src/test/app/Freeze_test.cpp.o
 
 # target to build an object file
 src/test/app/Freeze_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Freeze_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Freeze_test.cpp.o
 .PHONY : src/test/app/Freeze_test.cpp.o
 
 src/test/app/Freeze_test.i: src/test/app/Freeze_test.cpp.i
@@ -10333,7 +10333,7 @@ src/test/app/Freeze_test.i: src/test/app/Freeze_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/Freeze_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Freeze_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Freeze_test.cpp.i
 .PHONY : src/test/app/Freeze_test.cpp.i
 
 src/test/app/Freeze_test.s: src/test/app/Freeze_test.cpp.s
@@ -10342,7 +10342,7 @@ src/test/app/Freeze_test.s: src/test/app/Freeze_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/Freeze_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Freeze_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Freeze_test.cpp.s
 .PHONY : src/test/app/Freeze_test.cpp.s
 
 src/test/app/HashRouter_test.o: src/test/app/HashRouter_test.cpp.o
@@ -10351,7 +10351,7 @@ src/test/app/HashRouter_test.o: src/test/app/HashRouter_test.cpp.o
 
 # target to build an object file
 src/test/app/HashRouter_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/HashRouter_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/HashRouter_test.cpp.o
 .PHONY : src/test/app/HashRouter_test.cpp.o
 
 src/test/app/HashRouter_test.i: src/test/app/HashRouter_test.cpp.i
@@ -10360,7 +10360,7 @@ src/test/app/HashRouter_test.i: src/test/app/HashRouter_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/HashRouter_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/HashRouter_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/HashRouter_test.cpp.i
 .PHONY : src/test/app/HashRouter_test.cpp.i
 
 src/test/app/HashRouter_test.s: src/test/app/HashRouter_test.cpp.s
@@ -10369,7 +10369,7 @@ src/test/app/HashRouter_test.s: src/test/app/HashRouter_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/HashRouter_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/HashRouter_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/HashRouter_test.cpp.s
 .PHONY : src/test/app/HashRouter_test.cpp.s
 
 src/test/app/LedgerHistory_test.o: src/test/app/LedgerHistory_test.cpp.o
@@ -10378,7 +10378,7 @@ src/test/app/LedgerHistory_test.o: src/test/app/LedgerHistory_test.cpp.o
 
 # target to build an object file
 src/test/app/LedgerHistory_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/LedgerHistory_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/LedgerHistory_test.cpp.o
 .PHONY : src/test/app/LedgerHistory_test.cpp.o
 
 src/test/app/LedgerHistory_test.i: src/test/app/LedgerHistory_test.cpp.i
@@ -10387,7 +10387,7 @@ src/test/app/LedgerHistory_test.i: src/test/app/LedgerHistory_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/LedgerHistory_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/LedgerHistory_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/LedgerHistory_test.cpp.i
 .PHONY : src/test/app/LedgerHistory_test.cpp.i
 
 src/test/app/LedgerHistory_test.s: src/test/app/LedgerHistory_test.cpp.s
@@ -10396,7 +10396,7 @@ src/test/app/LedgerHistory_test.s: src/test/app/LedgerHistory_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/LedgerHistory_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/LedgerHistory_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/LedgerHistory_test.cpp.s
 .PHONY : src/test/app/LedgerHistory_test.cpp.s
 
 src/test/app/LedgerLoad_test.o: src/test/app/LedgerLoad_test.cpp.o
@@ -10405,7 +10405,7 @@ src/test/app/LedgerLoad_test.o: src/test/app/LedgerLoad_test.cpp.o
 
 # target to build an object file
 src/test/app/LedgerLoad_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/LedgerLoad_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/LedgerLoad_test.cpp.o
 .PHONY : src/test/app/LedgerLoad_test.cpp.o
 
 src/test/app/LedgerLoad_test.i: src/test/app/LedgerLoad_test.cpp.i
@@ -10414,7 +10414,7 @@ src/test/app/LedgerLoad_test.i: src/test/app/LedgerLoad_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/LedgerLoad_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/LedgerLoad_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/LedgerLoad_test.cpp.i
 .PHONY : src/test/app/LedgerLoad_test.cpp.i
 
 src/test/app/LedgerLoad_test.s: src/test/app/LedgerLoad_test.cpp.s
@@ -10423,7 +10423,7 @@ src/test/app/LedgerLoad_test.s: src/test/app/LedgerLoad_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/LedgerLoad_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/LedgerLoad_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/LedgerLoad_test.cpp.s
 .PHONY : src/test/app/LedgerLoad_test.cpp.s
 
 src/test/app/LoadFeeTrack_test.o: src/test/app/LoadFeeTrack_test.cpp.o
@@ -10432,7 +10432,7 @@ src/test/app/LoadFeeTrack_test.o: src/test/app/LoadFeeTrack_test.cpp.o
 
 # target to build an object file
 src/test/app/LoadFeeTrack_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/LoadFeeTrack_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/LoadFeeTrack_test.cpp.o
 .PHONY : src/test/app/LoadFeeTrack_test.cpp.o
 
 src/test/app/LoadFeeTrack_test.i: src/test/app/LoadFeeTrack_test.cpp.i
@@ -10441,7 +10441,7 @@ src/test/app/LoadFeeTrack_test.i: src/test/app/LoadFeeTrack_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/LoadFeeTrack_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/LoadFeeTrack_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/LoadFeeTrack_test.cpp.i
 .PHONY : src/test/app/LoadFeeTrack_test.cpp.i
 
 src/test/app/LoadFeeTrack_test.s: src/test/app/LoadFeeTrack_test.cpp.s
@@ -10450,7 +10450,7 @@ src/test/app/LoadFeeTrack_test.s: src/test/app/LoadFeeTrack_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/LoadFeeTrack_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/LoadFeeTrack_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/LoadFeeTrack_test.cpp.s
 .PHONY : src/test/app/LoadFeeTrack_test.cpp.s
 
 src/test/app/Manifest_test.o: src/test/app/Manifest_test.cpp.o
@@ -10459,7 +10459,7 @@ src/test/app/Manifest_test.o: src/test/app/Manifest_test.cpp.o
 
 # target to build an object file
 src/test/app/Manifest_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Manifest_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Manifest_test.cpp.o
 .PHONY : src/test/app/Manifest_test.cpp.o
 
 src/test/app/Manifest_test.i: src/test/app/Manifest_test.cpp.i
@@ -10468,7 +10468,7 @@ src/test/app/Manifest_test.i: src/test/app/Manifest_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/Manifest_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Manifest_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Manifest_test.cpp.i
 .PHONY : src/test/app/Manifest_test.cpp.i
 
 src/test/app/Manifest_test.s: src/test/app/Manifest_test.cpp.s
@@ -10477,7 +10477,7 @@ src/test/app/Manifest_test.s: src/test/app/Manifest_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/Manifest_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Manifest_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Manifest_test.cpp.s
 .PHONY : src/test/app/Manifest_test.cpp.s
 
 src/test/app/MultiSign_test.o: src/test/app/MultiSign_test.cpp.o
@@ -10486,7 +10486,7 @@ src/test/app/MultiSign_test.o: src/test/app/MultiSign_test.cpp.o
 
 # target to build an object file
 src/test/app/MultiSign_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/MultiSign_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/MultiSign_test.cpp.o
 .PHONY : src/test/app/MultiSign_test.cpp.o
 
 src/test/app/MultiSign_test.i: src/test/app/MultiSign_test.cpp.i
@@ -10495,7 +10495,7 @@ src/test/app/MultiSign_test.i: src/test/app/MultiSign_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/MultiSign_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/MultiSign_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/MultiSign_test.cpp.i
 .PHONY : src/test/app/MultiSign_test.cpp.i
 
 src/test/app/MultiSign_test.s: src/test/app/MultiSign_test.cpp.s
@@ -10504,7 +10504,7 @@ src/test/app/MultiSign_test.s: src/test/app/MultiSign_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/MultiSign_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/MultiSign_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/MultiSign_test.cpp.s
 .PHONY : src/test/app/MultiSign_test.cpp.s
 
 src/test/app/OfferStream_test.o: src/test/app/OfferStream_test.cpp.o
@@ -10513,7 +10513,7 @@ src/test/app/OfferStream_test.o: src/test/app/OfferStream_test.cpp.o
 
 # target to build an object file
 src/test/app/OfferStream_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/OfferStream_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/OfferStream_test.cpp.o
 .PHONY : src/test/app/OfferStream_test.cpp.o
 
 src/test/app/OfferStream_test.i: src/test/app/OfferStream_test.cpp.i
@@ -10522,7 +10522,7 @@ src/test/app/OfferStream_test.i: src/test/app/OfferStream_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/OfferStream_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/OfferStream_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/OfferStream_test.cpp.i
 .PHONY : src/test/app/OfferStream_test.cpp.i
 
 src/test/app/OfferStream_test.s: src/test/app/OfferStream_test.cpp.s
@@ -10531,7 +10531,7 @@ src/test/app/OfferStream_test.s: src/test/app/OfferStream_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/OfferStream_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/OfferStream_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/OfferStream_test.cpp.s
 .PHONY : src/test/app/OfferStream_test.cpp.s
 
 src/test/app/Offer_test.o: src/test/app/Offer_test.cpp.o
@@ -10540,7 +10540,7 @@ src/test/app/Offer_test.o: src/test/app/Offer_test.cpp.o
 
 # target to build an object file
 src/test/app/Offer_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Offer_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Offer_test.cpp.o
 .PHONY : src/test/app/Offer_test.cpp.o
 
 src/test/app/Offer_test.i: src/test/app/Offer_test.cpp.i
@@ -10549,7 +10549,7 @@ src/test/app/Offer_test.i: src/test/app/Offer_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/Offer_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Offer_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Offer_test.cpp.i
 .PHONY : src/test/app/Offer_test.cpp.i
 
 src/test/app/Offer_test.s: src/test/app/Offer_test.cpp.s
@@ -10558,7 +10558,7 @@ src/test/app/Offer_test.s: src/test/app/Offer_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/Offer_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Offer_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Offer_test.cpp.s
 .PHONY : src/test/app/Offer_test.cpp.s
 
 src/test/app/OversizeMeta_test.o: src/test/app/OversizeMeta_test.cpp.o
@@ -10567,7 +10567,7 @@ src/test/app/OversizeMeta_test.o: src/test/app/OversizeMeta_test.cpp.o
 
 # target to build an object file
 src/test/app/OversizeMeta_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/OversizeMeta_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/OversizeMeta_test.cpp.o
 .PHONY : src/test/app/OversizeMeta_test.cpp.o
 
 src/test/app/OversizeMeta_test.i: src/test/app/OversizeMeta_test.cpp.i
@@ -10576,7 +10576,7 @@ src/test/app/OversizeMeta_test.i: src/test/app/OversizeMeta_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/OversizeMeta_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/OversizeMeta_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/OversizeMeta_test.cpp.i
 .PHONY : src/test/app/OversizeMeta_test.cpp.i
 
 src/test/app/OversizeMeta_test.s: src/test/app/OversizeMeta_test.cpp.s
@@ -10585,7 +10585,7 @@ src/test/app/OversizeMeta_test.s: src/test/app/OversizeMeta_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/OversizeMeta_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/OversizeMeta_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/OversizeMeta_test.cpp.s
 .PHONY : src/test/app/OversizeMeta_test.cpp.s
 
 src/test/app/Path_test.o: src/test/app/Path_test.cpp.o
@@ -10594,7 +10594,7 @@ src/test/app/Path_test.o: src/test/app/Path_test.cpp.o
 
 # target to build an object file
 src/test/app/Path_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Path_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Path_test.cpp.o
 .PHONY : src/test/app/Path_test.cpp.o
 
 src/test/app/Path_test.i: src/test/app/Path_test.cpp.i
@@ -10603,7 +10603,7 @@ src/test/app/Path_test.i: src/test/app/Path_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/Path_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Path_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Path_test.cpp.i
 .PHONY : src/test/app/Path_test.cpp.i
 
 src/test/app/Path_test.s: src/test/app/Path_test.cpp.s
@@ -10612,7 +10612,7 @@ src/test/app/Path_test.s: src/test/app/Path_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/Path_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Path_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Path_test.cpp.s
 .PHONY : src/test/app/Path_test.cpp.s
 
 src/test/app/PayChan_test.o: src/test/app/PayChan_test.cpp.o
@@ -10621,7 +10621,7 @@ src/test/app/PayChan_test.o: src/test/app/PayChan_test.cpp.o
 
 # target to build an object file
 src/test/app/PayChan_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/PayChan_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/PayChan_test.cpp.o
 .PHONY : src/test/app/PayChan_test.cpp.o
 
 src/test/app/PayChan_test.i: src/test/app/PayChan_test.cpp.i
@@ -10630,7 +10630,7 @@ src/test/app/PayChan_test.i: src/test/app/PayChan_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/PayChan_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/PayChan_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/PayChan_test.cpp.i
 .PHONY : src/test/app/PayChan_test.cpp.i
 
 src/test/app/PayChan_test.s: src/test/app/PayChan_test.cpp.s
@@ -10639,7 +10639,7 @@ src/test/app/PayChan_test.s: src/test/app/PayChan_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/PayChan_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/PayChan_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/PayChan_test.cpp.s
 .PHONY : src/test/app/PayChan_test.cpp.s
 
 src/test/app/PayStrand_test.o: src/test/app/PayStrand_test.cpp.o
@@ -10648,7 +10648,7 @@ src/test/app/PayStrand_test.o: src/test/app/PayStrand_test.cpp.o
 
 # target to build an object file
 src/test/app/PayStrand_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/PayStrand_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/PayStrand_test.cpp.o
 .PHONY : src/test/app/PayStrand_test.cpp.o
 
 src/test/app/PayStrand_test.i: src/test/app/PayStrand_test.cpp.i
@@ -10657,7 +10657,7 @@ src/test/app/PayStrand_test.i: src/test/app/PayStrand_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/PayStrand_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/PayStrand_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/PayStrand_test.cpp.i
 .PHONY : src/test/app/PayStrand_test.cpp.i
 
 src/test/app/PayStrand_test.s: src/test/app/PayStrand_test.cpp.s
@@ -10666,7 +10666,7 @@ src/test/app/PayStrand_test.s: src/test/app/PayStrand_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/PayStrand_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/PayStrand_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/PayStrand_test.cpp.s
 .PHONY : src/test/app/PayStrand_test.cpp.s
 
 src/test/app/PseudoTx_test.o: src/test/app/PseudoTx_test.cpp.o
@@ -10675,7 +10675,7 @@ src/test/app/PseudoTx_test.o: src/test/app/PseudoTx_test.cpp.o
 
 # target to build an object file
 src/test/app/PseudoTx_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/PseudoTx_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/PseudoTx_test.cpp.o
 .PHONY : src/test/app/PseudoTx_test.cpp.o
 
 src/test/app/PseudoTx_test.i: src/test/app/PseudoTx_test.cpp.i
@@ -10684,7 +10684,7 @@ src/test/app/PseudoTx_test.i: src/test/app/PseudoTx_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/PseudoTx_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/PseudoTx_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/PseudoTx_test.cpp.i
 .PHONY : src/test/app/PseudoTx_test.cpp.i
 
 src/test/app/PseudoTx_test.s: src/test/app/PseudoTx_test.cpp.s
@@ -10693,7 +10693,7 @@ src/test/app/PseudoTx_test.s: src/test/app/PseudoTx_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/PseudoTx_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/PseudoTx_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/PseudoTx_test.cpp.s
 .PHONY : src/test/app/PseudoTx_test.cpp.s
 
 src/test/app/RCLValidations_test.o: src/test/app/RCLValidations_test.cpp.o
@@ -10702,7 +10702,7 @@ src/test/app/RCLValidations_test.o: src/test/app/RCLValidations_test.cpp.o
 
 # target to build an object file
 src/test/app/RCLValidations_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/RCLValidations_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/RCLValidations_test.cpp.o
 .PHONY : src/test/app/RCLValidations_test.cpp.o
 
 src/test/app/RCLValidations_test.i: src/test/app/RCLValidations_test.cpp.i
@@ -10711,7 +10711,7 @@ src/test/app/RCLValidations_test.i: src/test/app/RCLValidations_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/RCLValidations_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/RCLValidations_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/RCLValidations_test.cpp.i
 .PHONY : src/test/app/RCLValidations_test.cpp.i
 
 src/test/app/RCLValidations_test.s: src/test/app/RCLValidations_test.cpp.s
@@ -10720,7 +10720,7 @@ src/test/app/RCLValidations_test.s: src/test/app/RCLValidations_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/RCLValidations_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/RCLValidations_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/RCLValidations_test.cpp.s
 .PHONY : src/test/app/RCLValidations_test.cpp.s
 
 src/test/app/Regression_test.o: src/test/app/Regression_test.cpp.o
@@ -10729,7 +10729,7 @@ src/test/app/Regression_test.o: src/test/app/Regression_test.cpp.o
 
 # target to build an object file
 src/test/app/Regression_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Regression_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Regression_test.cpp.o
 .PHONY : src/test/app/Regression_test.cpp.o
 
 src/test/app/Regression_test.i: src/test/app/Regression_test.cpp.i
@@ -10738,7 +10738,7 @@ src/test/app/Regression_test.i: src/test/app/Regression_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/Regression_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Regression_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Regression_test.cpp.i
 .PHONY : src/test/app/Regression_test.cpp.i
 
 src/test/app/Regression_test.s: src/test/app/Regression_test.cpp.s
@@ -10747,7 +10747,7 @@ src/test/app/Regression_test.s: src/test/app/Regression_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/Regression_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Regression_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Regression_test.cpp.s
 .PHONY : src/test/app/Regression_test.cpp.s
 
 src/test/app/SHAMapStore_test.o: src/test/app/SHAMapStore_test.cpp.o
@@ -10756,7 +10756,7 @@ src/test/app/SHAMapStore_test.o: src/test/app/SHAMapStore_test.cpp.o
 
 # target to build an object file
 src/test/app/SHAMapStore_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/SHAMapStore_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/SHAMapStore_test.cpp.o
 .PHONY : src/test/app/SHAMapStore_test.cpp.o
 
 src/test/app/SHAMapStore_test.i: src/test/app/SHAMapStore_test.cpp.i
@@ -10765,7 +10765,7 @@ src/test/app/SHAMapStore_test.i: src/test/app/SHAMapStore_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/SHAMapStore_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/SHAMapStore_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/SHAMapStore_test.cpp.i
 .PHONY : src/test/app/SHAMapStore_test.cpp.i
 
 src/test/app/SHAMapStore_test.s: src/test/app/SHAMapStore_test.cpp.s
@@ -10774,7 +10774,7 @@ src/test/app/SHAMapStore_test.s: src/test/app/SHAMapStore_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/SHAMapStore_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/SHAMapStore_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/SHAMapStore_test.cpp.s
 .PHONY : src/test/app/SHAMapStore_test.cpp.s
 
 src/test/app/SetAuth_test.o: src/test/app/SetAuth_test.cpp.o
@@ -10783,7 +10783,7 @@ src/test/app/SetAuth_test.o: src/test/app/SetAuth_test.cpp.o
 
 # target to build an object file
 src/test/app/SetAuth_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/SetAuth_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/SetAuth_test.cpp.o
 .PHONY : src/test/app/SetAuth_test.cpp.o
 
 src/test/app/SetAuth_test.i: src/test/app/SetAuth_test.cpp.i
@@ -10792,7 +10792,7 @@ src/test/app/SetAuth_test.i: src/test/app/SetAuth_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/SetAuth_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/SetAuth_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/SetAuth_test.cpp.i
 .PHONY : src/test/app/SetAuth_test.cpp.i
 
 src/test/app/SetAuth_test.s: src/test/app/SetAuth_test.cpp.s
@@ -10801,7 +10801,7 @@ src/test/app/SetAuth_test.s: src/test/app/SetAuth_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/SetAuth_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/SetAuth_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/SetAuth_test.cpp.s
 .PHONY : src/test/app/SetAuth_test.cpp.s
 
 src/test/app/SetRegularKey_test.o: src/test/app/SetRegularKey_test.cpp.o
@@ -10810,7 +10810,7 @@ src/test/app/SetRegularKey_test.o: src/test/app/SetRegularKey_test.cpp.o
 
 # target to build an object file
 src/test/app/SetRegularKey_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/SetRegularKey_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/SetRegularKey_test.cpp.o
 .PHONY : src/test/app/SetRegularKey_test.cpp.o
 
 src/test/app/SetRegularKey_test.i: src/test/app/SetRegularKey_test.cpp.i
@@ -10819,7 +10819,7 @@ src/test/app/SetRegularKey_test.i: src/test/app/SetRegularKey_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/SetRegularKey_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/SetRegularKey_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/SetRegularKey_test.cpp.i
 .PHONY : src/test/app/SetRegularKey_test.cpp.i
 
 src/test/app/SetRegularKey_test.s: src/test/app/SetRegularKey_test.cpp.s
@@ -10828,7 +10828,7 @@ src/test/app/SetRegularKey_test.s: src/test/app/SetRegularKey_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/SetRegularKey_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/SetRegularKey_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/SetRegularKey_test.cpp.s
 .PHONY : src/test/app/SetRegularKey_test.cpp.s
 
 src/test/app/SetTrust_test.o: src/test/app/SetTrust_test.cpp.o
@@ -10837,7 +10837,7 @@ src/test/app/SetTrust_test.o: src/test/app/SetTrust_test.cpp.o
 
 # target to build an object file
 src/test/app/SetTrust_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/SetTrust_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/SetTrust_test.cpp.o
 .PHONY : src/test/app/SetTrust_test.cpp.o
 
 src/test/app/SetTrust_test.i: src/test/app/SetTrust_test.cpp.i
@@ -10846,7 +10846,7 @@ src/test/app/SetTrust_test.i: src/test/app/SetTrust_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/SetTrust_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/SetTrust_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/SetTrust_test.cpp.i
 .PHONY : src/test/app/SetTrust_test.cpp.i
 
 src/test/app/SetTrust_test.s: src/test/app/SetTrust_test.cpp.s
@@ -10855,7 +10855,7 @@ src/test/app/SetTrust_test.s: src/test/app/SetTrust_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/SetTrust_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/SetTrust_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/SetTrust_test.cpp.s
 .PHONY : src/test/app/SetTrust_test.cpp.s
 
 src/test/app/Taker_test.o: src/test/app/Taker_test.cpp.o
@@ -10864,7 +10864,7 @@ src/test/app/Taker_test.o: src/test/app/Taker_test.cpp.o
 
 # target to build an object file
 src/test/app/Taker_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Taker_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Taker_test.cpp.o
 .PHONY : src/test/app/Taker_test.cpp.o
 
 src/test/app/Taker_test.i: src/test/app/Taker_test.cpp.i
@@ -10873,7 +10873,7 @@ src/test/app/Taker_test.i: src/test/app/Taker_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/Taker_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Taker_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Taker_test.cpp.i
 .PHONY : src/test/app/Taker_test.cpp.i
 
 src/test/app/Taker_test.s: src/test/app/Taker_test.cpp.s
@@ -10882,7 +10882,7 @@ src/test/app/Taker_test.s: src/test/app/Taker_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/Taker_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Taker_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Taker_test.cpp.s
 .PHONY : src/test/app/Taker_test.cpp.s
 
 src/test/app/Ticket_test.o: src/test/app/Ticket_test.cpp.o
@@ -10891,7 +10891,7 @@ src/test/app/Ticket_test.o: src/test/app/Ticket_test.cpp.o
 
 # target to build an object file
 src/test/app/Ticket_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Ticket_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Ticket_test.cpp.o
 .PHONY : src/test/app/Ticket_test.cpp.o
 
 src/test/app/Ticket_test.i: src/test/app/Ticket_test.cpp.i
@@ -10900,7 +10900,7 @@ src/test/app/Ticket_test.i: src/test/app/Ticket_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/Ticket_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Ticket_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Ticket_test.cpp.i
 .PHONY : src/test/app/Ticket_test.cpp.i
 
 src/test/app/Ticket_test.s: src/test/app/Ticket_test.cpp.s
@@ -10909,7 +10909,7 @@ src/test/app/Ticket_test.s: src/test/app/Ticket_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/Ticket_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Ticket_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Ticket_test.cpp.s
 .PHONY : src/test/app/Ticket_test.cpp.s
 
 src/test/app/Transaction_ordering_test.o: src/test/app/Transaction_ordering_test.cpp.o
@@ -10918,7 +10918,7 @@ src/test/app/Transaction_ordering_test.o: src/test/app/Transaction_ordering_test
 
 # target to build an object file
 src/test/app/Transaction_ordering_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Transaction_ordering_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Transaction_ordering_test.cpp.o
 .PHONY : src/test/app/Transaction_ordering_test.cpp.o
 
 src/test/app/Transaction_ordering_test.i: src/test/app/Transaction_ordering_test.cpp.i
@@ -10927,7 +10927,7 @@ src/test/app/Transaction_ordering_test.i: src/test/app/Transaction_ordering_test
 
 # target to preprocess a source file
 src/test/app/Transaction_ordering_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Transaction_ordering_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Transaction_ordering_test.cpp.i
 .PHONY : src/test/app/Transaction_ordering_test.cpp.i
 
 src/test/app/Transaction_ordering_test.s: src/test/app/Transaction_ordering_test.cpp.s
@@ -10936,7 +10936,7 @@ src/test/app/Transaction_ordering_test.s: src/test/app/Transaction_ordering_test
 
 # target to generate assembly for a file
 src/test/app/Transaction_ordering_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/Transaction_ordering_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/Transaction_ordering_test.cpp.s
 .PHONY : src/test/app/Transaction_ordering_test.cpp.s
 
 src/test/app/TrustAndBalance_test.o: src/test/app/TrustAndBalance_test.cpp.o
@@ -10945,7 +10945,7 @@ src/test/app/TrustAndBalance_test.o: src/test/app/TrustAndBalance_test.cpp.o
 
 # target to build an object file
 src/test/app/TrustAndBalance_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/TrustAndBalance_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/TrustAndBalance_test.cpp.o
 .PHONY : src/test/app/TrustAndBalance_test.cpp.o
 
 src/test/app/TrustAndBalance_test.i: src/test/app/TrustAndBalance_test.cpp.i
@@ -10954,7 +10954,7 @@ src/test/app/TrustAndBalance_test.i: src/test/app/TrustAndBalance_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/TrustAndBalance_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/TrustAndBalance_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/TrustAndBalance_test.cpp.i
 .PHONY : src/test/app/TrustAndBalance_test.cpp.i
 
 src/test/app/TrustAndBalance_test.s: src/test/app/TrustAndBalance_test.cpp.s
@@ -10963,7 +10963,7 @@ src/test/app/TrustAndBalance_test.s: src/test/app/TrustAndBalance_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/TrustAndBalance_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/TrustAndBalance_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/TrustAndBalance_test.cpp.s
 .PHONY : src/test/app/TrustAndBalance_test.cpp.s
 
 src/test/app/TxQ_test.o: src/test/app/TxQ_test.cpp.o
@@ -10972,7 +10972,7 @@ src/test/app/TxQ_test.o: src/test/app/TxQ_test.cpp.o
 
 # target to build an object file
 src/test/app/TxQ_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/TxQ_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/TxQ_test.cpp.o
 .PHONY : src/test/app/TxQ_test.cpp.o
 
 src/test/app/TxQ_test.i: src/test/app/TxQ_test.cpp.i
@@ -10981,7 +10981,7 @@ src/test/app/TxQ_test.i: src/test/app/TxQ_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/TxQ_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/TxQ_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/TxQ_test.cpp.i
 .PHONY : src/test/app/TxQ_test.cpp.i
 
 src/test/app/TxQ_test.s: src/test/app/TxQ_test.cpp.s
@@ -10990,7 +10990,7 @@ src/test/app/TxQ_test.s: src/test/app/TxQ_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/TxQ_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/TxQ_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/TxQ_test.cpp.s
 .PHONY : src/test/app/TxQ_test.cpp.s
 
 src/test/app/ValidatorKeys_test.o: src/test/app/ValidatorKeys_test.cpp.o
@@ -10999,7 +10999,7 @@ src/test/app/ValidatorKeys_test.o: src/test/app/ValidatorKeys_test.cpp.o
 
 # target to build an object file
 src/test/app/ValidatorKeys_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/ValidatorKeys_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/ValidatorKeys_test.cpp.o
 .PHONY : src/test/app/ValidatorKeys_test.cpp.o
 
 src/test/app/ValidatorKeys_test.i: src/test/app/ValidatorKeys_test.cpp.i
@@ -11008,7 +11008,7 @@ src/test/app/ValidatorKeys_test.i: src/test/app/ValidatorKeys_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/ValidatorKeys_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/ValidatorKeys_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/ValidatorKeys_test.cpp.i
 .PHONY : src/test/app/ValidatorKeys_test.cpp.i
 
 src/test/app/ValidatorKeys_test.s: src/test/app/ValidatorKeys_test.cpp.s
@@ -11017,7 +11017,7 @@ src/test/app/ValidatorKeys_test.s: src/test/app/ValidatorKeys_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/ValidatorKeys_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/ValidatorKeys_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/ValidatorKeys_test.cpp.s
 .PHONY : src/test/app/ValidatorKeys_test.cpp.s
 
 src/test/app/ValidatorList_test.o: src/test/app/ValidatorList_test.cpp.o
@@ -11026,7 +11026,7 @@ src/test/app/ValidatorList_test.o: src/test/app/ValidatorList_test.cpp.o
 
 # target to build an object file
 src/test/app/ValidatorList_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/ValidatorList_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/ValidatorList_test.cpp.o
 .PHONY : src/test/app/ValidatorList_test.cpp.o
 
 src/test/app/ValidatorList_test.i: src/test/app/ValidatorList_test.cpp.i
@@ -11035,7 +11035,7 @@ src/test/app/ValidatorList_test.i: src/test/app/ValidatorList_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/ValidatorList_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/ValidatorList_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/ValidatorList_test.cpp.i
 .PHONY : src/test/app/ValidatorList_test.cpp.i
 
 src/test/app/ValidatorList_test.s: src/test/app/ValidatorList_test.cpp.s
@@ -11044,7 +11044,7 @@ src/test/app/ValidatorList_test.s: src/test/app/ValidatorList_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/ValidatorList_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/ValidatorList_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/ValidatorList_test.cpp.s
 .PHONY : src/test/app/ValidatorList_test.cpp.s
 
 src/test/app/ValidatorSite_test.o: src/test/app/ValidatorSite_test.cpp.o
@@ -11053,7 +11053,7 @@ src/test/app/ValidatorSite_test.o: src/test/app/ValidatorSite_test.cpp.o
 
 # target to build an object file
 src/test/app/ValidatorSite_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/ValidatorSite_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/ValidatorSite_test.cpp.o
 .PHONY : src/test/app/ValidatorSite_test.cpp.o
 
 src/test/app/ValidatorSite_test.i: src/test/app/ValidatorSite_test.cpp.i
@@ -11062,7 +11062,7 @@ src/test/app/ValidatorSite_test.i: src/test/app/ValidatorSite_test.cpp.i
 
 # target to preprocess a source file
 src/test/app/ValidatorSite_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/ValidatorSite_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/ValidatorSite_test.cpp.i
 .PHONY : src/test/app/ValidatorSite_test.cpp.i
 
 src/test/app/ValidatorSite_test.s: src/test/app/ValidatorSite_test.cpp.s
@@ -11071,7 +11071,7 @@ src/test/app/ValidatorSite_test.s: src/test/app/ValidatorSite_test.cpp.s
 
 # target to generate assembly for a file
 src/test/app/ValidatorSite_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/app/ValidatorSite_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/app/ValidatorSite_test.cpp.s
 .PHONY : src/test/app/ValidatorSite_test.cpp.s
 
 src/test/basics/Buffer_test.o: src/test/basics/Buffer_test.cpp.o
@@ -11080,7 +11080,7 @@ src/test/basics/Buffer_test.o: src/test/basics/Buffer_test.cpp.o
 
 # target to build an object file
 src/test/basics/Buffer_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/Buffer_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/Buffer_test.cpp.o
 .PHONY : src/test/basics/Buffer_test.cpp.o
 
 src/test/basics/Buffer_test.i: src/test/basics/Buffer_test.cpp.i
@@ -11089,7 +11089,7 @@ src/test/basics/Buffer_test.i: src/test/basics/Buffer_test.cpp.i
 
 # target to preprocess a source file
 src/test/basics/Buffer_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/Buffer_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/Buffer_test.cpp.i
 .PHONY : src/test/basics/Buffer_test.cpp.i
 
 src/test/basics/Buffer_test.s: src/test/basics/Buffer_test.cpp.s
@@ -11098,7 +11098,7 @@ src/test/basics/Buffer_test.s: src/test/basics/Buffer_test.cpp.s
 
 # target to generate assembly for a file
 src/test/basics/Buffer_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/Buffer_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/Buffer_test.cpp.s
 .PHONY : src/test/basics/Buffer_test.cpp.s
 
 src/test/basics/CheckLibraryVersions_test.o: src/test/basics/CheckLibraryVersions_test.cpp.o
@@ -11107,7 +11107,7 @@ src/test/basics/CheckLibraryVersions_test.o: src/test/basics/CheckLibraryVersion
 
 # target to build an object file
 src/test/basics/CheckLibraryVersions_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/CheckLibraryVersions_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/CheckLibraryVersions_test.cpp.o
 .PHONY : src/test/basics/CheckLibraryVersions_test.cpp.o
 
 src/test/basics/CheckLibraryVersions_test.i: src/test/basics/CheckLibraryVersions_test.cpp.i
@@ -11116,7 +11116,7 @@ src/test/basics/CheckLibraryVersions_test.i: src/test/basics/CheckLibraryVersion
 
 # target to preprocess a source file
 src/test/basics/CheckLibraryVersions_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/CheckLibraryVersions_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/CheckLibraryVersions_test.cpp.i
 .PHONY : src/test/basics/CheckLibraryVersions_test.cpp.i
 
 src/test/basics/CheckLibraryVersions_test.s: src/test/basics/CheckLibraryVersions_test.cpp.s
@@ -11125,7 +11125,7 @@ src/test/basics/CheckLibraryVersions_test.s: src/test/basics/CheckLibraryVersion
 
 # target to generate assembly for a file
 src/test/basics/CheckLibraryVersions_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/CheckLibraryVersions_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/CheckLibraryVersions_test.cpp.s
 .PHONY : src/test/basics/CheckLibraryVersions_test.cpp.s
 
 src/test/basics/DetectCrash_test.o: src/test/basics/DetectCrash_test.cpp.o
@@ -11134,7 +11134,7 @@ src/test/basics/DetectCrash_test.o: src/test/basics/DetectCrash_test.cpp.o
 
 # target to build an object file
 src/test/basics/DetectCrash_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/DetectCrash_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/DetectCrash_test.cpp.o
 .PHONY : src/test/basics/DetectCrash_test.cpp.o
 
 src/test/basics/DetectCrash_test.i: src/test/basics/DetectCrash_test.cpp.i
@@ -11143,7 +11143,7 @@ src/test/basics/DetectCrash_test.i: src/test/basics/DetectCrash_test.cpp.i
 
 # target to preprocess a source file
 src/test/basics/DetectCrash_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/DetectCrash_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/DetectCrash_test.cpp.i
 .PHONY : src/test/basics/DetectCrash_test.cpp.i
 
 src/test/basics/DetectCrash_test.s: src/test/basics/DetectCrash_test.cpp.s
@@ -11152,7 +11152,7 @@ src/test/basics/DetectCrash_test.s: src/test/basics/DetectCrash_test.cpp.s
 
 # target to generate assembly for a file
 src/test/basics/DetectCrash_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/DetectCrash_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/DetectCrash_test.cpp.s
 .PHONY : src/test/basics/DetectCrash_test.cpp.s
 
 src/test/basics/KeyCache_test.o: src/test/basics/KeyCache_test.cpp.o
@@ -11161,7 +11161,7 @@ src/test/basics/KeyCache_test.o: src/test/basics/KeyCache_test.cpp.o
 
 # target to build an object file
 src/test/basics/KeyCache_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/KeyCache_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/KeyCache_test.cpp.o
 .PHONY : src/test/basics/KeyCache_test.cpp.o
 
 src/test/basics/KeyCache_test.i: src/test/basics/KeyCache_test.cpp.i
@@ -11170,7 +11170,7 @@ src/test/basics/KeyCache_test.i: src/test/basics/KeyCache_test.cpp.i
 
 # target to preprocess a source file
 src/test/basics/KeyCache_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/KeyCache_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/KeyCache_test.cpp.i
 .PHONY : src/test/basics/KeyCache_test.cpp.i
 
 src/test/basics/KeyCache_test.s: src/test/basics/KeyCache_test.cpp.s
@@ -11179,7 +11179,7 @@ src/test/basics/KeyCache_test.s: src/test/basics/KeyCache_test.cpp.s
 
 # target to generate assembly for a file
 src/test/basics/KeyCache_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/KeyCache_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/KeyCache_test.cpp.s
 .PHONY : src/test/basics/KeyCache_test.cpp.s
 
 src/test/basics/PerfLog_test.o: src/test/basics/PerfLog_test.cpp.o
@@ -11188,7 +11188,7 @@ src/test/basics/PerfLog_test.o: src/test/basics/PerfLog_test.cpp.o
 
 # target to build an object file
 src/test/basics/PerfLog_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/PerfLog_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/PerfLog_test.cpp.o
 .PHONY : src/test/basics/PerfLog_test.cpp.o
 
 src/test/basics/PerfLog_test.i: src/test/basics/PerfLog_test.cpp.i
@@ -11197,7 +11197,7 @@ src/test/basics/PerfLog_test.i: src/test/basics/PerfLog_test.cpp.i
 
 # target to preprocess a source file
 src/test/basics/PerfLog_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/PerfLog_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/PerfLog_test.cpp.i
 .PHONY : src/test/basics/PerfLog_test.cpp.i
 
 src/test/basics/PerfLog_test.s: src/test/basics/PerfLog_test.cpp.s
@@ -11206,7 +11206,7 @@ src/test/basics/PerfLog_test.s: src/test/basics/PerfLog_test.cpp.s
 
 # target to generate assembly for a file
 src/test/basics/PerfLog_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/PerfLog_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/PerfLog_test.cpp.s
 .PHONY : src/test/basics/PerfLog_test.cpp.s
 
 src/test/basics/RangeSet_test.o: src/test/basics/RangeSet_test.cpp.o
@@ -11215,7 +11215,7 @@ src/test/basics/RangeSet_test.o: src/test/basics/RangeSet_test.cpp.o
 
 # target to build an object file
 src/test/basics/RangeSet_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/RangeSet_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/RangeSet_test.cpp.o
 .PHONY : src/test/basics/RangeSet_test.cpp.o
 
 src/test/basics/RangeSet_test.i: src/test/basics/RangeSet_test.cpp.i
@@ -11224,7 +11224,7 @@ src/test/basics/RangeSet_test.i: src/test/basics/RangeSet_test.cpp.i
 
 # target to preprocess a source file
 src/test/basics/RangeSet_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/RangeSet_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/RangeSet_test.cpp.i
 .PHONY : src/test/basics/RangeSet_test.cpp.i
 
 src/test/basics/RangeSet_test.s: src/test/basics/RangeSet_test.cpp.s
@@ -11233,7 +11233,7 @@ src/test/basics/RangeSet_test.s: src/test/basics/RangeSet_test.cpp.s
 
 # target to generate assembly for a file
 src/test/basics/RangeSet_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/RangeSet_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/RangeSet_test.cpp.s
 .PHONY : src/test/basics/RangeSet_test.cpp.s
 
 src/test/basics/Slice_test.o: src/test/basics/Slice_test.cpp.o
@@ -11242,7 +11242,7 @@ src/test/basics/Slice_test.o: src/test/basics/Slice_test.cpp.o
 
 # target to build an object file
 src/test/basics/Slice_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/Slice_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/Slice_test.cpp.o
 .PHONY : src/test/basics/Slice_test.cpp.o
 
 src/test/basics/Slice_test.i: src/test/basics/Slice_test.cpp.i
@@ -11251,7 +11251,7 @@ src/test/basics/Slice_test.i: src/test/basics/Slice_test.cpp.i
 
 # target to preprocess a source file
 src/test/basics/Slice_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/Slice_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/Slice_test.cpp.i
 .PHONY : src/test/basics/Slice_test.cpp.i
 
 src/test/basics/Slice_test.s: src/test/basics/Slice_test.cpp.s
@@ -11260,7 +11260,7 @@ src/test/basics/Slice_test.s: src/test/basics/Slice_test.cpp.s
 
 # target to generate assembly for a file
 src/test/basics/Slice_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/Slice_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/Slice_test.cpp.s
 .PHONY : src/test/basics/Slice_test.cpp.s
 
 src/test/basics/StringUtilities_test.o: src/test/basics/StringUtilities_test.cpp.o
@@ -11269,7 +11269,7 @@ src/test/basics/StringUtilities_test.o: src/test/basics/StringUtilities_test.cpp
 
 # target to build an object file
 src/test/basics/StringUtilities_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/StringUtilities_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/StringUtilities_test.cpp.o
 .PHONY : src/test/basics/StringUtilities_test.cpp.o
 
 src/test/basics/StringUtilities_test.i: src/test/basics/StringUtilities_test.cpp.i
@@ -11278,7 +11278,7 @@ src/test/basics/StringUtilities_test.i: src/test/basics/StringUtilities_test.cpp
 
 # target to preprocess a source file
 src/test/basics/StringUtilities_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/StringUtilities_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/StringUtilities_test.cpp.i
 .PHONY : src/test/basics/StringUtilities_test.cpp.i
 
 src/test/basics/StringUtilities_test.s: src/test/basics/StringUtilities_test.cpp.s
@@ -11287,7 +11287,7 @@ src/test/basics/StringUtilities_test.s: src/test/basics/StringUtilities_test.cpp
 
 # target to generate assembly for a file
 src/test/basics/StringUtilities_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/StringUtilities_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/StringUtilities_test.cpp.s
 .PHONY : src/test/basics/StringUtilities_test.cpp.s
 
 src/test/basics/TaggedCache_test.o: src/test/basics/TaggedCache_test.cpp.o
@@ -11296,7 +11296,7 @@ src/test/basics/TaggedCache_test.o: src/test/basics/TaggedCache_test.cpp.o
 
 # target to build an object file
 src/test/basics/TaggedCache_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/TaggedCache_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/TaggedCache_test.cpp.o
 .PHONY : src/test/basics/TaggedCache_test.cpp.o
 
 src/test/basics/TaggedCache_test.i: src/test/basics/TaggedCache_test.cpp.i
@@ -11305,7 +11305,7 @@ src/test/basics/TaggedCache_test.i: src/test/basics/TaggedCache_test.cpp.i
 
 # target to preprocess a source file
 src/test/basics/TaggedCache_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/TaggedCache_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/TaggedCache_test.cpp.i
 .PHONY : src/test/basics/TaggedCache_test.cpp.i
 
 src/test/basics/TaggedCache_test.s: src/test/basics/TaggedCache_test.cpp.s
@@ -11314,7 +11314,7 @@ src/test/basics/TaggedCache_test.s: src/test/basics/TaggedCache_test.cpp.s
 
 # target to generate assembly for a file
 src/test/basics/TaggedCache_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/TaggedCache_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/TaggedCache_test.cpp.s
 .PHONY : src/test/basics/TaggedCache_test.cpp.s
 
 src/test/basics/base_uint_test.o: src/test/basics/base_uint_test.cpp.o
@@ -11323,7 +11323,7 @@ src/test/basics/base_uint_test.o: src/test/basics/base_uint_test.cpp.o
 
 # target to build an object file
 src/test/basics/base_uint_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/base_uint_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/base_uint_test.cpp.o
 .PHONY : src/test/basics/base_uint_test.cpp.o
 
 src/test/basics/base_uint_test.i: src/test/basics/base_uint_test.cpp.i
@@ -11332,7 +11332,7 @@ src/test/basics/base_uint_test.i: src/test/basics/base_uint_test.cpp.i
 
 # target to preprocess a source file
 src/test/basics/base_uint_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/base_uint_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/base_uint_test.cpp.i
 .PHONY : src/test/basics/base_uint_test.cpp.i
 
 src/test/basics/base_uint_test.s: src/test/basics/base_uint_test.cpp.s
@@ -11341,7 +11341,7 @@ src/test/basics/base_uint_test.s: src/test/basics/base_uint_test.cpp.s
 
 # target to generate assembly for a file
 src/test/basics/base_uint_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/base_uint_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/base_uint_test.cpp.s
 .PHONY : src/test/basics/base_uint_test.cpp.s
 
 src/test/basics/contract_test.o: src/test/basics/contract_test.cpp.o
@@ -11350,7 +11350,7 @@ src/test/basics/contract_test.o: src/test/basics/contract_test.cpp.o
 
 # target to build an object file
 src/test/basics/contract_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/contract_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/contract_test.cpp.o
 .PHONY : src/test/basics/contract_test.cpp.o
 
 src/test/basics/contract_test.i: src/test/basics/contract_test.cpp.i
@@ -11359,7 +11359,7 @@ src/test/basics/contract_test.i: src/test/basics/contract_test.cpp.i
 
 # target to preprocess a source file
 src/test/basics/contract_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/contract_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/contract_test.cpp.i
 .PHONY : src/test/basics/contract_test.cpp.i
 
 src/test/basics/contract_test.s: src/test/basics/contract_test.cpp.s
@@ -11368,7 +11368,7 @@ src/test/basics/contract_test.s: src/test/basics/contract_test.cpp.s
 
 # target to generate assembly for a file
 src/test/basics/contract_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/contract_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/contract_test.cpp.s
 .PHONY : src/test/basics/contract_test.cpp.s
 
 src/test/basics/hardened_hash_test.o: src/test/basics/hardened_hash_test.cpp.o
@@ -11377,7 +11377,7 @@ src/test/basics/hardened_hash_test.o: src/test/basics/hardened_hash_test.cpp.o
 
 # target to build an object file
 src/test/basics/hardened_hash_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/hardened_hash_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/hardened_hash_test.cpp.o
 .PHONY : src/test/basics/hardened_hash_test.cpp.o
 
 src/test/basics/hardened_hash_test.i: src/test/basics/hardened_hash_test.cpp.i
@@ -11386,7 +11386,7 @@ src/test/basics/hardened_hash_test.i: src/test/basics/hardened_hash_test.cpp.i
 
 # target to preprocess a source file
 src/test/basics/hardened_hash_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/hardened_hash_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/hardened_hash_test.cpp.i
 .PHONY : src/test/basics/hardened_hash_test.cpp.i
 
 src/test/basics/hardened_hash_test.s: src/test/basics/hardened_hash_test.cpp.s
@@ -11395,7 +11395,7 @@ src/test/basics/hardened_hash_test.s: src/test/basics/hardened_hash_test.cpp.s
 
 # target to generate assembly for a file
 src/test/basics/hardened_hash_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/hardened_hash_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/hardened_hash_test.cpp.s
 .PHONY : src/test/basics/hardened_hash_test.cpp.s
 
 src/test/basics/mulDiv_test.o: src/test/basics/mulDiv_test.cpp.o
@@ -11404,7 +11404,7 @@ src/test/basics/mulDiv_test.o: src/test/basics/mulDiv_test.cpp.o
 
 # target to build an object file
 src/test/basics/mulDiv_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/mulDiv_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/mulDiv_test.cpp.o
 .PHONY : src/test/basics/mulDiv_test.cpp.o
 
 src/test/basics/mulDiv_test.i: src/test/basics/mulDiv_test.cpp.i
@@ -11413,7 +11413,7 @@ src/test/basics/mulDiv_test.i: src/test/basics/mulDiv_test.cpp.i
 
 # target to preprocess a source file
 src/test/basics/mulDiv_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/mulDiv_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/mulDiv_test.cpp.i
 .PHONY : src/test/basics/mulDiv_test.cpp.i
 
 src/test/basics/mulDiv_test.s: src/test/basics/mulDiv_test.cpp.s
@@ -11422,7 +11422,7 @@ src/test/basics/mulDiv_test.s: src/test/basics/mulDiv_test.cpp.s
 
 # target to generate assembly for a file
 src/test/basics/mulDiv_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/mulDiv_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/mulDiv_test.cpp.s
 .PHONY : src/test/basics/mulDiv_test.cpp.s
 
 src/test/basics/tagged_integer_test.o: src/test/basics/tagged_integer_test.cpp.o
@@ -11431,7 +11431,7 @@ src/test/basics/tagged_integer_test.o: src/test/basics/tagged_integer_test.cpp.o
 
 # target to build an object file
 src/test/basics/tagged_integer_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/tagged_integer_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/tagged_integer_test.cpp.o
 .PHONY : src/test/basics/tagged_integer_test.cpp.o
 
 src/test/basics/tagged_integer_test.i: src/test/basics/tagged_integer_test.cpp.i
@@ -11440,7 +11440,7 @@ src/test/basics/tagged_integer_test.i: src/test/basics/tagged_integer_test.cpp.i
 
 # target to preprocess a source file
 src/test/basics/tagged_integer_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/tagged_integer_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/tagged_integer_test.cpp.i
 .PHONY : src/test/basics/tagged_integer_test.cpp.i
 
 src/test/basics/tagged_integer_test.s: src/test/basics/tagged_integer_test.cpp.s
@@ -11449,7 +11449,7 @@ src/test/basics/tagged_integer_test.s: src/test/basics/tagged_integer_test.cpp.s
 
 # target to generate assembly for a file
 src/test/basics/tagged_integer_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/basics/tagged_integer_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/basics/tagged_integer_test.cpp.s
 .PHONY : src/test/basics/tagged_integer_test.cpp.s
 
 src/test/beast/IPEndpoint_test.o: src/test/beast/IPEndpoint_test.cpp.o
@@ -11458,7 +11458,7 @@ src/test/beast/IPEndpoint_test.o: src/test/beast/IPEndpoint_test.cpp.o
 
 # target to build an object file
 src/test/beast/IPEndpoint_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/IPEndpoint_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/IPEndpoint_test.cpp.o
 .PHONY : src/test/beast/IPEndpoint_test.cpp.o
 
 src/test/beast/IPEndpoint_test.i: src/test/beast/IPEndpoint_test.cpp.i
@@ -11467,7 +11467,7 @@ src/test/beast/IPEndpoint_test.i: src/test/beast/IPEndpoint_test.cpp.i
 
 # target to preprocess a source file
 src/test/beast/IPEndpoint_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/IPEndpoint_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/IPEndpoint_test.cpp.i
 .PHONY : src/test/beast/IPEndpoint_test.cpp.i
 
 src/test/beast/IPEndpoint_test.s: src/test/beast/IPEndpoint_test.cpp.s
@@ -11476,7 +11476,7 @@ src/test/beast/IPEndpoint_test.s: src/test/beast/IPEndpoint_test.cpp.s
 
 # target to generate assembly for a file
 src/test/beast/IPEndpoint_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/IPEndpoint_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/IPEndpoint_test.cpp.s
 .PHONY : src/test/beast/IPEndpoint_test.cpp.s
 
 src/test/beast/LexicalCast_test.o: src/test/beast/LexicalCast_test.cpp.o
@@ -11485,7 +11485,7 @@ src/test/beast/LexicalCast_test.o: src/test/beast/LexicalCast_test.cpp.o
 
 # target to build an object file
 src/test/beast/LexicalCast_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/LexicalCast_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/LexicalCast_test.cpp.o
 .PHONY : src/test/beast/LexicalCast_test.cpp.o
 
 src/test/beast/LexicalCast_test.i: src/test/beast/LexicalCast_test.cpp.i
@@ -11494,7 +11494,7 @@ src/test/beast/LexicalCast_test.i: src/test/beast/LexicalCast_test.cpp.i
 
 # target to preprocess a source file
 src/test/beast/LexicalCast_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/LexicalCast_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/LexicalCast_test.cpp.i
 .PHONY : src/test/beast/LexicalCast_test.cpp.i
 
 src/test/beast/LexicalCast_test.s: src/test/beast/LexicalCast_test.cpp.s
@@ -11503,7 +11503,7 @@ src/test/beast/LexicalCast_test.s: src/test/beast/LexicalCast_test.cpp.s
 
 # target to generate assembly for a file
 src/test/beast/LexicalCast_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/LexicalCast_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/LexicalCast_test.cpp.s
 .PHONY : src/test/beast/LexicalCast_test.cpp.s
 
 src/test/beast/SemanticVersion_test.o: src/test/beast/SemanticVersion_test.cpp.o
@@ -11512,7 +11512,7 @@ src/test/beast/SemanticVersion_test.o: src/test/beast/SemanticVersion_test.cpp.o
 
 # target to build an object file
 src/test/beast/SemanticVersion_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/SemanticVersion_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/SemanticVersion_test.cpp.o
 .PHONY : src/test/beast/SemanticVersion_test.cpp.o
 
 src/test/beast/SemanticVersion_test.i: src/test/beast/SemanticVersion_test.cpp.i
@@ -11521,7 +11521,7 @@ src/test/beast/SemanticVersion_test.i: src/test/beast/SemanticVersion_test.cpp.i
 
 # target to preprocess a source file
 src/test/beast/SemanticVersion_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/SemanticVersion_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/SemanticVersion_test.cpp.i
 .PHONY : src/test/beast/SemanticVersion_test.cpp.i
 
 src/test/beast/SemanticVersion_test.s: src/test/beast/SemanticVersion_test.cpp.s
@@ -11530,7 +11530,7 @@ src/test/beast/SemanticVersion_test.s: src/test/beast/SemanticVersion_test.cpp.s
 
 # target to generate assembly for a file
 src/test/beast/SemanticVersion_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/SemanticVersion_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/SemanticVersion_test.cpp.s
 .PHONY : src/test/beast/SemanticVersion_test.cpp.s
 
 src/test/beast/aged_associative_container_test.o: src/test/beast/aged_associative_container_test.cpp.o
@@ -11539,7 +11539,7 @@ src/test/beast/aged_associative_container_test.o: src/test/beast/aged_associativ
 
 # target to build an object file
 src/test/beast/aged_associative_container_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/aged_associative_container_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/aged_associative_container_test.cpp.o
 .PHONY : src/test/beast/aged_associative_container_test.cpp.o
 
 src/test/beast/aged_associative_container_test.i: src/test/beast/aged_associative_container_test.cpp.i
@@ -11548,7 +11548,7 @@ src/test/beast/aged_associative_container_test.i: src/test/beast/aged_associativ
 
 # target to preprocess a source file
 src/test/beast/aged_associative_container_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/aged_associative_container_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/aged_associative_container_test.cpp.i
 .PHONY : src/test/beast/aged_associative_container_test.cpp.i
 
 src/test/beast/aged_associative_container_test.s: src/test/beast/aged_associative_container_test.cpp.s
@@ -11557,7 +11557,7 @@ src/test/beast/aged_associative_container_test.s: src/test/beast/aged_associativ
 
 # target to generate assembly for a file
 src/test/beast/aged_associative_container_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/aged_associative_container_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/aged_associative_container_test.cpp.s
 .PHONY : src/test/beast/aged_associative_container_test.cpp.s
 
 src/test/beast/beast_CurrentThreadName_test.o: src/test/beast/beast_CurrentThreadName_test.cpp.o
@@ -11566,7 +11566,7 @@ src/test/beast/beast_CurrentThreadName_test.o: src/test/beast/beast_CurrentThrea
 
 # target to build an object file
 src/test/beast/beast_CurrentThreadName_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_CurrentThreadName_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_CurrentThreadName_test.cpp.o
 .PHONY : src/test/beast/beast_CurrentThreadName_test.cpp.o
 
 src/test/beast/beast_CurrentThreadName_test.i: src/test/beast/beast_CurrentThreadName_test.cpp.i
@@ -11575,7 +11575,7 @@ src/test/beast/beast_CurrentThreadName_test.i: src/test/beast/beast_CurrentThrea
 
 # target to preprocess a source file
 src/test/beast/beast_CurrentThreadName_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_CurrentThreadName_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_CurrentThreadName_test.cpp.i
 .PHONY : src/test/beast/beast_CurrentThreadName_test.cpp.i
 
 src/test/beast/beast_CurrentThreadName_test.s: src/test/beast/beast_CurrentThreadName_test.cpp.s
@@ -11584,7 +11584,7 @@ src/test/beast/beast_CurrentThreadName_test.s: src/test/beast/beast_CurrentThrea
 
 # target to generate assembly for a file
 src/test/beast/beast_CurrentThreadName_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_CurrentThreadName_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_CurrentThreadName_test.cpp.s
 .PHONY : src/test/beast/beast_CurrentThreadName_test.cpp.s
 
 src/test/beast/beast_Debug_test.o: src/test/beast/beast_Debug_test.cpp.o
@@ -11593,7 +11593,7 @@ src/test/beast/beast_Debug_test.o: src/test/beast/beast_Debug_test.cpp.o
 
 # target to build an object file
 src/test/beast/beast_Debug_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_Debug_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_Debug_test.cpp.o
 .PHONY : src/test/beast/beast_Debug_test.cpp.o
 
 src/test/beast/beast_Debug_test.i: src/test/beast/beast_Debug_test.cpp.i
@@ -11602,7 +11602,7 @@ src/test/beast/beast_Debug_test.i: src/test/beast/beast_Debug_test.cpp.i
 
 # target to preprocess a source file
 src/test/beast/beast_Debug_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_Debug_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_Debug_test.cpp.i
 .PHONY : src/test/beast/beast_Debug_test.cpp.i
 
 src/test/beast/beast_Debug_test.s: src/test/beast/beast_Debug_test.cpp.s
@@ -11611,7 +11611,7 @@ src/test/beast/beast_Debug_test.s: src/test/beast/beast_Debug_test.cpp.s
 
 # target to generate assembly for a file
 src/test/beast/beast_Debug_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_Debug_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_Debug_test.cpp.s
 .PHONY : src/test/beast/beast_Debug_test.cpp.s
 
 src/test/beast/beast_Journal_test.o: src/test/beast/beast_Journal_test.cpp.o
@@ -11620,7 +11620,7 @@ src/test/beast/beast_Journal_test.o: src/test/beast/beast_Journal_test.cpp.o
 
 # target to build an object file
 src/test/beast/beast_Journal_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_Journal_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_Journal_test.cpp.o
 .PHONY : src/test/beast/beast_Journal_test.cpp.o
 
 src/test/beast/beast_Journal_test.i: src/test/beast/beast_Journal_test.cpp.i
@@ -11629,7 +11629,7 @@ src/test/beast/beast_Journal_test.i: src/test/beast/beast_Journal_test.cpp.i
 
 # target to preprocess a source file
 src/test/beast/beast_Journal_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_Journal_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_Journal_test.cpp.i
 .PHONY : src/test/beast/beast_Journal_test.cpp.i
 
 src/test/beast/beast_Journal_test.s: src/test/beast/beast_Journal_test.cpp.s
@@ -11638,7 +11638,7 @@ src/test/beast/beast_Journal_test.s: src/test/beast/beast_Journal_test.cpp.s
 
 # target to generate assembly for a file
 src/test/beast/beast_Journal_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_Journal_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_Journal_test.cpp.s
 .PHONY : src/test/beast/beast_Journal_test.cpp.s
 
 src/test/beast/beast_PropertyStream_test.o: src/test/beast/beast_PropertyStream_test.cpp.o
@@ -11647,7 +11647,7 @@ src/test/beast/beast_PropertyStream_test.o: src/test/beast/beast_PropertyStream_
 
 # target to build an object file
 src/test/beast/beast_PropertyStream_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_PropertyStream_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_PropertyStream_test.cpp.o
 .PHONY : src/test/beast/beast_PropertyStream_test.cpp.o
 
 src/test/beast/beast_PropertyStream_test.i: src/test/beast/beast_PropertyStream_test.cpp.i
@@ -11656,7 +11656,7 @@ src/test/beast/beast_PropertyStream_test.i: src/test/beast/beast_PropertyStream_
 
 # target to preprocess a source file
 src/test/beast/beast_PropertyStream_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_PropertyStream_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_PropertyStream_test.cpp.i
 .PHONY : src/test/beast/beast_PropertyStream_test.cpp.i
 
 src/test/beast/beast_PropertyStream_test.s: src/test/beast/beast_PropertyStream_test.cpp.s
@@ -11665,7 +11665,7 @@ src/test/beast/beast_PropertyStream_test.s: src/test/beast/beast_PropertyStream_
 
 # target to generate assembly for a file
 src/test/beast/beast_PropertyStream_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_PropertyStream_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_PropertyStream_test.cpp.s
 .PHONY : src/test/beast/beast_PropertyStream_test.cpp.s
 
 src/test/beast/beast_Zero_test.o: src/test/beast/beast_Zero_test.cpp.o
@@ -11674,7 +11674,7 @@ src/test/beast/beast_Zero_test.o: src/test/beast/beast_Zero_test.cpp.o
 
 # target to build an object file
 src/test/beast/beast_Zero_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_Zero_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_Zero_test.cpp.o
 .PHONY : src/test/beast/beast_Zero_test.cpp.o
 
 src/test/beast/beast_Zero_test.i: src/test/beast/beast_Zero_test.cpp.i
@@ -11683,7 +11683,7 @@ src/test/beast/beast_Zero_test.i: src/test/beast/beast_Zero_test.cpp.i
 
 # target to preprocess a source file
 src/test/beast/beast_Zero_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_Zero_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_Zero_test.cpp.i
 .PHONY : src/test/beast/beast_Zero_test.cpp.i
 
 src/test/beast/beast_Zero_test.s: src/test/beast/beast_Zero_test.cpp.s
@@ -11692,7 +11692,7 @@ src/test/beast/beast_Zero_test.s: src/test/beast/beast_Zero_test.cpp.s
 
 # target to generate assembly for a file
 src/test/beast/beast_Zero_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_Zero_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_Zero_test.cpp.s
 .PHONY : src/test/beast/beast_Zero_test.cpp.s
 
 src/test/beast/beast_abstract_clock_test.o: src/test/beast/beast_abstract_clock_test.cpp.o
@@ -11701,7 +11701,7 @@ src/test/beast/beast_abstract_clock_test.o: src/test/beast/beast_abstract_clock_
 
 # target to build an object file
 src/test/beast/beast_abstract_clock_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_abstract_clock_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_abstract_clock_test.cpp.o
 .PHONY : src/test/beast/beast_abstract_clock_test.cpp.o
 
 src/test/beast/beast_abstract_clock_test.i: src/test/beast/beast_abstract_clock_test.cpp.i
@@ -11710,7 +11710,7 @@ src/test/beast/beast_abstract_clock_test.i: src/test/beast/beast_abstract_clock_
 
 # target to preprocess a source file
 src/test/beast/beast_abstract_clock_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_abstract_clock_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_abstract_clock_test.cpp.i
 .PHONY : src/test/beast/beast_abstract_clock_test.cpp.i
 
 src/test/beast/beast_abstract_clock_test.s: src/test/beast/beast_abstract_clock_test.cpp.s
@@ -11719,7 +11719,7 @@ src/test/beast/beast_abstract_clock_test.s: src/test/beast/beast_abstract_clock_
 
 # target to generate assembly for a file
 src/test/beast/beast_abstract_clock_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_abstract_clock_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_abstract_clock_test.cpp.s
 .PHONY : src/test/beast/beast_abstract_clock_test.cpp.s
 
 src/test/beast/beast_asio_error_test.o: src/test/beast/beast_asio_error_test.cpp.o
@@ -11728,7 +11728,7 @@ src/test/beast/beast_asio_error_test.o: src/test/beast/beast_asio_error_test.cpp
 
 # target to build an object file
 src/test/beast/beast_asio_error_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_asio_error_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_asio_error_test.cpp.o
 .PHONY : src/test/beast/beast_asio_error_test.cpp.o
 
 src/test/beast/beast_asio_error_test.i: src/test/beast/beast_asio_error_test.cpp.i
@@ -11737,7 +11737,7 @@ src/test/beast/beast_asio_error_test.i: src/test/beast/beast_asio_error_test.cpp
 
 # target to preprocess a source file
 src/test/beast/beast_asio_error_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_asio_error_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_asio_error_test.cpp.i
 .PHONY : src/test/beast/beast_asio_error_test.cpp.i
 
 src/test/beast/beast_asio_error_test.s: src/test/beast/beast_asio_error_test.cpp.s
@@ -11746,7 +11746,7 @@ src/test/beast/beast_asio_error_test.s: src/test/beast/beast_asio_error_test.cpp
 
 # target to generate assembly for a file
 src/test/beast/beast_asio_error_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_asio_error_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_asio_error_test.cpp.s
 .PHONY : src/test/beast/beast_asio_error_test.cpp.s
 
 src/test/beast/beast_basic_seconds_clock_test.o: src/test/beast/beast_basic_seconds_clock_test.cpp.o
@@ -11755,7 +11755,7 @@ src/test/beast/beast_basic_seconds_clock_test.o: src/test/beast/beast_basic_seco
 
 # target to build an object file
 src/test/beast/beast_basic_seconds_clock_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_basic_seconds_clock_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_basic_seconds_clock_test.cpp.o
 .PHONY : src/test/beast/beast_basic_seconds_clock_test.cpp.o
 
 src/test/beast/beast_basic_seconds_clock_test.i: src/test/beast/beast_basic_seconds_clock_test.cpp.i
@@ -11764,7 +11764,7 @@ src/test/beast/beast_basic_seconds_clock_test.i: src/test/beast/beast_basic_seco
 
 # target to preprocess a source file
 src/test/beast/beast_basic_seconds_clock_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_basic_seconds_clock_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_basic_seconds_clock_test.cpp.i
 .PHONY : src/test/beast/beast_basic_seconds_clock_test.cpp.i
 
 src/test/beast/beast_basic_seconds_clock_test.s: src/test/beast/beast_basic_seconds_clock_test.cpp.s
@@ -11773,7 +11773,7 @@ src/test/beast/beast_basic_seconds_clock_test.s: src/test/beast/beast_basic_seco
 
 # target to generate assembly for a file
 src/test/beast/beast_basic_seconds_clock_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_basic_seconds_clock_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_basic_seconds_clock_test.cpp.s
 .PHONY : src/test/beast/beast_basic_seconds_clock_test.cpp.s
 
 src/test/beast/beast_weak_fn_test.o: src/test/beast/beast_weak_fn_test.cpp.o
@@ -11782,7 +11782,7 @@ src/test/beast/beast_weak_fn_test.o: src/test/beast/beast_weak_fn_test.cpp.o
 
 # target to build an object file
 src/test/beast/beast_weak_fn_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_weak_fn_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_weak_fn_test.cpp.o
 .PHONY : src/test/beast/beast_weak_fn_test.cpp.o
 
 src/test/beast/beast_weak_fn_test.i: src/test/beast/beast_weak_fn_test.cpp.i
@@ -11791,7 +11791,7 @@ src/test/beast/beast_weak_fn_test.i: src/test/beast/beast_weak_fn_test.cpp.i
 
 # target to preprocess a source file
 src/test/beast/beast_weak_fn_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_weak_fn_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_weak_fn_test.cpp.i
 .PHONY : src/test/beast/beast_weak_fn_test.cpp.i
 
 src/test/beast/beast_weak_fn_test.s: src/test/beast/beast_weak_fn_test.cpp.s
@@ -11800,7 +11800,7 @@ src/test/beast/beast_weak_fn_test.s: src/test/beast/beast_weak_fn_test.cpp.s
 
 # target to generate assembly for a file
 src/test/beast/beast_weak_fn_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/beast_weak_fn_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/beast_weak_fn_test.cpp.s
 .PHONY : src/test/beast/beast_weak_fn_test.cpp.s
 
 src/test/beast/define_print.o: src/test/beast/define_print.cpp.o
@@ -11809,7 +11809,7 @@ src/test/beast/define_print.o: src/test/beast/define_print.cpp.o
 
 # target to build an object file
 src/test/beast/define_print.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/define_print.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/define_print.cpp.o
 .PHONY : src/test/beast/define_print.cpp.o
 
 src/test/beast/define_print.i: src/test/beast/define_print.cpp.i
@@ -11818,7 +11818,7 @@ src/test/beast/define_print.i: src/test/beast/define_print.cpp.i
 
 # target to preprocess a source file
 src/test/beast/define_print.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/define_print.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/define_print.cpp.i
 .PHONY : src/test/beast/define_print.cpp.i
 
 src/test/beast/define_print.s: src/test/beast/define_print.cpp.s
@@ -11827,7 +11827,7 @@ src/test/beast/define_print.s: src/test/beast/define_print.cpp.s
 
 # target to generate assembly for a file
 src/test/beast/define_print.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/beast/define_print.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/beast/define_print.cpp.s
 .PHONY : src/test/beast/define_print.cpp.s
 
 src/test/conditions/PreimageSha256_test.o: src/test/conditions/PreimageSha256_test.cpp.o
@@ -11836,7 +11836,7 @@ src/test/conditions/PreimageSha256_test.o: src/test/conditions/PreimageSha256_te
 
 # target to build an object file
 src/test/conditions/PreimageSha256_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/conditions/PreimageSha256_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/conditions/PreimageSha256_test.cpp.o
 .PHONY : src/test/conditions/PreimageSha256_test.cpp.o
 
 src/test/conditions/PreimageSha256_test.i: src/test/conditions/PreimageSha256_test.cpp.i
@@ -11845,7 +11845,7 @@ src/test/conditions/PreimageSha256_test.i: src/test/conditions/PreimageSha256_te
 
 # target to preprocess a source file
 src/test/conditions/PreimageSha256_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/conditions/PreimageSha256_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/conditions/PreimageSha256_test.cpp.i
 .PHONY : src/test/conditions/PreimageSha256_test.cpp.i
 
 src/test/conditions/PreimageSha256_test.s: src/test/conditions/PreimageSha256_test.cpp.s
@@ -11854,7 +11854,7 @@ src/test/conditions/PreimageSha256_test.s: src/test/conditions/PreimageSha256_te
 
 # target to generate assembly for a file
 src/test/conditions/PreimageSha256_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/conditions/PreimageSha256_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/conditions/PreimageSha256_test.cpp.s
 .PHONY : src/test/conditions/PreimageSha256_test.cpp.s
 
 src/test/consensus/ByzantineFailureSim_test.o: src/test/consensus/ByzantineFailureSim_test.cpp.o
@@ -11863,7 +11863,7 @@ src/test/consensus/ByzantineFailureSim_test.o: src/test/consensus/ByzantineFailu
 
 # target to build an object file
 src/test/consensus/ByzantineFailureSim_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/ByzantineFailureSim_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/ByzantineFailureSim_test.cpp.o
 .PHONY : src/test/consensus/ByzantineFailureSim_test.cpp.o
 
 src/test/consensus/ByzantineFailureSim_test.i: src/test/consensus/ByzantineFailureSim_test.cpp.i
@@ -11872,7 +11872,7 @@ src/test/consensus/ByzantineFailureSim_test.i: src/test/consensus/ByzantineFailu
 
 # target to preprocess a source file
 src/test/consensus/ByzantineFailureSim_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/ByzantineFailureSim_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/ByzantineFailureSim_test.cpp.i
 .PHONY : src/test/consensus/ByzantineFailureSim_test.cpp.i
 
 src/test/consensus/ByzantineFailureSim_test.s: src/test/consensus/ByzantineFailureSim_test.cpp.s
@@ -11881,7 +11881,7 @@ src/test/consensus/ByzantineFailureSim_test.s: src/test/consensus/ByzantineFailu
 
 # target to generate assembly for a file
 src/test/consensus/ByzantineFailureSim_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/ByzantineFailureSim_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/ByzantineFailureSim_test.cpp.s
 .PHONY : src/test/consensus/ByzantineFailureSim_test.cpp.s
 
 src/test/consensus/Consensus_test.o: src/test/consensus/Consensus_test.cpp.o
@@ -11890,7 +11890,7 @@ src/test/consensus/Consensus_test.o: src/test/consensus/Consensus_test.cpp.o
 
 # target to build an object file
 src/test/consensus/Consensus_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/Consensus_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/Consensus_test.cpp.o
 .PHONY : src/test/consensus/Consensus_test.cpp.o
 
 src/test/consensus/Consensus_test.i: src/test/consensus/Consensus_test.cpp.i
@@ -11899,7 +11899,7 @@ src/test/consensus/Consensus_test.i: src/test/consensus/Consensus_test.cpp.i
 
 # target to preprocess a source file
 src/test/consensus/Consensus_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/Consensus_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/Consensus_test.cpp.i
 .PHONY : src/test/consensus/Consensus_test.cpp.i
 
 src/test/consensus/Consensus_test.s: src/test/consensus/Consensus_test.cpp.s
@@ -11908,7 +11908,7 @@ src/test/consensus/Consensus_test.s: src/test/consensus/Consensus_test.cpp.s
 
 # target to generate assembly for a file
 src/test/consensus/Consensus_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/Consensus_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/Consensus_test.cpp.s
 .PHONY : src/test/consensus/Consensus_test.cpp.s
 
 src/test/consensus/DistributedValidatorsSim_test.o: src/test/consensus/DistributedValidatorsSim_test.cpp.o
@@ -11917,7 +11917,7 @@ src/test/consensus/DistributedValidatorsSim_test.o: src/test/consensus/Distribut
 
 # target to build an object file
 src/test/consensus/DistributedValidatorsSim_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/DistributedValidatorsSim_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/DistributedValidatorsSim_test.cpp.o
 .PHONY : src/test/consensus/DistributedValidatorsSim_test.cpp.o
 
 src/test/consensus/DistributedValidatorsSim_test.i: src/test/consensus/DistributedValidatorsSim_test.cpp.i
@@ -11926,7 +11926,7 @@ src/test/consensus/DistributedValidatorsSim_test.i: src/test/consensus/Distribut
 
 # target to preprocess a source file
 src/test/consensus/DistributedValidatorsSim_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/DistributedValidatorsSim_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/DistributedValidatorsSim_test.cpp.i
 .PHONY : src/test/consensus/DistributedValidatorsSim_test.cpp.i
 
 src/test/consensus/DistributedValidatorsSim_test.s: src/test/consensus/DistributedValidatorsSim_test.cpp.s
@@ -11935,7 +11935,7 @@ src/test/consensus/DistributedValidatorsSim_test.s: src/test/consensus/Distribut
 
 # target to generate assembly for a file
 src/test/consensus/DistributedValidatorsSim_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/DistributedValidatorsSim_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/DistributedValidatorsSim_test.cpp.s
 .PHONY : src/test/consensus/DistributedValidatorsSim_test.cpp.s
 
 src/test/consensus/LedgerTiming_test.o: src/test/consensus/LedgerTiming_test.cpp.o
@@ -11944,7 +11944,7 @@ src/test/consensus/LedgerTiming_test.o: src/test/consensus/LedgerTiming_test.cpp
 
 # target to build an object file
 src/test/consensus/LedgerTiming_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/LedgerTiming_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/LedgerTiming_test.cpp.o
 .PHONY : src/test/consensus/LedgerTiming_test.cpp.o
 
 src/test/consensus/LedgerTiming_test.i: src/test/consensus/LedgerTiming_test.cpp.i
@@ -11953,7 +11953,7 @@ src/test/consensus/LedgerTiming_test.i: src/test/consensus/LedgerTiming_test.cpp
 
 # target to preprocess a source file
 src/test/consensus/LedgerTiming_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/LedgerTiming_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/LedgerTiming_test.cpp.i
 .PHONY : src/test/consensus/LedgerTiming_test.cpp.i
 
 src/test/consensus/LedgerTiming_test.s: src/test/consensus/LedgerTiming_test.cpp.s
@@ -11962,7 +11962,7 @@ src/test/consensus/LedgerTiming_test.s: src/test/consensus/LedgerTiming_test.cpp
 
 # target to generate assembly for a file
 src/test/consensus/LedgerTiming_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/LedgerTiming_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/LedgerTiming_test.cpp.s
 .PHONY : src/test/consensus/LedgerTiming_test.cpp.s
 
 src/test/consensus/LedgerTrie_test.o: src/test/consensus/LedgerTrie_test.cpp.o
@@ -11971,7 +11971,7 @@ src/test/consensus/LedgerTrie_test.o: src/test/consensus/LedgerTrie_test.cpp.o
 
 # target to build an object file
 src/test/consensus/LedgerTrie_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/LedgerTrie_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/LedgerTrie_test.cpp.o
 .PHONY : src/test/consensus/LedgerTrie_test.cpp.o
 
 src/test/consensus/LedgerTrie_test.i: src/test/consensus/LedgerTrie_test.cpp.i
@@ -11980,7 +11980,7 @@ src/test/consensus/LedgerTrie_test.i: src/test/consensus/LedgerTrie_test.cpp.i
 
 # target to preprocess a source file
 src/test/consensus/LedgerTrie_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/LedgerTrie_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/LedgerTrie_test.cpp.i
 .PHONY : src/test/consensus/LedgerTrie_test.cpp.i
 
 src/test/consensus/LedgerTrie_test.s: src/test/consensus/LedgerTrie_test.cpp.s
@@ -11989,7 +11989,7 @@ src/test/consensus/LedgerTrie_test.s: src/test/consensus/LedgerTrie_test.cpp.s
 
 # target to generate assembly for a file
 src/test/consensus/LedgerTrie_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/LedgerTrie_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/LedgerTrie_test.cpp.s
 .PHONY : src/test/consensus/LedgerTrie_test.cpp.s
 
 src/test/consensus/ScaleFreeSim_test.o: src/test/consensus/ScaleFreeSim_test.cpp.o
@@ -11998,7 +11998,7 @@ src/test/consensus/ScaleFreeSim_test.o: src/test/consensus/ScaleFreeSim_test.cpp
 
 # target to build an object file
 src/test/consensus/ScaleFreeSim_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/ScaleFreeSim_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/ScaleFreeSim_test.cpp.o
 .PHONY : src/test/consensus/ScaleFreeSim_test.cpp.o
 
 src/test/consensus/ScaleFreeSim_test.i: src/test/consensus/ScaleFreeSim_test.cpp.i
@@ -12007,7 +12007,7 @@ src/test/consensus/ScaleFreeSim_test.i: src/test/consensus/ScaleFreeSim_test.cpp
 
 # target to preprocess a source file
 src/test/consensus/ScaleFreeSim_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/ScaleFreeSim_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/ScaleFreeSim_test.cpp.i
 .PHONY : src/test/consensus/ScaleFreeSim_test.cpp.i
 
 src/test/consensus/ScaleFreeSim_test.s: src/test/consensus/ScaleFreeSim_test.cpp.s
@@ -12016,7 +12016,7 @@ src/test/consensus/ScaleFreeSim_test.s: src/test/consensus/ScaleFreeSim_test.cpp
 
 # target to generate assembly for a file
 src/test/consensus/ScaleFreeSim_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/ScaleFreeSim_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/ScaleFreeSim_test.cpp.s
 .PHONY : src/test/consensus/ScaleFreeSim_test.cpp.s
 
 src/test/consensus/Validations_test.o: src/test/consensus/Validations_test.cpp.o
@@ -12025,7 +12025,7 @@ src/test/consensus/Validations_test.o: src/test/consensus/Validations_test.cpp.o
 
 # target to build an object file
 src/test/consensus/Validations_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/Validations_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/Validations_test.cpp.o
 .PHONY : src/test/consensus/Validations_test.cpp.o
 
 src/test/consensus/Validations_test.i: src/test/consensus/Validations_test.cpp.i
@@ -12034,7 +12034,7 @@ src/test/consensus/Validations_test.i: src/test/consensus/Validations_test.cpp.i
 
 # target to preprocess a source file
 src/test/consensus/Validations_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/Validations_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/Validations_test.cpp.i
 .PHONY : src/test/consensus/Validations_test.cpp.i
 
 src/test/consensus/Validations_test.s: src/test/consensus/Validations_test.cpp.s
@@ -12043,7 +12043,7 @@ src/test/consensus/Validations_test.s: src/test/consensus/Validations_test.cpp.s
 
 # target to generate assembly for a file
 src/test/consensus/Validations_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/consensus/Validations_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/consensus/Validations_test.cpp.s
 .PHONY : src/test/consensus/Validations_test.cpp.s
 
 src/test/core/ClosureCounter_test.o: src/test/core/ClosureCounter_test.cpp.o
@@ -12052,7 +12052,7 @@ src/test/core/ClosureCounter_test.o: src/test/core/ClosureCounter_test.cpp.o
 
 # target to build an object file
 src/test/core/ClosureCounter_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/ClosureCounter_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/ClosureCounter_test.cpp.o
 .PHONY : src/test/core/ClosureCounter_test.cpp.o
 
 src/test/core/ClosureCounter_test.i: src/test/core/ClosureCounter_test.cpp.i
@@ -12061,7 +12061,7 @@ src/test/core/ClosureCounter_test.i: src/test/core/ClosureCounter_test.cpp.i
 
 # target to preprocess a source file
 src/test/core/ClosureCounter_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/ClosureCounter_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/ClosureCounter_test.cpp.i
 .PHONY : src/test/core/ClosureCounter_test.cpp.i
 
 src/test/core/ClosureCounter_test.s: src/test/core/ClosureCounter_test.cpp.s
@@ -12070,7 +12070,7 @@ src/test/core/ClosureCounter_test.s: src/test/core/ClosureCounter_test.cpp.s
 
 # target to generate assembly for a file
 src/test/core/ClosureCounter_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/ClosureCounter_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/ClosureCounter_test.cpp.s
 .PHONY : src/test/core/ClosureCounter_test.cpp.s
 
 src/test/core/Config_test.o: src/test/core/Config_test.cpp.o
@@ -12079,7 +12079,7 @@ src/test/core/Config_test.o: src/test/core/Config_test.cpp.o
 
 # target to build an object file
 src/test/core/Config_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/Config_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/Config_test.cpp.o
 .PHONY : src/test/core/Config_test.cpp.o
 
 src/test/core/Config_test.i: src/test/core/Config_test.cpp.i
@@ -12088,7 +12088,7 @@ src/test/core/Config_test.i: src/test/core/Config_test.cpp.i
 
 # target to preprocess a source file
 src/test/core/Config_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/Config_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/Config_test.cpp.i
 .PHONY : src/test/core/Config_test.cpp.i
 
 src/test/core/Config_test.s: src/test/core/Config_test.cpp.s
@@ -12097,7 +12097,7 @@ src/test/core/Config_test.s: src/test/core/Config_test.cpp.s
 
 # target to generate assembly for a file
 src/test/core/Config_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/Config_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/Config_test.cpp.s
 .PHONY : src/test/core/Config_test.cpp.s
 
 src/test/core/Coroutine_test.o: src/test/core/Coroutine_test.cpp.o
@@ -12106,7 +12106,7 @@ src/test/core/Coroutine_test.o: src/test/core/Coroutine_test.cpp.o
 
 # target to build an object file
 src/test/core/Coroutine_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/Coroutine_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/Coroutine_test.cpp.o
 .PHONY : src/test/core/Coroutine_test.cpp.o
 
 src/test/core/Coroutine_test.i: src/test/core/Coroutine_test.cpp.i
@@ -12115,7 +12115,7 @@ src/test/core/Coroutine_test.i: src/test/core/Coroutine_test.cpp.i
 
 # target to preprocess a source file
 src/test/core/Coroutine_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/Coroutine_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/Coroutine_test.cpp.i
 .PHONY : src/test/core/Coroutine_test.cpp.i
 
 src/test/core/Coroutine_test.s: src/test/core/Coroutine_test.cpp.s
@@ -12124,7 +12124,7 @@ src/test/core/Coroutine_test.s: src/test/core/Coroutine_test.cpp.s
 
 # target to generate assembly for a file
 src/test/core/Coroutine_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/Coroutine_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/Coroutine_test.cpp.s
 .PHONY : src/test/core/Coroutine_test.cpp.s
 
 src/test/core/CryptoPRNG_test.o: src/test/core/CryptoPRNG_test.cpp.o
@@ -12133,7 +12133,7 @@ src/test/core/CryptoPRNG_test.o: src/test/core/CryptoPRNG_test.cpp.o
 
 # target to build an object file
 src/test/core/CryptoPRNG_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/CryptoPRNG_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/CryptoPRNG_test.cpp.o
 .PHONY : src/test/core/CryptoPRNG_test.cpp.o
 
 src/test/core/CryptoPRNG_test.i: src/test/core/CryptoPRNG_test.cpp.i
@@ -12142,7 +12142,7 @@ src/test/core/CryptoPRNG_test.i: src/test/core/CryptoPRNG_test.cpp.i
 
 # target to preprocess a source file
 src/test/core/CryptoPRNG_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/CryptoPRNG_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/CryptoPRNG_test.cpp.i
 .PHONY : src/test/core/CryptoPRNG_test.cpp.i
 
 src/test/core/CryptoPRNG_test.s: src/test/core/CryptoPRNG_test.cpp.s
@@ -12151,7 +12151,7 @@ src/test/core/CryptoPRNG_test.s: src/test/core/CryptoPRNG_test.cpp.s
 
 # target to generate assembly for a file
 src/test/core/CryptoPRNG_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/CryptoPRNG_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/CryptoPRNG_test.cpp.s
 .PHONY : src/test/core/CryptoPRNG_test.cpp.s
 
 src/test/core/JobQueue_test.o: src/test/core/JobQueue_test.cpp.o
@@ -12160,7 +12160,7 @@ src/test/core/JobQueue_test.o: src/test/core/JobQueue_test.cpp.o
 
 # target to build an object file
 src/test/core/JobQueue_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/JobQueue_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/JobQueue_test.cpp.o
 .PHONY : src/test/core/JobQueue_test.cpp.o
 
 src/test/core/JobQueue_test.i: src/test/core/JobQueue_test.cpp.i
@@ -12169,7 +12169,7 @@ src/test/core/JobQueue_test.i: src/test/core/JobQueue_test.cpp.i
 
 # target to preprocess a source file
 src/test/core/JobQueue_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/JobQueue_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/JobQueue_test.cpp.i
 .PHONY : src/test/core/JobQueue_test.cpp.i
 
 src/test/core/JobQueue_test.s: src/test/core/JobQueue_test.cpp.s
@@ -12178,7 +12178,7 @@ src/test/core/JobQueue_test.s: src/test/core/JobQueue_test.cpp.s
 
 # target to generate assembly for a file
 src/test/core/JobQueue_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/JobQueue_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/JobQueue_test.cpp.s
 .PHONY : src/test/core/JobQueue_test.cpp.s
 
 src/test/core/SociDB_test.o: src/test/core/SociDB_test.cpp.o
@@ -12187,7 +12187,7 @@ src/test/core/SociDB_test.o: src/test/core/SociDB_test.cpp.o
 
 # target to build an object file
 src/test/core/SociDB_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/SociDB_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/SociDB_test.cpp.o
 .PHONY : src/test/core/SociDB_test.cpp.o
 
 src/test/core/SociDB_test.i: src/test/core/SociDB_test.cpp.i
@@ -12196,7 +12196,7 @@ src/test/core/SociDB_test.i: src/test/core/SociDB_test.cpp.i
 
 # target to preprocess a source file
 src/test/core/SociDB_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/SociDB_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/SociDB_test.cpp.i
 .PHONY : src/test/core/SociDB_test.cpp.i
 
 src/test/core/SociDB_test.s: src/test/core/SociDB_test.cpp.s
@@ -12205,7 +12205,7 @@ src/test/core/SociDB_test.s: src/test/core/SociDB_test.cpp.s
 
 # target to generate assembly for a file
 src/test/core/SociDB_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/SociDB_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/SociDB_test.cpp.s
 .PHONY : src/test/core/SociDB_test.cpp.s
 
 src/test/core/Stoppable_test.o: src/test/core/Stoppable_test.cpp.o
@@ -12214,7 +12214,7 @@ src/test/core/Stoppable_test.o: src/test/core/Stoppable_test.cpp.o
 
 # target to build an object file
 src/test/core/Stoppable_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/Stoppable_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/Stoppable_test.cpp.o
 .PHONY : src/test/core/Stoppable_test.cpp.o
 
 src/test/core/Stoppable_test.i: src/test/core/Stoppable_test.cpp.i
@@ -12223,7 +12223,7 @@ src/test/core/Stoppable_test.i: src/test/core/Stoppable_test.cpp.i
 
 # target to preprocess a source file
 src/test/core/Stoppable_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/Stoppable_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/Stoppable_test.cpp.i
 .PHONY : src/test/core/Stoppable_test.cpp.i
 
 src/test/core/Stoppable_test.s: src/test/core/Stoppable_test.cpp.s
@@ -12232,7 +12232,7 @@ src/test/core/Stoppable_test.s: src/test/core/Stoppable_test.cpp.s
 
 # target to generate assembly for a file
 src/test/core/Stoppable_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/Stoppable_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/Stoppable_test.cpp.s
 .PHONY : src/test/core/Stoppable_test.cpp.s
 
 src/test/core/TerminateHandler_test.o: src/test/core/TerminateHandler_test.cpp.o
@@ -12241,7 +12241,7 @@ src/test/core/TerminateHandler_test.o: src/test/core/TerminateHandler_test.cpp.o
 
 # target to build an object file
 src/test/core/TerminateHandler_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/TerminateHandler_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/TerminateHandler_test.cpp.o
 .PHONY : src/test/core/TerminateHandler_test.cpp.o
 
 src/test/core/TerminateHandler_test.i: src/test/core/TerminateHandler_test.cpp.i
@@ -12250,7 +12250,7 @@ src/test/core/TerminateHandler_test.i: src/test/core/TerminateHandler_test.cpp.i
 
 # target to preprocess a source file
 src/test/core/TerminateHandler_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/TerminateHandler_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/TerminateHandler_test.cpp.i
 .PHONY : src/test/core/TerminateHandler_test.cpp.i
 
 src/test/core/TerminateHandler_test.s: src/test/core/TerminateHandler_test.cpp.s
@@ -12259,7 +12259,7 @@ src/test/core/TerminateHandler_test.s: src/test/core/TerminateHandler_test.cpp.s
 
 # target to generate assembly for a file
 src/test/core/TerminateHandler_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/TerminateHandler_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/TerminateHandler_test.cpp.s
 .PHONY : src/test/core/TerminateHandler_test.cpp.s
 
 src/test/core/Workers_test.o: src/test/core/Workers_test.cpp.o
@@ -12268,7 +12268,7 @@ src/test/core/Workers_test.o: src/test/core/Workers_test.cpp.o
 
 # target to build an object file
 src/test/core/Workers_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/Workers_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/Workers_test.cpp.o
 .PHONY : src/test/core/Workers_test.cpp.o
 
 src/test/core/Workers_test.i: src/test/core/Workers_test.cpp.i
@@ -12277,7 +12277,7 @@ src/test/core/Workers_test.i: src/test/core/Workers_test.cpp.i
 
 # target to preprocess a source file
 src/test/core/Workers_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/Workers_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/Workers_test.cpp.i
 .PHONY : src/test/core/Workers_test.cpp.i
 
 src/test/core/Workers_test.s: src/test/core/Workers_test.cpp.s
@@ -12286,7 +12286,7 @@ src/test/core/Workers_test.s: src/test/core/Workers_test.cpp.s
 
 # target to generate assembly for a file
 src/test/core/Workers_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/core/Workers_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/core/Workers_test.cpp.s
 .PHONY : src/test/core/Workers_test.cpp.s
 
 src/test/csf/BasicNetwork_test.o: src/test/csf/BasicNetwork_test.cpp.o
@@ -12295,7 +12295,7 @@ src/test/csf/BasicNetwork_test.o: src/test/csf/BasicNetwork_test.cpp.o
 
 # target to build an object file
 src/test/csf/BasicNetwork_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/BasicNetwork_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/BasicNetwork_test.cpp.o
 .PHONY : src/test/csf/BasicNetwork_test.cpp.o
 
 src/test/csf/BasicNetwork_test.i: src/test/csf/BasicNetwork_test.cpp.i
@@ -12304,7 +12304,7 @@ src/test/csf/BasicNetwork_test.i: src/test/csf/BasicNetwork_test.cpp.i
 
 # target to preprocess a source file
 src/test/csf/BasicNetwork_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/BasicNetwork_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/BasicNetwork_test.cpp.i
 .PHONY : src/test/csf/BasicNetwork_test.cpp.i
 
 src/test/csf/BasicNetwork_test.s: src/test/csf/BasicNetwork_test.cpp.s
@@ -12313,7 +12313,7 @@ src/test/csf/BasicNetwork_test.s: src/test/csf/BasicNetwork_test.cpp.s
 
 # target to generate assembly for a file
 src/test/csf/BasicNetwork_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/BasicNetwork_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/BasicNetwork_test.cpp.s
 .PHONY : src/test/csf/BasicNetwork_test.cpp.s
 
 src/test/csf/Digraph_test.o: src/test/csf/Digraph_test.cpp.o
@@ -12322,7 +12322,7 @@ src/test/csf/Digraph_test.o: src/test/csf/Digraph_test.cpp.o
 
 # target to build an object file
 src/test/csf/Digraph_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/Digraph_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/Digraph_test.cpp.o
 .PHONY : src/test/csf/Digraph_test.cpp.o
 
 src/test/csf/Digraph_test.i: src/test/csf/Digraph_test.cpp.i
@@ -12331,7 +12331,7 @@ src/test/csf/Digraph_test.i: src/test/csf/Digraph_test.cpp.i
 
 # target to preprocess a source file
 src/test/csf/Digraph_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/Digraph_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/Digraph_test.cpp.i
 .PHONY : src/test/csf/Digraph_test.cpp.i
 
 src/test/csf/Digraph_test.s: src/test/csf/Digraph_test.cpp.s
@@ -12340,7 +12340,7 @@ src/test/csf/Digraph_test.s: src/test/csf/Digraph_test.cpp.s
 
 # target to generate assembly for a file
 src/test/csf/Digraph_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/Digraph_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/Digraph_test.cpp.s
 .PHONY : src/test/csf/Digraph_test.cpp.s
 
 src/test/csf/Histogram_test.o: src/test/csf/Histogram_test.cpp.o
@@ -12349,7 +12349,7 @@ src/test/csf/Histogram_test.o: src/test/csf/Histogram_test.cpp.o
 
 # target to build an object file
 src/test/csf/Histogram_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/Histogram_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/Histogram_test.cpp.o
 .PHONY : src/test/csf/Histogram_test.cpp.o
 
 src/test/csf/Histogram_test.i: src/test/csf/Histogram_test.cpp.i
@@ -12358,7 +12358,7 @@ src/test/csf/Histogram_test.i: src/test/csf/Histogram_test.cpp.i
 
 # target to preprocess a source file
 src/test/csf/Histogram_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/Histogram_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/Histogram_test.cpp.i
 .PHONY : src/test/csf/Histogram_test.cpp.i
 
 src/test/csf/Histogram_test.s: src/test/csf/Histogram_test.cpp.s
@@ -12367,7 +12367,7 @@ src/test/csf/Histogram_test.s: src/test/csf/Histogram_test.cpp.s
 
 # target to generate assembly for a file
 src/test/csf/Histogram_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/Histogram_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/Histogram_test.cpp.s
 .PHONY : src/test/csf/Histogram_test.cpp.s
 
 src/test/csf/Scheduler_test.o: src/test/csf/Scheduler_test.cpp.o
@@ -12376,7 +12376,7 @@ src/test/csf/Scheduler_test.o: src/test/csf/Scheduler_test.cpp.o
 
 # target to build an object file
 src/test/csf/Scheduler_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/Scheduler_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/Scheduler_test.cpp.o
 .PHONY : src/test/csf/Scheduler_test.cpp.o
 
 src/test/csf/Scheduler_test.i: src/test/csf/Scheduler_test.cpp.i
@@ -12385,7 +12385,7 @@ src/test/csf/Scheduler_test.i: src/test/csf/Scheduler_test.cpp.i
 
 # target to preprocess a source file
 src/test/csf/Scheduler_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/Scheduler_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/Scheduler_test.cpp.i
 .PHONY : src/test/csf/Scheduler_test.cpp.i
 
 src/test/csf/Scheduler_test.s: src/test/csf/Scheduler_test.cpp.s
@@ -12394,7 +12394,7 @@ src/test/csf/Scheduler_test.s: src/test/csf/Scheduler_test.cpp.s
 
 # target to generate assembly for a file
 src/test/csf/Scheduler_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/Scheduler_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/Scheduler_test.cpp.s
 .PHONY : src/test/csf/Scheduler_test.cpp.s
 
 src/test/csf/impl/Sim.o: src/test/csf/impl/Sim.cpp.o
@@ -12403,7 +12403,7 @@ src/test/csf/impl/Sim.o: src/test/csf/impl/Sim.cpp.o
 
 # target to build an object file
 src/test/csf/impl/Sim.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/impl/Sim.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/impl/Sim.cpp.o
 .PHONY : src/test/csf/impl/Sim.cpp.o
 
 src/test/csf/impl/Sim.i: src/test/csf/impl/Sim.cpp.i
@@ -12412,7 +12412,7 @@ src/test/csf/impl/Sim.i: src/test/csf/impl/Sim.cpp.i
 
 # target to preprocess a source file
 src/test/csf/impl/Sim.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/impl/Sim.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/impl/Sim.cpp.i
 .PHONY : src/test/csf/impl/Sim.cpp.i
 
 src/test/csf/impl/Sim.s: src/test/csf/impl/Sim.cpp.s
@@ -12421,7 +12421,7 @@ src/test/csf/impl/Sim.s: src/test/csf/impl/Sim.cpp.s
 
 # target to generate assembly for a file
 src/test/csf/impl/Sim.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/impl/Sim.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/impl/Sim.cpp.s
 .PHONY : src/test/csf/impl/Sim.cpp.s
 
 src/test/csf/impl/ledgers.o: src/test/csf/impl/ledgers.cpp.o
@@ -12430,7 +12430,7 @@ src/test/csf/impl/ledgers.o: src/test/csf/impl/ledgers.cpp.o
 
 # target to build an object file
 src/test/csf/impl/ledgers.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/impl/ledgers.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/impl/ledgers.cpp.o
 .PHONY : src/test/csf/impl/ledgers.cpp.o
 
 src/test/csf/impl/ledgers.i: src/test/csf/impl/ledgers.cpp.i
@@ -12439,7 +12439,7 @@ src/test/csf/impl/ledgers.i: src/test/csf/impl/ledgers.cpp.i
 
 # target to preprocess a source file
 src/test/csf/impl/ledgers.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/impl/ledgers.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/impl/ledgers.cpp.i
 .PHONY : src/test/csf/impl/ledgers.cpp.i
 
 src/test/csf/impl/ledgers.s: src/test/csf/impl/ledgers.cpp.s
@@ -12448,7 +12448,7 @@ src/test/csf/impl/ledgers.s: src/test/csf/impl/ledgers.cpp.s
 
 # target to generate assembly for a file
 src/test/csf/impl/ledgers.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/csf/impl/ledgers.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/csf/impl/ledgers.cpp.s
 .PHONY : src/test/csf/impl/ledgers.cpp.s
 
 src/test/json/Object_test.o: src/test/json/Object_test.cpp.o
@@ -12457,7 +12457,7 @@ src/test/json/Object_test.o: src/test/json/Object_test.cpp.o
 
 # target to build an object file
 src/test/json/Object_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/json/Object_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/json/Object_test.cpp.o
 .PHONY : src/test/json/Object_test.cpp.o
 
 src/test/json/Object_test.i: src/test/json/Object_test.cpp.i
@@ -12466,7 +12466,7 @@ src/test/json/Object_test.i: src/test/json/Object_test.cpp.i
 
 # target to preprocess a source file
 src/test/json/Object_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/json/Object_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/json/Object_test.cpp.i
 .PHONY : src/test/json/Object_test.cpp.i
 
 src/test/json/Object_test.s: src/test/json/Object_test.cpp.s
@@ -12475,7 +12475,7 @@ src/test/json/Object_test.s: src/test/json/Object_test.cpp.s
 
 # target to generate assembly for a file
 src/test/json/Object_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/json/Object_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/json/Object_test.cpp.s
 .PHONY : src/test/json/Object_test.cpp.s
 
 src/test/json/Output_test.o: src/test/json/Output_test.cpp.o
@@ -12484,7 +12484,7 @@ src/test/json/Output_test.o: src/test/json/Output_test.cpp.o
 
 # target to build an object file
 src/test/json/Output_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/json/Output_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/json/Output_test.cpp.o
 .PHONY : src/test/json/Output_test.cpp.o
 
 src/test/json/Output_test.i: src/test/json/Output_test.cpp.i
@@ -12493,7 +12493,7 @@ src/test/json/Output_test.i: src/test/json/Output_test.cpp.i
 
 # target to preprocess a source file
 src/test/json/Output_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/json/Output_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/json/Output_test.cpp.i
 .PHONY : src/test/json/Output_test.cpp.i
 
 src/test/json/Output_test.s: src/test/json/Output_test.cpp.s
@@ -12502,7 +12502,7 @@ src/test/json/Output_test.s: src/test/json/Output_test.cpp.s
 
 # target to generate assembly for a file
 src/test/json/Output_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/json/Output_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/json/Output_test.cpp.s
 .PHONY : src/test/json/Output_test.cpp.s
 
 src/test/json/Writer_test.o: src/test/json/Writer_test.cpp.o
@@ -12511,7 +12511,7 @@ src/test/json/Writer_test.o: src/test/json/Writer_test.cpp.o
 
 # target to build an object file
 src/test/json/Writer_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/json/Writer_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/json/Writer_test.cpp.o
 .PHONY : src/test/json/Writer_test.cpp.o
 
 src/test/json/Writer_test.i: src/test/json/Writer_test.cpp.i
@@ -12520,7 +12520,7 @@ src/test/json/Writer_test.i: src/test/json/Writer_test.cpp.i
 
 # target to preprocess a source file
 src/test/json/Writer_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/json/Writer_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/json/Writer_test.cpp.i
 .PHONY : src/test/json/Writer_test.cpp.i
 
 src/test/json/Writer_test.s: src/test/json/Writer_test.cpp.s
@@ -12529,7 +12529,7 @@ src/test/json/Writer_test.s: src/test/json/Writer_test.cpp.s
 
 # target to generate assembly for a file
 src/test/json/Writer_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/json/Writer_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/json/Writer_test.cpp.s
 .PHONY : src/test/json/Writer_test.cpp.s
 
 src/test/json/json_value_test.o: src/test/json/json_value_test.cpp.o
@@ -12538,7 +12538,7 @@ src/test/json/json_value_test.o: src/test/json/json_value_test.cpp.o
 
 # target to build an object file
 src/test/json/json_value_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/json/json_value_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/json/json_value_test.cpp.o
 .PHONY : src/test/json/json_value_test.cpp.o
 
 src/test/json/json_value_test.i: src/test/json/json_value_test.cpp.i
@@ -12547,7 +12547,7 @@ src/test/json/json_value_test.i: src/test/json/json_value_test.cpp.i
 
 # target to preprocess a source file
 src/test/json/json_value_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/json/json_value_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/json/json_value_test.cpp.i
 .PHONY : src/test/json/json_value_test.cpp.i
 
 src/test/json/json_value_test.s: src/test/json/json_value_test.cpp.s
@@ -12556,7 +12556,7 @@ src/test/json/json_value_test.s: src/test/json/json_value_test.cpp.s
 
 # target to generate assembly for a file
 src/test/json/json_value_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/json/json_value_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/json/json_value_test.cpp.s
 .PHONY : src/test/json/json_value_test.cpp.s
 
 src/test/jtx/Env_test.o: src/test/jtx/Env_test.cpp.o
@@ -12565,7 +12565,7 @@ src/test/jtx/Env_test.o: src/test/jtx/Env_test.cpp.o
 
 # target to build an object file
 src/test/jtx/Env_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/Env_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/Env_test.cpp.o
 .PHONY : src/test/jtx/Env_test.cpp.o
 
 src/test/jtx/Env_test.i: src/test/jtx/Env_test.cpp.i
@@ -12574,7 +12574,7 @@ src/test/jtx/Env_test.i: src/test/jtx/Env_test.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/Env_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/Env_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/Env_test.cpp.i
 .PHONY : src/test/jtx/Env_test.cpp.i
 
 src/test/jtx/Env_test.s: src/test/jtx/Env_test.cpp.s
@@ -12583,7 +12583,7 @@ src/test/jtx/Env_test.s: src/test/jtx/Env_test.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/Env_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/Env_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/Env_test.cpp.s
 .PHONY : src/test/jtx/Env_test.cpp.s
 
 src/test/jtx/WSClient_test.o: src/test/jtx/WSClient_test.cpp.o
@@ -12592,7 +12592,7 @@ src/test/jtx/WSClient_test.o: src/test/jtx/WSClient_test.cpp.o
 
 # target to build an object file
 src/test/jtx/WSClient_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/WSClient_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/WSClient_test.cpp.o
 .PHONY : src/test/jtx/WSClient_test.cpp.o
 
 src/test/jtx/WSClient_test.i: src/test/jtx/WSClient_test.cpp.i
@@ -12601,7 +12601,7 @@ src/test/jtx/WSClient_test.i: src/test/jtx/WSClient_test.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/WSClient_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/WSClient_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/WSClient_test.cpp.i
 .PHONY : src/test/jtx/WSClient_test.cpp.i
 
 src/test/jtx/WSClient_test.s: src/test/jtx/WSClient_test.cpp.s
@@ -12610,7 +12610,7 @@ src/test/jtx/WSClient_test.s: src/test/jtx/WSClient_test.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/WSClient_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/WSClient_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/WSClient_test.cpp.s
 .PHONY : src/test/jtx/WSClient_test.cpp.s
 
 src/test/jtx/impl/Account.o: src/test/jtx/impl/Account.cpp.o
@@ -12619,7 +12619,7 @@ src/test/jtx/impl/Account.o: src/test/jtx/impl/Account.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/Account.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/Account.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/Account.cpp.o
 .PHONY : src/test/jtx/impl/Account.cpp.o
 
 src/test/jtx/impl/Account.i: src/test/jtx/impl/Account.cpp.i
@@ -12628,7 +12628,7 @@ src/test/jtx/impl/Account.i: src/test/jtx/impl/Account.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/Account.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/Account.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/Account.cpp.i
 .PHONY : src/test/jtx/impl/Account.cpp.i
 
 src/test/jtx/impl/Account.s: src/test/jtx/impl/Account.cpp.s
@@ -12637,7 +12637,7 @@ src/test/jtx/impl/Account.s: src/test/jtx/impl/Account.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/Account.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/Account.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/Account.cpp.s
 .PHONY : src/test/jtx/impl/Account.cpp.s
 
 src/test/jtx/impl/Env.o: src/test/jtx/impl/Env.cpp.o
@@ -12646,7 +12646,7 @@ src/test/jtx/impl/Env.o: src/test/jtx/impl/Env.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/Env.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/Env.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/Env.cpp.o
 .PHONY : src/test/jtx/impl/Env.cpp.o
 
 src/test/jtx/impl/Env.i: src/test/jtx/impl/Env.cpp.i
@@ -12655,7 +12655,7 @@ src/test/jtx/impl/Env.i: src/test/jtx/impl/Env.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/Env.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/Env.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/Env.cpp.i
 .PHONY : src/test/jtx/impl/Env.cpp.i
 
 src/test/jtx/impl/Env.s: src/test/jtx/impl/Env.cpp.s
@@ -12664,7 +12664,7 @@ src/test/jtx/impl/Env.s: src/test/jtx/impl/Env.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/Env.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/Env.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/Env.cpp.s
 .PHONY : src/test/jtx/impl/Env.cpp.s
 
 src/test/jtx/impl/JSONRPCClient.o: src/test/jtx/impl/JSONRPCClient.cpp.o
@@ -12673,7 +12673,7 @@ src/test/jtx/impl/JSONRPCClient.o: src/test/jtx/impl/JSONRPCClient.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/JSONRPCClient.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/JSONRPCClient.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/JSONRPCClient.cpp.o
 .PHONY : src/test/jtx/impl/JSONRPCClient.cpp.o
 
 src/test/jtx/impl/JSONRPCClient.i: src/test/jtx/impl/JSONRPCClient.cpp.i
@@ -12682,7 +12682,7 @@ src/test/jtx/impl/JSONRPCClient.i: src/test/jtx/impl/JSONRPCClient.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/JSONRPCClient.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/JSONRPCClient.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/JSONRPCClient.cpp.i
 .PHONY : src/test/jtx/impl/JSONRPCClient.cpp.i
 
 src/test/jtx/impl/JSONRPCClient.s: src/test/jtx/impl/JSONRPCClient.cpp.s
@@ -12691,7 +12691,7 @@ src/test/jtx/impl/JSONRPCClient.s: src/test/jtx/impl/JSONRPCClient.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/JSONRPCClient.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/JSONRPCClient.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/JSONRPCClient.cpp.s
 .PHONY : src/test/jtx/impl/JSONRPCClient.cpp.s
 
 src/test/jtx/impl/ManualTimeKeeper.o: src/test/jtx/impl/ManualTimeKeeper.cpp.o
@@ -12700,7 +12700,7 @@ src/test/jtx/impl/ManualTimeKeeper.o: src/test/jtx/impl/ManualTimeKeeper.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/ManualTimeKeeper.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/ManualTimeKeeper.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/ManualTimeKeeper.cpp.o
 .PHONY : src/test/jtx/impl/ManualTimeKeeper.cpp.o
 
 src/test/jtx/impl/ManualTimeKeeper.i: src/test/jtx/impl/ManualTimeKeeper.cpp.i
@@ -12709,7 +12709,7 @@ src/test/jtx/impl/ManualTimeKeeper.i: src/test/jtx/impl/ManualTimeKeeper.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/ManualTimeKeeper.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/ManualTimeKeeper.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/ManualTimeKeeper.cpp.i
 .PHONY : src/test/jtx/impl/ManualTimeKeeper.cpp.i
 
 src/test/jtx/impl/ManualTimeKeeper.s: src/test/jtx/impl/ManualTimeKeeper.cpp.s
@@ -12718,7 +12718,7 @@ src/test/jtx/impl/ManualTimeKeeper.s: src/test/jtx/impl/ManualTimeKeeper.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/ManualTimeKeeper.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/ManualTimeKeeper.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/ManualTimeKeeper.cpp.s
 .PHONY : src/test/jtx/impl/ManualTimeKeeper.cpp.s
 
 src/test/jtx/impl/WSClient.o: src/test/jtx/impl/WSClient.cpp.o
@@ -12727,7 +12727,7 @@ src/test/jtx/impl/WSClient.o: src/test/jtx/impl/WSClient.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/WSClient.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/WSClient.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/WSClient.cpp.o
 .PHONY : src/test/jtx/impl/WSClient.cpp.o
 
 src/test/jtx/impl/WSClient.i: src/test/jtx/impl/WSClient.cpp.i
@@ -12736,7 +12736,7 @@ src/test/jtx/impl/WSClient.i: src/test/jtx/impl/WSClient.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/WSClient.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/WSClient.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/WSClient.cpp.i
 .PHONY : src/test/jtx/impl/WSClient.cpp.i
 
 src/test/jtx/impl/WSClient.s: src/test/jtx/impl/WSClient.cpp.s
@@ -12745,7 +12745,7 @@ src/test/jtx/impl/WSClient.s: src/test/jtx/impl/WSClient.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/WSClient.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/WSClient.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/WSClient.cpp.s
 .PHONY : src/test/jtx/impl/WSClient.cpp.s
 
 src/test/jtx/impl/amount.o: src/test/jtx/impl/amount.cpp.o
@@ -12754,7 +12754,7 @@ src/test/jtx/impl/amount.o: src/test/jtx/impl/amount.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/amount.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/amount.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/amount.cpp.o
 .PHONY : src/test/jtx/impl/amount.cpp.o
 
 src/test/jtx/impl/amount.i: src/test/jtx/impl/amount.cpp.i
@@ -12763,7 +12763,7 @@ src/test/jtx/impl/amount.i: src/test/jtx/impl/amount.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/amount.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/amount.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/amount.cpp.i
 .PHONY : src/test/jtx/impl/amount.cpp.i
 
 src/test/jtx/impl/amount.s: src/test/jtx/impl/amount.cpp.s
@@ -12772,7 +12772,7 @@ src/test/jtx/impl/amount.s: src/test/jtx/impl/amount.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/amount.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/amount.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/amount.cpp.s
 .PHONY : src/test/jtx/impl/amount.cpp.s
 
 src/test/jtx/impl/balance.o: src/test/jtx/impl/balance.cpp.o
@@ -12781,7 +12781,7 @@ src/test/jtx/impl/balance.o: src/test/jtx/impl/balance.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/balance.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/balance.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/balance.cpp.o
 .PHONY : src/test/jtx/impl/balance.cpp.o
 
 src/test/jtx/impl/balance.i: src/test/jtx/impl/balance.cpp.i
@@ -12790,7 +12790,7 @@ src/test/jtx/impl/balance.i: src/test/jtx/impl/balance.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/balance.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/balance.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/balance.cpp.i
 .PHONY : src/test/jtx/impl/balance.cpp.i
 
 src/test/jtx/impl/balance.s: src/test/jtx/impl/balance.cpp.s
@@ -12799,7 +12799,7 @@ src/test/jtx/impl/balance.s: src/test/jtx/impl/balance.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/balance.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/balance.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/balance.cpp.s
 .PHONY : src/test/jtx/impl/balance.cpp.s
 
 src/test/jtx/impl/delivermin.o: src/test/jtx/impl/delivermin.cpp.o
@@ -12808,7 +12808,7 @@ src/test/jtx/impl/delivermin.o: src/test/jtx/impl/delivermin.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/delivermin.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/delivermin.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/delivermin.cpp.o
 .PHONY : src/test/jtx/impl/delivermin.cpp.o
 
 src/test/jtx/impl/delivermin.i: src/test/jtx/impl/delivermin.cpp.i
@@ -12817,7 +12817,7 @@ src/test/jtx/impl/delivermin.i: src/test/jtx/impl/delivermin.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/delivermin.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/delivermin.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/delivermin.cpp.i
 .PHONY : src/test/jtx/impl/delivermin.cpp.i
 
 src/test/jtx/impl/delivermin.s: src/test/jtx/impl/delivermin.cpp.s
@@ -12826,7 +12826,7 @@ src/test/jtx/impl/delivermin.s: src/test/jtx/impl/delivermin.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/delivermin.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/delivermin.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/delivermin.cpp.s
 .PHONY : src/test/jtx/impl/delivermin.cpp.s
 
 src/test/jtx/impl/envconfig.o: src/test/jtx/impl/envconfig.cpp.o
@@ -12835,7 +12835,7 @@ src/test/jtx/impl/envconfig.o: src/test/jtx/impl/envconfig.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/envconfig.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/envconfig.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/envconfig.cpp.o
 .PHONY : src/test/jtx/impl/envconfig.cpp.o
 
 src/test/jtx/impl/envconfig.i: src/test/jtx/impl/envconfig.cpp.i
@@ -12844,7 +12844,7 @@ src/test/jtx/impl/envconfig.i: src/test/jtx/impl/envconfig.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/envconfig.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/envconfig.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/envconfig.cpp.i
 .PHONY : src/test/jtx/impl/envconfig.cpp.i
 
 src/test/jtx/impl/envconfig.s: src/test/jtx/impl/envconfig.cpp.s
@@ -12853,7 +12853,7 @@ src/test/jtx/impl/envconfig.s: src/test/jtx/impl/envconfig.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/envconfig.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/envconfig.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/envconfig.cpp.s
 .PHONY : src/test/jtx/impl/envconfig.cpp.s
 
 src/test/jtx/impl/fee.o: src/test/jtx/impl/fee.cpp.o
@@ -12862,7 +12862,7 @@ src/test/jtx/impl/fee.o: src/test/jtx/impl/fee.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/fee.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/fee.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/fee.cpp.o
 .PHONY : src/test/jtx/impl/fee.cpp.o
 
 src/test/jtx/impl/fee.i: src/test/jtx/impl/fee.cpp.i
@@ -12871,7 +12871,7 @@ src/test/jtx/impl/fee.i: src/test/jtx/impl/fee.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/fee.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/fee.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/fee.cpp.i
 .PHONY : src/test/jtx/impl/fee.cpp.i
 
 src/test/jtx/impl/fee.s: src/test/jtx/impl/fee.cpp.s
@@ -12880,7 +12880,7 @@ src/test/jtx/impl/fee.s: src/test/jtx/impl/fee.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/fee.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/fee.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/fee.cpp.s
 .PHONY : src/test/jtx/impl/fee.cpp.s
 
 src/test/jtx/impl/flags.o: src/test/jtx/impl/flags.cpp.o
@@ -12889,7 +12889,7 @@ src/test/jtx/impl/flags.o: src/test/jtx/impl/flags.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/flags.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/flags.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/flags.cpp.o
 .PHONY : src/test/jtx/impl/flags.cpp.o
 
 src/test/jtx/impl/flags.i: src/test/jtx/impl/flags.cpp.i
@@ -12898,7 +12898,7 @@ src/test/jtx/impl/flags.i: src/test/jtx/impl/flags.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/flags.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/flags.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/flags.cpp.i
 .PHONY : src/test/jtx/impl/flags.cpp.i
 
 src/test/jtx/impl/flags.s: src/test/jtx/impl/flags.cpp.s
@@ -12907,7 +12907,7 @@ src/test/jtx/impl/flags.s: src/test/jtx/impl/flags.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/flags.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/flags.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/flags.cpp.s
 .PHONY : src/test/jtx/impl/flags.cpp.s
 
 src/test/jtx/impl/jtx_json.o: src/test/jtx/impl/jtx_json.cpp.o
@@ -12916,7 +12916,7 @@ src/test/jtx/impl/jtx_json.o: src/test/jtx/impl/jtx_json.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/jtx_json.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/jtx_json.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/jtx_json.cpp.o
 .PHONY : src/test/jtx/impl/jtx_json.cpp.o
 
 src/test/jtx/impl/jtx_json.i: src/test/jtx/impl/jtx_json.cpp.i
@@ -12925,7 +12925,7 @@ src/test/jtx/impl/jtx_json.i: src/test/jtx/impl/jtx_json.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/jtx_json.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/jtx_json.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/jtx_json.cpp.i
 .PHONY : src/test/jtx/impl/jtx_json.cpp.i
 
 src/test/jtx/impl/jtx_json.s: src/test/jtx/impl/jtx_json.cpp.s
@@ -12934,7 +12934,7 @@ src/test/jtx/impl/jtx_json.s: src/test/jtx/impl/jtx_json.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/jtx_json.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/jtx_json.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/jtx_json.cpp.s
 .PHONY : src/test/jtx/impl/jtx_json.cpp.s
 
 src/test/jtx/impl/memo.o: src/test/jtx/impl/memo.cpp.o
@@ -12943,7 +12943,7 @@ src/test/jtx/impl/memo.o: src/test/jtx/impl/memo.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/memo.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/memo.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/memo.cpp.o
 .PHONY : src/test/jtx/impl/memo.cpp.o
 
 src/test/jtx/impl/memo.i: src/test/jtx/impl/memo.cpp.i
@@ -12952,7 +12952,7 @@ src/test/jtx/impl/memo.i: src/test/jtx/impl/memo.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/memo.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/memo.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/memo.cpp.i
 .PHONY : src/test/jtx/impl/memo.cpp.i
 
 src/test/jtx/impl/memo.s: src/test/jtx/impl/memo.cpp.s
@@ -12961,7 +12961,7 @@ src/test/jtx/impl/memo.s: src/test/jtx/impl/memo.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/memo.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/memo.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/memo.cpp.s
 .PHONY : src/test/jtx/impl/memo.cpp.s
 
 src/test/jtx/impl/multisign.o: src/test/jtx/impl/multisign.cpp.o
@@ -12970,7 +12970,7 @@ src/test/jtx/impl/multisign.o: src/test/jtx/impl/multisign.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/multisign.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/multisign.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/multisign.cpp.o
 .PHONY : src/test/jtx/impl/multisign.cpp.o
 
 src/test/jtx/impl/multisign.i: src/test/jtx/impl/multisign.cpp.i
@@ -12979,7 +12979,7 @@ src/test/jtx/impl/multisign.i: src/test/jtx/impl/multisign.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/multisign.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/multisign.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/multisign.cpp.i
 .PHONY : src/test/jtx/impl/multisign.cpp.i
 
 src/test/jtx/impl/multisign.s: src/test/jtx/impl/multisign.cpp.s
@@ -12988,7 +12988,7 @@ src/test/jtx/impl/multisign.s: src/test/jtx/impl/multisign.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/multisign.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/multisign.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/multisign.cpp.s
 .PHONY : src/test/jtx/impl/multisign.cpp.s
 
 src/test/jtx/impl/offer.o: src/test/jtx/impl/offer.cpp.o
@@ -12997,7 +12997,7 @@ src/test/jtx/impl/offer.o: src/test/jtx/impl/offer.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/offer.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/offer.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/offer.cpp.o
 .PHONY : src/test/jtx/impl/offer.cpp.o
 
 src/test/jtx/impl/offer.i: src/test/jtx/impl/offer.cpp.i
@@ -13006,7 +13006,7 @@ src/test/jtx/impl/offer.i: src/test/jtx/impl/offer.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/offer.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/offer.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/offer.cpp.i
 .PHONY : src/test/jtx/impl/offer.cpp.i
 
 src/test/jtx/impl/offer.s: src/test/jtx/impl/offer.cpp.s
@@ -13015,7 +13015,7 @@ src/test/jtx/impl/offer.s: src/test/jtx/impl/offer.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/offer.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/offer.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/offer.cpp.s
 .PHONY : src/test/jtx/impl/offer.cpp.s
 
 src/test/jtx/impl/owners.o: src/test/jtx/impl/owners.cpp.o
@@ -13024,7 +13024,7 @@ src/test/jtx/impl/owners.o: src/test/jtx/impl/owners.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/owners.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/owners.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/owners.cpp.o
 .PHONY : src/test/jtx/impl/owners.cpp.o
 
 src/test/jtx/impl/owners.i: src/test/jtx/impl/owners.cpp.i
@@ -13033,7 +13033,7 @@ src/test/jtx/impl/owners.i: src/test/jtx/impl/owners.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/owners.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/owners.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/owners.cpp.i
 .PHONY : src/test/jtx/impl/owners.cpp.i
 
 src/test/jtx/impl/owners.s: src/test/jtx/impl/owners.cpp.s
@@ -13042,7 +13042,7 @@ src/test/jtx/impl/owners.s: src/test/jtx/impl/owners.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/owners.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/owners.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/owners.cpp.s
 .PHONY : src/test/jtx/impl/owners.cpp.s
 
 src/test/jtx/impl/paths.o: src/test/jtx/impl/paths.cpp.o
@@ -13051,7 +13051,7 @@ src/test/jtx/impl/paths.o: src/test/jtx/impl/paths.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/paths.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/paths.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/paths.cpp.o
 .PHONY : src/test/jtx/impl/paths.cpp.o
 
 src/test/jtx/impl/paths.i: src/test/jtx/impl/paths.cpp.i
@@ -13060,7 +13060,7 @@ src/test/jtx/impl/paths.i: src/test/jtx/impl/paths.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/paths.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/paths.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/paths.cpp.i
 .PHONY : src/test/jtx/impl/paths.cpp.i
 
 src/test/jtx/impl/paths.s: src/test/jtx/impl/paths.cpp.s
@@ -13069,7 +13069,7 @@ src/test/jtx/impl/paths.s: src/test/jtx/impl/paths.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/paths.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/paths.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/paths.cpp.s
 .PHONY : src/test/jtx/impl/paths.cpp.s
 
 src/test/jtx/impl/pay.o: src/test/jtx/impl/pay.cpp.o
@@ -13078,7 +13078,7 @@ src/test/jtx/impl/pay.o: src/test/jtx/impl/pay.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/pay.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/pay.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/pay.cpp.o
 .PHONY : src/test/jtx/impl/pay.cpp.o
 
 src/test/jtx/impl/pay.i: src/test/jtx/impl/pay.cpp.i
@@ -13087,7 +13087,7 @@ src/test/jtx/impl/pay.i: src/test/jtx/impl/pay.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/pay.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/pay.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/pay.cpp.i
 .PHONY : src/test/jtx/impl/pay.cpp.i
 
 src/test/jtx/impl/pay.s: src/test/jtx/impl/pay.cpp.s
@@ -13096,7 +13096,7 @@ src/test/jtx/impl/pay.s: src/test/jtx/impl/pay.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/pay.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/pay.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/pay.cpp.s
 .PHONY : src/test/jtx/impl/pay.cpp.s
 
 src/test/jtx/impl/quality2.o: src/test/jtx/impl/quality2.cpp.o
@@ -13105,7 +13105,7 @@ src/test/jtx/impl/quality2.o: src/test/jtx/impl/quality2.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/quality2.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/quality2.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/quality2.cpp.o
 .PHONY : src/test/jtx/impl/quality2.cpp.o
 
 src/test/jtx/impl/quality2.i: src/test/jtx/impl/quality2.cpp.i
@@ -13114,7 +13114,7 @@ src/test/jtx/impl/quality2.i: src/test/jtx/impl/quality2.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/quality2.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/quality2.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/quality2.cpp.i
 .PHONY : src/test/jtx/impl/quality2.cpp.i
 
 src/test/jtx/impl/quality2.s: src/test/jtx/impl/quality2.cpp.s
@@ -13123,7 +13123,7 @@ src/test/jtx/impl/quality2.s: src/test/jtx/impl/quality2.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/quality2.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/quality2.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/quality2.cpp.s
 .PHONY : src/test/jtx/impl/quality2.cpp.s
 
 src/test/jtx/impl/rate.o: src/test/jtx/impl/rate.cpp.o
@@ -13132,7 +13132,7 @@ src/test/jtx/impl/rate.o: src/test/jtx/impl/rate.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/rate.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/rate.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/rate.cpp.o
 .PHONY : src/test/jtx/impl/rate.cpp.o
 
 src/test/jtx/impl/rate.i: src/test/jtx/impl/rate.cpp.i
@@ -13141,7 +13141,7 @@ src/test/jtx/impl/rate.i: src/test/jtx/impl/rate.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/rate.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/rate.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/rate.cpp.i
 .PHONY : src/test/jtx/impl/rate.cpp.i
 
 src/test/jtx/impl/rate.s: src/test/jtx/impl/rate.cpp.s
@@ -13150,7 +13150,7 @@ src/test/jtx/impl/rate.s: src/test/jtx/impl/rate.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/rate.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/rate.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/rate.cpp.s
 .PHONY : src/test/jtx/impl/rate.cpp.s
 
 src/test/jtx/impl/regkey.o: src/test/jtx/impl/regkey.cpp.o
@@ -13159,7 +13159,7 @@ src/test/jtx/impl/regkey.o: src/test/jtx/impl/regkey.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/regkey.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/regkey.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/regkey.cpp.o
 .PHONY : src/test/jtx/impl/regkey.cpp.o
 
 src/test/jtx/impl/regkey.i: src/test/jtx/impl/regkey.cpp.i
@@ -13168,7 +13168,7 @@ src/test/jtx/impl/regkey.i: src/test/jtx/impl/regkey.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/regkey.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/regkey.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/regkey.cpp.i
 .PHONY : src/test/jtx/impl/regkey.cpp.i
 
 src/test/jtx/impl/regkey.s: src/test/jtx/impl/regkey.cpp.s
@@ -13177,7 +13177,7 @@ src/test/jtx/impl/regkey.s: src/test/jtx/impl/regkey.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/regkey.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/regkey.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/regkey.cpp.s
 .PHONY : src/test/jtx/impl/regkey.cpp.s
 
 src/test/jtx/impl/sendmax.o: src/test/jtx/impl/sendmax.cpp.o
@@ -13186,7 +13186,7 @@ src/test/jtx/impl/sendmax.o: src/test/jtx/impl/sendmax.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/sendmax.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/sendmax.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/sendmax.cpp.o
 .PHONY : src/test/jtx/impl/sendmax.cpp.o
 
 src/test/jtx/impl/sendmax.i: src/test/jtx/impl/sendmax.cpp.i
@@ -13195,7 +13195,7 @@ src/test/jtx/impl/sendmax.i: src/test/jtx/impl/sendmax.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/sendmax.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/sendmax.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/sendmax.cpp.i
 .PHONY : src/test/jtx/impl/sendmax.cpp.i
 
 src/test/jtx/impl/sendmax.s: src/test/jtx/impl/sendmax.cpp.s
@@ -13204,7 +13204,7 @@ src/test/jtx/impl/sendmax.s: src/test/jtx/impl/sendmax.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/sendmax.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/sendmax.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/sendmax.cpp.s
 .PHONY : src/test/jtx/impl/sendmax.cpp.s
 
 src/test/jtx/impl/seq.o: src/test/jtx/impl/seq.cpp.o
@@ -13213,7 +13213,7 @@ src/test/jtx/impl/seq.o: src/test/jtx/impl/seq.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/seq.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/seq.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/seq.cpp.o
 .PHONY : src/test/jtx/impl/seq.cpp.o
 
 src/test/jtx/impl/seq.i: src/test/jtx/impl/seq.cpp.i
@@ -13222,7 +13222,7 @@ src/test/jtx/impl/seq.i: src/test/jtx/impl/seq.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/seq.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/seq.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/seq.cpp.i
 .PHONY : src/test/jtx/impl/seq.cpp.i
 
 src/test/jtx/impl/seq.s: src/test/jtx/impl/seq.cpp.s
@@ -13231,7 +13231,7 @@ src/test/jtx/impl/seq.s: src/test/jtx/impl/seq.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/seq.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/seq.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/seq.cpp.s
 .PHONY : src/test/jtx/impl/seq.cpp.s
 
 src/test/jtx/impl/sig.o: src/test/jtx/impl/sig.cpp.o
@@ -13240,7 +13240,7 @@ src/test/jtx/impl/sig.o: src/test/jtx/impl/sig.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/sig.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/sig.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/sig.cpp.o
 .PHONY : src/test/jtx/impl/sig.cpp.o
 
 src/test/jtx/impl/sig.i: src/test/jtx/impl/sig.cpp.i
@@ -13249,7 +13249,7 @@ src/test/jtx/impl/sig.i: src/test/jtx/impl/sig.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/sig.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/sig.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/sig.cpp.i
 .PHONY : src/test/jtx/impl/sig.cpp.i
 
 src/test/jtx/impl/sig.s: src/test/jtx/impl/sig.cpp.s
@@ -13258,7 +13258,7 @@ src/test/jtx/impl/sig.s: src/test/jtx/impl/sig.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/sig.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/sig.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/sig.cpp.s
 .PHONY : src/test/jtx/impl/sig.cpp.s
 
 src/test/jtx/impl/tag.o: src/test/jtx/impl/tag.cpp.o
@@ -13267,7 +13267,7 @@ src/test/jtx/impl/tag.o: src/test/jtx/impl/tag.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/tag.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/tag.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/tag.cpp.o
 .PHONY : src/test/jtx/impl/tag.cpp.o
 
 src/test/jtx/impl/tag.i: src/test/jtx/impl/tag.cpp.i
@@ -13276,7 +13276,7 @@ src/test/jtx/impl/tag.i: src/test/jtx/impl/tag.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/tag.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/tag.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/tag.cpp.i
 .PHONY : src/test/jtx/impl/tag.cpp.i
 
 src/test/jtx/impl/tag.s: src/test/jtx/impl/tag.cpp.s
@@ -13285,7 +13285,7 @@ src/test/jtx/impl/tag.s: src/test/jtx/impl/tag.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/tag.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/tag.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/tag.cpp.s
 .PHONY : src/test/jtx/impl/tag.cpp.s
 
 src/test/jtx/impl/ticket.o: src/test/jtx/impl/ticket.cpp.o
@@ -13294,7 +13294,7 @@ src/test/jtx/impl/ticket.o: src/test/jtx/impl/ticket.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/ticket.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/ticket.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/ticket.cpp.o
 .PHONY : src/test/jtx/impl/ticket.cpp.o
 
 src/test/jtx/impl/ticket.i: src/test/jtx/impl/ticket.cpp.i
@@ -13303,7 +13303,7 @@ src/test/jtx/impl/ticket.i: src/test/jtx/impl/ticket.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/ticket.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/ticket.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/ticket.cpp.i
 .PHONY : src/test/jtx/impl/ticket.cpp.i
 
 src/test/jtx/impl/ticket.s: src/test/jtx/impl/ticket.cpp.s
@@ -13312,7 +13312,7 @@ src/test/jtx/impl/ticket.s: src/test/jtx/impl/ticket.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/ticket.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/ticket.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/ticket.cpp.s
 .PHONY : src/test/jtx/impl/ticket.cpp.s
 
 src/test/jtx/impl/trust.o: src/test/jtx/impl/trust.cpp.o
@@ -13321,7 +13321,7 @@ src/test/jtx/impl/trust.o: src/test/jtx/impl/trust.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/trust.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/trust.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/trust.cpp.o
 .PHONY : src/test/jtx/impl/trust.cpp.o
 
 src/test/jtx/impl/trust.i: src/test/jtx/impl/trust.cpp.i
@@ -13330,7 +13330,7 @@ src/test/jtx/impl/trust.i: src/test/jtx/impl/trust.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/trust.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/trust.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/trust.cpp.i
 .PHONY : src/test/jtx/impl/trust.cpp.i
 
 src/test/jtx/impl/trust.s: src/test/jtx/impl/trust.cpp.s
@@ -13339,7 +13339,7 @@ src/test/jtx/impl/trust.s: src/test/jtx/impl/trust.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/trust.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/trust.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/trust.cpp.s
 .PHONY : src/test/jtx/impl/trust.cpp.s
 
 src/test/jtx/impl/txflags.o: src/test/jtx/impl/txflags.cpp.o
@@ -13348,7 +13348,7 @@ src/test/jtx/impl/txflags.o: src/test/jtx/impl/txflags.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/txflags.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/txflags.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/txflags.cpp.o
 .PHONY : src/test/jtx/impl/txflags.cpp.o
 
 src/test/jtx/impl/txflags.i: src/test/jtx/impl/txflags.cpp.i
@@ -13357,7 +13357,7 @@ src/test/jtx/impl/txflags.i: src/test/jtx/impl/txflags.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/txflags.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/txflags.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/txflags.cpp.i
 .PHONY : src/test/jtx/impl/txflags.cpp.i
 
 src/test/jtx/impl/txflags.s: src/test/jtx/impl/txflags.cpp.s
@@ -13366,7 +13366,7 @@ src/test/jtx/impl/txflags.s: src/test/jtx/impl/txflags.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/txflags.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/txflags.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/txflags.cpp.s
 .PHONY : src/test/jtx/impl/txflags.cpp.s
 
 src/test/jtx/impl/utility.o: src/test/jtx/impl/utility.cpp.o
@@ -13375,7 +13375,7 @@ src/test/jtx/impl/utility.o: src/test/jtx/impl/utility.cpp.o
 
 # target to build an object file
 src/test/jtx/impl/utility.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/utility.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/utility.cpp.o
 .PHONY : src/test/jtx/impl/utility.cpp.o
 
 src/test/jtx/impl/utility.i: src/test/jtx/impl/utility.cpp.i
@@ -13384,7 +13384,7 @@ src/test/jtx/impl/utility.i: src/test/jtx/impl/utility.cpp.i
 
 # target to preprocess a source file
 src/test/jtx/impl/utility.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/utility.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/utility.cpp.i
 .PHONY : src/test/jtx/impl/utility.cpp.i
 
 src/test/jtx/impl/utility.s: src/test/jtx/impl/utility.cpp.s
@@ -13393,7 +13393,7 @@ src/test/jtx/impl/utility.s: src/test/jtx/impl/utility.cpp.s
 
 # target to generate assembly for a file
 src/test/jtx/impl/utility.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/jtx/impl/utility.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/jtx/impl/utility.cpp.s
 .PHONY : src/test/jtx/impl/utility.cpp.s
 
 src/test/ledger/BookDirs_test.o: src/test/ledger/BookDirs_test.cpp.o
@@ -13402,7 +13402,7 @@ src/test/ledger/BookDirs_test.o: src/test/ledger/BookDirs_test.cpp.o
 
 # target to build an object file
 src/test/ledger/BookDirs_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/BookDirs_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/BookDirs_test.cpp.o
 .PHONY : src/test/ledger/BookDirs_test.cpp.o
 
 src/test/ledger/BookDirs_test.i: src/test/ledger/BookDirs_test.cpp.i
@@ -13411,7 +13411,7 @@ src/test/ledger/BookDirs_test.i: src/test/ledger/BookDirs_test.cpp.i
 
 # target to preprocess a source file
 src/test/ledger/BookDirs_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/BookDirs_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/BookDirs_test.cpp.i
 .PHONY : src/test/ledger/BookDirs_test.cpp.i
 
 src/test/ledger/BookDirs_test.s: src/test/ledger/BookDirs_test.cpp.s
@@ -13420,7 +13420,7 @@ src/test/ledger/BookDirs_test.s: src/test/ledger/BookDirs_test.cpp.s
 
 # target to generate assembly for a file
 src/test/ledger/BookDirs_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/BookDirs_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/BookDirs_test.cpp.s
 .PHONY : src/test/ledger/BookDirs_test.cpp.s
 
 src/test/ledger/CashDiff_test.o: src/test/ledger/CashDiff_test.cpp.o
@@ -13429,7 +13429,7 @@ src/test/ledger/CashDiff_test.o: src/test/ledger/CashDiff_test.cpp.o
 
 # target to build an object file
 src/test/ledger/CashDiff_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/CashDiff_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/CashDiff_test.cpp.o
 .PHONY : src/test/ledger/CashDiff_test.cpp.o
 
 src/test/ledger/CashDiff_test.i: src/test/ledger/CashDiff_test.cpp.i
@@ -13438,7 +13438,7 @@ src/test/ledger/CashDiff_test.i: src/test/ledger/CashDiff_test.cpp.i
 
 # target to preprocess a source file
 src/test/ledger/CashDiff_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/CashDiff_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/CashDiff_test.cpp.i
 .PHONY : src/test/ledger/CashDiff_test.cpp.i
 
 src/test/ledger/CashDiff_test.s: src/test/ledger/CashDiff_test.cpp.s
@@ -13447,7 +13447,7 @@ src/test/ledger/CashDiff_test.s: src/test/ledger/CashDiff_test.cpp.s
 
 # target to generate assembly for a file
 src/test/ledger/CashDiff_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/CashDiff_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/CashDiff_test.cpp.s
 .PHONY : src/test/ledger/CashDiff_test.cpp.s
 
 src/test/ledger/Directory_test.o: src/test/ledger/Directory_test.cpp.o
@@ -13456,7 +13456,7 @@ src/test/ledger/Directory_test.o: src/test/ledger/Directory_test.cpp.o
 
 # target to build an object file
 src/test/ledger/Directory_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/Directory_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/Directory_test.cpp.o
 .PHONY : src/test/ledger/Directory_test.cpp.o
 
 src/test/ledger/Directory_test.i: src/test/ledger/Directory_test.cpp.i
@@ -13465,7 +13465,7 @@ src/test/ledger/Directory_test.i: src/test/ledger/Directory_test.cpp.i
 
 # target to preprocess a source file
 src/test/ledger/Directory_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/Directory_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/Directory_test.cpp.i
 .PHONY : src/test/ledger/Directory_test.cpp.i
 
 src/test/ledger/Directory_test.s: src/test/ledger/Directory_test.cpp.s
@@ -13474,7 +13474,7 @@ src/test/ledger/Directory_test.s: src/test/ledger/Directory_test.cpp.s
 
 # target to generate assembly for a file
 src/test/ledger/Directory_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/Directory_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/Directory_test.cpp.s
 .PHONY : src/test/ledger/Directory_test.cpp.s
 
 src/test/ledger/Invariants_test.o: src/test/ledger/Invariants_test.cpp.o
@@ -13483,7 +13483,7 @@ src/test/ledger/Invariants_test.o: src/test/ledger/Invariants_test.cpp.o
 
 # target to build an object file
 src/test/ledger/Invariants_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/Invariants_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/Invariants_test.cpp.o
 .PHONY : src/test/ledger/Invariants_test.cpp.o
 
 src/test/ledger/Invariants_test.i: src/test/ledger/Invariants_test.cpp.i
@@ -13492,7 +13492,7 @@ src/test/ledger/Invariants_test.i: src/test/ledger/Invariants_test.cpp.i
 
 # target to preprocess a source file
 src/test/ledger/Invariants_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/Invariants_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/Invariants_test.cpp.i
 .PHONY : src/test/ledger/Invariants_test.cpp.i
 
 src/test/ledger/Invariants_test.s: src/test/ledger/Invariants_test.cpp.s
@@ -13501,7 +13501,7 @@ src/test/ledger/Invariants_test.s: src/test/ledger/Invariants_test.cpp.s
 
 # target to generate assembly for a file
 src/test/ledger/Invariants_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/Invariants_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/Invariants_test.cpp.s
 .PHONY : src/test/ledger/Invariants_test.cpp.s
 
 src/test/ledger/PaymentSandbox_test.o: src/test/ledger/PaymentSandbox_test.cpp.o
@@ -13510,7 +13510,7 @@ src/test/ledger/PaymentSandbox_test.o: src/test/ledger/PaymentSandbox_test.cpp.o
 
 # target to build an object file
 src/test/ledger/PaymentSandbox_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/PaymentSandbox_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/PaymentSandbox_test.cpp.o
 .PHONY : src/test/ledger/PaymentSandbox_test.cpp.o
 
 src/test/ledger/PaymentSandbox_test.i: src/test/ledger/PaymentSandbox_test.cpp.i
@@ -13519,7 +13519,7 @@ src/test/ledger/PaymentSandbox_test.i: src/test/ledger/PaymentSandbox_test.cpp.i
 
 # target to preprocess a source file
 src/test/ledger/PaymentSandbox_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/PaymentSandbox_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/PaymentSandbox_test.cpp.i
 .PHONY : src/test/ledger/PaymentSandbox_test.cpp.i
 
 src/test/ledger/PaymentSandbox_test.s: src/test/ledger/PaymentSandbox_test.cpp.s
@@ -13528,7 +13528,7 @@ src/test/ledger/PaymentSandbox_test.s: src/test/ledger/PaymentSandbox_test.cpp.s
 
 # target to generate assembly for a file
 src/test/ledger/PaymentSandbox_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/PaymentSandbox_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/PaymentSandbox_test.cpp.s
 .PHONY : src/test/ledger/PaymentSandbox_test.cpp.s
 
 src/test/ledger/PendingSaves_test.o: src/test/ledger/PendingSaves_test.cpp.o
@@ -13537,7 +13537,7 @@ src/test/ledger/PendingSaves_test.o: src/test/ledger/PendingSaves_test.cpp.o
 
 # target to build an object file
 src/test/ledger/PendingSaves_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/PendingSaves_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/PendingSaves_test.cpp.o
 .PHONY : src/test/ledger/PendingSaves_test.cpp.o
 
 src/test/ledger/PendingSaves_test.i: src/test/ledger/PendingSaves_test.cpp.i
@@ -13546,7 +13546,7 @@ src/test/ledger/PendingSaves_test.i: src/test/ledger/PendingSaves_test.cpp.i
 
 # target to preprocess a source file
 src/test/ledger/PendingSaves_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/PendingSaves_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/PendingSaves_test.cpp.i
 .PHONY : src/test/ledger/PendingSaves_test.cpp.i
 
 src/test/ledger/PendingSaves_test.s: src/test/ledger/PendingSaves_test.cpp.s
@@ -13555,7 +13555,7 @@ src/test/ledger/PendingSaves_test.s: src/test/ledger/PendingSaves_test.cpp.s
 
 # target to generate assembly for a file
 src/test/ledger/PendingSaves_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/PendingSaves_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/PendingSaves_test.cpp.s
 .PHONY : src/test/ledger/PendingSaves_test.cpp.s
 
 src/test/ledger/SHAMapV2_test.o: src/test/ledger/SHAMapV2_test.cpp.o
@@ -13564,7 +13564,7 @@ src/test/ledger/SHAMapV2_test.o: src/test/ledger/SHAMapV2_test.cpp.o
 
 # target to build an object file
 src/test/ledger/SHAMapV2_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/SHAMapV2_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/SHAMapV2_test.cpp.o
 .PHONY : src/test/ledger/SHAMapV2_test.cpp.o
 
 src/test/ledger/SHAMapV2_test.i: src/test/ledger/SHAMapV2_test.cpp.i
@@ -13573,7 +13573,7 @@ src/test/ledger/SHAMapV2_test.i: src/test/ledger/SHAMapV2_test.cpp.i
 
 # target to preprocess a source file
 src/test/ledger/SHAMapV2_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/SHAMapV2_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/SHAMapV2_test.cpp.i
 .PHONY : src/test/ledger/SHAMapV2_test.cpp.i
 
 src/test/ledger/SHAMapV2_test.s: src/test/ledger/SHAMapV2_test.cpp.s
@@ -13582,7 +13582,7 @@ src/test/ledger/SHAMapV2_test.s: src/test/ledger/SHAMapV2_test.cpp.s
 
 # target to generate assembly for a file
 src/test/ledger/SHAMapV2_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/SHAMapV2_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/SHAMapV2_test.cpp.s
 .PHONY : src/test/ledger/SHAMapV2_test.cpp.s
 
 src/test/ledger/SkipList_test.o: src/test/ledger/SkipList_test.cpp.o
@@ -13591,7 +13591,7 @@ src/test/ledger/SkipList_test.o: src/test/ledger/SkipList_test.cpp.o
 
 # target to build an object file
 src/test/ledger/SkipList_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/SkipList_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/SkipList_test.cpp.o
 .PHONY : src/test/ledger/SkipList_test.cpp.o
 
 src/test/ledger/SkipList_test.i: src/test/ledger/SkipList_test.cpp.i
@@ -13600,7 +13600,7 @@ src/test/ledger/SkipList_test.i: src/test/ledger/SkipList_test.cpp.i
 
 # target to preprocess a source file
 src/test/ledger/SkipList_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/SkipList_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/SkipList_test.cpp.i
 .PHONY : src/test/ledger/SkipList_test.cpp.i
 
 src/test/ledger/SkipList_test.s: src/test/ledger/SkipList_test.cpp.s
@@ -13609,7 +13609,7 @@ src/test/ledger/SkipList_test.s: src/test/ledger/SkipList_test.cpp.s
 
 # target to generate assembly for a file
 src/test/ledger/SkipList_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/SkipList_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/SkipList_test.cpp.s
 .PHONY : src/test/ledger/SkipList_test.cpp.s
 
 src/test/ledger/View_test.o: src/test/ledger/View_test.cpp.o
@@ -13618,7 +13618,7 @@ src/test/ledger/View_test.o: src/test/ledger/View_test.cpp.o
 
 # target to build an object file
 src/test/ledger/View_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/View_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/View_test.cpp.o
 .PHONY : src/test/ledger/View_test.cpp.o
 
 src/test/ledger/View_test.i: src/test/ledger/View_test.cpp.i
@@ -13627,7 +13627,7 @@ src/test/ledger/View_test.i: src/test/ledger/View_test.cpp.i
 
 # target to preprocess a source file
 src/test/ledger/View_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/View_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/View_test.cpp.i
 .PHONY : src/test/ledger/View_test.cpp.i
 
 src/test/ledger/View_test.s: src/test/ledger/View_test.cpp.s
@@ -13636,7 +13636,7 @@ src/test/ledger/View_test.s: src/test/ledger/View_test.cpp.s
 
 # target to generate assembly for a file
 src/test/ledger/View_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/ledger/View_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/ledger/View_test.cpp.s
 .PHONY : src/test/ledger/View_test.cpp.s
 
 src/test/nodestore/Backend_test.o: src/test/nodestore/Backend_test.cpp.o
@@ -13645,7 +13645,7 @@ src/test/nodestore/Backend_test.o: src/test/nodestore/Backend_test.cpp.o
 
 # target to build an object file
 src/test/nodestore/Backend_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/Backend_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/Backend_test.cpp.o
 .PHONY : src/test/nodestore/Backend_test.cpp.o
 
 src/test/nodestore/Backend_test.i: src/test/nodestore/Backend_test.cpp.i
@@ -13654,7 +13654,7 @@ src/test/nodestore/Backend_test.i: src/test/nodestore/Backend_test.cpp.i
 
 # target to preprocess a source file
 src/test/nodestore/Backend_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/Backend_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/Backend_test.cpp.i
 .PHONY : src/test/nodestore/Backend_test.cpp.i
 
 src/test/nodestore/Backend_test.s: src/test/nodestore/Backend_test.cpp.s
@@ -13663,7 +13663,7 @@ src/test/nodestore/Backend_test.s: src/test/nodestore/Backend_test.cpp.s
 
 # target to generate assembly for a file
 src/test/nodestore/Backend_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/Backend_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/Backend_test.cpp.s
 .PHONY : src/test/nodestore/Backend_test.cpp.s
 
 src/test/nodestore/Basics_test.o: src/test/nodestore/Basics_test.cpp.o
@@ -13672,7 +13672,7 @@ src/test/nodestore/Basics_test.o: src/test/nodestore/Basics_test.cpp.o
 
 # target to build an object file
 src/test/nodestore/Basics_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/Basics_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/Basics_test.cpp.o
 .PHONY : src/test/nodestore/Basics_test.cpp.o
 
 src/test/nodestore/Basics_test.i: src/test/nodestore/Basics_test.cpp.i
@@ -13681,7 +13681,7 @@ src/test/nodestore/Basics_test.i: src/test/nodestore/Basics_test.cpp.i
 
 # target to preprocess a source file
 src/test/nodestore/Basics_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/Basics_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/Basics_test.cpp.i
 .PHONY : src/test/nodestore/Basics_test.cpp.i
 
 src/test/nodestore/Basics_test.s: src/test/nodestore/Basics_test.cpp.s
@@ -13690,7 +13690,7 @@ src/test/nodestore/Basics_test.s: src/test/nodestore/Basics_test.cpp.s
 
 # target to generate assembly for a file
 src/test/nodestore/Basics_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/Basics_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/Basics_test.cpp.s
 .PHONY : src/test/nodestore/Basics_test.cpp.s
 
 src/test/nodestore/Database_test.o: src/test/nodestore/Database_test.cpp.o
@@ -13699,7 +13699,7 @@ src/test/nodestore/Database_test.o: src/test/nodestore/Database_test.cpp.o
 
 # target to build an object file
 src/test/nodestore/Database_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/Database_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/Database_test.cpp.o
 .PHONY : src/test/nodestore/Database_test.cpp.o
 
 src/test/nodestore/Database_test.i: src/test/nodestore/Database_test.cpp.i
@@ -13708,7 +13708,7 @@ src/test/nodestore/Database_test.i: src/test/nodestore/Database_test.cpp.i
 
 # target to preprocess a source file
 src/test/nodestore/Database_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/Database_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/Database_test.cpp.i
 .PHONY : src/test/nodestore/Database_test.cpp.i
 
 src/test/nodestore/Database_test.s: src/test/nodestore/Database_test.cpp.s
@@ -13717,7 +13717,7 @@ src/test/nodestore/Database_test.s: src/test/nodestore/Database_test.cpp.s
 
 # target to generate assembly for a file
 src/test/nodestore/Database_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/Database_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/Database_test.cpp.s
 .PHONY : src/test/nodestore/Database_test.cpp.s
 
 src/test/nodestore/Timing_test.o: src/test/nodestore/Timing_test.cpp.o
@@ -13726,7 +13726,7 @@ src/test/nodestore/Timing_test.o: src/test/nodestore/Timing_test.cpp.o
 
 # target to build an object file
 src/test/nodestore/Timing_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/Timing_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/Timing_test.cpp.o
 .PHONY : src/test/nodestore/Timing_test.cpp.o
 
 src/test/nodestore/Timing_test.i: src/test/nodestore/Timing_test.cpp.i
@@ -13735,7 +13735,7 @@ src/test/nodestore/Timing_test.i: src/test/nodestore/Timing_test.cpp.i
 
 # target to preprocess a source file
 src/test/nodestore/Timing_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/Timing_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/Timing_test.cpp.i
 .PHONY : src/test/nodestore/Timing_test.cpp.i
 
 src/test/nodestore/Timing_test.s: src/test/nodestore/Timing_test.cpp.s
@@ -13744,7 +13744,7 @@ src/test/nodestore/Timing_test.s: src/test/nodestore/Timing_test.cpp.s
 
 # target to generate assembly for a file
 src/test/nodestore/Timing_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/Timing_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/Timing_test.cpp.s
 .PHONY : src/test/nodestore/Timing_test.cpp.s
 
 src/test/nodestore/import_test.o: src/test/nodestore/import_test.cpp.o
@@ -13753,7 +13753,7 @@ src/test/nodestore/import_test.o: src/test/nodestore/import_test.cpp.o
 
 # target to build an object file
 src/test/nodestore/import_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/import_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/import_test.cpp.o
 .PHONY : src/test/nodestore/import_test.cpp.o
 
 src/test/nodestore/import_test.i: src/test/nodestore/import_test.cpp.i
@@ -13762,7 +13762,7 @@ src/test/nodestore/import_test.i: src/test/nodestore/import_test.cpp.i
 
 # target to preprocess a source file
 src/test/nodestore/import_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/import_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/import_test.cpp.i
 .PHONY : src/test/nodestore/import_test.cpp.i
 
 src/test/nodestore/import_test.s: src/test/nodestore/import_test.cpp.s
@@ -13771,7 +13771,7 @@ src/test/nodestore/import_test.s: src/test/nodestore/import_test.cpp.s
 
 # target to generate assembly for a file
 src/test/nodestore/import_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/import_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/import_test.cpp.s
 .PHONY : src/test/nodestore/import_test.cpp.s
 
 src/test/nodestore/varint_test.o: src/test/nodestore/varint_test.cpp.o
@@ -13780,7 +13780,7 @@ src/test/nodestore/varint_test.o: src/test/nodestore/varint_test.cpp.o
 
 # target to build an object file
 src/test/nodestore/varint_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/varint_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/varint_test.cpp.o
 .PHONY : src/test/nodestore/varint_test.cpp.o
 
 src/test/nodestore/varint_test.i: src/test/nodestore/varint_test.cpp.i
@@ -13789,7 +13789,7 @@ src/test/nodestore/varint_test.i: src/test/nodestore/varint_test.cpp.i
 
 # target to preprocess a source file
 src/test/nodestore/varint_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/varint_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/varint_test.cpp.i
 .PHONY : src/test/nodestore/varint_test.cpp.i
 
 src/test/nodestore/varint_test.s: src/test/nodestore/varint_test.cpp.s
@@ -13798,7 +13798,7 @@ src/test/nodestore/varint_test.s: src/test/nodestore/varint_test.cpp.s
 
 # target to generate assembly for a file
 src/test/nodestore/varint_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/nodestore/varint_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/nodestore/varint_test.cpp.s
 .PHONY : src/test/nodestore/varint_test.cpp.s
 
 src/test/overlay/TMHello_test.o: src/test/overlay/TMHello_test.cpp.o
@@ -13807,7 +13807,7 @@ src/test/overlay/TMHello_test.o: src/test/overlay/TMHello_test.cpp.o
 
 # target to build an object file
 src/test/overlay/TMHello_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/overlay/TMHello_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/overlay/TMHello_test.cpp.o
 .PHONY : src/test/overlay/TMHello_test.cpp.o
 
 src/test/overlay/TMHello_test.i: src/test/overlay/TMHello_test.cpp.i
@@ -13816,7 +13816,7 @@ src/test/overlay/TMHello_test.i: src/test/overlay/TMHello_test.cpp.i
 
 # target to preprocess a source file
 src/test/overlay/TMHello_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/overlay/TMHello_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/overlay/TMHello_test.cpp.i
 .PHONY : src/test/overlay/TMHello_test.cpp.i
 
 src/test/overlay/TMHello_test.s: src/test/overlay/TMHello_test.cpp.s
@@ -13825,7 +13825,7 @@ src/test/overlay/TMHello_test.s: src/test/overlay/TMHello_test.cpp.s
 
 # target to generate assembly for a file
 src/test/overlay/TMHello_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/overlay/TMHello_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/overlay/TMHello_test.cpp.s
 .PHONY : src/test/overlay/TMHello_test.cpp.s
 
 src/test/overlay/cluster_test.o: src/test/overlay/cluster_test.cpp.o
@@ -13834,7 +13834,7 @@ src/test/overlay/cluster_test.o: src/test/overlay/cluster_test.cpp.o
 
 # target to build an object file
 src/test/overlay/cluster_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/overlay/cluster_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/overlay/cluster_test.cpp.o
 .PHONY : src/test/overlay/cluster_test.cpp.o
 
 src/test/overlay/cluster_test.i: src/test/overlay/cluster_test.cpp.i
@@ -13843,7 +13843,7 @@ src/test/overlay/cluster_test.i: src/test/overlay/cluster_test.cpp.i
 
 # target to preprocess a source file
 src/test/overlay/cluster_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/overlay/cluster_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/overlay/cluster_test.cpp.i
 .PHONY : src/test/overlay/cluster_test.cpp.i
 
 src/test/overlay/cluster_test.s: src/test/overlay/cluster_test.cpp.s
@@ -13852,7 +13852,7 @@ src/test/overlay/cluster_test.s: src/test/overlay/cluster_test.cpp.s
 
 # target to generate assembly for a file
 src/test/overlay/cluster_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/overlay/cluster_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/overlay/cluster_test.cpp.s
 .PHONY : src/test/overlay/cluster_test.cpp.s
 
 src/test/overlay/short_read_test.o: src/test/overlay/short_read_test.cpp.o
@@ -13861,7 +13861,7 @@ src/test/overlay/short_read_test.o: src/test/overlay/short_read_test.cpp.o
 
 # target to build an object file
 src/test/overlay/short_read_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/overlay/short_read_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/overlay/short_read_test.cpp.o
 .PHONY : src/test/overlay/short_read_test.cpp.o
 
 src/test/overlay/short_read_test.i: src/test/overlay/short_read_test.cpp.i
@@ -13870,7 +13870,7 @@ src/test/overlay/short_read_test.i: src/test/overlay/short_read_test.cpp.i
 
 # target to preprocess a source file
 src/test/overlay/short_read_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/overlay/short_read_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/overlay/short_read_test.cpp.i
 .PHONY : src/test/overlay/short_read_test.cpp.i
 
 src/test/overlay/short_read_test.s: src/test/overlay/short_read_test.cpp.s
@@ -13879,7 +13879,7 @@ src/test/overlay/short_read_test.s: src/test/overlay/short_read_test.cpp.s
 
 # target to generate assembly for a file
 src/test/overlay/short_read_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/overlay/short_read_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/overlay/short_read_test.cpp.s
 .PHONY : src/test/overlay/short_read_test.cpp.s
 
 src/test/peerfinder/Livecache_test.o: src/test/peerfinder/Livecache_test.cpp.o
@@ -13888,7 +13888,7 @@ src/test/peerfinder/Livecache_test.o: src/test/peerfinder/Livecache_test.cpp.o
 
 # target to build an object file
 src/test/peerfinder/Livecache_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/peerfinder/Livecache_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/peerfinder/Livecache_test.cpp.o
 .PHONY : src/test/peerfinder/Livecache_test.cpp.o
 
 src/test/peerfinder/Livecache_test.i: src/test/peerfinder/Livecache_test.cpp.i
@@ -13897,7 +13897,7 @@ src/test/peerfinder/Livecache_test.i: src/test/peerfinder/Livecache_test.cpp.i
 
 # target to preprocess a source file
 src/test/peerfinder/Livecache_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/peerfinder/Livecache_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/peerfinder/Livecache_test.cpp.i
 .PHONY : src/test/peerfinder/Livecache_test.cpp.i
 
 src/test/peerfinder/Livecache_test.s: src/test/peerfinder/Livecache_test.cpp.s
@@ -13906,7 +13906,7 @@ src/test/peerfinder/Livecache_test.s: src/test/peerfinder/Livecache_test.cpp.s
 
 # target to generate assembly for a file
 src/test/peerfinder/Livecache_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/peerfinder/Livecache_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/peerfinder/Livecache_test.cpp.s
 .PHONY : src/test/peerfinder/Livecache_test.cpp.s
 
 src/test/peerfinder/PeerFinder_test.o: src/test/peerfinder/PeerFinder_test.cpp.o
@@ -13915,7 +13915,7 @@ src/test/peerfinder/PeerFinder_test.o: src/test/peerfinder/PeerFinder_test.cpp.o
 
 # target to build an object file
 src/test/peerfinder/PeerFinder_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/peerfinder/PeerFinder_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/peerfinder/PeerFinder_test.cpp.o
 .PHONY : src/test/peerfinder/PeerFinder_test.cpp.o
 
 src/test/peerfinder/PeerFinder_test.i: src/test/peerfinder/PeerFinder_test.cpp.i
@@ -13924,7 +13924,7 @@ src/test/peerfinder/PeerFinder_test.i: src/test/peerfinder/PeerFinder_test.cpp.i
 
 # target to preprocess a source file
 src/test/peerfinder/PeerFinder_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/peerfinder/PeerFinder_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/peerfinder/PeerFinder_test.cpp.i
 .PHONY : src/test/peerfinder/PeerFinder_test.cpp.i
 
 src/test/peerfinder/PeerFinder_test.s: src/test/peerfinder/PeerFinder_test.cpp.s
@@ -13933,7 +13933,7 @@ src/test/peerfinder/PeerFinder_test.s: src/test/peerfinder/PeerFinder_test.cpp.s
 
 # target to generate assembly for a file
 src/test/peerfinder/PeerFinder_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/peerfinder/PeerFinder_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/peerfinder/PeerFinder_test.cpp.s
 .PHONY : src/test/peerfinder/PeerFinder_test.cpp.s
 
 src/test/protocol/BuildInfo_test.o: src/test/protocol/BuildInfo_test.cpp.o
@@ -13942,7 +13942,7 @@ src/test/protocol/BuildInfo_test.o: src/test/protocol/BuildInfo_test.cpp.o
 
 # target to build an object file
 src/test/protocol/BuildInfo_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/BuildInfo_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/BuildInfo_test.cpp.o
 .PHONY : src/test/protocol/BuildInfo_test.cpp.o
 
 src/test/protocol/BuildInfo_test.i: src/test/protocol/BuildInfo_test.cpp.i
@@ -13951,7 +13951,7 @@ src/test/protocol/BuildInfo_test.i: src/test/protocol/BuildInfo_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/BuildInfo_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/BuildInfo_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/BuildInfo_test.cpp.i
 .PHONY : src/test/protocol/BuildInfo_test.cpp.i
 
 src/test/protocol/BuildInfo_test.s: src/test/protocol/BuildInfo_test.cpp.s
@@ -13960,7 +13960,7 @@ src/test/protocol/BuildInfo_test.s: src/test/protocol/BuildInfo_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/BuildInfo_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/BuildInfo_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/BuildInfo_test.cpp.s
 .PHONY : src/test/protocol/BuildInfo_test.cpp.s
 
 src/test/protocol/IOUAmount_test.o: src/test/protocol/IOUAmount_test.cpp.o
@@ -13969,7 +13969,7 @@ src/test/protocol/IOUAmount_test.o: src/test/protocol/IOUAmount_test.cpp.o
 
 # target to build an object file
 src/test/protocol/IOUAmount_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/IOUAmount_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/IOUAmount_test.cpp.o
 .PHONY : src/test/protocol/IOUAmount_test.cpp.o
 
 src/test/protocol/IOUAmount_test.i: src/test/protocol/IOUAmount_test.cpp.i
@@ -13978,7 +13978,7 @@ src/test/protocol/IOUAmount_test.i: src/test/protocol/IOUAmount_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/IOUAmount_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/IOUAmount_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/IOUAmount_test.cpp.i
 .PHONY : src/test/protocol/IOUAmount_test.cpp.i
 
 src/test/protocol/IOUAmount_test.s: src/test/protocol/IOUAmount_test.cpp.s
@@ -13987,7 +13987,7 @@ src/test/protocol/IOUAmount_test.s: src/test/protocol/IOUAmount_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/IOUAmount_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/IOUAmount_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/IOUAmount_test.cpp.s
 .PHONY : src/test/protocol/IOUAmount_test.cpp.s
 
 src/test/protocol/InnerObjectFormats_test.o: src/test/protocol/InnerObjectFormats_test.cpp.o
@@ -13996,7 +13996,7 @@ src/test/protocol/InnerObjectFormats_test.o: src/test/protocol/InnerObjectFormat
 
 # target to build an object file
 src/test/protocol/InnerObjectFormats_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/InnerObjectFormats_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/InnerObjectFormats_test.cpp.o
 .PHONY : src/test/protocol/InnerObjectFormats_test.cpp.o
 
 src/test/protocol/InnerObjectFormats_test.i: src/test/protocol/InnerObjectFormats_test.cpp.i
@@ -14005,7 +14005,7 @@ src/test/protocol/InnerObjectFormats_test.i: src/test/protocol/InnerObjectFormat
 
 # target to preprocess a source file
 src/test/protocol/InnerObjectFormats_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/InnerObjectFormats_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/InnerObjectFormats_test.cpp.i
 .PHONY : src/test/protocol/InnerObjectFormats_test.cpp.i
 
 src/test/protocol/InnerObjectFormats_test.s: src/test/protocol/InnerObjectFormats_test.cpp.s
@@ -14014,7 +14014,7 @@ src/test/protocol/InnerObjectFormats_test.s: src/test/protocol/InnerObjectFormat
 
 # target to generate assembly for a file
 src/test/protocol/InnerObjectFormats_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/InnerObjectFormats_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/InnerObjectFormats_test.cpp.s
 .PHONY : src/test/protocol/InnerObjectFormats_test.cpp.s
 
 src/test/protocol/Issue_test.o: src/test/protocol/Issue_test.cpp.o
@@ -14023,7 +14023,7 @@ src/test/protocol/Issue_test.o: src/test/protocol/Issue_test.cpp.o
 
 # target to build an object file
 src/test/protocol/Issue_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/Issue_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/Issue_test.cpp.o
 .PHONY : src/test/protocol/Issue_test.cpp.o
 
 src/test/protocol/Issue_test.i: src/test/protocol/Issue_test.cpp.i
@@ -14032,7 +14032,7 @@ src/test/protocol/Issue_test.i: src/test/protocol/Issue_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/Issue_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/Issue_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/Issue_test.cpp.i
 .PHONY : src/test/protocol/Issue_test.cpp.i
 
 src/test/protocol/Issue_test.s: src/test/protocol/Issue_test.cpp.s
@@ -14041,7 +14041,7 @@ src/test/protocol/Issue_test.s: src/test/protocol/Issue_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/Issue_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/Issue_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/Issue_test.cpp.s
 .PHONY : src/test/protocol/Issue_test.cpp.s
 
 src/test/protocol/PublicKey_test.o: src/test/protocol/PublicKey_test.cpp.o
@@ -14050,7 +14050,7 @@ src/test/protocol/PublicKey_test.o: src/test/protocol/PublicKey_test.cpp.o
 
 # target to build an object file
 src/test/protocol/PublicKey_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/PublicKey_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/PublicKey_test.cpp.o
 .PHONY : src/test/protocol/PublicKey_test.cpp.o
 
 src/test/protocol/PublicKey_test.i: src/test/protocol/PublicKey_test.cpp.i
@@ -14059,7 +14059,7 @@ src/test/protocol/PublicKey_test.i: src/test/protocol/PublicKey_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/PublicKey_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/PublicKey_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/PublicKey_test.cpp.i
 .PHONY : src/test/protocol/PublicKey_test.cpp.i
 
 src/test/protocol/PublicKey_test.s: src/test/protocol/PublicKey_test.cpp.s
@@ -14068,7 +14068,7 @@ src/test/protocol/PublicKey_test.s: src/test/protocol/PublicKey_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/PublicKey_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/PublicKey_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/PublicKey_test.cpp.s
 .PHONY : src/test/protocol/PublicKey_test.cpp.s
 
 src/test/protocol/Quality_test.o: src/test/protocol/Quality_test.cpp.o
@@ -14077,7 +14077,7 @@ src/test/protocol/Quality_test.o: src/test/protocol/Quality_test.cpp.o
 
 # target to build an object file
 src/test/protocol/Quality_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/Quality_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/Quality_test.cpp.o
 .PHONY : src/test/protocol/Quality_test.cpp.o
 
 src/test/protocol/Quality_test.i: src/test/protocol/Quality_test.cpp.i
@@ -14086,7 +14086,7 @@ src/test/protocol/Quality_test.i: src/test/protocol/Quality_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/Quality_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/Quality_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/Quality_test.cpp.i
 .PHONY : src/test/protocol/Quality_test.cpp.i
 
 src/test/protocol/Quality_test.s: src/test/protocol/Quality_test.cpp.s
@@ -14095,7 +14095,7 @@ src/test/protocol/Quality_test.s: src/test/protocol/Quality_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/Quality_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/Quality_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/Quality_test.cpp.s
 .PHONY : src/test/protocol/Quality_test.cpp.s
 
 src/test/protocol/STAccount_test.o: src/test/protocol/STAccount_test.cpp.o
@@ -14104,7 +14104,7 @@ src/test/protocol/STAccount_test.o: src/test/protocol/STAccount_test.cpp.o
 
 # target to build an object file
 src/test/protocol/STAccount_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STAccount_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STAccount_test.cpp.o
 .PHONY : src/test/protocol/STAccount_test.cpp.o
 
 src/test/protocol/STAccount_test.i: src/test/protocol/STAccount_test.cpp.i
@@ -14113,7 +14113,7 @@ src/test/protocol/STAccount_test.i: src/test/protocol/STAccount_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/STAccount_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STAccount_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STAccount_test.cpp.i
 .PHONY : src/test/protocol/STAccount_test.cpp.i
 
 src/test/protocol/STAccount_test.s: src/test/protocol/STAccount_test.cpp.s
@@ -14122,7 +14122,7 @@ src/test/protocol/STAccount_test.s: src/test/protocol/STAccount_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/STAccount_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STAccount_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STAccount_test.cpp.s
 .PHONY : src/test/protocol/STAccount_test.cpp.s
 
 src/test/protocol/STAmount_test.o: src/test/protocol/STAmount_test.cpp.o
@@ -14131,7 +14131,7 @@ src/test/protocol/STAmount_test.o: src/test/protocol/STAmount_test.cpp.o
 
 # target to build an object file
 src/test/protocol/STAmount_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STAmount_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STAmount_test.cpp.o
 .PHONY : src/test/protocol/STAmount_test.cpp.o
 
 src/test/protocol/STAmount_test.i: src/test/protocol/STAmount_test.cpp.i
@@ -14140,7 +14140,7 @@ src/test/protocol/STAmount_test.i: src/test/protocol/STAmount_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/STAmount_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STAmount_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STAmount_test.cpp.i
 .PHONY : src/test/protocol/STAmount_test.cpp.i
 
 src/test/protocol/STAmount_test.s: src/test/protocol/STAmount_test.cpp.s
@@ -14149,7 +14149,7 @@ src/test/protocol/STAmount_test.s: src/test/protocol/STAmount_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/STAmount_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STAmount_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STAmount_test.cpp.s
 .PHONY : src/test/protocol/STAmount_test.cpp.s
 
 src/test/protocol/STObject_test.o: src/test/protocol/STObject_test.cpp.o
@@ -14158,7 +14158,7 @@ src/test/protocol/STObject_test.o: src/test/protocol/STObject_test.cpp.o
 
 # target to build an object file
 src/test/protocol/STObject_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STObject_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STObject_test.cpp.o
 .PHONY : src/test/protocol/STObject_test.cpp.o
 
 src/test/protocol/STObject_test.i: src/test/protocol/STObject_test.cpp.i
@@ -14167,7 +14167,7 @@ src/test/protocol/STObject_test.i: src/test/protocol/STObject_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/STObject_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STObject_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STObject_test.cpp.i
 .PHONY : src/test/protocol/STObject_test.cpp.i
 
 src/test/protocol/STObject_test.s: src/test/protocol/STObject_test.cpp.s
@@ -14176,7 +14176,7 @@ src/test/protocol/STObject_test.s: src/test/protocol/STObject_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/STObject_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STObject_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STObject_test.cpp.s
 .PHONY : src/test/protocol/STObject_test.cpp.s
 
 src/test/protocol/STTx_test.o: src/test/protocol/STTx_test.cpp.o
@@ -14185,7 +14185,7 @@ src/test/protocol/STTx_test.o: src/test/protocol/STTx_test.cpp.o
 
 # target to build an object file
 src/test/protocol/STTx_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STTx_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STTx_test.cpp.o
 .PHONY : src/test/protocol/STTx_test.cpp.o
 
 src/test/protocol/STTx_test.i: src/test/protocol/STTx_test.cpp.i
@@ -14194,7 +14194,7 @@ src/test/protocol/STTx_test.i: src/test/protocol/STTx_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/STTx_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STTx_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STTx_test.cpp.i
 .PHONY : src/test/protocol/STTx_test.cpp.i
 
 src/test/protocol/STTx_test.s: src/test/protocol/STTx_test.cpp.s
@@ -14203,7 +14203,7 @@ src/test/protocol/STTx_test.s: src/test/protocol/STTx_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/STTx_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STTx_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STTx_test.cpp.s
 .PHONY : src/test/protocol/STTx_test.cpp.s
 
 src/test/protocol/STValidation_test.o: src/test/protocol/STValidation_test.cpp.o
@@ -14212,7 +14212,7 @@ src/test/protocol/STValidation_test.o: src/test/protocol/STValidation_test.cpp.o
 
 # target to build an object file
 src/test/protocol/STValidation_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STValidation_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STValidation_test.cpp.o
 .PHONY : src/test/protocol/STValidation_test.cpp.o
 
 src/test/protocol/STValidation_test.i: src/test/protocol/STValidation_test.cpp.i
@@ -14221,7 +14221,7 @@ src/test/protocol/STValidation_test.i: src/test/protocol/STValidation_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/STValidation_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STValidation_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STValidation_test.cpp.i
 .PHONY : src/test/protocol/STValidation_test.cpp.i
 
 src/test/protocol/STValidation_test.s: src/test/protocol/STValidation_test.cpp.s
@@ -14230,7 +14230,7 @@ src/test/protocol/STValidation_test.s: src/test/protocol/STValidation_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/STValidation_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/STValidation_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/STValidation_test.cpp.s
 .PHONY : src/test/protocol/STValidation_test.cpp.s
 
 src/test/protocol/SecretKey_test.o: src/test/protocol/SecretKey_test.cpp.o
@@ -14239,7 +14239,7 @@ src/test/protocol/SecretKey_test.o: src/test/protocol/SecretKey_test.cpp.o
 
 # target to build an object file
 src/test/protocol/SecretKey_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/SecretKey_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/SecretKey_test.cpp.o
 .PHONY : src/test/protocol/SecretKey_test.cpp.o
 
 src/test/protocol/SecretKey_test.i: src/test/protocol/SecretKey_test.cpp.i
@@ -14248,7 +14248,7 @@ src/test/protocol/SecretKey_test.i: src/test/protocol/SecretKey_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/SecretKey_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/SecretKey_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/SecretKey_test.cpp.i
 .PHONY : src/test/protocol/SecretKey_test.cpp.i
 
 src/test/protocol/SecretKey_test.s: src/test/protocol/SecretKey_test.cpp.s
@@ -14257,7 +14257,7 @@ src/test/protocol/SecretKey_test.s: src/test/protocol/SecretKey_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/SecretKey_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/SecretKey_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/SecretKey_test.cpp.s
 .PHONY : src/test/protocol/SecretKey_test.cpp.s
 
 src/test/protocol/Seed_test.o: src/test/protocol/Seed_test.cpp.o
@@ -14266,7 +14266,7 @@ src/test/protocol/Seed_test.o: src/test/protocol/Seed_test.cpp.o
 
 # target to build an object file
 src/test/protocol/Seed_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/Seed_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/Seed_test.cpp.o
 .PHONY : src/test/protocol/Seed_test.cpp.o
 
 src/test/protocol/Seed_test.i: src/test/protocol/Seed_test.cpp.i
@@ -14275,7 +14275,7 @@ src/test/protocol/Seed_test.i: src/test/protocol/Seed_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/Seed_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/Seed_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/Seed_test.cpp.i
 .PHONY : src/test/protocol/Seed_test.cpp.i
 
 src/test/protocol/Seed_test.s: src/test/protocol/Seed_test.cpp.s
@@ -14284,7 +14284,7 @@ src/test/protocol/Seed_test.s: src/test/protocol/Seed_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/Seed_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/Seed_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/Seed_test.cpp.s
 .PHONY : src/test/protocol/Seed_test.cpp.s
 
 src/test/protocol/TER_test.o: src/test/protocol/TER_test.cpp.o
@@ -14293,7 +14293,7 @@ src/test/protocol/TER_test.o: src/test/protocol/TER_test.cpp.o
 
 # target to build an object file
 src/test/protocol/TER_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/TER_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/TER_test.cpp.o
 .PHONY : src/test/protocol/TER_test.cpp.o
 
 src/test/protocol/TER_test.i: src/test/protocol/TER_test.cpp.i
@@ -14302,7 +14302,7 @@ src/test/protocol/TER_test.i: src/test/protocol/TER_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/TER_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/TER_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/TER_test.cpp.i
 .PHONY : src/test/protocol/TER_test.cpp.i
 
 src/test/protocol/TER_test.s: src/test/protocol/TER_test.cpp.s
@@ -14311,7 +14311,7 @@ src/test/protocol/TER_test.s: src/test/protocol/TER_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/TER_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/TER_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/TER_test.cpp.s
 .PHONY : src/test/protocol/TER_test.cpp.s
 
 src/test/protocol/XRPAmount_test.o: src/test/protocol/XRPAmount_test.cpp.o
@@ -14320,7 +14320,7 @@ src/test/protocol/XRPAmount_test.o: src/test/protocol/XRPAmount_test.cpp.o
 
 # target to build an object file
 src/test/protocol/XRPAmount_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/XRPAmount_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/XRPAmount_test.cpp.o
 .PHONY : src/test/protocol/XRPAmount_test.cpp.o
 
 src/test/protocol/XRPAmount_test.i: src/test/protocol/XRPAmount_test.cpp.i
@@ -14329,7 +14329,7 @@ src/test/protocol/XRPAmount_test.i: src/test/protocol/XRPAmount_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/XRPAmount_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/XRPAmount_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/XRPAmount_test.cpp.i
 .PHONY : src/test/protocol/XRPAmount_test.cpp.i
 
 src/test/protocol/XRPAmount_test.s: src/test/protocol/XRPAmount_test.cpp.s
@@ -14338,7 +14338,7 @@ src/test/protocol/XRPAmount_test.s: src/test/protocol/XRPAmount_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/XRPAmount_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/XRPAmount_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/XRPAmount_test.cpp.s
 .PHONY : src/test/protocol/XRPAmount_test.cpp.s
 
 src/test/protocol/digest_test.o: src/test/protocol/digest_test.cpp.o
@@ -14347,7 +14347,7 @@ src/test/protocol/digest_test.o: src/test/protocol/digest_test.cpp.o
 
 # target to build an object file
 src/test/protocol/digest_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/digest_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/digest_test.cpp.o
 .PHONY : src/test/protocol/digest_test.cpp.o
 
 src/test/protocol/digest_test.i: src/test/protocol/digest_test.cpp.i
@@ -14356,7 +14356,7 @@ src/test/protocol/digest_test.i: src/test/protocol/digest_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/digest_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/digest_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/digest_test.cpp.i
 .PHONY : src/test/protocol/digest_test.cpp.i
 
 src/test/protocol/digest_test.s: src/test/protocol/digest_test.cpp.s
@@ -14365,7 +14365,7 @@ src/test/protocol/digest_test.s: src/test/protocol/digest_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/digest_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/digest_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/digest_test.cpp.s
 .PHONY : src/test/protocol/digest_test.cpp.s
 
 src/test/protocol/types_test.o: src/test/protocol/types_test.cpp.o
@@ -14374,7 +14374,7 @@ src/test/protocol/types_test.o: src/test/protocol/types_test.cpp.o
 
 # target to build an object file
 src/test/protocol/types_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/types_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/types_test.cpp.o
 .PHONY : src/test/protocol/types_test.cpp.o
 
 src/test/protocol/types_test.i: src/test/protocol/types_test.cpp.i
@@ -14383,7 +14383,7 @@ src/test/protocol/types_test.i: src/test/protocol/types_test.cpp.i
 
 # target to preprocess a source file
 src/test/protocol/types_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/types_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/types_test.cpp.i
 .PHONY : src/test/protocol/types_test.cpp.i
 
 src/test/protocol/types_test.s: src/test/protocol/types_test.cpp.s
@@ -14392,7 +14392,7 @@ src/test/protocol/types_test.s: src/test/protocol/types_test.cpp.s
 
 # target to generate assembly for a file
 src/test/protocol/types_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/protocol/types_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/protocol/types_test.cpp.s
 .PHONY : src/test/protocol/types_test.cpp.s
 
 src/test/resource/Logic_test.o: src/test/resource/Logic_test.cpp.o
@@ -14401,7 +14401,7 @@ src/test/resource/Logic_test.o: src/test/resource/Logic_test.cpp.o
 
 # target to build an object file
 src/test/resource/Logic_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/resource/Logic_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/resource/Logic_test.cpp.o
 .PHONY : src/test/resource/Logic_test.cpp.o
 
 src/test/resource/Logic_test.i: src/test/resource/Logic_test.cpp.i
@@ -14410,7 +14410,7 @@ src/test/resource/Logic_test.i: src/test/resource/Logic_test.cpp.i
 
 # target to preprocess a source file
 src/test/resource/Logic_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/resource/Logic_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/resource/Logic_test.cpp.i
 .PHONY : src/test/resource/Logic_test.cpp.i
 
 src/test/resource/Logic_test.s: src/test/resource/Logic_test.cpp.s
@@ -14419,7 +14419,7 @@ src/test/resource/Logic_test.s: src/test/resource/Logic_test.cpp.s
 
 # target to generate assembly for a file
 src/test/resource/Logic_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/resource/Logic_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/resource/Logic_test.cpp.s
 .PHONY : src/test/resource/Logic_test.cpp.s
 
 src/test/rpc/AccountCurrencies_test.o: src/test/rpc/AccountCurrencies_test.cpp.o
@@ -14428,7 +14428,7 @@ src/test/rpc/AccountCurrencies_test.o: src/test/rpc/AccountCurrencies_test.cpp.o
 
 # target to build an object file
 src/test/rpc/AccountCurrencies_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountCurrencies_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountCurrencies_test.cpp.o
 .PHONY : src/test/rpc/AccountCurrencies_test.cpp.o
 
 src/test/rpc/AccountCurrencies_test.i: src/test/rpc/AccountCurrencies_test.cpp.i
@@ -14437,7 +14437,7 @@ src/test/rpc/AccountCurrencies_test.i: src/test/rpc/AccountCurrencies_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/AccountCurrencies_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountCurrencies_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountCurrencies_test.cpp.i
 .PHONY : src/test/rpc/AccountCurrencies_test.cpp.i
 
 src/test/rpc/AccountCurrencies_test.s: src/test/rpc/AccountCurrencies_test.cpp.s
@@ -14446,7 +14446,7 @@ src/test/rpc/AccountCurrencies_test.s: src/test/rpc/AccountCurrencies_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/AccountCurrencies_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountCurrencies_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountCurrencies_test.cpp.s
 .PHONY : src/test/rpc/AccountCurrencies_test.cpp.s
 
 src/test/rpc/AccountInfo_test.o: src/test/rpc/AccountInfo_test.cpp.o
@@ -14455,7 +14455,7 @@ src/test/rpc/AccountInfo_test.o: src/test/rpc/AccountInfo_test.cpp.o
 
 # target to build an object file
 src/test/rpc/AccountInfo_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountInfo_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountInfo_test.cpp.o
 .PHONY : src/test/rpc/AccountInfo_test.cpp.o
 
 src/test/rpc/AccountInfo_test.i: src/test/rpc/AccountInfo_test.cpp.i
@@ -14464,7 +14464,7 @@ src/test/rpc/AccountInfo_test.i: src/test/rpc/AccountInfo_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/AccountInfo_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountInfo_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountInfo_test.cpp.i
 .PHONY : src/test/rpc/AccountInfo_test.cpp.i
 
 src/test/rpc/AccountInfo_test.s: src/test/rpc/AccountInfo_test.cpp.s
@@ -14473,7 +14473,7 @@ src/test/rpc/AccountInfo_test.s: src/test/rpc/AccountInfo_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/AccountInfo_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountInfo_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountInfo_test.cpp.s
 .PHONY : src/test/rpc/AccountInfo_test.cpp.s
 
 src/test/rpc/AccountLinesRPC_test.o: src/test/rpc/AccountLinesRPC_test.cpp.o
@@ -14482,7 +14482,7 @@ src/test/rpc/AccountLinesRPC_test.o: src/test/rpc/AccountLinesRPC_test.cpp.o
 
 # target to build an object file
 src/test/rpc/AccountLinesRPC_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountLinesRPC_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountLinesRPC_test.cpp.o
 .PHONY : src/test/rpc/AccountLinesRPC_test.cpp.o
 
 src/test/rpc/AccountLinesRPC_test.i: src/test/rpc/AccountLinesRPC_test.cpp.i
@@ -14491,7 +14491,7 @@ src/test/rpc/AccountLinesRPC_test.i: src/test/rpc/AccountLinesRPC_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/AccountLinesRPC_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountLinesRPC_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountLinesRPC_test.cpp.i
 .PHONY : src/test/rpc/AccountLinesRPC_test.cpp.i
 
 src/test/rpc/AccountLinesRPC_test.s: src/test/rpc/AccountLinesRPC_test.cpp.s
@@ -14500,7 +14500,7 @@ src/test/rpc/AccountLinesRPC_test.s: src/test/rpc/AccountLinesRPC_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/AccountLinesRPC_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountLinesRPC_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountLinesRPC_test.cpp.s
 .PHONY : src/test/rpc/AccountLinesRPC_test.cpp.s
 
 src/test/rpc/AccountObjects_test.o: src/test/rpc/AccountObjects_test.cpp.o
@@ -14509,7 +14509,7 @@ src/test/rpc/AccountObjects_test.o: src/test/rpc/AccountObjects_test.cpp.o
 
 # target to build an object file
 src/test/rpc/AccountObjects_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountObjects_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountObjects_test.cpp.o
 .PHONY : src/test/rpc/AccountObjects_test.cpp.o
 
 src/test/rpc/AccountObjects_test.i: src/test/rpc/AccountObjects_test.cpp.i
@@ -14518,7 +14518,7 @@ src/test/rpc/AccountObjects_test.i: src/test/rpc/AccountObjects_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/AccountObjects_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountObjects_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountObjects_test.cpp.i
 .PHONY : src/test/rpc/AccountObjects_test.cpp.i
 
 src/test/rpc/AccountObjects_test.s: src/test/rpc/AccountObjects_test.cpp.s
@@ -14527,7 +14527,7 @@ src/test/rpc/AccountObjects_test.s: src/test/rpc/AccountObjects_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/AccountObjects_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountObjects_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountObjects_test.cpp.s
 .PHONY : src/test/rpc/AccountObjects_test.cpp.s
 
 src/test/rpc/AccountOffers_test.o: src/test/rpc/AccountOffers_test.cpp.o
@@ -14536,7 +14536,7 @@ src/test/rpc/AccountOffers_test.o: src/test/rpc/AccountOffers_test.cpp.o
 
 # target to build an object file
 src/test/rpc/AccountOffers_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountOffers_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountOffers_test.cpp.o
 .PHONY : src/test/rpc/AccountOffers_test.cpp.o
 
 src/test/rpc/AccountOffers_test.i: src/test/rpc/AccountOffers_test.cpp.i
@@ -14545,7 +14545,7 @@ src/test/rpc/AccountOffers_test.i: src/test/rpc/AccountOffers_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/AccountOffers_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountOffers_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountOffers_test.cpp.i
 .PHONY : src/test/rpc/AccountOffers_test.cpp.i
 
 src/test/rpc/AccountOffers_test.s: src/test/rpc/AccountOffers_test.cpp.s
@@ -14554,7 +14554,7 @@ src/test/rpc/AccountOffers_test.s: src/test/rpc/AccountOffers_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/AccountOffers_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountOffers_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountOffers_test.cpp.s
 .PHONY : src/test/rpc/AccountOffers_test.cpp.s
 
 src/test/rpc/AccountSet_test.o: src/test/rpc/AccountSet_test.cpp.o
@@ -14563,7 +14563,7 @@ src/test/rpc/AccountSet_test.o: src/test/rpc/AccountSet_test.cpp.o
 
 # target to build an object file
 src/test/rpc/AccountSet_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountSet_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountSet_test.cpp.o
 .PHONY : src/test/rpc/AccountSet_test.cpp.o
 
 src/test/rpc/AccountSet_test.i: src/test/rpc/AccountSet_test.cpp.i
@@ -14572,7 +14572,7 @@ src/test/rpc/AccountSet_test.i: src/test/rpc/AccountSet_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/AccountSet_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountSet_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountSet_test.cpp.i
 .PHONY : src/test/rpc/AccountSet_test.cpp.i
 
 src/test/rpc/AccountSet_test.s: src/test/rpc/AccountSet_test.cpp.s
@@ -14581,7 +14581,7 @@ src/test/rpc/AccountSet_test.s: src/test/rpc/AccountSet_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/AccountSet_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountSet_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountSet_test.cpp.s
 .PHONY : src/test/rpc/AccountSet_test.cpp.s
 
 src/test/rpc/AccountTx_test.o: src/test/rpc/AccountTx_test.cpp.o
@@ -14590,7 +14590,7 @@ src/test/rpc/AccountTx_test.o: src/test/rpc/AccountTx_test.cpp.o
 
 # target to build an object file
 src/test/rpc/AccountTx_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountTx_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountTx_test.cpp.o
 .PHONY : src/test/rpc/AccountTx_test.cpp.o
 
 src/test/rpc/AccountTx_test.i: src/test/rpc/AccountTx_test.cpp.i
@@ -14599,7 +14599,7 @@ src/test/rpc/AccountTx_test.i: src/test/rpc/AccountTx_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/AccountTx_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountTx_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountTx_test.cpp.i
 .PHONY : src/test/rpc/AccountTx_test.cpp.i
 
 src/test/rpc/AccountTx_test.s: src/test/rpc/AccountTx_test.cpp.s
@@ -14608,7 +14608,7 @@ src/test/rpc/AccountTx_test.s: src/test/rpc/AccountTx_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/AccountTx_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AccountTx_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AccountTx_test.cpp.s
 .PHONY : src/test/rpc/AccountTx_test.cpp.s
 
 src/test/rpc/AmendmentBlocked_test.o: src/test/rpc/AmendmentBlocked_test.cpp.o
@@ -14617,7 +14617,7 @@ src/test/rpc/AmendmentBlocked_test.o: src/test/rpc/AmendmentBlocked_test.cpp.o
 
 # target to build an object file
 src/test/rpc/AmendmentBlocked_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AmendmentBlocked_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AmendmentBlocked_test.cpp.o
 .PHONY : src/test/rpc/AmendmentBlocked_test.cpp.o
 
 src/test/rpc/AmendmentBlocked_test.i: src/test/rpc/AmendmentBlocked_test.cpp.i
@@ -14626,7 +14626,7 @@ src/test/rpc/AmendmentBlocked_test.i: src/test/rpc/AmendmentBlocked_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/AmendmentBlocked_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AmendmentBlocked_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AmendmentBlocked_test.cpp.i
 .PHONY : src/test/rpc/AmendmentBlocked_test.cpp.i
 
 src/test/rpc/AmendmentBlocked_test.s: src/test/rpc/AmendmentBlocked_test.cpp.s
@@ -14635,7 +14635,7 @@ src/test/rpc/AmendmentBlocked_test.s: src/test/rpc/AmendmentBlocked_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/AmendmentBlocked_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/AmendmentBlocked_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/AmendmentBlocked_test.cpp.s
 .PHONY : src/test/rpc/AmendmentBlocked_test.cpp.s
 
 src/test/rpc/Book_test.o: src/test/rpc/Book_test.cpp.o
@@ -14644,7 +14644,7 @@ src/test/rpc/Book_test.o: src/test/rpc/Book_test.cpp.o
 
 # target to build an object file
 src/test/rpc/Book_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Book_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Book_test.cpp.o
 .PHONY : src/test/rpc/Book_test.cpp.o
 
 src/test/rpc/Book_test.i: src/test/rpc/Book_test.cpp.i
@@ -14653,7 +14653,7 @@ src/test/rpc/Book_test.i: src/test/rpc/Book_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/Book_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Book_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Book_test.cpp.i
 .PHONY : src/test/rpc/Book_test.cpp.i
 
 src/test/rpc/Book_test.s: src/test/rpc/Book_test.cpp.s
@@ -14662,7 +14662,7 @@ src/test/rpc/Book_test.s: src/test/rpc/Book_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/Book_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Book_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Book_test.cpp.s
 .PHONY : src/test/rpc/Book_test.cpp.s
 
 src/test/rpc/Feature_test.o: src/test/rpc/Feature_test.cpp.o
@@ -14671,7 +14671,7 @@ src/test/rpc/Feature_test.o: src/test/rpc/Feature_test.cpp.o
 
 # target to build an object file
 src/test/rpc/Feature_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Feature_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Feature_test.cpp.o
 .PHONY : src/test/rpc/Feature_test.cpp.o
 
 src/test/rpc/Feature_test.i: src/test/rpc/Feature_test.cpp.i
@@ -14680,7 +14680,7 @@ src/test/rpc/Feature_test.i: src/test/rpc/Feature_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/Feature_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Feature_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Feature_test.cpp.i
 .PHONY : src/test/rpc/Feature_test.cpp.i
 
 src/test/rpc/Feature_test.s: src/test/rpc/Feature_test.cpp.s
@@ -14689,7 +14689,7 @@ src/test/rpc/Feature_test.s: src/test/rpc/Feature_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/Feature_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Feature_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Feature_test.cpp.s
 .PHONY : src/test/rpc/Feature_test.cpp.s
 
 src/test/rpc/GatewayBalances_test.o: src/test/rpc/GatewayBalances_test.cpp.o
@@ -14698,7 +14698,7 @@ src/test/rpc/GatewayBalances_test.o: src/test/rpc/GatewayBalances_test.cpp.o
 
 # target to build an object file
 src/test/rpc/GatewayBalances_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/GatewayBalances_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/GatewayBalances_test.cpp.o
 .PHONY : src/test/rpc/GatewayBalances_test.cpp.o
 
 src/test/rpc/GatewayBalances_test.i: src/test/rpc/GatewayBalances_test.cpp.i
@@ -14707,7 +14707,7 @@ src/test/rpc/GatewayBalances_test.i: src/test/rpc/GatewayBalances_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/GatewayBalances_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/GatewayBalances_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/GatewayBalances_test.cpp.i
 .PHONY : src/test/rpc/GatewayBalances_test.cpp.i
 
 src/test/rpc/GatewayBalances_test.s: src/test/rpc/GatewayBalances_test.cpp.s
@@ -14716,7 +14716,7 @@ src/test/rpc/GatewayBalances_test.s: src/test/rpc/GatewayBalances_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/GatewayBalances_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/GatewayBalances_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/GatewayBalances_test.cpp.s
 .PHONY : src/test/rpc/GatewayBalances_test.cpp.s
 
 src/test/rpc/GetCounts_test.o: src/test/rpc/GetCounts_test.cpp.o
@@ -14725,7 +14725,7 @@ src/test/rpc/GetCounts_test.o: src/test/rpc/GetCounts_test.cpp.o
 
 # target to build an object file
 src/test/rpc/GetCounts_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/GetCounts_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/GetCounts_test.cpp.o
 .PHONY : src/test/rpc/GetCounts_test.cpp.o
 
 src/test/rpc/GetCounts_test.i: src/test/rpc/GetCounts_test.cpp.i
@@ -14734,7 +14734,7 @@ src/test/rpc/GetCounts_test.i: src/test/rpc/GetCounts_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/GetCounts_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/GetCounts_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/GetCounts_test.cpp.i
 .PHONY : src/test/rpc/GetCounts_test.cpp.i
 
 src/test/rpc/GetCounts_test.s: src/test/rpc/GetCounts_test.cpp.s
@@ -14743,7 +14743,7 @@ src/test/rpc/GetCounts_test.s: src/test/rpc/GetCounts_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/GetCounts_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/GetCounts_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/GetCounts_test.cpp.s
 .PHONY : src/test/rpc/GetCounts_test.cpp.s
 
 src/test/rpc/JSONRPC_test.o: src/test/rpc/JSONRPC_test.cpp.o
@@ -14752,7 +14752,7 @@ src/test/rpc/JSONRPC_test.o: src/test/rpc/JSONRPC_test.cpp.o
 
 # target to build an object file
 src/test/rpc/JSONRPC_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/JSONRPC_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/JSONRPC_test.cpp.o
 .PHONY : src/test/rpc/JSONRPC_test.cpp.o
 
 src/test/rpc/JSONRPC_test.i: src/test/rpc/JSONRPC_test.cpp.i
@@ -14761,7 +14761,7 @@ src/test/rpc/JSONRPC_test.i: src/test/rpc/JSONRPC_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/JSONRPC_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/JSONRPC_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/JSONRPC_test.cpp.i
 .PHONY : src/test/rpc/JSONRPC_test.cpp.i
 
 src/test/rpc/JSONRPC_test.s: src/test/rpc/JSONRPC_test.cpp.s
@@ -14770,7 +14770,7 @@ src/test/rpc/JSONRPC_test.s: src/test/rpc/JSONRPC_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/JSONRPC_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/JSONRPC_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/JSONRPC_test.cpp.s
 .PHONY : src/test/rpc/JSONRPC_test.cpp.s
 
 src/test/rpc/KeyGeneration_test.o: src/test/rpc/KeyGeneration_test.cpp.o
@@ -14779,7 +14779,7 @@ src/test/rpc/KeyGeneration_test.o: src/test/rpc/KeyGeneration_test.cpp.o
 
 # target to build an object file
 src/test/rpc/KeyGeneration_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/KeyGeneration_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/KeyGeneration_test.cpp.o
 .PHONY : src/test/rpc/KeyGeneration_test.cpp.o
 
 src/test/rpc/KeyGeneration_test.i: src/test/rpc/KeyGeneration_test.cpp.i
@@ -14788,7 +14788,7 @@ src/test/rpc/KeyGeneration_test.i: src/test/rpc/KeyGeneration_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/KeyGeneration_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/KeyGeneration_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/KeyGeneration_test.cpp.i
 .PHONY : src/test/rpc/KeyGeneration_test.cpp.i
 
 src/test/rpc/KeyGeneration_test.s: src/test/rpc/KeyGeneration_test.cpp.s
@@ -14797,7 +14797,7 @@ src/test/rpc/KeyGeneration_test.s: src/test/rpc/KeyGeneration_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/KeyGeneration_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/KeyGeneration_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/KeyGeneration_test.cpp.s
 .PHONY : src/test/rpc/KeyGeneration_test.cpp.s
 
 src/test/rpc/LedgerClosed_test.o: src/test/rpc/LedgerClosed_test.cpp.o
@@ -14806,7 +14806,7 @@ src/test/rpc/LedgerClosed_test.o: src/test/rpc/LedgerClosed_test.cpp.o
 
 # target to build an object file
 src/test/rpc/LedgerClosed_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/LedgerClosed_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/LedgerClosed_test.cpp.o
 .PHONY : src/test/rpc/LedgerClosed_test.cpp.o
 
 src/test/rpc/LedgerClosed_test.i: src/test/rpc/LedgerClosed_test.cpp.i
@@ -14815,7 +14815,7 @@ src/test/rpc/LedgerClosed_test.i: src/test/rpc/LedgerClosed_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/LedgerClosed_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/LedgerClosed_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/LedgerClosed_test.cpp.i
 .PHONY : src/test/rpc/LedgerClosed_test.cpp.i
 
 src/test/rpc/LedgerClosed_test.s: src/test/rpc/LedgerClosed_test.cpp.s
@@ -14824,7 +14824,7 @@ src/test/rpc/LedgerClosed_test.s: src/test/rpc/LedgerClosed_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/LedgerClosed_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/LedgerClosed_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/LedgerClosed_test.cpp.s
 .PHONY : src/test/rpc/LedgerClosed_test.cpp.s
 
 src/test/rpc/LedgerData_test.o: src/test/rpc/LedgerData_test.cpp.o
@@ -14833,7 +14833,7 @@ src/test/rpc/LedgerData_test.o: src/test/rpc/LedgerData_test.cpp.o
 
 # target to build an object file
 src/test/rpc/LedgerData_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/LedgerData_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/LedgerData_test.cpp.o
 .PHONY : src/test/rpc/LedgerData_test.cpp.o
 
 src/test/rpc/LedgerData_test.i: src/test/rpc/LedgerData_test.cpp.i
@@ -14842,7 +14842,7 @@ src/test/rpc/LedgerData_test.i: src/test/rpc/LedgerData_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/LedgerData_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/LedgerData_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/LedgerData_test.cpp.i
 .PHONY : src/test/rpc/LedgerData_test.cpp.i
 
 src/test/rpc/LedgerData_test.s: src/test/rpc/LedgerData_test.cpp.s
@@ -14851,7 +14851,7 @@ src/test/rpc/LedgerData_test.s: src/test/rpc/LedgerData_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/LedgerData_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/LedgerData_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/LedgerData_test.cpp.s
 .PHONY : src/test/rpc/LedgerData_test.cpp.s
 
 src/test/rpc/LedgerRPC_test.o: src/test/rpc/LedgerRPC_test.cpp.o
@@ -14860,7 +14860,7 @@ src/test/rpc/LedgerRPC_test.o: src/test/rpc/LedgerRPC_test.cpp.o
 
 # target to build an object file
 src/test/rpc/LedgerRPC_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/LedgerRPC_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/LedgerRPC_test.cpp.o
 .PHONY : src/test/rpc/LedgerRPC_test.cpp.o
 
 src/test/rpc/LedgerRPC_test.i: src/test/rpc/LedgerRPC_test.cpp.i
@@ -14869,7 +14869,7 @@ src/test/rpc/LedgerRPC_test.i: src/test/rpc/LedgerRPC_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/LedgerRPC_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/LedgerRPC_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/LedgerRPC_test.cpp.i
 .PHONY : src/test/rpc/LedgerRPC_test.cpp.i
 
 src/test/rpc/LedgerRPC_test.s: src/test/rpc/LedgerRPC_test.cpp.s
@@ -14878,7 +14878,7 @@ src/test/rpc/LedgerRPC_test.s: src/test/rpc/LedgerRPC_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/LedgerRPC_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/LedgerRPC_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/LedgerRPC_test.cpp.s
 .PHONY : src/test/rpc/LedgerRPC_test.cpp.s
 
 src/test/rpc/LedgerRequestRPC_test.o: src/test/rpc/LedgerRequestRPC_test.cpp.o
@@ -14887,7 +14887,7 @@ src/test/rpc/LedgerRequestRPC_test.o: src/test/rpc/LedgerRequestRPC_test.cpp.o
 
 # target to build an object file
 src/test/rpc/LedgerRequestRPC_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/LedgerRequestRPC_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/LedgerRequestRPC_test.cpp.o
 .PHONY : src/test/rpc/LedgerRequestRPC_test.cpp.o
 
 src/test/rpc/LedgerRequestRPC_test.i: src/test/rpc/LedgerRequestRPC_test.cpp.i
@@ -14896,7 +14896,7 @@ src/test/rpc/LedgerRequestRPC_test.i: src/test/rpc/LedgerRequestRPC_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/LedgerRequestRPC_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/LedgerRequestRPC_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/LedgerRequestRPC_test.cpp.i
 .PHONY : src/test/rpc/LedgerRequestRPC_test.cpp.i
 
 src/test/rpc/LedgerRequestRPC_test.s: src/test/rpc/LedgerRequestRPC_test.cpp.s
@@ -14905,7 +14905,7 @@ src/test/rpc/LedgerRequestRPC_test.s: src/test/rpc/LedgerRequestRPC_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/LedgerRequestRPC_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/LedgerRequestRPC_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/LedgerRequestRPC_test.cpp.s
 .PHONY : src/test/rpc/LedgerRequestRPC_test.cpp.s
 
 src/test/rpc/NoRippleCheck_test.o: src/test/rpc/NoRippleCheck_test.cpp.o
@@ -14914,7 +14914,7 @@ src/test/rpc/NoRippleCheck_test.o: src/test/rpc/NoRippleCheck_test.cpp.o
 
 # target to build an object file
 src/test/rpc/NoRippleCheck_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/NoRippleCheck_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/NoRippleCheck_test.cpp.o
 .PHONY : src/test/rpc/NoRippleCheck_test.cpp.o
 
 src/test/rpc/NoRippleCheck_test.i: src/test/rpc/NoRippleCheck_test.cpp.i
@@ -14923,7 +14923,7 @@ src/test/rpc/NoRippleCheck_test.i: src/test/rpc/NoRippleCheck_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/NoRippleCheck_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/NoRippleCheck_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/NoRippleCheck_test.cpp.i
 .PHONY : src/test/rpc/NoRippleCheck_test.cpp.i
 
 src/test/rpc/NoRippleCheck_test.s: src/test/rpc/NoRippleCheck_test.cpp.s
@@ -14932,7 +14932,7 @@ src/test/rpc/NoRippleCheck_test.s: src/test/rpc/NoRippleCheck_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/NoRippleCheck_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/NoRippleCheck_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/NoRippleCheck_test.cpp.s
 .PHONY : src/test/rpc/NoRippleCheck_test.cpp.s
 
 src/test/rpc/NoRipple_test.o: src/test/rpc/NoRipple_test.cpp.o
@@ -14941,7 +14941,7 @@ src/test/rpc/NoRipple_test.o: src/test/rpc/NoRipple_test.cpp.o
 
 # target to build an object file
 src/test/rpc/NoRipple_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/NoRipple_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/NoRipple_test.cpp.o
 .PHONY : src/test/rpc/NoRipple_test.cpp.o
 
 src/test/rpc/NoRipple_test.i: src/test/rpc/NoRipple_test.cpp.i
@@ -14950,7 +14950,7 @@ src/test/rpc/NoRipple_test.i: src/test/rpc/NoRipple_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/NoRipple_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/NoRipple_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/NoRipple_test.cpp.i
 .PHONY : src/test/rpc/NoRipple_test.cpp.i
 
 src/test/rpc/NoRipple_test.s: src/test/rpc/NoRipple_test.cpp.s
@@ -14959,7 +14959,7 @@ src/test/rpc/NoRipple_test.s: src/test/rpc/NoRipple_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/NoRipple_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/NoRipple_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/NoRipple_test.cpp.s
 .PHONY : src/test/rpc/NoRipple_test.cpp.s
 
 src/test/rpc/OwnerInfo_test.o: src/test/rpc/OwnerInfo_test.cpp.o
@@ -14968,7 +14968,7 @@ src/test/rpc/OwnerInfo_test.o: src/test/rpc/OwnerInfo_test.cpp.o
 
 # target to build an object file
 src/test/rpc/OwnerInfo_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/OwnerInfo_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/OwnerInfo_test.cpp.o
 .PHONY : src/test/rpc/OwnerInfo_test.cpp.o
 
 src/test/rpc/OwnerInfo_test.i: src/test/rpc/OwnerInfo_test.cpp.i
@@ -14977,7 +14977,7 @@ src/test/rpc/OwnerInfo_test.i: src/test/rpc/OwnerInfo_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/OwnerInfo_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/OwnerInfo_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/OwnerInfo_test.cpp.i
 .PHONY : src/test/rpc/OwnerInfo_test.cpp.i
 
 src/test/rpc/OwnerInfo_test.s: src/test/rpc/OwnerInfo_test.cpp.s
@@ -14986,7 +14986,7 @@ src/test/rpc/OwnerInfo_test.s: src/test/rpc/OwnerInfo_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/OwnerInfo_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/OwnerInfo_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/OwnerInfo_test.cpp.s
 .PHONY : src/test/rpc/OwnerInfo_test.cpp.s
 
 src/test/rpc/Peers_test.o: src/test/rpc/Peers_test.cpp.o
@@ -14995,7 +14995,7 @@ src/test/rpc/Peers_test.o: src/test/rpc/Peers_test.cpp.o
 
 # target to build an object file
 src/test/rpc/Peers_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Peers_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Peers_test.cpp.o
 .PHONY : src/test/rpc/Peers_test.cpp.o
 
 src/test/rpc/Peers_test.i: src/test/rpc/Peers_test.cpp.i
@@ -15004,7 +15004,7 @@ src/test/rpc/Peers_test.i: src/test/rpc/Peers_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/Peers_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Peers_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Peers_test.cpp.i
 .PHONY : src/test/rpc/Peers_test.cpp.i
 
 src/test/rpc/Peers_test.s: src/test/rpc/Peers_test.cpp.s
@@ -15013,7 +15013,7 @@ src/test/rpc/Peers_test.s: src/test/rpc/Peers_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/Peers_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Peers_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Peers_test.cpp.s
 .PHONY : src/test/rpc/Peers_test.cpp.s
 
 src/test/rpc/RPCOverload_test.o: src/test/rpc/RPCOverload_test.cpp.o
@@ -15022,7 +15022,7 @@ src/test/rpc/RPCOverload_test.o: src/test/rpc/RPCOverload_test.cpp.o
 
 # target to build an object file
 src/test/rpc/RPCOverload_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/RPCOverload_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/RPCOverload_test.cpp.o
 .PHONY : src/test/rpc/RPCOverload_test.cpp.o
 
 src/test/rpc/RPCOverload_test.i: src/test/rpc/RPCOverload_test.cpp.i
@@ -15031,7 +15031,7 @@ src/test/rpc/RPCOverload_test.i: src/test/rpc/RPCOverload_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/RPCOverload_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/RPCOverload_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/RPCOverload_test.cpp.i
 .PHONY : src/test/rpc/RPCOverload_test.cpp.i
 
 src/test/rpc/RPCOverload_test.s: src/test/rpc/RPCOverload_test.cpp.s
@@ -15040,7 +15040,7 @@ src/test/rpc/RPCOverload_test.s: src/test/rpc/RPCOverload_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/RPCOverload_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/RPCOverload_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/RPCOverload_test.cpp.s
 .PHONY : src/test/rpc/RPCOverload_test.cpp.s
 
 src/test/rpc/RobustTransaction_test.o: src/test/rpc/RobustTransaction_test.cpp.o
@@ -15049,7 +15049,7 @@ src/test/rpc/RobustTransaction_test.o: src/test/rpc/RobustTransaction_test.cpp.o
 
 # target to build an object file
 src/test/rpc/RobustTransaction_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/RobustTransaction_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/RobustTransaction_test.cpp.o
 .PHONY : src/test/rpc/RobustTransaction_test.cpp.o
 
 src/test/rpc/RobustTransaction_test.i: src/test/rpc/RobustTransaction_test.cpp.i
@@ -15058,7 +15058,7 @@ src/test/rpc/RobustTransaction_test.i: src/test/rpc/RobustTransaction_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/RobustTransaction_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/RobustTransaction_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/RobustTransaction_test.cpp.i
 .PHONY : src/test/rpc/RobustTransaction_test.cpp.i
 
 src/test/rpc/RobustTransaction_test.s: src/test/rpc/RobustTransaction_test.cpp.s
@@ -15067,7 +15067,7 @@ src/test/rpc/RobustTransaction_test.s: src/test/rpc/RobustTransaction_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/RobustTransaction_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/RobustTransaction_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/RobustTransaction_test.cpp.s
 .PHONY : src/test/rpc/RobustTransaction_test.cpp.s
 
 src/test/rpc/ServerInfo_test.o: src/test/rpc/ServerInfo_test.cpp.o
@@ -15076,7 +15076,7 @@ src/test/rpc/ServerInfo_test.o: src/test/rpc/ServerInfo_test.cpp.o
 
 # target to build an object file
 src/test/rpc/ServerInfo_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/ServerInfo_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/ServerInfo_test.cpp.o
 .PHONY : src/test/rpc/ServerInfo_test.cpp.o
 
 src/test/rpc/ServerInfo_test.i: src/test/rpc/ServerInfo_test.cpp.i
@@ -15085,7 +15085,7 @@ src/test/rpc/ServerInfo_test.i: src/test/rpc/ServerInfo_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/ServerInfo_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/ServerInfo_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/ServerInfo_test.cpp.i
 .PHONY : src/test/rpc/ServerInfo_test.cpp.i
 
 src/test/rpc/ServerInfo_test.s: src/test/rpc/ServerInfo_test.cpp.s
@@ -15094,7 +15094,7 @@ src/test/rpc/ServerInfo_test.s: src/test/rpc/ServerInfo_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/ServerInfo_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/ServerInfo_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/ServerInfo_test.cpp.s
 .PHONY : src/test/rpc/ServerInfo_test.cpp.s
 
 src/test/rpc/Status_test.o: src/test/rpc/Status_test.cpp.o
@@ -15103,7 +15103,7 @@ src/test/rpc/Status_test.o: src/test/rpc/Status_test.cpp.o
 
 # target to build an object file
 src/test/rpc/Status_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Status_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Status_test.cpp.o
 .PHONY : src/test/rpc/Status_test.cpp.o
 
 src/test/rpc/Status_test.i: src/test/rpc/Status_test.cpp.i
@@ -15112,7 +15112,7 @@ src/test/rpc/Status_test.i: src/test/rpc/Status_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/Status_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Status_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Status_test.cpp.i
 .PHONY : src/test/rpc/Status_test.cpp.i
 
 src/test/rpc/Status_test.s: src/test/rpc/Status_test.cpp.s
@@ -15121,7 +15121,7 @@ src/test/rpc/Status_test.s: src/test/rpc/Status_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/Status_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Status_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Status_test.cpp.s
 .PHONY : src/test/rpc/Status_test.cpp.s
 
 src/test/rpc/Subscribe_test.o: src/test/rpc/Subscribe_test.cpp.o
@@ -15130,7 +15130,7 @@ src/test/rpc/Subscribe_test.o: src/test/rpc/Subscribe_test.cpp.o
 
 # target to build an object file
 src/test/rpc/Subscribe_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Subscribe_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Subscribe_test.cpp.o
 .PHONY : src/test/rpc/Subscribe_test.cpp.o
 
 src/test/rpc/Subscribe_test.i: src/test/rpc/Subscribe_test.cpp.i
@@ -15139,7 +15139,7 @@ src/test/rpc/Subscribe_test.i: src/test/rpc/Subscribe_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/Subscribe_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Subscribe_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Subscribe_test.cpp.i
 .PHONY : src/test/rpc/Subscribe_test.cpp.i
 
 src/test/rpc/Subscribe_test.s: src/test/rpc/Subscribe_test.cpp.s
@@ -15148,7 +15148,7 @@ src/test/rpc/Subscribe_test.s: src/test/rpc/Subscribe_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/Subscribe_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/Subscribe_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/Subscribe_test.cpp.s
 .PHONY : src/test/rpc/Subscribe_test.cpp.s
 
 src/test/rpc/TransactionEntry_test.o: src/test/rpc/TransactionEntry_test.cpp.o
@@ -15157,7 +15157,7 @@ src/test/rpc/TransactionEntry_test.o: src/test/rpc/TransactionEntry_test.cpp.o
 
 # target to build an object file
 src/test/rpc/TransactionEntry_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/TransactionEntry_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/TransactionEntry_test.cpp.o
 .PHONY : src/test/rpc/TransactionEntry_test.cpp.o
 
 src/test/rpc/TransactionEntry_test.i: src/test/rpc/TransactionEntry_test.cpp.i
@@ -15166,7 +15166,7 @@ src/test/rpc/TransactionEntry_test.i: src/test/rpc/TransactionEntry_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/TransactionEntry_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/TransactionEntry_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/TransactionEntry_test.cpp.i
 .PHONY : src/test/rpc/TransactionEntry_test.cpp.i
 
 src/test/rpc/TransactionEntry_test.s: src/test/rpc/TransactionEntry_test.cpp.s
@@ -15175,7 +15175,7 @@ src/test/rpc/TransactionEntry_test.s: src/test/rpc/TransactionEntry_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/TransactionEntry_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/TransactionEntry_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/TransactionEntry_test.cpp.s
 .PHONY : src/test/rpc/TransactionEntry_test.cpp.s
 
 src/test/rpc/TransactionHistory_test.o: src/test/rpc/TransactionHistory_test.cpp.o
@@ -15184,7 +15184,7 @@ src/test/rpc/TransactionHistory_test.o: src/test/rpc/TransactionHistory_test.cpp
 
 # target to build an object file
 src/test/rpc/TransactionHistory_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/TransactionHistory_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/TransactionHistory_test.cpp.o
 .PHONY : src/test/rpc/TransactionHistory_test.cpp.o
 
 src/test/rpc/TransactionHistory_test.i: src/test/rpc/TransactionHistory_test.cpp.i
@@ -15193,7 +15193,7 @@ src/test/rpc/TransactionHistory_test.i: src/test/rpc/TransactionHistory_test.cpp
 
 # target to preprocess a source file
 src/test/rpc/TransactionHistory_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/TransactionHistory_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/TransactionHistory_test.cpp.i
 .PHONY : src/test/rpc/TransactionHistory_test.cpp.i
 
 src/test/rpc/TransactionHistory_test.s: src/test/rpc/TransactionHistory_test.cpp.s
@@ -15202,7 +15202,7 @@ src/test/rpc/TransactionHistory_test.s: src/test/rpc/TransactionHistory_test.cpp
 
 # target to generate assembly for a file
 src/test/rpc/TransactionHistory_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/TransactionHistory_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/TransactionHistory_test.cpp.s
 .PHONY : src/test/rpc/TransactionHistory_test.cpp.s
 
 src/test/rpc/ValidatorRPC_test.o: src/test/rpc/ValidatorRPC_test.cpp.o
@@ -15211,7 +15211,7 @@ src/test/rpc/ValidatorRPC_test.o: src/test/rpc/ValidatorRPC_test.cpp.o
 
 # target to build an object file
 src/test/rpc/ValidatorRPC_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/ValidatorRPC_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/ValidatorRPC_test.cpp.o
 .PHONY : src/test/rpc/ValidatorRPC_test.cpp.o
 
 src/test/rpc/ValidatorRPC_test.i: src/test/rpc/ValidatorRPC_test.cpp.i
@@ -15220,7 +15220,7 @@ src/test/rpc/ValidatorRPC_test.i: src/test/rpc/ValidatorRPC_test.cpp.i
 
 # target to preprocess a source file
 src/test/rpc/ValidatorRPC_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/ValidatorRPC_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/ValidatorRPC_test.cpp.i
 .PHONY : src/test/rpc/ValidatorRPC_test.cpp.i
 
 src/test/rpc/ValidatorRPC_test.s: src/test/rpc/ValidatorRPC_test.cpp.s
@@ -15229,7 +15229,7 @@ src/test/rpc/ValidatorRPC_test.s: src/test/rpc/ValidatorRPC_test.cpp.s
 
 # target to generate assembly for a file
 src/test/rpc/ValidatorRPC_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/rpc/ValidatorRPC_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/rpc/ValidatorRPC_test.cpp.s
 .PHONY : src/test/rpc/ValidatorRPC_test.cpp.s
 
 src/test/server/ServerStatus_test.o: src/test/server/ServerStatus_test.cpp.o
@@ -15238,7 +15238,7 @@ src/test/server/ServerStatus_test.o: src/test/server/ServerStatus_test.cpp.o
 
 # target to build an object file
 src/test/server/ServerStatus_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/server/ServerStatus_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/server/ServerStatus_test.cpp.o
 .PHONY : src/test/server/ServerStatus_test.cpp.o
 
 src/test/server/ServerStatus_test.i: src/test/server/ServerStatus_test.cpp.i
@@ -15247,7 +15247,7 @@ src/test/server/ServerStatus_test.i: src/test/server/ServerStatus_test.cpp.i
 
 # target to preprocess a source file
 src/test/server/ServerStatus_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/server/ServerStatus_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/server/ServerStatus_test.cpp.i
 .PHONY : src/test/server/ServerStatus_test.cpp.i
 
 src/test/server/ServerStatus_test.s: src/test/server/ServerStatus_test.cpp.s
@@ -15256,7 +15256,7 @@ src/test/server/ServerStatus_test.s: src/test/server/ServerStatus_test.cpp.s
 
 # target to generate assembly for a file
 src/test/server/ServerStatus_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/server/ServerStatus_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/server/ServerStatus_test.cpp.s
 .PHONY : src/test/server/ServerStatus_test.cpp.s
 
 src/test/server/Server_test.o: src/test/server/Server_test.cpp.o
@@ -15265,7 +15265,7 @@ src/test/server/Server_test.o: src/test/server/Server_test.cpp.o
 
 # target to build an object file
 src/test/server/Server_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/server/Server_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/server/Server_test.cpp.o
 .PHONY : src/test/server/Server_test.cpp.o
 
 src/test/server/Server_test.i: src/test/server/Server_test.cpp.i
@@ -15274,7 +15274,7 @@ src/test/server/Server_test.i: src/test/server/Server_test.cpp.i
 
 # target to preprocess a source file
 src/test/server/Server_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/server/Server_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/server/Server_test.cpp.i
 .PHONY : src/test/server/Server_test.cpp.i
 
 src/test/server/Server_test.s: src/test/server/Server_test.cpp.s
@@ -15283,7 +15283,7 @@ src/test/server/Server_test.s: src/test/server/Server_test.cpp.s
 
 # target to generate assembly for a file
 src/test/server/Server_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/server/Server_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/server/Server_test.cpp.s
 .PHONY : src/test/server/Server_test.cpp.s
 
 src/test/shamap/FetchPack_test.o: src/test/shamap/FetchPack_test.cpp.o
@@ -15292,7 +15292,7 @@ src/test/shamap/FetchPack_test.o: src/test/shamap/FetchPack_test.cpp.o
 
 # target to build an object file
 src/test/shamap/FetchPack_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/shamap/FetchPack_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/shamap/FetchPack_test.cpp.o
 .PHONY : src/test/shamap/FetchPack_test.cpp.o
 
 src/test/shamap/FetchPack_test.i: src/test/shamap/FetchPack_test.cpp.i
@@ -15301,7 +15301,7 @@ src/test/shamap/FetchPack_test.i: src/test/shamap/FetchPack_test.cpp.i
 
 # target to preprocess a source file
 src/test/shamap/FetchPack_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/shamap/FetchPack_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/shamap/FetchPack_test.cpp.i
 .PHONY : src/test/shamap/FetchPack_test.cpp.i
 
 src/test/shamap/FetchPack_test.s: src/test/shamap/FetchPack_test.cpp.s
@@ -15310,7 +15310,7 @@ src/test/shamap/FetchPack_test.s: src/test/shamap/FetchPack_test.cpp.s
 
 # target to generate assembly for a file
 src/test/shamap/FetchPack_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/shamap/FetchPack_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/shamap/FetchPack_test.cpp.s
 .PHONY : src/test/shamap/FetchPack_test.cpp.s
 
 src/test/shamap/SHAMapSync_test.o: src/test/shamap/SHAMapSync_test.cpp.o
@@ -15319,7 +15319,7 @@ src/test/shamap/SHAMapSync_test.o: src/test/shamap/SHAMapSync_test.cpp.o
 
 # target to build an object file
 src/test/shamap/SHAMapSync_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/shamap/SHAMapSync_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/shamap/SHAMapSync_test.cpp.o
 .PHONY : src/test/shamap/SHAMapSync_test.cpp.o
 
 src/test/shamap/SHAMapSync_test.i: src/test/shamap/SHAMapSync_test.cpp.i
@@ -15328,7 +15328,7 @@ src/test/shamap/SHAMapSync_test.i: src/test/shamap/SHAMapSync_test.cpp.i
 
 # target to preprocess a source file
 src/test/shamap/SHAMapSync_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/shamap/SHAMapSync_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/shamap/SHAMapSync_test.cpp.i
 .PHONY : src/test/shamap/SHAMapSync_test.cpp.i
 
 src/test/shamap/SHAMapSync_test.s: src/test/shamap/SHAMapSync_test.cpp.s
@@ -15337,7 +15337,7 @@ src/test/shamap/SHAMapSync_test.s: src/test/shamap/SHAMapSync_test.cpp.s
 
 # target to generate assembly for a file
 src/test/shamap/SHAMapSync_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/shamap/SHAMapSync_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/shamap/SHAMapSync_test.cpp.s
 .PHONY : src/test/shamap/SHAMapSync_test.cpp.s
 
 src/test/shamap/SHAMap_test.o: src/test/shamap/SHAMap_test.cpp.o
@@ -15346,7 +15346,7 @@ src/test/shamap/SHAMap_test.o: src/test/shamap/SHAMap_test.cpp.o
 
 # target to build an object file
 src/test/shamap/SHAMap_test.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/shamap/SHAMap_test.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/shamap/SHAMap_test.cpp.o
 .PHONY : src/test/shamap/SHAMap_test.cpp.o
 
 src/test/shamap/SHAMap_test.i: src/test/shamap/SHAMap_test.cpp.i
@@ -15355,7 +15355,7 @@ src/test/shamap/SHAMap_test.i: src/test/shamap/SHAMap_test.cpp.i
 
 # target to preprocess a source file
 src/test/shamap/SHAMap_test.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/shamap/SHAMap_test.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/shamap/SHAMap_test.cpp.i
 .PHONY : src/test/shamap/SHAMap_test.cpp.i
 
 src/test/shamap/SHAMap_test.s: src/test/shamap/SHAMap_test.cpp.s
@@ -15364,7 +15364,7 @@ src/test/shamap/SHAMap_test.s: src/test/shamap/SHAMap_test.cpp.s
 
 # target to generate assembly for a file
 src/test/shamap/SHAMap_test.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/shamap/SHAMap_test.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/shamap/SHAMap_test.cpp.s
 .PHONY : src/test/shamap/SHAMap_test.cpp.s
 
 src/test/unit_test/multi_runner.o: src/test/unit_test/multi_runner.cpp.o
@@ -15373,7 +15373,7 @@ src/test/unit_test/multi_runner.o: src/test/unit_test/multi_runner.cpp.o
 
 # target to build an object file
 src/test/unit_test/multi_runner.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/unit_test/multi_runner.cpp.o
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unit_test/multi_runner.cpp.o
 .PHONY : src/test/unit_test/multi_runner.cpp.o
 
 src/test/unit_test/multi_runner.i: src/test/unit_test/multi_runner.cpp.i
@@ -15382,7 +15382,7 @@ src/test/unit_test/multi_runner.i: src/test/unit_test/multi_runner.cpp.i
 
 # target to preprocess a source file
 src/test/unit_test/multi_runner.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/unit_test/multi_runner.cpp.i
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unit_test/multi_runner.cpp.i
 .PHONY : src/test/unit_test/multi_runner.cpp.i
 
 src/test/unit_test/multi_runner.s: src/test/unit_test/multi_runner.cpp.s
@@ -15391,7 +15391,7 @@ src/test/unit_test/multi_runner.s: src/test/unit_test/multi_runner.cpp.s
 
 # target to generate assembly for a file
 src/test/unit_test/multi_runner.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled_classic.dir/build.make CMakeFiles/rippled_classic.dir/src/test/unit_test/multi_runner.cpp.s
+	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unit_test/multi_runner.cpp.s
 .PHONY : src/test/unit_test/multi_runner.cpp.s
 
 src/test/unity/app_test_unity1.o: src/test/unity/app_test_unity1.cpp.o
@@ -15400,7 +15400,7 @@ src/test/unity/app_test_unity1.o: src/test/unity/app_test_unity1.cpp.o
 
 # target to build an object file
 src/test/unity/app_test_unity1.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/app_test_unity1.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/app_test_unity1.cpp.o
 .PHONY : src/test/unity/app_test_unity1.cpp.o
 
 src/test/unity/app_test_unity1.i: src/test/unity/app_test_unity1.cpp.i
@@ -15409,7 +15409,7 @@ src/test/unity/app_test_unity1.i: src/test/unity/app_test_unity1.cpp.i
 
 # target to preprocess a source file
 src/test/unity/app_test_unity1.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/app_test_unity1.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/app_test_unity1.cpp.i
 .PHONY : src/test/unity/app_test_unity1.cpp.i
 
 src/test/unity/app_test_unity1.s: src/test/unity/app_test_unity1.cpp.s
@@ -15418,7 +15418,7 @@ src/test/unity/app_test_unity1.s: src/test/unity/app_test_unity1.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/app_test_unity1.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/app_test_unity1.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/app_test_unity1.cpp.s
 .PHONY : src/test/unity/app_test_unity1.cpp.s
 
 src/test/unity/app_test_unity2.o: src/test/unity/app_test_unity2.cpp.o
@@ -15427,7 +15427,7 @@ src/test/unity/app_test_unity2.o: src/test/unity/app_test_unity2.cpp.o
 
 # target to build an object file
 src/test/unity/app_test_unity2.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/app_test_unity2.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/app_test_unity2.cpp.o
 .PHONY : src/test/unity/app_test_unity2.cpp.o
 
 src/test/unity/app_test_unity2.i: src/test/unity/app_test_unity2.cpp.i
@@ -15436,7 +15436,7 @@ src/test/unity/app_test_unity2.i: src/test/unity/app_test_unity2.cpp.i
 
 # target to preprocess a source file
 src/test/unity/app_test_unity2.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/app_test_unity2.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/app_test_unity2.cpp.i
 .PHONY : src/test/unity/app_test_unity2.cpp.i
 
 src/test/unity/app_test_unity2.s: src/test/unity/app_test_unity2.cpp.s
@@ -15445,7 +15445,7 @@ src/test/unity/app_test_unity2.s: src/test/unity/app_test_unity2.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/app_test_unity2.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/app_test_unity2.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/app_test_unity2.cpp.s
 .PHONY : src/test/unity/app_test_unity2.cpp.s
 
 src/test/unity/basics_test_unity.o: src/test/unity/basics_test_unity.cpp.o
@@ -15454,7 +15454,7 @@ src/test/unity/basics_test_unity.o: src/test/unity/basics_test_unity.cpp.o
 
 # target to build an object file
 src/test/unity/basics_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/basics_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/basics_test_unity.cpp.o
 .PHONY : src/test/unity/basics_test_unity.cpp.o
 
 src/test/unity/basics_test_unity.i: src/test/unity/basics_test_unity.cpp.i
@@ -15463,7 +15463,7 @@ src/test/unity/basics_test_unity.i: src/test/unity/basics_test_unity.cpp.i
 
 # target to preprocess a source file
 src/test/unity/basics_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/basics_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/basics_test_unity.cpp.i
 .PHONY : src/test/unity/basics_test_unity.cpp.i
 
 src/test/unity/basics_test_unity.s: src/test/unity/basics_test_unity.cpp.s
@@ -15472,7 +15472,7 @@ src/test/unity/basics_test_unity.s: src/test/unity/basics_test_unity.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/basics_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/basics_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/basics_test_unity.cpp.s
 .PHONY : src/test/unity/basics_test_unity.cpp.s
 
 src/test/unity/beast_test_unity1.o: src/test/unity/beast_test_unity1.cpp.o
@@ -15481,7 +15481,7 @@ src/test/unity/beast_test_unity1.o: src/test/unity/beast_test_unity1.cpp.o
 
 # target to build an object file
 src/test/unity/beast_test_unity1.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/beast_test_unity1.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/beast_test_unity1.cpp.o
 .PHONY : src/test/unity/beast_test_unity1.cpp.o
 
 src/test/unity/beast_test_unity1.i: src/test/unity/beast_test_unity1.cpp.i
@@ -15490,7 +15490,7 @@ src/test/unity/beast_test_unity1.i: src/test/unity/beast_test_unity1.cpp.i
 
 # target to preprocess a source file
 src/test/unity/beast_test_unity1.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/beast_test_unity1.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/beast_test_unity1.cpp.i
 .PHONY : src/test/unity/beast_test_unity1.cpp.i
 
 src/test/unity/beast_test_unity1.s: src/test/unity/beast_test_unity1.cpp.s
@@ -15499,7 +15499,7 @@ src/test/unity/beast_test_unity1.s: src/test/unity/beast_test_unity1.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/beast_test_unity1.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/beast_test_unity1.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/beast_test_unity1.cpp.s
 .PHONY : src/test/unity/beast_test_unity1.cpp.s
 
 src/test/unity/beast_test_unity2.o: src/test/unity/beast_test_unity2.cpp.o
@@ -15508,7 +15508,7 @@ src/test/unity/beast_test_unity2.o: src/test/unity/beast_test_unity2.cpp.o
 
 # target to build an object file
 src/test/unity/beast_test_unity2.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/beast_test_unity2.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/beast_test_unity2.cpp.o
 .PHONY : src/test/unity/beast_test_unity2.cpp.o
 
 src/test/unity/beast_test_unity2.i: src/test/unity/beast_test_unity2.cpp.i
@@ -15517,7 +15517,7 @@ src/test/unity/beast_test_unity2.i: src/test/unity/beast_test_unity2.cpp.i
 
 # target to preprocess a source file
 src/test/unity/beast_test_unity2.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/beast_test_unity2.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/beast_test_unity2.cpp.i
 .PHONY : src/test/unity/beast_test_unity2.cpp.i
 
 src/test/unity/beast_test_unity2.s: src/test/unity/beast_test_unity2.cpp.s
@@ -15526,7 +15526,7 @@ src/test/unity/beast_test_unity2.s: src/test/unity/beast_test_unity2.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/beast_test_unity2.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/beast_test_unity2.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/beast_test_unity2.cpp.s
 .PHONY : src/test/unity/beast_test_unity2.cpp.s
 
 src/test/unity/conditions_test_unity.o: src/test/unity/conditions_test_unity.cpp.o
@@ -15535,7 +15535,7 @@ src/test/unity/conditions_test_unity.o: src/test/unity/conditions_test_unity.cpp
 
 # target to build an object file
 src/test/unity/conditions_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/conditions_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/conditions_test_unity.cpp.o
 .PHONY : src/test/unity/conditions_test_unity.cpp.o
 
 src/test/unity/conditions_test_unity.i: src/test/unity/conditions_test_unity.cpp.i
@@ -15544,7 +15544,7 @@ src/test/unity/conditions_test_unity.i: src/test/unity/conditions_test_unity.cpp
 
 # target to preprocess a source file
 src/test/unity/conditions_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/conditions_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/conditions_test_unity.cpp.i
 .PHONY : src/test/unity/conditions_test_unity.cpp.i
 
 src/test/unity/conditions_test_unity.s: src/test/unity/conditions_test_unity.cpp.s
@@ -15553,7 +15553,7 @@ src/test/unity/conditions_test_unity.s: src/test/unity/conditions_test_unity.cpp
 
 # target to generate assembly for a file
 src/test/unity/conditions_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/conditions_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/conditions_test_unity.cpp.s
 .PHONY : src/test/unity/conditions_test_unity.cpp.s
 
 src/test/unity/consensus_test_unity.o: src/test/unity/consensus_test_unity.cpp.o
@@ -15562,7 +15562,7 @@ src/test/unity/consensus_test_unity.o: src/test/unity/consensus_test_unity.cpp.o
 
 # target to build an object file
 src/test/unity/consensus_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/consensus_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/consensus_test_unity.cpp.o
 .PHONY : src/test/unity/consensus_test_unity.cpp.o
 
 src/test/unity/consensus_test_unity.i: src/test/unity/consensus_test_unity.cpp.i
@@ -15571,7 +15571,7 @@ src/test/unity/consensus_test_unity.i: src/test/unity/consensus_test_unity.cpp.i
 
 # target to preprocess a source file
 src/test/unity/consensus_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/consensus_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/consensus_test_unity.cpp.i
 .PHONY : src/test/unity/consensus_test_unity.cpp.i
 
 src/test/unity/consensus_test_unity.s: src/test/unity/consensus_test_unity.cpp.s
@@ -15580,7 +15580,7 @@ src/test/unity/consensus_test_unity.s: src/test/unity/consensus_test_unity.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/consensus_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/consensus_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/consensus_test_unity.cpp.s
 .PHONY : src/test/unity/consensus_test_unity.cpp.s
 
 src/test/unity/core_test_unity.o: src/test/unity/core_test_unity.cpp.o
@@ -15589,7 +15589,7 @@ src/test/unity/core_test_unity.o: src/test/unity/core_test_unity.cpp.o
 
 # target to build an object file
 src/test/unity/core_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/core_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/core_test_unity.cpp.o
 .PHONY : src/test/unity/core_test_unity.cpp.o
 
 src/test/unity/core_test_unity.i: src/test/unity/core_test_unity.cpp.i
@@ -15598,7 +15598,7 @@ src/test/unity/core_test_unity.i: src/test/unity/core_test_unity.cpp.i
 
 # target to preprocess a source file
 src/test/unity/core_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/core_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/core_test_unity.cpp.i
 .PHONY : src/test/unity/core_test_unity.cpp.i
 
 src/test/unity/core_test_unity.s: src/test/unity/core_test_unity.cpp.s
@@ -15607,7 +15607,7 @@ src/test/unity/core_test_unity.s: src/test/unity/core_test_unity.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/core_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/core_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/core_test_unity.cpp.s
 .PHONY : src/test/unity/core_test_unity.cpp.s
 
 src/test/unity/csf_unity.o: src/test/unity/csf_unity.cpp.o
@@ -15616,7 +15616,7 @@ src/test/unity/csf_unity.o: src/test/unity/csf_unity.cpp.o
 
 # target to build an object file
 src/test/unity/csf_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/csf_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/csf_unity.cpp.o
 .PHONY : src/test/unity/csf_unity.cpp.o
 
 src/test/unity/csf_unity.i: src/test/unity/csf_unity.cpp.i
@@ -15625,7 +15625,7 @@ src/test/unity/csf_unity.i: src/test/unity/csf_unity.cpp.i
 
 # target to preprocess a source file
 src/test/unity/csf_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/csf_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/csf_unity.cpp.i
 .PHONY : src/test/unity/csf_unity.cpp.i
 
 src/test/unity/csf_unity.s: src/test/unity/csf_unity.cpp.s
@@ -15634,7 +15634,7 @@ src/test/unity/csf_unity.s: src/test/unity/csf_unity.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/csf_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/csf_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/csf_unity.cpp.s
 .PHONY : src/test/unity/csf_unity.cpp.s
 
 src/test/unity/json_test_unity.o: src/test/unity/json_test_unity.cpp.o
@@ -15643,7 +15643,7 @@ src/test/unity/json_test_unity.o: src/test/unity/json_test_unity.cpp.o
 
 # target to build an object file
 src/test/unity/json_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/json_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/json_test_unity.cpp.o
 .PHONY : src/test/unity/json_test_unity.cpp.o
 
 src/test/unity/json_test_unity.i: src/test/unity/json_test_unity.cpp.i
@@ -15652,7 +15652,7 @@ src/test/unity/json_test_unity.i: src/test/unity/json_test_unity.cpp.i
 
 # target to preprocess a source file
 src/test/unity/json_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/json_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/json_test_unity.cpp.i
 .PHONY : src/test/unity/json_test_unity.cpp.i
 
 src/test/unity/json_test_unity.s: src/test/unity/json_test_unity.cpp.s
@@ -15661,7 +15661,7 @@ src/test/unity/json_test_unity.s: src/test/unity/json_test_unity.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/json_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/json_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/json_test_unity.cpp.s
 .PHONY : src/test/unity/json_test_unity.cpp.s
 
 src/test/unity/jtx_unity1.o: src/test/unity/jtx_unity1.cpp.o
@@ -15670,7 +15670,7 @@ src/test/unity/jtx_unity1.o: src/test/unity/jtx_unity1.cpp.o
 
 # target to build an object file
 src/test/unity/jtx_unity1.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/jtx_unity1.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/jtx_unity1.cpp.o
 .PHONY : src/test/unity/jtx_unity1.cpp.o
 
 src/test/unity/jtx_unity1.i: src/test/unity/jtx_unity1.cpp.i
@@ -15679,7 +15679,7 @@ src/test/unity/jtx_unity1.i: src/test/unity/jtx_unity1.cpp.i
 
 # target to preprocess a source file
 src/test/unity/jtx_unity1.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/jtx_unity1.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/jtx_unity1.cpp.i
 .PHONY : src/test/unity/jtx_unity1.cpp.i
 
 src/test/unity/jtx_unity1.s: src/test/unity/jtx_unity1.cpp.s
@@ -15688,7 +15688,7 @@ src/test/unity/jtx_unity1.s: src/test/unity/jtx_unity1.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/jtx_unity1.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/jtx_unity1.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/jtx_unity1.cpp.s
 .PHONY : src/test/unity/jtx_unity1.cpp.s
 
 src/test/unity/jtx_unity2.o: src/test/unity/jtx_unity2.cpp.o
@@ -15697,7 +15697,7 @@ src/test/unity/jtx_unity2.o: src/test/unity/jtx_unity2.cpp.o
 
 # target to build an object file
 src/test/unity/jtx_unity2.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/jtx_unity2.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/jtx_unity2.cpp.o
 .PHONY : src/test/unity/jtx_unity2.cpp.o
 
 src/test/unity/jtx_unity2.i: src/test/unity/jtx_unity2.cpp.i
@@ -15706,7 +15706,7 @@ src/test/unity/jtx_unity2.i: src/test/unity/jtx_unity2.cpp.i
 
 # target to preprocess a source file
 src/test/unity/jtx_unity2.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/jtx_unity2.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/jtx_unity2.cpp.i
 .PHONY : src/test/unity/jtx_unity2.cpp.i
 
 src/test/unity/jtx_unity2.s: src/test/unity/jtx_unity2.cpp.s
@@ -15715,7 +15715,7 @@ src/test/unity/jtx_unity2.s: src/test/unity/jtx_unity2.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/jtx_unity2.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/jtx_unity2.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/jtx_unity2.cpp.s
 .PHONY : src/test/unity/jtx_unity2.cpp.s
 
 src/test/unity/ledger_test_unity.o: src/test/unity/ledger_test_unity.cpp.o
@@ -15724,7 +15724,7 @@ src/test/unity/ledger_test_unity.o: src/test/unity/ledger_test_unity.cpp.o
 
 # target to build an object file
 src/test/unity/ledger_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/ledger_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/ledger_test_unity.cpp.o
 .PHONY : src/test/unity/ledger_test_unity.cpp.o
 
 src/test/unity/ledger_test_unity.i: src/test/unity/ledger_test_unity.cpp.i
@@ -15733,7 +15733,7 @@ src/test/unity/ledger_test_unity.i: src/test/unity/ledger_test_unity.cpp.i
 
 # target to preprocess a source file
 src/test/unity/ledger_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/ledger_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/ledger_test_unity.cpp.i
 .PHONY : src/test/unity/ledger_test_unity.cpp.i
 
 src/test/unity/ledger_test_unity.s: src/test/unity/ledger_test_unity.cpp.s
@@ -15742,7 +15742,7 @@ src/test/unity/ledger_test_unity.s: src/test/unity/ledger_test_unity.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/ledger_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/ledger_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/ledger_test_unity.cpp.s
 .PHONY : src/test/unity/ledger_test_unity.cpp.s
 
 src/test/unity/nodestore_test_unity.o: src/test/unity/nodestore_test_unity.cpp.o
@@ -15751,7 +15751,7 @@ src/test/unity/nodestore_test_unity.o: src/test/unity/nodestore_test_unity.cpp.o
 
 # target to build an object file
 src/test/unity/nodestore_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/nodestore_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/nodestore_test_unity.cpp.o
 .PHONY : src/test/unity/nodestore_test_unity.cpp.o
 
 src/test/unity/nodestore_test_unity.i: src/test/unity/nodestore_test_unity.cpp.i
@@ -15760,7 +15760,7 @@ src/test/unity/nodestore_test_unity.i: src/test/unity/nodestore_test_unity.cpp.i
 
 # target to preprocess a source file
 src/test/unity/nodestore_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/nodestore_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/nodestore_test_unity.cpp.i
 .PHONY : src/test/unity/nodestore_test_unity.cpp.i
 
 src/test/unity/nodestore_test_unity.s: src/test/unity/nodestore_test_unity.cpp.s
@@ -15769,7 +15769,7 @@ src/test/unity/nodestore_test_unity.s: src/test/unity/nodestore_test_unity.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/nodestore_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/nodestore_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/nodestore_test_unity.cpp.s
 .PHONY : src/test/unity/nodestore_test_unity.cpp.s
 
 src/test/unity/overlay_test_unity.o: src/test/unity/overlay_test_unity.cpp.o
@@ -15778,7 +15778,7 @@ src/test/unity/overlay_test_unity.o: src/test/unity/overlay_test_unity.cpp.o
 
 # target to build an object file
 src/test/unity/overlay_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/overlay_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/overlay_test_unity.cpp.o
 .PHONY : src/test/unity/overlay_test_unity.cpp.o
 
 src/test/unity/overlay_test_unity.i: src/test/unity/overlay_test_unity.cpp.i
@@ -15787,7 +15787,7 @@ src/test/unity/overlay_test_unity.i: src/test/unity/overlay_test_unity.cpp.i
 
 # target to preprocess a source file
 src/test/unity/overlay_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/overlay_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/overlay_test_unity.cpp.i
 .PHONY : src/test/unity/overlay_test_unity.cpp.i
 
 src/test/unity/overlay_test_unity.s: src/test/unity/overlay_test_unity.cpp.s
@@ -15796,7 +15796,7 @@ src/test/unity/overlay_test_unity.s: src/test/unity/overlay_test_unity.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/overlay_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/overlay_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/overlay_test_unity.cpp.s
 .PHONY : src/test/unity/overlay_test_unity.cpp.s
 
 src/test/unity/peerfinder_test_unity.o: src/test/unity/peerfinder_test_unity.cpp.o
@@ -15805,7 +15805,7 @@ src/test/unity/peerfinder_test_unity.o: src/test/unity/peerfinder_test_unity.cpp
 
 # target to build an object file
 src/test/unity/peerfinder_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/peerfinder_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/peerfinder_test_unity.cpp.o
 .PHONY : src/test/unity/peerfinder_test_unity.cpp.o
 
 src/test/unity/peerfinder_test_unity.i: src/test/unity/peerfinder_test_unity.cpp.i
@@ -15814,7 +15814,7 @@ src/test/unity/peerfinder_test_unity.i: src/test/unity/peerfinder_test_unity.cpp
 
 # target to preprocess a source file
 src/test/unity/peerfinder_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/peerfinder_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/peerfinder_test_unity.cpp.i
 .PHONY : src/test/unity/peerfinder_test_unity.cpp.i
 
 src/test/unity/peerfinder_test_unity.s: src/test/unity/peerfinder_test_unity.cpp.s
@@ -15823,7 +15823,7 @@ src/test/unity/peerfinder_test_unity.s: src/test/unity/peerfinder_test_unity.cpp
 
 # target to generate assembly for a file
 src/test/unity/peerfinder_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/peerfinder_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/peerfinder_test_unity.cpp.s
 .PHONY : src/test/unity/peerfinder_test_unity.cpp.s
 
 src/test/unity/protocol_test_unity.o: src/test/unity/protocol_test_unity.cpp.o
@@ -15832,7 +15832,7 @@ src/test/unity/protocol_test_unity.o: src/test/unity/protocol_test_unity.cpp.o
 
 # target to build an object file
 src/test/unity/protocol_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/protocol_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/protocol_test_unity.cpp.o
 .PHONY : src/test/unity/protocol_test_unity.cpp.o
 
 src/test/unity/protocol_test_unity.i: src/test/unity/protocol_test_unity.cpp.i
@@ -15841,7 +15841,7 @@ src/test/unity/protocol_test_unity.i: src/test/unity/protocol_test_unity.cpp.i
 
 # target to preprocess a source file
 src/test/unity/protocol_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/protocol_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/protocol_test_unity.cpp.i
 .PHONY : src/test/unity/protocol_test_unity.cpp.i
 
 src/test/unity/protocol_test_unity.s: src/test/unity/protocol_test_unity.cpp.s
@@ -15850,7 +15850,7 @@ src/test/unity/protocol_test_unity.s: src/test/unity/protocol_test_unity.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/protocol_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/protocol_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/protocol_test_unity.cpp.s
 .PHONY : src/test/unity/protocol_test_unity.cpp.s
 
 src/test/unity/resource_test_unity.o: src/test/unity/resource_test_unity.cpp.o
@@ -15859,7 +15859,7 @@ src/test/unity/resource_test_unity.o: src/test/unity/resource_test_unity.cpp.o
 
 # target to build an object file
 src/test/unity/resource_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/resource_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/resource_test_unity.cpp.o
 .PHONY : src/test/unity/resource_test_unity.cpp.o
 
 src/test/unity/resource_test_unity.i: src/test/unity/resource_test_unity.cpp.i
@@ -15868,7 +15868,7 @@ src/test/unity/resource_test_unity.i: src/test/unity/resource_test_unity.cpp.i
 
 # target to preprocess a source file
 src/test/unity/resource_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/resource_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/resource_test_unity.cpp.i
 .PHONY : src/test/unity/resource_test_unity.cpp.i
 
 src/test/unity/resource_test_unity.s: src/test/unity/resource_test_unity.cpp.s
@@ -15877,7 +15877,7 @@ src/test/unity/resource_test_unity.s: src/test/unity/resource_test_unity.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/resource_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/resource_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/resource_test_unity.cpp.s
 .PHONY : src/test/unity/resource_test_unity.cpp.s
 
 src/test/unity/rpc_test_unity.o: src/test/unity/rpc_test_unity.cpp.o
@@ -15886,7 +15886,7 @@ src/test/unity/rpc_test_unity.o: src/test/unity/rpc_test_unity.cpp.o
 
 # target to build an object file
 src/test/unity/rpc_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/rpc_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/rpc_test_unity.cpp.o
 .PHONY : src/test/unity/rpc_test_unity.cpp.o
 
 src/test/unity/rpc_test_unity.i: src/test/unity/rpc_test_unity.cpp.i
@@ -15895,7 +15895,7 @@ src/test/unity/rpc_test_unity.i: src/test/unity/rpc_test_unity.cpp.i
 
 # target to preprocess a source file
 src/test/unity/rpc_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/rpc_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/rpc_test_unity.cpp.i
 .PHONY : src/test/unity/rpc_test_unity.cpp.i
 
 src/test/unity/rpc_test_unity.s: src/test/unity/rpc_test_unity.cpp.s
@@ -15904,7 +15904,7 @@ src/test/unity/rpc_test_unity.s: src/test/unity/rpc_test_unity.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/rpc_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/rpc_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/rpc_test_unity.cpp.s
 .PHONY : src/test/unity/rpc_test_unity.cpp.s
 
 src/test/unity/server_status_test_unity.o: src/test/unity/server_status_test_unity.cpp.o
@@ -15913,7 +15913,7 @@ src/test/unity/server_status_test_unity.o: src/test/unity/server_status_test_uni
 
 # target to build an object file
 src/test/unity/server_status_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/server_status_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/server_status_test_unity.cpp.o
 .PHONY : src/test/unity/server_status_test_unity.cpp.o
 
 src/test/unity/server_status_test_unity.i: src/test/unity/server_status_test_unity.cpp.i
@@ -15922,7 +15922,7 @@ src/test/unity/server_status_test_unity.i: src/test/unity/server_status_test_uni
 
 # target to preprocess a source file
 src/test/unity/server_status_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/server_status_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/server_status_test_unity.cpp.i
 .PHONY : src/test/unity/server_status_test_unity.cpp.i
 
 src/test/unity/server_status_test_unity.s: src/test/unity/server_status_test_unity.cpp.s
@@ -15931,7 +15931,7 @@ src/test/unity/server_status_test_unity.s: src/test/unity/server_status_test_uni
 
 # target to generate assembly for a file
 src/test/unity/server_status_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/server_status_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/server_status_test_unity.cpp.s
 .PHONY : src/test/unity/server_status_test_unity.cpp.s
 
 src/test/unity/server_test_unity.o: src/test/unity/server_test_unity.cpp.o
@@ -15940,7 +15940,7 @@ src/test/unity/server_test_unity.o: src/test/unity/server_test_unity.cpp.o
 
 # target to build an object file
 src/test/unity/server_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/server_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/server_test_unity.cpp.o
 .PHONY : src/test/unity/server_test_unity.cpp.o
 
 src/test/unity/server_test_unity.i: src/test/unity/server_test_unity.cpp.i
@@ -15949,7 +15949,7 @@ src/test/unity/server_test_unity.i: src/test/unity/server_test_unity.cpp.i
 
 # target to preprocess a source file
 src/test/unity/server_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/server_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/server_test_unity.cpp.i
 .PHONY : src/test/unity/server_test_unity.cpp.i
 
 src/test/unity/server_test_unity.s: src/test/unity/server_test_unity.cpp.s
@@ -15958,7 +15958,7 @@ src/test/unity/server_test_unity.s: src/test/unity/server_test_unity.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/server_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/server_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/server_test_unity.cpp.s
 .PHONY : src/test/unity/server_test_unity.cpp.s
 
 src/test/unity/shamap_test_unity.o: src/test/unity/shamap_test_unity.cpp.o
@@ -15967,7 +15967,7 @@ src/test/unity/shamap_test_unity.o: src/test/unity/shamap_test_unity.cpp.o
 
 # target to build an object file
 src/test/unity/shamap_test_unity.cpp.o:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/shamap_test_unity.cpp.o
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/shamap_test_unity.cpp.o
 .PHONY : src/test/unity/shamap_test_unity.cpp.o
 
 src/test/unity/shamap_test_unity.i: src/test/unity/shamap_test_unity.cpp.i
@@ -15976,7 +15976,7 @@ src/test/unity/shamap_test_unity.i: src/test/unity/shamap_test_unity.cpp.i
 
 # target to preprocess a source file
 src/test/unity/shamap_test_unity.cpp.i:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/shamap_test_unity.cpp.i
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/shamap_test_unity.cpp.i
 .PHONY : src/test/unity/shamap_test_unity.cpp.i
 
 src/test/unity/shamap_test_unity.s: src/test/unity/shamap_test_unity.cpp.s
@@ -15985,7 +15985,7 @@ src/test/unity/shamap_test_unity.s: src/test/unity/shamap_test_unity.cpp.s
 
 # target to generate assembly for a file
 src/test/unity/shamap_test_unity.cpp.s:
-	$(MAKE) -f CMakeFiles/rippled.dir/build.make CMakeFiles/rippled.dir/src/test/unity/shamap_test_unity.cpp.s
+	$(MAKE) -f CMakeFiles/rippled_unity.dir/build.make CMakeFiles/rippled_unity.dir/src/test/unity/shamap_test_unity.cpp.s
 .PHONY : src/test/unity/shamap_test_unity.cpp.s
 
 # Help Target
@@ -15995,7 +15995,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... rippled_classic"
+	@echo "... rippled_unity"
 	@echo "... rebuild_cache"
 	@echo "... rippled"
 	@echo "... src/ripple/app/consensus/RCLConsensus.o"
