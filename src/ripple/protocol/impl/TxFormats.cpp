@@ -162,20 +162,9 @@ Tri
     add ("CheckCancel", ttCHECK_CANCEL)
         << SOElement (sfCheckID,             SOE_REQUIRED)
         ;
-
-
     add ("LogTransaction", ttLOG_TRANSACTION)
         << SOElement (sfContent,             SOE_REQUIRED)
-        << SOElement (sfExpiration,          SOE_OPTIONAL)
         ;
-
-/*No thing about this one
-    add ("OfferCreate", ttOFFER_CREATE)
-            << SOElement (sfTakerPays,           SOE_REQUIRED)
-            << SOElement (sfTakerGets,           SOE_REQUIRED)
-            << SOElement (sfExpiration,          SOE_OPTIONAL)
-            << SOElement (sfOfferSequence,       SOE_OPTIONAL)
-            ;*/
 }
 
 void TxFormats::addCommonFields (Item& item)

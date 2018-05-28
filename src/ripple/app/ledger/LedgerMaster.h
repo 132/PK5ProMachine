@@ -210,11 +210,11 @@ public:
 
     void tryAdvance ();
 
-/*Tri
+
     bool newPathRequest (); // Returns true if path request successfully placed.
     bool isNewPathRequest ();
     bool newOrderBookDB (); // Returns true if able to fulfill request.
-    */
+
 
 
 
@@ -292,7 +292,7 @@ private:
 
 
 
-//Tri     void updatePaths(Job& job);
+     void updatePaths(Job& job);
 
 
 
@@ -316,7 +316,7 @@ private:
     std::shared_ptr<Ledger const> mPubLedger;
 
     // The last ledger we did pathfinding against.
-//Tri    std::shared_ptr<Ledger const> mPathLedger;
+    std::shared_ptr<Ledger const> mPathLedger;
 
     // The last ledger we handled fetching history
     std::shared_ptr<Ledger const> mHistLedger;
@@ -351,10 +351,14 @@ private:
 
 
 //Tri --------------------- remove path to calculate XRP
-/*
+
     int     mPathFindThread {0};    // Pathfinder jobs dispatched
     bool    mPathFindNewRequest {false};
-*/
+
+
+
+
+
     std::atomic <std::uint32_t> mPubLedgerClose {0};
     std::atomic <LedgerIndex> mPubLedgerSeq {0};
     std::atomic <std::uint32_t> mValidLedgerSign {0};

@@ -60,6 +60,8 @@ enum TxType
     ttFEE               = 101,
 
 
+
+
     ttLOG_TRANSACTION   = 132,
 };
 

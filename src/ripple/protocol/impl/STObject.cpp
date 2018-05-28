@@ -521,9 +521,11 @@ uint256 STObject::getFieldH256 (SField const& field) const
 
 
 
-    uint256 STObject::getTransactionContent (SField const& field) const
+    Blob STObject::getTransactionContent (SField const& field) const
     {
-        return getFieldByValue <STBitString<256>> (field);
+        STBlob empty;
+        STBlob const& b = getFieldByConstRef <STBlob> (field, empty);
+        return Blob (b.data (), b.data () + b.size ());
     }
 
 

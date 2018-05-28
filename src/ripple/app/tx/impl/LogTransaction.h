@@ -22,9 +22,7 @@ namespace ripple {
 
     public:
 
-        LogTransaction (ApplyContext& ctx)
-                : Transactor(ctx){
-        }
+        LogTransaction (ApplyContext& ctx);
 
         static
         TER
@@ -39,9 +37,6 @@ namespace ripple {
 
         TER
         doApply() override;
-
-        std::pair<TER, bool>
-        applyGuts (Sandbox& view, Sandbox& view_cancel);
     };
 
 }

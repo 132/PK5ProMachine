@@ -2524,9 +2524,15 @@ Json::Value NetworkOPsImp::transJson(
         auto const &account = stTxn.getAccountID(sfAccount);
         auto const TransactionContent = stTxn.getTransactionContent(sfContent);
 
-
+        std::string StringContent(TransactionContent.begin(), TransactionContent.end());
+/*String
         if (TransactionContent.isNonZero())
             jvObj[jss::transaction][jss::TransactionContent] = std::to_string(TransactionContent.bytes);
+*/
+// Blob
+        //if (TransactionContent.getText () != "")
+        if(!StringContent.empty())
+            jvObj[jss::transaction][jss::TransactionContent] = StringContent;
     }
     return jvObj;
 }

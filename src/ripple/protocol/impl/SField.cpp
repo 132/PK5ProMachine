@@ -408,7 +408,11 @@ SField::getField (std::string const& fieldName)
 }
 
 
+//SF_U256 const sfCheckID       = make::one<SF_U256::type>(&sfCheckID,       STI_HASH256, 24, "CheckID");
+//SF_Blob const sfCondition       = make::one<SF_Blob::type>(&sfCondition,       STI_VL, 17, "Condition");
 
-SF_U256 const sfContent       = make::one<SF_U256::type>(&sfContent,       STI_HASH256, 25, "ContentTransaction");
+    SF_Blob const sfContent = make::one<SF_Blob::type>(&sfContent, STI_VL, 30, "ContentTransaction");
+//extern StringContent const sfContent;
+
 
 } // ripple

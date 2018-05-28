@@ -1122,7 +1122,7 @@ LedgerMaster::getLedgerHash(
     return hash;
 }
 
-/*Tri
+
 void
 LedgerMaster::updatePaths (Job& job)
 {
@@ -1232,9 +1232,9 @@ LedgerMaster::newOrderBookDB ()
     return newPFWork("pf:newOBDB", ml);
 }
 
-*/
+
 /** A thread needs to be dispatched to handle pathfinding work of some kind.
-*//*
+*/
 
 bool
 LedgerMaster::newPFWork (const char *name, ScopedLockType&)
@@ -1252,7 +1252,7 @@ LedgerMaster::newPFWork (const char *name, ScopedLockType&)
     // request will be fulfilled, even if it may be serviced.
     return mPathFindThread > 0 && !isStopping();
 }
-*/
+
 
 std::recursive_mutex&
 LedgerMaster::peekMutex ()

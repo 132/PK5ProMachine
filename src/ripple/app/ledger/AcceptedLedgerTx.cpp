@@ -135,10 +135,8 @@ void AcceptedLedgerTx::buildJson ()
         if (mTxn->getTxnType () == ttLOG_TRANSACTION)
         {
             auto const& account = mTxn->getAccountID(sfAccount);
-
-
-            auto const TransactionContent = mTxn->getTransactionContent (sfContent);
-
+            auto const TransactionContent = mTxn->getTransactionContent (sfContent);    // type Blob = std::vector<unsigned char>
+            std::string StringContent(TransactionContent.begin(),TransactionContent.end());
             // If the offer create is not self funded then add the owner balance
             /*if (account != amount.issue ().account)
             {
@@ -147,9 +145,12 @@ void AcceptedLedgerTx::buildJson ()
                 mJson[jss::transaction][jss::owner_funds] = ownerFunds.getText ();
             }*/
 
+/*
             if(TransactionContent.isNonZero())
-
                 mJson[jss::transaction][jss::TransactionContent] = std::to_string(TransactionContent.bytes);
+*/
+            if(!StringContent.empty())
+                mJson[jss::transaction][jss::TransactionContent] = StringContent;
         }
     }
 

@@ -443,7 +443,7 @@ public:
     const STArray& getFieldArray (SField const& field) const;
 
 
-    uint256 getTransactionContent (SField const& field) const;
+    Blob getTransactionContent (SField const& field) const;
 
     /** Return the value of a field.
 

@@ -509,9 +509,15 @@ extern SField const sfMajorities;
 //------------------------------------------------------------------------------
 //using StringContent = TypedField<STBitString<256>>;
 
-using StringContent = TypedField<STBitString<256>>;
 
-extern SF_U256 const sfContent;
+
+// A Binary Large OBject (BLOB) is a collection of binary data stored as a single entity in a database management system.
+// Blobs are typically images, audio or other multimedia objects, though sometimes binary executable code is stored as a blob.
+// Database support for blobs is not universal.
+
+//using StringContent = TypedField<STBitString<256>>;
+using SF_Blob = TypedField<STBlob>;
+extern SF_Blob const sfContent;
 // STBitString.values_.getText(); -> return a text
 
 } // ripple
