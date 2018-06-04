@@ -110,6 +110,7 @@ private:
 
     OpenView& base_;
     ApplyFlags flags_;
+
     boost::optional<ApplyViewImpl> view_;
 };
 

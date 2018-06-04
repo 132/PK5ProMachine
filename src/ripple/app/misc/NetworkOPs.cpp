@@ -2773,7 +2773,7 @@ std::uint32_t NetworkOPsImp::acceptLedger (
     boost::optional<std::chrono::milliseconds> consensusDelay)
 {
     // This code-path is exclusively used when the server is in standalone
-    // mode via `ledger_accept`
+    // mode via `ledgepler_accept`
     assert (m_standalone);
 
     if (!m_standalone)

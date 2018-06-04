@@ -334,6 +334,7 @@ Payment::doApply ()
     {
         // Create the account.
         sleDst = std::make_shared<SLE>(k);
+
         sleDst->setAccountID(sfAccount, uDstAccountID);
         sleDst->setFieldU32(sfSequence, 1);
         view().insert(sleDst);
