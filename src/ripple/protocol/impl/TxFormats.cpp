@@ -59,16 +59,17 @@ TxFormats::TxFormats ()
     add ("SetRegularKey", ttREGULAR_KEY_SET)
         << SOElement (sfRegularKey,          SOE_OPTIONAL)
         ;
-/*Tri
+
+//Tri Create a new account
     add ("Payment", ttPAYMENT)
         << SOElement (sfDestination,         SOE_REQUIRED)
         << SOElement (sfAmount,              SOE_REQUIRED)
-        << SOElement (sfSendMax,             SOE_OPTIONAL)
-        << SOElement (sfPaths,               SOE_DEFAULT)
+//        << SOElement (sfSendMax,             SOE_OPTIONAL)
+//        << SOElement (sfPaths,               SOE_DEFAULT)
         << SOElement (sfInvoiceID,           SOE_OPTIONAL)
         << SOElement (sfDestinationTag,      SOE_OPTIONAL)
-        << SOElement (sfDeliverMin,          SOE_OPTIONAL)
-        ;*/
+//        << SOElement (sfDeliverMin,          SOE_OPTIONAL)
+        ;
 
     add ("EscrowCreate", ttESCROW_CREATE)
         << SOElement (sfDestination,         SOE_REQUIRED)
@@ -171,17 +172,19 @@ void TxFormats::addCommonFields (Item& item)
 {
     item
         << SOElement(sfTransactionType,      SOE_REQUIRED)
-        << SOElement(sfFlags,                SOE_OPTIONAL)
-        << SOElement(sfSourceTag,            SOE_OPTIONAL)
         << SOElement(sfAccount,              SOE_REQUIRED)
         << SOElement(sfSequence,             SOE_REQUIRED)
+        << SOElement(sfFee,                  SOE_REQUIRED)
+        << SOElement(sfSigningPubKey,        SOE_REQUIRED)
+
+
+        << SOElement(sfFlags,                SOE_OPTIONAL)
+        << SOElement(sfSourceTag,            SOE_OPTIONAL)
         << SOElement(sfPreviousTxnID,        SOE_OPTIONAL) // emulate027
         << SOElement(sfLastLedgerSequence,   SOE_OPTIONAL)
         << SOElement(sfAccountTxnID,         SOE_OPTIONAL)
-        << SOElement(sfFee,                  SOE_REQUIRED)
         << SOElement(sfOperationLimit,       SOE_OPTIONAL)
         << SOElement(sfMemos,                SOE_OPTIONAL)
-        << SOElement(sfSigningPubKey,        SOE_REQUIRED)
         << SOElement(sfTxnSignature,         SOE_OPTIONAL)
         << SOElement(sfSigners,              SOE_OPTIONAL) // submit_multisigned
         ;

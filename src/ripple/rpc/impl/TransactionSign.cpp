@@ -285,6 +285,10 @@ checkTxJsonFields (
     if (verify && !config.standalone() &&
         (validatedLedgerAge > Tuning::maxValidatedLedgerAge))
     {
+        std::cout<<"verify: "<<verify<<std::endl;
+        std::cout<<"config.standalone(): "<<config.standalone()<<std::endl;
+        if(validatedLedgerAge > Tuning::maxValidatedLedgerAge)
+            std::cout<<"validatedLedgerAge > Tuning::maxValidatedLedgerAge): "<<true<<std::endl;
         ret.first = rpcError (rpcNO_CURRENT);
         return ret;
     }

@@ -238,8 +238,11 @@ void Config::setup (std::string const& strConf, bool bQuiet,
         std::string const dbPath (legacy ("database_path"));
         if (!dbPath.empty ())
             dataDir = boost::filesystem::path (dbPath);
+
         else if (RUN_STANDALONE)
             dataDir.clear();
+
+        // should keep  a dataDir for standalone
     }
 
     if (!dataDir.empty())
