@@ -102,7 +102,8 @@ forceValidity(HashRouter& router, uint256 const& txid,
 
     If the `Transactor` gets an exception while trying
     to charge the fee, it will be caught and
-    turned into `tefEXCEPTION`.
+    turned into `
+Json::Value doRipplePathFind (RPC::ContefEXCEPTION`.
 
     For network health, a `Transactor` makes its
     best effort to at least charge a fee if the
@@ -123,7 +124,7 @@ forceValidity(HashRouter& router, uint256 const& txid,
 std::pair<TER, bool>
 apply (Application& app, OpenView& view,
     STTx const& tx, ApplyFlags flags,
-        beast::Journal journal);
+        beast::Journal);
 
 
 /** Enum class for return value from `applyTransaction`

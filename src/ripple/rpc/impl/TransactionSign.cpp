@@ -363,6 +363,9 @@ transactionPreProcessImpl (
     Json::Value& tx_json (params [jss::tx_json]);
 
     // Check tx_json fields, but don't add any.
+
+    std::cout<<"checkTxJsonFields: "<<std::endl;
+
     auto txJsonResult = checkTxJsonFields (
         tx_json, role, verify, validatedLedgerAge,
         app.config(), app.getFeeTrack());

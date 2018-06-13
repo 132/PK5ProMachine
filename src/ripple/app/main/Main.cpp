@@ -578,6 +578,8 @@ int run (int argc, char** argv)
         // Start the server
         app->doStart(true /*start timers*/);
 
+
+
         // Block until we get a stop RPC.
         app->run();
 

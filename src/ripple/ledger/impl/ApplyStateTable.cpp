@@ -362,6 +362,7 @@ ApplyStateTable::peek (ReadView const& base,
     }
     auto const& item = iter->second;
     auto const& sle = item.second;
+
     switch (item.first)
     {
     case Action::erase:
