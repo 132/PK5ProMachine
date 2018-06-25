@@ -26,28 +26,29 @@ namespace ripple {
         if (! isTesSuccess (ret))
             return ret;
 
-        if (ctx.tx.getFlags() & tfUniversalMask)
+/*        if (ctx.tx.getFlags() & tfUniversalMask)
         {
             // There are no flags (other than universal) for CreateCheck yet.
             JLOG(ctx.j.warn()) << "Malformed transaction: Invalid flags set.";
             return temINVALID_FLAG;
-        }
-        if (ctx.tx[sfAccount] == ctx.tx[sfDestination])
+        }*/
+/*        if (ctx.tx[sfAccount] == ctx.tx[sfDestination])
         {
             // They wrote a check to themselves.
             JLOG(ctx.j.warn()) << "Malformed transaction: Check to self.";
             return temREDUNDANT;
-        }
+        }*/
 
-        if (auto const optExpiry = ctx.tx[~sfExpiration])
+/*        if (auto const optExpiry = ctx.tx[~sfExpiration])
         {
             if (*optExpiry == 0)
             {
                 JLOG(ctx.j.warn()) << "Malformed transaction: bad expiration";
                 return temBAD_EXPIRATION;
             }
-        }
+        }*/
 
+        std::cout<<"Go to logTransaction.cpp before call preflight2" << std::endl;
         return preflight2 (ctx);
     }
 
@@ -55,31 +56,44 @@ namespace ripple {
     TER
     LogTransaction::preclaim (PreclaimContext const& ctx)
     {
+        std::cout<<"Go to  LogTransaction::preclaim in logTransaction.cpp" << std::endl;
+
         auto const id = ctx.tx[sfAccount];
 
+        std::cout<<"Go to  LogTransaction::preclaim before uTxFlags " << std::endl;
         std::uint32_t const uTxFlags = ctx.tx.getFlags();
 
+        std::cout<<"Go to  LogTransaction::preclaim before sle " << std::endl;
         auto const sle = ctx.view.read(keylet::account(id));
 
+        std::cout<<"Go to  LogTransaction::preclaim before uFlagsIn " << std::endl;
         std::uint32_t const uFlagsIn = sle->getFieldU32(sfFlags);
 
+///////////////// problem from here -------------
+/*Cmt to run
+        std::cout<<"Go to  LogTransaction::preclaim before uSetFlag " << std::endl;
         std::uint32_t const uSetFlag = ctx.tx.getFieldU32(sfSetFlag);
 
+        std::cout<<"Go to  LogTransaction::preclaim before bSetRequireAuth " << std::endl;
         // legacy AccountSet flags
         bool bSetRequireAuth = (uTxFlags & tfRequireAuth) || (uSetFlag == asfRequireAuth);
 
         //
         // RequireAuth
         //
+        std::cout<<"Go to  LogTransaction::preclaim before checking to get the problem" << std::endl;
         if (bSetRequireAuth && !(uFlagsIn & lsfRequireAuth))
         {
             if (!dirIsEmpty(ctx.view,
                             keylet::ownerDir(id)))
             {
+                std::cout<<"Go to  LogTransaction::preclaim in problem with authen" << std::endl;
                 JLOG(ctx.j.trace()) << "Retry: Owner directory not empty.";
                 return (ctx.flags & tapRETRY) ? terOWNERS : tecOWNERS;
             }
-        }
+        }*/
+
+        std::cout<<"Go to  LogTransaction::preclaim after checking and return tesSUCCESS" << std::endl;
         return tesSUCCESS;
     }
 

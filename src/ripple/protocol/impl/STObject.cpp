@@ -495,6 +495,7 @@ std::uint16_t STObject::getFieldU16 (SField const& field) const
 
 std::uint32_t STObject::getFieldU32 (SField const& field) const
 {
+    std::cout<<" check the call uSetFlag which is wrong in LogTransaction.cpp"<<std::endl;
     return getFieldByValue <STUInt32> (field);
 }
 
@@ -639,8 +640,10 @@ void STObject::setFieldVL (SField const& field, Slice const& s)
 
 void STObject::setFieldAmount (SField const& field, STAmount const& v)
 {
+
     setFieldUsingAssignment (field, v);
 }
+
 
 void STObject::setFieldArray (SField const& field, STArray const& v)
 {

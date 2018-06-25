@@ -888,9 +888,12 @@ void NetworkOPsImp::submitTransaction (std::shared_ptr<STTx const> const& iTrans
 void NetworkOPsImp::processTransaction (std::shared_ptr<Transaction>& transaction,
         bool bUnlimited, bool bLocal, FailHard failType)
 {
+    std::cout<<"Goto processTransaction in NetworkOPs.cpp to process" << std::endl;
+
     auto ev = m_job_queue.makeLoadEvent (jtTXN_PROC, "ProcessTXN");
     auto const newFlags = app_.getHashRouter ().getFlags (transaction->getID ());
 
+    std::cout<<"before check newFlag" << std::endl;
     if ((newFlags & SF_BAD) != 0)
     {
         // cached bad
@@ -909,6 +912,8 @@ void NetworkOPsImp::processTransaction (std::shared_ptr<Transaction>& transactio
                 view->rules(), app_.config());
     assert(validity.first == Validity::Valid);
 
+
+    std::cout<<"before check SigBad" << std::endl;
     // Not concerned with local checks at this point.
     if (validity.first == Validity::SigBad)
     {
@@ -921,13 +926,17 @@ void NetworkOPsImp::processTransaction (std::shared_ptr<Transaction>& transactio
         return;
     }
 
+    std::cout<<"getMasterTransaction () function " << std::endl;
     // canonicalize can change our pointer
     app_.getMasterTransaction ().canonicalize (&transaction);
 
+
+    std::cout<<"before do transaction sync, bLocal: "<< bLocal  << std::endl;
     if (bLocal)
         doTransactionSync (transaction, bUnlimited, failType);
     else
         doTransactionAsync (transaction, bUnlimited, failType);
+    std::cout<<"after do transaction sync" << std::endl;
 }
 
 void NetworkOPsImp::doTransactionAsync (std::shared_ptr<Transaction> transaction,
@@ -960,11 +969,13 @@ void NetworkOPsImp::doTransactionSync (std::shared_ptr<Transaction> transaction,
 
     if (! transaction->getApplying())
     {
+        std::cout<<"go in getApplying() in doTransactionSync in NetworkOps.cpp"<< std::endl;
         mTransactions.push_back (TransactionStatus (transaction, bUnlimited,
             true, failType));
         transaction->setApplying();
     }
 
+    std::cout<<"before go to while in doTransactionSync "<< std::endl;
     do
     {
         if (mDispatchState == DispatchState::running)
@@ -987,6 +998,7 @@ void NetworkOPsImp::doTransactionSync (std::shared_ptr<Transaction> transaction,
                 }
             }
         }
+        std::cout<<"transaction->getApplying in NetworkOps.cpp "<< std::endl;
     }
     while (transaction->getApplying());
 }

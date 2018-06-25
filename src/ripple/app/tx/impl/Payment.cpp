@@ -175,7 +175,7 @@ Payment::preflight (PreflightContext const& ctx)
         }
 
         auto const dMin = *deliverMin;
-        if (!isLegalNet(dMin) || dMin <= zero)
+        if (!isLegalNet(dMin) || dMin < zero)   // it should be dMin < zero but, at this case we can create
         {
             JLOG(j.trace()) << "Malformed transaction: Invalid " <<
                 jss::DeliverMin.c_str() << " amount. " <<
@@ -241,7 +241,9 @@ Payment::preclaim(PreclaimContext const& ctx)
             // transaction would succeed.
             return telNO_DST_PARTIAL;
         }
-        else if (saDstAmount < STAmount(ctx.view.fees().accountReserve(0)))
+/*Comment to remove checking aboout the amount xrp need to create an account -> does not need to use XRP to create
+ *
+ *      else if (saDstAmount < STAmount(ctx.view.fees().accountReserve(0)))
         {
             // accountReserve is the minimum amount that an account can have.
             // Reserve is not scaled by load.
@@ -253,7 +255,7 @@ Payment::preclaim(PreclaimContext const& ctx)
             // Another transaction could create the account and then this
             // transaction would succeed.
             return tecNO_DST_INSUF_XRP;
-        }
+        }*/
     }
     else if ((sleDst->getFlags() & lsfRequireDestTag) &&
         !ctx.tx.isFieldPresent(sfDestinationTag))
@@ -460,7 +462,7 @@ Payment::doApply ()
         // then we allow the deposit.
         //
         // This rule is designed to keep an account from getting wedged
-        // in an unusable state if it sets the lsfDepositAuth flag and
+        // in an unusable state if it setconvertFeePaids the lsfDepositAuth flag and
         // then consumes all of its XRP.  Without the rule if an
         // account with lsfDepositAuth set spent all of its XRP, it
         // would be unable to acquire more XRP required to pay fees.

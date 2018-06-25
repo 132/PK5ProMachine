@@ -381,6 +381,7 @@ TER Pathfinder::getPathLiquidity (
     }
     catch (std::exception const& e)
     {
+        std::cout<<" getPathLiquidity () with Pathfinder.cpp "<<std::endl;
         JLOG (j_.info()) <<
             "checkpath: exception (" << e.what() << ") " <<
             path.getJson (0);

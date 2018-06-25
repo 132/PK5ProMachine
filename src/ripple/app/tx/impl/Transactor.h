@@ -108,7 +108,7 @@ public:
     /////////////////////////////////////////////////////
     /*
     These static functions are called from invoke_preclaim<Tx>
-    using name hiding to accomplish compile-time polymorphism,
+    using name hiding to accomplish compile-time polymorphism,mSourceBalance
     so derived classes can override for different or extra
     functionality. Use with care, as these are not really
     virtual and so don't have the compiler-time protection that

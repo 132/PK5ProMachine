@@ -59,8 +59,9 @@ invoke_preflight (PreflightContext const& ctx)
     case ttPAYCHAN_CLAIM:   return PayChanClaim     ::preflight(ctx);
     case ttPAYCHAN_CREATE:  return PayChanCreate    ::preflight(ctx);
     case ttPAYCHAN_FUND:    return PayChanFund      ::preflight(ctx);
-    case ttPAYMENT:         return Payment          ::preflight(ctx);
+
 */
+
     case ttREGULAR_KEY_SET: return SetRegularKey    ::preflight(ctx);
     case ttSIGNER_LIST_SET: return SetSignerList    ::preflight(ctx);
     case ttTICKET_CANCEL:   return CancelTicket     ::preflight(ctx);
@@ -69,6 +70,7 @@ invoke_preflight (PreflightContext const& ctx)
     case ttAMENDMENT:
     case ttFEE:             return Change           ::preflight(ctx);
 ////////////////////////////////////////////////////////////////////////////////////////
+        case ttPAYMENT:         return Payment          ::preflight(ctx);
         case ttLOG_TRANSACTION:  return LogTransaction   ::preflight(ctx);
     default:
         assert(false);
@@ -89,9 +91,10 @@ invoke_preclaim(PreclaimContext const& ctx)
     // list one, preflight will have already a flagged a failure.
     auto const id = ctx.tx.getAccountID(sfAccount);
     auto const baseFee = T::calculateBaseFee(ctx);
-
+    std::cout<<"go to invoke_preclaim before if "<<ctx.tx.getTxnType()<< std::endl;
     if (id != zero)
     {
+        std::cout<<"go to invoke_preclaim in side if "<<ctx.tx.getTxnType()<< std::endl;
         TER result = T::checkSeq(ctx);
 
         if (result != tesSUCCESS)
@@ -108,6 +111,7 @@ invoke_preclaim(PreclaimContext const& ctx)
             return { result, baseFee };
 
     }
+    std::cout<<"go to invoke_preclaim after if and next is return "<< std::endl;
 
     return{ T::preclaim(ctx), baseFee };
 }
@@ -116,6 +120,7 @@ static
 std::pair<TER, std::uint64_t>
 invoke_preclaim (PreclaimContext const& ctx)
 {
+    std::cout<<"go to invoke_preclaim in applyStep "<<ctx.tx.getTxnType()<< std::endl;
     switch(ctx.tx.getTxnType())
     {
     case ttACCOUNT_SET:     return invoke_preclaim<SetAccount>(ctx);
@@ -132,7 +137,7 @@ invoke_preclaim (PreclaimContext const& ctx)
     case ttPAYCHAN_CLAIM:   return invoke_preclaim<PayChanClaim>(ctx);
     case ttPAYCHAN_CREATE:  return invoke_preclaim<PayChanCreate>(ctx);
     case ttPAYCHAN_FUND:    return invoke_preclaim<PayChanFund>(ctx);
-    case ttPAYMENT:         return invoke_preclaim<Payment>(ctx);*/
+   ;*/
     case ttREGULAR_KEY_SET: return invoke_preclaim<SetRegularKey>(ctx);
     case ttSIGNER_LIST_SET: return invoke_preclaim<SetSignerList>(ctx);
     case ttTICKET_CANCEL:   return invoke_preclaim<CancelTicket>(ctx);
@@ -141,7 +146,8 @@ invoke_preclaim (PreclaimContext const& ctx)
     case ttAMENDMENT:
     case ttFEE:             return invoke_preclaim<Change>(ctx);
 ////////////////////////////////////////////////////////////////////////////////////////
-        case ttLOG_TRANSACTION:  return invoke_preclaim<LogTransaction>(ctx);
+        case ttPAYMENT:         return invoke_preclaim<Payment>(ctx);
+        case ttLOG_TRANSACTION: { std::cout<<"go to invoke_preclaim in LogTransaction"<<std::endl; return invoke_preclaim<LogTransaction>(ctx);}
     default:
         assert(false);
         return { temUNKNOWN, 0 };
@@ -168,7 +174,7 @@ invoke_calculateBaseFee(PreclaimContext const& ctx)
     case ttPAYCHAN_CLAIM:   return PayChanClaim::calculateBaseFee(ctx);
     case ttPAYCHAN_CREATE:  return PayChanCreate::calculateBaseFee(ctx);
     case ttPAYCHAN_FUND:    return PayChanFund::calculateBaseFee(ctx);
-    case ttPAYMENT:         return Payment::calculateBaseFee(ctx);*/
+    */
     case ttREGULAR_KEY_SET: return SetRegularKey::calculateBaseFee(ctx);
     case ttSIGNER_LIST_SET: return SetSignerList::calculateBaseFee(ctx);
     case ttTICKET_CANCEL:   return CancelTicket::calculateBaseFee(ctx);
@@ -177,6 +183,7 @@ invoke_calculateBaseFee(PreclaimContext const& ctx)
     case ttAMENDMENT:
     case ttFEE:             return Change::calculateBaseFee(ctx);
 ////////////////////////////////////////////////////////////////////////////////////////
+        case ttPAYMENT:         return Payment::calculateBaseFee(ctx);
         case ttLOG_TRANSACTION:  return LogTransaction::calculateBaseFee(ctx);
 
     default:
@@ -254,7 +261,7 @@ invoke_apply (ApplyContext& ctx)
     case ttPAYCHAN_CLAIM:   { PayChanClaim  p(ctx); return p(); }
     case ttPAYCHAN_CREATE:  { PayChanCreate p(ctx); return p(); }
     case ttPAYCHAN_FUND:    { PayChanFund   p(ctx); return p(); }
-    case ttPAYMENT:         { Payment       p(ctx); return p(); }*/
+    */
     case ttREGULAR_KEY_SET: { SetRegularKey p(ctx); return p(); }
     case ttSIGNER_LIST_SET: { SetSignerList p(ctx); return p(); }
     case ttTICKET_CANCEL:   { CancelTicket  p(ctx); return p(); }
@@ -263,6 +270,7 @@ invoke_apply (ApplyContext& ctx)
     case ttAMENDMENT:
     case ttFEE:             { Change        p(ctx); return p(); }
 ////////////////////////////////////////////////////////////////////////////////////////
+        case ttPAYMENT:         { Payment       p(ctx); return p(); }
         case ttLOG_TRANSACTION:  { LogTransaction p(ctx); return p();}
     default:
         assert(false);
@@ -279,10 +287,12 @@ preflight(Application& app, Rules const& rules,
         rules, flags, j);
     try
     {
+        std::cout<<"try PreflightContext in applySteps.cpp "<< std::endl;
         return{ pfctx, invoke_preflight(pfctx) };
     }
     catch (std::exception const& e)
     {
+        std::cout<<"catch in PreflightContext in applySteps.cpp "<< std::endl;
         JLOG(j.fatal()) <<
             "apply: " << e.what();
         return{ pfctx, tefEXCEPTION };
@@ -310,12 +320,18 @@ preclaim (PreflightResult const& preflightResult,
     }
     try
     {
+        std::cout<<"try in preclaim() in applySteps.cpp "<< std::endl;
         if (ctx->preflightResult != tesSUCCESS)
             return { *ctx, ctx->preflightResult, 0 };
+        std::cout<<"try in preclaim() and return ctx->preflightResult != tesSUCCESS in applySteps.cpp "<< std::endl;
         return{ *ctx, invoke_preclaim(*ctx) };
     }
     catch (std::exception const& e)
     {
+
+        // problem from here
+        std::cout<<"catch in preclaim() in applySteps.cpp "<< std::endl;
+
         JLOG(ctx->j.fatal()) <<
             "apply: " << e.what();
         return{ *ctx, tefEXCEPTION, 0 };
@@ -354,6 +370,7 @@ doApply(PreclaimResult const& preclaimResult,
     {
         // Logic error from the caller. Don't have enough
         // info to recover.
+        std::cout<<" doaApply() with the first wrong condition "<<std::endl;
         return{ tefEXCEPTION, false };
     }
     try
@@ -368,6 +385,8 @@ doApply(PreclaimResult const& preclaimResult,
     }
     catch (std::exception const& e)
     {
+
+        std::cout<<" catch doaApply() with catch "<<std::endl;
         JLOG(preclaimResult.j.fatal()) <<
             "apply: " << e.what();
         return { tefEXCEPTION, false };

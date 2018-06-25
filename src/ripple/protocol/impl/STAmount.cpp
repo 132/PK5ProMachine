@@ -308,6 +308,11 @@ XRPAmount STAmount::xrp () const
     return { drops };
 }
 
+//Tri create this function
+void STAmount::increaseBalance(XRPAmount temp) {
+        mValue = mValue + temp.drops();
+}
+
 IOUAmount STAmount::iou () const
 {
     if (mIsNative)
