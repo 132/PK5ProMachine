@@ -285,10 +285,6 @@ checkTxJsonFields (
     if (verify && !config.standalone() &&
         (validatedLedgerAge > Tuning::maxValidatedLedgerAge))
     {
-        std::cout<<"verify: "<<verify<<std::endl;
-        std::cout<<"config.standalone(): "<<config.standalone()<<std::endl;
-        if(validatedLedgerAge > Tuning::maxValidatedLedgerAge)
-            std::cout<<"validatedLedgerAge > Tuning::maxValidatedLedgerAge): "<<true<<std::endl;
         ret.first = rpcError (rpcNO_CURRENT);
         return ret;
     }
@@ -363,9 +359,6 @@ transactionPreProcessImpl (
     Json::Value& tx_json (params [jss::tx_json]);
 
     // Check tx_json fields, but don't add any.
-
-    std::cout<<"checkTxJsonFields: "<<std::endl;
-
     auto txJsonResult = checkTxJsonFields (
         tx_json, role, verify, validatedLedgerAge,
         app.config(), app.getFeeTrack());
@@ -556,7 +549,7 @@ transactionConstructImpl (std::shared_ptr<STTx const> const& stpTrans,
         }
     }
     try
-    {
+        {
         // Make sure the Transaction we just built is legit by serializing it
         // and then de-serializing it.  If the result isn't equivalent
         // to the initial transaction then there's something wrong with the
@@ -815,6 +808,7 @@ Json::Value transactionSubmit (
     if (!preprocResult.second)
         return preprocResult.first;
 
+    std::cout<<"Before assignment a transction"<<std::endl;
     // Make sure the STTx makes a legitimate Transaction.
     std::pair <Json::Value, Transaction::pointer> txn =
         transactionConstructImpl (
@@ -823,6 +817,7 @@ Json::Value transactionSubmit (
     if (!txn.second)
         return txn.first;
 
+    std::cout<<" Before Submit Transaction"<<std::endl;
     // Finally, submit the transaction.
     try
     {
@@ -836,6 +831,7 @@ Json::Value transactionSubmit (
             "Exception occurred during transaction submission.");
     }
 
+    std::cout<<" complete Transaction  Submition"<<std::endl;
     return transactionFormatResultImpl (txn.second);
 }
 

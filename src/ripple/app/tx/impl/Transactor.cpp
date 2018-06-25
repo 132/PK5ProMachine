@@ -88,14 +88,19 @@ preflight1 (PreflightContext const& ctx)
 TER
 preflight2 (PreflightContext const& ctx)
 {
+    std::cout<<" go to preflight2 on Transactor.cpp before checking flag  "<<std::endl;
     if(!( ctx.flags & tapNO_CHECK_SIGN))
     {
         auto const sigValid = checkValidity(ctx.app.getHashRouter(),
             ctx.tx, ctx.rules, ctx.app.config());
+
+        std::cout<<" go to preflight2 on Transactor.cpp in a if condition "<<std::endl;
         if (sigValid.first == Validity::SigBad)
         {
             JLOG(ctx.j.debug()) <<
                 "preflight2: bad signature. " << sigValid.second;
+
+            std::cout<<" return temINVALID "<<std::endl;
             return temINVALID;
         }
     }
@@ -188,9 +193,26 @@ Transactor::checkFee (PreclaimContext const& ctx, std::uint64_t baseFee)
     auto const id = ctx.tx.getAccountID(sfAccount);
     auto const sle = ctx.view.read(
         keylet::account(id));
-    auto const balance = (*sle)[sfBalance].xrp();
+    auto const balance = (*sle)[sfBalance].xrp();     // actually this var should be a const
 
-    if (balance < feePaid)
+// check the balance of source Account vs the fee
+/*Tri
+     if(balance < feePaid){
+
+         std::cout<<"balance < feePaid with balance: "<< balance.drops() << " feePaid: "<< feePaid.drops() <<std::endl;
+         //(*sle)[sfBalance].increaseBalance(feePaid);
+         //balance = (*sle)[sfBalance].xrp();
+
+         XRPAmount const convertFeePaid (feePaid);
+         sle->setFieldAmount(
+                 sfBalance, convertFeePaid);
+
+         sle->setFieldAmount(sfBalance,  sle->getFieldAmount(sfBalance) + convertFeePaid);
+         std::cout<<"after add more balance, balance: "<< balance.drops() << " feePaid: "<< feePaid.drops() <<std::endl;
+     }
+*/
+
+/*Tri    if (balance < feePaid)
     {
         JLOG(ctx.j.trace()) << "Insufficient balance:" <<
             " balance=" << to_string(balance) <<
@@ -203,7 +225,7 @@ Transactor::checkFee (PreclaimContext const& ctx, std::uint64_t baseFee)
         }
 
         return terINSUF_FEE_B;
-    }
+    }*/
 
     return tesSUCCESS;
 }
@@ -218,7 +240,13 @@ TER Transactor::payFee ()
     // Deduct the fee, so it's not available during the transaction.
     // Will only write the account back if the transaction succeeds.
 
-    mSourceBalance -= feePaid;
+//Tri    mSourceBalance -= feePaid;
+
+
+    //Tri add more
+    XRPAmount zero_(0);
+    mSourceBalance -= zero_;
+
     sle->setFieldAmount (sfBalance, mSourceBalance);
 
     // VFALCO Should we call view().rawDestroyXRP() here as well?

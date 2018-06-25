@@ -61,7 +61,9 @@ enum SerializedTypeID
     STI_HASH128 = 4,
     STI_HASH256 = 5,
     STI_AMOUNT = 6,
+
     STI_VL = 7,
+
     STI_ACCOUNT = 8,
     // 9-13 are reserved
     STI_OBJECT = 14,
@@ -119,7 +121,8 @@ field_code(int id, int index)
     is only one instance per fieldType/fieldValue pair which serves the entire
     application.
 */
-class SField
+class
+SField
 {
 public:
     enum

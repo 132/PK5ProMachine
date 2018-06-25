@@ -27,7 +27,6 @@
 #include <ripple/rpc/Context.h>
 #include <ripple/rpc/impl/TransactionSign.h>
 
-#include <iostream>
 namespace ripple {
 
 static NetworkOPs::FailHard getFailHard (RPC::Context const& context)
@@ -43,13 +42,10 @@ static NetworkOPs::FailHard getFailHard (RPC::Context const& context)
 // }
 Json::Value doSubmit (RPC::Context& context)
 {
-    std::cout<<"doSubmit function"<<std::flush<<std::endl;
-
     context.loadType = Resource::feeMediumBurdenRPC;
 
     if (!context.params.isMember (jss::tx_blob))
     {
-        std::cout<<"go to tx_block checking"<<std::endl;
         auto const failType = getFailHard (context);
 
         return RPC::transactionSubmit (

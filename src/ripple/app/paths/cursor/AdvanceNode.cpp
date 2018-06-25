@@ -65,6 +65,7 @@ TER PathCursor::advanceNode (bool const bReverse) const
         //
         if (++loopCount > NODE_ADVANCE_MAX_LOOPS)
         {
+            std::cout<<"tefEXCEPTION in AdvanceNode"<<std::endl;
             JLOG (j_.warn()) << "Loop count exceeded";
             return tefEXCEPTION;
         }
@@ -269,6 +270,7 @@ TER PathCursor::advanceNode (bool const bReverse) const
 
                         // Don't process at all, things are in an unexpected
                         // state for this transactions.
+                        std::cout<<"tefEXCEPTION in AdvanceNode ver2"<<std::endl;
                         resultCode = tefEXCEPTION;
                     }
 

@@ -461,6 +461,8 @@ TER PathCursor::reverseLiquidityForAccount () const
 
             if (saCurWantedReq <= zero)
             {
+
+                std::cout<<" getPathLiquidity () with ReverseLiquidityForAccount.cpp "<<std::endl;
                 assert(false);
                 JLOG (j_.fatal()) << "CurWantReq was not positive";
                 return tefEXCEPTION;

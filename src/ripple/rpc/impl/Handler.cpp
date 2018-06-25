@@ -29,7 +29,6 @@ namespace {
 template <typename Function>
 Handler::Method<Json::Value> byRef (Function const& f)
 {
-
     return [f] (Context& context, Json::Value& result)
     {
         result = f (context);

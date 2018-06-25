@@ -61,8 +61,8 @@ enum TxType
 
 
 
-
-    ttLOG_TRANSACTION   = 132,
+// replace the transaction
+    ttLOG_TRANSACTION   = 7,
 };
 
 /** Manages the list of known transaction formats.
