@@ -3,12 +3,14 @@ from socket import socket, gethostbyname, AF_INET, SOCK_DGRAM, SOCK_STREAM
 import os
 import commands
 import select
+
 import multiprocessing as mp
+import threading
 #import re				# regular expression
 
 PORT_NUMBER = 51236 
 SIZE = 1024
-backlog = 10			# the number of connection can have
+backlog = 4			# the number of connection can have
 
 
 hostName = gethostbyname( '192.168.1.3' )
@@ -21,7 +23,6 @@ mySocket.bind( (hostName, PORT_NUMBER) )
 print ("Listening on port {0}\n".format(PORT_NUMBER))
 
 mySocket.listen(backlog)
-input_ = [mySocket,]
 """
 while True:
 	print  'waiting for a connection'
@@ -60,38 +61,75 @@ while True:
 #print data
 #sys.ext()
 
+
+"""
+# this one for loop version
 def aWorker(s):
 	if s == mySocket:
-			client, address = mySocket.accept()
-			input_.append(client)
-			print 'A client ' + str(address)
+		client, address = mySocket.accept()
+		input_.append(client)
+		print 'A client ' + str(address)
+	else:
+		data = s.recv(SIZE)
+		if data == 'kill_server':
+			s.close()
+			return	#break
+		elif not data:
+			return 	#break
 		else:
-			data = s.recv(SIZE)
-			if data == 'kill_server':
-				s.close()
-				return	#break
-			elif not data:
-				return 	#break
-			else:
-				print data
-				# filter before applying to rippled e.g:  Couldn't create directory monitor on smb://x-gnome-default-workgroup/.
-				#data = data.replace("'", "\'")
-				#data = data.replace('"', '\"')
-				status, output = commands.getstatusoutput(data)
-				print status
-				print '=============================='
-				print output
-				s.sendall(output)
+			print data
+			# filter before applying to rippled e.g:  Couldn't create directory monitor on smb://x-gnome-default-workgroup/.
+			#data = data.replace("'", "\'")
+			#data = data.replace('"', '\"')
+			status, output = commands.getstatusoutput(data)
+			print status
+			print '=============================='
+			print output
+			s.sendall(output)
+input_ = [mySocket,]
+while True:
+	inputReady, outputReady, exceptReady = select.select(input_, [], [])
+	# inputReady a list of connections 
+	for s in inputReady:
+		aWorker(s)
+
+"""
+
+class ClientThread(threading.Thread):
+	def __init__(self, ip, port, socket):
+		threading.Thread.__init__(self)
+		self.ip = ip
+		self.port = port
+		self.socket = socket
+		print '[+] New thread started for '+ ip + ': ' + str(port)
+
+	def run(self):
+		data = self.socket.recv(SIZE)
+		if data == 'kill_server':
+			self.socket.close()
+			return	#break
+		elif not data:
+			return 	#break
+		else:
+			print data
+			# filter before applying to rippled e.g:  Couldn't create directory monitor on smb://x-gnome-default-workgroup/.
+			#data = data.replace("'", "\'")
+			#data = data.replace('"', '\"')
+			status, output = commands.getstatusoutput(data)
+			print status
+			print '=============================='
+			print output
+			self.socket.sendall(output)
 
 
 while True:
-	inputReady, outputReady, exceptReady = select.select(input_, [], [])
-	
-	# create a pool
-	pool = mp.Pool(processes= backlog)
-	pool.map(aWorker, inputReady)
+#		
+	clientsock, (ip, port) = mySocket.accept()
+	print ip
+	newthread = ClientThread(ip,port, clientsock)
+	while True:
+		newthread.run()
 #############################################333
-	# inputReady a list of connections 
-	# for s in inputReady:
+
 	
 server.close()
