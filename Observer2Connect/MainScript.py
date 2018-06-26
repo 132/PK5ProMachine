@@ -115,7 +115,6 @@ def compare_connectServer(file1, file2):
 						mySocket.sendall(msg)
 						received = 0
 						expected = len(msg)
-						print 'already sent msg'		
 						while received < expected:
 							data = mySocket.recv(SIZE)
 							print data
@@ -180,7 +179,6 @@ def main():
 			#print temp[2]
 			checkMTIME = os.path.getmtime(temp[1])
 			if checkMTIME > temp[2]:
-				print type(checkMTIME)
 				# update the modified time
 				Files[ifile][2] = checkMTIME
 				# update 1 meaning that it was modified

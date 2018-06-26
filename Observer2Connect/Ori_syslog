@@ -2902,3 +2902,601 @@ Jun 26 16:15:31 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.n
 Jun 26 16:15:34 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
 Jun 26 16:16:02 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
 Jun 26 16:16:09 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 16:16:24 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 16:16:38 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 16:16:40 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 16:17:01 lab298a-P5K-PRO CRON[6315]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.5040] device (enp2s0): disconnecting for new activation request.
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.5041] device (enp2s0): state change: activated -> deactivating (reason 'new-activation') [100 110 60]
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.5043] manager: NetworkManager state is now DISCONNECTING
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.5401] audit: op="connection-activate" uuid="fd8d57f0-2443-348a-9ef1-3aae53ad63f8" name="Wired connection 1" pid=1635 uid=1000 result="success"
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.5408] device (enp2s0): state change: deactivating -> disconnected (reason 'new-activation') [110 30 60]
+Jun 26 16:17:05 lab298a-P5K-PRO avahi-daemon[673]: Withdrawing address record for fe80::1c63:b0eb:4fb4:6f13 on enp2s0.
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.5420] manager: NetworkManager state is now DISCONNECTED
+Jun 26 16:17:05 lab298a-P5K-PRO avahi-daemon[673]: Leaving mDNS multicast group on interface enp2s0.IPv6 with address fe80::1c63:b0eb:4fb4:6f13.
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.5421] device (enp2s0): Activation: starting connection 'Wired connection 1' (fd8d57f0-2443-348a-9ef1-3aae53ad63f8)
+Jun 26 16:17:05 lab298a-P5K-PRO avahi-daemon[673]: Interface enp2s0.IPv6 no longer relevant for mDNS.
+Jun 26 16:17:05 lab298a-P5K-PRO avahi-daemon[673]: Withdrawing address record for 192.168.1.3 on enp2s0.
+Jun 26 16:17:05 lab298a-P5K-PRO avahi-daemon[673]: Leaving mDNS multicast group on interface enp2s0.IPv4 with address 192.168.1.3.
+Jun 26 16:17:05 lab298a-P5K-PRO avahi-daemon[673]: Interface enp2s0.IPv4 no longer relevant for mDNS.
+Jun 26 16:17:05 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 16:17:05 lab298a-P5K-PRO dbus[683]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.5595] device (enp2s0): state change: disconnected -> prepare (reason 'none') [30 40 0]
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.5624] manager: NetworkManager state is now CONNECTING
+Jun 26 16:17:05 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.5630] device (enp2s0): state change: prepare -> config (reason 'none') [40 50 0]
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.5635] device (enp2s0): state change: config -> ip-config (reason 'none') [50 70 0]
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.5639] dhcp4 (enp2s0): activation: beginning transaction (timeout in 45 seconds)
+Jun 26 16:17:05 lab298a-P5K-PRO systemd[1]: Starting Network Manager Script Dispatcher Service...
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.5804] dhcp4 (enp2s0): dhclient started with pid 6322
+Jun 26 16:17:05 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 16:17:05 lab298a-P5K-PRO dbus[683]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jun 26 16:17:05 lab298a-P5K-PRO systemd[1]: Started Network Manager Script Dispatcher Service.
+Jun 26 16:17:05 lab298a-P5K-PRO nm-dispatcher: req:1 'down' [enp2s0]: new request (1 scripts)
+Jun 26 16:17:05 lab298a-P5K-PRO nm-dispatcher: req:1 'down' [enp2s0]: start running ordered scripts...
+Jun 26 16:17:05 lab298a-P5K-PRO dhclient[6322]: DHCPREQUEST of 131.114.2.9 on enp2s0 to 255.255.255.255 port 67 (xid=0x5279f78c)
+Jun 26 16:17:05 lab298a-P5K-PRO dhclient[6322]: DHCPACK of 131.114.2.9 from 131.114.3.2
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.6647]   address 131.114.2.9
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.6648]   plen 23 (255.255.254.0)
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.6648]   gateway 131.114.3.2
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.6648]   server identifier 131.114.33.22
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.6648]   lease time 3600
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.6649]   nameserver '131.114.33.20'
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.6649]   nameserver '131.114.33.21'
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.6649]   domain name 'di.unipi.it'
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.6649] dhcp4 (enp2s0): state changed unknown -> bound
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.6665] device (enp2s0): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+Jun 26 16:17:05 lab298a-P5K-PRO avahi-daemon[673]: Joining mDNS multicast group on interface enp2s0.IPv4 with address 131.114.2.9.
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.6672] device (enp2s0): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+Jun 26 16:17:05 lab298a-P5K-PRO avahi-daemon[673]: New relevant interface enp2s0.IPv4 for mDNS.
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.6675] device (enp2s0): state change: secondaries -> activated (reason 'none') [90 100 0]
+Jun 26 16:17:05 lab298a-P5K-PRO avahi-daemon[673]: Registering new address record for 131.114.2.9 on enp2s0.IPv4.
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.6676] manager: NetworkManager state is now CONNECTED_LOCAL
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.7343] manager: NetworkManager state is now CONNECTED_GLOBAL
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.7345] policy: set 'Wired connection 1' (enp2s0) as default for IPv4 routing and DNS
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.7346] dns-mgr: Writing DNS information to /sbin/resolvconf
+Jun 26 16:17:05 lab298a-P5K-PRO dnsmasq[2320]: setting upstream servers from DBus
+Jun 26 16:17:05 lab298a-P5K-PRO dnsmasq[2320]: using nameserver 131.114.33.20#53(via enp2s0)
+Jun 26 16:17:05 lab298a-P5K-PRO dnsmasq[2320]: using nameserver 131.114.33.21#53(via enp2s0)
+Jun 26 16:17:05 lab298a-P5K-PRO dhclient[6322]: bound to 131.114.2.9 -- renewal in 1448 seconds.
+Jun 26 16:17:05 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530022625.7872] device (enp2s0): Activation: successful, device activated.
+Jun 26 16:17:05 lab298a-P5K-PRO nm-dispatcher: req:2 'up' [enp2s0]: new request (1 scripts)
+Jun 26 16:17:05 lab298a-P5K-PRO nm-dispatcher: req:2 'up' [enp2s0]: start running ordered scripts...
+Jun 26 16:17:05 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 16:17:05 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: message repeated 15 times: [ ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend]
+Jun 26 16:17:06 lab298a-P5K-PRO ntpdate[6433]: the NTP socket is in use, exiting
+Jun 26 16:17:06 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 16:17:06 lab298a-P5K-PRO ntpd[1161]: Soliciting pool server 37.247.53.178
+Jun 26 16:17:06 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 16:17:06 lab298a-P5K-PRO avahi-daemon[673]: Joining mDNS multicast group on interface enp2s0.IPv6 with address fe80::c488:5270:c5c:2b20.
+Jun 26 16:17:06 lab298a-P5K-PRO avahi-daemon[673]: New relevant interface enp2s0.IPv6 for mDNS.
+Jun 26 16:17:06 lab298a-P5K-PRO avahi-daemon[673]: Registering new address record for fe80::c488:5270:c5c:2b20 on enp2s0.*.
+Jun 26 16:17:08 lab298a-P5K-PRO ntpd[1161]: Listen normally on 67 enp2s0 131.114.2.9:123
+Jun 26 16:17:08 lab298a-P5K-PRO ntpd[1161]: Listen normally on 68 enp2s0 [fe80::c488:5270:c5c:2b20%2]:123
+Jun 26 16:17:08 lab298a-P5K-PRO ntpd[1161]: Deleting interface #64 enp2s0, 192.168.1.3#123, interface stats: received=0, sent=15, dropped=1, active_time=417 secs
+Jun 26 16:17:08 lab298a-P5K-PRO ntpd[1161]: 31.14.131.188 local addr 192.168.1.3 -> <null>
+Jun 26 16:17:08 lab298a-P5K-PRO ntpd[1161]: 188.213.165.209 local addr 192.168.1.3 -> <null>
+Jun 26 16:17:08 lab298a-P5K-PRO ntpd[1161]: 91.189.91.157 local addr 192.168.1.3 -> <null>
+Jun 26 16:17:08 lab298a-P5K-PRO ntpd[1161]: 91.189.89.198 local addr 192.168.1.3 -> <null>
+Jun 26 16:17:08 lab298a-P5K-PRO ntpd[1161]: 91.189.89.199 local addr 192.168.1.3 -> <null>
+Jun 26 16:17:08 lab298a-P5K-PRO ntpd[1161]: Deleting interface #66 enp2s0, fe80::1c63:b0eb:4fb4:6f13%2#123, interface stats: received=0, sent=0, dropped=0, active_time=415 secs
+Jun 26 16:17:08 lab298a-P5K-PRO ntpd[1161]: new interface(s) found: waking up resolver
+Jun 26 16:17:10 lab298a-P5K-PRO nmbd[1193]: [2018/06/26 16:17:10.327030,  0] ../source3/nmbd/nmbd_incomingdgrams.c:700(process_get_backup_list_request)
+Jun 26 16:17:10 lab298a-P5K-PRO nmbd[1193]:   process_get_backup_list_request: domain list requested for workgroup WORKGROUP and I am not a local master browser.
+Jun 26 16:17:13 lab298a-P5K-PRO nmbd[1193]: [2018/06/26 16:17:13.591931,  0] ../source3/nmbd/nmbd_incomingdgrams.c:700(process_get_backup_list_request)
+Jun 26 16:17:13 lab298a-P5K-PRO nmbd[1193]:   process_get_backup_list_request: domain list requested for workgroup WORKGROUP and I am not a local master browser.
+Jun 26 16:17:16 lab298a-P5K-PRO ntpd[1161]: Soliciting pool server 212.45.144.88
+Jun 26 16:17:16 lab298a-P5K-PRO nmbd[1193]: [2018/06/26 16:17:16.857391,  0] ../source3/nmbd/nmbd_incomingdgrams.c:700(process_get_backup_list_request)
+Jun 26 16:17:16 lab298a-P5K-PRO nmbd[1193]:   process_get_backup_list_request: domain list requested for workgroup WORKGROUP and I am not a local master browser.
+Jun 26 16:17:17 lab298a-P5K-PRO ntpd[1161]: Soliciting pool server 94.177.187.22
+Jun 26 16:17:20 lab298a-P5K-PRO nmbd[1193]: [2018/06/26 16:17:20.757317,  0] ../source3/libsmb/nmblib.c:873(send_udp)
+Jun 26 16:17:20 lab298a-P5K-PRO nmbd[1193]:   Packet send failed to 192.168.1.255(138) ERRNO=Invalid argument
+Jun 26 16:17:25 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 16:17:29 lab298a-P5K-PRO nmbd[1193]: [2018/06/26 16:17:29.477757,  0] ../source3/nmbd/nmbd_incomingdgrams.c:700(process_get_backup_list_request)
+Jun 26 16:17:29 lab298a-P5K-PRO nmbd[1193]:   process_get_backup_list_request: domain list requested for workgroup WORKGROUP and I am not a local master browser.
+Jun 26 16:17:31 lab298a-P5K-PRO nmbd[1193]: [2018/06/26 16:17:31.477564,  0] ../source3/nmbd/nmbd_incomingdgrams.c:700(process_get_backup_list_request)
+Jun 26 16:17:31 lab298a-P5K-PRO nmbd[1193]:   process_get_backup_list_request: domain list requested for workgroup WORKGROUP and I am not a local master browser.
+Jun 26 16:17:31 lab298a-P5K-PRO ntpd[1161]: Soliciting pool server 85.199.214.99
+Jun 26 16:17:32 lab298a-P5K-PRO ntpd[1161]: Soliciting pool server 193.234.225.237
+Jun 26 16:17:35 lab298a-P5K-PRO nmbd[1193]: [2018/06/26 16:17:35.737733,  0] ../source3/nmbd/nmbd_incomingdgrams.c:700(process_get_backup_list_request)
+Jun 26 16:17:35 lab298a-P5K-PRO nmbd[1193]:   process_get_backup_list_request: domain list requested for workgroup WORKGROUP and I am not a local master browser.
+Jun 26 16:17:42 lab298a-P5K-PRO nmbd[1193]: [2018/06/26 16:17:42.704044,  0] ../source3/nmbd/nmbd_incomingdgrams.c:700(process_get_backup_list_request)
+Jun 26 16:17:42 lab298a-P5K-PRO nmbd[1193]:   process_get_backup_list_request: domain list requested for workgroup WORKGROUP and I am not a local master browser.
+Jun 26 16:21:31 lab298a-P5K-PRO ntpd[1161]: 91.189.91.157 local addr 131.114.2.9 -> <null>
+Jun 26 16:21:32 lab298a-P5K-PRO ntpd[1161]: 91.189.89.198 local addr 131.114.2.9 -> <null>
+Jun 26 16:21:36 lab298a-P5K-PRO ntpd[1161]: 91.189.89.199 local addr 131.114.2.9 -> <null>
+Jun 26 16:21:51 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 16:36:37 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: message repeated 5 times: [ ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend]
+Jun 26 16:41:13 lab298a-P5K-PRO dhclient[6322]: DHCPREQUEST of 131.114.2.9 on enp2s0 to 131.114.33.22 port 67 (xid=0x5279f78c)
+Jun 26 16:41:13 lab298a-P5K-PRO dhclient[6322]: DHCPACK of 131.114.2.9 from 131.114.33.22
+Jun 26 16:41:13 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530024073.9143]   address 131.114.2.9
+Jun 26 16:41:13 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530024073.9144]   plen 23 (255.255.254.0)
+Jun 26 16:41:13 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530024073.9144]   gateway 131.114.3.2
+Jun 26 16:41:13 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530024073.9144]   server identifier 131.114.33.22
+Jun 26 16:41:13 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530024073.9144]   lease time 3600
+Jun 26 16:41:13 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530024073.9145]   nameserver '131.114.33.20'
+Jun 26 16:41:13 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530024073.9145]   nameserver '131.114.33.21'
+Jun 26 16:41:13 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530024073.9145]   domain name 'di.unipi.it'
+Jun 26 16:41:13 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530024073.9146] dhcp4 (enp2s0): state changed bound -> bound
+Jun 26 16:41:13 lab298a-P5K-PRO dbus[683]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+Jun 26 16:41:13 lab298a-P5K-PRO systemd[1]: Starting Network Manager Script Dispatcher Service...
+Jun 26 16:41:13 lab298a-P5K-PRO dbus[683]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jun 26 16:41:13 lab298a-P5K-PRO systemd[1]: Started Network Manager Script Dispatcher Service.
+Jun 26 16:41:13 lab298a-P5K-PRO nm-dispatcher: req:1 'dhcp4-change' [enp2s0]: new request (1 scripts)
+Jun 26 16:41:13 lab298a-P5K-PRO nm-dispatcher: req:1 'dhcp4-change' [enp2s0]: start running ordered scripts...
+Jun 26 16:41:13 lab298a-P5K-PRO dhclient[6322]: bound to 131.114.2.9 -- renewal in 1398 seconds.
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.0425] device (enp2s0): disconnecting for new activation request.
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.0425] device (enp2s0): state change: activated -> deactivating (reason 'new-activation') [100 110 60]
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.0426] manager: NetworkManager state is now DISCONNECTING
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.0815] audit: op="connection-activate" uuid="77e58f18-e680-4a8c-9f4a-43a13745f162" name="XRP_testing" pid=1635 uid=1000 result="success"
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.0821] device (enp2s0): state change: deactivating -> disconnected (reason 'new-activation') [110 30 60]
+Jun 26 16:59:39 lab298a-P5K-PRO avahi-daemon[673]: Withdrawing address record for fe80::c488:5270:c5c:2b20 on enp2s0.
+Jun 26 16:59:39 lab298a-P5K-PRO avahi-daemon[673]: Leaving mDNS multicast group on interface enp2s0.IPv6 with address fe80::c488:5270:c5c:2b20.
+Jun 26 16:59:39 lab298a-P5K-PRO avahi-daemon[673]: Interface enp2s0.IPv6 no longer relevant for mDNS.
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.1006] dhcp4 (enp2s0): canceled DHCP transaction, DHCP client pid 6322
+Jun 26 16:59:39 lab298a-P5K-PRO dnsmasq[2320]: setting upstream servers from DBus
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.1007] dhcp4 (enp2s0): state changed bound -> done
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.1016] dns-mgr: Writing DNS information to /sbin/resolvconf
+Jun 26 16:59:39 lab298a-P5K-PRO avahi-daemon[673]: Withdrawing address record for 131.114.2.9 on enp2s0.
+Jun 26 16:59:39 lab298a-P5K-PRO avahi-daemon[673]: Leaving mDNS multicast group on interface enp2s0.IPv4 with address 131.114.2.9.
+Jun 26 16:59:39 lab298a-P5K-PRO avahi-daemon[673]: Interface enp2s0.IPv4 no longer relevant for mDNS.
+Jun 26 16:59:39 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 16:59:39 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: message repeated 4 times: [ ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend]
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.1752] manager: NetworkManager state is now DISCONNECTED
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.1759] device (enp2s0): Activation: starting connection 'XRP_testing' (77e58f18-e680-4a8c-9f4a-43a13745f162)
+Jun 26 16:59:39 lab298a-P5K-PRO dbus[683]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.1871] device (enp2s0): state change: disconnected -> prepare (reason 'none') [30 40 0]
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.1887] manager: NetworkManager state is now CONNECTING
+Jun 26 16:59:39 lab298a-P5K-PRO avahi-daemon[673]: Joining mDNS multicast group on interface enp2s0.IPv4 with address 192.168.1.3.
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.1915] device (enp2s0): state change: prepare -> config (reason 'none') [40 50 0]
+Jun 26 16:59:39 lab298a-P5K-PRO avahi-daemon[673]: New relevant interface enp2s0.IPv4 for mDNS.
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.1922] device (enp2s0): state change: config -> ip-config (reason 'none') [50 70 0]
+Jun 26 16:59:39 lab298a-P5K-PRO systemd[1]: Starting Network Manager Script Dispatcher Service...
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.2001] device (enp2s0): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+Jun 26 16:59:39 lab298a-P5K-PRO avahi-daemon[673]: Registering new address record for 192.168.1.3 on enp2s0.IPv4.
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.2020] device (enp2s0): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.2047] device (enp2s0): state change: secondaries -> activated (reason 'none') [90 100 0]
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.2055] manager: NetworkManager state is now CONNECTED_LOCAL
+Jun 26 16:59:39 lab298a-P5K-PRO dbus[683]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jun 26 16:59:39 lab298a-P5K-PRO systemd[1]: Started Network Manager Script Dispatcher Service.
+Jun 26 16:59:39 lab298a-P5K-PRO nm-dispatcher: req:1 'down' [enp2s0]: new request (1 scripts)
+Jun 26 16:59:39 lab298a-P5K-PRO nm-dispatcher: req:1 'down' [enp2s0]: start running ordered scripts...
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.2650] manager: NetworkManager state is now CONNECTED_GLOBAL
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.2651] policy: set 'XRP_testing' (enp2s0) as default for IPv4 routing and DNS
+Jun 26 16:59:39 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530025179.2652] device (enp2s0): Activation: successful, device activated.
+Jun 26 16:59:39 lab298a-P5K-PRO nm-dispatcher: req:2 'up' [enp2s0]: new request (1 scripts)
+Jun 26 16:59:39 lab298a-P5K-PRO nm-dispatcher: req:2 'up' [enp2s0]: start running ordered scripts...
+Jun 26 16:59:39 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 16:59:39 lab298a-P5K-PRO ntpdate[7908]: name server cannot be used: Temporary failure in name resolution (-3)
+Jun 26 16:59:39 lab298a-P5K-PRO ntpdate[7967]: name server cannot be used: Temporary failure in name resolution (-3)
+Jun 26 16:59:39 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 16:59:40 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: message repeated 12 times: [ ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend]
+Jun 26 16:59:40 lab298a-P5K-PRO ntpd[1161]: Listen normally on 69 enp2s0 192.168.1.3:123
+Jun 26 16:59:40 lab298a-P5K-PRO ntpd[1161]: bind(21) AF_INET6 fe80::1c63:b0eb:4fb4:6f13%2#123 flags 0x11 failed: Cannot assign requested address
+Jun 26 16:59:40 lab298a-P5K-PRO ntpd[1161]: unable to create socket on enp2s0 (70) for fe80::1c63:b0eb:4fb4:6f13%2#123
+Jun 26 16:59:40 lab298a-P5K-PRO ntpd[1161]: failed to init interface for address fe80::1c63:b0eb:4fb4:6f13%2
+Jun 26 16:59:40 lab298a-P5K-PRO ntpd[1161]: Deleting interface #67 enp2s0, 131.114.2.9#123, interface stats: received=100, sent=101, dropped=0, active_time=2552 secs
+Jun 26 16:59:40 lab298a-P5K-PRO ntpd[1161]: 193.234.225.237 local addr 131.114.2.9 -> <null>
+Jun 26 16:59:40 lab298a-P5K-PRO ntpd[1161]: 85.199.214.99 local addr 131.114.2.9 -> <null>
+Jun 26 16:59:40 lab298a-P5K-PRO ntpd[1161]: 94.177.187.22 local addr 131.114.2.9 -> <null>
+Jun 26 16:59:40 lab298a-P5K-PRO ntpd[1161]: 212.45.144.88 local addr 131.114.2.9 -> <null>
+Jun 26 16:59:40 lab298a-P5K-PRO ntpd[1161]: 31.14.131.188 local addr 131.114.2.9 -> <null>
+Jun 26 16:59:40 lab298a-P5K-PRO ntpd[1161]: 188.213.165.209 local addr 131.114.2.9 -> <null>
+Jun 26 16:59:40 lab298a-P5K-PRO ntpd[1161]: Deleting interface #68 enp2s0, fe80::c488:5270:c5c:2b20%2#123, interface stats: received=0, sent=0, dropped=0, active_time=2552 secs
+Jun 26 16:59:40 lab298a-P5K-PRO ntpd[1161]: new interface(s) found: waking up resolver
+Jun 26 16:59:40 lab298a-P5K-PRO avahi-daemon[673]: Joining mDNS multicast group on interface enp2s0.IPv6 with address fe80::1c63:b0eb:4fb4:6f13.
+Jun 26 16:59:40 lab298a-P5K-PRO avahi-daemon[673]: New relevant interface enp2s0.IPv6 for mDNS.
+Jun 26 16:59:40 lab298a-P5K-PRO avahi-daemon[673]: Registering new address record for fe80::1c63:b0eb:4fb4:6f13 on enp2s0.*.
+Jun 26 16:59:41 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 16:59:42 lab298a-P5K-PRO ntpd[1161]: Listen normally on 71 enp2s0 [fe80::1c63:b0eb:4fb4:6f13%2]:123
+Jun 26 16:59:42 lab298a-P5K-PRO ntpd[1161]: new interface(s) found: waking up resolver
+Jun 26 17:00:06 lab298a-P5K-PRO ntpd[1161]: Soliciting pool server 31.14.133.122
+Jun 26 17:00:11 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:00:28 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:00:32 lab298a-P5K-PRO nmbd[1193]: [2018/06/26 17:00:32.154658,  0] ../source3/libsmb/nmblib.c:873(send_udp)
+Jun 26 17:00:32 lab298a-P5K-PRO nmbd[1193]:   Packet send failed to 131.114.3.255(138) ERRNO=Invalid argument
+Jun 26 17:00:34 lab298a-P5K-PRO nmbd[1193]: [2018/06/26 17:00:34.156400,  0] ../source3/libsmb/nmblib.c:873(send_udp)
+Jun 26 17:00:34 lab298a-P5K-PRO nmbd[1193]:   Packet send failed to 131.114.3.255(138) ERRNO=Invalid argument
+Jun 26 17:00:36 lab298a-P5K-PRO nmbd[1193]: [2018/06/26 17:00:36.157941,  0] ../source3/libsmb/nmblib.c:873(send_udp)
+Jun 26 17:00:36 lab298a-P5K-PRO nmbd[1193]:   Packet send failed to 131.114.3.255(138) ERRNO=Invalid argument
+Jun 26 17:00:41 lab298a-P5K-PRO ntpd[1161]: Soliciting pool server 93.62.118.82
+Jun 26 17:00:42 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 17:00:44 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:00:45 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 17:01:12 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:01:18 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:01:33 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:01:45 lab298a-P5K-PRO ntpd[1161]: Soliciting pool server 193.183.98.38
+Jun 26 17:01:51 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:02:16 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:02:24 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:02:39 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:02:50 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:02:57 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:03:22 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:03:29 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:03:43 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:03:54 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:04:04 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:04:27 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:04:34 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:04:49 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:05:00 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:05:04 lab298a-P5K-PRO ntpd[1161]: 94.177.187.22 local addr 192.168.1.3 -> <null>
+Jun 26 17:05:11 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:05:31 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:05:40 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:05:49 lab298a-P5K-PRO nmbd[1193]: [2018/06/26 17:05:49.196731,  0] ../source3/nmbd/nmbd_become_lmb.c:397(become_local_master_stage2)
+Jun 26 17:05:49 lab298a-P5K-PRO nmbd[1193]:   *****
+Jun 26 17:05:49 lab298a-P5K-PRO nmbd[1193]: 
+Jun 26 17:05:49 lab298a-P5K-PRO nmbd[1193]:   Samba name server LINUXLITE is now a local master browser for workgroup WORKGROUP on subnet 192.168.1.3
+Jun 26 17:05:49 lab298a-P5K-PRO nmbd[1193]: 
+Jun 26 17:05:49 lab298a-P5K-PRO nmbd[1193]:   *****
+Jun 26 17:05:54 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:06:07 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:06:18 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:06:38 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:06:45 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:06:58 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:07:12 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:07:23 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:07:45 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:07:52 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:08:04 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:08:17 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:08:27 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:08:49 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:08:58 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:09:10 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:09:24 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:09:31 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:09:56 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:10:05 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:10:14 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:10:28 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:10:35 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:11:00 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:11:10 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:11:18 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:11:33 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:11:39 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:12:06 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:12:17 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:12:25 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:12:40 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:12:45 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:13:11 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:13:21 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:13:30 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:13:47 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:13:51 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:14:17 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:14:27 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:14:37 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:14:51 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:14:57 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:15:23 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:15:32 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:15:41 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:15:58 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:16:04 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:16:27 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:16:27 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 17:16:36 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:16:48 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:17:01 lab298a-P5K-PRO CRON[8622]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 26 17:17:03 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:17:11 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:17:31 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:17:41 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:17:55 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:18:09 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:18:18 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:18:37 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:18:45 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:19:02 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:19:15 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:19:25 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:19:42 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:19:50 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:20:09 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:20:21 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:20:32 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:20:48 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:20:56 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:21:14 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:21:25 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:21:36 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:21:55 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:22:02 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:22:19 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:22:29 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:22:41 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:22:59 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:23:07 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:23:24 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:23:33 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <warn>  [1530026625.2042] device (enp2s0): disconnecting connection 'XRP_testing' for new activation request.
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2048] device (enp2s0): state change: activated -> deactivating (reason 'new-activation') [100 110 60]
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2053] manager: NetworkManager state is now DISCONNECTING
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2415] device (enp2s0): disconnecting for new activation request.
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2416] audit: op="connection-activate" uuid="77e58f18-e680-4a8c-9f4a-43a13745f162" name="XRP_testing" pid=1635 uid=1000 result="success"
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2424] device (enp2s0): state change: deactivating -> disconnected (reason 'new-activation') [110 30 60]
+Jun 26 17:23:45 lab298a-P5K-PRO avahi-daemon[673]: Withdrawing address record for fe80::1c63:b0eb:4fb4:6f13 on enp2s0.
+Jun 26 17:23:45 lab298a-P5K-PRO avahi-daemon[673]: Leaving mDNS multicast group on interface enp2s0.IPv6 with address fe80::1c63:b0eb:4fb4:6f13.
+Jun 26 17:23:45 lab298a-P5K-PRO avahi-daemon[673]: Interface enp2s0.IPv6 no longer relevant for mDNS.
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2438] manager: NetworkManager state is now DISCONNECTED
+Jun 26 17:23:45 lab298a-P5K-PRO avahi-daemon[673]: Withdrawing address record for 192.168.1.3 on enp2s0.
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2440] device (enp2s0): Activation: starting connection 'XRP_testing' (77e58f18-e680-4a8c-9f4a-43a13745f162)
+Jun 26 17:23:45 lab298a-P5K-PRO avahi-daemon[673]: Leaving mDNS multicast group on interface enp2s0.IPv4 with address 192.168.1.3.
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2468] device (enp2s0): state change: disconnected -> prepare (reason 'none') [30 40 0]
+Jun 26 17:23:45 lab298a-P5K-PRO avahi-daemon[673]: Interface enp2s0.IPv4 no longer relevant for mDNS.
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2469] manager: NetworkManager state is now CONNECTING
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2474] device (enp2s0): state change: prepare -> config (reason 'none') [40 50 0]
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2479] device (enp2s0): state change: config -> ip-config (reason 'none') [50 70 0]
+Jun 26 17:23:45 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 17:23:45 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: message repeated 2 times: [ ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend]
+Jun 26 17:23:45 lab298a-P5K-PRO dbus[683]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2739] device (enp2s0): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+Jun 26 17:23:45 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2749] device (enp2s0): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2752] device (enp2s0): state change: secondaries -> activated (reason 'none') [90 100 0]
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.2753] manager: NetworkManager state is now CONNECTED_LOCAL
+Jun 26 17:23:45 lab298a-P5K-PRO systemd[1]: Starting Network Manager Script Dispatcher Service...
+Jun 26 17:23:45 lab298a-P5K-PRO dbus[683]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jun 26 17:23:45 lab298a-P5K-PRO systemd[1]: Started Network Manager Script Dispatcher Service.
+Jun 26 17:23:45 lab298a-P5K-PRO nm-dispatcher: req:1 'down' [enp2s0]: new request (1 scripts)
+Jun 26 17:23:45 lab298a-P5K-PRO nm-dispatcher: req:1 'down' [enp2s0]: start running ordered scripts...
+Jun 26 17:23:45 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 17:23:45 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: message repeated 2 times: [ ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend]
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.3414] manager: NetworkManager state is now CONNECTED_GLOBAL
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.3415] policy: set 'XRP_testing' (enp2s0) as default for IPv4 routing and DNS
+Jun 26 17:23:45 lab298a-P5K-PRO NetworkManager[732]: <info>  [1530026625.3416] device (enp2s0): Activation: successful, device activated.
+Jun 26 17:23:45 lab298a-P5K-PRO nm-dispatcher: req:2 'up' [enp2s0]: new request (1 scripts)
+Jun 26 17:23:45 lab298a-P5K-PRO nm-dispatcher: req:2 'up' [enp2s0]: start running ordered scripts...
+Jun 26 17:23:45 lab298a-P5K-PRO avahi-daemon[673]: Joining mDNS multicast group on interface enp2s0.IPv4 with address 192.168.1.3.
+Jun 26 17:23:45 lab298a-P5K-PRO avahi-daemon[673]: New relevant interface enp2s0.IPv4 for mDNS.
+Jun 26 17:23:45 lab298a-P5K-PRO avahi-daemon[673]: Registering new address record for 192.168.1.3 on enp2s0.IPv4.
+Jun 26 17:23:45 lab298a-P5K-PRO ntpdate[8864]: name server cannot be used: Temporary failure in name resolution (-3)
+Jun 26 17:23:45 lab298a-P5K-PRO ntpdate[8920]: name server cannot be used: Temporary failure in name resolution (-3)
+Jun 26 17:23:45 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 17:23:46 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: message repeated 17 times: [ ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend]
+Jun 26 17:23:46 lab298a-P5K-PRO avahi-daemon[673]: Joining mDNS multicast group on interface enp2s0.IPv6 with address fe80::1c63:b0eb:4fb4:6f13.
+Jun 26 17:23:46 lab298a-P5K-PRO avahi-daemon[673]: New relevant interface enp2s0.IPv6 for mDNS.
+Jun 26 17:23:46 lab298a-P5K-PRO avahi-daemon[673]: Registering new address record for fe80::1c63:b0eb:4fb4:6f13 on enp2s0.*.
+Jun 26 17:23:47 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:24:06 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:24:11 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:24:31 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:24:37 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:24:51 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:25:11 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:25:15 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:25:36 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:25:43 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:25:56 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:26:15 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:26:22 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:26:42 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:26:47 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:27:01 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:27:22 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:27:29 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:27:47 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:27:53 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:28:05 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:28:28 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:28:35 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:28:52 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:29:00 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:29:09 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:29:35 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:29:39 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:29:59 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:30:07 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:30:15 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:30:39 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:30:46 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:31:04 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:31:11 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:31:20 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:31:45 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:31:52 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:32:10 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:32:17 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:32:24 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:32:49 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:32:57 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:33:15 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:33:24 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:33:28 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:33:56 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:34:02 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:34:22 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:34:29 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:34:34 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:35:00 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:35:07 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:35:29 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:35:35 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:35:39 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:36:04 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:36:12 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:36:36 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:36:39 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:36:43 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:37:11 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:37:17 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:37:40 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:37:44 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:37:49 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:38:15 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:38:24 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:38:47 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:38:50 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:38:54 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:39:20 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:39:28 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:39:51 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:39:55 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:40:00 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:40:27 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:40:32 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:40:58 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:40:59 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:41:07 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:41:34 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:41:38 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:42:04 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:42:06 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:42:12 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:42:38 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:42:42 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:43:09 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:43:10 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:43:19 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:43:42 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:43:48 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:44:14 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:44:15 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:44:24 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:44:47 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:44:53 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:45:19 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:45:21 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:45:29 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:45:52 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:45:59 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:46:26 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:46:26 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:46:34 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:46:58 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:47:03 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:47:32 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:47:33 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:47:38 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:48:03 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:48:08 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:48:38 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:48:39 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:48:42 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:49:08 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:49:12 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:49:43 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:49:44 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:49:46 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:50:14 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:50:16 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:50:39 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 17:50:48 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:50:49 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:50:51 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:51:19 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:51:23 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:51:52 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:51:54 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:51:55 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:52:24 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:52:27 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:52:59 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:53:01 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:53:01 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:53:30 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:53:32 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:54:05 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:54:06 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:54:07 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:54:18 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 17:54:18 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 17:54:35 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:54:36 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:55:09 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:55:10 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:55:14 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:55:40 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:55:41 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:56:14 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:56:15 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:56:20 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:56:47 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:56:47 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:57:18 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:57:22 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:57:25 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:57:52 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:57:53 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:58:25 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:58:26 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:58:29 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:58:57 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:58:58 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:59:30 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 17:59:32 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 17:59:36 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:00:03 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:00:05 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:00:37 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:00:39 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 18:00:41 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:01:07 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:01:12 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:01:42 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:01:43 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 18:01:47 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:02:14 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:02:17 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:02:46 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:02:49 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 18:02:54 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:03:20 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:03:24 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:03:52 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:03:54 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 18:03:58 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:04:24 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:04:29 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:04:58 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:05:00 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 18:05:05 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:05:29 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:05:36 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:06:04 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:06:07 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 18:06:12 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:06:35 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:06:40 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:07:11 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:07:13 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 18:07:16 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:07:40 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:07:45 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:08:16 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:08:18 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 18:08:23 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:08:47 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:08:50 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:09:20 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:09:25 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 18:09:28 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:09:29 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 18:09:53 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:09:57 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:10:25 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:10:30 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 18:10:35 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:11:00 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:11:01 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:11:31 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:11:34 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 18:11:39 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:12:05 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:12:08 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:12:38 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:12:41 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 18:12:46 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:13:00 lab298a-P5K-PRO org.gtk.vfs.Daemon[1521]: ** (process:1632): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: Operation not supported by backend
+Jun 26 18:13:10 lab298a-P5K-PRO ntpd[1161]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:13:12 lab298a-P5K-PRO ntpd[1161]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:13:44 lab298a-P5K-PRO ntpd[1161]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Jun 26 18:13:45 lab298a-P5K-PRO ntpd[1161]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
+Jun 26 18:13:50 lab298a-P5K-PRO ntpd[1161]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
