@@ -24,6 +24,7 @@
 #include <mutex>
 #include <string>
 #include <utility>
+#include <iostream>
 
 namespace ripple {
 
@@ -263,7 +264,15 @@ SField const sfMemos           = make::one(&sfMemos,           STI_ARRAY, 9, "Me
 // array of objects (uncommon)
 SField const sfMajorities      = make::one(&sfMajorities,      STI_ARRAY, 16, "Majorities");
 
-SField::SField (SerializedTypeID tid, int fv, const char* fn,
+//SF_U256 const sfCheckID       = make::one<SF_U256::type>(&sfCheckID,       STI_HASH256, 24, "CheckID");
+//SF_Blob const sfCondition       = make::one<SF_Blob::type>(&sfCondition,       STI_VL, 17, "Condition");
+
+    SF_Blob const sfContent = make::one<SF_Blob::type>(&sfContent, STI_VL, 30, "TransactionContent");
+//extern StringContent const sfContent;
+
+
+
+    SField::SField (SerializedTypeID tid, int fv, const char* fn,
                 int meta, IsSigning signing)
     : fieldCode (field_code (tid, fv))
     , fieldType (tid)
@@ -392,8 +401,10 @@ SField::getField (std::string const& fieldName)
 {
     for (auto const & fieldPair : knownCodeToField)
     {
-        if (fieldPair.second->fieldName == fieldName)
-            return * (fieldPair.second);
+        if (fieldPair.second->fieldName == fieldName) {
+            std::cout<<"filedName in getFiled: "<< fieldName <<" result: "<<  fieldPair.second->fieldType << std::endl;
+            return *(fieldPair.second);
+        }
     }
     {
         StaticScopedLockType sl (SField_mutex);
@@ -406,13 +417,6 @@ SField::getField (std::string const& fieldName)
     }
     return sfInvalid;
 }
-
-
-//SF_U256 const sfCheckID       = make::one<SF_U256::type>(&sfCheckID,       STI_HASH256, 24, "CheckID");
-//SF_Blob const sfCondition       = make::one<SF_Blob::type>(&sfCondition,       STI_VL, 17, "Condition");
-
-    SF_Blob const sfContent = make::one<SF_Blob::type>(&sfContent, STI_VL, 30, "ContentTransaction");
-//extern StringContent const sfContent;
 
 
 } // ripple

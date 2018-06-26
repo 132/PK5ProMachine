@@ -286,6 +286,7 @@ public:
 
     XRPAmount xrp () const;
     IOUAmount iou () const;
+    void increaseBalance(XRPAmount temp);
 };
 
 //------------------------------------------------------------------------------

@@ -136,6 +136,8 @@ void AcceptedLedgerTx::buildJson ()
         {
             auto const& account = mTxn->getAccountID(sfAccount);
             auto const TransactionContent = mTxn->getTransactionContent (sfContent);    // type Blob = std::vector<unsigned char>
+
+
             std::string StringContent(TransactionContent.begin(),TransactionContent.end());
             // If the offer create is not self funded then add the owner balance
             /*if (account != amount.issue ().account)

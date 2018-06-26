@@ -83,6 +83,8 @@ inline static std::string sqlEscape (Blob const& vecSrc)
 uint64_t uintFromHex (std::string const& strSrc);
 
 std::pair<Blob, bool> strUnHex (std::string const& strSrc);
+// add this function to make a new condition for TransactionContent
+std::pair<Blob, bool> processTransactionContent (std::string const& strSrc);
 
 struct parsedURL
 {

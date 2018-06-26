@@ -172,9 +172,17 @@ void fillJsonBinary(Object& json, bool closed, LedgerInfo const& info)
             {
                 auto const account = i.first->getAccountID(sfAccount);
                 auto const TransactionContent = i.first->getTransactionContent (sfContent);
+
+                std::cout<<"Values of sfContent from LedgerToJson: "<<std::endl;
+
+                for(int i =0; i< TransactionContent.size();i++)
+                    std::cout<< TransactionContent.at(i)<<" "<<std::endl;
+
+
                 std::string StringContent(TransactionContent.begin(), TransactionContent.end() );
 /* uint256               if(TransactionContent.isNonZero())
                     txJson[jss::transaction][jss::TransactionContent] = std::to_string(TransactionContent.bytes);*/
+                std::cout<<"in type of String: "<<StringContent<< std::endl;
             if(!StringContent.empty())
                 txJson[jss::transaction][jss::TransactionContent] = StringContent;
             }

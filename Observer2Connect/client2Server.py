@@ -16,23 +16,13 @@ while True:
 #mySocket.sendto('ls -l',(SERVER_IP,PORT_NUMBER))
 
 mySocket.connect((SERVER_IP,PORT_NUMBER))
-<<<<<<< HEAD
-=======
-#id = 0
-#while True:
-#print id
->>>>>>> 22c6219fbc85756766779abdeff20efc690749ca
 try:
 #	mySocket.sendto('../cmake-build-debug/./rippled submit sh1LrEHjJyMGi9JLUHeyvKKAGSuRL \'{"Account" : "rBor3Awo22JCTB21gJejAyHZhQBXq7c29N", "TransactionType" : "LogTransaction", "TransactionContent" :  "tri dep trai"}\'',(SERVER_IP,PORT_NUMBER))
 	msg = '../cmake-build-debug/./rippled submit sh1LrEHjJyMGi9JLUHeyvKKAGSuRL \'{"Account" : "rBor3Awo22JCTB21gJejAyHZhQBXq7c29N", "TransactionType" : "LogTransaction", "TransactionContent" :  "tri dep trai"}\''
 	mySocket.sendall(msg)
-<<<<<<< HEAD
 	
 	print msg
 	
-=======
-	print msg
->>>>>>> 22c6219fbc85756766779abdeff20efc690749ca
 	received = 0
 	expected = len(msg)
 	while received < expected:
@@ -44,10 +34,5 @@ try:
 			break
 finally:
 	print 'closing socket'
-<<<<<<< HEAD
 	mySocket.close()	
-=======
-	
-mySocket.close()	
->>>>>>> 22c6219fbc85756766779abdeff20efc690749ca
 sys.exit()

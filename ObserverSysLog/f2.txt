@@ -1,0 +1,3 @@
+tri dep trai
+tri hoc gioi
+tri so mot

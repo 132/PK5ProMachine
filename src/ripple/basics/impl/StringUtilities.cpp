@@ -29,6 +29,13 @@
 #include <cstdarg>
 
 namespace ripple {
+// addd new function for TransactionContent
+std::pair<Blob, bool> processTransactionContent (std::string const& strSrc){
+
+    Blob out(strSrc.begin(), strSrc.end());
+
+    return std::make_pair(std::move(out), true);
+};
 
 std::pair<Blob, bool> strUnHex (std::string const& strSrc)
 {

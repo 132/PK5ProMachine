@@ -518,6 +518,8 @@ TER RippleCalc::rippleCalculate (detail::FlowDebugInfo* flowDebugInfo)
                     << " actualAmountOut_:" << actualAmountOut_
                     << " saDstAmountReq_:" << saDstAmountReq_;
 
+                std::cout<<"tefEXCEPTION in AdvanceNode ver2"<<std::endl;
+
                 return tefEXCEPTION;  // TEMPORARY
                 assert (false);
             }
