@@ -2,5 +2,4 @@ tri dep trai
 asdfsd
 asdfasfd
 asfasdf
-hiphop
-dfgsdfg
+
