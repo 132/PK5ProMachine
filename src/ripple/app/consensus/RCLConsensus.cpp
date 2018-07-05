@@ -270,6 +270,8 @@ RCLConsensus::Adaptor::onClose(
     NetClock::time_point const& closeTime,
     ConsensusMode mode) -> Result
 {
+
+ //   std::cout<<"onClose() in RCLConsensus.cpp"<<std::endl;
     const bool wrongLCL = mode == ConsensusMode::wrongLedger;
     const bool proposing = mode == ConsensusMode::proposing;
 
@@ -359,6 +361,7 @@ RCLConsensus::Adaptor::onAccept(
     ConsensusMode const& mode,
     Json::Value && consensusJson)
 {
+//    std::cout<<"onAccept() in RCLConsensus.cpp"<< std::endl;
     app_.getJobQueue().addJob(
         jtACCEPT,
         "acceptLedger",
@@ -388,6 +391,8 @@ RCLConsensus::Adaptor::doAccept(
     ConsensusMode const& mode,
     Json::Value && consensusJson)
 {
+
+//    std::cout<<"doAccept() in RCLConsensus.cpp" <<std::endl;
     prevProposers_ = result.proposers;
     prevRoundTime_ = result.roundTime.read();
 
@@ -444,6 +449,8 @@ can be retried in the next round.
     JLOG(j_.debug()) << "Report: NewL  = " << newLCLHash << ":"
                      << sharedLCL.seq();
 
+
+ //   std::cout<<"Tell directly connected peers that we have a new LCL RCLConsensus.cpp" <<std::endl;
     // Tell directly connected peers that we have a new LCL
     notify(protocol::neACCEPTED_LEDGER, sharedLCL, haveCorrectLCL);
 // ---------------------------------- ---------------------------
@@ -465,6 +472,7 @@ can be retried in the next round.
 
     //-------------------------------------------------------------------------
     {
+//        std::cout<<"Apply disputed transactions that in RCLConsensus.cpp" <<std::endl;
         // Apply disputed transactions that didn't get in
         //
         // The first crack of transactions to get into the new
@@ -521,9 +529,10 @@ can be retried in the next round.
         else
             rules.emplace(app_.config().features);
 
-
+//----------------------------------------------------------------------------------------------------------------------
 // OpenLedger accept a set of Transactions
-
+//        std::cout<<"######################################################################################" <<std::endl;
+//        std::cout<<"OpenLedger accept a set of Transactions in RCLConsensus.cpp" <<std::endl;
         app_.openLedger().accept(
             app_,
             *rules,
@@ -535,15 +544,19 @@ can be retried in the next round.
             "consensus",
             [&](OpenView& view, beast::Journal j) {
 
+
                 // Stuff the ledger with transactions from the queue.
+//                std::cout<<"Stuff the ledger with transactions from the queue." <<std::endl;
                 return app_.getTxQ().accept(app_, view);
             });
 
         // Signal a potential fee change to subscribers after the open ledger
         // is created
+//        std::cout<<"Signal a potential fee change to subscribers after the open ledger is created" <<std::endl;
         app_.getOPs().reportFeeChange();
     }
-
+//----------------------------------------------------------------------------------------------------------------------
+ //   std::cout<<"before switchLCL" <<std::endl;
     //-------------------------------------------------------------------------
     {
         ledgerMaster_.switchLCL(sharedLCL.ledger_);
@@ -558,6 +571,9 @@ can be retried in the next round.
     // we entered the round with the network,
     // see how close our close time is to other node's
     //  close time reports, and update our clock.
+
+
+//    std::cout<<"we entered the round with the network, see how close our close time is to other node's close time reports, and update our clock." <<std::endl;
     if ((mode == ConsensusMode::proposing || mode == ConsensusMode::observing) && !consensusFail)
     {
         auto closeTime = rawCloseTimes.self;
@@ -686,6 +702,7 @@ applyTransactions(
 
     bool certainRetry = true;
 
+    //std::cout<<"Before the For apply transaction in RCLConsensus.cpp" << std::endl;
 
     // Attempt to apply all of the retriable transactions
     for (int pass = 0; pass < LEDGER_TOTAL_PASSES; ++pass)
@@ -694,17 +711,20 @@ applyTransactions(
                         << (certainRetry ? " retriable" : " final");
         int changes = 0;
 
+        //std::cout<<"inside the For apply transaction in RCLConsensus.cpp with SIZE: "<< retriableTxs.size() << std::endl;
         auto it = retriableTxs.begin();
 
         while (it != retriableTxs.end())
         {
             try
             {
+                //std::cout<<"try to apply this tx in RCLConsensus.cpp"<< it->second.get()->getFullText() << std::endl;
                 switch (applyTransaction(
                     app, view, *it->second, certainRetry, tapNO_CHECK_SIGN, j))
                 {
                     case ApplyResult::Success:
                         it = retriableTxs.erase(it);
+                        //std::cout<<"go to Success in RCLConsensus.cpp" << std::endl;
                         ++changes;
                         break;
 
@@ -764,6 +784,8 @@ RCLConsensus::Adaptor::buildLCL(
                      << closeTime.time_since_epoch().count()
                      << (closeTimeCorrect ? "" : " (incorrect)");
 
+
+    //std::cout<<"Build the new last closed ledger in RCLConsensus.cpp" << std::endl;
     // Build the new last closed ledger
     auto buildLCL =
         std::make_shared<Ledger>(*previousLedger.ledger_, closeTime);
@@ -788,6 +810,7 @@ RCLConsensus::Adaptor::buildLCL(
         if (replay)
         {
             // Special case, we are replaying a ledger close
+            //std::cout<<" Special case, we are replaying a ledger close" << std::endl;
             for (auto& tx : replay->txns_)
                 applyTransaction(
                     app_, accum, *tx.second, false, tapNO_CHECK_SIGN, j_);
@@ -795,12 +818,15 @@ RCLConsensus::Adaptor::buildLCL(
         else
         {
             // Normal case, we are not replaying a ledger close
+            //std::cout<<" Normal case, we are not replaying a ledger close" << std::endl;
             retriableTxs = applyTransactions(
                 app_, txns, accum, [&buildLCL](uint256 const& txID) {
                     return !buildLCL->txExists(txID);
                 });
         }
+
         // Update fee computations.
+        //std::cout<<"BEFORE go to getTxQ().processClosedLedger" << std::endl;
         app_.getTxQ().processClosedLedger(app_, accum, roundTime > 5s);
         accum.apply(*buildLCL);
     }
@@ -824,10 +850,12 @@ RCLConsensus::Adaptor::buildLCL(
     }
     buildLCL->unshare();
 
+    //std::cout<<"Accept ledger -> set remaning fields in the ledger " <<std::endl;
     // Accept ledger -> set remaning fields in the ledger
     buildLCL->setAccepted(
         closeTime, closeResolution, closeTimeCorrect, app_.config());
 
+    //std::cout<<"and stash the ledger in the ledger master" <<std::endl;
     // And stash the ledger in the ledger master
     if (ledgerMaster_.storeLedger(buildLCL))
         JLOG(j_.debug()) << "Consensus built ledger we already had";

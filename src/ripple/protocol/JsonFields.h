@@ -498,6 +498,7 @@ JSS ( write_load );                 // out: GetCounts
 // Tri adding
 
 JSS ( TransactionContent );         //
+JSS ( TransactionTime );
 #undef JSS
 
 } // jss

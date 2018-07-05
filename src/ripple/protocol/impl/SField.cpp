@@ -267,7 +267,8 @@ SField const sfMajorities      = make::one(&sfMajorities,      STI_ARRAY, 16, "M
 //SF_U256 const sfCheckID       = make::one<SF_U256::type>(&sfCheckID,       STI_HASH256, 24, "CheckID");
 //SF_Blob const sfCondition       = make::one<SF_Blob::type>(&sfCondition,       STI_VL, 17, "Condition");
 
-    SF_Blob const sfContent = make::one<SF_Blob::type>(&sfContent, STI_VL, 30, "TransactionContent");
+SF_Blob const sfContent = make::one<SF_Blob::type>(&sfContent, STI_VL, 30, "TransactionContent");
+SF_U32 const sfSubmitTime         = make::one<SF_U32::type>(&sfSubmitTime,         STI_UINT32, 40, "Time");
 //extern StringContent const sfContent;
 
 
@@ -402,7 +403,7 @@ SField::getField (std::string const& fieldName)
     for (auto const & fieldPair : knownCodeToField)
     {
         if (fieldPair.second->fieldName == fieldName) {
-            std::cout<<"filedName in getFiled: "<< fieldName <<" result: "<<  fieldPair.second->fieldType << std::endl;
+// Tri            std::cout<<"filedName in getFiled: "<< fieldName <<" result: "<<  fieldPair.second->fieldType << std::endl;
             return *(fieldPair.second);
         }
     }

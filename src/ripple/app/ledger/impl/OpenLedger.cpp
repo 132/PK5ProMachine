@@ -84,6 +84,8 @@ OpenLedger::accept(Application& app, Rules const& rules,
                 std::string const& suffix,
                     modify_type const& f)
 {
+
+    //std::cout<<"Go to accept() in OpenLedger.cpp" << std::endl;
     JLOG(j_.trace()) <<
         "accept ledger " << ledger->seq() << " " << suffix;
     auto next = create(rules, ledger);
@@ -96,6 +98,7 @@ OpenLedger::accept(Application& app, Rules const& rules,
             shouldRecover[txID] = app.getHashRouter().shouldRecover(txID);
         }
         // Handle disputed tx, outside lock
+        //std::cout<<"Handle disputed tx, outside lock " << std::endl;
         using empty =
             std::vector<std::shared_ptr<
                 STTx const>>;
@@ -123,6 +126,7 @@ OpenLedger::accept(Application& app, Rules const& rules,
                     app.getHashRouter().shouldRecover(txID));
         }
 
+        //std::cout<<"Before go to apply() in OpenLedger.cpp " <<std::endl;
 // ---------------------------------- ---------------------------
         apply (app, *next, *ledger,
             boost::adaptors::transform(
@@ -137,19 +141,23 @@ OpenLedger::accept(Application& app, Rules const& rules,
 // ---------------------------------- ---------------------------
 
     }
+    //std::cout<<"Call the modifier "<<std::endl;
     // Call the modifier
     if (f)
         f(*next, j_);
 
 // ---------------------------------- ---------------------------
+    //std::cout<<"########################## problem from here ########################################"<<std::endl;
+    //std::cout<<"Apply local tx with locals: "<< locals.size() << std::endl;
     // Apply local tx
     for (auto const& item : locals)
         app.getTxQ().apply(app, *next,
-            item.second, flags, j_);
-
+                           item.second, flags, j_);
+    //std::cout<<"########################  After Apply local tx with locals: "<< locals.size() << std::endl;
 // ---------------------------------- ---------------------------
 
     // If we didn't relay this transaction recently, relay it to all peers
+    //std::cout<<"If we didn't relay this transaction recently, relay it to all peers " << std::endl;
     for (auto const& txpair : next->txs)
     {
         auto const& tx = txpair.first;

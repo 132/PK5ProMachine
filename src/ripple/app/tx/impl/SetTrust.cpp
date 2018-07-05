@@ -30,7 +30,7 @@ namespace ripple {
 TER
 SetTrust::preflight (PreflightContext const& ctx)
 {
-    auto const ret = preflight1 (ctx);
+ /*   auto const ret = preflight1 (ctx);
     if (!isTesSuccess (ret))
         return ret;
 
@@ -82,14 +82,14 @@ SetTrust::preflight (PreflightContext const& ctx)
             "Malformed transaction: no destination account.";
         return temDST_NEEDED;
     }
-
+*/
     return preflight2 (ctx);
 }
 
 TER
 SetTrust::preclaim(PreclaimContext const& ctx)
 {
-    auto const id = ctx.tx[sfAccount];
+  /*  auto const id = ctx.tx[sfAccount];
 
     auto const sle = ctx.view.read(
         keylet::account(id));
@@ -125,7 +125,7 @@ SetTrust::preclaim(PreclaimContext const& ctx)
             return temDST_IS_SRC;
         }
     }
-
+*/
     return tesSUCCESS;
 }
 
@@ -134,7 +134,7 @@ SetTrust::doApply ()
 {
     TER terResult = tesSUCCESS;
 
-    STAmount const saLimitAmount (ctx_.tx.getFieldAmount (sfLimitAmount));
+   /* STAmount const saLimitAmount (ctx_.tx.getFieldAmount (sfLimitAmount));
     bool const bQualityIn (ctx_.tx.isFieldPresent (sfQualityIn));
     bool const bQualityOut (ctx_.tx.isFieldPresent (sfQualityOut));
 
@@ -170,8 +170,8 @@ SetTrust::doApply ()
     XRPAmount const reserveCreate ((uOwnerCount < 2)
         ? XRPAmount (zero)
         : view().fees().accountReserve(uOwnerCount + 1));
-
-    std::uint32_t uQualityIn (bQualityIn ? ctx_.tx.getFieldU32 (sfQualityIn) : 0);
+*/
+/*    std::uint32_t uQualityIn (bQualityIn ? ctx_.tx.getFieldU32 (sfQualityIn) : 0);
     std::uint32_t uQualityOut (bQualityOut ? ctx_.tx.getFieldU32 (sfQualityOut) : 0);
 
     if (bQualityOut && QUALITY_ONE == uQualityOut)
@@ -475,9 +475,9 @@ SetTrust::doApply ()
             saLimitAllow,       // Limit for who is being charged.
             uQualityIn,
             uQualityOut, viewJ);
-    }
+    }*/
 
     return terResult;
-}
 
+}
 }

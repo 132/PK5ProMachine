@@ -97,8 +97,7 @@ void fillJsonBinary(Object& json, bool closed, LedgerInfo const& info)
     }
 }
 
-/*Tri
- * Json::Value fillJsonTx (LedgerFill const& fill,
+ Json::Value fillJsonTx (LedgerFill const& fill,
     bool bBinary, bool bExpanded,
         std::pair<std::shared_ptr<STTx const>,
             std::shared_ptr<STObject const>> const i)
@@ -140,7 +139,8 @@ void fillJsonBinary(Object& json, bool closed, LedgerInfo const& info)
         }
         return txJson;
     }
-}*/
+}
+/*
 
     Json::Value fillJsonTx (LedgerFill const& fill,
                             bool bBinary, bool bExpanded,
@@ -172,6 +172,7 @@ void fillJsonBinary(Object& json, bool closed, LedgerInfo const& info)
             {
                 auto const account = i.first->getAccountID(sfAccount);
                 auto const TransactionContent = i.first->getTransactionContent (sfContent);
+                //auto const TransactionTime = i.first->getFieldU32(sfSubmitTime);
 
                 std::cout<<"Values of sfContent from LedgerToJson: "<<std::endl;
 
@@ -180,15 +181,22 @@ void fillJsonBinary(Object& json, bool closed, LedgerInfo const& info)
 
 
                 std::string StringContent(TransactionContent.begin(), TransactionContent.end() );
+
+*/
 /* uint256               if(TransactionContent.isNonZero())
-                    txJson[jss::transaction][jss::TransactionContent] = std::to_string(TransactionContent.bytes);*/
+                    txJson[jss::transaction][jss::TransactionContent] = std::to_string(TransactionContent.bytes);*//*
+
                 std::cout<<"in type of String: "<<StringContent<< std::endl;
-            if(!StringContent.empty())
+            if(!StringContent.empty()) {
                 txJson[jss::transaction][jss::TransactionContent] = StringContent;
+                //txJson[jss::transaction][jss::TransactionTime] = TransactionTime;
             }
+            }
+
             return txJson;
         }
     }
+*/
 
 template <class Object>
 void fillJsonTx (Object& json, LedgerFill const& fill)

@@ -57,9 +57,7 @@ private:
     class txs_iter_impl;
 
     // List of tx, key order
-    using txs_map = std::map<key_type,
-        std::pair<std::shared_ptr<Serializer const>,
-        std::shared_ptr<Serializer const>>,
+    using txs_map = std::map<key_type, std::pair<std::shared_ptr<Serializer const>,std::shared_ptr<Serializer const>>,
         std::less<key_type>, qalloc_type<std::pair<key_type const,
         std::pair<std::shared_ptr<Serializer const>,
         std::shared_ptr<Serializer const>>>, false>>;

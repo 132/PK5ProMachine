@@ -178,7 +178,7 @@ static boost::optional<detail::STVar> parseLeaf (
 
     auto const& field = SField::getField (fieldName);
 
-    std::cout<<"fieldName: "<< fieldName << " field name result: "<< field.fieldName << " type: "<< field.fieldType<<std::endl;
+    //std::cout<<"fieldName: "<< fieldName << " field name result: "<< field.fieldName << " type: "<< field.fieldType<<std::endl;
 
     if (field == sfInvalid)
     {
@@ -468,27 +468,27 @@ static boost::optional<detail::STVar> parseLeaf (
         {
             std::pair<Blob, bool> vBlob (strUnHex (value.asString ()));
 
-            std::cout<<"FieldName: " << fieldName << std::endl;
+            //std::cout<<"FieldName: " << fieldName << std::endl;
 //Tri add a new condition
             if (fieldName == "TransactionContent") {
                 std::cout<< "go to processTransactionContent" <<std::endl;
                 vBlob = std::pair<Blob, bool> (processTransactionContent(value.asString()));
             }
-            std::cout<<"values: "<< value.asString()<<std::endl;
-            std::cout<<"pair<Blob,bool>: second: "<< vBlob.second << std::endl;
+            //std::cout<<"values: "<< value.asString()<<std::endl;
+            //std::cout<<"pair<Blob,bool>: second: "<< vBlob.second << std::endl;
 
 
             if (! vBlob.second)
                 Throw<std::invalid_argument> ("invalid data");
 
-            std::cout<<"Throw out the second elem. "<<std::endl;
+            //std::cout<<"Throw out the second elem. "<<std::endl;
 
             ret = detail::make_stvar <STBlob> (field, vBlob.first.data (),
                                              vBlob.first.size ());
         }
         catch (std::exception const&)
         {
-            std::cout<<"json_name vs fieldName: "<< json_name << " , " << fieldName <<std::endl;
+            //std::cout<<"json_name vs fieldName: "<< json_name << " , " << fieldName <<std::endl;
 
             error = invalid_data (json_name, fieldName);
             return ret;

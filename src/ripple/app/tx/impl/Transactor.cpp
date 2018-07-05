@@ -88,13 +88,13 @@ preflight1 (PreflightContext const& ctx)
 TER
 preflight2 (PreflightContext const& ctx)
 {
-    std::cout<<" go to preflight2 on Transactor.cpp before checking flag  "<<std::endl;
+    //std::cout<<" go to preflight2 on Transactor.cpp before checking flag  "<<std::endl;
     if(!( ctx.flags & tapNO_CHECK_SIGN))
     {
         auto const sigValid = checkValidity(ctx.app.getHashRouter(),
             ctx.tx, ctx.rules, ctx.app.config());
 
-        std::cout<<" go to preflight2 on Transactor.cpp in a if condition "<<std::endl;
+        //std::cout<<" go to preflight2 on Transactor.cpp in a if condition "<<std::endl;
         if (sigValid.first == Validity::SigBad)
         {
             JLOG(ctx.j.debug()) <<
@@ -240,13 +240,13 @@ TER Transactor::payFee ()
     // Deduct the fee, so it's not available during the transaction.
     // Will only write the account back if the transaction succeeds.
 
-//Tri    mSourceBalance -= feePaid;
+    mSourceBalance -= feePaid;
 
 
     //Tri add more
-    XRPAmount zero_(0);
+   /* XRPAmount zero_(0);
     mSourceBalance -= zero_;
-
+*/
     sle->setFieldAmount (sfBalance, mSourceBalance);
 
     // VFALCO Should we call view().rawDestroyXRP() here as well?
