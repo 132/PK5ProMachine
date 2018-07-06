@@ -471,7 +471,7 @@ static boost::optional<detail::STVar> parseLeaf (
             //std::cout<<"FieldName: " << fieldName << std::endl;
 //Tri add a new condition
             if (fieldName == "TransactionContent") {
-                std::cout<< "go to processTransactionContent" <<std::endl;
+                //std::cout<< "go to processTransactionContent" <<std::endl;
                 vBlob = std::pair<Blob, bool> (processTransactionContent(value.asString()));
             }
             //std::cout<<"values: "<< value.asString()<<std::endl;
