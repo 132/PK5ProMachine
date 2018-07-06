@@ -205,7 +205,6 @@ TER
 Payment::preclaim(PreclaimContext const& ctx)
 {
     // Ripple if source or destination is non-native or if there are paths.
-    //std::cout<<"inside preclaim PAYMENT.cpp" << std::endl;
     std::uint32_t const uTxFlags = ctx.tx.getFlags();
     bool const partialPaymentAllowed = uTxFlags & tfPartialPayment;
     auto const paths = ctx.tx.isFieldPresent(sfPaths);
@@ -227,8 +226,6 @@ Payment::preclaim(PreclaimContext const& ctx)
 
             // Another transaction could create the account and then this
             // transaction would succeed.
-
-            //std::cout<<"tecNO_DST in preclaim() in PAYMENT.cpp"<<std::endl;
             return tecNO_DST;
         }
         else if (ctx.view.open()
@@ -242,8 +239,6 @@ Payment::preclaim(PreclaimContext const& ctx)
 
             // Another transaction could create the account and then this
             // transaction would succeed.
-
-            //std::cout<<"telNO_DST_PARTIAL in preclaim() in PAYMENT.cpp"<<std::endl;
             return telNO_DST_PARTIAL;
         }
 /*Comment to remove checking aboout the amount xrp need to create an account -> does not need to use XRP to create
@@ -272,8 +267,6 @@ Payment::preclaim(PreclaimContext const& ctx)
         // no way for this field to be set.
         JLOG(ctx.j.trace()) << "Malformed transaction: DestinationTag required.";
 
-
-        //std::cout<<"tecDST_TAG_NEEDED in preclaim() in PAYMENT.cpp"<<std::endl;
         return tecDST_TAG_NEEDED;
     }
 
@@ -281,7 +274,7 @@ Payment::preclaim(PreclaimContext const& ctx)
     {
         // Ripple payment with at least one intermediate step and uses
         // transitive balances.
-       // std::cout<<"Ripple payment with at least one intermediate step and uses transitive balances." << std::endl;
+
         // Copy paths into an editable class.
         STPathSet const spsPaths = ctx.tx.getFieldPathSet(sfPaths);
 
@@ -297,12 +290,10 @@ Payment::preclaim(PreclaimContext const& ctx)
 
         if (ctx.view.open() && pathTooBig)
         {
-            //std::cout<<"telBAD_PATH_COUNT in preclaim() in PAYMENT.cpp"<<std::endl;
             return telBAD_PATH_COUNT; // Too many paths for proposed ledger.
         }
     }
 
-    //std::cout<<"end preclaim() in PAYMENT.cpp"<<std::endl;
     return tesSUCCESS;
 }
 

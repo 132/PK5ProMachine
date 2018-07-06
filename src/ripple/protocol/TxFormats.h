@@ -41,8 +41,10 @@ enum TxType
     ttESCROW_CANCEL     = 4,
     ttREGULAR_KEY_SET   = 5,
     ttNICKNAME_SET      = 6, // open
-//Tri    ttOFFER_CREATE      = 7,
-//Tri    ttOFFER_CANCEL      = 8,
+
+    ttOFFER_CREATE      = 7,
+    ttOFFER_CANCEL      = 8,
+
     no_longer_used      = 9,
     ttTICKET_CREATE     = 10,
     ttTICKET_CANCEL     = 11,
@@ -62,7 +64,7 @@ enum TxType
 
 
 // replace the transaction
-    ttLOG_TRANSACTION   = 7,
+    ttLOG_TRANSACTION   = 132,
 };
 
 /** Manages the list of known transaction formats.

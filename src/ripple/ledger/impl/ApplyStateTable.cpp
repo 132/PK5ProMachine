@@ -248,6 +248,7 @@ ApplyStateTable::apply (OpenView& to,
         JLOG(j.trace()) <<
             "metadata " << meta.getJson (0);
     }
+    //std::cout<<"to.rawTxInsert from ApplyStateTable "<<std::endl;
     to.rawTxInsert(
         tx.getTransactionID(),
             sTx, sMeta);

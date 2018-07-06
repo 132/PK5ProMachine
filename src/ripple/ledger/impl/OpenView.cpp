@@ -120,6 +120,7 @@ void
 OpenView::apply (TxsRawView& to) const
 {
     items_.apply(to);
+    //std::cout<<"to.rawTxInsert from OpenView "<<std::endl;
     for (auto const& item : txs_)
         to.rawTxInsert (item.first,
             item.second.first,
@@ -262,7 +263,7 @@ OpenView::rawDestroyXRP(
 }
 
 //---
-
+// There is some problems here
 void
 OpenView::rawTxInsert (key_type const& key,
     std::shared_ptr<Serializer const>
@@ -270,11 +271,22 @@ OpenView::rawTxInsert (key_type const& key,
             Serializer const>
                 const& metaData)
 {
+    //std::cout<<"Transaction ID: "<< to_string(key)<<std::endl;
+
     auto const result = txs_.emplace (key,
         std::make_pair(txn, metaData));
-    if (! result.second)
+
+    if (! result.second) {
+
+        //DEBUGb TRI
+        //auto checkDup = txs_.find(key);
+        auto checkDup = txRead(key);
+
+
+        //std::cout<<"content of the Duplicate: "<< checkDup.first.get()->getFullText()<< std::endl;
         LogicError("rawTxInsert: duplicate TX id" +
-            to_string(key));
+                   to_string(key));
+    }
 }
 
 } // ripple

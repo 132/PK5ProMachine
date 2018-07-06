@@ -888,12 +888,12 @@ void NetworkOPsImp::submitTransaction (std::shared_ptr<STTx const> const& iTrans
 void NetworkOPsImp::processTransaction (std::shared_ptr<Transaction>& transaction,
         bool bUnlimited, bool bLocal, FailHard failType)
 {
-    std::cout<<"Goto processTransaction in NetworkOPs.cpp to process" << std::endl;
+    //std::cout<<"Goto processTransaction in NetworkOPs.cpp to process" << std::endl;
 
     auto ev = m_job_queue.makeLoadEvent (jtTXN_PROC, "ProcessTXN");
     auto const newFlags = app_.getHashRouter ().getFlags (transaction->getID ());
 
-    std::cout<<"before check newFlag" << std::endl;
+    //std::cout<<"before check newFlag" << std::endl;
     if ((newFlags & SF_BAD) != 0)
     {
         // cached bad
@@ -913,7 +913,7 @@ void NetworkOPsImp::processTransaction (std::shared_ptr<Transaction>& transactio
     assert(validity.first == Validity::Valid);
 
 
-    std::cout<<"before check SigBad" << std::endl;
+    //std::cout<<"before check SigBad" << std::endl;
     // Not concerned with local checks at this point.
     if (validity.first == Validity::SigBad)
     {
@@ -926,17 +926,18 @@ void NetworkOPsImp::processTransaction (std::shared_ptr<Transaction>& transactio
         return;
     }
 
-    std::cout<<"getMasterTransaction () function " << std::endl;
+    //std::cout<<"getMasterTransaction () function " << std::endl;
     // canonicalize can change our pointer
+
     app_.getMasterTransaction ().canonicalize (&transaction);
 
 
-    std::cout<<"before do transaction sync, bLocal: "<< bLocal  << std::endl;
+    //std::cout<<"before do transaction sync, bLocal: "<< bLocal  << std::endl;
     if (bLocal)
         doTransactionSync (transaction, bUnlimited, failType);
     else
         doTransactionAsync (transaction, bUnlimited, failType);
-    std::cout<<"after do transaction sync" << std::endl;
+    //std::cout<<"after do transaction sync" << std::endl;
 }
 
 void NetworkOPsImp::doTransactionAsync (std::shared_ptr<Transaction> transaction,
@@ -969,22 +970,25 @@ void NetworkOPsImp::doTransactionSync (std::shared_ptr<Transaction> transaction,
 
     if (! transaction->getApplying())
     {
-        std::cout<<"go in getApplying() in doTransactionSync in NetworkOps.cpp"<< std::endl;
+        //std::cout<<"go in getApplying() in doTransactionSync in NetworkOps.cpp"<< std::endl;
         mTransactions.push_back (TransactionStatus (transaction, bUnlimited,
             true, failType));
         transaction->setApplying();
     }
 
-    std::cout<<"before go to while in doTransactionSync "<< std::endl;
+    //std::cout<<"after getApplying(): check applying: " << transaction->getApplying() << std::endl;
+    //std::cout<<"before go to while in doTransactionSync "<< std::endl;
     do
     {
         if (mDispatchState == DispatchState::running)
         {
             // A batch processing job is already running, so wait.
+            //std::cout<< "in if of do while in doTransactionSync" << std::endl;
             mCond.wait (lock);
         }
         else
         {
+            //std::cout<< "in else of do while in doTransactionSync" << std::endl;
             apply (lock);
 
             if (mTransactions.size())
@@ -998,7 +1002,7 @@ void NetworkOPsImp::doTransactionSync (std::shared_ptr<Transaction> transaction,
                 }
             }
         }
-        std::cout<<"transaction->getApplying in NetworkOps.cpp "<< std::endl;
+        //std::cout<<"transaction->getApplying in NetworkOps.cpp "<< std::endl;
     }
     while (transaction->getApplying());
 }
@@ -1020,6 +1024,8 @@ void NetworkOPsImp::apply (std::unique_lock<std::mutex>& batchLock)
 {
     std::vector<TransactionStatus> submit_held;
     std::vector<TransactionStatus> transactions;
+
+    //std::cout<<"in side apply of NetworkOPs" << std::endl;
     mTransactions.swap (transactions);
     assert (! transactions.empty());
 
@@ -1035,6 +1041,8 @@ void NetworkOPsImp::apply (std::unique_lock<std::mutex>& batchLock)
             std::lock_guard <std::recursive_mutex> lock (
                 m_ledgerMaster.peekMutex());
 
+
+            //std::cout<<"apply of NetworkOPs - open ledger - " << std::endl;
             app_.openLedger().modify(
                 [&](OpenView& view, beast::Journal j)
             {
@@ -1051,6 +1059,9 @@ void NetworkOPsImp::apply (std::unique_lock<std::mutex>& batchLock)
                     e.result = result.first;
                     e.applied = result.second;
                     changed = changed || result.second;
+
+                    //std::cout<<"print result first "<< result.first << std::endl;
+                    //std::cout<<"print result second "<< result.second << std::endl;
                 }
                 return changed;
             });
@@ -1059,6 +1070,11 @@ void NetworkOPsImp::apply (std::unique_lock<std::mutex>& batchLock)
             reportFeeChange();
 
         auto newOL = app_.openLedger().current();
+
+        //std::cout<<"Transaction size: "<< transactions.size() <<std::endl;
+        //std::cout<<"Transaction Check: "<< transactions.at(0).result <<std::endl;
+
+
         for (TransactionStatus& e : transactions)
         {
             if (e.applied)
@@ -1194,6 +1210,8 @@ void NetworkOPsImp::apply (std::unique_lock<std::mutex>& batchLock)
     mCond.notify_all();
 
     mDispatchState = DispatchState::none;
+
+    //std::cout<<"After apply in NetworkOPs" <<std::endl;
 }
 
 //
@@ -2518,8 +2536,8 @@ Json::Value NetworkOPsImp::transJson(
     jvObj[jss::engine_result_code]     = terResult;
     jvObj[jss::engine_result_message]  = sHuman;
 
-/*Tri
- * if (stTxn.getTxnType() == ttOFFER_CREATE)
+
+    if (stTxn.getTxnType() == ttOFFER_CREATE)
     {
         auto const account = stTxn.getAccountID(sfAccount);
         auto const amount = stTxn.getFieldAmount (sfTakerGets);
@@ -2531,21 +2549,25 @@ Json::Value NetworkOPsImp::transJson(
                 account, amount, fhIGNORE_FREEZE, app_.journal ("View"));
             jvObj[jss::transaction][jss::owner_funds] = ownerFunds.getText ();
         }
-    }*/
+    }
+
+/*  Tri
     if (stTxn.getTxnType () == ttLOG_TRANSACTION) {
         auto const &account = stTxn.getAccountID(sfAccount);
         auto const TransactionContent = stTxn.getTransactionContent(sfContent);
-
+        //auto const TransactionTime = stTxn.getFieldU32(sfSubmitTime);
         std::string StringContent(TransactionContent.begin(), TransactionContent.end());
-/*String
+*//*String
         if (TransactionContent.isNonZero())
             jvObj[jss::transaction][jss::TransactionContent] = std::to_string(TransactionContent.bytes);
-*/
+*//*
 // Blob
         //if (TransactionContent.getText () != "")
-        if(!StringContent.empty())
+        if(!StringContent.empty()) {
             jvObj[jss::transaction][jss::TransactionContent] = StringContent;
-    }
+            //jvObj[jss::transaction][jss::TransactionTime] = TransactionTime;
+        }
+    }*/
     return jvObj;
 }
     // If the offer create is not self funded then add the owner balance

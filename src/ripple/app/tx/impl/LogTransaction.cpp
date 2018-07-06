@@ -18,6 +18,7 @@ namespace ripple {
     TER
     LogTransaction::preflight (PreflightContext const& ctx)
     {
+/*
         if (! ctx.rules.enabled (featureChecks))
             return temDISABLED;
 
@@ -25,6 +26,7 @@ namespace ripple {
 
         if (! isTesSuccess (ret))
             return ret;
+*/
 
 /*        if (ctx.tx.getFlags() & tfUniversalMask)
         {
@@ -56,18 +58,18 @@ namespace ripple {
     TER
     LogTransaction::preclaim (PreclaimContext const& ctx)
     {
-        std::cout<<"Go to  LogTransaction::preclaim in logTransaction.cpp" << std::endl;
-
+        //std::cout<<"Go to  LogTransaction::preclaim in logTransaction.cpp" << std::endl;
+/*
         auto const id = ctx.tx[sfAccount];
 
-        std::cout<<"Go to  LogTransaction::preclaim before uTxFlags " << std::endl;
+        //std::cout<<"Go to  LogTransaction::preclaim before uTxFlags " << std::endl;
         std::uint32_t const uTxFlags = ctx.tx.getFlags();
 
-        std::cout<<"Go to  LogTransaction::preclaim before sle " << std::endl;
+        //std::cout<<"Go to  LogTransaction::preclaim before sle " << std::endl;
         auto const sle = ctx.view.read(keylet::account(id));
 
-        std::cout<<"Go to  LogTransaction::preclaim before uFlagsIn " << std::endl;
-        std::uint32_t const uFlagsIn = sle->getFieldU32(sfFlags);
+        //std::cout<<"Go to  LogTransaction::preclaim before uFlagsIn " << std::endl;
+        std::uint32_t const uFlagsIn = sle->getFieldU32(sfFlags);*/
 
 ///////////////// problem from here -------------
 /*Cmt to run
@@ -93,7 +95,7 @@ namespace ripple {
             }
         }*/
 
-        std::cout<<"Go to  LogTransaction::preclaim after checking and return tesSUCCESS" << std::endl;
+        //std::cout<<"Go to  LogTransaction::preclaim after checking and return tesSUCCESS" << std::endl;
         return tesSUCCESS;
     }
 
@@ -101,7 +103,9 @@ namespace ripple {
     LogTransaction::doApply ()
     {
 
-        return tesSUCCESS;
+        TER terResult = tesSUCCESS;
+
+        return terResult;
     }
 
     void LogTransaction::preCompute(){

@@ -129,6 +129,7 @@ applyTransaction (Application& app, OpenView& view,
         // because of the optional in engine
         << (retryAssured ? "/retry" : "/final");
 
+    //std::cout<<"applyTrnasction() in apply.cpp" << std::endl;
     try
     {
         auto const result = apply(app,

@@ -521,6 +521,9 @@ extern SField const sfMajorities;
 //using StringContent = TypedField<STBitString<256>>;
 using SF_Blob = TypedField<STBlob>;
 extern SF_Blob const sfContent;
+//extern SF_U32 const sfCloseTime;
+//sfSigningTime
+extern SF_U32 const sfSubmitTime;
 // STBitString.values_.getText(); -> return a text
 
 } // ripple

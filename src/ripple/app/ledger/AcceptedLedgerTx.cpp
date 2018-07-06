@@ -76,7 +76,7 @@ std::string AcceptedLedgerTx::getEscMeta () const
     assert (!mRawMeta.empty ());
     return sqlEscape (mRawMeta);
 }
-/*Tri
+
 void AcceptedLedgerTx::buildJson ()
 {
     mJson = Json::objectValue;
@@ -110,9 +110,10 @@ void AcceptedLedgerTx::buildJson ()
             mJson[jss::transaction][jss::owner_funds] = ownerFunds.getText ();
         }
     }
-}*/
+}
 
-    void AcceptedLedgerTx::buildJson ()
+
+/*    void AcceptedLedgerTx::buildJson ()
     {
         mJson = Json::objectValue;
         mJson[jss::transaction] = mTxn->getJson (0);
@@ -136,24 +137,26 @@ void AcceptedLedgerTx::buildJson ()
         {
             auto const& account = mTxn->getAccountID(sfAccount);
             auto const TransactionContent = mTxn->getTransactionContent (sfContent);    // type Blob = std::vector<unsigned char>
-
+            //auto const TransactionTime = mTxn->getFieldU32(sfSubmitTime);
 
             std::string StringContent(TransactionContent.begin(),TransactionContent.end());
             // If the offer create is not self funded then add the owner balance
-            /*if (account != amount.issue ().account)
+            *//*if (account != amount.issue ().account)
             {
                 auto const ownerFunds = accountFunds(*mLedger,
                                                      account, amount, fhIGNORE_FREEZE, logs_.journal ("View"));
                 mJson[jss::transaction][jss::owner_funds] = ownerFunds.getText ();
-            }*/
+            }*//*
 
-/*
+*//*
             if(TransactionContent.isNonZero())
                 mJson[jss::transaction][jss::TransactionContent] = std::to_string(TransactionContent.bytes);
-*/
-            if(!StringContent.empty())
+*//*
+            if(!StringContent.empty()) {
                 mJson[jss::transaction][jss::TransactionContent] = StringContent;
+                //mJson[jss::transaction][jss::TransactionTime] = TransactionTime;
+            }
         }
-    }
+    }*/
 
 } // ripple

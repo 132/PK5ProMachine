@@ -808,7 +808,7 @@ Json::Value transactionSubmit (
     if (!preprocResult.second)
         return preprocResult.first;
 
-    std::cout<<"Before assignment a transction"<<std::endl;
+//    std::cout<<"Before assignment a transction"<<std::endl;
     // Make sure the STTx makes a legitimate Transaction.
     std::pair <Json::Value, Transaction::pointer> txn =
         transactionConstructImpl (
@@ -817,7 +817,7 @@ Json::Value transactionSubmit (
     if (!txn.second)
         return txn.first;
 
-    std::cout<<" Before Submit Transaction"<<std::endl;
+//    std::cout<<" Before Submit Transaction"<<std::endl;
     // Finally, submit the transaction.
     try
     {
@@ -831,7 +831,7 @@ Json::Value transactionSubmit (
             "Exception occurred during transaction submission.");
     }
 
-    std::cout<<" complete Transaction  Submition"<<std::endl;
+    //std::cout<<" complete Transaction  Submition "<< txn.second << std::endl;
     return transactionFormatResultImpl (txn.second);
 }
 
