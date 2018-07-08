@@ -37,6 +37,7 @@ import difflib, sys
 
 import os
 from shutil import copyfile
+import time
 ##########################################################3
 # accoun Tri
 #./rippled submit sh1LrEHjJyMGi9JLUHeyvKKAGSuRL '{"Account" : "rBor3Awo22JCTB21gJejAyHZhQBXq7c29N", "TransactionType" : "LogTransaction", "TransactionContent" :  "tri dep trai"}'
@@ -45,7 +46,7 @@ from shutil import copyfile
 # Take the last modfication of files
 # create a list of connection
 def initClient(path):
-	listFiles = ['/var/log/syslog']
+	listFiles = ['f1.txt']
 	for ifile in range(0,len(listFiles)):
 		aFile = listFiles[ifile]
 
@@ -99,13 +100,13 @@ def compare_connectServer(file1, file2):
 					
 					# filtering special character in content of the line
 					# the result should be \'' or \"" in command line
-					modifiedLine = line.replace('"', '\\\"\"')
-					modifiedLine = modifiedLine.replace("'", "\\\'\'")
+					modifiedLine = line.replace('"', '\"\"')
+					modifiedLine = modifiedLine.replace("'", "\'\'")
 
 					print modifiedLine
 
 					# create msg to update to TCP/IP server for starting a transaction
-					msg = '../cmake-build-debug/./rippled submit ' + secretAcc + ' \'{"Account" : "' + accID + '", "TransactionType" : "LogTransaction", "TransactionContent" :  "' + "[" +file1 + "] " + modifiedLine + '"}\''
+					msg = '../cmake-build-debug/./rippled submit ' + secretAcc + ' \'{"Account" : "' + accID + '", "TransactionType" : "LogTransaction", "TransactionContent" :  "' + "[" +file1 + "] " + modifiedLine + '", "Fee" : "10"}\''
 					#print msg
 					
 					# start connecting to server
@@ -117,6 +118,7 @@ def compare_connectServer(file1, file2):
 						expected = len(msg)
 						while received < expected:
 							data = mySocket.recv(SIZE)
+							print '===================================================='
 							print data
 							received += len(data)
 							if len(data) > 0:
@@ -124,6 +126,7 @@ def compare_connectServer(file1, file2):
 					
 					finally:
 						print '####################### Finish a line ###########################'
+
 
 					# write the new update to a backup File
 					with open(file1, "a") as text_file:
@@ -145,7 +148,7 @@ def closeConnection():
 		conn[iconn].close()
 		
 def main():
-	# info of Account
+	# info of Account/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/Observer2Connect/
 	global secretAcc 
 	secretAcc = 'sh1LrEHjJyMGi9JLUHeyvKKAGSuRL'
 	global accID
@@ -176,7 +179,7 @@ def main():
 		# check update the updating of clients
 		for ifile in range(0, len(Files)):
 			temp = Files[ifile]
-			#print temp[2]
+			#print temp[1]
 			checkMTIME = os.path.getmtime(temp[1])
 			if checkMTIME > temp[2]:
 				# update the modified time
@@ -185,6 +188,7 @@ def main():
 				Files[ifile][3] = 1 
 				# execute compare and connect to server
 				compare_connectServer(Files[ifile][0], Files[ifile][1])
+				#time.sleep(1)
 #		nextRound = nextRound - 1
 #		if nextRound == 0:
 #			nextRound = int(raw_input('The number of the next round?'))
