@@ -240,13 +240,13 @@ TER Transactor::payFee ()
     // Deduct the fee, so it's not available during the transaction.
     // Will only write the account back if the transaction succeeds.
 
-    mSourceBalance -= feePaid;
+//    mSourceBalance -= feePaid;
 
 
     //Tri add more
-   /* XRPAmount zero_(0);
+    XRPAmount zero_(0);
     mSourceBalance -= zero_;
-*/
+
     sle->setFieldAmount (sfBalance, mSourceBalance);
 
     // VFALCO Should we call view().rawDestroyXRP() here as well?

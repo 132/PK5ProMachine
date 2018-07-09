@@ -1,5 +1,4 @@
 tri dep trai
-asdfsd
-asdfasfd
-asfasdf
-
+tri hoc gioi
+tri choi hiphop
+[/home/bialan132/Thesis/PK5ProMachine_Connected/PK5ProMachine/Observer2Connect/Ori_syslog] Jul  7 15:35:59 LinuxLite NetworkManager[863]: <warn>  [1530970559.9368] device (p3p1): Activation: failed for connection \''Ethernet connection 1\''

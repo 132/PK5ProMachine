@@ -9,7 +9,7 @@ import threading
 #import re				# regular expression
 
 PORT_NUMBER = 51236 
-SIZE = 1024
+SIZE = 4096
 backlog = 4			# the number of connection can have
 
 
@@ -93,8 +93,8 @@ while True:
 	for s in inputReady:
 		aWorker(s)
 
-"""
 
+"""
 class ClientThread(threading.Thread):
 	def __init__(self, ip, port, socket):
 		threading.Thread.__init__(self)
@@ -116,7 +116,7 @@ class ClientThread(threading.Thread):
 			#data = data.replace("'", "\'")
 			#data = data.replace('"', '\"')
 			status, output = commands.getstatusoutput(data)
-			print status
+			#print status
 			print '=============================='
 			print output
 			self.socket.sendall(output)
@@ -130,6 +130,5 @@ while True:
 	while True:
 		newthread.run()
 #############################################333
-
 	
 server.close()

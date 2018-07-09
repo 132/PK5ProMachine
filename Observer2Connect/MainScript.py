@@ -46,7 +46,7 @@ import time
 # Take the last modfication of files
 # create a list of connection
 def initClient(path):
-	listFiles = ['f1.txt']
+	listFiles = ['/var/log/syslog']
 	for ifile in range(0,len(listFiles)):
 		aFile = listFiles[ifile]
 
@@ -156,7 +156,7 @@ def main():
 
 
 	global SIZE
-	SIZE = 1024
+	SIZE = 4096
 
 	# info of Server
 	global SERVER_IP

@@ -248,7 +248,7 @@ OpenLedger::apply (Application& app, OpenView& view,
         while (iter != retries.end())
         {
 // ---------------------------------- ---------------------------
-            std::cout<<"before switch in apply()  in OpenLedger.h" <<std::endl;
+            //std::cout<<"before switch in apply()  in OpenLedger.h" <<std::endl;
             switch (apply_one(app, view,
                 iter->second, retry, flags,
                     shouldRecover[iter->second->getTransactionID()], j))
