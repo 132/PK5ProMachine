@@ -110,7 +110,7 @@ class ClientThread(threading.Thread):
 		print '[+] New thread started for '+ ip + ': ' + str(port)
 
 	def run(self):
-		self.socket.settimeout(5)
+		self.socket.settimeout(100)
 		try:
 			while True:
 				data = self.socket.recv(SIZE)
@@ -130,12 +130,12 @@ class ClientThread(threading.Thread):
 					print '=============================='
 					print output
 					self.socket.sendall(output)
-#		except(self.socket.timeout) as error:
-#			self.socket.close()
+		except(self.socket.timeout) as error:
+			self.socket.close()
 
 if __name__== '__main__':
 	while True:
-#		try:
+		try:
 			clientsock, (ip, port) = mySocket.accept()
 			print ip
 			newthread = ClientThread(ip,port, clientsock)

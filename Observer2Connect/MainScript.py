@@ -78,59 +78,61 @@ def initClient(path):
 # add new data for Ori_file
 def compare_connectServer(file1, file2):
 	#take the first connection
-	for con in range(0, len(conn)):
-		mySocket = conn[con]
-		# read two files
-		with open(file1,'r') as f1, open(file2,'r') as f2:
-			# take the difference between two files
-			diff = difflib.ndiff(f1.readlines(),f2.readlines()) 
-		
-			# for the all file with difference
-			for line in diff:
+#	for con in range(0, len(conn)):
+#		mySocket = conn[con]
 
+	# read two files
+	with open(file1,'r') as f1, open(file2,'r') as f2:
+		# take the difference between two files
+		diff = difflib.ndiff(f1.readlines(),f2.readlines()) 
+	
+		# for the all file with difference
+		for line in diff:
 #        if line.startswith('-'):
 #            sys.stdout.write(line)
 #        elif line.startswith('+'):
 #            sys.stdout.write('\t\t'+line)
 			
-				# the '+' at the begining of the line is the difference of 2 files
-				if line.startswith('+'):
-					line = line[2:len(line)-1]
-					sys.stdout.write(line)
-					
-					# filtering special character in content of the line
-					# the result should be \'' or \"" in command line
-					modifiedLine = line.replace('"', '\"\"')
-					modifiedLine = modifiedLine.replace("'", "\'\'")
+			# the '+' at the begining of the line is the difference of 2 files
+			if line.startswith('+'):
+				line = line[2:len(line)-1]
+				sys.stdout.write(line)
+				
+				# filtering special character in content of the line
+				# the result should be \'' or \"" in command line
+				modifiedLine = line.replace('"', '\"\"')
+				modifiedLine = modifiedLine.replace("'", "\'\'")
+				print modifiedLine
+				# create msg to update to TCP/IP server for starting a transaction
+				msg = '../cmake-build-debug/./rippled submit ' + secretAcc + ' \'{"Account" : "' + accID + '", "TransactionType" : "LogTransaction", "TransactionContent" :  "' + "[" +file1 + "] " + modifiedLine + '"}\''
+				#print msg
+				print msg
+				print ("Test client sending packets to IP {0}, via port {1}\n".format(SERVER_IP, PORT_NUMBER))
+				starConnection(msg)
+				# write the new update to a backup File
+				with open(file1, "a") as text_file:
+					text_file.write(line + '\n')
 
-					print modifiedLine
+def starConnection(msg):
+	# start connecting to server
+	for iSoc in conn:
+		try:
+			#mySocket.sendall(msg)
+			iSoc.sendall(msg)
+			"""
+		received = 0
+		expected = len(msg)
+		while received < expected:
+			data = mySocket.recv(SIZE)
+			print '===================================================='
+			print data
+			received += len(data)
+			if len(data) > 0:
+				break
+			"""
+		finally:
+			print '####################### Finish a line ###########################'
 
-					# create msg to update to TCP/IP server for starting a transaction
-					msg = '../cmake-build-debug/./rippled submit ' + secretAcc + ' \'{"Account" : "' + accID + '", "TransactionType" : "LogTransaction", "TransactionContent" :  "' + "[" +file1 + "] " + modifiedLine + '"}\''
-					#print msg
-					
-					# start connecting to server
-					try:
-						print ("Test client sending packets to IP {0}, via port {1}\n".format(SERVER_IP, PORT_NUMBER))
-						print msg
-						mySocket.sendall(msg)
-						received = 0
-						expected = len(msg)
-						while received < expected:
-							data = mySocket.recv(SIZE)
-							print '===================================================='
-							print data
-							received += len(data)
-							if len(data) > 0:
-								break
-					
-					finally:
-						print '####################### Finish a line ###########################'
-
-
-					# write the new update to a backup File
-					with open(file1, "a") as text_file:
-						text_file.write(line + '\n')
 
 def check_updating():
 	for ifile in range(0, len(Files)):
