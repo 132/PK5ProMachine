@@ -37,6 +37,7 @@ import difflib, sys
 
 import os
 from shutil import copyfile
+import time
 ##########################################################3
 # accoun Tri
 #./rippled submit sh1LrEHjJyMGi9JLUHeyvKKAGSuRL '{"Account" : "rBor3Awo22JCTB21gJejAyHZhQBXq7c29N", "TransactionType" : "LogTransaction", "TransactionContent" :  "tri dep trai"}'
@@ -77,58 +78,61 @@ def initClient(path):
 # add new data for Ori_file
 def compare_connectServer(file1, file2):
 	#take the first connection
-	for con in range(0, len(conn)):
-		mySocket = conn[con]
-		# read two files
-		with open(file1,'r') as f1, open(file2,'r') as f2:
-			# take the difference between two files
-			diff = difflib.ndiff(f1.readlines(),f2.readlines()) 
-		
-			# for the all file with difference
-			for line in diff:
+#	for con in range(0, len(conn)):
+#		mySocket = conn[con]
 
+	# read two files
+	with open(file1,'r') as f1, open(file2,'r') as f2:
+		# take the difference between two files
+		diff = difflib.ndiff(f1.readlines(),f2.readlines()) 
+	
+		# for the all file with difference
+		for line in diff:
 #        if line.startswith('-'):
 #            sys.stdout.write(line)
 #        elif line.startswith('+'):
 #            sys.stdout.write('\t\t'+line)
 			
-				# the '+' at the begining of the line is the difference of 2 files
-				if line.startswith('+'):
-					line = line[2:len(line)-1]
-					sys.stdout.write(line)
-					
-					# filtering special character in content of the line
-					# the result should be \'' or \"" in command line
-					modifiedLine = line.replace('"', '\\\"\"')
-					modifiedLine = modifiedLine.replace("'", "\\\'\'")
+			# the '+' at the begining of the line is the difference of 2 files
+			if line.startswith('+'):
+				line = line[2:len(line)-1]
+				sys.stdout.write(line)
+				
+				# filtering special character in content of the line
+				# the result should be \'' or \"" in command line
+				modifiedLine = line.replace('"', '\"\"')
+				modifiedLine = modifiedLine.replace("'", "\'\'")
+				print modifiedLine
+				# create msg to update to TCP/IP server for starting a transaction
+				msg = '../cmake-build-debug/./rippled submit ' + secretAcc + ' \'{"Account" : "' + accID + '", "TransactionType" : "LogTransaction", "TransactionContent" :  "' + "[" +file1 + "] " + modifiedLine + '"}\''
+				#print msg
+				print msg
+				print ("Test client sending packets to IP {0}, via port {1}\n".format(SERVER_IP, PORT_NUMBER))
+				starConnection(msg)
+				# write the new update to a backup File
+				with open(file1, "a") as text_file:
+					text_file.write(line + '\n')
 
-					print modifiedLine
+def starConnection(msg):
+	# start connecting to server
+	for iSoc in conn:
+		try:
+			#mySocket.sendall(msg)
+			iSoc.sendall(msg)
+			"""
+		received = 0
+		expected = len(msg)
+		while received < expected:
+			data = mySocket.recv(SIZE)
+			print '===================================================='
+			print data
+			received += len(data)
+			if len(data) > 0:
+				break
+			"""
+		finally:
+			print '####################### Finish a line ###########################'
 
-					# create msg to update to TCP/IP server for starting a transaction
-					msg = '../cmake-build-debug/./rippled submit ' + secretAcc + ' \'{"Account" : "' + accID + '", "TransactionType" : "LogTransaction", "TransactionContent" :  "' + "[" +file1 + "] " + modifiedLine + '"}\''
-					#print msg
-					
-					# start connecting to server
-					try:
-						print ("Test client sending packets to IP {0}, via port {1}\n".format(SERVER_IP, PORT_NUMBER))
-						print msg
-						mySocket.sendall(msg)
-						received = 0
-						expected = len(msg)
-						print 'already sent msg'		
-						while received < expected:
-							data = mySocket.recv(SIZE)
-							print data
-							received += len(data)
-							if len(data) > 0:
-								break
-					
-					finally:
-						print '####################### Finish a line ###########################'
-
-					# write the new update to a backup File
-					with open(file1, "a") as text_file:
-						text_file.write(line + '\n')
 
 def check_updating():
 	for ifile in range(0, len(Files)):
@@ -146,7 +150,7 @@ def closeConnection():
 		conn[iconn].close()
 		
 def main():
-	# info of Account
+	# info of Account/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/Observer2Connect/
 	global secretAcc 
 	secretAcc = 'sh1LrEHjJyMGi9JLUHeyvKKAGSuRL'
 	global accID
@@ -154,12 +158,14 @@ def main():
 
 
 	global SIZE
-	SIZE = 1024
+	SIZE = 4096
 
 	# info of Server
 	global SERVER_IP
 	SERVER_IP = []
 	SERVER_IP.append('192.168.1.3')
+	SERVER_IP.append('192.168.1.1')
+	
 	global PORT_NUMBER	# default port
 	PORT_NUMBER = 51236
 	global conn
@@ -173,27 +179,26 @@ def main():
 	initClient('/home/lab298a/Public/TriThesis/BCLog-master/my_modified_rippled/Observer2Connect/')
 
 #	nextRound = 1
-	while True:
-		# check update the updating of clients
-		for ifile in range(0, len(Files)):
-			temp = Files[ifile]
-			#print temp[2]
-			checkMTIME = os.path.getmtime(temp[1])
-			if checkMTIME > temp[2]:
-				print type(checkMTIME)
-				# update the modified time
-				Files[ifile][2] = checkMTIME
-				# update 1 meaning that it was modified
-				Files[ifile][3] = 1 
-				# execute compare and connect to server
-				compare_connectServer(Files[ifile][0], Files[ifile][1])
-#		nextRound = nextRound - 1
-#		if nextRound == 0:
-#			nextRound = int(raw_input('The number of the next round?'))
-#
-#		if nextRound == 0:
-#			break
 	
+	while True:
+		try:
+			# check update the updating of clients
+			for ifile in range(0, len(Files)):
+				temp = Files[ifile]
+				#print temp[1]
+				checkMTIME = os.path.getmtime(temp[1])
+				if checkMTIME > temp[2]:
+					# update the modified time
+					Files[ifile][2] = checkMTIME
+					# update 1 meaning that it was modified
+					Files[ifile][3] = 1 
+					# execute compare and connect to server
+					compare_connectServer(Files[ifile][0], Files[ifile][1])
+				#time.sleep(1)
+		except KeyboardInterrupt:
+			for iS in conn:
+				iS.sendall('kill_server')
+			break
 	closeConnection()
 
 

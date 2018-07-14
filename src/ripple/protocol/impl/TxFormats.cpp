@@ -34,15 +34,17 @@ TxFormats::TxFormats ()
         << SOElement (sfClearFlag,           SOE_OPTIONAL)
         << SOElement (sfTickSize,            SOE_OPTIONAL)
         ;
-
+/*
+Tri
     add ("TrustSet", ttTRUST_SET)
         << SOElement (sfLimitAmount,         SOE_OPTIONAL)
         << SOElement (sfQualityIn,           SOE_OPTIONAL)
         << SOElement (sfQualityOut,          SOE_OPTIONAL)
         ;
 
+*/
 
-/*Tri
+
     add ("OfferCreate", ttOFFER_CREATE)
         << SOElement (sfTakerPays,           SOE_REQUIRED)
         << SOElement (sfTakerGets,           SOE_REQUIRED)
@@ -52,7 +54,7 @@ TxFormats::TxFormats ()
 
     add ("OfferCancel", ttOFFER_CANCEL)
         << SOElement (sfOfferSequence,       SOE_REQUIRED)
-        ;*/
+        ;
 
 
 
@@ -163,8 +165,11 @@ Tri
     add ("CheckCancel", ttCHECK_CANCEL)
         << SOElement (sfCheckID,             SOE_REQUIRED)
         ;
-    add ("LogTransaction", ttLOG_TRANSACTION)
+//    add ("LogTransaction", ttLOG_TRANSACTION)
+
+    add ("LogTransaction", ttTRUST_SET)
         << SOElement (sfContent,             SOE_REQUIRED)
+        //<< SOElement (sfSubmitTime,          SOE_REQUIRED)
         ;
 }
 

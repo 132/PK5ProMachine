@@ -282,7 +282,7 @@ TxQ::MaybeTx::apply(Application& app, OpenView& view)
 
     auto pcresult = preclaim(
         *pfresult, app, view);
-
+    //std::cout<<"in apply() with MaybeTx in TxQ.cpp"<<std::endl;
     return doApply(pcresult, app, view);
 }
 
@@ -614,12 +614,14 @@ TxQ::apply(Application& app, OpenView& view,
 {
     auto const allowEscalation =(view.rules().enabled(featureFeeEscalation));
 
+    //std::cout<<"in side apply() in TxQ"<< std::endl;
 // 1
     if (!allowEscalation)
     {
         return ripple::apply(app, view, *tx, flags, j);
     }
 
+    //std::cout<<" #2 in side apply() in TxQ"<< std::endl;
 // 2
     auto const account = (*tx)[sfAccount];
     auto const transactionID = tx->getTransactionID();
@@ -637,6 +639,8 @@ TxQ::apply(Application& app, OpenView& view,
     if (pfresult.ter != tesSUCCESS)
         return{ pfresult.ter, false };
 
+
+    //std::cout<<" #3 in side apply() in TxQ"<< std::endl;
 // 3
     struct MultiTxn
     {
@@ -947,15 +951,19 @@ TxQ::apply(Application& app, OpenView& view,
         }
     }
 
+    //std::cout<<" #4 in side apply() in TxQ"<< std::endl;
 // 4
     // See if the transaction is likely to claim a fee.
     assert(!multiTxn || multiTxn->openView);
     auto const pcresult = preclaim(pfresult, app,
             multiTxn ? *multiTxn->openView : view);
+
+    //std::cout<<"result of pcresult.ter in TxQ "<< pcresult.likelyToClaimFee << std::endl;
     if (!pcresult.likelyToClaimFee)
         return{ pcresult.ter, false };
 
 
+    //std::cout<<" #5 in side apply() in TxQ"<< std::endl;
 // 5.1
     // Too low of a fee should get caught by preclaim
     assert(feeLevelPaid >= baseLevel);
@@ -999,6 +1007,7 @@ TxQ::apply(Application& app, OpenView& view,
                 flags, metricsSnapshot, j);
         if (result.second)
         {
+            //std::cout<<"go to sandbox.apply(view) in TxQ" << std::endl;
             sandbox.apply(view);
             /* Can't erase(*replacedItemDeleteIter) here because success
                 implies that it has already been deleted.
@@ -1007,6 +1016,7 @@ TxQ::apply(Application& app, OpenView& view,
         }
     }
 
+        //std::cout<<" #5.1 in side apply() in TxQ"<< std::endl;
 // 5.2
     // Can transaction go in open ledger?
     if (!multiTxn && feeLevelPaid >= requiredFeeLevel)
@@ -1019,7 +1029,9 @@ TxQ::apply(Application& app, OpenView& view,
         ripple::TER txnResult;
         bool didApply;
 
+        //std::cout<<" execute by doApply in TxQ"<< std::endl;
         std::tie(txnResult, didApply) = doApply(pcresult, app, view);
+        //std::cout<<" after execution by doApply in TxQ"<< std::endl;
 
         JLOG(j_.trace()) << "Transaction " <<
             transactionID <<
@@ -1032,6 +1044,7 @@ TxQ::apply(Application& app, OpenView& view,
         return { txnResult, didApply };
     }
 
+    //std::cout<<" #6 in side apply() in TxQ"<< std::endl;
 // 6
     // If `multiTxn` has a value, then `canBeHeld` has already been verified
     if (! multiTxn &&
@@ -1045,6 +1058,7 @@ TxQ::apply(Application& app, OpenView& view,
     }
 
 
+    //std::cout<<" #7 in side apply() in TxQ"<< std::endl;
 // 7
     // If the queue is full, decide whether to drop the current
     // transaction or the last transaction for the account with
@@ -1114,7 +1128,7 @@ TxQ::apply(Application& app, OpenView& view,
         }
     }
 
-
+    //std::cout<<" #8 in side apply() in TxQ"<< std::endl;
 // 8
     // Hold the transaction in the queue.
     if (replacedItemDeleteIter)
@@ -1295,6 +1309,8 @@ TxQ::accept(Application& app,
 
             TER txnResult;
             bool didApply;
+
+            //std::cout<<"in accept() in TxQ.cpp"<<std::endl;
             std::tie(txnResult, didApply) = candidateIter->apply(app, view);
 
             if (didApply)

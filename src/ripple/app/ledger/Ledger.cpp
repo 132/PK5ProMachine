@@ -565,6 +565,8 @@ Ledger::rawTxInsert (uint256 const& key,
 {
     assert (metaData);
 
+    //std::cout<<"--- rawTxInsert from Ledger check Duplicate" << std::endl;
+
     // low-level - just add to table
     Serializer s(txn->getDataLength () +
         metaData->getDataLength () + 16);

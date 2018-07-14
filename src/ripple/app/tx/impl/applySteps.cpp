@@ -48,9 +48,9 @@ invoke_preflight (PreflightContext const& ctx)
     case ttCHECK_CANCEL:    return CancelCheck      ::preflight(ctx);
     case ttCHECK_CASH:      return CashCheck        ::preflight(ctx);
     case ttCHECK_CREATE:    return CreateCheck      ::preflight(ctx);
-/*Tri
- * case ttOFFER_CANCEL:    return CancelOffer      ::preflight(ctx);
-    case ttOFFER_CREATE:    return CreateOffer      ::preflight(ctx);*/
+
+    case ttOFFER_CANCEL:    return CancelOffer      ::preflight(ctx);
+    case ttOFFER_CREATE:    return CreateOffer      ::preflight(ctx);
 
     case ttESCROW_CREATE:   return EscrowCreate     ::preflight(ctx);
     case ttESCROW_FINISH:   return EscrowFinish     ::preflight(ctx);
@@ -91,10 +91,10 @@ invoke_preclaim(PreclaimContext const& ctx)
     // list one, preflight will have already a flagged a failure.
     auto const id = ctx.tx.getAccountID(sfAccount);
     auto const baseFee = T::calculateBaseFee(ctx);
-    std::cout<<"go to invoke_preclaim before if "<<ctx.tx.getTxnType()<< std::endl;
+    //  std::cout<<"go to invoke_preclaim before if "<<ctx.tx.getTxnType()<< std::endl;
     if (id != zero)
     {
-        std::cout<<"go to invoke_preclaim in side if "<<ctx.tx.getTxnType()<< std::endl;
+       // std::cout<<"go to invoke_preclaim in side if "<<ctx.tx.getTxnType()<< std::endl;
         TER result = T::checkSeq(ctx);
 
         if (result != tesSUCCESS)
@@ -111,7 +111,7 @@ invoke_preclaim(PreclaimContext const& ctx)
             return { result, baseFee };
 
     }
-    std::cout<<"go to invoke_preclaim after if and next is return "<< std::endl;
+    //std::cout<<"go to invoke_preclaim after if and next is return "<< std::endl;
 
     return{ T::preclaim(ctx), baseFee };
 }
@@ -120,16 +120,16 @@ static
 std::pair<TER, std::uint64_t>
 invoke_preclaim (PreclaimContext const& ctx)
 {
-    std::cout<<"go to invoke_preclaim in applyStep "<<ctx.tx.getTxnType()<< std::endl;
+    //std::cout<<"go to invoke_preclaim in applyStep "<<ctx.tx.getTxnType()<< std::endl;
     switch(ctx.tx.getTxnType())
     {
     case ttACCOUNT_SET:     return invoke_preclaim<SetAccount>(ctx);
     case ttCHECK_CANCEL:    return invoke_preclaim<CancelCheck>(ctx);
     case ttCHECK_CASH:      return invoke_preclaim<CashCheck>(ctx);
     case ttCHECK_CREATE:    return invoke_preclaim<CreateCheck>(ctx);
-/*Tri
- * case ttOFFER_CANCEL:    return invoke_preclaim<CancelOffer>(ctx);
-    case ttOFFER_CREATE:    return invoke_preclaim<CreateOffer>(ctx);*/
+
+    case ttOFFER_CANCEL:    return invoke_preclaim<CancelOffer>(ctx);
+    case ttOFFER_CREATE:    return invoke_preclaim<CreateOffer>(ctx);
     case ttESCROW_CREATE:   return invoke_preclaim<EscrowCreate>(ctx);
     case ttESCROW_FINISH:   return invoke_preclaim<EscrowFinish>(ctx);
     case ttESCROW_CANCEL:   return invoke_preclaim<EscrowCancel>(ctx);
@@ -146,8 +146,10 @@ invoke_preclaim (PreclaimContext const& ctx)
     case ttAMENDMENT:
     case ttFEE:             return invoke_preclaim<Change>(ctx);
 ////////////////////////////////////////////////////////////////////////////////////////
-        case ttPAYMENT:         return invoke_preclaim<Payment>(ctx);
-        case ttLOG_TRANSACTION: { std::cout<<"go to invoke_preclaim in LogTransaction"<<std::endl; return invoke_preclaim<LogTransaction>(ctx);}
+        case ttPAYMENT:         {//std::cout<<"go to invoke_preclaim in PAYMENT"<<std::endl;
+                                    return invoke_preclaim<Payment>(ctx);}
+        case ttLOG_TRANSACTION: { //std::cout<<"go to invoke_preclaim in LogTransaction"<<std::endl;
+                                return invoke_preclaim<LogTransaction>(ctx);}
     default:
         assert(false);
         return { temUNKNOWN, 0 };
@@ -164,9 +166,8 @@ invoke_calculateBaseFee(PreclaimContext const& ctx)
     case ttCHECK_CANCEL:    return CancelCheck::calculateBaseFee(ctx);
     case ttCHECK_CASH:      return CashCheck::calculateBaseFee(ctx);
     case ttCHECK_CREATE:    return CreateCheck::calculateBaseFee(ctx);
-/*Tri
- * case ttOFFER_CANCEL:    return CancelOffer::calculateBaseFee(ctx);
-    case ttOFFER_CREATE:    return CreateOffer::calculateBaseFee(ctx);*/
+    case ttOFFER_CANCEL:    return CancelOffer::calculateBaseFee(ctx);
+    case ttOFFER_CREATE:    return CreateOffer::calculateBaseFee(ctx);
     case ttESCROW_CREATE:   return EscrowCreate::calculateBaseFee(ctx);
     case ttESCROW_FINISH:   return EscrowFinish::calculateBaseFee(ctx);
     case ttESCROW_CANCEL:   return EscrowCancel::calculateBaseFee(ctx);
@@ -216,9 +217,9 @@ invoke_calculateConsequences(STTx const& tx)
     case ttCHECK_CANCEL:    return invoke_calculateConsequences<CancelCheck>(tx);
     case ttCHECK_CASH:      return invoke_calculateConsequences<CashCheck>(tx);
     case ttCHECK_CREATE:    return invoke_calculateConsequences<CreateCheck>(tx);
-/*
- * case ttOFFER_CANCEL:    return invoke_calculateConsequences<CancelOffer>(tx);
-    case ttOFFER_CREATE:    return invoke_calculateConsequences<CreateOffer>(tx);*/
+
+    case ttOFFER_CANCEL:    return invoke_calculateConsequences<CancelOffer>(tx);
+    case ttOFFER_CREATE:    return invoke_calculateConsequences<CreateOffer>(tx);
     case ttESCROW_CREATE:   return invoke_calculateConsequences<EscrowCreate>(tx);
     case ttESCROW_FINISH:   return invoke_calculateConsequences<EscrowFinish>(tx);
     case ttESCROW_CANCEL:   return invoke_calculateConsequences<EscrowCancel>(tx);
@@ -251,9 +252,9 @@ invoke_apply (ApplyContext& ctx)
     case ttCHECK_CANCEL:    { CancelCheck   p(ctx); return p(); }
     case ttCHECK_CASH:      { CashCheck     p(ctx); return p(); }
     case ttCHECK_CREATE:    { CreateCheck   p(ctx); return p(); }
-/*Tri
- * case ttOFFER_CANCEL:    { CancelOffer   p(ctx); return p(); }
-    case ttOFFER_CREATE:    { CreateOffer   p(ctx); return p(); }*/
+
+    case ttOFFER_CANCEL:    { CancelOffer   p(ctx); return p(); }
+    case ttOFFER_CREATE:    { CreateOffer   p(ctx); return p(); }
     case ttESCROW_CREATE:   { EscrowCreate  p(ctx); return p(); }
     case ttESCROW_FINISH:   { EscrowFinish  p(ctx); return p(); }
     case ttESCROW_CANCEL:   { EscrowCancel  p(ctx); return p(); }
@@ -287,12 +288,12 @@ preflight(Application& app, Rules const& rules,
         rules, flags, j);
     try
     {
-        std::cout<<"try PreflightContext in applySteps.cpp "<< std::endl;
+        //std::cout<<"try PreflightContext in applySteps.cpp "<< std::endl;
         return{ pfctx, invoke_preflight(pfctx) };
     }
     catch (std::exception const& e)
     {
-        std::cout<<"catch in PreflightContext in applySteps.cpp "<< std::endl;
+        //std::cout<<"catch in PreflightContext in applySteps.cpp "<< std::endl;
         JLOG(j.fatal()) <<
             "apply: " << e.what();
         return{ pfctx, tefEXCEPTION };
@@ -320,17 +321,17 @@ preclaim (PreflightResult const& preflightResult,
     }
     try
     {
-        std::cout<<"try in preclaim() in applySteps.cpp "<< std::endl;
+        //std::cout<<"try in preclaim() in applySteps.cpp "<< std::endl;
         if (ctx->preflightResult != tesSUCCESS)
             return { *ctx, ctx->preflightResult, 0 };
-        std::cout<<"try in preclaim() and return ctx->preflightResult != tesSUCCESS in applySteps.cpp "<< std::endl;
+        //std::cout<<"try in preclaim() and return ctx->preflightResult != tesSUCCESS in applySteps.cpp "<< std::endl;
         return{ *ctx, invoke_preclaim(*ctx) };
     }
     catch (std::exception const& e)
     {
 
         // problem from here
-        std::cout<<"catch in preclaim() in applySteps.cpp "<< std::endl;
+        //std::cout<<"catch in preclaim() in applySteps.cpp "<< std::endl;
 
         JLOG(ctx->j.fatal()) <<
             "apply: " << e.what();
@@ -370,7 +371,7 @@ doApply(PreclaimResult const& preclaimResult,
     {
         // Logic error from the caller. Don't have enough
         // info to recover.
-        std::cout<<" doaApply() with the first wrong condition "<<std::endl;
+        //std::cout<<" doaApply() with the first wrong condition "<<std::endl;
         return{ tefEXCEPTION, false };
     }
     try
@@ -386,7 +387,7 @@ doApply(PreclaimResult const& preclaimResult,
     catch (std::exception const& e)
     {
 
-        std::cout<<" catch doaApply() with catch "<<std::endl;
+       // std::cout<<" catch doaApply() with catch "<<std::endl;
         JLOG(preclaimResult.j.fatal()) <<
             "apply: " << e.what();
         return { tefEXCEPTION, false };
